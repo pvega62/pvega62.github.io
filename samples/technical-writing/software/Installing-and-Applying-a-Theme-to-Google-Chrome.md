@@ -25,9 +25,9 @@ You can customize Google Chrome to fit your chosen aesthetic. This guide provide
 ![The homepage of the Chrome Web Store, displaying various themes.](https://github.com/user-attachments/assets/0b760c34-086d-4d86-b79f-1f916e4d5c39)
 
 
-As an example, we'll use the [**Mountain Crows**](https://chromewebstore.google.com/detail/mountain-crows/jacdiigkgnaeogddahbegppegpeolhkl) theme. 
+As an example, this guide will use the [**Mountain Crows**](https://chromewebstore.google.com/detail/mountain-crows/jacdiigkgnaeogddahbegppegpeolhkl) theme.
 
-6. After selecting your theme, click **Add to Chrome**. A banner will confirm the installation. To return to your previous theme, click **Undo**. 
+A banner confirms the installation. 
 
 ![The "Add to Chrome" button on a theme's page in the Chrome Web Store.](https://github.com/user-attachments/assets/f27b92f6-6c78-4c3d-ba82-0f01d65d4688)
 ![A confirmation banner reading "Added to Chrome" with an "Undo" button.](https://github.com/user-attachments/assets/726e0acf-b83c-4e77-93a1-32c3c6d421cb)
@@ -53,9 +53,9 @@ This shortcut is available when the New Tab page is your default homepage.
 ![The Chrome Web Store, accessed via the "Change theme" button.](https://github.com/user-attachments/assets/91b5d1b9-8f09-4848-89a6-4f33989e4c56)
 
 
-As an example, we'll use the [**Mountain Crows**](https://chromewebstore.google.com/detail/mountain-crows/jacdiigkgnaeogddahbegppegpeolhkl) theme.
+As an example, this guide will use the [**Mountain Crows**](https://chromewebstore.google.com/detail/mountain-crows/jacdiigkgnaeogddahbegppegpeolhkl) theme.
 
-4. After selecting your theme, click **Add to Chrome**. A banner will confirm the installation. To return to your previous theme, click **Undo**. 
+4. After selecting your theme, click **Add to Chrome**. A banner confirms the installation. To return to your previous theme, click **Undo**. 
 
 ![Clicking the "Add to Chrome" button for a selected theme.](https://github.com/user-attachments/assets/3383ee52-cd3f-47c3-9f19-1bb5e3d3b09d)
 ![The "Added to Chrome" confirmation banner.](https://github.com/user-attachments/assets/e7704cc3-8dad-4c00-9adc-cccaef3637f9)
@@ -64,14 +64,14 @@ As an example, we'll use the [**Mountain Crows**](https://chromewebstore.google.
 
 ![The "Reset to default" button for themes in Chrome settings.](https://github.com/user-attachments/assets/cdbfb81a-a157-4699-88de-467ba734213c)
 
-### Note for Linux Users
+### Note for Linux users
 Google Chrome can adapt to your **GTK** or **Qt** settings in the **Appearance** menu. To revert to the default theme, click **Use Classic**.
 
 
 ![The "Use GTK+" theme option selected in Chrome's Appearance settings on Linux.](https://github.com/user-attachments/assets/f108bcf4-6db7-4f45-aaad-f6bcade9eab7)
 ![The "Use classic" theme option selected in Chrome's Appearance settings on Linux.](https://github.com/user-attachments/assets/29e69296-ba6d-4736-ab16-c44a8f74422a)
 
-Now you can enjoy surfing the web in the coolest style, _your style!_
+Now you can enjoy surfing the web in the coolest style, _your style._
 
-## Author's Note
-I created this SOP to showcase my ability to write clear, concise documentation for a general audience, ensuring technical steps are easy to understand and follow. This is meant for general audiences to easily understand and follow the steps for installing and applying a theme to Google Chrome.
+## Author's note
+This Standard Operating Procedure (SOP) showcases the ability to write clear, concise documentation for a general audience, ensuring technical steps are straightforward and easy to follow. This guide helps general audiences understand and follow the steps for installing and applying a theme to Google Chrome.
