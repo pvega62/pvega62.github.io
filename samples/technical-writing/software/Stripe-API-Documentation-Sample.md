@@ -1,7 +1,3 @@
-<!--test
-testId: stripe-api-docs
-detectSteps: false
--->
 # Introduction
 
 The Stripe API allows merchants to build a platform, marketplace, or any other type of business with a solid foundation that allows for secure transactions and money movement.
@@ -26,9 +22,7 @@ These tokens, also called secret keys, are found on your Stripe dashboard. See [
 
 **NOTE**: For security purposes, the secret key must not be shared with other users.
 
-<!-- step checkLink: "https://github.com/pvega62/Portfolio/wiki/Using-Postman-to-Connect-to-the-Stripe-API" -->
-<!-- step goTo: "https://github.com/pvega62/Portfolio/wiki/Using-Postman-to-Connect-to-the-Stripe-API" -->
-<!-- step find: "Setting Up Postman" -->
+
 
 # API Functions
 
@@ -954,4 +948,3 @@ This document is meant to provide a sampling of the Stripe API documentation as 
 The API documentation is not exhaustive and I would not recommend using it to build a functional application. (Unless you can, in which case, let me know so I can take all the credit.)
 
 This document was created using the Stripe API collection from April 2024 in the Postman application. Please visit the [Official Stripe API documentation](https://stripe.com/docs/api) for the most up-to-date branches and pertaining documentation.
-<!-- testEnd -->
