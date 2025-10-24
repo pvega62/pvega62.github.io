@@ -1,14 +1,14 @@
-# Pedro Vega – Portfolio Repository
+# Pedro Vega–Portfolio Repository
 
-This repository hosts my technical writing portfolio, including both front-end code for my portfolio website and live documentation samples written in Markdown and published through GitHub Wikis.
+This repository hosts a technical writing portfolio, including both front-end code for a portfolio website and live documentation samples written in Markdown and published through GitHub Wikis.
 
 ## 📘 What’s Inside
-- **Portfolio Site** – Built with HTML, CSS, and JavaScript in VSCode; deployed via GitHub Pages  
+- **Portfolio Site**–Built with HTML, CSS, and JavaScript in VS Code; deployed via GitHub Pages  
   → [Live Site](https://pvega62.github.io/portfolio)
-- **Documentation Samples** – Authored in Markdown and versioned through GitHub Wikis  
-  → [View Docs-as-Code Samples](https://github.com/pvega62/Portfolio/wiki)
+- **Documentation Samples**–Authored in Markdown and versioned through GitHub Wikis  
+  → [View Docs-as-Code Samples](https://github.gcpd.io/pvega62/Portfolio/wiki)
 
-## 🧠 Docs-as-Code Workflow
+## 🧠 Docs-as-code workflow
 All documentation follows a modern *docs-as-code* workflow:
 - Authored in **Markdown** using **VS Code**
 - Version controlled with **Git / GitHub**
@@ -16,7 +16,7 @@ All documentation follows a modern *docs-as-code* workflow:
 - Published through **GitHub Wikis**
 - Uses **Postman**, **Swagger/OpenAPI**, and **JSON** for API testing and examples
 
-## 🛠️ Tech Stack
+## 🛠️ Tech stack
 `HTML` · `CSS` · `JavaScript` · `Markdown` · `Git` · `VS Code` · `Vale` · `Postman` · `Swagger`
 
 ## 🧩 Highlights
