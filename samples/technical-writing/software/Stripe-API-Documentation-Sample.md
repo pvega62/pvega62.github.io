@@ -2,7 +2,7 @@
 # Introduction
 
 The Stripe API allows merchants to build a platform, marketplace, or any other type of business with a solid foundation that allows for secure transactions and money movement.
-111111
+
 The Stripe API allows a developer to:
 
 -   Check a Stripe account's balance.
