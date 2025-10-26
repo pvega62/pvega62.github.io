@@ -1,7 +1,7 @@
-## What is Postman?
-Postman is a collaborative platform for API development. Developers (or in this case, technical writers) can use Postman to develop, manage, test and document APIs. Its user-friendly interface makes it easy to collaboratively work on APIs, making it an ideal platform for cross-functional teams.
+## What's Postman?
+Postman is a collaborative platform for API development. Developers (or in this case, technical writers) can use Postman to develop, manage, test and document APIs. Its user-friendly interface makes it simple to collaboratively work on APIs, making it an ideal platform for cross-functional teams.
 
-## Setting Up Postman
+## Setting up Postman
 
 1.  Download and install the [Postman app](https://www.postman.com/).
 2.  Open the Postman application and complete the setup process.
@@ -15,7 +15,7 @@ Postman is a collaborative platform for API development. Developers (or in this 
 
 4.  In the Collection tab, find the most recent collection and click on the **Fork** button to add it to your collection.
 
-## Generating Your Secret Keys
+## Generating your secret keys
 
 Stripe servers authenticate and authorize API requests using bearer token authorization. To set this up, you will need to create a Stripe account.
 
@@ -34,13 +34,13 @@ Stripe servers authenticate and authorize API requests using bearer token author
 
 9.  To set the environment to the **Stripe API** environment, click on the **Environment** dropdown menu in the top right corner of the workspace.
 
-Your API requests will now be authenticated and authorized by Stripe servers.
+Stripe servers will now authenticate and authorize your API requests.
 
-## Connection Prerequisites
+## Connection prerequisites
 
 To connect to the Stripe API, you need the base URL: `https://api.stripe.com`
 
-## Author's Note
+## Author's note
 
 This guide is a prequel to the [Stripe API Documentation Sample](https://github.com/pvega62/Portfolio/wiki/Stripe-API-Documentation-Sample). It provides the foundational steps for setting up Postman to connect to the Stripe API, which is essential for testing and documenting API requests effectively.
 

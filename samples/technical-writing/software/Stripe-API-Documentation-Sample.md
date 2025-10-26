@@ -1,7 +1,8 @@
+
 # Introduction
 
 The Stripe API allows merchants to build a platform, marketplace, or any other type of business with a solid foundation that allows for secure transactions and money movement.
-
+111111
 The Stripe API allows a developer to:
 
 -   Check a Stripe account's balance.
@@ -9,7 +10,7 @@ The Stripe API allows a developer to:
 -   List, create, update, and search for charges.
 -   Create, update, or list refunds.
 
-## Connection Prerequisites
+## Connection prerequisites
 
 To connect to the Stripe API, you need the base URL: https://api.stripe.com/.
 
@@ -20,11 +21,11 @@ Stripe API requires a secret API token for authentication. All requests must be 
 
 These tokens, also called secret keys, are found on your Stripe dashboard. See [Using Postman to Connect to the Stripe API](https://github.com/pvega62/Portfolio/wiki/Using-Postman-to-Connect-to-the-Stripe-API) for detailed instructions on generating the token and using it to authenticate your connection.
 
-**NOTE**: For security purposes, the secret key must not be shared with other users.
+**NOTE**: For security purposes, **don't share the secret key must with other users.**
 
 
 
-# API Functions
+## API functions
 
 ### Balance
 
@@ -83,7 +84,7 @@ Responses will return standard codes.
   }
 }
 ```
-#### Error Responses
+#### Error responses
 `400: Bad Request`
 ```json
 {
@@ -106,15 +107,15 @@ Responses will return standard codes.
 ```
 #### Parameters
 
-##### Query Parameters
+##### Query parameters
 
 | Parameter | Type | Description | 
 |-----------|------|-------------|
 | `expand[]` | array of strings | Specifies which fields in the response should be expanded. | 
 
-### Retrieve a Balance Transaction
+### Retrieve a balance transaction
 
-Returns the transactions that make up the Stripe account's balance (e.g., charges, transfers, payouts, refunds, etc.). The transactions are returned in sorted order, with the most recent transactions appearing first.
+Returns the transactions that make up the Stripe account's balance (for example, charges, transfers, payouts, refunds, etc.). The transactions are returned in sorted order, with the most recent transactions appearing first.
 
 Endpoint: https://api.stripe.com/v1/balance_transactions/{id}
 
@@ -174,17 +175,17 @@ Responses will return standard codes.
 ```
 #### Parameters
 
-##### Query Parameters
+##### Query parameters
 
 | Parameter | Type | Description | 
 |-----------|------|-------------|
 | `expand[]` | array of strings | Specifies which fields in the response should be expanded. | 
-##### Path Variables
+##### Path variables
 | Name | Type | Required | Description | 
 |------|------|----------|-------------|
 | `id` | string | Required | Path variable identifier | 
 
-### List all Payment Intents
+### List all payment intents
 
 Returns a list of Payment Intents.
 
@@ -244,7 +245,7 @@ Responses will return standard codes.
 
 #### Parameters
 
-##### Query Parameters
+##### Query parameters
 
 | Parameter | Type | Description |
 |------------------|------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -253,7 +254,7 @@ Responses will return standard codes.
 | `ending_before` | string | A cursor for use in pagination. `ending_before` is an object ID that defines your place in the list. |
 | `expand[]` | array of strings | Specifies which fields in the response should be expanded. |
 
-### Create a Payment Intent
+### Create a payment intent
 
 Once a Payment Intent is created, attach a payment method and confirm to continue payment.
 
@@ -374,28 +375,28 @@ Responses will return standard codes.
 }
 ```
 #### Parameters
-##### Body Parameters
+##### Body parameters
 
 | Parameter | Type | Description |
 |------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `amount` | integer | **(Required)** Amount intended to be collected. A positive integer representing how much to charge in the smallest currency unit (e.g., 100 cents to charge $1.00). |
+| `amount` | integer | **(Required)** Amount intended to be collected. A positive integer representing how much to charge in the smallest currency unit (for example, 100 cents to charge $1.00). |
 | `currency` | string | **(Required)** Three-letter ISO currency code, in lowercase. Must be a supported currency. |
-| `confirm` | boolean | Set to true to attempt to confirm this PaymentIntent immediately. |
+| `confirm` | Bootlean | Set to true to attempt to confirm this PaymentIntent immediately. |
 | `customer` | string | ID of the Customer this PaymentIntent belongs to, if one exists. |
 | `description` | string | An arbitrary string attached to the object. |
 | `payment_method` | string | ID of the payment method to attach to this PaymentIntent. |
-| `payment_method_types[]` | array of strings | The list of payment method types that this PaymentIntent is allowed to use. |
+| `payment_method_types[]` | array of strings | The list of payment method types that this PaymentIntent can use. |
 | `shipping` | object | Shipping information for the PaymentIntent. |
-| `statement_descriptor` | string | An arbitrary string to be displayed on your customer's credit card statement. |
-| `statement_descriptor_suffix` | string | Provides additional details to be displayed on your customer's credit card statement. |
+| `statement_descriptor` | string | An arbitrary string displayed on your customer's credit card statement. |
+| `statement_descriptor_suffix` | string | Provides additional details displayed on your customer's credit card statement. |
 | `expand[]` | array of strings | Specifies which fields in the response should be expanded. |
-### Search Payment Intents
+### Search payment intents
 
 Using Stripe’s Search Query Language, you can search for previously created Payment Intents.
 
-Do not use the search request in read-after-write flows where strict consistency is needed. Under normal operation, data is searchable for less than a minute. Occasionally, the propagation of new or updated data can be up to an hour behind during outages.
+Don't use the search request in read-after-write flows where strict consistency is needed. Under normal operation, data is searchable for less than a minute. Occasionally, the propagation of new or updated data can be up to an hour behind during outages.
 
-**NOTE**: The search function is not available to merchants in India.
+**NOTE**: The search function isn't available to merchants in India.
 
 Endpoint: https://api.stripe.com/v1/payment_intents/search
 
@@ -444,7 +445,7 @@ Responses will return standard codes.
 
 #### Parameters
 
-##### Query Parameters
+##### Query parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -453,10 +454,10 @@ Responses will return standard codes.
 | `page` | string | A cursor for pagination across multiple pages of results. Don't include this parameter on the first call. Use the `next_page` value returned in a previous response to request subsequent results. |
 | `query` | string | **(Required)** The search query string. See search query language and the list of supported query fields for payment intents. |
 
-### Create a Refund
+### Create a refund
 Creates a refund for a charge already created but not yet refunded. The amount to be refunded can be specified, or the entire charge amount can be refunded by not specifying an amount. The refund will be created in the same currency as the charge and to the same payment method as the charge.
 
-**A charge cannot be refunded more than once.** If you attempt to refund a charge that has already been refunded, an error will be returned. This will also happen if you attempt to refund more than the original charge amount.
+**A charge can't be refunded more than once.** If you attempt to refund a charge that has already been refunded, an error will be returned. This will also happen if you attempt to refund more than the original charge amount.
 
 Endpoint: https://api.stripe.com/v1/refunds
 
@@ -523,7 +524,7 @@ Responses will return standard codes.
 }
 ```
 #### Parameters
-##### Body Parameters
+##### Body parameters
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `amount` | integer | Amount to refund, in cents. If not specified, the entire charge amount will be refunded. |
@@ -533,12 +534,12 @@ Responses will return standard codes.
 | `customer` | string | ID of the customer to whom the charge belongs. |
 | `reason` | string | Reason for the refund. If set, possible values are `duplicate`, `fraudulent`, or `requested_by_customer`. If set as `fraudulent`, the card and email associated with the charge will be added to your block lists, and will help improve Stripe's fraud detection. |
 | `payment_intent` | string | ID of the PaymentIntent to refund. |
-| `refund_application_fee` | boolean | Indicates whether the application fee should be refunded. If the full amount is refunded, the application fee will be refunded as well. Otherwise, the application fee will be refunded proportionally to the refund. An application fee can only be the application that created the charge.| 
+| `refund_application_fee` | Bootlean | Indicates whether the application fee should be refunded. If the full amount is refunded, the application fee will be refunded as well. Otherwise, the application fee will be refunded proportionally to the refund. An application fee can only be the application that created the charge.| 
 | `origin`| string | The origin of the refund. |
-| `reverse_transfer` | boolean | Indicates whether the transfer should be reversed. Transfer is reversed proportionally to the refund amount (full or partial refund). |
+| `reverse_transfer` | Boolean | Indicates whether the transfer should be reversed. Transfer is reversed proportionally to the refund amount (full or partial refund). |
 | `instructions_email` | string | Uses customer's email address for refund instructions when payment method without refund support is used. |
 
-### Update a Refund
+### Update a refund
 Updates the specified refund by setting the values of the parameters passed. Any parameters not provided will be left unchanged. This is useful for storing additional information about the refund.
 
 Endpoint: https://api.stripe.com/v1/refunds/{id}
@@ -608,18 +609,18 @@ Responses will return standard codes.
 }
 ```
 #### Parameters
-##### Body Parameters
+##### Body parameters
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `metadata`| object | Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. |
 | `expand[]` | array of strings | Specifies which fields in the response should be expanded. |
 
-##### Path Variables
+##### Path variables
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
 | `id` | string | Required | The ID of the refund to update. |
 
-### Retrieve a Refund
+### Retrieve a refund
 Retrieves the details of a specific refund.
 
 Endpoint: https://api.stripe.com/v1/refunds/{id}
@@ -686,16 +687,16 @@ Responses will return standard codes.
 }
 ```
 #### Parameters
-##### Query Parameters
+##### Query parameters
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `expand[]` | array of strings | Specifies which fields in the response should be expanded. |
-##### Path Variables
+##### Path variables
 | Name | Type | Required | Description |
 |------|------|----------|-------------|
 | `id` | string | Required | The ID of the refund to retrieve. |
 
-### List all Refunds
+### List all refunds
 Returns a list of existing refunds. Refunds return in sorted order, with the most recent refunds appearing first. The 10 most recent refunds are returned by default.
 
 Endpoint: https://api.stripe.com/v1/refunds
@@ -778,7 +779,7 @@ Responses will return standard codes.
 | `starting_after` | string | A cursor for use in pagination. Use the object ID `starting_after` to define your place in the list. If you make a list request and receive 100 results, ending with `obj_foo`, your subsequent call can include `starting_after=obj_foo` to fetch the next page of the list. |
 | `expand[]` | array of strings | Specifies which fields in the response should be expanded. |
 
-### Retrieve a Charge
+### Retrieve a charge
 Retrieves the details of a charge that has previously been created. Supply the unique charge ID to retrieve a specific charge.
 
 Endpoint: https://api.stripe.com/v1/charges/{id}
@@ -933,18 +934,18 @@ Responses will return standard codes.
 }
 ```
 #### Parameters
-##### Query Parameters
+##### Query parameters
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `expand[]` | array of strings | Specifies which fields in the response should be expanded. |
-##### Path Variables
+##### Path variables
 | Name | Type | Description |
 |------|------|-------------|
 | `id` | string |**(Required)** The ID of the charge to retrieve. |
 
-## Author's Note
+## Author's note
 This document is meant to provide a sampling of the Stripe API documentation as I would write it as a Stripe technical writer. It includes commonly used API endpoints, examples on how to make calls to the API, the parameters to attach to them and the expected responses.
 
-The API documentation is not exhaustive and I would not recommend using it to build a functional application. (Unless you can, in which case, let me know so I can take all the credit.)
+The API documentation isn't exhaustive and I would not recommend using it to build a functional application. (Unless you can, in which case, let me know so I can take all the credit.)
 
 This document was created using the Stripe API collection from April 2024 in the Postman application. Please visit the [Official Stripe API documentation](https://stripe.com/docs/api) for the most up-to-date branches and pertaining documentation.
