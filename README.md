@@ -1,4 +1,4 @@
-# Pedro Vega–Technical Writer Portfolio
+# Pedro Vega's Portfolio
 
 This repository showcases my technical writing portfolio, demonstrating my ability to create clear, concise, and user-friendly documentation. It includes a portfolio website built from scratch and a collection of live documentation samples.
 
@@ -44,6 +44,8 @@ I structured this site to provide a clear and logical path for users to explore 
     ├── Using-Postman-to-Connect-to-the-Stripe-API.md
     └── ... (and other documentation samples)
 ```
+## 💬 UX Writing
+I have experience crafting user-centric microcopy that enhances user experience and drives engagement. My UX writing samples can be found in the [UX Writing](https://pvega62.github.io/portfolio/uxwriting.html) section of my portfolio website.
 
 ## 🧭 Content strategy
 
@@ -65,3 +67,7 @@ This multi-layered approach ensures all visitors to this repository can find the
 
 *   📧 **e-mail:** [vega.pedro96@gmail.com](mailto:vega.pedro96@gmail.com)
 *   **LinkedIn:** [linkedin.com/in/pvega62](https://www.linkedin.com/in/pvega62/)
+
+## Coming Soon
+# TypeScript SDK Sui documentation sample
+I'm working on a complete documentation sample teaching developers how to read data from the Sui blockchain using the TypeScript SDK. This set includes a conceptual guide, a step-by-step tutorial, and a focused API reference page, all centered on using the SuiClient to query object data.
