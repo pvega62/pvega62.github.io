@@ -1,3 +1,10 @@
+---
+id: Using Postman to Connect to the Stripe API
+sidebar_label: 'Using Postman to Connect to the Stripe API'
+sidebar_position: 1
+slug: /stripe-api/using-postman
+description: 'A step-by-step guide on how to use Postman to connect to the Stripe API.'
+---
 ## What's Postman?
 Postman is a collaborative platform for API development. Developers (or in this case, technical writers) can use Postman to develop, manage, test and document APIs. Its user-friendly interface makes it simple to collaboratively work on APIs, making it an ideal platform for cross-functional teams.
 
@@ -26,7 +33,7 @@ Stripe servers authenticate and authorize API requests using bearer token author
 4.  Click **Environments > Add (+)**.
 5.  Enter a name for the environment in the Name field (e.g., **Stripe API**).
 
-![A screenshot of the environment setup dialog in Postman](image.png)
+![A screenshot of the environment setup dialog in Postman](./img/image.png)
 
 6.  In the **Variable** cell, enter `secret_key`.
 7.  In the **Current Value** cell, paste the secret key copied from the Stripe Dashboard.

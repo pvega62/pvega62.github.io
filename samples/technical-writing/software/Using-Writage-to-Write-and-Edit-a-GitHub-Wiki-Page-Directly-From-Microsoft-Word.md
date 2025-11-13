@@ -1,3 +1,10 @@
+---
+title: Microsoft Word to GitHub Wiki Workflow with Writage
+slug: word-github-wiki-writage
+sidebar_position: 6
+id: word-github-wiki-writage
+---
+
 ## Introduction
 This is a guide on how to use the Writage add-in for Microsoft Word to write and edit GitHub wiki pages directly from Word.
 
@@ -21,11 +28,11 @@ A Markdown document pushed to the wiki repository will appear as a new page on t
 
 1.  Follow the installation prompts to set up the Writage add-in.
 
-![A graphic showing the Writage installation process](media/03702a00abd3b4f99eac060250660755.png)
+![A graphic showing the Writage installation process](./media/03702a00abd3b4f99eac060250660755.png)
 
 ### Writage in Microsoft Word
 
-Once you install the Writage add-in, you can write and edit a Markdown document like a regular Word document. With Writage, you can open existing Markdown files directly in Word, and save Word documents as Markdown files.![A graphic showing the Writage interface in Microsoft Word](media/a4801fe46abc5fe89b6e2fde34fae4ff.png)
+Once you install the Writage add-in, you can write and edit a Markdown document like a regular Word document. With Writage, you can open existing Markdown files directly in Word, and save Word documents as Markdown files.![A graphic showing the Writage interface in Microsoft Word](./media/a4801fe46abc5fe89b6e2fde34fae4ff.png)
 
 ### Converting a Markdown document into a PDF file
 
@@ -40,7 +47,7 @@ GitHub Desktop doesn't automatically clone a GitHub Wiki. You will have to clone
 
 1.  Open the wiki and copy the URL in the page’s lower right corner.
 
-    ![A screenshot of this wiki's homepage](image-1.png)
+    ![A screenshot of this wiki's homepage](./media/image-1.png)
 
 2.  In GitHub Desktop, press **CTRL+SHIFT+O** to open the "Clone a Repository" dialog.
 3.  Click on the **URL** tab.

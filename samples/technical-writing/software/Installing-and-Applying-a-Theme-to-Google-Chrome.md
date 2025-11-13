@@ -1,3 +1,10 @@
+---
+title: Installing and Applying a Theme to Google Chrome
+slug: google-chrome-theme-installation
+sidebar_position: 4
+id: google-chrome-theme-installation
+---
+
 You can customize Google Chrome to fit your chosen aesthetic. This guide provides the steps to install a new theme on your browser.
 
 ## Prerequisites
@@ -27,7 +34,7 @@ You can customize Google Chrome to fit your chosen aesthetic. This guide provide
 
 As an example, this guide will use the [**Mountain Crows**](https://chromewebstore.google.com/detail/mountain-crows/jacdiigkgnaeogddahbegppegpeolhkl) theme.
 
-A banner confirms the installation. 
+6. After selecting your theme, click **Add to Chrome**. A banner will confirm the installation. To return to your previous theme, click Undo.
 
 ![The "Add to Chrome" button on a theme's page in the Chrome Web Store.](https://github.com/user-attachments/assets/f27b92f6-6c78-4c3d-ba82-0f01d65d4688)
 ![A confirmation banner reading "Added to Chrome" with an "Undo" button.](https://github.com/user-attachments/assets/726e0acf-b83c-4e77-93a1-32c3c6d421cb)

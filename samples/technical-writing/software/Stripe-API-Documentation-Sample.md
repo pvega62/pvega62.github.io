@@ -1,5 +1,12 @@
+---
+id: Stripe API Documentation Sample
+sidebar_label: 'Stripe API Documentation Sample'
+sidebar_position: 2
+slug: /stripe-api/stripe-api
+description: 'A sample documentation for the Stripe API, showcasing various endpoints and their usage.'
+---
 
-# Introduction
+## Introduction
 
 The Stripe API allows merchants to build a platform, marketplace, or any other type of business with a solid foundation that allows for secure transactions and money movement.
 

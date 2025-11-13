@@ -1,4 +1,10 @@
-# Introduction
+---
+title: Pet Store API Documentation Sample
+slug: pet-store-api
+sidebar_position: 3
+id: pet-store-api
+---
+## Introduction
  
  This document provides an API reference for a sample Petstore server. The requests found here can help developers make calls to the Petstore server to send or request data about any pets and orders entered into the system.
 
@@ -47,8 +53,8 @@ Operation: `POST`
 POST "https://petstore3.swagger.io/api/v3/pet" \
 -H "accept: application/json" \
 -H "Content-Type: application/json" \
- -H "api_key: <YOUR_API_KEY>" \
- -d '{
+-H "api_key: <YOUR_API_KEY>" \
+-d '{
   "id": 0,
   "name": "string",
   "category": {
@@ -73,8 +79,8 @@ POST "https://petstore3.swagger.io/api/v3/pet" \
 POST "https://petstore3.swagger.io/api/v3/pet" \
 -H "accept: application/json" \
 -H "Content-Type: application/json" \
- -H "Authorization: Bearer <YOUR_OAUTH_TOKEN>" \
- -d '{
+-H "Authorization: Bearer <YOUR_OAUTH_TOKEN>" \
+-d '{
   "id": 0,
   "name": "string",
   "category": {
@@ -256,7 +262,7 @@ GET "https://petstore3.swagger.io/api/v3/pet/findByStatus?status=available" \
 ##### Query parameters
 | Name   | Type   | Description                                                                                             |
 |--------|--------|---------------------------------------------------------------------------------------------------------|
-| status | string | Status of the pet to find. <br> **Default:** `available`. <br> **Allowed values:** `available`, `pending`, `sold`. |
+| status | string | Status of the pet to find. <br /> **Default:** `available`. <br /> **Allowed values:** `available`, `pending`, `sold`. |
 ### Finding pets by tags
 
 Finds pets by their tags.
@@ -314,7 +320,7 @@ GET "https://petstore3.swagger.io/api/v3/pet/findByTags?tags=string" \
 ##### Query parameters
 | Name   | Type   | Description                                                                                             |
 |--------|--------|---------------------------------------------------------------------------------------------------------|
-| tags   | array  | Tags to filter by. <br> **Default:** `[]`. <br> **Allowed values:** Any valid tag names. |
+| tags | array | Tags to filter by. <br /> **Default:** `[]`. <br /> **Allowed values:** Any valid tag names. |
 
 ### Finding a pet by Id
 Finds a pet by its unique ID.
@@ -1083,4 +1089,4 @@ It includes detailed information about the API endpoints, examples of how to mak
 
 This sample API uses Swagger, a powerful open-source framework for API development. It's not intended for production use but rather as a demonstration of how one would document an API. You can find out more about Swagger at [https://swagger.io](https://swagger.io) or on [irc.freenode.net, #swagger](irc://irc.freenode.net/swagger). 
 
-And the mandatory dog tax: here's [Ace](20210327_200932.jpg).
+And the mandatory dog tax: here's [Ace](media/20210327_200932.jpg).
