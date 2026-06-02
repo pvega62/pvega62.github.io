@@ -39,15 +39,7 @@ body {
   border: none; /* Cards in screenshot have no border */
 }
 
-/* Make cards in the Selected Works area match the tan section */
-#selected-works .card {
-  background-color: var(--tan);
-  color: var(--dark);
-}
-#selected-works .card .card-title,
-#selected-works .card .card-text {
-  color: var(--dark) !important;
-}
+
 .navbar-light .navbar-nav .nav-link {
   color: #1f3850;
 }
@@ -145,13 +137,37 @@ body {
   color: #ffffff !important;
 }
 
-/* Hardware page — light section (bg-tan) cards: blue background, white text */
-.bg-tan .card {
+/* Tan sections (bg-tan, light-section) cards: blue background, white text */
+.bg-tan .card,
+.light-section .card {
   background-color: #1f3850 !important;
-}
-.bg-tan .card-title,
-.bg-tan .card-text {
   color: #ffffff !important;
+}
+.bg-tan .card h1, .bg-tan .card h2, .bg-tan .card h3, .bg-tan .card h4, .bg-tan .card h5, .bg-tan .card h6, .bg-tan .card p, .bg-tan .card ul, .bg-tan .card li,
+.light-section .card h1, .light-section .card h2, .light-section .card h3, .light-section .card h4, .light-section .card h5, .light-section .card h6, .light-section .card p, .light-section .card ul, .light-section .card li {
+  color: #ffffff !important;
+}
+
+/* Prototype buttons inside the blue cards */
+.bg-tan .card .btn-primary,
+.light-section .card .btn-primary {
+  background-color: var(--tan) !important;
+  border-color: var(--tan) !important;
+  color: var(--dark) !important;
+  font-weight: bold;
+}
+
+/* Cards in dark sections (bg-custom-dark, hero-basic-20): tan background, high-contrast dark text */
+.bg-custom-dark .card,
+.hero-basic-20 .card {
+  background-color: var(--tan) !important;
+  color: #000000 !important;
+}
+.bg-custom-dark .card h1, .bg-custom-dark .card h2, .bg-custom-dark .card h3, .bg-custom-dark .card h4, .bg-custom-dark .card h5, .bg-custom-dark .card h6, .bg-custom-dark .card p, .bg-custom-dark .card ul, .bg-custom-dark .card li,
+.bg-custom-dark .card .card-title, .bg-custom-dark .card .card-text,
+.hero-basic-20 .card h1, .hero-basic-20 .card h2, .hero-basic-20 .card h3, .hero-basic-20 .card h4, .hero-basic-20 .card h5, .hero-basic-20 .card h6, .hero-basic-20 .card p, .hero-basic-20 .card ul, .hero-basic-20 .card li,
+.hero-basic-20 .card .card-title, .hero-basic-20 .card .card-text {
+  color: #000000 !important;
 }
 
 .knicks-ticker {
