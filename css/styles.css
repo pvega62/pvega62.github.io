@@ -135,3 +135,63 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+/* Middle row cards — blue background, white text on tan section */
+#row-middle .card {
+  background-color: #1f3850;
+}
+#row-middle .card-title,
+#row-middle .card-text {
+  color: #ffffff !important;
+}
+
+/* Hardware page — light section (bg-tan) cards: blue background, white text */
+.bg-tan .card {
+  background-color: #1f3850 !important;
+}
+.bg-tan .card-title,
+.bg-tan .card-text {
+  color: #ffffff !important;
+}
+
+.knicks-ticker {
+  background-color: #FE5000;
+  height: 3rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-wrapper {
+  display: flex;
+  width: max-content;
+  animation: knicks-marquee 60s linear infinite;
+  will-change: transform;
+}
+
+.marquee-content {
+  white-space: nowrap;
+  color: #1f3850;
+  font-weight: 900;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+}
+
+@keyframes knicks-marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .knicks-ticker {
+    height: 2.5rem;
+  }
+  .marquee-wrapper {
+    animation-duration: 30s;
+  }
+  .marquee-content {
+    font-size: 1rem;
+  }
+}
