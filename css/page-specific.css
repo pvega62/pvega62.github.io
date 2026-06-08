@@ -3,7 +3,7 @@
 body { background: var(--dark); font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
 .navbar-dark.bg-custom-dark { background-color: var(--dark) !important; }
 .navbar-nav .nav-link { padding: 0.4rem 0.75rem; color: #e1dedb; }
-.hero-section { background: var(--dark); color: #e1dedb; padding-bottom: 4.5rem; }
+.hero-section { background: var(--dark); color: #e1dedb; padding-bottom: 1.5rem; }
 .hero-section h1 { color: #e1dedb; }
 .bg-tan { background-color: var(--offwhite); }
 .bg-custom-dark { background-color: var(--dark); }
@@ -24,7 +24,7 @@ body { background: var(--dark); font-family: Inter, system-ui, -apple-system, 'S
 .card-border { border: none; }
 /* adjust container background bands to be flush edge-to-edge */
 .bg-tan, .bg-custom-dark { margin-left: -1rem; margin-right: -1rem; padding-left: 1rem; padding-right: 1rem; }
-@media (max-width: 767px) { .hero-section { padding-bottom: 3rem; } }
+@media (max-width: 767px) { .hero-section { padding-bottom: 1rem; } }
 
 .browser-frame {
   border: 1px solid #ccc;
