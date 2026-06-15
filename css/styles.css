@@ -183,7 +183,7 @@ body {
 .marquee-wrapper {
   display: flex;
   width: max-content;
-  animation: knicks-marquee 60s linear infinite;
+  animation: knicks-marquee 120s linear infinite;
   will-change: transform;
 }
 
@@ -205,7 +205,7 @@ body {
     height: 2.5rem;
   }
   .marquee-wrapper {
-    animation-duration: 30s;
+    animation-duration: 60s;
   }
   .marquee-content {
     font-size: 1rem;
