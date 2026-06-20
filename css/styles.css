@@ -205,7 +205,7 @@ body {
     height: 2.5rem;
   }
   .marquee-wrapper {
-    animation-duration: 60s;
+    animation-duration: 180s;
   }
   .marquee-content {
     font-size: 1rem;
