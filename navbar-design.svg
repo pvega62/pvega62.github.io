@@ -1,0 +1,47 @@
+<svg width="375" height="120" viewBox="0 0 375 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="0" y="0" width="375" height="150" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <!-- High drop shadow for the "floating" effect -->
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Navbar background: Liquid glass style with translucency -->
+  <rect x="16" y="30" width="343" height="60" rx="30" fill="#1F3850" fill-opacity="0.3" filter="url(#shadow)"/>
+  
+  <!-- Subtle inner border for glass reflection -->
+  <rect x="16" y="30" width="343" height="60" rx="30" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Logo Placeholder (Far left) -->
+  <circle cx="48" cy="60" r="14" fill="#FFFFFF" fill-opacity="0.9"/>
+  <circle cx="48" cy="60" r="8" fill="#1F3850" fill-opacity="0.9"/>
+
+  <!-- Nav Icons (Simplified line art mimicking Bootstrap Icons) -->
+  <g stroke="#FFFFFF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.8">
+    
+    <!-- Icon 1: Tech Writing (File/Code) -->
+    <rect x="88" y="52" width="12" height="16" rx="2"/>
+    <path d="M92 58 L96 58 M92 62 L96 62"/>
+
+    <!-- Icon 2: UX Writing (Pen) -->
+    <path d="M136 64 L130 66 L132 60 L144 48 L148 52 Z"/>
+    <path d="M130 66 L128 68"/>
+
+    <!-- Icon 3: Articles (Journal) -->
+    <rect x="174" y="52" width="14" height="16" rx="2"/>
+    <line x1="178" y1="56" x2="184" y2="56"/>
+    <line x1="178" y1="60" x2="184" y2="60"/>
+    <line x1="178" y1="64" x2="181" y2="64"/>
+
+    <!-- Icon 4: About me (Person) -->
+    <circle cx="225" cy="54" r="4"/>
+    <path d="M217 66 C 217 60, 233 60, 233 66"/>
+
+    <!-- Icon 5: Contact (Envelope) -->
+    <rect x="264" y="54" width="16" height="12" rx="2"/>
+    <path d="M264 54 L272 60 L280 54"/>
+
+    <!-- Icon 6: Recordkeeping (Folder) -->
+    <path d="M308 52 L312 52 L314 55 L322 55 L322 66 L308 66 Z"/>
+  </g>
+</svg>

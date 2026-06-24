@@ -26,4 +26,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Check on scroll
   window.addEventListener('scroll', checkSection);
+
+  // Set active class based on current URL
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-link, .dropdown-item').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && (href === currentPath || (currentPath === '' && href === 'index.html'))) {
+      link.classList.add('active');
+      // If inside a dropdown, highlight the toggle too
+      const dropdown = link.closest('.dropdown, .dropup');
+      if (dropdown) {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        if (toggle) toggle.classList.add('active');
+      }
+    }
+  });
 });
