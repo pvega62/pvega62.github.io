@@ -843,3 +843,28 @@ html[data-theme="light"] .mobile-nav-search-container .DocSearch-Button::before 
 html[data-theme="light"] .mobile-nav-search-container .DocSearch-Button:active {
   background-color: rgba(0, 0, 0, 0.05) !important;
 }
+
+/* Increase contrast for Ask AI feedback buttons (Thumbs up/down and Copy) */
+.DocSearch-Container .DocSearch-AskAiScreen-Actions,
+.DocSearch-Container .DocSearch-AskAiScreen-Actions button,
+.DocSearch-Container .DocSearch-AskAiScreen-Actions svg,
+.DocSearch-Container .DocSearch-AskAiScreen-CopyButton,
+.DocSearch-Container .DocSearch-AskAiScreen-CopyButton svg,
+.DocSearch-Sidepanel .DocSearch-AskAiScreen-Actions,
+.DocSearch-Sidepanel .DocSearch-AskAiScreen-Actions button,
+.DocSearch-Sidepanel .DocSearch-AskAiScreen-Actions svg,
+.DocSearch-Sidepanel .DocSearch-AskAiScreen-CopyButton,
+.DocSearch-Sidepanel .DocSearch-AskAiScreen-CopyButton svg {
+  color: #8a92a3 !important; /* Gray-ish color to match Docusaurus */
+  stroke: #8a92a3 !important;
+  opacity: 1 !important;
+}
+
+.DocSearch-Container .DocSearch-AskAiScreen-Actions button:hover,
+.DocSearch-Container .DocSearch-AskAiScreen-Actions button:hover svg,
+.DocSearch-Sidepanel .DocSearch-AskAiScreen-Actions button:hover,
+.DocSearch-Sidepanel .DocSearch-AskAiScreen-Actions button:hover svg {
+  color: #b5b9c5 !important;
+  stroke: #b5b9c5 !important;
+  background-color: rgba(138, 146, 163, 0.15) !important;
+}

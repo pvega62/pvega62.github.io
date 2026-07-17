@@ -562,7 +562,7 @@
   <!-- Shared PDF viewer -->
   <script src="js/pdf-viewer.js"></script>
   <script src="js/sticky-nav.js"></script>
-  <!-- DocSearch JS -->
+    <!-- DocSearch JS -->
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
   <script>
@@ -578,6 +578,22 @@
         }
       });
     });
+
+    // Initialize Ask AI side panel
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const sidepanelDiv = document.createElement('div');
+      sidepanelDiv.id = 'docsearch-sidepanel';
+      document.body.appendChild(sidepanelDiv);
+      
+      sidepanelInstance = docsearchSidepanel({
+        container: '#docsearch-sidepanel',
+        indexName: 'portfolio_site',
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159',
+      });
+    }
 
     // Emulate Docusaurus SearchBar layout exactly for desktop
     const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('nav.d-lg-none'));
