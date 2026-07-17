@@ -868,3 +868,18 @@ html[data-theme="light"] .mobile-nav-search-container .DocSearch-Button:active {
   stroke: #b5b9c5 !important;
   background-color: rgba(138, 146, 163, 0.15) !important;
 }
+
+/* Fix Ask AI Sidepanel on mobile */
+@media (max-width: 991.98px) {
+  /* Move the floating button above the fixed mobile navbar */
+  .DocSearch-SidepanelButton {
+    bottom: 80px !important;
+    z-index: 1050 !important;
+  }
+}
+/* Ensure the sidepanel container overlays the mobile navbar (z-index 1030) */
+.DocSearch-Sidepanel-Container,
+.DocSearch-Sidepanel {
+  z-index: 1050 !important;
+}
+
