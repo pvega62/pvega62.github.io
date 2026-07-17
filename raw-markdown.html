@@ -7,7 +7,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="images/logo.png" type="image/png">
-</head>
+  <!-- DocSearch CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" />
+    </head>
 <body>
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -23,6 +26,7 @@
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
+            
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,7 +51,11 @@
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">Recordkeeping</a></li>
-          </ul>
+          
+              <li class="nav-item d-flex align-items-center ms-1">
+                <div class="docsearch-container"></div>
+              </li>
+            </ul>
         </div>
       </nav>
 
@@ -56,6 +64,9 @@
         <a class="navbar-brand ms-2 me-1" href="index.html">
           <img src="images/icon-logo.png" alt="Logo" height="40">
         </a>
+          <div class="mobile-nav-search-container ms-1 me-auto">
+            <div class="docsearch-container"></div>
+          </div>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
           <li class="nav-item dropup d-flex align-items-center">
             <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Technical writing" title="Technical writing">
@@ -92,7 +103,7 @@
               <img src="images/icon-recordkeeping.svg" alt="" class="mobile-nav-icon-colored">
             </a>
           </li>
-        </ul>
+</ul>
       </nav>
 
     </div>
@@ -134,5 +145,54 @@
   <script src="js/pdf-viewer.js"></script>
   <script src="js/sticky-nav.js"></script>
 
-</body>
+  <!-- DocSearch JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
+    <script>
+    document.querySelectorAll('.docsearch-container').forEach((container) => {
+      docsearch({
+        container: container,
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        indexName: 'portfolio_site',
+        insights: true,
+        searchParameters: {
+          facetFilters: ['lang:en']
+        }
+      });
+    });
+
+    // Initialize Ask AI side panel
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const sidepanelDiv = document.createElement('div');
+      sidepanelDiv.id = 'docsearch-sidepanel';
+      document.body.appendChild(sidepanelDiv);
+      
+      sidepanelInstance = docsearchSidepanel({
+        container: '#docsearch-sidepanel',
+        indexName: 'portfolio_site',
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159',
+      });
+    }
+
+    // Emulate Docusaurus SearchBar layout exactly for desktop
+    const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('nav.d-lg-none'));
+    desktopContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          // Wrap button in DocSearch-SearchBar div
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+        }
+      }, 50);
+    });
+  </script>
+  </body>
 </html>

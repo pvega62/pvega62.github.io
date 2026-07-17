@@ -4,73 +4,100 @@
   --tan: #d4d1ce;
   --dark: #1f3850;
 }
+
 body {
-  background-color: #1f3850; /* Dark blue background */
+  background-color: #1f3850;
+  /* Dark blue background */
 }
+
 .navbar-brand img {
-  height: 40px; /* Adjust logo size */
+  height: 40px;
+  /* Adjust logo size */
 }
+
 /* Ensure brand and nav items are vertically centered and aligned */
 .navbar {
-  align-items: center; /* vertically center brand and toggler */
+  align-items: center;
+  /* vertically center brand and toggler */
 }
+
 .navbar-brand img {
-  display: block; /* remove inline gap and align baseline */
+  display: block;
+  /* remove inline gap and align baseline */
 }
+
 .navbar .nav-link {
-  line-height: 1; /* tighten line-height so links vertically center with logo */
+  line-height: 1;
+  /* tighten line-height so links vertically center with logo */
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
-.navbar .nav-item + .nav-item {
-  margin-left: .25rem; /* small gap between nav items */
+
+.navbar .nav-item+.nav-item {
+  margin-left: .25rem;
+  /* small gap between nav items */
 }
+
 .hero-section {
   background-color: #1f3850;
   color: white;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+
 .light-section {
-  background-color: #d4d1ce; /* Tan background */
+  background-color: #d4d1ce;
+  /* Tan background */
 }
+
 .bg-light {
   background-color: #d4d1ce !important;
 }
+
 .card {
-  border: none; /* Cards in screenshot have no border */
+  border: none;
+  /* Cards in screenshot have no border */
 }
 
 
 .navbar-light .navbar-nav .nav-link {
   color: #1f3850;
 }
+
 .navbar-dark.bg-custom-dark {
   background-color: #1f3850 !important;
 }
+
 /* Moved inline styles into classes for cleanliness */
 .about-link {
   padding-left: 2px;
 }
+
 .intro-text {
   font-size: 16px;
   line-height: 1.5;
 }
+
 .inno-text {
   color: #1f3850;
 }
+
 /* Make .text-secondary darker on the tan background to satisfy contrast requirements */
 .light-section .text-secondary {
-  color: #495057 !important; /* darker gray (approx #495057) */
+  color: #495057 !important;
+  /* darker gray (approx #495057) */
 }
+
 .bg-custom-dark {
   background-color: #1f3850 !important;
 }
+
 /* Transitions for smooth color/background changes */
 .sticky-top {
   transition: background-color 150ms ease;
   z-index: 1020;
 }
+
 .sticky-top .nav-link {
   transition: color 150ms ease;
 }
@@ -84,6 +111,7 @@ body {
   height: 1px;
   overflow: hidden;
 }
+
 .skip-link:focus {
   left: 1rem;
   top: 1rem;
@@ -122,6 +150,7 @@ body {
 .sample-card iframe {
   pointer-events: none;
 }
+
 .and-divider {
   font-size: 2rem;
   font-weight: bold;
@@ -134,6 +163,7 @@ body {
 #row-middle .card {
   background-color: #1f3850;
 }
+
 #row-middle .card-title,
 #row-middle .card-text {
   color: #ffffff !important;
@@ -145,8 +175,25 @@ body {
   background-color: #1f3850 !important;
   color: #ffffff !important;
 }
-.bg-tan .card h1, .bg-tan .card h2, .bg-tan .card h3, .bg-tan .card h4, .bg-tan .card h5, .bg-tan .card h6, .bg-tan .card p, .bg-tan .card ul, .bg-tan .card li,
-.light-section .card h1, .light-section .card h2, .light-section .card h3, .light-section .card h4, .light-section .card h5, .light-section .card h6, .light-section .card p, .light-section .card ul, .light-section .card li {
+
+.bg-tan .card h1,
+.bg-tan .card h2,
+.bg-tan .card h3,
+.bg-tan .card h4,
+.bg-tan .card h5,
+.bg-tan .card h6,
+.bg-tan .card p,
+.bg-tan .card ul,
+.bg-tan .card li,
+.light-section .card h1,
+.light-section .card h2,
+.light-section .card h3,
+.light-section .card h4,
+.light-section .card h5,
+.light-section .card h6,
+.light-section .card p,
+.light-section .card ul,
+.light-section .card li {
   color: #ffffff !important;
 }
 
@@ -165,10 +212,29 @@ body {
   background-color: var(--tan) !important;
   color: #000000 !important;
 }
-.bg-custom-dark .card h1, .bg-custom-dark .card h2, .bg-custom-dark .card h3, .bg-custom-dark .card h4, .bg-custom-dark .card h5, .bg-custom-dark .card h6, .bg-custom-dark .card p, .bg-custom-dark .card ul, .bg-custom-dark .card li,
-.bg-custom-dark .card .card-title, .bg-custom-dark .card .card-text,
-.hero-basic-20 .card h1, .hero-basic-20 .card h2, .hero-basic-20 .card h3, .hero-basic-20 .card h4, .hero-basic-20 .card h5, .hero-basic-20 .card h6, .hero-basic-20 .card p, .hero-basic-20 .card ul, .hero-basic-20 .card li,
-.hero-basic-20 .card .card-title, .hero-basic-20 .card .card-text {
+
+.bg-custom-dark .card h1,
+.bg-custom-dark .card h2,
+.bg-custom-dark .card h3,
+.bg-custom-dark .card h4,
+.bg-custom-dark .card h5,
+.bg-custom-dark .card h6,
+.bg-custom-dark .card p,
+.bg-custom-dark .card ul,
+.bg-custom-dark .card li,
+.bg-custom-dark .card .card-title,
+.bg-custom-dark .card .card-text,
+.hero-basic-20 .card h1,
+.hero-basic-20 .card h2,
+.hero-basic-20 .card h3,
+.hero-basic-20 .card h4,
+.hero-basic-20 .card h5,
+.hero-basic-20 .card h6,
+.hero-basic-20 .card p,
+.hero-basic-20 .card ul,
+.hero-basic-20 .card li,
+.hero-basic-20 .card .card-title,
+.hero-basic-20 .card .card-text {
   color: #000000 !important;
 }
 
@@ -198,17 +264,24 @@ body {
 }
 
 @keyframes knicks-marquee {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 768px) {
   .knicks-ticker {
     height: 2.5rem;
   }
+
   .marquee-wrapper {
     animation-duration: 180s;
   }
+
   .marquee-content {
     font-size: 1rem;
   }
@@ -220,10 +293,12 @@ body {
     padding-bottom: 90px;
     padding-top: 32px;
   }
+
   header.sticky-top {
     background: transparent !important;
     position: static !important;
   }
+
   .navbar.bg-custom-dark {
     position: fixed;
     bottom: 12px;
@@ -239,6 +314,7 @@ body {
     padding: 9px 17px;
     transition: all 0.3s ease;
   }
+
   .dropdown-menu {
     top: auto;
     bottom: 100%;
@@ -251,29 +327,36 @@ body {
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 0 -10px 40px rgba(0, 0, 0, 0.25);
     padding: 8px;
   }
+
   .mobile-nav-icon {
     width: 24px;
     height: 24px;
     object-fit: contain;
     filter: brightness(0) invert(1);
   }
+
   .mobile-nav-icon-colored {
     width: 24px;
     height: 24px;
     object-fit: contain;
   }
+
   .dropdown-item {
     color: #fff;
     border-radius: 12px;
     transition: background-color 0.2s ease;
   }
-  .dropdown-item:hover, .dropdown-item:active {
+
+  .dropdown-item:hover,
+  .dropdown-item:active {
     background-color: rgba(255, 255, 255, 0.15) !important;
     color: #fff;
   }
+
   .navbar-nav {
     margin: 0;
   }
+
   .navbar-nav .nav-link {
     font-weight: 500;
     text-align: center;
@@ -281,7 +364,482 @@ body {
     border-radius: 14px;
     transition: background-color 0.2s ease;
   }
+
   .navbar-nav .nav-link:active {
     background-color: rgba(255, 255, 255, 0.1);
   }
+}
+
+/* ==========================================================================
+   Algolia DocSearch & Ask AI Styling Overrides
+   ========================================================================== */
+/* --- DARK MODE --- */
+body,
+.DocSearch-Container {
+  --docsearch-primary-color: tan !important;
+  --docsearch-text-color: #ffffff !important;
+  --docsearch-container-background: rgba(0, 0, 0, 0.8) !important;
+  --docsearch-modal-background: #1f3850 !important;
+  --docsearch-modal-shadow: inset 1px 1px 0 0 #2c4e71, 0 3px 8px 0 #000309 !important;
+
+  --docsearch-searchbox-background: rgba(255, 255, 255, 0.1) !important;
+  --docsearch-searchbox-focus-background: rgba(255, 255, 255, 0.2) !important;
+  --docsearch-searchbox-shadow: inset 0 0 0 2px tan !important;
+
+  --docsearch-hit-color: #ffffff !important;
+  --docsearch-hit-background: rgba(255, 255, 255, 0.1) !important;
+  --docsearch-hit-active-color: #1f3850 !important;
+  --docsearch-hit-shadow: none !important;
+
+  --docsearch-footer-background: rgba(255, 255, 255, 0.05) !important;
+  --docsearch-footer-shadow: inset 0 1px 0 0 rgba(73, 76, 106, 0.5), 0 -4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+
+  --docsearch-logo-color: tan !important;
+  --docsearch-muted-color: tan !important;
+  --docsearch-highlight-color: tan !important;
+}
+
+/* Base generic elements inside modals (Dark Mode) */
+body .DocSearch-Modal,
+body .DocSearch-Sidepanel,
+body .DocSearch-Sidepanel-Markdown {
+  background-color: #1f3850 !important;
+  color: #ffffff !important;
+}
+
+body .DocSearch-Modal span,
+body .DocSearch-Modal p,
+body .DocSearch-Sidepanel span,
+body .DocSearch-Sidepanel p,
+body .DocSearch-Sidepanel h1,
+body .DocSearch-Sidepanel h2,
+body .DocSearch-Sidepanel h3,
+body .DocSearch-Sidepanel h4,
+body .DocSearch-Title,
+body .DocSearch-Button-Placeholder,
+body .DocSearch-Search-Icon {
+  color: #ffffff !important;
+}
+
+/* Links (Dark Mode) */
+body .DocSearch-Modal a,
+body .DocSearch-Sidepanel a,
+body .DocSearch-Sidepanel-Markdown a {
+  color: tan !important;
+  text-decoration: none !important;
+}
+
+body .DocSearch-Modal a:hover,
+body .DocSearch-Sidepanel a:hover,
+body .DocSearch-Sidepanel-Markdown a:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+}
+
+/* Highlight Matches (Dark Mode) */
+body .DocSearch-Modal mark,
+body .DocSearch-Sidepanel mark {
+  color: tan !important;
+  background: transparent !important;
+  font-weight: inherit !important;
+}
+
+/* Ctrl K Box (Dark Mode) */
+body .DocSearch-Button-Key {
+  background-color: #E1DEDB !important;
+  color: #1f3850 !important;
+  border: none !important;
+}
+
+/* Ask AI Side Panel Button (Dark Mode) */
+body .DocSearch-SearchBar button:not(.DocSearch-Button) {
+  background-color: #E1DEDB !important;
+  color: #1f3850 !important;
+}
+
+body .DocSearch-SearchBar button:not(.DocSearch-Button) svg {
+  fill: #1f3850 !important;
+  color: #1f3850 !important;
+}
+
+/* Borders (Dark Mode) */
+body .DocSearch-Button,
+body .DocSearch-Modal,
+body .DocSearch-Sidepanel,
+body .DocSearch-Form,
+body .DocSearch-SearchBar button:not(.DocSearch-Button),
+body .DocSearch-Button-Key {
+  border: 1px solid #E1DEDB !important;
+}
+
+/* --- LIGHT MODE --- */
+html[data-theme="light"] {
+  --docsearch-primary-color: var(--ifm-color-primary) !important;
+  --docsearch-text-color: var(--ifm-color-primary) !important;
+  --docsearch-container-background: rgba(255, 255, 255, 0.8);
+  --docsearch-modal-background: #ffffff !important;
+  --docsearch-searchbox-background: var(--ifm-color-secondary-lightest) !important;
+  --docsearch-searchbox-focus-background: var(--ifm-color-secondary-light) !important;
+  --docsearch-hit-color: var(--ifm-color-primary) !important;
+  --docsearch-hit-background: var(--ifm-color-secondary-lightest) !important;
+  --docsearch-hit-active-color: #ffffff !important;
+  --docsearch-footer-background: var(--ifm-color-secondary-lightest) !important;
+  --docsearch-logo-color: var(--ifm-color-primary) !important;
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest) !important;
+  --docsearch-highlight-color: var(--ifm-color-primary) !important;
+}
+
+/* Base generic elements inside modals (Light Mode) */
+html[data-theme="light"] .DocSearch-Modal,
+html[data-theme="light"] .DocSearch-Sidepanel,
+html[data-theme="light"] .DocSearch-Sidepanel-Markdown {
+  background-color: #ffffff !important;
+  color: var(--ifm-color-primary) !important;
+}
+
+html[data-theme="light"] .DocSearch-Modal span,
+html[data-theme="light"] .DocSearch-Modal p,
+html[data-theme="light"] .DocSearch-Sidepanel span,
+html[data-theme="light"] .DocSearch-Sidepanel p,
+html[data-theme="light"] .DocSearch-Sidepanel h1,
+html[data-theme="light"] .DocSearch-Sidepanel h2,
+html[data-theme="light"] .DocSearch-Sidepanel h3,
+html[data-theme="light"] .DocSearch-Sidepanel h4,
+html[data-theme="light"] .DocSearch-Title,
+.navbar-light .DocSearch-Button-Placeholder,
+html[data-theme="light"] .DocSearch-Search-Icon {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Links (Light Mode) */
+html[data-theme="light"] .DocSearch-Modal a,
+html[data-theme="light"] .DocSearch-Sidepanel a,
+html[data-theme="light"] .DocSearch-Sidepanel-Markdown a {
+  color: #0000ff !important;
+  text-decoration: none !important;
+}
+
+html[data-theme="light"] .DocSearch-Modal a:hover,
+html[data-theme="light"] .DocSearch-Sidepanel a:hover,
+html[data-theme="light"] .DocSearch-Sidepanel-Markdown a:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+}
+
+/* Highlight Matches (Light Mode) */
+html[data-theme="light"] .DocSearch-Modal mark,
+html[data-theme="light"] .DocSearch-Sidepanel mark {
+  color: #0000ff !important;
+  background: transparent !important;
+  font-weight: inherit !important;
+}
+
+/* Main Search Button Navbar (Light Mode) */
+.navbar-light .DocSearch-Button {
+  background-color: #ffffff !important;
+  color: var(--ifm-color-primary) !important;
+}
+
+.navbar-light .DocSearch-Button:hover {
+  background-color: var(--ifm-color-secondary-lightest) !important;
+}
+
+/* Ctrl K Box (Light Mode) */
+.navbar-light .DocSearch-Button-Key {
+  background-color: var(--ifm-color-primary) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+/* Ask AI Side Panel Button (Light Mode) */
+html[data-theme="light"] .DocSearch-SearchBar button:not(.DocSearch-Button) {
+  background-color: var(--ifm-color-primary) !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="light"] .DocSearch-SearchBar button:not(.DocSearch-Button) svg {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Borders (Light Mode) */
+.navbar-light .DocSearch-Button,
+html[data-theme="light"] .DocSearch-Modal,
+html[data-theme="light"] .DocSearch-Sidepanel,
+html[data-theme="light"] .DocSearch-Form,
+html[data-theme="light"] .DocSearch-SearchBar button:not(.DocSearch-Button),
+.navbar-light .DocSearch-Button-Key {
+  border: 1px solid var(--ifm-color-primary) !important;
+}
+
+
+/* Force placeholders and icons to be fully bright for maximum contrast */
+body .DocSearch-Button-Placeholder,
+body .DocSearch-Search-Icon,
+body .DocSearch-Input::placeholder {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+html[data-theme="light"] .DocSearch-Input::placeholder {
+  color: var(--ifm-color-primary) !important;
+  opacity: 1 !important;
+}
+
+
+/* ==========================================================================
+   Mobile Nav Search Bar Icon Resets
+   ========================================================================== */
+
+/* Target the SearchBar specifically when inside the mobile nav */
+.mobile-nav-search-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.mobile-nav-search-container .DocSearch-SearchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Hide the search text, shortcuts, and Ask AI sidepanel button */
+.mobile-nav-search-container .DocSearch-Button-Placeholder,
+.mobile-nav-search-container .DocSearch-Button-Keys,
+.mobile-nav-search-container button:not(.DocSearch-Button) {
+  display: none !important;
+}
+
+/* Reset the main search button to act as a simple icon button */
+.navbar-light.mobile-nav-search-container .DocSearch-Button,
+body .mobile-nav-search-container .DocSearch-Button,
+.mobile-nav-search-container .DocSearch-Button {
+  position: relative !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 12px !important;
+  /* MATCHING .nav-link PADDING FROM FIGMA */
+  margin: 0 !important;
+  width: 48px;
+  /* 24px + 12px + 12px */
+  height: 48px;
+  box-sizing: border-box !important;
+  border-radius: 12px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.mobile-nav-search-container .DocSearch-Button:active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Hide the default Algolia SVG icon */
+.mobile-nav-search-container .DocSearch-Search-Icon {
+  display: none !important;
+}
+
+/* Create a new pseudo-element with the custom Noun Project SVG */
+.mobile-nav-search-container .DocSearch-Button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 1.2px);
+  /* Mathematically offset to correct uneven visual center in SVG */
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  /* White in dark mode */
+  -webkit-mask-image: url('../../static/img/mobile-nav/noun-search-perfect.svg');
+  mask-image: url('../../static/img/mobile-nav/noun-search-perfect.svg');
+  -webkit-mask-size: 85%;
+  mask-size: 85%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 50% 50%;
+  mask-position: 50% 50%;
+  transform: translate(-50%, -50%) scaleX(-1);
+  /* Center it and invert horizontally */
+}
+
+/* Light mode overrides for the custom mobile nav search icon */
+.navbar-light.mobile-nav-search-container .DocSearch-Button::before {
+  background-color: #1f3850 !important;
+  /* Dark blue in light mode */
+}
+
+.navbar-light.mobile-nav-search-container .DocSearch-Button:active {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+
+
+/* Custom Portfolio overrides to ensure the button doesn't blend in */
+body .DocSearch-Button {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+
+body .DocSearch-Button:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Stretch search bar */
+@media (min-width: 992px) {
+  .navbar-nav .DocSearch-SearchBar {
+    width: 250px;
+  }
+
+  .navbar-nav .DocSearch-Button {
+    flex: 1;
+    width: auto;
+    justify-content: space-between;
+  }
+}
+
+/* Fix search bar vertical alignment */
+.navbar-nav .docsearch-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-nav .DocSearch-SearchBar {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav .DocSearch-Button {
+  margin: 0 !important;
+}
+
+/* Fix overlap completely */
+.navbar-nav .DocSearch-SearchBar {
+  gap: 8px;
+}
+
+.navbar-nav .DocSearch-SidepanelButton {
+  position: relative !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+  z-index: 10;
+}
+
+.navbar-nav .DocSearch-Button {
+  min-width: 0 !important;
+}
+
+/* Fix Ask AI code block backgrounds */
+.DocSearch-Modal pre,
+.DocSearch-Modal code,
+.DocSearch-Container pre,
+.DocSearch-Container code {
+  background-color: #2d2d2d !important;
+  color: #f8f8f2 !important;
+  border-radius: 4px;
+}
+
+.DocSearch-Modal pre {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.DocSearch-Modal pre code {
+  background-color: transparent !important;
+  padding: 0;
+}
+
+/* ==========================================================================
+   Mobile Nav Search Bar Icon Resets
+   ========================================================================== */
+
+/* Target the SearchBar specifically when inside the mobile nav */
+.mobile-nav-search-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.mobile-nav-search-container .DocSearch-SearchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Hide the search text, shortcuts, and Ask AI sidepanel button */
+.mobile-nav-search-container .DocSearch-Button-Placeholder,
+.mobile-nav-search-container .DocSearch-Button-Keys,
+.mobile-nav-search-container button:not(.DocSearch-Button) {
+  display: none !important;
+}
+
+/* Reset the main search button to act as a simple icon button */
+html[data-theme="light"] .mobile-nav-search-container .DocSearch-Button,
+html[data-theme="dark"] .mobile-nav-search-container .DocSearch-Button,
+.mobile-nav-search-container .DocSearch-Button {
+  position: relative !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 12px !important;
+  /* MATCHING .nav-link PADDING FROM FIGMA */
+  margin: 0 !important;
+  width: 48px;
+  /* 24px + 12px + 12px */
+  height: 48px;
+  box-sizing: border-box !important;
+  border-radius: 12px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.mobile-nav-search-container .DocSearch-Button:active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Hide the default Algolia SVG icon */
+.mobile-nav-search-container .DocSearch-Search-Icon {
+  display: none !important;
+}
+
+/* Create a new pseudo-element with the custom Noun Project SVG */
+.mobile-nav-search-container .DocSearch-Button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 1.2px);
+  /* Mathematically offset to correct uneven visual center in SVG */
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  /* White in dark mode */
+  -webkit-mask-image: url('../images/noun-search-perfect.svg');
+  mask-image: url('../images/noun-search-perfect.svg');
+  -webkit-mask-size: 85%;
+  mask-size: 85%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 50% 50%;
+  mask-position: 50% 50%;
+  transform: translate(-50%, -50%) scaleX(-1);
+  /* Center it and invert horizontally */
+}
+
+/* Light mode overrides for the custom mobile nav search icon */
+html[data-theme="light"] .mobile-nav-search-container .DocSearch-Button::before {
+  background-color: #1f3850 !important;
+  /* Dark blue in light mode */
+}
+
+html[data-theme="light"] .mobile-nav-search-container .DocSearch-Button:active {
+  background-color: rgba(0, 0, 0, 0.05) !important;
 }
