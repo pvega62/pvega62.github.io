@@ -593,7 +593,7 @@ html[data-theme="light"] .DocSearch-Input::placeholder {
 
 /* Target the SearchBar specifically when inside the mobile nav */
 .mobile-nav-search-container {
-  margin: 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
   padding: 0 !important;
 }
 
@@ -601,7 +601,7 @@ html[data-theme="light"] .DocSearch-Input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
   padding: 0 !important;
 }
 
@@ -621,7 +621,7 @@ body .mobile-nav-search-container .DocSearch-Button,
   border: none !important;
   padding: 12px !important;
   /* MATCHING .nav-link PADDING FROM FIGMA */
-  margin: 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
   width: 48px;
   /* 24px + 12px + 12px */
   height: 48px;
@@ -716,7 +716,7 @@ body .DocSearch-Button:hover {
 }
 
 .navbar-nav .DocSearch-Button {
-  margin: 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
 }
 
 /* Fix overlap completely */
@@ -727,7 +727,7 @@ body .DocSearch-Button:hover {
 .navbar-nav .DocSearch-SidepanelButton {
   position: relative !important;
   flex-shrink: 0 !important;
-  margin: 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
   z-index: 10;
 }
 
@@ -761,7 +761,7 @@ body .DocSearch-Button:hover {
 
 /* Target the SearchBar specifically when inside the mobile nav */
 .mobile-nav-search-container {
-  margin: 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
   padding: 0 !important;
 }
 
@@ -769,7 +769,7 @@ body .DocSearch-Button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
   padding: 0 !important;
 }
 
@@ -789,7 +789,7 @@ html[data-theme="dark"] .mobile-nav-search-container .DocSearch-Button,
   border: none !important;
   padding: 12px !important;
   /* MATCHING .nav-link PADDING FROM FIGMA */
-  margin: 0 !important;
+  margin-top: 0 !important; margin-bottom: 0 !important;
   width: 48px;
   /* 24px + 12px + 12px */
   height: 48px;
