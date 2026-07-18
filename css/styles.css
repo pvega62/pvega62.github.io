@@ -595,6 +595,10 @@ html[data-theme="light"] .DocSearch-Input::placeholder {
 .mobile-nav-search-container {
   margin-top: 0 !important; margin-bottom: 0 !important;
   padding: 0 !important;
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  z-index: 1050;
 }
 
 .mobile-nav-search-container .DocSearch-SearchBar {
@@ -606,86 +610,44 @@ html[data-theme="light"] .DocSearch-Input::placeholder {
 }
 
 /* Hide the search text, shortcuts, and Ask AI sidepanel button */
-.mobile-nav-search-container .DocSearch-Button-Placeholder,
-.mobile-nav-search-container .DocSearch-Button-Keys,
-.mobile-nav-search-container button:not(.DocSearch-Button) {
-  display: none !important;
-}
 
-/* Reset the main search button to act as a simple icon button */
-.navbar-light.mobile-nav-search-container .DocSearch-Button,
-body .mobile-nav-search-container .DocSearch-Button,
-.mobile-nav-search-container .DocSearch-Button {
-  position: relative !important;
-  background: transparent !important;
-  border: none !important;
-  padding: 12px !important;
-  /* MATCHING .nav-link PADDING FROM FIGMA */
-  margin-top: 0 !important; margin-bottom: 0 !important;
-  width: 48px;
-  /* 24px + 12px + 12px */
-  height: 48px;
-  box-sizing: border-box !important;
-  border-radius: 12px !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: none !important;
-  outline: none !important;
-}
 
-.mobile-nav-search-container .DocSearch-Button:active {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-}
+
+
+
 
 /* Hide the default Algolia SVG icon */
-.mobile-nav-search-container .DocSearch-Search-Icon {
-  display: none !important;
-}
+
 
 /* Create a new pseudo-element with the custom Noun Project SVG */
-.mobile-nav-search-container .DocSearch-Button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: calc(50% - 1.2px);
-  /* Mathematically offset to correct uneven visual center in SVG */
-  width: 48px;
-  height: 48px;
-  background-color: #ffffff;
-  /* White in dark mode */
-  -webkit-mask-image: url('../../static/img/mobile-nav/noun-search-perfect.svg');
-  mask-image: url('../../static/img/mobile-nav/noun-search-perfect.svg');
-  -webkit-mask-size: 85%;
-  mask-size: 85%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: 50% 50%;
-  mask-position: 50% 50%;
-  transform: translate(-50%, -50%) scaleX(-1);
-  /* Center it and invert horizontally */
-}
+
 
 /* Light mode overrides for the custom mobile nav search icon */
-.navbar-light.mobile-nav-search-container .DocSearch-Button::before {
-  background-color: #1f3850 !important;
-  /* Dark blue in light mode */
+.navbar-light
+
+.navbar-light
+
+
+
+/* Custom Portfolio overrides to ensure the button matches the site theme */
+body .DocSearch-Button,
+body .DocSearch-SearchBar button {
+  background-color: var(--tan) !important;
+  color: var(--dark) !important;
+  border-radius: 6px !important;
+  margin-left: 8px !important; /* Space between buttons if multiple */
 }
 
-.navbar-light.mobile-nav-search-container .DocSearch-Button:active {
-  background-color: rgba(0, 0, 0, 0.05) !important;
+body .DocSearch-Button:hover,
+body .DocSearch-SearchBar button:hover {
+  background-color: #e5e3e1 !important; /* Slightly lighter tan on hover */
 }
 
-
-
-/* Custom Portfolio overrides to ensure the button doesn't blend in */
-body .DocSearch-Button {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  color: #ffffff !important;
-}
-
-body .DocSearch-Button:hover {
-  background-color: rgba(255, 255, 255, 0.2) !important;
+/* Ensure SVG icons inside the button match the dark color */
+body .DocSearch-Button svg,
+body .DocSearch-SearchBar button svg {
+  color: var(--dark) !important;
+  fill: var(--dark) !important;
 }
 
 /* Stretch search bar */
@@ -774,75 +736,23 @@ body .DocSearch-Button:hover {
 }
 
 /* Hide the search text, shortcuts, and Ask AI sidepanel button */
-.mobile-nav-search-container .DocSearch-Button-Placeholder,
-.mobile-nav-search-container .DocSearch-Button-Keys,
-.mobile-nav-search-container button:not(.DocSearch-Button) {
-  display: none !important;
-}
+
 
 /* Reset the main search button to act as a simple icon button */
-html[data-theme="light"] .mobile-nav-search-container .DocSearch-Button,
-html[data-theme="dark"] .mobile-nav-search-container .DocSearch-Button,
-.mobile-nav-search-container .DocSearch-Button {
-  position: relative !important;
-  background: transparent !important;
-  border: none !important;
-  padding: 12px !important;
-  /* MATCHING .nav-link PADDING FROM FIGMA */
-  margin-top: 0 !important; margin-bottom: 0 !important;
-  width: 48px;
-  /* 24px + 12px + 12px */
-  height: 48px;
-  box-sizing: border-box !important;
-  border-radius: 12px !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: none !important;
-  outline: none !important;
-}
 
-.mobile-nav-search-container .DocSearch-Button:active {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-}
+
+
 
 /* Hide the default Algolia SVG icon */
-.mobile-nav-search-container .DocSearch-Search-Icon {
-  display: none !important;
-}
+
 
 /* Create a new pseudo-element with the custom Noun Project SVG */
-.mobile-nav-search-container .DocSearch-Button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: calc(50% - 1.2px);
-  /* Mathematically offset to correct uneven visual center in SVG */
-  width: 48px;
-  height: 48px;
-  background-color: #ffffff;
-  /* White in dark mode */
-  -webkit-mask-image: url('../images/noun-search-perfect.svg');
-  mask-image: url('../images/noun-search-perfect.svg');
-  -webkit-mask-size: 85%;
-  mask-size: 85%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: 50% 50%;
-  mask-position: 50% 50%;
-  transform: translate(-50%, -50%) scaleX(-1);
-  /* Center it and invert horizontally */
-}
+
 
 /* Light mode overrides for the custom mobile nav search icon */
-html[data-theme="light"] .mobile-nav-search-container .DocSearch-Button::before {
-  background-color: #1f3850 !important;
-  /* Dark blue in light mode */
-}
+html[data-theme="light"] 
 
-html[data-theme="light"] .mobile-nav-search-container .DocSearch-Button:active {
-  background-color: rgba(0, 0, 0, 0.05) !important;
-}
+html[data-theme="light"] 
 
 /* Increase contrast for Ask AI feedback buttons (Thumbs up/down and Copy) */
 .DocSearch-Container .DocSearch-AskAiScreen-Actions,
@@ -873,7 +783,7 @@ html[data-theme="light"] .mobile-nav-search-container .DocSearch-Button:active {
 @media (max-width: 991.98px) {
   /* Move the floating button above the fixed mobile navbar */
   .DocSearch-SidepanelButton {
-    bottom: 80px !important;
+    top: 16px !important; bottom: auto !important; right: 65px !important;
     z-index: 1050 !important;
   }
 }
@@ -881,5 +791,17 @@ html[data-theme="light"] .mobile-nav-search-container .DocSearch-Button:active {
 .DocSearch-Sidepanel-Container,
 .DocSearch-Sidepanel {
   z-index: 1050 !important;
+}
+
+
+/* Move mobile search container to the top */
+@media (max-width: 991.98px) {
+  .mobile-nav-search-container {
+    position: fixed !important;
+    top: 16px !important;
+    right: 16px !important; left: auto !important;
+    z-index: 1050 !important;
+    margin: 0 !important; /* reset any ms-3 applied via html */
+  }
 }
 
