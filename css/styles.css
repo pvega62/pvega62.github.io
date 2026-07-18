@@ -629,26 +629,9 @@ html[data-theme="light"] .DocSearch-Input::placeholder {
 
 
 
-/* Custom Portfolio overrides to ensure the button matches the site theme */
-body .DocSearch-Button,
-body .DocSearch-SearchBar button {
-  background-color: var(--tan) !important;
-  color: var(--dark) !important;
-  border-radius: 6px !important;
-  margin-left: 8px !important; /* Space between buttons if multiple */
-}
 
-body .DocSearch-Button:hover,
-body .DocSearch-SearchBar button:hover {
-  background-color: #e5e3e1 !important; /* Slightly lighter tan on hover */
-}
 
-/* Ensure SVG icons inside the button match the dark color */
-body .DocSearch-Button svg,
-body .DocSearch-SearchBar button svg {
-  color: var(--dark) !important;
-  fill: var(--dark) !important;
-}
+
 
 /* Stretch search bar */
 @media (min-width: 992px) {
@@ -803,44 +786,4 @@ body .DocSearch-SearchBar button svg {
 }
 
 
-/* Ask AI Tan Background Overrides */
-.DocSearch-Sidepanel,
-.DocSearch-Container,
-.DocSearch-AskAiScreen,
-.DocSearch-AskAiScreen-Header,
-.DocSearch-AskAiScreen-Query,
-.DocSearch-AskAiScreen-Message,
-.DocSearch-AskAiScreen-Content,
-.DocSearch-AskAiScreen-Message-Role-User,
-.DocSearch-AskAiScreen-Message-Role-Assistant {
-  background-color: var(--tan) !important;
-  color: var(--dark) !important;
-}
 
-.DocSearch-AskAiScreen p,
-.DocSearch-AskAiScreen span,
-.DocSearch-AskAiScreen h1,
-.DocSearch-AskAiScreen h2,
-.DocSearch-AskAiScreen h3,
-.DocSearch-AskAiScreen li,
-.DocSearch-AskAiScreen strong {
-  color: var(--dark) !important;
-}
-
-.DocSearch-AskAiScreen pre,
-.DocSearch-AskAiScreen code {
-  background-color: #2d2d2d !important;
-  color: #f8f8f2 !important;
-}
-
-/* Make sure the input field itself matches */
-.DocSearch-Form {
-  background-color: var(--tan) !important;
-  border: 1px solid var(--dark) !important;
-}
-.DocSearch-Input {
-  color: var(--dark) !important;
-}
-.DocSearch-Input::placeholder {
-  color: #555 !important;
-}
