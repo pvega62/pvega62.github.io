@@ -302,13 +302,15 @@
         appId: 'XMDO29FL1L',
         apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
         assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159',
+        agentStudio: true,
+        searchParameters: {},
         showButton: false,
         button: false,
         variant: 'inline',
       });
     }
 
-    // Emulate Docusaurus SearchBar layout exactly for desktop
+    // Emulate Docusaurus SearchBar layout exactly for desktop and add Ask AI button
     const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('nav.d-lg-none'));
     desktopContainers.forEach(container => {
       const interval = setInterval(() => {
@@ -320,6 +322,24 @@
           wrapper.className = 'DocSearch-SearchBar';
           btn.parentNode.insertBefore(wrapper, btn);
           wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask AI (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
         }
       }, 50);
     });
@@ -360,3 +380,4 @@
   </script>
   </body>
 </html>
+
