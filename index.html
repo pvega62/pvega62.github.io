@@ -612,7 +612,7 @@
     }
 
     // Emulate Docusaurus SearchBar layout exactly for desktop and add Ask AI button
-    const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('nav.d-lg-none'));
+    const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('.d-lg-none'));
     desktopContainers.forEach(container => {
       const interval = setInterval(() => {
         const btn = container.querySelector('.DocSearch-Button');

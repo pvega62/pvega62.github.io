@@ -609,24 +609,6 @@ html[data-theme="light"] .DocSearch-Input::placeholder {
   padding: 0 !important;
 }
 
-/* Hide the search text, shortcuts, and Ask AI sidepanel button */
-
-
-
-
-
-
-/* Hide the default Algolia SVG icon */
-
-
-/* Create a new pseudo-element with the custom Noun Project SVG */
-
-
-/* Light mode overrides for the custom mobile nav search icon */
-.navbar-light
-
-.navbar-light
-
 
 
 
@@ -714,23 +696,10 @@ html[data-theme="light"] .DocSearch-Input::placeholder {
   justify-content: center;
   margin-top: 0 !important; margin-bottom: 0 !important;
   padding: 0 !important;
+  gap: 8px;
 }
 
-/* Hide the search text, shortcuts, and Ask AI sidepanel button */
 
-
-/* Reset the main search button to act as a simple icon button */
-
-
-
-
-/* Hide the default Algolia SVG icon */
-
-
-/* Create a new pseudo-element with the custom Noun Project SVG */
-
-
-/* Light mode overrides for the custom mobile nav search icon */
 /* Increase contrast for Ask AI feedback buttons (Thumbs up/down and Copy) */
 .DocSearch-Container .DocSearch-AskAiScreen-Actions,
 .DocSearch-Container .DocSearch-AskAiScreen-Actions button,
