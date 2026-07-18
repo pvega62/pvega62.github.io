@@ -609,10 +609,6 @@ html[data-theme="light"] .DocSearch-Input::placeholder {
   padding: 0 !important;
 }
 
-
-
-
-
 /* Stretch search bar */
 @media (min-width: 992px) {
   .navbar-nav .DocSearch-SearchBar {
