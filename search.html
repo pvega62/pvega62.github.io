@@ -118,7 +118,17 @@
       }, 50);
     });
 
+    // Mobile search close fix — hides mobile search buttons while modal is open, revealing the native X button
+    (function () {
+      var mobileSearchContainer = document.querySelector('.mobile-nav-search-container');
+      function showSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'visible'; }
+      function hideSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'hidden'; }
+      var closeObserver = new MutationObserver(function () {
+        if (document.querySelector('.DocSearch-Modal')) { hideSearchButtons(); } else { showSearchButtons(); }
+      });
+      closeObserver.observe(document.body, { childList: true, subtree: true });
+    })();
+
   </script>
   </body>
             </html>
-

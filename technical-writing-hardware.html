@@ -390,44 +390,15 @@
       }, 50);
     });
 
-    // Mobile search close fix — ensure DocSearch modal can be dismissed on mobile without a page refresh
+    // Mobile search close fix — hides mobile search buttons while modal is open, revealing the native X button
     (function () {
+      var mobileSearchContainer = document.querySelector('.mobile-nav-search-container');
+      function showSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'visible'; }
+      function hideSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'hidden'; }
       var closeObserver = new MutationObserver(function () {
-        var modal = document.querySelector('.DocSearch-Modal');
-        if (!modal) return;
-        // Reveal the native Cancel button if it exists but is hidden
-        var nativeCancel = modal.querySelector('.DocSearch-Cancel');
-        if (nativeCancel) {
-          nativeCancel.style.display = '';
-          nativeCancel.style.visibility = 'visible';
-          nativeCancel.style.opacity = '1';
-          return;
-        }
-        // Inject a fallback close button if the native one is absent
-        if (!document.getElementById('custom-docsearch-close')) {
-          var closeBtn = document.createElement('button');
-          closeBtn.id = 'custom-docsearch-close';
-          closeBtn.setAttribute('aria-label', 'Close search');
-          closeBtn.textContent = 'Cancel';
-          closeBtn.style.cssText = [
-            'position:absolute', 'top:50%', 'right:16px', 'transform:translateY(-50%)',
-            'z-index:9999', 'background:none', 'border:none', 'color:var(--aa-text-color,inherit)',
-            'font-size:0.95rem', 'font-weight:500', 'cursor:pointer', 'padding:6px 10px',
-            'line-height:1'
-          ].join(';');
-          closeBtn.addEventListener('click', function () {
-            document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
-          });
-          var searchBar = modal.querySelector('.DocSearch-SearchBar');
-          if (searchBar) {
-            searchBar.style.position = 'relative';
-            searchBar.appendChild(closeBtn);
-          } else {
-            modal.appendChild(closeBtn);
-          }
-        }
+        if (document.querySelector('.DocSearch-Modal')) { hideSearchButtons(); } else { showSearchButtons(); }
       });
-      closeObserver.observe(document.body, { childList: true, subtree: false });
+      closeObserver.observe(document.body, { childList: true, subtree: true });
     })();
 
   </script>
