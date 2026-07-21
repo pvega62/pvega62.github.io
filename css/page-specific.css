@@ -24,8 +24,8 @@ body { background: var(--dark); font-family: Inter, system-ui, -apple-system, 'S
 /* Ensure rows have spacing and alternating band look */
 .bg-tan .card, .light-section .card { background-color: #fff; }
 .card-border { border: none; }
-/* adjust container background bands to be flush edge-to-edge */
-.bg-tan, .bg-custom-dark { margin-left: -1rem; margin-right: -1rem; padding-left: 1rem; padding-right: 1rem; }
+/* adjust container background bands to be flush edge-to-edge (Negative margins removed as they cause mobile zooming issues because sections are already full-width) */
+.bg-tan, .bg-custom-dark { padding-left: 1rem; padding-right: 1rem; }
 
 
 .browser-frame {

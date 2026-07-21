@@ -292,6 +292,10 @@ body {
   body {
     padding-bottom: 90px;
     padding-top: 32px;
+    overflow-x: hidden;
+  }
+  html {
+    overflow-x: hidden;
   }
 
   header.sticky-top {
