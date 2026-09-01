@@ -733,12 +733,11 @@ html[data-theme="light"] .DocSearch-Input::placeholder {
     z-index: 1050 !important;
   }
 }
-/* Ensure the sidepanel container overlays the mobile navbar (z-index 1030) */
+/* Ensure the sidepanel container overlays the mobile navbar */
 .DocSearch-Sidepanel-Container,
 .DocSearch-Sidepanel {
-  z-index: 1050 !important;
+  z-index: 2500 !important;
 }
-
 
 /* Move mobile search container to the top */
 @media (max-width: 991.98px) {
@@ -747,8 +746,16 @@ html[data-theme="light"] .DocSearch-Input::placeholder {
     top: 16px !important;
     right: 16px !important; left: auto !important;
     z-index: 1050 !important;
-    margin: 0 !important; /* reset any ms-3 applied via html */
+    margin: 0 !important;
   }
+}
+
+/* Hide the floating mobile search/Ask Artie button when sidepanel or search modal is open */
+body:has(.DocSearch-Sidepanel-Container.is-open) .mobile-nav-search-container,
+body:has(.DocSearch-Modal) .mobile-nav-search-container {
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
 }
 
 
@@ -1034,10 +1041,11 @@ html[lang="hi"] .DocSearch-Sidepanel-Title::after {
   font-size: 0 !important;
 }
 .DocSearch-Sidepanel-Screen--introduction::after {
-  content: "Hello there, I'm Arthur (or Artie, if you like)! Ask me anything about Pedro's writing samples, documentation guides, or resume." !important;
+  content: "Hello there, I'm Arthur (or Artie, if you like)! Ask me anything about Pedro's writing samples, documentation guides, or resume.\A You can also ask me for a Snapple fact, or a quick joke if you need one." !important;
   font-size: 0.875rem !important;
   line-height: 1.35rem !important;
   display: block !important;
+  white-space: pre-wrap !important;
 }
 
 
