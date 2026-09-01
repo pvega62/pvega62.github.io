@@ -1029,6 +1029,18 @@ html[lang="hi"] .DocSearch-Sidepanel-Title::after {
   content: "आर्टी से पूछें" !important;
 }
 
+/* Custom Ask Artie Welcome Message */
+.DocSearch-Sidepanel-Screen--introduction {
+  font-size: 0 !important;
+}
+.DocSearch-Sidepanel-Screen--introduction::after {
+  content: "Hello there, I'm Arthur (or Artie, if you like)! Ask me anything about Pedro's writing samples, documentation guides, or resume." !important;
+  font-size: 0.875rem !important;
+  line-height: 1.35rem !important;
+  display: block !important;
+}
+
+
 
 
 
