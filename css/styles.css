@@ -958,5 +958,77 @@ html[data-theme="light"] .DocSearch-Input::placeholder {
   opacity: 1 !important;
 }
 
+/* Rename Ask AI button and sidepanel header to Ask Artie (Default / English) */
+.DocSearch-SearchBar {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 0 !important;
+}
+
+.DocSearch-SearchBar .DocSearch-Button {
+  margin: 0 !important;
+}
+
+.DocSearch-SearchBar .DocSearch-Button-Keys {
+  display: none !important;
+}
+
+.DocSearch-SidepanelButton.inline {
+  font-size: 0 !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+  flex-shrink: 0 !important;
+}
+.DocSearch-SidepanelButton.inline svg {
+  font-size: 1rem !important;
+}
+.DocSearch-SidepanelButton.inline::after {
+  content: "Ask Artie" !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+}
+
+.DocSearch-Sidepanel-Title {
+  font-size: 0 !important;
+}
+.DocSearch-Sidepanel-Title::after {
+  content: "Ask Artie" !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+}
+
+/* Localized button labels for non-English locales */
+html[lang="es"] .DocSearch-SidepanelButton.inline::after,
+html[lang="es"] .DocSearch-Sidepanel-Title::after {
+  content: "Preguntar a Artie" !important;
+}
+
+html[lang^="fr"] .DocSearch-SidepanelButton.inline::after,
+html[lang^="fr"] .DocSearch-Sidepanel-Title::after {
+  content: "Demander à Artie" !important;
+}
+
+html[lang="ar"] .DocSearch-SidepanelButton.inline::after,
+html[lang="ar"] .DocSearch-Sidepanel-Title::after {
+  content: "إسأل آرتي" !important;
+}
+
+html[lang="zh-Hans"] .DocSearch-SidepanelButton.inline::after,
+html[lang="zh-Hans"] .DocSearch-Sidepanel-Title::after {
+  content: "询问 Artie" !important;
+}
+
+html[lang="ja"] .DocSearch-SidepanelButton.inline::after,
+html[lang="ja"] .DocSearch-Sidepanel-Title::after {
+  content: "Artieに質問" !important;
+}
+
+html[lang="hi"] .DocSearch-SidepanelButton.inline::after,
+html[lang="hi"] .DocSearch-Sidepanel-Title::after {
+  content: "आर्टी से पूछें" !important;
+}
+
+
 
 
