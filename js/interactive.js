@@ -121,8 +121,19 @@
     };
     Particle.prototype.draw = function () {
       var alpha = Math.max(0.15, Math.min(0.85, this.baseAlpha + 0.20 * Math.sin(this.twinklePhase)));
+      var w = canvas.parentElement.offsetWidth || window.innerWidth;
+      var h = canvas.parentElement.offsetHeight || 500;
+      var tdx = this.x - w * 0.50;
+      var tdy = (this.y - h * 0.48) * 2.0;
+      var textDist = Math.sqrt(tdx * tdx + tdy * tdy);
+      var isUnderText = textDist < (isMobile ? 190 : 290);
+      var drawRadius = this.r;
+      if (isUnderText) {
+        alpha *= 0.18; // Soften ambient stars under headline & typewriter text
+        drawRadius *= 0.75; // Shrunk star diameter so text is completely crisp
+      }
       ctx.beginPath();
-      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.arc(this.x, this.y, drawRadius, 0, Math.PI * 2);
       ctx.fillStyle = 'rgba(' + this.tint + ',' + alpha.toFixed(2) + ')';
       ctx.fill();
     };
@@ -152,6 +163,18 @@
           this.y += this.vy;
           this.angle += this.vAngle;
           this.flareAngle += 0.005;
+
+          // Gentle orbital deflection around central headline text
+          var tdx = this.x - w * 0.50;
+          var tdy = (this.y - h * 0.48) * 2.0;
+          var textDist = Math.sqrt(tdx * tdx + tdy * tdy);
+          var shieldRadius = isMobile ? 220 : 340;
+          if (textDist < shieldRadius && textDist > 0) {
+            var force = (1 - textDist / shieldRadius) * 0.75;
+            this.x += (tdx / textDist) * force;
+            this.y += (tdy / textDist) * (force * 0.45);
+          }
+
           var margin = 110;
           if (this.x < -margin) this.x = w + margin;
           if (this.x > w + margin) this.x = -margin;
@@ -178,8 +201,32 @@
             });
           }
 
-          // 0. Soft translucent geometric nebula fill (for Lyra harp body)
-          if (this.fillPolygons && this.fillPolygons.length > 0) {
+          // Text zone damping: if constellation center OR any star node is within central text area, soften intensity
+          var pw = canvas.parentElement.offsetWidth || window.innerWidth;
+          var ph = canvas.parentElement.offsetHeight || 500;
+          var textCenterX = pw * 0.50;
+          var textCenterY = ph * 0.48;
+          var tdx = this.x - textCenterX;
+          var tdy = (this.y - textCenterY) * 2.0;
+          var textDist = Math.sqrt(tdx * tdx + tdy * tdy);
+          var shieldLimit = isMobile ? 220 : 340;
+          var isNearText = textDist < shieldLimit;
+
+          if (!isNearText) {
+            for (var k = 0; k < pts.length; k++) {
+              var ndx = pts[k].x - textCenterX;
+              var ndy = (pts[k].y - textCenterY) * 2.0;
+              if (Math.sqrt(ndx * ndx + ndy * ndy) < (isMobile ? 190 : 290)) {
+                isNearText = true;
+                break;
+              }
+            }
+          }
+
+          var textDamping = isNearText ? 0.15 : 1.0;
+
+          // 0. Soft translucent geometric nebula fill (for Lyra harp body) - suppressed near text
+          if (this.fillPolygons && this.fillPolygons.length > 0 && !isNearText) {
             ctx.save();
             for (var f = 0; f < this.fillPolygons.length; f++) {
               var poly = this.fillPolygons[f];
@@ -207,7 +254,7 @@
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = this.haloColor.replace('ALPHA', this.isFeatured ? '0.40' : '0.28');
+            ctx.strokeStyle = this.haloColor.replace('ALPHA', ((this.isFeatured ? 0.40 : 0.28) * textDamping).toFixed(2));
             ctx.lineWidth = isMobile ? 1.8 : (this.isFeatured ? 2.8 : 2.2);
             ctx.stroke();
 
@@ -215,25 +262,23 @@
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = this.color.replace('ALPHA', this.isFeatured ? '0.85' : '0.70');
+            ctx.strokeStyle = this.color.replace('ALPHA', ((this.isFeatured ? 0.85 : 0.70) * textDamping).toFixed(2));
             ctx.lineWidth = isMobile ? 1.1 : (this.isFeatured ? 1.5 : 1.3);
             ctx.stroke();
             ctx.restore();
           }
 
           // 2. Draw stars & beacon flares
-          var alphaPt = null;
           for (var i = 0; i < pts.length; i++) {
             var pt = pts[i];
-            var starRadius = pt.r;
+            var starRadius = isNearText ? pt.r * 0.85 : pt.r;
 
             if (pt.isAlpha) {
-              alphaPt = pt;
               var isV = !!pt.isVega;
               var pulse = 1 + 0.16 * Math.sin(Date.now() * 0.0035);
 
-              // Pulsing beacon ring for highlighted Vega
-              if (isV) {
+              // Pulsing beacon ring for highlighted Vega (only in open skies)
+              if (isV && !isNearText) {
                 var ringPhase = (Date.now() % 2600) / 2600;
                 var ringRadius = starRadius + ringPhase * 28;
                 var ringAlpha = (1 - ringPhase) * 0.55;
@@ -245,47 +290,49 @@
               }
 
               // Multi-stage radiant corona
-              var coronaRadius = starRadius * (isV ? 4.6 : 3.8) * pulse;
+              var coronaRadius = starRadius * (isV ? 4.6 : 3.8) * pulse * (isNearText ? 0.5 : 1.0);
               var grad = ctx.createRadialGradient(pt.x, pt.y, 0, pt.x, pt.y, coronaRadius);
-              grad.addColorStop(0, this.haloColor.replace('ALPHA', isV ? '0.65' : '0.55'));
-              grad.addColorStop(0.4, this.haloColor.replace('ALPHA', isV ? '0.30' : '0.20'));
+              grad.addColorStop(0, this.haloColor.replace('ALPHA', (isV ? 0.65 : 0.55) * textDamping));
+              grad.addColorStop(0.4, this.haloColor.replace('ALPHA', (isV ? 0.30 : 0.20) * textDamping));
               grad.addColorStop(1, 'rgba(0,0,0,0)');
               ctx.fillStyle = grad;
               ctx.beginPath();
               ctx.arc(pt.x, pt.y, coronaRadius, 0, Math.PI * 2);
               ctx.fill();
 
-              // 8-point diffraction spike flare for Vega (4-point for Hamal)
-              ctx.save();
-              ctx.translate(pt.x, pt.y);
-              ctx.rotate(this.flareAngle);
+              // 8-point diffraction spike flare for Vega (4-point for Hamal) - suppressed in text zone
+              if (!isNearText) {
+                ctx.save();
+                ctx.translate(pt.x, pt.y);
+                ctx.rotate(this.flareAngle);
 
-              var spikeLen = starRadius * (isV ? 3.8 : 3.0);
-              // Primary cross rays
-              ctx.strokeStyle = 'rgba(255, 255, 255, 0.90)';
-              ctx.lineWidth = isV ? 1.2 : 1.0;
-              ctx.beginPath();
-              ctx.moveTo(-spikeLen, 0);
-              ctx.lineTo(spikeLen, 0);
-              ctx.moveTo(0, -spikeLen);
-              ctx.lineTo(0, spikeLen);
-              ctx.stroke();
+                var spikeLen = starRadius * (isV ? 3.8 : 3.0);
+                // Primary cross rays
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.90)';
+                ctx.lineWidth = isV ? 1.2 : 1.0;
+                ctx.beginPath();
+                ctx.moveTo(-spikeLen, 0);
+                ctx.lineTo(spikeLen, 0);
+                ctx.moveTo(0, -spikeLen);
+                ctx.lineTo(0, spikeLen);
+                ctx.stroke();
 
-              // Secondary 45° diagonal sub-spikes
-              ctx.strokeStyle = this.haloColor.replace('ALPHA', isV ? '0.55' : '0.35');
-              ctx.lineWidth = 0.8;
-              var subLen = spikeLen * (isV ? 0.65 : 0.50);
-              ctx.beginPath();
-              ctx.moveTo(-subLen, -subLen);
-              ctx.lineTo(subLen, subLen);
-              ctx.moveTo(subLen, -subLen);
-              ctx.lineTo(-subLen, subLen);
-              ctx.stroke();
-              ctx.restore();
+                // Secondary 45° diagonal sub-spikes
+                ctx.strokeStyle = this.haloColor.replace('ALPHA', isV ? '0.55' : '0.35');
+                ctx.lineWidth = 0.8;
+                var subLen = spikeLen * (isV ? 0.65 : 0.50);
+                ctx.beginPath();
+                ctx.moveTo(-subLen, -subLen);
+                ctx.lineTo(subLen, subLen);
+                ctx.moveTo(subLen, -subLen);
+                ctx.lineTo(-subLen, subLen);
+                ctx.stroke();
+                ctx.restore();
+              }
             } else {
               // Secondary star soft glow aura
               var auraGrad = ctx.createRadialGradient(pt.x, pt.y, 0, pt.x, pt.y, starRadius * 2.2);
-              auraGrad.addColorStop(0, this.haloColor.replace('ALPHA', '0.40'));
+              auraGrad.addColorStop(0, this.haloColor.replace('ALPHA', (0.40 * textDamping).toFixed(2)));
               auraGrad.addColorStop(1, 'rgba(0,0,0,0)');
               ctx.fillStyle = auraGrad;
               ctx.beginPath();
@@ -295,8 +342,8 @@
 
             // Brilliant white star core
             ctx.beginPath();
-            ctx.arc(pt.x, pt.y, Math.max(1.8, starRadius * 0.85), 0, Math.PI * 2);
-            ctx.fillStyle = '#FFFFFF';
+            ctx.arc(pt.x, pt.y, Math.max(1.5, starRadius * 0.85), 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 255, 255, ' + (isNearText ? '0.35' : '1.0') + ')';
             ctx.fill();
           }
         }
@@ -311,8 +358,8 @@
       id: 'aries',
       color: 'rgba(245, 206, 117, ALPHA)',
       haloColor: 'rgba(255, 222, 140, ALPHA)',
-      x: isMobile ? parentW * 0.28 : parentW * 0.22,
-      y: isMobile ? parentH * 0.26 : parentH * 0.35,
+      x: isMobile ? parentW * 0.20 : parentW * 0.18,
+      y: isMobile ? parentH * 0.20 : parentH * 0.25,
       vx: 0.04,
       vy: -0.02,
       angle: 0.18,
@@ -343,8 +390,8 @@
         [2, 3, 5, 4], // Quad harp body (zeta, delta, sulafat, sheliak)
         [0, 1, 2]     // Upper triangle linking Vega to the harp
       ],
-      x: isMobile ? parentW * 0.58 : parentW * 0.70,
-      y: isMobile ? parentH * 0.62 : parentH * 0.36,
+      x: isMobile ? parentW * 0.80 : parentW * 0.82,
+      y: isMobile ? parentH * 0.75 : parentH * 0.32,
       vx: -0.035,
       vy: 0.025,
       angle: -0.15,
@@ -449,11 +496,19 @@
           var dy = p.y - p2.y;
           var d = Math.sqrt(dx * dx + dy * dy);
           if (d < 105) {
+            var midX = (p.x + p2.x) * 0.5;
+            var midY = (p.y + p2.y) * 0.5;
+            var mtdx = midX - w * 0.50;
+            var mtdy = (midY - h * 0.48) * 2.0;
+            var mDist = Math.sqrt(mtdx * mtdx + mtdy * mtdy);
+            var latticeAlpha = (0.18 * (1 - d / 105));
+            if (mDist < (isMobile ? 190 : 290)) {
+              latticeAlpha *= 0.10; // Zero distraction through headline
+            }
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            // Clear, elegant celestial lattice (18% fading to 0%)
-            ctx.strokeStyle = 'rgba(215, 222, 232, ' + (0.18 * (1 - d / 105)).toFixed(3) + ')';
+            ctx.strokeStyle = 'rgba(215, 222, 232, ' + latticeAlpha.toFixed(3) + ')';
             ctx.lineWidth = 0.7;
             ctx.stroke();
           }
