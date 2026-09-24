@@ -130,7 +130,13 @@
         previewWrapper.appendChild(canvas);
 
         // fetch and render first page
-        const loadingTask = window.pdfjsLib.getDocument(encodeURI(pdfUrl));
+        const loadingTask = window.pdfjsLib.getDocument({
+          url: encodeURI(pdfUrl),
+          cMapUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.9.179/cmaps/',
+          cMapPacked: true,
+          standardFontDataUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.9.179/standard_fonts/',
+          disableFontFace: true
+        });
         const pdf = await loadingTask.promise;
         const page = await pdf.getPage(1);
         const rect = previewWrapper.getBoundingClientRect();
@@ -140,6 +146,8 @@
         canvas.height = Math.round(viewport.height);
         canvas.style.width = '100%';
         canvas.style.height = '100%';
+        canvas.style.objectFit = 'cover';
+        canvas.style.objectPosition = 'top';
         const ctx = canvas.getContext('2d');
         const renderContext = { canvasContext: ctx, viewport };
         await page.render(renderContext).promise;
@@ -205,6 +213,23 @@
         }
       });
     }, { root: null, rootMargin: '300px 0px', threshold: 0.01 }) : null;
+
+    // Replace broken mobile iframes with PDF.js canvas previews
+    const isMobile = window.innerWidth <= 768 || /Mobi|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      document.querySelectorAll('iframe[src$=".pdf"]').forEach(iframe => {
+        const parent = iframe.parentNode;
+        iframe.style.display = 'none'; // hide the native iframe
+        parent.dataset.pdf = iframe.src; // mark for intersection observer
+        parent.classList.add('preview-wrapper');
+        // overlay icon to indicate it's tappable
+        const overlay = document.createElement('div');
+        overlay.className = 'preview-overlay';
+        overlay.innerHTML = '<div class="icon" aria-hidden="true">🔍</div>';
+        parent.appendChild(overlay);
+        if (previewObserver) previewObserver.observe(parent);
+      });
+    }
 
     sampleCards.forEach(card => {
       console.log('Processing card:', card);

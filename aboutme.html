@@ -23,7 +23,7 @@
   <meta name="twitter:description" content="Learn more about Pedro Vega, Technical Writer, UX Writer, and Content Designer based in New York.">
   <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css?v=2">
+  <link rel="stylesheet" href="css/styles.css?v=3">
   <link rel="icon" href="images/logo.png" type="image/png">
   <!-- DocSearch CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
@@ -34,7 +34,8 @@
       display: none !important;
     }
   </style>
-    </head>
+      <link href="css/interactive.css" rel="stylesheet"/>
+</head>
 <body>
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -137,16 +138,20 @@
 
   <main id="main-content" tabindex="-1">
   <div class="hero-section">
-      <div class="col-md-8 text-center mx-auto">
-        <h1 class="display-4 fw-bold">About Me</h1>
-        <p class="lead">The writer you're about to hire!</p>
-      </div>
-    </div>
-  </main>
+<div class="container-fluid px-4">
+<div class="text-center">
+<h1 class="display-4 fw-bold text-white">About Me</h1>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center intro-text text-white">
+<p>The writer you're about to hire!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
 
-
-
-  <section class="light-section py-5">
+<section class="light-section py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
@@ -154,42 +159,121 @@
           <p>My first job out of high school was as a media services technician. This was at the New York City College of Technology while I was a student there. My experience in IT support involved successfully guiding non-technical users through troubleshooting, which is technically when my technical writing career started.</p>
           <p>I view my role as that of a translator, a skill I've honed since childhood. As the child of an immigrant family, I was often the designated translator for English and legalese. It's a skill I've carried with me and now apply professionally to bridge the gap between complex technology and the people who use it.</p>
 
-          <h4>Skill Set</h4>
-          <div class="row">
-            <div class="col-md-6">
-              <h5>Technical & API Documentation</h5>
-              <ul>
-                <li><strong>Methodologies:</strong> Docs-as-Code, API Documentation (REST, OpenAPI), MCP Integration, Information Architecture (IA), Process Documentation, Quickstarts, CI/CD</li>
-                <li><strong>Tools:</strong> Git (GitHub, GitLab), Linux/CLI, Docker, VSCode, MS Word, Postman, Swagger, Confluence, Jira, Notion, Docusaurus, Algolia, i18n, Mermaid, JSON</li>
-              </ul>
+          <h4 class="mt-5 mb-3">Skill Set</h4>
+          
+          <!-- Desktop View: Side-by-Side Grid -->
+          <div class="d-none d-md-block">
+            <div class="row">
+              <div class="col-md-6">
+                <h5>Technical & API Documentation</h5>
+                <ul>
+                  <li><strong>Methodologies:</strong> Docs-as-Code, API Documentation (REST, OpenAPI), MCP Integration, Information Architecture (IA), Process Documentation, Quickstarts, CI/CD</li>
+                  <li><strong>Tools:</strong> Git (GitHub, GitLab), Linux/CLI, Docker, VSCode, MS Word, Postman, Swagger, Confluence, Jira, Notion, Docusaurus, Algolia, i18n, Mermaid, JSON</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5>UX Writing & Content Design</h5>
+                <ul>
+                  <li><strong>Skills:</strong> UX Writing, Microcopy, Prompt Design, Content Design, UX Research, Wireframing, Prototyping, Accessibility (WCAG)</li>
+                  <li><strong>Tools:</strong> Figma, Snagit, MS Word</li>
+                </ul>
+              </div>
             </div>
-            <div class="col-md-6">
-              <h5>UX Writing & Content Design</h5>
-              <ul>
-                <li><strong>Skills:</strong> UX Writing, Microcopy, Prompt Design, Content Design, UX Research, Wireframing, Prototyping, Accessibility (WCAG)</li>
-                <li><strong>Tools:</strong> Figma, Snagit, MS Word</li>
-              </ul>
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <h5>Technical Stack & AI</h5>
+                <ul>
+                  <li><strong>Languages:</strong> HTML, CSS, JavaScript, Markdown, TypeScript</li>
+                  <li><strong>Frameworks:</strong> React, Node.js, Next.js (concepts), Bootstrap</li>
+                  <li><strong>AI Workflow:</strong> GitHub Copilot, Gemini, DeepL, GPT, Cline</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5>Additional Skills & Languages</h5>
+                <ul>
+                  <li><strong>Content:</strong> SEO Optimization, Document Translation, AP Style</li>
+                  <li><strong>Software:</strong> Adobe Suite (InDesign, Illustrator, Acrobat), Madcap Flare</li>
+                  <li><strong>Languages:</strong> Fluent in Spanish, Intermediate in French</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="row mt-3">
-            <div class="col-md-6">
-              <h5>Technical Stack & AI</h5>
-              <ul>
-                <li><strong>Languages:</strong> HTML, CSS, JavaScript, Markdown, TypeScript</li>
-                <li><strong>Frameworks:</strong> React, Node.js, Next.js (concepts), Bootstrap</li>
-                <li><strong>AI Workflow:</strong> GitHub Copilot, Gemini, DeepL, GPT, Cline</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <h5>Additional Skills & Languages</h5>
-              <ul>
-                <li><strong>Content:</strong> SEO Optimization, Document Translation, AP Style</li>
-                <li><strong>Software:</strong> Adobe Suite (InDesign, Illustrator, Acrobat), Madcap Flare</li>
-                <li><strong>Languages:</strong> Fluent in Spanish, Intermediate in French</li>
-              </ul>
+
+          <!-- Mobile View: Accordion -->
+          <div class="d-md-none">
+            <div class="accordion" id="skillsAccordion">
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTechDocs">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechDocs" aria-expanded="false" aria-controls="collapseTechDocs">
+                    Technical & API Documentation
+                  </button>
+                </h2>
+                <div id="collapseTechDocs" class="accordion-collapse collapse" aria-labelledby="headingTechDocs" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li><strong>Methodologies:</strong> Docs-as-Code, API Documentation (REST, OpenAPI), MCP Integration, Information Architecture (IA), Process Documentation, Quickstarts, CI/CD</li>
+                      <li><strong>Tools:</strong> Git (GitHub, GitLab), Linux/CLI, Docker, VSCode, MS Word, Postman, Swagger, Confluence, Jira, Notion, Docusaurus, Algolia, i18n, Mermaid, JSON</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingUX">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUX" aria-expanded="false" aria-controls="collapseUX">
+                    UX Writing & Content Design
+                  </button>
+                </h2>
+                <div id="collapseUX" class="accordion-collapse collapse" aria-labelledby="headingUX" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li><strong>Skills:</strong> UX Writing, Microcopy, Prompt Design, Content Design, UX Research, Wireframing, Prototyping, Accessibility (WCAG)</li>
+                      <li><strong>Tools:</strong> Figma, Snagit, MS Word</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTechStack">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechStack" aria-expanded="false" aria-controls="collapseTechStack">
+                    Technical Stack & AI
+                  </button>
+                </h2>
+                <div id="collapseTechStack" class="accordion-collapse collapse" aria-labelledby="headingTechStack" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li><strong>Languages:</strong> HTML, CSS, JavaScript, Markdown, TypeScript</li>
+                      <li><strong>Frameworks:</strong> React, Node.js, Next.js (concepts), Bootstrap</li>
+                      <li><strong>AI Workflow:</strong> GitHub Copilot, Gemini, DeepL, GPT, Cline</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAddSkills">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAddSkills" aria-expanded="false" aria-controls="collapseAddSkills">
+                    Additional Skills & Languages
+                  </button>
+                </h2>
+                <div id="collapseAddSkills" class="accordion-collapse collapse" aria-labelledby="headingAddSkills" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li><strong>Content:</strong> SEO Optimization, Document Translation, AP Style</li>
+                      <li><strong>Software:</strong> Adobe Suite (InDesign, Illustrator, Acrobat), Madcap Flare</li>
+                      <li><strong>Languages:</strong> Fluent in Spanish, Intermediate in French</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
+        </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -199,37 +283,110 @@
         <div class="col-md-8 mx-auto">
           <h2 class="text-center mb-4">Relevant Experience</h2>
           <p class="text-center"><a href="Pedro Vega Resume.pdf" class="text-white">View Full Resume Here</a></p>
-          <div>
-            <h4>Technical Writer</h4>
-            <h5>Self-Employed | Remote | April 2024 - Present</h5>
-            <ul>
-              <li>Owned the full documentation lifecycle for developer-facing projects, delivering API references and SDK guides for cloud data routing architectures. Includes third-party observability integrations for Datadog log pipelines and Galileo LLM tracing.</li>
-              <li>Documented TypeScript SDK methods and logic for the Sui blockchain platform, producing quickstarts and walkthrough guides with working code examples.</li>
-              <li>Authored developer cookbooks and tutorials, including a comprehensive guide on setting up Postman mock servers to confirm REST API endpoints.</li>
-              <li>Managed OpenAPI specifications to document REST API endpoints to draft end-to-end API documentation architecture.</li>
-              <li>Integrated generative AI tools and Model Context Protocol (MCP) servers directly into a local CLI environment, connecting Vale, DeepL, and Figma to a Gemini CLI to automate linting, translation, and development workflows.</li>
-              <li>Engineered an advanced search architecture across custom HTML and Docusaurus sites by integrating Algolia and AskAI, delivering generative AI and semantic search capabilities for complex documentation.</li>
-            </ul>
+          <!-- Desktop View: Vertical List -->
+          <div class="d-none d-md-block">
+            <div>
+              <h4>Technical Writer</h4>
+              <h5>Self-Employed | Remote | April 2024 - Present</h5>
+              <ul>
+                <li>Owned the full documentation lifecycle for developer-facing projects, delivering API references and SDK guides for cloud data routing architectures. Includes third-party observability integrations for Datadog log pipelines and Galileo LLM tracing.</li>
+                <li>Documented TypeScript SDK methods and logic for the Sui blockchain platform, producing quickstarts and walkthrough guides with working code examples.</li>
+                <li>Authored developer cookbooks and tutorials, including a comprehensive guide on setting up Postman mock servers to confirm REST API endpoints.</li>
+                <li>Managed OpenAPI specifications to document REST API endpoints to draft end-to-end API documentation architecture.</li>
+                <li>Integrated generative AI tools and Model Context Protocol (MCP) servers directly into a local CLI environment, connecting Vale, DeepL, and Figma to a Gemini CLI to automate linting, translation, and development workflows.</li>
+                <li>Engineered an advanced search architecture across custom HTML and Docusaurus sites by integrating Algolia and AskAI, delivering generative AI and semantic search capabilities for complex documentation.</li>
+              </ul>
+            </div>
+            <hr>
+            <div>
+              <h4>UX Writer</h4>
+              <h5>Culangex | Remote | December 2024 - January 2026</h5>
+              <ul>
+                <li>Collaborated with cross-functional teams to co-author a comprehensive style guide that ensured consistent brand voice and met WCAG accessibility standards.</li>
+                <li>Partnered with the agile development team to manage UI text, error messages, and tooltips to ensure seamless content integration throughout the software development lifecycle.</li>
+                <li>Translated user-facing content for the Spanish localization team, positioning the product for launch in Spanish-speaking markets.</li>
+              </ul>
+            </div>
+            <hr>
+            <div>
+              <h4>Technical Writer</h4>
+              <h5>Felix Storch Inc. | The Bronx, NY | March 2022 - February 2024</h5>
+              <ul> 
+                <li>Managed the release cadence for 5 distinct consumer and medical hardware brands. Actively wrote and updated over 150 original and legacy manuals.</li>
+                <li>Designed and implemented new document templates, successfully reducing manual production times by 40%.</li>
+                <li>Improved product support and accessibility for LATAM markets by translating more than 25 technical documents into Spanish.</li>
+              </ul>
+            </div>
           </div>
-          <hr>
-          <div>
-            <h4>UX Writer</h4>
-            <h5>Culangex | Remote | December 2024 - January 2026</h5>
-            <ul>
-              <li>Collaborated with cross-functional teams to co-author a comprehensive style guide that ensured consistent brand voice and met WCAG accessibility standards.</li>
-              <li>Partnered with the agile development team to manage UI text, error messages, and tooltips to ensure seamless content integration throughout the software development lifecycle.</li>
-              <li>Translated user-facing content for the Spanish localization team, positioning the product for launch in Spanish-speaking markets.</li>
-            </ul>
-          </div>
-          <hr>
-          <div>
-            <h4>Technical Writer</h4>
-            <h5>Felix Storch Inc. | The Bronx, NY | March 2022 - February 2024</h5>
-            <ul> 
-              <li>Managed the release cadence for 5 distinct consumer and medical hardware brands. Actively wrote and updated over 150 original and legacy manuals.</li>
-              <li>Designed and implemented new document templates, successfully reducing manual production times by 40%.</li>
-              <li>Improved product support and accessibility for LATAM markets by translating more than 25 technical documents into Spanish.</li>
-            </ul>
+
+          <!-- Mobile View: Accordion -->
+          <div class="d-md-none">
+            <div class="accordion" id="experienceAccordion">
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingExp1">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp1" aria-expanded="false" aria-controls="collapseExp1">
+                    <div class="d-flex flex-column text-start">
+                      <span>Technical Writer</span>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Self-Employed | Apr 2024 - Present</small>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseExp1" class="accordion-collapse collapse" aria-labelledby="headingExp1" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li>Owned the full documentation lifecycle for developer-facing projects, delivering API references and SDK guides for cloud data routing architectures. Includes third-party observability integrations for Datadog log pipelines and Galileo LLM tracing.</li>
+                      <li>Documented TypeScript SDK methods and logic for the Sui blockchain platform, producing quickstarts and walkthrough guides with working code examples.</li>
+                      <li>Authored developer cookbooks and tutorials, including a comprehensive guide on setting up Postman mock servers to confirm REST API endpoints.</li>
+                      <li>Managed OpenAPI specifications to document REST API endpoints to draft end-to-end API documentation architecture.</li>
+                      <li>Integrated generative AI tools and Model Context Protocol (MCP) servers directly into a local CLI environment, connecting Vale, DeepL, and Figma to a Gemini CLI to automate linting, translation, and development workflows.</li>
+                      <li>Engineered an advanced search architecture across custom HTML and Docusaurus sites by integrating Algolia and AskAI, delivering generative AI and semantic search capabilities for complex documentation.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingExp2">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp2" aria-expanded="false" aria-controls="collapseExp2">
+                    <div class="d-flex flex-column text-start">
+                      <span>UX Writer</span>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Culangex | Dec 2024 - Jan 2026</small>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseExp2" class="accordion-collapse collapse" aria-labelledby="headingExp2" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li>Collaborated with cross-functional teams to co-author a comprehensive style guide that ensured consistent brand voice and met WCAG accessibility standards.</li>
+                      <li>Partnered with the agile development team to manage UI text, error messages, and tooltips to ensure seamless content integration throughout the software development lifecycle.</li>
+                      <li>Translated user-facing content for the Spanish localization team, positioning the product for launch in Spanish-speaking markets.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingExp3">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp3" aria-expanded="false" aria-controls="collapseExp3">
+                    <div class="d-flex flex-column text-start">
+                      <span>Technical Writer</span>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Felix Storch Inc. | Mar 2022 - Feb 2024</small>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseExp3" class="accordion-collapse collapse" aria-labelledby="headingExp3" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li>Managed the release cadence for 5 distinct consumer and medical hardware brands. Actively wrote and updated over 150 original and legacy manuals.</li>
+                      <li>Designed and implemented new document templates, successfully reducing manual production times by 40%.</li>
+                      <li>Improved product support and accessibility for LATAM markets by translating more than 25 technical documents into Spanish.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -404,6 +561,7 @@
     })();
 
   </script>
-  </body>
+    <script src="js/interactive.js"></script>
+</body>
 </html>
 

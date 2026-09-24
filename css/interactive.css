@@ -1,0 +1,46 @@
+/* Interactive Features extracted from index.html */
+.sample-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+@media (hover: hover) and (pointer: fine) {
+  .sample-card:hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* Particles Canvas */
+.particles-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-section, .bg-custom-dark:not(.navbar) {
+  position: relative;
+  overflow: hidden;
+}
+.hero-section > *:not(.particles-canvas), .bg-custom-dark:not(.navbar) > *:not(.particles-canvas) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Scroll Progress Bar */
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.progress-bar {
+  height: 4px;
+  background: #d4d1ce; /* homepage tan */
+  width: 0%;
+  transition: width 0.1s;
+}

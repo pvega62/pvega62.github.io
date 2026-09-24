@@ -26,7 +26,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/styles.css?v=2">
+  <link rel="stylesheet" href="css/styles.css?v=5">
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="preconnect" href="https://XMDO29FL1L-dsn.algolia.net" crossorigin />
   <!-- DocSearch CSS -->
@@ -38,10 +38,96 @@
       display: none !important;
     }
   </style>
+  <style>
+    /* ===== Interactive Feature Styles ===== */
+
+    /* Scroll Progress Bar */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #d4d1ce, #e8c47c, #d4d1ce);
+      background-size: 200% 100%;
+      animation: progress-shimmer 2s ease-in-out infinite;
+      z-index: 9999;
+      width: 0%;
+      pointer-events: none;
+    }
+    @keyframes progress-shimmer {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    /* Typewriter Font */
+    .hero-typewriter {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    /* Scroll Reveal */
+    .reveal-element {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-element.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 3D Card Tilt Enhancement */
+    .sample-card {
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .sample-card:hover {
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    /* Particles Canvas */
+    .particles-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-section, .bg-custom-dark:not(.navbar) {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-section > .container-fluid, .bg-custom-dark > .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* 3D TARDIS WebGL Canvas */
+    #tardis-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0; /* Strictly behind all headlines, cards, badges, and text */
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+    #tardis-canvas.active {
+      opacity: 0.70; /* Soft, atmospheric background presence */
+    }
+  </style>
 
 </head>
 
 <body>
+  <div id="scroll-progress" class="bg-custom-dark position-fixed top-0 start-0" style="height: 4px; z-index: 9999; transition: width 0.1s;"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
@@ -167,10 +253,11 @@
 
   <main id="main-content" tabindex="-1">
     <div class="hero-section">
+      <canvas class="particles-canvas" aria-hidden="true"></canvas>
       <div class="container-fluid px-4">
         <div class="text-center">
-          <h1 class="display-4 fw-bold">Technical Writer. UX Writer. Journalist.</h1>
-          <p class="lead fs-3">I just really like words.</p>
+          <h1 class="display-4 fw-bold">Technical Writer. UX Writer. Content Designer.</h1>
+          <p class="lead fs-3 hero-typewriter">I just really like words.</p>
           <div class="mt-4 mb-4">
             <a href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3">
               <img src="images/linkedin-button.svg" alt="LinkedIn" width="52" height="52">
@@ -214,7 +301,7 @@
   <div class="light-section py-5">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 text-center mb-4 mb-md-0">
           <div class="ratio ratio-16x9">
             <iframe title="Cloud Data Pipeline Documentation"
               src="https://pvega62.github.io/software/docs/category/cloud-data-pipeline-documentation"
@@ -238,15 +325,18 @@
       </div>
     </div>
   </div>
-  <!-- Selected Works Section -->
+    <!-- Selected Works Section -->
   <div id="selected-works" class="py-5 bg-custom-dark">
+    <canvas class="particles-canvas" aria-hidden="true"></canvas>
     <div class="container">
       <h2 class="text-center text-white mb-5">Selected Works</h2>
-      <!-- Row 1 -->
+      
+      <!-- Combined Row for all works -->
       <div class="row g-4 justify-content-center">
+      
         <!-- TypeScript SDK Sui Documentation Sample card -->
         <div class="col-md-4">
-          <div class="card h-100 text-center sample-card" role="button" tabindex="0"
+          <div class="card h-100 text-center sample-card" tabindex="0"
             data-href="https://pvega62.github.io/software/docs/category/typescript-sdk-sui-blockchain-documentation"
             aria-label="Open TypeScript SDK Sui Documentation Sample">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
@@ -262,9 +352,10 @@
             </div>
           </div>
         </div>
+
         <!-- Stripe API card -->
         <div class="col-md-4">
-          <div class="card text-center sample-card h-100" role="button" tabindex="0"
+          <div class="card text-center sample-card h-100" tabindex="0"
             data-href="https://pvega62.github.io/software/docs/category/stripe-api-documentation"
             aria-label="Open Stripe API Documentation Sample">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
@@ -282,9 +373,10 @@
             </div>
           </div>
         </div>
+        
         <!-- UX Writing Challenge card -->
         <div class="col-md-4">
-          <div class="card h-100 text-center sample-card" role="button" tabindex="0"
+          <div class="card h-100 text-center sample-card" tabindex="0"
             data-pdf="samples/ux-writing/ux-writing-challenge-15.pdf" aria-label="Open UX Writing Challenge sample">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
               <div class="ratio ratio-4x3 mb-3">
@@ -298,17 +390,10 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- Row 2 - tan section -->
-  <div class="py-5 light-section">
-    <div class="container">
-      <!-- Row 2 -->
-      <div id="row-middle" class="row g-4 justify-content-center">
+
         <!-- InnoGear Aromatherapy Diffuser card -->
         <div class="col-md-4">
-          <div class="card h-100 text-center sample-card" role="button" tabindex="0"
+          <div class="card h-100 text-center sample-card" tabindex="0"
             data-pdf="samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf"
             aria-label="Open InnoGear Aromatherapy Diffuser User Manual">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
@@ -324,9 +409,10 @@
             </div>
           </div>
         </div>
+
         <!-- Vaccine Refrigerator User Manual card -->
         <div class="col-md-4">
-          <div class="card h-100 text-center sample-card" role="button" tabindex="0"
+          <div class="card h-100 text-center sample-card" tabindex="0"
             data-pdf="samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf"
             aria-label="Open ACMED Vaccine Refrigerator User Manual">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
@@ -341,9 +427,10 @@
             </div>
           </div>
         </div>
+
         <!-- Recordkeeping card -->
         <div class="col-md-4">
-          <div class="card h-100 text-center sample-card" role="button" tabindex="0"
+          <div class="card h-100 text-center sample-card" tabindex="0"
             data-href="https://pvega62.github.io/Recordkeeping/"
             aria-label="Open Recordkeeping documentation sample">
             <div class="card-body text-center">
@@ -357,13 +444,11 @@
                         src: url('fonts/FantiqueFourr.woff') format('woff'),
                           url('fonts/FantiqueFourr.ttf') format('truetype');
                       }
-
                       .st0 {
                         fill: #fff;
                         font-family: 'FantiqueFourr';
                         font-size: 56px;
                       }
-
                       .st1 {
                         fill: #1f3850;
                         stroke: #1f3850;
@@ -378,7 +463,6 @@
                     <text class="st0" transform="translate(5.17 98.13)">
                       <tspan x="0" y="0">Recordkeeping</tspan>
                     </text>
-                    <text />
                   </g>
                 </svg>
               </div>
@@ -388,17 +472,10 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- Row 3 - dark section -->
-  <div class="py-5 bg-custom-dark">
-    <div class="container">
-      <!-- Row 3 -->
-      <div class="row g-4 justify-content-center">
+
         <!-- Education in the Dominican Republic card -->
         <div class="col-md-4">
-          <div class="card h-100 text-center sample-card" role="button" tabindex="0"
+          <div class="card h-100 text-center sample-card" tabindex="0"
             data-pdf="samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf"
             aria-label="Open Education in the Dominican Republic article">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
@@ -413,9 +490,10 @@
             </div>
           </div>
         </div>
+
         <!-- Breast Milk Freezer User Manual card -->
         <div class="col-md-4">
-          <div class="card h-100 text-center sample-card" role="button" tabindex="0"
+          <div class="card h-100 text-center sample-card" tabindex="0"
             data-pdf="samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf"
             aria-label="Open Breast Milk Freezer User Manual">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
@@ -430,9 +508,10 @@
             </div>
           </div>
         </div>
+
         <!-- Frost-Free Warming and Cooling Drawer card -->
         <div class="col-md-4">
-          <div class="card h-100 text-center sample-card" role="button" tabindex="0"
+          <div class="card h-100 text-center sample-card" tabindex="0"
             data-pdf="samples/technical-writing/hardware/warming-and-cooling-drawer.pdf"
             aria-label="Open Frost-Free Warming and Cooling Drawer sample">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
@@ -447,6 +526,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -461,7 +541,7 @@
     crossorigin="anonymous"></script>
 
   <!-- Shared PDF viewer -->
-  <script src="js/pdf-viewer.js"></script>
+  <script src="js/pdf-viewer.js?v=2"></script>
   <script src="js/sticky-nav.js"></script>
   <!-- DocSearch JS -->
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
@@ -579,8 +659,360 @@
       closeObserver.observe(document.body, { childList: true, subtree: true });
     })();
 
+    // ===== Interactive Features =====
+
+    // 1. Scroll Progress Bar
+    (function () {
+      var bar = document.querySelector('.scroll-progress');
+      if (!bar) return;
+      window.addEventListener('scroll', function () {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.width = (scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0) + '%';
+      }, { passive: true });
+    })();
+
+    // 2. Typewriter Effect on Hero Heading
+    (function () {
+      var el = document.querySelector('.hero-typewriter');
+      if (!el) return;
+      var text = el.textContent;
+      // Lock the height to prevent layout shift
+      var rect = el.getBoundingClientRect();
+      el.style.minHeight = rect.height + 'px';
+      el.textContent = '';
+      var i = 0;
+      function type() {
+        if (i < text.length) {
+          el.textContent += text[i];
+          i++;
+          // Slowed down animation for more impact
+          setTimeout(type, 100 + Math.random() * 80);
+        }
+      }
+      setTimeout(type, 600);
+    })();
+
+    // 3. Scroll-Reveal Animations
+    (function () {
+      var targets = document.querySelectorAll(
+        '.col-md-4, .col-md-6.inno-text, .col-md-6.text-center, #selected-works > .container > h2'
+      );
+      targets.forEach(function (el) {
+        el.classList.add('reveal-element');
+        // Stagger siblings within the same row
+        var siblings = el.parentElement.querySelectorAll('.col-md-4, .col-md-6');
+        var sibIdx = Array.from(siblings).indexOf(el);
+        if (sibIdx >= 0) {
+          el.style.transitionDelay = (sibIdx * 0.12) + 's';
+        }
+      });
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      targets.forEach(function (el) { observer.observe(el); });
+    })();
+
+    // 4. 3D Parallax Card Tilt (desktop / pointer devices only)
+    (function () {
+      if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      document.querySelectorAll('.sample-card').forEach(function (card) {
+        card.addEventListener('mousemove', function (e) {
+          var rect = card.getBoundingClientRect();
+          var x = e.clientX - rect.left;
+          var y = e.clientY - rect.top;
+          var rotateX = ((y - rect.height / 2) / (rect.height / 2)) * -6;
+          var rotateY = ((x - rect.width / 2) / (rect.width / 2)) * 6;
+          card.style.transform = 'perspective(800px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale(1.03)';
+          card.style.transition = 'transform 0.1s ease-out, box-shadow 0.3s ease';
+        });
+        card.addEventListener('mouseleave', function () {
+          card.style.transform = 'perspective(800px) rotateX(0) rotateY(0) scale(1)';
+          card.style.transition = 'transform 0.45s ease, box-shadow 0.45s ease';
+        });
+      });
+    })();
+
+    // 5. Constellations managed globally via js/interactive.js
+
+    // 6. TARDIS 3D Easter Egg (WebGL / Three.js)
+    // Three.js integration loaded as ES module below
+
   </script>
-</body>
+  <script src="js/interactive.js"></script>
+  <!-- 3D TARDIS WebGL Implementation (Three.js UMD) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script>
+    (function () {
+      var heroSection = document.querySelector('.hero-section');
+      if (!heroSection) return;
+
+      // 1. Create WebGL canvas
+      var canvas = document.createElement('canvas');
+      canvas.id = 'tardis-canvas';
+      canvas.setAttribute('aria-hidden', 'true');
+      heroSection.appendChild(canvas);
+
+      // 2. Scene, Camera, Renderer
+      var scene = new THREE.Scene();
+      var width = heroSection.offsetWidth || window.innerWidth;
+      var height = heroSection.offsetHeight || 500;
+      var camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 1000);
+      camera.position.set(0, 0, 32);
+
+      var renderer = new THREE.WebGLRenderer({
+        canvas: canvas,
+        alpha: true,
+        antialias: true,
+        powerPreference: 'high-performance'
+      });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+      renderer.setSize(width, height);
+      if (renderer.outputEncoding !== undefined) {
+        renderer.outputEncoding = THREE.sRGBEncoding;
+      }
+
+      // 3. Balanced Muted Space Lighting (Natural neutral light, zero color pollution)
+      var ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+      scene.add(ambientLight);
+
+      var keyLight = new THREE.DirectionalLight(0xffffff, 0.85);
+      keyLight.position.set(12, 16, 20);
+      scene.add(keyLight);
+
+      var rimLight = new THREE.DirectionalLight(0x445566, 0.4);
+      rimLight.position.set(-15, -10, -12);
+      scene.add(rimLight);
+
+      // Soft top lantern beacon light
+      var beaconLight = new THREE.PointLight(0xfffaea, 0, 15);
+
+      // Create glowing halo texture for flashing lantern beacon
+      function createGlowTexture() {
+        var c = document.createElement('canvas');
+        c.width = 64;
+        c.height = 64;
+        var ctx = c.getContext('2d');
+        var g = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
+        g.addColorStop(0, 'rgba(255, 255, 255, 1)');
+        g.addColorStop(0.2, 'rgba(235, 250, 255, 0.95)');
+        g.addColorStop(0.5, 'rgba(180, 230, 255, 0.4)');
+        g.addColorStop(1, 'rgba(0, 0, 0, 0)');
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, 64, 64);
+        return new THREE.CanvasTexture(c);
+      }
+
+      var glowSprite = new THREE.Sprite(new THREE.SpriteMaterial({
+        map: createGlowTexture(),
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false
+      }));
+
+      // 4. Model container
+      var tardisGroup = new THREE.Group();
+      scene.add(tardisGroup);
+
+      var tardisMesh = null;
+      var lampMesh = null;
+      var isFlying = false;
+      var flightStartTime = 0;
+      var flightDuration = 11000; // 11 seconds per flight
+      var animFrameId = null;
+
+      var loader = new THREE.GLTFLoader();
+      loader.load(
+        'images/tardis.glb?v=' + Date.now(),
+        function (gltf) {
+          tardisMesh = gltf.scene;
+
+          // Convert sRGB hex codes to Linear space for Three.js sRGBEncoding pipeline
+          var pantoneBlue = new THREE.Color('#003865').convertSRGBToLinear();
+          var windowCyan = new THREE.Color('#e0f7fa').convertSRGBToLinear();
+          var darkTrim = new THREE.Color('#111111').convertSRGBToLinear();
+
+          tardisMesh.traverse(function (child) {
+            if (child.isMesh && child.material) {
+              child.material = child.material.clone();
+              var matName = child.material.name || '';
+              var meshName = child.name || '';
+
+              // 1. TARDIS Main Body (Pantone 2955 C: #003865)
+              if (
+                matName === 'Material.002' ||
+                matName === 'Material.003' ||
+                matName === 'Material.004' ||
+                meshName.indexOf('Cube_Material003') !== -1 ||
+                meshName.indexOf('Cube_Material002') !== -1 ||
+                meshName.indexOf('Cube_Material004') !== -1
+              ) {
+                child.material.color.copy(pantoneBlue);
+                child.material.emissive.set(0x000000);
+                child.material.roughness = 0.65;
+                child.material.metalness = 0.0;
+              }
+              // 2. Windows & Sign Text (Soft cool cyan-white: #e0f7fa)
+              else if (matName === 'Material.001' || meshName.indexOf('Material001') !== -1) {
+                child.material.color.copy(windowCyan);
+                child.material.emissive.set(0x000000);
+                child.material.roughness = 0.45;
+                child.material.metalness = 0.0;
+              }
+              // 3. Top Roof Lantern Lamp Glass Bulb (Cube_Material007_0)
+              else if (meshName.indexOf('Cube_Material007') !== -1) {
+                lampMesh = child;
+                child.material = new THREE.MeshBasicMaterial({ color: 0xffffff });
+              }
+              // 4. Door Phone Sign Plate & Details
+              else if (meshName.indexOf('Cube_Material005') !== -1) {
+                child.material.color.copy(windowCyan);
+                child.material.emissive.set(0x000000);
+                child.material.roughness = 0.5;
+              }
+              // 5. Sign Backing & Door Phone Lettering
+              else {
+                child.material.color.copy(darkTrim);
+                child.material.emissive.set(0x000000);
+                child.material.roughness = 0.8;
+                child.material.metalness = 0.0;
+              }
+
+              child.material.needsUpdate = true;
+            }
+          });
+
+          // Center geometry pivot inside tardisGroup
+          var box = new THREE.Box3().setFromObject(tardisMesh);
+          var center = box.getCenter(new THREE.Vector3());
+          var size = box.getSize(new THREE.Vector3());
+
+          tardisMesh.position.set(-center.x, -center.y, -center.z);
+          tardisGroup.add(tardisMesh);
+
+          // Position beacon light & halo sprite directly at top lantern (y = 1.35)
+          beaconLight.position.set(0, 1.35, 0);
+          tardisGroup.add(beaconLight);
+
+          glowSprite.position.set(0, 1.35, 0);
+          glowSprite.scale.set(0.6, 0.6, 1);
+          tardisGroup.add(glowSprite);
+
+          // Scale to match subtle ~75-85px profile
+          var maxDim = Math.max(size.x, size.y, size.z);
+          var targetScale = 3.8 / maxDim;
+          tardisGroup.scale.set(targetScale, targetScale, targetScale);
+
+          tardisGroup.visible = false;
+
+          // Launch immediately on load
+          setTimeout(triggerFlight, 10000);
+
+          // Repeat every 80 seconds
+          setInterval(triggerFlight, 80000);
+        },
+        undefined,
+        function (err) {
+          console.warn('TARDIS 3D model could not be loaded:', err);
+        }
+      );
+
+      function resize() {
+        if (!heroSection || !renderer || !camera) return;
+        var w = heroSection.offsetWidth;
+        var h = heroSection.offsetHeight;
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        renderer.setSize(w, h);
+      }
+      window.addEventListener('resize', resize);
+
+      function triggerFlight() {
+        if (!tardisMesh || isFlying) return;
+        isFlying = true;
+        flightStartTime = performance.now();
+        tardisGroup.visible = true;
+        canvas.classList.add('active');
+
+        // Elevated flight path: flies across the upper starry background above the headline
+        var yOffset = 2.6 + (Math.random() - 0.5) * 0.8;
+
+        function animate(now) {
+          var elapsed = now - flightStartTime;
+          var p = Math.min(elapsed / flightDuration, 1);
+
+          var vFov = (camera.fov * Math.PI) / 180;
+          var visH = 2 * Math.tan(vFov / 2) * camera.position.z;
+          var visW = visH * camera.aspect;
+
+          // 1. Position: Fly smoothly across upper hero sky
+          var startX = -visW * 0.6;
+          var endX = visW * 0.6;
+          tardisGroup.position.x = startX + (endX - startX) * p;
+
+          // Gentle vertical drift in the upper sky (stays above text)
+          tardisGroup.position.y = yOffset + Math.sin(p * Math.PI) * 0.9;
+
+          // 3D Depth: graceful background arc
+          tardisGroup.position.z = -7 + Math.sin(p * Math.PI) * 3;
+
+          // 2. Rotation: Smooth spin around its own vertical axis
+          tardisGroup.rotation.y = p * Math.PI * 16;
+
+          // Subtle natural flight bank
+          tardisGroup.rotation.z = -0.16 + Math.sin(p * Math.PI * 3) * 0.03;
+          tardisGroup.rotation.x = Math.sin(p * Math.PI * 2) * 0.05;
+
+          // 3. Soft, non-distracting synchronized flash in rhythm with spin
+          var pulse = Math.pow(Math.max(0, Math.cos(tardisGroup.rotation.y)), 2.5);
+
+          // Subtle bulb pulse
+          if (lampMesh && lampMesh.material) {
+            var b = 0.2 + pulse * 0.65;
+            lampMesh.material.color.setRGB(b, b, b);
+          }
+
+          // Soft halo flare
+          if (glowSprite) {
+            var s = 0.35 + pulse * 0.8;
+            glowSprite.scale.set(s, s, 1);
+            glowSprite.material.opacity = pulse * 0.65;
+          }
+
+          // Gentle roof light
+          if (beaconLight) {
+            beaconLight.intensity = pulse * 1.8;
+          }
+
+          renderer.render(scene, camera);
+
+          if (p < 1) {
+            animFrameId = requestAnimationFrame(animate);
+          } else {
+            isFlying = false;
+            tardisGroup.visible = false;
+            canvas.classList.remove('active');
+            renderer.clear();
+          }
+        }
+
+        animFrameId = requestAnimationFrame(animate);
+      }
+
+      window.triggerTardis = triggerFlight;
+
+      heroSection.addEventListener('click', function (e) {
+        if (e.target.closest('a, button, input, textarea')) return;
+        triggerFlight();
+      });
+    })();
+  </script></body>
 
 </html>
 

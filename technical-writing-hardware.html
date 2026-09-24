@@ -35,7 +35,8 @@
       display: none !important;
     }
   </style>
-    </head>
+      <link href="css/interactive.css" rel="stylesheet"/>
+</head>
 <body>
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -138,19 +139,20 @@
   
   <main id="main-content" tabindex="-1">
   <div class="hero-section">
-    <div class="container-fluid px-4">
-      <div class="text-center">
-  <h1 class="display-4 fw-bold text-white">Hardware Technical Writing</h1>
+<div class="container-fluid px-4">
+<div class="text-center">
+<h1 class="display-4 fw-bold text-white">Hardware Technical Writing</h1>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center intro-text text-white">
+<p>This page showcases a diverse range of hardware documentation, from medical-grade refrigeration units to household appliances and consumer electronics. This collection primarily features my work as a Technical Writer for Felix Storch, Inc. Covering brands like Summit, EQTemp, and MOMCUBE, the samples include user manuals, installation guides, and ADA-compliance instructions.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-      <div class="row justify-content-center">
-          <div class="col-lg-8 text-center intro-text">
-          <p class="text-white">This page showcases a diverse range of hardware documentation, from medical-grade refrigeration units to household appliances and consumer electronics. This collection primarily features my work as a Technical Writer for Felix Storch, Inc. Covering brands like Summit, EQTemp, and MOMCUBE, the samples include user manuals, installation guides, and ADA-compliance instructions.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="light-section py-5" id="vaccine-section">
+    <!-- light band with cards -->
+<div class="light-section py-5" id="vaccine-section">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 text-center">
@@ -172,58 +174,11 @@
     <!-- dark band with cards -->
   <div class="py-5 bg-custom-dark">
       <div class="container">
-        <div class="text-content-heading mb-4">
-        </div>
-
-        <div class="row g-4">
+        <!-- Single unified row: 1 continuous carousel on mobile, reversed pyramid (2 -> 3 -> 3) on desktop -->
+        <div class="row g-4 justify-content-center">
+          <!-- 1. Frost-Free Warming and Cooling Drawer -->
           <div class="col-md-4">
-            <div class="card h-100 text-center card-border sample-card" role="button" tabindex="0" data-pdf="samples/technical-writing/hardware/handle-installation-instructions-FFBF279SSX-H72.pdf" aria-label="Open Handle Installation Instruction Sheet">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="Handle Installation Instruction Sheet" src="samples/technical-writing/hardware/handle-installation-instructions-FFBF279SSX-H72.pdf" class="rounded" loading="lazy"></iframe></div>
-              <div class="card-body">
-                <h3 class="card-title fw-bold text-black"> Handle Installation Instruction Sheet</h3>
-                <p class="card-text text-black text-center">Step-by-step installation guide for a stainless steel appliance handle, including required tools and mounting procedures.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100 text-center card-border sample-card" role="button" tabindex="0" data-pdf="samples/technical-writing/hardware/SEH1536SSADA-User-Manual.pdf" aria-label="Open Instruction Manual for ADA-Compliant Range Hoods ">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="Instruction Manual for ADA-Compliant Range Hoods" src="samples/technical-writing/hardware/SEH1536SSADA-User-Manual.pdf" class="rounded" loading="lazy"></iframe></div>
-              <div class="card-body">
-                <h3 class="card-title fw-bold text-black">Instruction Manual for ADA-Compliant Range Hoods</h3>
-                <p class="card-text text-black">Essential user manual for an ADA-compliant range hood, featuring operating instructions, filter replacement guides, and cleaning tips.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100 text-center card-border sample-card" role="button" tabindex="0" data-pdf="samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf" aria-label="Open Breast Milk Freezer User Manual">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="Breast Milk Freezer User Manual" src="samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf" class="rounded" loading="lazy"></iframe></div>
-              <div class="card-body">
-                <h3 class="card-title fw-bold text-black">Breast Milk Freezer</h3>
-                <p class="card-text text-black text-center">Comprehensive user manual for a medical-grade breast milk freezer, covering safety protocols, installation, and temperature management.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="p-5 bg-tan">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100 text-center card-border sample-card" role="button" tabindex="0" data-pdf="samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf" aria-label="Open InnoGear Aromatherapy Diffuser User Manual">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="InnoGear Aromatherapy Diffuser User Manual" src="samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf" class="rounded" loading="lazy"></iframe></div>
-              <div class="card-body">
-                <h3 class="card-title fw-bold text-black">InnoGear Aromatherapy Diffuser User Manual</h3>
-                <p class="card-text text-black">Identified and resolved translation murkiness and organizational issues in an existing guide. Rewrote instructions to be more intuitive and optimized the layout for better user comprehension.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100 text-center card-border sample-card" role="button" tabindex="0" data-pdf="samples/technical-writing/hardware/warming-and-cooling-drawer.pdf" aria-label="Open Frost-Free Warming and Cooling Drawer">
+            <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="samples/technical-writing/hardware/warming-and-cooling-drawer.pdf" aria-label="Open Frost-Free Warming and Cooling Drawer">
               <div class="ratio ratio-4x3 mb-3"><iframe title="Frost-Free Warming and Cooling Drawer" src="samples/technical-writing/hardware/warming-and-cooling-drawer.pdf" class="rounded" loading="lazy"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">Frost-Free Warming and Cooling Drawer User Manual</h3>
@@ -232,8 +187,56 @@
             </div>
           </div>
 
+          <!-- 2. Breast Milk Freezer -->
           <div class="col-md-4">
-            <div class="card h-100 text-center card-border sample-card" role="button" tabindex="0" data-pdf="samples/technical-writing/hardware/remote-switch-installation-guide.pdf" aria-label="Open Remote Switch Installation for ADA Compliant Wall Mounted Range Hoods">
+            <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf" aria-label="Open Breast Milk Freezer User Manual">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Breast Milk Freezer User Manual" src="samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">Breast Milk Freezer</h3>
+                <p class="card-text text-black text-center">Comprehensive user manual for a medical-grade breast milk freezer, covering safety protocols, installation, and temperature management.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Line break for desktop/tablet only: forces 2 centered cards on top, 0 on mobile so all 8 swipe in 1 carousel -->
+          <div class="w-100 d-none d-md-block"></div>
+
+          <!-- 3. Handle Installation Instruction Sheet -->
+          <div class="col-md-4">
+            <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="samples/technical-writing/hardware/handle-installation-instructions-FFBF279SSX-H72.pdf" aria-label="Open Handle Installation Instruction Sheet">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Handle Installation Instruction Sheet" src="samples/technical-writing/hardware/handle-installation-instructions-FFBF279SSX-H72.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">Handle Installation Instruction Sheet</h3>
+                <p class="card-text text-black text-center">Step-by-step installation guide for a stainless steel appliance handle, including required tools and mounting procedures.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Instruction Manual for ADA-Compliant Range Hoods -->
+          <div class="col-md-4">
+            <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="samples/technical-writing/hardware/SEH1536SSADA-User-Manual.pdf" aria-label="Open Instruction Manual for ADA-Compliant Range Hoods">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Instruction Manual for ADA-Compliant Range Hoods" src="samples/technical-writing/hardware/SEH1536SSADA-User-Manual.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">Instruction Manual for ADA-Compliant Range Hoods</h3>
+                <p class="card-text text-black">Essential user manual for an ADA-compliant range hood, featuring operating instructions, filter replacement guides, and cleaning tips.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. InnoGear Aromatherapy Diffuser User Manual -->
+          <div class="col-md-4">
+            <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf" aria-label="Open InnoGear Aromatherapy Diffuser User Manual">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="InnoGear Aromatherapy Diffuser User Manual" src="samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">InnoGear Aromatherapy Diffuser User Manual</h3>
+                <p class="card-text text-black">Identified and resolved translation murkiness and organizational issues in an existing guide. Rewrote instructions to be more intuitive and optimized the layout for better user comprehension.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Remote Switch Installation for ADA Compliant Wall Mounted Range Hoods -->
+          <div class="col-md-4">
+            <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="samples/technical-writing/hardware/remote-switch-installation-guide.pdf" aria-label="Open Remote Switch Installation for ADA Compliant Wall Mounted Range Hoods">
               <div class="ratio ratio-4x3 mb-3"><iframe title="Remote Switch Installation for ADA Compliant Wall Mounted Range Hoods" src="samples/technical-writing/hardware/remote-switch-installation-guide.pdf" class="rounded" loading="lazy"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">Remote Switch Installation for ADA Compliant Wall Mounted Range Hoods</h3>
@@ -241,16 +244,10 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-  <!-- final dark band -->
-    <div class="bg-custom-dark py-5">
-      <div class="container">
-        <div class="row g-4 justify-content-center">
+          <!-- 7. ADA Conversion (ADRD18H34) -->
           <div class="col-md-4">
-            <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="samples/technical-writing/hardware/ada-conversion-ADRD18H34.pdf" aria-label="Open ADA Conversion (ADRD18H34)">
+            <div class="card h-100 text-center card-border sample-card bg-light" tabindex="0" data-pdf="samples/technical-writing/hardware/ada-conversion-ADRD18H34.pdf" aria-label="Open ADA Conversion (ADRD18H34)">
               <div class="ratio ratio-4x3 mb-3"><iframe title="ADA Conversion (ADRD18H34)" src="samples/technical-writing/hardware/ada-conversion-ADRD18H34.pdf" class="rounded" loading="lazy"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">ADA Conversion (ADRD18H34)</h3>
@@ -259,8 +256,9 @@
             </div>
           </div>
 
+          <!-- 8. PNR Installation Instructions -->
           <div class="col-md-4">
-            <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="samples/technical-writing/hardware/pnr-instructions.pdf" aria-label="Open PNR Instructions">
+            <div class="card h-100 text-center card-border sample-card bg-light" tabindex="0" data-pdf="samples/technical-writing/hardware/pnr-instructions.pdf" aria-label="Open PNR Instructions">
               <div class="ratio ratio-4x3 mb-3"><iframe title="PNR Instructions" src="samples/technical-writing/hardware/pnr-instructions.pdf" class="rounded" loading="lazy"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">PNR Installation Instructions</h3>
@@ -270,27 +268,29 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- fun one -->
+  </div>
+
+  <!-- fun one -->
     <div class="py-3 bg-tan">
       <div class="container text-center">
-        <p class="text-color-dark text fs-4 mb-0">And for funsies&hellip;</p>
+        <p class="text-color-dark text fs-4 mb-0"><b>And for funsies&hellip;</b></p>
       </div>
     </div>
     <div class="bg-custom-dark">
-    <div class="container py-5">
+      <div class="container py-5">
         <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="samples/technical-writing/hardware/bat-pole-project.pdf" aria-label="Open Instant Wardrobe Changing Sliding Pole Installation Guide">
-                    <div class="ratio ratio-4x3 mb-3"><iframe title="Instant Wardrobe Changing Sliding Pole Installation Guide" src="samples/technical-writing/hardware/bat-pole-project.pdf" class="rounded" loading="lazy"></iframe></div>
-                    <div class="card-body">
-                      <h3 class="card-title fw-bold text-black">Instant Wardrobe Changing Sliding Pole Installation Guide</h3>
-                      <p class="card-text text-black text-center">Detailed installation guide for an instant wardrobe changing sliding pole from Wayne Enterprises.</p>
-                      <p class="text-black text-center">As seen on TV! In <i>Batman (1966).</i></p>
-                    </div>
-                </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="samples/technical-writing/hardware/bat-pole-project.pdf" aria-label="Open Instant Wardrobe Changing Sliding Pole Installation Guide">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Instant Wardrobe Changing Sliding Pole Installation Guide" src="samples/technical-writing/hardware/bat-pole-project.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">Instant Wardrobe Changing Sliding Pole Installation Guide</h3>
+                <p class="card-text text-black text-center">Detailed installation guide for an instant wardrobe changing sliding pole from Wayne Enterprises.</p>
+                <p class="text-black text-center">As seen on TV! In <i>Batman (1966).</i></p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
   </main>
 <footer>
@@ -299,7 +299,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- Shared PDF viewer -->
-    <script src="js/pdf-viewer.js"></script>
+    <script src="js/pdf-viewer.js?v=1790224597970"></script>
     <script src="js/sticky-nav.js"></script>
     <script src="js/page-specific.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
@@ -418,5 +418,6 @@
     })();
 
   </script>
-  </body>
+    <script src="js/interactive.js"></script>
+</body>
   </html>
