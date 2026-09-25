@@ -556,11 +556,19 @@
     frame();
   });
 })();
-// Carousel Touch Swipe Support
+// 1. Bootstrap Carousel Touch Swipe & Infinite Wrap Support
 (function() {
-  document.addEventListener('DOMContentLoaded', function() {
+  function initBootstrapCarousels() {
     var carousels = document.querySelectorAll('.carousel');
     carousels.forEach(function(carousel) {
+      if (carousel.__swipeInitialized) return;
+      carousel.__swipeInitialized = true;
+
+      // Ensure Bootstrap's internal wrap option is explicitly true
+      if (typeof bootstrap !== 'undefined' && bootstrap.Carousel) {
+        bootstrap.Carousel.getOrCreateInstance(carousel, { wrap: true });
+      }
+
       var touchStartX = 0;
       var touchEndX = 0;
       
@@ -578,14 +586,225 @@
         if (touchEndX < touchStartX - swipeThreshold) {
           // swipe left -> next
           var nextBtn = carousel.querySelector('.carousel-control-next');
-          if (nextBtn) nextBtn.click();
+          if (nextBtn) {
+            nextBtn.click();
+          } else if (typeof bootstrap !== 'undefined' && bootstrap.Carousel) {
+            var inst = bootstrap.Carousel.getInstance(carousel);
+            if (inst) inst.next();
+          }
         }
         if (touchEndX > touchStartX + swipeThreshold) {
           // swipe right -> prev
           var prevBtn = carousel.querySelector('.carousel-control-prev');
-          if (prevBtn) prevBtn.click();
+          if (prevBtn) {
+            prevBtn.click();
+          } else if (typeof bootstrap !== 'undefined' && bootstrap.Carousel) {
+            var inst = bootstrap.Carousel.getInstance(carousel);
+            if (inst) inst.prev();
+          }
         }
       }
     });
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBootstrapCarousels);
+  } else {
+    initBootstrapCarousels();
+  }
+})();
+
+// 2. Mobile Infinite Looping Carousels for Card Rows (.py-5 .row.g-4.justify-content-center)
+(function() {
+  function setupInfiniteRow(carouselContainer) {
+    if (!carouselContainer || carouselContainer.__infiniteInitialized) return;
+    carouselContainer.__infiniteInitialized = true;
+
+    var originalCards = Array.from(carouselContainer.children).filter(function (el) {
+      return el.classList.contains('col-md-4');
+    });
+    if (originalCards.length < 2) return;
+
+    var isTouchActive = false;
+    var checkTimeout = null;
+    var leftClones = [];
+    var rightClones = [];
+
+    // 1. Create left clones (copies of all original cards to prepend)
+    originalCards.forEach(function (card) {
+      var clone = card.cloneNode(true);
+      clone.classList.add('carousel-clone');
+      clone.classList.remove('reveal-element');
+      clone.classList.add('revealed');
+      clone.style.opacity = '1';
+      clone.style.transform = 'none';
+      clone.setAttribute('aria-hidden', 'true');
+      clone.setAttribute('tabindex', '-1');
+      clone.querySelectorAll('[id]').forEach(function (el) { el.removeAttribute('id'); });
+      clone.querySelectorAll('[data-bs-toggle]').forEach(function (el) { el.removeAttribute('data-bs-toggle'); });
+      clone.querySelectorAll('a, button, [tabindex]').forEach(function (el) { el.setAttribute('tabindex', '-1'); });
+      clone.querySelectorAll('iframe').forEach(function (el) {
+        el.setAttribute('tabindex', '-1');
+        el.setAttribute('aria-hidden', 'true');
+      });
+
+      // Delegate clicks directly to the original card
+      clone.addEventListener('click', function (e) {
+        if (e.target.closest('button, a, input, select, textarea, [data-bs-toggle], .collapse, .ux-details-toggle, .btn')) {
+          return;
+        }
+        card.click();
+      });
+
+      carouselContainer.insertBefore(clone, originalCards[0]);
+      leftClones.push(clone);
+    });
+
+    // 2. Create right clones (copies of all original cards to append)
+    originalCards.forEach(function (card) {
+      var clone = card.cloneNode(true);
+      clone.classList.add('carousel-clone');
+      clone.classList.remove('reveal-element');
+      clone.classList.add('revealed');
+      clone.style.opacity = '1';
+      clone.style.transform = 'none';
+      clone.setAttribute('aria-hidden', 'true');
+      clone.setAttribute('tabindex', '-1');
+      clone.querySelectorAll('[id]').forEach(function (el) { el.removeAttribute('id'); });
+      clone.querySelectorAll('[data-bs-toggle]').forEach(function (el) { el.removeAttribute('data-bs-toggle'); });
+      clone.querySelectorAll('a, button, [tabindex]').forEach(function (el) { el.setAttribute('tabindex', '-1'); });
+      clone.querySelectorAll('iframe').forEach(function (el) {
+        el.setAttribute('tabindex', '-1');
+        el.setAttribute('aria-hidden', 'true');
+      });
+
+      // Delegate clicks directly to the original card
+      clone.addEventListener('click', function (e) {
+        if (e.target.closest('button, a, input, select, textarea, [data-bs-toggle], .collapse, .ux-details-toggle, .btn')) {
+          return;
+        }
+        card.click();
+      });
+
+      carouselContainer.appendChild(clone);
+      rightClones.push(clone);
+    });
+
+    function getShiftDistance() {
+      if (!rightClones[0] || !originalCards[0]) return 0;
+      return rightClones[0].offsetLeft - originalCards[0].offsetLeft;
+    }
+
+    function centerOnCard(index) {
+      var card = originalCards[index] || originalCards[0];
+      var targetLeft = card.offsetLeft - (carouselContainer.clientWidth - card.offsetWidth) / 2;
+      carouselContainer.scrollLeft = targetLeft;
+    }
+
+    function checkLoopBoundary() {
+      if (window.innerWidth >= 768) return;
+      if (isTouchActive) return;
+
+      var shift = getShiftDistance();
+      if (shift <= 0) return;
+
+      var firstCardCenter = originalCards[0].offsetLeft - (carouselContainer.clientWidth - originalCards[0].offsetWidth) / 2;
+      var lastCard = originalCards[originalCards.length - 1];
+      var lastCardCenter = lastCard.offsetLeft - (carouselContainer.clientWidth - lastCard.offsetWidth) / 2;
+      var threshold = (originalCards[0].offsetWidth || 300) * 0.4;
+      var currentScroll = carouselContainer.scrollLeft;
+
+      // If swiped into right clones past the last original card
+      if (currentScroll > lastCardCenter + threshold) {
+        carouselContainer.style.scrollSnapType = 'none';
+        carouselContainer.style.scrollBehavior = 'auto';
+        carouselContainer.scrollLeft = currentScroll - shift;
+        void carouselContainer.offsetWidth; // Force synchronous layout reflow
+        carouselContainer.style.scrollSnapType = '';
+        carouselContainer.style.scrollBehavior = '';
+      }
+      // If swiped into left clones before the first original card
+      else if (currentScroll < firstCardCenter - threshold) {
+        carouselContainer.style.scrollSnapType = 'none';
+        carouselContainer.style.scrollBehavior = 'auto';
+        carouselContainer.scrollLeft = currentScroll + shift;
+        void carouselContainer.offsetWidth; // Force synchronous layout reflow
+        carouselContainer.style.scrollSnapType = '';
+        carouselContainer.style.scrollBehavior = '';
+      }
+    }
+
+    function scheduleCheck() {
+      if (checkTimeout) clearTimeout(checkTimeout);
+      checkTimeout = setTimeout(checkLoopBoundary, 80);
+    }
+
+    function initPosition() {
+      if (window.innerWidth < 768) {
+        var firstCardCenter = originalCards[0].offsetLeft - (carouselContainer.clientWidth - originalCards[0].offsetWidth) / 2;
+        var lastCard = originalCards[originalCards.length - 1];
+        var lastCardCenter = lastCard.offsetLeft - (carouselContainer.clientWidth - lastCard.offsetWidth) / 2;
+
+        // Only center if uninitialized (at left clone edge or off-screen)
+        if (carouselContainer.scrollLeft < firstCardCenter - 50 || carouselContainer.scrollLeft > lastCardCenter + 50) {
+          centerOnCard(0);
+        }
+      } else {
+        carouselContainer.scrollLeft = 0;
+      }
+    }
+
+    requestAnimationFrame(initPosition);
+    setTimeout(initPosition, 100);
+    window.addEventListener('load', initPosition);
+
+    carouselContainer.addEventListener('touchstart', function () {
+      isTouchActive = true;
+    }, { passive: true });
+
+    carouselContainer.addEventListener('touchend', function () {
+      isTouchActive = false;
+      scheduleCheck();
+    }, { passive: true });
+
+    carouselContainer.addEventListener('touchcancel', function () {
+      isTouchActive = false;
+      scheduleCheck();
+    }, { passive: true });
+
+    if ('onscrollend' in window) {
+      carouselContainer.addEventListener('scrollend', function () {
+        if (!isTouchActive) {
+          checkLoopBoundary();
+        }
+      }, { passive: true });
+    }
+
+    carouselContainer.addEventListener('scroll', function () {
+      scheduleCheck();
+    }, { passive: true });
+
+    var resizeTimeout;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(function () {
+        if (window.innerWidth >= 768) {
+          carouselContainer.scrollLeft = 0;
+        } else {
+          checkLoopBoundary();
+        }
+      }, 150);
+    }, { passive: true });
+  }
+
+  function initAllRows() {
+    var rows = document.querySelectorAll('.py-5 .row.g-4.justify-content-center');
+    rows.forEach(setupInfiniteRow);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAllRows);
+  } else {
+    initAllRows();
+  }
 })();

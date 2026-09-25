@@ -24,6 +24,7 @@
 <meta name="twitter:description" content="UX writing, microcopy, content design, and user flow documentation samples by Pedro Vega.">
 <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
 <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link href="css/styles.css?v=2" rel="stylesheet"/>
 <link href="css/page-specific.css?v=2" rel="stylesheet"/>
 <link href="images/logo.png" rel="icon" type="image/png"/>
@@ -154,9 +155,8 @@
 
 <div class="py-5 light-section" id="ux-carousel-container">
 <div class="container-fluid px-4">
-<div class="carousel slide" data-bs-ride="false" id="uxSamplesCarousel">
-<div class="carousel-inner">
-<div class="carousel-item active"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+<div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="uxSamplesCarousel">
+<div class="carousel-inner"><div class="carousel-item active"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-15.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -164,7 +164,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 1: Banking App Onboarding Flow</h5>
+<h5 class="card-title">Banking App Onboarding Flow</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>Write a multi-screen onboarding experience for a banking app that automatically pays a user's bills every month, as long as they set it up correctly.</li>
@@ -173,6 +173,12 @@
 <b>Headline:</b> 45 characters<br/>
 <b>Body:</b> 100 characters<br/>
 <b>Button(s):</b> 25 characters</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-1" aria-expanded="false" aria-controls="ux-details-1">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-1" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>My core strategy was to build user confidence at every step. I used a professional, clear, and reassuring tone to make the app feel secure and straightforward to use, even for a non-technical user. The flow introduces key benefits one at a time to avoid overwhelming the user.</p>
 <ul>
@@ -183,12 +189,13 @@
 </ul>
 <h6><b>Intended Outcome</b></h6>
 <p>This onboarding flow systematically overcomes user anxiety. By introducing benefits first, emphasizing security second, and then guiding the user through a structured, step-by-step setup, the experience builds confidence and trust. The intended outcome is a higher completion rate for the onboarding process. And to create a new user who feels secure and confident using their new financial tool.</p>
+</div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FNjNjYmTQPlZiU2aoxaHdV/UX-Writing-Challenge--15?node-id=4-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=4%3A2&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-14.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -196,7 +203,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 2: App Error with Unknown Cause</h5>
+<h5 class="card-title">App Error with Unknown Cause</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>Write a message that informs a user they cannot access a price comparison app right now. You cannot specify "why" the app doesn't work, but you want them to continue using it.</li>
@@ -205,6 +212,12 @@
 <b>Headline:</b> 30 characters max<br/>
 <b>Body:</b> 120 characters max<br/>
 <b>Button(s):</b> 15 characters max</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-2" aria-expanded="false" aria-controls="ux-details-2">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-2" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>This case study is a great example of my iterative process. My first draft attempted to use humor to lighten the mood, but I quickly realized this created a tonal dissonance. When users can't access the app's core function, a joke feels invalidating.</p>
 <p>Accepting that feedback, I pivoted to a more direct, transparent, and genuinely helpful approach.</p>
@@ -215,12 +228,13 @@
 </ul>
 <h6><b>Intended Outcome</b></h6>
 <p>This solution aims to build trust during a moment of failure. By being transparent about the problem and offering helpful alternatives, the message respects the user's goal and offers an actionable solution on the spot.</p>
+</div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/design/KSZ6n1AWQbgiIWX2BLo6o1/UX-Writing-Challenge--14?node-id=0-1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-13.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -228,7 +242,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 3: Truck Driver Delay Notification</h5>
+<h5 class="card-title">Truck Driver Delay Notification</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>A short-haul truck driver has a phone app that monitors his route, schedule, and deliveries. He's behind schedule due to traffic. Write a push notification alerting him of this dilemma and options.</li>
@@ -237,6 +251,12 @@
 <b>Headline:</b> 30 characters max<br/>
 <b>Body:</b> 45 characters max<br/>
 <b>Button(s):</b> 25 characters max</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-3" aria-expanded="false" aria-controls="ux-details-3">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-3" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>My primary focus was on safety and speed of comprehension for a user whose main task is driving.</p>
 <ul>
@@ -250,7 +270,8 @@
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div>
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-12.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -258,13 +279,19 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 4: "Fake Name" Error Message</h5>
+<h5 class="card-title">"Fake Name" Error Message</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>A user is creating an account. When they enter their name, they get an error message. A fraud detection software thinks their name is fake-but it's wrong 5% of the time. Write an error message that prompts them to fix the error without shaming them for having a fake-sounding name.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
 <b>45 characters max</b></p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-4" aria-expanded="false" aria-controls="ux-details-4">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-4" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>My goal was to treat the user with respect and avoid the demoralizing experience of a blunt "invalid name" error. People with unique names, like Nicolas Cage's son Kal-El, inspired this approach.</p>
 <ul>
@@ -278,7 +305,8 @@
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div>
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-11.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -286,7 +314,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 5: Contact Lens Subscription - Title &amp; Meta Description</h5>
+<h5 class="card-title">Contact Lens Subscription - Title &amp; Meta Description</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>Write a title and meta description for a website that sells subscription contact lenses delivered every 30 days. You must convince an elderly user to try it.</li>
@@ -294,6 +322,12 @@
 <p class="card-text"><b>Constraints:</b><br/>
 <b>Title:</b> 60 characters max<br/>
 <b>Meta Description:</b> 160 characters max</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-5" aria-expanded="false" aria-controls="ux-details-5">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-5" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>I approached this challenge by creating a persona based on my grandmother: a visually impaired elderly person who values simplicity and clarity. This meant the copy had to be concise to remain readable at a larger font size and focus entirely on the core benefits.</p>
 <ul>
@@ -306,7 +340,8 @@
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div>
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-10.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -314,7 +349,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 6: Car Buying Website Location Request</h5>
+<h5 class="card-title">Car Buying Website Location Request</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>A user is trying to view a website to help them buy a car, but the content can't load without the user's location. They need to enter their ZIP code and first name. Ask them where they live and who they are without sounding like you're unnecessarily mining their data.</li>
@@ -323,6 +358,12 @@
 <b>Headline:</b> 25 characters<br/>
 <b>Body:</b> 45 characters<br/>
 <b>Button:</b> 15 characters</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-6" aria-expanded="false" aria-controls="ux-details-6">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-6" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>My strategy was to build trust and excitement by focusing on the reward, using a playful tone, and minimizing the perceived intrusiveness of the request.</p>
 <ul>
@@ -337,7 +378,8 @@
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div>
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-9.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -345,7 +387,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 7: Expired Credit Card Error</h5>
+<h5 class="card-title">Expired Credit Card Error</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>Write an error message for a user trying to rent a car when their credit card on file has expired, so they can correct the problem.</li>
@@ -353,6 +395,12 @@
 <p class="card-text"><b>Constraints:</b><br/>
 <b>Headline:</b> 30 characters<br/>
 <b>Body:</b> 45 characters</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-7" aria-expanded="false" aria-controls="ux-details-7">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-7" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>My approach was to be extremely direct to minimize user frustration. At this point in the flow, the user wants a solution, not a conversation.</p>
 <ul>
@@ -362,12 +410,13 @@
 </ul>
 <h6><b>Intended Outcome</b></h6>
 <p>This solution reduces cognitive load for a frustrated user. By immediately identifying the problem and providing clear, actionable choices, the user can quickly resolve the payment issue and complete their car rental. This turns a hard stop into a minor, manageable hiccup.</p>
+</div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/RjNFdKOJncmtaAH0IzURy2/UX-Writing-Challenge--9?node-id=9-42&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=9%3A42&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-8.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -375,7 +424,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 8: Concert Promotion</h5>
+<h5 class="card-title">Concert Promotion</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>Tell a casual music fan that one of their favorite bands is playing live in their town and compel them to want to go.</li>
@@ -384,6 +433,12 @@
 <b>Headline:</b> 30 characters max<br/>
 <b>Body:</b> 45 characters max<br/>
 <b>Button:</b> 25 characters</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-8" aria-expanded="false" aria-controls="ux-details-8">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-8" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>I aimed to create an experience that felt both exciting and exclusive. The tone is energetic and direct, designed to make the user feel like they're getting an insider opportunity.</p>
 <ul>
@@ -393,12 +448,13 @@
 </ul>
 <h6><b>Intended Outcome</b></h6>
 <p>This notification converts a casual fan's passive interest into an active ticket purchase. By creating a sense of excitement and providing an exclusive presale code, the solution aims to drive immediate engagement and ticket sales.</p>
+</div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FpYJKY0IXwxYVe7d7rHJwh/UX-Writing-Challenge--8?node-id=1-51&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A51&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-7.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -406,7 +462,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 9: Rivalry Score Update</h5>
+<h5 class="card-title">Rivalry Score Update</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>Quickly let a sports fan at a wedding know that their favorite team has just scored against their arch-rivals. Include the latest play, the current score, and the key players.</li>
@@ -414,6 +470,12 @@
 <p class="card-text"><b>Constraints:</b><br/>
 <b>Headline:</b> 30 characters max<br/>
 <b>Body:</b> 45 characters max</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-9" aria-expanded="false" aria-controls="ux-details-9">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-9" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>As a fan myself, I approached this from a personal and authentic perspective. The notification needed to be a quick shot of adrenaline that delivered all the vital stats.</p>
 <ul>
@@ -427,7 +489,8 @@
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div>
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-6.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -435,7 +498,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 10: Fire Alert Notification</h5>
+<h5 class="card-title">Fire Alert Notification</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>Let a user know there's a fire in a nearby town causing road closures, as they are driving to work. The effect on their commute is unknown, but there is a definite danger if the fire gets closer.</li>
@@ -443,6 +506,12 @@
 <p class="card-text"><b>Constraints:</b><br/>
 <b>Headline:</b> 30 characters max<br/>
 <b>Body:</b> 45 characters max</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-10" aria-expanded="false" aria-controls="ux-details-10">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-10" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>For a safety-critical alert for a user who is driving, my approach was to be as direct and attention-grabbing as possible. Clarity and immediate comprehension were my top priorities.</p>
 <ul>
@@ -457,7 +526,8 @@
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div>
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-5.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -465,7 +535,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 11: App Crash Recovery Message</h5>
+<h5 class="card-title">App Crash Recovery Message</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>A user works in graphic design. While critiquing a design in a mobile app, their phone abruptly turns off. When they restart the phone, they reopen the app. Write a message that the user will read immediately upon opening the app. What do they need to know? What steps (if any) do they need to take to recover their content? What if they can't recover the content?</li>
@@ -474,6 +544,12 @@
 <b>Headline:</b> 40 characters max<br/>
 <b>Body:</b> 140 characters max<br/>
 <b>Button(s):</b> 20 characters max</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-11" aria-expanded="false" aria-controls="ux-details-11">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-11" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>Drawing from the universal frustration of losing work to unexpected errors, I prioritized immediate reassurance and clarity. The user feels stressed, so the message provides a calming, helpful guide.</p>
 <ul>
@@ -483,12 +559,13 @@
 </ul>
 <h6><b>Intended Outcome</b></h6>
 <p>This solution turns a moment of high anxiety into a positive recovery experience. The alert immediately confirms that the user's work is safe and offers clear choices. This reduces frustration, builds trust in the app's reliability, and allows the user to get back to their work with minimal disruption.</p>
+</div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/t0mfj5ZNbl8cMwxPL8ieUk/UX-Writing-Challenge--5?node-id=5-342&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A135&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-4.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -496,7 +573,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 12: Grocery Subscription Promotion</h5>
+<h5 class="card-title">Grocery Subscription Promotion</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>Write a promotional home screen for a subscription service that delivers groceries to the user once a month for a flat fee.</li>
@@ -505,6 +582,12 @@
 <b>Headline:</b> 45 characters max<br/>
 <b>Body:</b> 175 characters max<br/>
 <b>Button(s):</b> 25 characters max</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-12" aria-expanded="false" aria-controls="ux-details-12">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-12" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>I focused on emphasizing the convenience and the "comfort of home." The copy aims to frame the service as a lifestyle upgrade.</p>
 <ul>
@@ -514,12 +597,13 @@
 </ul>
 <h6><b>Intended Outcome</b></h6>
 <p>This promotional screen aims to appeal to users who value their time and convenience. By stating the service's benefit and cost, the user can quickly assess the value proposition and make an informed decision. This positions the app as a practical solution to a common chore.</p>
+</div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/YqzCMRqdg1xA41oflpHwnd/UX-Writing-Challenge--4?node-id=24-130&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=24%3A130&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-3.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -527,13 +611,19 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 13: Incorrect Email Error Message</h5>
+<h5 class="card-title">Incorrect Email Error Message</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>Tell a user to enter the correct email address after they have entered the wrong one to sign in to their account.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
 <b>40 characters max.</b></p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-13" aria-expanded="false" aria-controls="ux-details-13">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-13" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>My personal experience with vague errors like "invalid credentials" inspired me to take a more direct and helpful approach. The user's goal is to log in, and the copy should support that, not block it.</p>
 <ul>
@@ -546,7 +636,8 @@
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div>
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-2.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -554,7 +645,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 14: Sports Fan App Promotion</h5>
+<h5 class="card-title">Sports Fan App Promotion</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>A user is a working parent and a big sports fan who can no longer attend games. Write a promotional screen for an app that lets a user choose teams, sends game reminders, real-time score updates, and highlight videos.</li>
@@ -563,6 +654,12 @@
 <b>Headline:</b> 40 characters max<br/>
 <b>Body:</b> 175 characters max<br/>
 <b>Button(s):</b> 25 characters max</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-14" aria-expanded="false" aria-controls="ux-details-14">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-14" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>My goal was to create a tone that was the opposite of the user's frustration: whimsical, fun, and energetic. The user is short on time, so the copy needed to be quick, catchy, and immediately communicate the app's core value.</p>
 <ul>
@@ -571,12 +668,13 @@
 </ul>
 <h6><b>Intended Outcome</b></h6>
 <p>This promotional screen quickly captures the user's attention and reframes FOMO into a positive, achievable solution. It highlights the convenience of staying connected to the sports world, allowing the user to be a present parent without missing the big moments.</p>
+</div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/UR8ck1CIuVgmjYalHckj8o/UX-Writing-Challenge--2?node-id=1-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A2&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-11"><div class="col-lg-12">
+</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-1.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
@@ -584,7 +682,7 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Sample 15: Flight Cancellation Notification</h5>
+<h5 class="card-title">Flight Cancellation Notification</h5>
 <p class="card-text"><b>Challenge:</b></p>
 <ul>
 <li>Write a message from an airline app to a traveler whose flight has been abruptly cancelled due to bad weather. The message should notify them of the cancellation and tell them what they need to do next.</li>
@@ -593,6 +691,12 @@
 <b>Headline:</b> 45 characters<br/>
 <b>Body:</b> 175 characters max<br/>
 <b>Button(s):</b> 25 characters max</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-15" aria-expanded="false" aria-controls="ux-details-15">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-15" onclick="event.stopPropagation()">
 <h6><b>Rationale</b></h6>
 <p>Given the user's high-stress situation, my approach was to be direct, clear, and empathetic. I used a "no frills" voice, prioritizing critical information over conversational fluff.</p>
 <ul>
@@ -602,6 +706,7 @@
 </ul>
 <h6><b>Intended Outcome</b></h6>
 <p>This solution aims to reduce the user's cognitive load during a stressful moment. By providing clear, concise information and a direct call to action, the user can quickly move from a state of confusion to proactive problem-solving. This improves the user's overall experience with the airline, even when things go wrong.</p>
+</div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/2NGMklaY5uH05Qy22ZnHP4/UX-Writing-Challenge--1?node-id=19-124&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=19%3A124&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
@@ -630,39 +735,103 @@
 <p class="secondary-text-center text-white">These aren't ux writing samples. These are some playful passes I designed for my partner's classroom. I just wanted to show them off. Redacted for privacy reasons.</p>
 </div>
 </div>
-<div class="pt-2 pb-5 bg-custom-dark">
-<div class="container">
-<div class="row g-4">
-<div class="col-lg-12">
-<div aria-label="Open Spidey Bathroom Pass sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/spidey-bathroom-pass.pdf" role="button" tabindex="0">
-<div class="row g-0">
-<div class="col-md-5 p-3" style="min-height: 350px;">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/spidey-bathroom-pass.pdf" title="Bathroom Pass"></iframe>
-</div>
-<div class="col-md-7">
-<div class="card-body text-start">
-<h5 class="card-title">The Spidey Bathroom Pass</h5>
-<p class="card-text">This is the bathroom pass. It features images from Spider-Man's prolific comic run, including that time he taught an interdimensional cosmic god how to use the bathroom.</p>
-</div>
+<div class="pt-2 pb-5 bg-custom-dark" id="hallpass-carousel-container">
+<div class="container-fluid px-4">
+<div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="hallPassCarousel">
+<div class="carousel-inner">
+<div class="carousel-item active"><div class="row justify-content-center"><div class="col-11 col-lg-10">
+<div aria-label="Open Spidey Bathroom Pass sample" class="card card-border sample-card hallpass-card hallpass-card-spidey mb-4" data-pdf="samples/ux-writing/spidey-bathroom-pass.pdf" role="button" tabindex="0">
+<div class="row g-0 align-items-center">
+<div class="col-md-5 p-3 p-lg-4">
+<div class="hallpass-preview-wrapper position-relative">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/spidey-bathroom-pass.pdf" style="min-height: 360px;" title="Bathroom Pass"></iframe>
+<div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
+<i class="bi bi-arrows-fullscreen"></i> Click card to view full PDF
 </div>
 </div>
 </div>
+<div class="col-md-7 p-3 p-lg-4">
+<div class="card-body p-0 text-start">
+<h3 class="card-title fw-bold mb-2">The Spidey Bathroom Pass</h3>
+<p class="card-text mb-4 fs-6">This is the bathroom pass. It features images from Spider-Man's prolific comic run, including that time he taught an interdimensional cosmic god how to use the bathroom.</p>
+<div class="hallpass-meta p-3 rounded-3 mb-0">
+<div class="hallpass-meta-item mb-2">
+<div class="hallpass-meta-icon hallpass-meta-icon-quote">
+<i class="bi bi-chat-quote-fill"></i>
 </div>
-<div class="col-lg-12">
-<div aria-label="Open Hulk Hall Pass sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/hulk-hall-pass.pdf" role="button" tabindex="0">
-<div class="row g-0">
-<div class="col-md-5 p-3" style="min-height: 350px;">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/hulk-hall-pass.pdf" title="Hulk Hall Pass"></iframe>
-</div>
-<div class="col-md-7">
-<div class="card-body text-start">
-<h5 class="card-title">The Hulk Hall Pass</h5>
-<p class="card-text">It's the hall pass. It features images from the jolly jade giant's giant-sized comic run.</p>
-</div>
-</div>
-</div>
+<div>
+<strong class="small d-block">Thought Bubble:</strong>
+<span class="small">Features panels from <em>Secret Wars II #8</em>, where Spidey taught <i>cosmic god</i> The Beyonder how to pee.</span>
 </div>
 </div>
+<div class="hallpass-meta-item mb-0">
+<div class="hallpass-meta-icon hallpass-meta-icon-objective">
+<i class="bi bi-lightbulb-fill"></i>
+</div>
+<div>
+<strong class="small d-block">Design Objective:</strong>
+<span class="small">Custom double-sided pass engineered to bring humor and personality to student hall management.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+<div class="carousel-item"><div class="row justify-content-center"><div class="col-11 col-lg-10">
+<div aria-label="Open Hulk Hall Pass sample" class="card card-border sample-card hallpass-card hallpass-card-hulk mb-4" data-pdf="samples/ux-writing/hulk-hall-pass.pdf" role="button" tabindex="0">
+<div class="row g-0 align-items-center">
+<div class="col-md-5 p-3 p-lg-4">
+<div class="hallpass-preview-wrapper position-relative">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/hulk-hall-pass.pdf" style="min-height: 360px;" title="Hulk Hall Pass"></iframe>
+<div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
+<i class="bi bi-arrows-fullscreen"></i> Click card to view full PDF
+</div>
+</div>
+</div>
+<div class="col-md-7 p-3 p-lg-4">
+<div class="card-body p-0 text-start">
+<h3 class="card-title fw-bold mb-2">The Hulk Hall Pass</h3>
+<p class="card-text mb-4 fs-6">It's the hall pass. It features images from the jolly jade giant's giant-sized comic run.</p>
+<div class="hallpass-meta p-3 rounded-3 mb-0">
+<div class="hallpass-meta-item mb-2">
+<div class="hallpass-meta-icon hallpass-meta-icon-quote">
+<i class="bi bi-chat-quote-fill"></i>
+</div>
+<div>
+<strong class="small d-block">Thought Bubble:</strong>
+<span class="small">Curated explosive vintage panels from Big Green's comics. I've always been fascinated by the dynamism of the transformation from Bruce Banner to the Hulk and wanted to capture that in the design of the pass.</span>
+</div>
+</div>
+<div class="hallpass-meta-item mb-0">
+<div class="hallpass-meta-icon hallpass-meta-icon-objective">
+<i class="bi bi-lightbulb-fill"></i>
+</div>
+<div>
+<strong class="small d-block">Design Objective:</strong>
+<span class="small">An indestructible-themed classroom hall pass built to stand out and entertain hall monitors.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+</div>
+<div class="carousel-indicators position-relative mt-2 mb-0">
+<button aria-current="true" aria-label="The Spidey Bathroom Pass" class="active" data-bs-slide-to="0" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
+<button aria-label="The Hulk Hall Pass" data-bs-slide-to="1" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
+</div>
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button" aria-label="Previous Pass">
+<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">&#10094;</span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button" aria-label="Next Pass">
+<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">&#10095;</span>
+<span class="visually-hidden">Next</span>
+</button>
 </div>
 </div>
 </div>
@@ -809,7 +978,7 @@
     })();
 
   </script>
-    <script src="js/interactive.js?v=constellations-v5"></script>
+    <script src="js/interactive.js?v=infinite-carousels-v6"></script>
 </body>
 </html>
 

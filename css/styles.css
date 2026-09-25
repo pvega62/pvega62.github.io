@@ -45,6 +45,23 @@ body {
   padding-bottom: 2.5rem;
 }
 
+.hero-section a,
+.intro-text a {
+  color: #e8c47c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.hero-section a:hover,
+.hero-section a:focus,
+.intro-text a:hover,
+.intro-text a:focus {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+}
+
 .light-section {
   background-color: #d4d1ce;
   /* Tan background */
@@ -1054,6 +1071,10 @@ html[lang="hi"] .DocSearch-Sidepanel-Title::after {
 
 
 /* Mobile swipeable carousels for card rows */
+.carousel-clone {
+  display: none !important;
+}
+
 @media (max-width: 767.98px) {
   .py-5 .row.g-4.justify-content-center {
     flex-wrap: nowrap !important;
@@ -1070,13 +1091,20 @@ html[lang="hi"] .DocSearch-Sidepanel-Title::after {
     display: none !important;
   }
   
-  .py-5 .row.g-4.justify-content-center > [class*="col-"] {
+  .py-5 .row.g-4.justify-content-center > [class*="col-"],
+  .carousel-clone {
+    display: block !important;
     flex: 0 0 85% !important; /* Shows a peek of the next card */
     max-width: 85% !important;
     width: 85% !important;
     scroll-snap-align: center !important;
   }
+
+  .sample-card iframe {
+    pointer-events: none;
+  }
 }
+
 
 /* Custom Accordion Themes */
 .light-section .accordion {
@@ -1112,4 +1140,217 @@ html[lang="hi"] .DocSearch-Sidepanel-Title::after {
 
 .hero-section .accordion .text-muted {
   color: #555555 !important;
+}
+
+/* ===== Hall Pass Showcase Cards ===== */
+#hallPassCarousel {
+  padding-bottom: 1.5rem;
+}
+
+#hallPassCarousel .hallpass-card {
+  background-color: var(--tan) !important;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s cubic-bezier(0.2, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.2, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+#hallPassCarousel .hallpass-card h1,
+#hallPassCarousel .hallpass-card h2,
+#hallPassCarousel .hallpass-card h3,
+#hallPassCarousel .hallpass-card h4,
+#hallPassCarousel .hallpass-card h5,
+#hallPassCarousel .hallpass-card h6,
+#hallPassCarousel .hallpass-card .card-title {
+  color: #000000 !important;
+}
+
+#hallPassCarousel .hallpass-card p,
+#hallPassCarousel .hallpass-card .card-text {
+  color: #1a1a1a !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #hallPassCarousel .hallpass-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.hallpass-card-spidey {
+  border-top: 6px solid #e23636 !important;
+}
+
+.hallpass-card-hulk {
+  border-top: 6px solid #2b8a3e !important;
+}
+
+.hallpass-preview-wrapper {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #2b3b4c;
+  height: 100%;
+}
+
+/* Colored-in meta panels: Zero white space */
+.hallpass-card-spidey .hallpass-meta {
+  background-color: #f1cdcd !important;
+  border: 1.5px solid #d88f8f !important;
+}
+
+.hallpass-card-spidey .hallpass-meta strong {
+  color: #4a0d0d !important;
+}
+
+.hallpass-card-spidey .hallpass-meta span {
+  color: #1a1a1a !important;
+}
+
+.hallpass-card-spidey .hallpass-meta-icon-quote {
+  background-color: #e23636 !important;
+  color: #ffffff !important;
+}
+
+.hallpass-card-spidey .hallpass-meta-icon-objective {
+  background-color: #1f3850 !important;
+  color: #ffffff !important;
+}
+
+.hallpass-card-hulk .hallpass-meta {
+  background-color: #c9e2cf !important;
+  border: 1.5px solid #85b892 !important;
+}
+
+.hallpass-card-hulk .hallpass-meta strong {
+  color: #0f3d19 !important;
+}
+
+.hallpass-card-hulk .hallpass-meta span {
+  color: #1a1a1a !important;
+}
+
+.hallpass-card-hulk .hallpass-meta-icon-quote {
+  background-color: #2b8a3e !important;
+  color: #ffffff !important;
+}
+
+.hallpass-card-hulk .hallpass-meta-icon-objective {
+  background-color: #1f3850 !important;
+  color: #ffffff !important;
+}
+
+.hallpass-meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.hallpass-meta-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.hallpass-meta-icon i {
+  color: #ffffff !important;
+}
+
+.hallpass-btn-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50rem;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.hallpass-btn-view:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+/* ===== Mobile UX Sample Card Layout & Accordion ===== */
+@media (max-width: 767.98px) {
+  #ux-carousel-container .container-fluid {
+    padding-left: 0.65rem !important;
+    padding-right: 0.65rem !important;
+  }
+
+  #uxSamplesCarousel .carousel-control-prev,
+  #uxSamplesCarousel .carousel-control-next {
+    width: 6% !important;
+  }
+
+  #uxSamplesCarousel .carousel-control-prev span,
+  #uxSamplesCarousel .carousel-control-next span {
+    font-size: 2.75rem !important;
+  }
+
+  #uxSamplesCarousel .ux-card {
+    border-radius: 14px;
+    margin-bottom: 0.75rem !important;
+  }
+
+  #uxSamplesCarousel .card-body {
+    padding: 1.15rem 1rem !important;
+  }
+
+  /* Compact PDF iframe preview on mobile */
+  .ux-card .col-md-3 iframe {
+    height: 210px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .ux-details-collapse {
+    margin-top: 0.85rem;
+    padding-top: 0.85rem;
+    border-top: 1px dashed rgba(212, 209, 206, 0.35);
+  }
+}
+
+/* Mobile Accordion Toggle Button - Styled in site tan */
+.ux-details-toggle {
+  background-color: var(--tan) !important;
+  border: 1px solid var(--tan) !important;
+  color: var(--dark) !important;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.25px;
+  border-radius: 50rem;
+  padding: 0.45rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease;
+}
+
+.ux-details-toggle:hover,
+.ux-details-toggle:focus {
+  background-color: var(--offwhite) !important;
+  border-color: var(--offwhite) !important;
+  color: var(--dark) !important;
+  transform: translateY(-1px);
+}
+
+.ux-details-toggle .hide-text {
+  display: none;
+}
+
+.ux-details-toggle:not(.collapsed) .show-text {
+  display: none;
+}
+
+.ux-details-toggle:not(.collapsed) .hide-text {
+  display: inline;
 }

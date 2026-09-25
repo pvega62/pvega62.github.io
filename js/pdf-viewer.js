@@ -286,7 +286,11 @@
       }
 
       // attach open handlers
-      card.addEventListener('click', () => {
+      card.addEventListener('click', (e) => {
+        // Failsafe: Ignore clicks on interactive controls, buttons, links, or inside collapsible content
+        if (e.target.closest('button, a, input, select, textarea, [data-bs-toggle], .collapse, .ux-details-toggle, .btn')) {
+          return;
+        }
         if (href) {
           window.open(href, '_blank', 'noopener');
         } else if (pdf) {
@@ -295,6 +299,9 @@
       });
       card.addEventListener('keydown', (ev) => {
         if (ev.key === 'Enter' || ev.key === ' ') {
+          if (ev.target.closest('button, a, input, select, textarea, [data-bs-toggle], .collapse, .ux-details-toggle, .btn')) {
+            return;
+          }
           ev.preventDefault();
           if (href) window.open(href, '_blank', 'noopener'); else if (pdf) openPdf(pdf, title.trim());
         }

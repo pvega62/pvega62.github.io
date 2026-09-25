@@ -7,6 +7,8 @@ body { background: var(--dark); font-family: Inter, system-ui, -apple-system, 'S
 .navbar-nav .nav-link { padding: 0.4rem 0.75rem; color: #e1dedb; }
 .hero-section { background: var(--dark); color: #e1dedb; }
 .hero-section h1 { color: #e1dedb; }
+.hero-section a, .intro-text a { color: #e8c47c; text-decoration: underline; text-underline-offset: 3px; font-weight: 600; transition: color 0.2s ease, text-decoration-color 0.2s ease; }
+.hero-section a:hover, .hero-section a:focus, .intro-text a:hover, .intro-text a:focus { color: #ffffff; text-decoration-color: #ffffff; }
 .bg-tan { background-color: var(--offwhite); }
 .bg-custom-dark { background-color: var(--dark); }
 /* Card styling to match the screenshot */
