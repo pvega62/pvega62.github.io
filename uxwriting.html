@@ -26,7 +26,7 @@
 <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link href="css/styles.css?v=2" rel="stylesheet"/>
-<link href="css/page-specific.css?v=2" rel="stylesheet"/>
+<link href="css/page-specific.css?v=8" rel="stylesheet"/>
 <link href="images/logo.png" rel="icon" type="image/png"/>
   <!-- DocSearch CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
@@ -69,7 +69,7 @@
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="uxwriting.html">UX writing</a></li>
-            <li class="nav-item"><a class="nav-link" href="articlesandessays.html">Articles and essays</a></li>
+            <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
             <li class="nav-item"><a class="nav-link about-link" href="aboutme.html">About me</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -111,7 +111,7 @@
             </a>
           </li>
           <li class="nav-item d-flex align-items-center">
-            <a class="nav-link px-2 d-flex align-items-center" href="articlesandessays.html" aria-label="Articles and essays" title="Articles and essays">
+            <a class="nav-link px-2 d-flex align-items-center" href="articles.html" aria-label="Articles" title="Articles">
               <img src="images/icon-articles.svg" alt="" class="mobile-nav-icon">
             </a>
           </li>
@@ -140,12 +140,11 @@
 <div class="hero-section">
 <div class="container-fluid px-4">
 <div class="text-center">
-<h1 class="display-4 fw-bold text-white">UX Writing</h1>
+<h1 class="display-4 fw-bold text-white">UX Writing &amp; Content Design</h1>
 <div class="row justify-content-center">
 <div class="col-lg-8 text-center intro-text text-white">
-<p>This portfolio showcases my UX writing samples, developed using Figma.</p>
-<p>The challenge gave me the opportunity to explore different types of UX writing, such as microcopy, error messages, and onboarding flows. I could also experiment with different styles and tones of writing, as well as different types of products and services.</p>
-<p>Some of these will have a link to a functioning prototype that you'll be able to tinker with.</p>
+<p class="lead">User centered copy, progressive disclosure flows, and design systems in Figma.</p>
+<p>Each case study tackles high-friction moments across product lifecycles, from onboarding trust architecture and empty states to clear error recovery and urgency-calibrated notifications. Interactive prototypes show each interaction state in code and design.</p>
 </div>
 </div>
 </div>
@@ -155,559 +154,596 @@
 
 <div class="py-5 light-section" id="ux-carousel-container">
 <div class="container-fluid px-4">
+<!-- Category Filter Tabs (High-Contrast Navy Dock) -->
+<div class="ux-filter-wrapper text-center">
+<div class="text-center mb-2">
+<span class="text-uppercase fw-bold small" style="letter-spacing: 1.2px; color: #1f3850; font-size: 0.8rem;">
+<i class="bi bi-funnel-fill me-1"></i> Filter by Focus Area
+</span>
+</div>
+<div class="ux-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
+<button type="button" class="btn ux-filter-pill active" data-filter="all">All <span class="badge ms-1">15</span></button>
+<button type="button" class="btn ux-filter-pill" data-filter="prototype"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;"></i> Functional Prototype <span class="badge ms-1">8</span></button>
+<button type="button" class="btn ux-filter-pill" data-filter="high-stakes">High-Stakes &amp; Alerts <span class="badge ms-1">3</span></button>
+<button type="button" class="btn ux-filter-pill" data-filter="error-recovery">Error Recovery &amp; Friction <span class="badge ms-1">5</span></button>
+<button type="button" class="btn ux-filter-pill" data-filter="onboarding">Onboarding &amp; Trust <span class="badge ms-1">2</span></button>
+<button type="button" class="btn ux-filter-pill" data-filter="subscriptions">Subscriptions &amp; Microcopy <span class="badge ms-1">5</span></button>
+</div>
+</div>
 <div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="uxSamplesCarousel">
-<div class="carousel-inner"><div class="carousel-item active"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div class="carousel-inner"><div class="carousel-item active" data-category="onboarding prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-15.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-15.pdf" title="UX Writing Challenge: #15"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-15.pdf" title="UX Writing Case Study: Banking App Onboarding Flow"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
 <h5 class="card-title">Banking App Onboarding Flow</h5>
-<p class="card-text"><b>Challenge:</b></p>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
 <ul>
-<li>Write a multi-screen onboarding experience for a banking app that automatically pays a user's bills every month, as long as they set it up correctly.</li>
+<li>New banking app users face anxiety and abandon multi-step financial automation setup. Guide users through account creation, bill categorization, and automatic monthly payments while establishing security trust.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
 <b>Headline:</b> 45 characters<br/>
 <b>Body:</b> 100 characters<br/>
-<b>Button(s):</b> 25 characters</p>
+<b>Buttons:</b> 25 characters</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-1" aria-expanded="false" aria-controls="ux-details-1">
 <span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
 <span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-1" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>My core strategy was to build user confidence at every step. I used a professional, clear, and reassuring tone to make the app feel secure and straightforward to use, even for a non-technical user. The flow introduces key benefits one at a time to avoid overwhelming the user.</p>
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>The core strategy builds user confidence across each interaction state. Professional, clear, and reassuring microcopy makes financial automation feel secure and straightforward. The flow introduces key benefits progressively to prevent cognitive overload.</p>
 <ul>
-<li><strong>Screen 1: The Core Value Proposition.</strong> The first screen immediately addresses the user's desire for convenience with the headline <code>Never fear, Paymate's here!</code> and explains the primary benefit: automating bills and sending reminders. This starts the journey on a positive and helpful note.</li>
-<li><strong>Screen 2: Building Security Trust.</strong> Before asking for any data, the second screen directly tackles the user's biggest fear: security. The headline <code>Fort Knox security. In your pocket.</code> uses a familiar metaphor to convey safety. The body copy reinforces this by mentioning "state-of-the-art cybersecurity," building a foundation of trust.</li>
-<li><strong>Screen 3: Highlighting Smart Features.</strong> This screen introduces another key benefit: automatic categorization of bills. The copy, <code>Smartphone, smart banking, smart user,</code> builds user confidence and highlights the app's intelligence, showing that the app simplifies financial tasks.</li>
-<li><strong>Screens 4-7: The Setup Process.</strong> After establishing trust, the flow moves to the practical steps of creating an account and adding a payment method. The copy remains concise and direct (<code>Enough about us, let's focus on you.</code>). Small, manageable forms break the process down to feel as smooth and frictionless as possible. The onboarding process culminates in a welcoming success screen (<code>Welcome Aboard!</code>) once the user adds their card.</li>
+<li><strong>Screen 1: The Core Value Proposition.</strong> The first screen immediately addresses user convenience with the headline <code>Never fear, Paymate's here!</code> and establishes the primary benefit: automated bills and timely reminders.</li>
+<li><strong>Screen 2: Building Security Trust.</strong> Before asking for user data, the second screen addresses user security concerns directly. The headline <code>Fort Knox security. In your pocket.</code> uses a familiar metaphor to convey safety, while body copy reinforces state-of-the-art cybersecurity.</li>
+<li><strong>Screen 3: Highlighting Smart Features.</strong> This screen introduces automated bill categorization. The headline <code>Smartphone, smart banking, smart user</code> reinforces user agency and highlights system intelligence.</li>
+<li><strong>Screens 4-7: The Setup Process.</strong> After establishing trust, the flow transitions to account creation and payment method setup. Concise microcopy (<code>Enough about us, let's focus on you.</code>) guides the user through manageable forms, culminating in a clear success confirmation (<code>Welcome Aboard!</code>).</li>
 </ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This onboarding flow systematically overcomes user anxiety. By introducing benefits first, emphasizing security second, and then guiding the user through a structured, step-by-step setup, the experience builds confidence and trust. The intended outcome is a higher completion rate for the onboarding process. And to create a new user who feels secure and confident using their new financial tool.</p>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Progressive disclosure systematically reduces user anxiety, deflecting setup friction and boosting onboarding completion rates. The experience transforms a complex financial registration into a high-trust, friction-free user journey.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FNjNjYmTQPlZiU2aoxaHdV/UX-Writing-Challenge--15?node-id=4-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=4%3A2&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+</div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-14.pdf" role="button" tabindex="0">
 <div class="row g-0">
-<div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-14.pdf" title="UX Writing Challenge: #14"></iframe>
+<div class="col-md-3 d-flex flex-column p-2">
+  <div class="btn-group btn-group-sm w-100 mb-2 rounded-2" role="group" aria-label="Version preview switcher" style="background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.18);">
+    <button type="button" class="btn btn-draft-toggle active fw-semibold small py-1 px-2" data-pdf="samples/ux-writing/ux-writing-challenge-14.pdf">
+      <i class="bi bi-check2 me-1"></i> Shipped v2
+    </button>
+    <button type="button" class="btn btn-draft-toggle fw-semibold small py-1 px-2" data-pdf="samples/ux-writing/ux-writing-challenge-14-draft1.pdf">
+      <i class="bi bi-x-lg me-1"></i> Draft 1 Scrapped
+    </button>
+  </div>
+  <div class="flex-grow-1 position-relative" style="min-height: 280px;">
+    <iframe id="challenge14Iframe" allowfullscreen="" class="w-100 h-100 position-absolute top-0 start-0" frameborder="0" src="samples/ux-writing/ux-writing-challenge-14.pdf" title="UX Writing Case Study: App Error with Unknown Cause"></iframe>
+  </div>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
 <h5 class="card-title">App Error with Unknown Cause</h5>
-<p class="card-text"><b>Challenge:</b></p>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
 <ul>
-<li>Write a message that informs a user they cannot access a price comparison app right now. You cannot specify "why" the app doesn't work, but you want them to continue using it.</li>
+<li>A system outage blocks user access to price comparison data without a specific error code. Inform the user transparently, prevent churn, and provide immediate recovery options.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
 <b>Headline:</b> 30 characters max<br/>
 <b>Body:</b> 120 characters max<br/>
-<b>Button(s):</b> 15 characters max</p>
+<b>Buttons:</b> 15 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-2" aria-expanded="false" aria-controls="ux-details-2">
 <span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
 <span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-2" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>This case study is a great example of my iterative process. My first draft attempted to use humor to lighten the mood, but I quickly realized this created a tonal dissonance. When users can't access the app's core function, a joke feels invalidating.</p>
-<p>Accepting that feedback, I pivoted to a more direct, transparent, and genuinely helpful approach.</p>
-<ul>
-<li><strong>Honest &amp; Direct Headline:</strong> <code>Prices are unavailable.</code> is a clear, factual statement. It immediately tells the user what's wrong without using vague technical jargon.</li>
-<li><strong>Empathetic Body:</strong> "We can't load prices right now" is an honest acknowledgment of the failure. It then immediately provides the user with two constructive options: <code>Please try again soon</code> or <code>visit our website</code>. This respects the user's time and gives them agency.</li>
-<li><strong>Action-Oriented Buttons:</strong> The <code>RETRY</code> and <code>WEBSITE</code> buttons are clear calls to action that directly correspond to the solutions offered in the body. Thus, providing a direct, frictionless way for the user to proceed.</li>
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>This case study illustrates iterative voice calibration and the value of recognizing a first-draft failure. When users can't access the app's core function, humorous copy feels invalidating and dismissive. The design pivots from flippant fiction to direct, transparent, and empathetic recovery.</p>
+
+<ul class="mb-3">
+<li>
+  <strong style="color: #ff9999 !important;"><i class="bi bi-x-circle me-1"></i>Draft 1 (Scrapped, First-Draft Failure).</strong><br/>
+  <span class="d-block my-1" style="color: #e2e8f0 !important;">Headline: <code>ERROR CODE: 42</code> (14 chars) &bull; Body: <em>"It looks like the elf we have tracking your prices (Alan) stepped out for a quick call or something. Let's give Al a second. If you're in a rush, try our website."</em> (154 chars) &bull; Buttons: <code>RETRY</code>, <code>WEBSITE</code></span>
+  <span style="color: #cbd5e1 !important;"><strong>Why it failed:</strong> flippant humor frustrates users during service outages. The whimsical narrative delays recovery, obscures root cause with an arbitrary error code, and exceeds the 120-character constraint.</span>
+</li>
+<li class="mt-3">
+  <strong style="color: #85e3a8 !important;"><i class="bi bi-check-circle me-1"></i>Draft 2 (Shipped, Calibrated Copy).</strong><br/>
+  <span class="d-block my-1" style="color: #e2e8f0 !important;">Headline: <code>Prices are unavailable.</code> (23 chars) &bull; Body: <em>"We can't load prices right now. Please try again soon or visit our website for the latest info and prices."</em> (101 chars) &bull; Buttons: <code>RETRY</code>, <code>WEBSITE</code></span>
+  <span style="color: #cbd5e1 !important;"><strong>Why it succeeded:</strong> complete transparency states the system constraint directly without technical jargon. Clear dual-path recovery (<code>RETRY</code> versus <code>WEBSITE</code>) preserves user agency and protects brand credibility.</span>
+</li>
+<li class="mt-3">
+  <strong style="color: #e8c47c !important;"><i class="bi bi-lightbulb me-1"></i>Content Strategy Takeaway.</strong><br/>
+  <span style="color: #cbd5e1 !important;">Strong content design requires knowing when <em>not</em> to use humor. Critical error recovery demands total clarity, empathy, and rapid recovery paths over playful branding.</span>
+</li>
 </ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This solution aims to build trust during a moment of failure. By being transparent about the problem and offering helpful alternatives, the message respects the user's goal and offers an actionable solution on the spot.</p>
+
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Transparent communication safeguards brand credibility during downtime. Dual-path recovery deflects support tickets and retains user engagement even through unexpected service interruptions.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/design/KSZ6n1AWQbgiIWX2BLo6o1/UX-Writing-Challenge--14?node-id=0-1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-13.pdf" role="button" tabindex="0">
+</div></div></div></div><div class="carousel-item" data-category="high-stakes prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-1.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-13.pdf" title="UX Writing Challenge: #13"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-1.pdf" title="UX Writing Case Study: Flight Cancellation Notification"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Truck Driver Delay Notification</h5>
-<p class="card-text"><b>Challenge:</b></p>
+<h5 class="card-title">Flight Cancellation Notification</h5>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
 <ul>
-<li>A short-haul truck driver has a phone app that monitors his route, schedule, and deliveries. He's behind schedule due to traffic. Write a push notification alerting him of this dilemma and options.</li>
+<li>Severe weather abruptly cancels a traveler's flight. Alert the passenger immediately with actionable, time-sensitive instructions to navigate the airport and reach the rebooking desk without causing panic.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
-<b>Headline:</b> 30 characters max<br/>
-<b>Body:</b> 45 characters max<br/>
-<b>Button(s):</b> 25 characters max</p>
+<b>Headline:</b> 45 characters<br/>
+<b>Body:</b> 175 characters max<br/>
+<b>Buttons:</b> 25 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-3" aria-expanded="false" aria-controls="ux-details-3">
 <span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
 <span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-3" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>My primary focus was on safety and speed of comprehension for a user whose main task is driving.</p>
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>High-stress travel interruptions require a direct, no-frills voice that prioritizes rapid comprehension over conversational filler.</p>
 <ul>
-<li><strong>Non-Accusatory Tone:</strong> I used a question for the headline, <code>Running Late?</code>, to give the driver the benefit of the doubt. This feels less accusatory than a direct statement, accounting for potential app bugs or data delays.</li>
-<li><strong>Extreme Brevity:</strong> The copy was intentionally kept short to be effective if read aloud by a screen-assistant. This ensures the driver gets all necessary information quickly and can make a decision without a prolonged distraction.</li>
-<li><strong>Clear, Actionable Choices:</strong> The body presents a critical choice the driver needs to make: <code>Fuel up now or keep going?</code>. The buttons, <code>REROUTE TO PITSTOP</code> and <code>KEEP GOING</code>, are direct, all-caps calls to action that correspond directly to the options presented, allowing for a quick, informed decision.</li>
+<li><strong>Headline:</strong> <code>FLIGHT CANCELLED. GO TO HELP DESK</code> delivers maximum scannability, immediately answering what occurred and where to proceed next.</li>
+<li><strong>Body:</strong> The copy provides the specific flight identifier (<code>DOC063</code>) and clear causation ("inclement weather"). It reinforces direct action: "Please head to the help desk."</li>
+<li><strong>Buttons:</strong> The <code>Got it</code> button offers clean dismissal, while <code>Airport Map</code> launches wayfinding assistance directly to eliminate disorientation inside large terminals.</li>
 </ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This solution targets a high-distraction environment. It delivers a crucial, time-sensitive choice in a way that prioritizes the driver's safety and minimizes cognitive load. This allows them to make a quick, informed decision and return their focus to the road.</p>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Direct communication calms traveler panic and organizes crowd flow toward designated service counters. Rapid mobile self-orientation minimizes passenger distress and preserves long-term brand goodwill during severe flight disruptions.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/2NGMklaY5uH05Qy22ZnHP4/UX-Writing-Challenge--1?node-id=19-124&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=19%3A124&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-12.pdf" role="button" tabindex="0">
+</div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-6.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-12.pdf" title="UX Writing Challenge: #12"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-6.pdf" title="UX Writing Case Study: Fire Alert Notification"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">"Fake Name" Error Message</h5>
-<p class="card-text"><b>Challenge:</b></p>
+<h5 class="card-title">Fire Alert Notification</h5>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
 <ul>
-<li>A user is creating an account. When they enter their name, they get an error message. A fraud detection software thinks their name is fake-but it's wrong 5% of the time. Write an error message that prompts them to fix the error without shaming them for having a fake-sounding name.</li>
+<li>An active wildfire near a driver's commute route threatens road closures and personal safety. Deliver an urgent, low-cognitive-load notification that prompts immediate, safe rerouting.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
-<b>45 characters max</b></p>
+<b>Headline:</b> 30 characters max<br/>
+<b>Body:</b> 45 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-4" aria-expanded="false" aria-controls="ux-details-4">
 <span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
 <span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-4" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>My goal was to treat the user with respect and avoid the demoralizing experience of a blunt "invalid name" error. People with unique names, like Nicolas Cage's son Kal-El, inspired this approach.</p>
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>Safety-critical mobile alerts in vehicular contexts demand immediate, glanceable comprehension.</p>
 <ul>
-<li><strong>Positive and Non-Accusatory Tone:</strong> Instead of flagging an error, I used the phrase, <code>That's an interesting name!</code> This reframes a moment of friction into a positive, conversational interaction. It assumes good intent from the user.</li>
-<li><strong>Collaborative Language:</strong> The second part, <code>Please help us verify it,</code> turns the next step into a collaborative request rather than a demand. It invites the user to help resolve the issue.</li>
-<li><strong>Actionable Link:</strong> The message includes an embedded link to a hypothetical verification page. This provides an immediate, clear path forward, guiding the user toward a solution instead of leaving them stuck.</li>
+<li><strong>Design and Tone:</strong> High-contrast warning colors and concise all-caps typography communicate urgent safety priority without cluttering the screen.</li>
+<li><strong>Headline:</strong> <code>FIRE ON ATLANTIC AVE</code> communicates danger and geographical proximity in under 25 characters.</li>
+<li><strong>Body:</strong> <code>FIRE MAY AFFECT YOUR ROUTE. REROUTE.</code> instructs action without diverting attention from driving.</li>
+<li><strong>Button:</strong> <code>REROUTE TO SAFETY</code> makes the action decisive and safety-focused.</li>
 </ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This solution handles a sensitive, algorithm-driven error with a human touch. Avoiding shame and using friendly, respectful language reduces user frustration. It builds trust, and helps users with unique names successfully create their accounts without feeling alienated.</p>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Prioritizing driver safety and rapid routing adjustments prevents users from encountering hazardous zones, fulfilling navigation platform duty-of-care obligations.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-11.pdf" role="button" tabindex="0">
+</div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-9.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-11.pdf" title="UX Writing Challenge: #11"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-9.pdf" title="UX Writing Case Study: Expired Credit Card Error"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Contact Lens Subscription - Title &amp; Meta Description</h5>
-<p class="card-text"><b>Challenge:</b></p>
+<h5 class="card-title">Expired Credit Card Error</h5>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
 <ul>
-<li>Write a title and meta description for a website that sells subscription contact lenses delivered every 30 days. You must convince an elderly user to try it.</li>
+<li>A customer attempts to complete a time-sensitive car rental reservation, but the payment method on file is expired. Pinpoint the exact issue and direct the user to update details without abandoning the booking.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
-<b>Title:</b> 60 characters max<br/>
-<b>Meta Description:</b> 160 characters max</p>
+<b>Headline:</b> 30 characters<br/>
+<b>Body:</b> 45 characters</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-5" aria-expanded="false" aria-controls="ux-details-5">
 <span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
 <span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-5" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>I approached this challenge by creating a persona based on my grandmother: a visually impaired elderly person who values simplicity and clarity. This meant the copy had to be concise to remain readable at a larger font size and focus entirely on the core benefits.</p>
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>Checkout payment errors demand direct, clear resolution paths. Ambiguity at this stage leads directly to transaction abandonment.</p>
 <ul>
-<li><strong>Title:</strong> <code>Vision Quest: Hassle-Free Contact Lens Delivery Every 30 Days!</code> is direct and benefit-oriented. "Hassle-Free" directly addresses the potential anxiety of managing a new service, while "Contact Lens Delivery Every 30 Days!" explicitly explains what the service does.</li>
-<li><strong>Meta Description:</strong> The description, "Create your Vision Quest account in 15 minutes or less, and have your contact lenses delivered to your doorstep every 30 days, hassle-free," builds trust and reduces friction. It quantifies the setup time ("15 minutes or less") to show it's a small commitment and uses reassuring, plain language like "delivered to your doorstep" and repeats the term "hassle-free."</li>
+<li><strong>Headline:</strong> <code>YOUR CARD IS EXPIRED!</code> pinpoints the exact breakdown instantly, preventing confusion between credit limits, network drops, or expired credentials.</li>
+<li><strong>Body:</strong> <code>Update card details or add a new one</code> gives clear instructions for resolving the payment obstacle immediately.</li>
+<li><strong>UI Alignment:</strong> Visual form cues highlight the expiration date field directly, guiding eye movement straight to the solution.</li>
 </ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This solution attracts and reassures an older user. I wanted to create an accessible, convenient, and hassle-free experience. The copy aims to overcome potential tech anxiety and build enough trust for the user to click through and learn more about the service.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-10.pdf" role="button" tabindex="0">
-<div class="row g-0">
-<div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-10.pdf" title="UX Writing Challenge: #10"></iframe>
-</div>
-<div class="col-md-9">
-<div class="card-body text-start">
-<h5 class="card-title">Car Buying Website Location Request</h5>
-<p class="card-text"><b>Challenge:</b></p>
-<ul>
-<li>A user is trying to view a website to help them buy a car, but the content can't load without the user's location. They need to enter their ZIP code and first name. Ask them where they live and who they are without sounding like you're unnecessarily mining their data.</li>
-</ul>
-<p class="card-text"><b>Constraints:</b><br/>
-<b>Headline:</b> 25 characters<br/>
-<b>Body:</b> 45 characters<br/>
-<b>Button:</b> 15 characters</p>
-
-<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-6" aria-expanded="false" aria-controls="ux-details-6">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
-</button>
-<div class="collapse d-md-block ux-details-collapse" id="ux-details-6" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>My strategy was to build trust and excitement by focusing on the reward, using a playful tone, and minimizing the perceived intrusiveness of the request.</p>
-<ul>
-<li><strong>Benefit-Oriented Headline:</strong> The copy leads with an exciting promise: <code>Your dream car is here.</code> This focuses on the user's goal, not the site's data requirement.</li>
-<li><strong>Humor and Personality:</strong> I added the parenthetical <code>(Yes, even THAT one)</code> and used a "Batman"-style font to inject a moment of fun, hinting that even a fantastical car like the Batmobile is within reach. This lightens the mood and makes the brand feel more relatable.</li>
-<li><strong>Subtle Persuasion:</strong> Instead of explaining *why* we need their info, I made the primary call to action <code>VIEW OUR DEALS</code>. This subconsciously frames the data entry as a small, necessary step to unlock a valuable reward, making the user feel in control.</li>
-<li><strong>Privacy-Conscious Design:</strong> The form asks for a "ZIP Code" rather than a full address. This feels less invasive and respects the user's privacy by requesting only the general location needed to provide service.</li>
-</ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This solution builds trust and encourages user participation by making the data request feel like a low-effort, high-reward exchange. The playful tone and focus on benefits reduces user hesitation. This increases the number of users completing the form and engaging with the site's core offerings.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-9.pdf" role="button" tabindex="0">
-<div class="row g-0">
-<div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-9.pdf" title="UX Writing Challenge: #9"></iframe>
-</div>
-<div class="col-md-9">
-<div class="card-body text-start">
-<h5 class="card-title">Expired Credit Card Error</h5>
-<p class="card-text"><b>Challenge:</b></p>
-<ul>
-<li>Write an error message for a user trying to rent a car when their credit card on file has expired, so they can correct the problem.</li>
-</ul>
-<p class="card-text"><b>Constraints:</b><br/>
-<b>Headline:</b> 30 characters<br/>
-<b>Body:</b> 45 characters</p>
-
-<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-7" aria-expanded="false" aria-controls="ux-details-7">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
-</button>
-<div class="collapse d-md-block ux-details-collapse" id="ux-details-7" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>My approach was to be extremely direct to minimize user frustration. At this point in the flow, the user wants a solution, not a conversation.</p>
-<ul>
-<li><strong>Headline:</strong> I chose <code>YOUR CARD IS EXPIRED!</code> in all caps. While unconventional, this choice was deliberate to instantly draw the user's eye to the exact source of the error. This removes any ambiguity about what went wrong.</li>
-<li><strong>Body:</strong> The subheading, <code>Update card details or add a new one,</code> functions as a clear, concise instruction. It immediately presents the user with their two possible paths to success.</li>
-<li><strong>UI/Design Consideration:</strong> The design supports the copy by visually highlighting the expired date field in red. This reinforces where the user needs to focus their attention.</li>
-</ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This solution reduces cognitive load for a frustrated user. By immediately identifying the problem and providing clear, actionable choices, the user can quickly resolve the payment issue and complete their car rental. This turns a hard stop into a minor, manageable hiccup.</p>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Clear payment recovery copy protects checkout conversion rates, preventing drop-offs during high-intent booking flows.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/RjNFdKOJncmtaAH0IzURy2/UX-Writing-Challenge--9?node-id=9-42&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=9%3A42&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-8.pdf" role="button" tabindex="0">
+</div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-12.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-8.pdf" title="UX Writing Challenge: #8"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-12.pdf" title="UX Writing Case Study: 'Fake Name' Error Message"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Concert Promotion</h5>
-<p class="card-text"><b>Challenge:</b></p>
+<h5 class="card-title">"Fake Name" Error Message</h5>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
 <ul>
-<li>Tell a casual music fan that one of their favorite bands is playing live in their town and compel them to want to go.</li>
+<li>Automated fraud detection flags a legitimate user's unique or uncommon name during account creation. Prompt identity verification respectfully without alienating or shaming the user.</li>
+</ul>
+<p class="card-text"><b>Constraints:</b><br/>
+<b>45 characters max</b></p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-6" aria-expanded="false" aria-controls="ux-details-6">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-6" onclick="event.stopPropagation()">
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>Algorithmic false positives can alienate users with culturally diverse or unique names. The copy reframes automated suspicion into an inclusive, respectful verification step.</p>
+<ul>
+<li><strong>Inclusive, Affirming Tone:</strong> Rather than issuing a negative error code, <code>That's an interesting name!</code> turns algorithmic friction into a courteous human interaction.</li>
+<li><strong>Collaborative Microcopy:</strong> <code>Please help us verify it</code> invites user partnership rather than issuing an accusatory demand.</li>
+<li><strong>Direct Verification Pathway:</strong> An embedded verification link provides immediate identity confirmation without leaving the user stranded.</li>
+</ul>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Empathetic error handling mitigates onboarding churn among diverse demographics, safeguarding customer lifetime value and brand integrity.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-11.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-11.pdf" title="UX Writing Case Study: Contact Lens Subscription - Title &amp; Meta Description"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Contact Lens Subscription - Title &amp; Meta Description</h5>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
+<ul>
+<li>Visually impaired and elderly users experience tech anxiety when considering recurring medical deliveries. Craft search-optimized title and meta copy that builds trust and emphasizes effortless, doorstep replenishment.</li>
+</ul>
+<p class="card-text"><b>Constraints:</b><br/>
+<b>Title:</b> 60 characters max<br/>
+<b>Meta Description:</b> 160 characters max</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-7" aria-expanded="false" aria-controls="ux-details-7">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-7" onclick="event.stopPropagation()">
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>Designing for accessible healthcare services requires high readability and plain, reassuring language tailored to older personas.</p>
+<ul>
+<li><strong>Title:</strong> <code>Vision Quest: Hassle-Free Contact Lens Delivery Every 30 Days!</code> emphasizes reliability and predictable service cadence.</li>
+<li><strong>Meta Description:</strong> Quantifying setup time ("15 minutes or less") and highlighting doorstep delivery reduces perceived onboarding complexity.</li>
+</ul>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Clear, accessibility-conscious SEO metadata drives qualified organic search click-throughs from cautious demographics, expanding subscription customer acquisition.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-13.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-13.pdf" title="UX Writing Case Study: Truck Driver Delay Notification"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Truck Driver Delay Notification</h5>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
+<ul>
+<li>A short-haul logistics driver falls behind schedule due to highway traffic congestion. Deliver a glanceable, hands-free-friendly push notification that presents fast routing choices without distracting from driving safety.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
 <b>Headline:</b> 30 characters max<br/>
 <b>Body:</b> 45 characters max<br/>
-<b>Button:</b> 25 characters</p>
+<b>Buttons:</b> 25 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-8" aria-expanded="false" aria-controls="ux-details-8">
 <span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
 <span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-8" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>I aimed to create an experience that felt both exciting and exclusive. The tone is energetic and direct, designed to make the user feel like they're getting an insider opportunity.</p>
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>Logistics notifications require strict cognitive economy to protect operator safety during active transport.</p>
 <ul>
-<li><strong>Headline &amp; Tone:</strong> I used the iconic Beatles phrase <code>YEAH! YEAH! YEAH!</code> as the title of the playlist to immediately create an emotional and nostalgic connection. The headline <code>The Beatles are back in your city!</code> is direct and exciting.</li>
-<li><strong>Body &amp; Aspirational Labeling:</strong> Although the target is a "casual fan," I deliberately chose the phrase "loyal listener." This marketing technique, known as aspirational labeling, makes the user feel valued and creates a positive emotional connection. Even a casual fan feels pride when the copy calls them "loyal," increasing their receptivity to the exclusive offer. Bold styling on the presale code <code>FAB4</code> provides quick access.</li>
-<li><strong>Button:</strong> The <code>PRESALE</code> button is a clear, direct call to action. It takes the user straight to the ticket-buying process, removing any intermediate steps and capitalizing on the excitement generated by the notification.</li>
+<li><strong>Non-Accusatory Tone:</strong> The headline <code>Running Late?</code> avoids blame, allowing for system sync lags or traffic variables.</li>
+<li><strong>Extreme Brevity:</strong> Short phrasing accommodates audio screen-assistants without speech clutter.</li>
+<li><strong>Actionable Choices:</strong> <code>Fuel up now or keep going?</code> pairs with distinct button triggers (<code>REROUTE TO PITSTOP</code> vs. <code>KEEP GOING</code>) for quick, decisive selection.</li>
 </ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This notification converts a casual fan's passive interest into an active ticket purchase. By creating a sense of excitement and providing an exclusive presale code, the solution aims to drive immediate engagement and ticket sales.</p>
-</div>
-<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FpYJKY0IXwxYVe7d7rHJwh/UX-Writing-Challenge--8?node-id=1-51&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A51&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Timely notifications support supply chain delivery pacing while safeguarding driver welfare and route efficiency.</p>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-7.pdf" role="button" tabindex="0">
+</div>
+</div></div></div></div><div class="carousel-item" data-category="onboarding"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-10.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-7.pdf" title="UX Writing Challenge: #7"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-10.pdf" title="UX Writing Case Study: Car Buying Website Location Request"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Rivalry Score Update</h5>
-<p class="card-text"><b>Challenge:</b></p>
+<h5 class="card-title">Car Buying Website Location Request</h5>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
 <ul>
-<li>Quickly let a sports fan at a wedding know that their favorite team has just scored against their arch-rivals. Include the latest play, the current score, and the key players.</li>
+<li>A vehicle marketplace requires user location to display localized inventory and regional pricing. Request geographic details transparently without triggering data privacy concerns or drop-offs.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
-<b>Headline:</b> 30 characters max<br/>
-<b>Body:</b> 45 characters max</p>
+<b>Headline:</b> 25 characters<br/>
+<b>Body:</b> 45 characters<br/>
+<b>Button:</b> 15 characters</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-9" aria-expanded="false" aria-controls="ux-details-9">
 <span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
 <span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-9" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>As a fan myself, I approached this from a personal and authentic perspective. The notification needed to be a quick shot of adrenaline that delivered all the vital stats.</p>
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>Permission priming succeeds when the interface connects data collection directly to clear user value.</p>
 <ul>
-<li><strong>Headline &amp; Tone:</strong> I used <code>ALL RISE FOR GRAND SLAM</code> to create an immediate and exciting connection for a Yankees fan. "All Rise" is brand-specific language synonymous with Aaron Judge, so the headline itself tells half the story before the user even reads the body. It's insider language that makes the fan feel seen.</li>
-<li><strong>Body:</strong> The body is straightforward and data-focused. It confirms the player (<code>Aaron Judge</code>), the monumental play (<code>blasts a Grand Slam</code>), and the direct impact on the game (<code>NYY lead BOS 5-0</code>). There's no fluff, just the facts every fan is desperate to know.</li>
-<li><strong>Design Authenticity:</strong> To add a layer of genuine passion, the mock-up uses an official Yankees wallpaper from Derek Jeter's Hall of Fame induction. I had that wallpaper on my own phone for a long time. Using authentic fan materials makes the experience feel more real. (And for the record, to the one writer who voted against his unanimous induction: we just want to talk.)</li>
+<li><strong>Benefit-Oriented Headline:</strong> <code>Your dream car is here.</code> emphasizes the user's primary goal over corporate data intake.</li>
+<li><strong>Engaging Personality:</strong> Playful microcopy <code>(Yes, even THAT one)</code> establishes friendly brand rapport.</li>
+<li><strong>Privacy-Conscious Input:</strong> Requesting solely a ZIP code instead of a street address respects data privacy while fulfilling regional inventory requirements.</li>
+<li><strong>Compelling CTA:</strong> <code>VIEW OUR DEALS</code> frames data entry as unlocking discounts rather than surrendering personal details.</li>
 </ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This notification delivers a burst of excitement and critical information in seconds. It allows the fan to stay present at their social event while still feeling connected to the game's biggest moments. That creates a positive and thrilling touchpoint for the user.</p>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Clear value framing lifts permission acceptance rates and accelerates transition into active inventory browsing.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-6.pdf" role="button" tabindex="0">
+</div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-5.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-6.pdf" title="UX Writing Challenge: #6"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-5.pdf" title="UX Writing Case Study: App Crash Recovery Message"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Fire Alert Notification</h5>
-<p class="card-text"><b>Challenge:</b></p>
+<h5 class="card-title">App Crash Recovery Message</h5>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
 <ul>
-<li>Let a user know there's a fire in a nearby town causing road closures, as they are driving to work. The effect on their commute is unknown, but there is a definite danger if the fire gets closer.</li>
+<li>An unexpected mobile device shutdown interrupts a graphic designer mid-critique. Reassure the user upon app restart, confirm document auto-recovery status, and provide frictionless paths to restore or start fresh.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
-<b>Headline:</b> 30 characters max<br/>
-<b>Body:</b> 45 characters max</p>
+<b>Headline:</b> 40 characters max<br/>
+<b>Body:</b> 140 characters max<br/>
+<b>Buttons:</b> 20 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-10" aria-expanded="false" aria-controls="ux-details-10">
 <span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
 <span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-10" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>For a safety-critical alert for a user who is driving, my approach was to be as direct and attention-grabbing as possible. Clarity and immediate comprehension were my top priorities.</p>
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>System failures induce acute anxiety over lost work. The restart dialog must immediately validate recovery status and restore user flow.</p>
 <ul>
-<li><strong>Design and Tone:</strong> I used a red background and all-caps text to signal extreme urgency. The design is intentionally jarring to ensure the user understands this isn't a standard notification and requires their immediate attention.</li>
-<li><strong>Headline:</strong> <code>FIRE ON ATLANTIC AVE</code> is direct and provides the most critical information first: the hazard and the location.</li>
-<li><strong>Body:</strong> <code>FIRE MAY AFFECT YOUR ROUTE. REROUTE.</code> is short, scannable, and provides a clear, actionable instruction. I avoided unnecessary details about the fire itself, as the user's primary need is to know how it impacts their immediate safety and route.</li>
-<li><strong>Button:</strong> The <code>REROUTE TO SAFETY</code> button is a clear and compelling call to action. The addition of "TO SAFETY" reinforces the seriousness of the situation and frames the action as a direct move toward security.</li>
+<li><strong>Headline:</strong> <code>ACME DESIGNS Crashed Unexpectedly</code> acknowledges failure honestly and transparently.</li>
+<li><strong>Body:</strong> "Your design files were recovered" instantly resolves user panic before detailing options to restore or initiate a fresh workspace.</li>
+<li><strong>Buttons:</strong> <code>Restore</code> and <code>New</code> provide distinct, decisive action triggers.</li>
 </ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This solution quickly and safely informs a distracted driver about potential danger. It prioritizes immediate comprehension and provides a single, clear action the user can take to avoid the hazard, ensuring their safety is the primary focus.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-5.pdf" role="button" tabindex="0">
-<div class="row g-0">
-<div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-5.pdf" title="UX Writing Challenge: #5"></iframe>
-</div>
-<div class="col-md-9">
-<div class="card-body text-start">
-<h5 class="card-title">App Crash Recovery Message</h5>
-<p class="card-text"><b>Challenge:</b></p>
-<ul>
-<li>A user works in graphic design. While critiquing a design in a mobile app, their phone abruptly turns off. When they restart the phone, they reopen the app. Write a message that the user will read immediately upon opening the app. What do they need to know? What steps (if any) do they need to take to recover their content? What if they can't recover the content?</li>
-</ul>
-<p class="card-text"><b>Constraints:</b><br/>
-<b>Headline:</b> 40 characters max<br/>
-<b>Body:</b> 140 characters max<br/>
-<b>Button(s):</b> 20 characters max</p>
-
-<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-11" aria-expanded="false" aria-controls="ux-details-11">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
-</button>
-<div class="collapse d-md-block ux-details-collapse" id="ux-details-11" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>Drawing from the universal frustration of losing work to unexpected errors, I prioritized immediate reassurance and clarity. The user feels stressed, so the message provides a calming, helpful guide.</p>
-<ul>
-<li><strong>Headline:</strong> <code>ACME DESIGNS Crashed Unexpectedly</code> is a transparent and honest statement. It acknowledges the app failed, which builds trust.</li>
-<li><strong>Body:</strong> The first sentence, "But don't fret! Your design files were recovered," directly addresses the user's primary fear. The phrase "don't fret" is empathetic and conversational. The rest of the body explains the two available paths: restoring the previous session or starting fresh.</li>
-<li><strong>Buttons:</strong> The button labels <code>Restore</code> and <code>New</code> are direct, action-oriented, and correspond to the choices outlined in the body text, making the user's next step effortless.</li>
-</ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This solution turns a moment of high anxiety into a positive recovery experience. The alert immediately confirms that the user's work is safe and offers clear choices. This reduces frustration, builds trust in the app's reliability, and allows the user to get back to their work with minimal disruption.</p>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Reliable crash recovery communication preserves user trust, reinforces workflow resilience, and mitigates app abandonment.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/t0mfj5ZNbl8cMwxPL8ieUk/UX-Writing-Challenge--5?node-id=5-342&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A135&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-4.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-4.pdf" title="UX Writing Challenge: #4"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-4.pdf" title="UX Writing Case Study: Grocery Subscription Promotion"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
 <h5 class="card-title">Grocery Subscription Promotion</h5>
-<p class="card-text"><b>Challenge:</b></p>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
 <ul>
-<li>Write a promotional home screen for a subscription service that delivers groceries to the user once a month for a flat fee.</li>
+<li>Introduce a monthly flat-fee grocery delivery subscription on an in-app landing screen. Communicate recurring convenience and cost transparency without high-pressure sales tactics.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
 <b>Headline:</b> 45 characters max<br/>
 <b>Body:</b> 175 characters max<br/>
-<b>Button(s):</b> 25 characters max</p>
+<b>Buttons:</b> 25 characters max</p>
 
-<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-12" aria-expanded="false" aria-controls="ux-details-12">
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-11" aria-expanded="false" aria-controls="ux-details-11">
 <span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
 <span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
 </button>
-<div class="collapse d-md-block ux-details-collapse" id="ux-details-12" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>I focused on emphasizing the convenience and the "comfort of home." The copy aims to frame the service as a lifestyle upgrade.</p>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-11" onclick="event.stopPropagation()">
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>Subscription upsells succeed by framing services around lifestyle enhancement and honest pricing.</p>
 <ul>
-<li><strong>Headline:</strong> <code>ENJOY THE COMFORT OF HOME, WE'LL SHOP FOR YOU.</code> is direct and benefit-oriented. It immediately presents the core value: you relax while we do the work.</li>
-<li><strong>Body:</strong> The body copy quantifies the service ("month's worth of groceries") and the cost ("flat fee of $20/mo"), making the offer tangible and transparent. It reinforces the core benefit of having groceries "delivered to your doorstep."</li>
-<li><strong>Buttons:</strong> <code>LEARN MORE</code> is a low-pressure call to action for users interested in the service but not yet ready to commit. <code>NO THANKS</code> is a clear and respectful way for users to decline, which is important for building trust.</li>
+<li><strong>Headline:</strong> <code>ENJOY THE COMFORT OF HOME, WE'LL SHOP FOR YOU.</code> leads with effortless personal time recovery.</li>
+<li><strong>Body:</strong> Concrete details ("month's worth of groceries", "flat fee of $20/mo") establish clear value without hidden terms.</li>
+<li><strong>Buttons:</strong> <code>LEARN MORE</code> offers an exploratory low-friction entry, while <code>NO THANKS</code> provides a respectful decline without guilt-inducing patterns.</li>
 </ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This promotional screen aims to appeal to users who value their time and convenience. By stating the service's benefit and cost, the user can quickly assess the value proposition and make an informed decision. This positions the app as a practical solution to a common chore.</p>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Transparent subscription messaging drives sustained retention and customer satisfaction over aggressive short-term conversions.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/YqzCMRqdg1xA41oflpHwnd/UX-Writing-Challenge--4?node-id=24-130&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=24%3A130&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+</div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
 <div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-3.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-3.pdf" title="UX Writing Challenge: #3"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-3.pdf" title="UX Writing Case Study: Incorrect Email Error Message"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
 <h5 class="card-title">Incorrect Email Error Message</h5>
-<p class="card-text"><b>Challenge:</b></p>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
 <ul>
-<li>Tell a user to enter the correct email address after they have entered the wrong one to sign in to their account.</li>
+<li>A returning user enters an unassociated or mistyped email during sign-in. Clarify the specific login obstacle and echo the input for rapid typo correction without exposing account enumeration vulnerabilities.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
 <b>40 characters max.</b></p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-12" aria-expanded="false" aria-controls="ux-details-12">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-12" onclick="event.stopPropagation()">
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>Authentication friction is a primary drop-off point. Explicit error messaging guides users toward instant correction.</p>
+<ul>
+<li><strong>Targeted Clarity:</strong> <code>Retype email address, '[email]'</code> tells the user precisely where the mismatch occurred and echoes their entry to surface typos immediately.</li>
+<li><strong>Direct Action Verb:</strong> Leading with the imperative "Retype" specifies the immediate next step without ambiguity.</li>
+</ul>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Targeted inline feedback reduces password reset requests and unblocks authentication flows quickly.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-2.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-2.pdf" title="UX Writing Case Study: Sports Fan App Promotion"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Sports Fan App Promotion</h5>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
+<ul>
+<li>Time-constrained parents and busy sports fans struggle to follow live broadcasts. Highlight asynchronous game highlights, personalized team alerts, and bite-sized score updates to eliminate fear of missing out (FOMO).</li>
+</ul>
+<p class="card-text"><b>Constraints:</b><br/>
+<b>Headline:</b> 40 characters max<br/>
+<b>Body:</b> 175 characters max<br/>
+<b>Buttons:</b> 25 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-13" aria-expanded="false" aria-controls="ux-details-13">
 <span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
 <span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-13" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>My personal experience with vague errors like "invalid credentials" inspired me to take a more direct and helpful approach. The user's goal is to log in, and the copy should support that, not block it.</p>
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>Promotional onboarding copy connects with user lifestyle constraints through energetic, memorable phrasing.</p>
 <ul>
-<li><strong>Specificity over Vagueness:</strong> Instead of a generic "Something went wrong," I chose <code>Retype email address, '[email]'</code>. This message is highly specific. It tells the user exactly which field is incorrect and echoes back the mistaken entry, helping them spot a potential typo immediately.</li>
-<li><strong>Action-Oriented Language:</strong> The phrase "Retype email address" is a clear, direct command. It removes the guesswork and tells the user precisely what action to take next.</li>
+<li><strong>Headline &amp; Body:</strong> "Don't miss hoops, stay in the loop!" and "we'll make sure you don't miss the next slam!" frame features as a friendly, reliable assistant for busy schedules.</li>
+<li><strong>Empowering CTA:</strong> <code>Score a win against FOMO!</code> channels user emotional intent directly into subscription activation.</li>
 </ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This solution reduces user frustration by eliminating ambiguity. By immediately identifying the exact problem and providing a clear instruction, the user can correct the error in seconds and successfully log in. Thus, turning a moment of potential annoyance into a seamless recovery.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-2.pdf" role="button" tabindex="0">
-<div class="row g-0">
-<div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-2.pdf" title="UX Writing Challenge: #2"></iframe>
-</div>
-<div class="col-md-9">
-<div class="card-body text-start">
-<h5 class="card-title">Sports Fan App Promotion</h5>
-<p class="card-text"><b>Challenge:</b></p>
-<ul>
-<li>A user is a working parent and a big sports fan who can no longer attend games. Write a promotional screen for an app that lets a user choose teams, sends game reminders, real-time score updates, and highlight videos.</li>
-</ul>
-<p class="card-text"><b>Constraints:</b><br/>
-<b>Headline:</b> 40 characters max<br/>
-<b>Body:</b> 175 characters max<br/>
-<b>Button(s):</b> 25 characters max</p>
-
-<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-14" aria-expanded="false" aria-controls="ux-details-14">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
-</button>
-<div class="collapse d-md-block ux-details-collapse" id="ux-details-14" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>My goal was to create a tone that was the opposite of the user's frustration: whimsical, fun, and energetic. The user is short on time, so the copy needed to be quick, catchy, and immediately communicate the app's core value.</p>
-<ul>
-<li><strong>Headline &amp; Body:</strong> I used a playful rhyming scheme ("Don't miss hoops, stay in the loop!") to be catchy and memorable. The body copy ("If you're in a jam, we'll make sure you don't miss the next slam!") continues this lighthearted tone while directly addressing the user's problem: being too busy. I then outlined the app's key features (reminders, real-time updates, highlights) to show *how* we solve their problem.</li>
-<li><strong>Button:</strong> The call to action, <code>Score a win against FOMO!</code>, directly uses the emotional term we identified. It frames the app not just as a utility, but as a victory over missing out.</li>
-</ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This promotional screen quickly captures the user's attention and reframes FOMO into a positive, achievable solution. It highlights the convenience of staying connected to the sports world, allowing the user to be a present parent without missing the big moments.</p>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Aligning app benefits with lifestyle constraints increases user activation and daily notification opt-in rates.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/UR8ck1CIuVgmjYalHckj8o/UX-Writing-Challenge--2?node-id=1-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A2&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
 </div>
-</div></div></div></div><div class="carousel-item"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-1.pdf" role="button" tabindex="0">
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-8.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-1.pdf" title="UX Writing Challenge: #1"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-8.pdf" title="UX Writing Case Study: Concert Promotion"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Flight Cancellation Notification</h5>
-<p class="card-text"><b>Challenge:</b></p>
+<h5 class="card-title">Concert Promotion</h5>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
 <ul>
-<li>Write a message from an airline app to a traveler whose flight has been abruptly cancelled due to bad weather. The message should notify them of the cancellation and tell them what they need to do next.</li>
+<li>An in-app streaming service detects localized tour dates for an artist in a user's listening history. Convert casual streaming affinity into presale ticket engagement with targeted, exclusive copy.</li>
 </ul>
 <p class="card-text"><b>Constraints:</b><br/>
-<b>Headline:</b> 45 characters<br/>
-<b>Body:</b> 175 characters max<br/>
-<b>Button(s):</b> 25 characters max</p>
+<b>Headline:</b> 30 characters max<br/>
+<b>Body:</b> 45 characters max<br/>
+<b>Button:</b> 25 characters</p>
+
+<button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-14" aria-expanded="false" aria-controls="ux-details-14">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-14" onclick="event.stopPropagation()">
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>Contextual event promotions leverage listener habits to deliver timely, exclusive engagement.</p>
+<ul>
+<li><strong>Headline &amp; Tone:</strong> <code>YEAH! YEAH! YEAH!</code> and <code>The Beatles are back in your city!</code> evoke nostalgia and localized excitement.</li>
+<li><strong>Aspirational Labeling:</strong> Referring to casual listeners as "loyal listeners" deepens emotional connection and motivates participation. Prominent presale code styling (<code>FAB4</code>) facilitates quick redemption.</li>
+<li><strong>Button:</strong> The direct <code>PRESALE</code> CTA routes users into ticketing without intermediate detours.</li>
+</ul>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Context-aware ticketing microcopy converts passive music listeners into high-value live entertainment buyers.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FpYJKY0IXwxYVe7d7rHJwh/UX-Writing-Challenge--8?node-id=1-51&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A51&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-7.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-7.pdf" title="UX Writing Case Study: Rivalry Score Update"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Rivalry Score Update</h5>
+<p class="card-text"><b>User Problem &amp; Context:</b></p>
+<ul>
+<li>A fan attending a formal social event needs discreet, instantaneous updates on a pivotal rivalry game. Deliver an urgent, high-density push alert featuring score line, key player, and play outcome in under 50 characters.</li>
+</ul>
+<p class="card-text"><b>Constraints:</b><br/>
+<b>Headline:</b> 30 characters max<br/>
+<b>Body:</b> 45 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-15" aria-expanded="false" aria-controls="ux-details-15">
 <span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
 <span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-15" onclick="event.stopPropagation()">
-<h6><b>Rationale</b></h6>
-<p>Given the user's high-stress situation, my approach was to be direct, clear, and empathetic. I used a "no frills" voice, prioritizing critical information over conversational fluff.</p>
+<h6><b>Strategy &amp; Rationale</b></h6>
+<p>Discreet alerts require maximum informational density within minimal glance time.</p>
 <ul>
-<li><strong>Headline:</strong> <code>FLIGHT CANCELLED. GO TO HELP DESK</code> is direct and scannable. It immediately tells the user the two most important things: what happened and where to go next.</li>
-<li><strong>Body:</strong> I used direct, professional language like "inclement weather" and provided the specific flight number (<code>DOC063</code>) for confirmation. The body reinforces the next step-"Please head to the help desk"-to ensure the user knows exactly what to do.</li>
-<li><strong>Buttons:</strong> The <code>Got it</code> button is a direct acknowledgment, allowing the user to dismiss the notification and focus on their next action. The <code>Airport Map</code> button provides an immediate navigation tool, directly addressing their anxiety about getting lost or disoriented.</li>
+<li><strong>Headline:</strong> <code>ALL RISE FOR GRAND SLAM</code> leverages iconic franchise vocabulary, communicating the turning point before the user reads the body text.</li>
+<li><strong>Body:</strong> Concise data confirms player, play, and updated standings (<code>Aaron Judge blasts a Grand Slam. NYY lead BOS 5-0</code>).</li>
 </ul>
-<h6><b>Intended Outcome</b></h6>
-<p>This solution aims to reduce the user's cognitive load during a stressful moment. By providing clear, concise information and a direct call to action, the user can quickly move from a state of confusion to proactive problem-solving. This improves the user's overall experience with the airline, even when things go wrong.</p>
+<h6><b>Business Impact &amp; Intended Outcome</b></h6>
+<p>Instantaneous, glanceable updates keep users connected during real-world commitments, boosting app engagement and notification utility.</p>
 </div>
-<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/2NGMklaY5uH05Qy22ZnHP4/UX-Writing-Challenge--1?node-id=19-124&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=19%3A124&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
 </div>
 </div>
 </div>
@@ -729,14 +765,21 @@
 
 
 
-<div class="py-3">
-<div class="container text-center">
-<p class="text fs-4 mb-0 text-white">And for funsies&hellip;</p>
-<p class="secondary-text-center text-white">These aren't ux writing samples. These are some playful passes I designed for my partner's classroom. I just wanted to show them off. Redacted for privacy reasons.</p>
-</div>
-</div>
-<div class="pt-2 pb-5 bg-custom-dark" id="hallpass-carousel-container">
+<!-- Visual Design & Print Work: Classroom Hall Passes (Open Showcase) -->
+<div class="py-5 bg-custom-dark border-top border-secondary border-opacity-25" id="visual-design-section">
 <div class="container-fluid px-4">
+<div class="text-center mb-4">
+<span class="badge px-3 py-2 rounded-pill text-uppercase mb-2" style="background-color: rgba(232, 196, 124, 0.15); color: #e8c47c; border: 1px solid rgba(232, 196, 124, 0.35); letter-spacing: 1.2px; font-size: 0.8rem;">
+<i class="bi bi-palette-fill me-1"></i> Visual Design &amp; Print Work
+</span>
+<h2 class="display-6 fw-bold text-white mb-2">Classroom Hall Passes</h2>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center text-white-50">
+<p class="mb-0 fs-6">Custom double-sided passes engineered for high school classroom management using curated vintage comic art and dynamic print layouts. Redacted for privacy.</p>
+</div>
+</div>
+</div>
+
 <div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="hallPassCarousel">
 <div class="carousel-inner">
 <div class="carousel-item active"><div class="row justify-content-center"><div class="col-11 col-lg-10">
@@ -753,7 +796,7 @@
 <div class="col-md-7 p-3 p-lg-4">
 <div class="card-body p-0 text-start">
 <h3 class="card-title fw-bold mb-2">The Spidey Bathroom Pass</h3>
-<p class="card-text mb-4 fs-6">This is the bathroom pass. It features images from Spider-Man's prolific comic run, including that time he taught an interdimensional cosmic god how to use the bathroom.</p>
+<p class="card-text mb-4 fs-6">Custom pass featuring panels from Spider-Man's comic history, including the famous sequence teaching The Beyonder.</p>
 <div class="hallpass-meta p-3 rounded-3 mb-0">
 <div class="hallpass-meta-item mb-2">
 <div class="hallpass-meta-icon hallpass-meta-icon-quote">
@@ -761,7 +804,7 @@
 </div>
 <div>
 <strong class="small d-block">Thought Bubble:</strong>
-<span class="small">Features panels from <em>Secret Wars II #8</em>, where Spidey taught <i>cosmic god</i> The Beyonder how to pee.</span>
+<span class="small">Features panels from <em>Secret Wars II #8</em>, where Spidey taught cosmic god The Beyonder.</span>
 </div>
 </div>
 <div class="hallpass-meta-item mb-0">
@@ -793,7 +836,7 @@
 <div class="col-md-7 p-3 p-lg-4">
 <div class="card-body p-0 text-start">
 <h3 class="card-title fw-bold mb-2">The Hulk Hall Pass</h3>
-<p class="card-text mb-4 fs-6">It's the hall pass. It features images from the jolly jade giant's giant-sized comic run.</p>
+<p class="card-text mb-4 fs-6">Custom pass featuring panels from the Incredible Hulk's comic run.</p>
 <div class="hallpass-meta p-3 rounded-3 mb-0">
 <div class="hallpass-meta-item mb-2">
 <div class="hallpass-meta-icon hallpass-meta-icon-quote">
@@ -801,7 +844,7 @@
 </div>
 <div>
 <strong class="small d-block">Thought Bubble:</strong>
-<span class="small">Curated explosive vintage panels from Big Green's comics. I've always been fascinated by the dynamism of the transformation from Bruce Banner to the Hulk and wanted to capture that in the design of the pass.</span>
+<span class="small">Curated explosive vintage panels from Big Green's comics capturing the transformation from Bruce Banner to the Hulk.</span>
 </div>
 </div>
 <div class="hallpass-meta-item mb-0">
@@ -843,7 +886,7 @@
 <!-- Shared PDF viewer -->
 <script src="js/pdf-viewer.js?v=2"></script>
 <script src="js/sticky-nav.js"></script>
-<script src="js/page-specific.js"></script>
+<script src="js/page-specific.js?v=8"></script>
 <script src="js/figma-viewer.js"></script>
 <!-- Modal -->
 <div aria-hidden="true" aria-labelledby="figmaModalLabel" class="modal fade" id="figmaModal" tabindex="-1">

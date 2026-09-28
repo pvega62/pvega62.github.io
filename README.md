@@ -18,7 +18,7 @@ This repository houses my core portfolio site, hardware manuals, and UX content 
 | **Software Documentation** | Docusaurus (Docs-as-Code) | REST APIs, SDK tutorials, data routing guides, and Algolia AskAI search. | [pvega62.github.io/software](https://pvega62.github.io/software) |
 | **Hardware Technical Writing** | Interactive PDF Viewer | Over 150 commercial, consumer, and medical hardware manuals and guides. | [Hardware Samples](https://pvega62.github.io/technical-writing-hardware.html) |
 | **UX Writing & Content Design** | UI Flows & Microcopy | Mobile and web microcopy, error states, and WCAG-compliant style guides. | [UX Writing Samples](https://pvega62.github.io/uxwriting.html) |
-| **Articles & Essays** | Publications & Commentary | Technology journalism, humanitarian policy analysis, and culture essays. | [Articles & Essays](https://pvega62.github.io/articlesandessays.html) |
+| **Articles** | Publications & Commentary | Technology journalism, humanitarian policy analysis, and reporting. | [Articles](https://pvega62.github.io/articles.html) |
 | **Recordkeeping** | Static Site | Specialized tracking and documentation project. | [Recordkeeping](https://pvega62.github.io/Recordkeeping/) |
 | **Resume (PDF)** | Downloadable PDF | Up-to-date resume covering four years of technical writing experience. | [Pedro Vega Resume](https://pvega62.github.io/Pedro%20Vega%20Resume.pdf) |
 
@@ -51,7 +51,7 @@ Product-focused copy that guides users through workflows with minimal friction:
 * **Accessibility (WCAG):** Error messaging and accessible form labels designed to exceed screen-reader standards.
 * **Company-Wide Style Guide:** Voice, tone, and component copy rules ensuring consistency across design and engineering teams.
 
-### 4. 📰 Articles, Essays & Analysis ([Articles & Essays Portal](https://pvega62.github.io/articlesandessays.html))
+### 4. 📰 Articles & Journalism ([Articles Portal](https://pvega62.github.io/articles.html))
 Long-form research and journalism covering technology, global development, and ethics:
 
 * **Technology Journalism:** *"4 Ways to Use Tech Against the Pandemic"* and *"The Samsung Global Goals App: Supporting SDGs With a Tap."*
@@ -85,7 +85,7 @@ Docs-as-Code Workflow:
 │   ├── aboutme.html           # Professional biography & background
 │   ├── technical-writing-hardware.html # Hardware documentation showcase
 │   ├── uxwriting.html         # UX writing and content design samples
-│   ├── articlesandessays.html # Articles, essays, and publications
+│   ├── articles.html          # Articles and publications
 │   ├── Pedro Vega Resume.pdf  # Downloadable resume
 │   ├── css/                   # Stylesheets and custom responsive rules
 │   ├── js/                    # Search, modal viewers, and navigation scripts
