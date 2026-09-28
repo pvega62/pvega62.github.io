@@ -16,9 +16,9 @@ This repository houses my core portfolio site, hardware manuals, and UX content 
 |:---|:---|:---|:---|
 | **Portfolio Homepage** | Custom HTML / CSS / JS | Central hub featuring all samples, background, and navigation. | [pvega62.github.io](https://pvega62.github.io/) |
 | **Software Documentation** | Docusaurus (Docs-as-Code) | REST APIs, SDK tutorials, data routing guides, and Algolia AskAI search. | [pvega62.github.io/software](https://pvega62.github.io/software) |
-| **Hardware Technical Writing** | Interactive PDF Viewer | Over 150 commercial, consumer, and medical hardware manuals and guides. | [Hardware Samples](https://pvega62.github.io/technical-writing-hardware.html) |
-| **UX Writing & Content Design** | UI Flows & Microcopy | Mobile and web microcopy, error states, and WCAG-compliant style guides. | [UX Writing Samples](https://pvega62.github.io/uxwriting.html) |
-| **Articles** | Publications & Commentary | Technology journalism, humanitarian policy analysis, and reporting. | [Articles](https://pvega62.github.io/articles.html) |
+| **Hardware Technical Writing** | Interactive PDF Viewer | Over 150 commercial, consumer, and medical hardware manuals and guides. | [Hardware Samples](https://pvega62.github.io/technical-writing-hardware) |
+| **UX Writing & Content Design** | UI Flows & Microcopy | Mobile and web microcopy, error states, and WCAG-compliant style guides. | [UX Writing Samples](https://pvega62.github.io/uxwriting) |
+| **Articles** | Publications & Commentary | Technology journalism, humanitarian policy analysis, and reporting. | [Articles](https://pvega62.github.io/articles) |
 | **Recordkeeping** | Static Site | Specialized tracking and documentation project. | [Recordkeeping](https://pvega62.github.io/Recordkeeping/) |
 | **Resume (PDF)** | Downloadable PDF | Up-to-date resume covering four years of technical writing experience. | [Pedro Vega Resume](https://pvega62.github.io/Pedro%20Vega%20Resume.pdf) |
 
@@ -35,7 +35,7 @@ Migrated from a traditional wiki into a version-controlled **Docs-as-Code** plat
 * **Petstore API (OpenAPI / Swagger):** Comprehensive REST API reference demonstrating schema definitions, request/response payloads, and authentication flows.
 * **Developer Cookbooks & Tooling:** Guides for configuring Postman mock servers, automating editorial linting with Vale, and editing markdown wiki content using Writage in Microsoft Word.
 
-### 2. 🛠️ Hardware Technical Writing ([Hardware Portal](https://pvega62.github.io/technical-writing-hardware.html))
+### 2. 🛠️ Hardware Technical Writing ([Hardware Portal](https://pvega62.github.io/technical-writing-hardware))
 Selected samples from my work as Lead Technical Writer for Felix Storch, Inc., managing 5 distinct consumer, commercial, and medical brands:
 
 * **EQTemps Vaccine Refrigerator User Manual:** Specialized medical equipment guide detailing temperature monitoring, alarm logic, and CDC storage compliance.
@@ -44,14 +44,14 @@ Selected samples from my work as Lead Technical Writer for Felix Storch, Inc., m
 * **InnoGear Aromatherapy Diffuser Manual:** Ground-up rewrite of an ambiguous translation, redesigning the manual layout for clarity.
 * **Medical Breast Milk Freezer:** Operational protocols, hazard warnings, and temperature management for hospital-grade storage.
 
-### 3. 💬 UX Writing & Content Design ([UX Writing Portal](https://pvega62.github.io/uxwriting.html))
+### 3. 💬 UX Writing & Content Design ([UX Writing Portal](https://pvega62.github.io/uxwriting))
 Product-focused copy that guides users through workflows with minimal friction:
 
 * **Culangex App:** Onboarding microcopy, empty states, contextual tooltips, and push notifications for a language startup.
 * **Accessibility (WCAG):** Error messaging and accessible form labels designed to exceed screen-reader standards.
 * **Company-Wide Style Guide:** Voice, tone, and component copy rules ensuring consistency across design and engineering teams.
 
-### 4. 📰 Articles & Journalism ([Articles Portal](https://pvega62.github.io/articles.html))
+### 4. 📰 Articles & Journalism ([Articles Portal](https://pvega62.github.io/articles))
 Long-form research and journalism covering technology, global development, and ethics:
 
 * **Technology Journalism:** *"4 Ways to Use Tech Against the Pandemic"* and *"The Samsung Global Goals App: Supporting SDGs With a Tap."*

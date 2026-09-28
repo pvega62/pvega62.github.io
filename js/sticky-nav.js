@@ -27,17 +27,27 @@ document.addEventListener('DOMContentLoaded', () => {
   // Check on scroll
   window.addEventListener('scroll', checkSection);
 
-  // Set active class based on current URL
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  // Set active class based on current URL (supports clean extensionless URLs and .html)
+  const rawPath = window.location.pathname.split('/').filter(Boolean).pop() || '';
+  const currentPath = rawPath.replace(/\.html$/, '');
+
   document.querySelectorAll('.nav-link, .dropdown-item').forEach(link => {
     const href = link.getAttribute('href');
-    if (href && (href === currentPath || (currentPath === '' && href === 'index.html'))) {
-      link.classList.add('active');
-      // If inside a dropdown, highlight the toggle too
-      const dropdown = link.closest('.dropdown, .dropup');
-      if (dropdown) {
-        const toggle = dropdown.querySelector('.dropdown-toggle');
-        if (toggle) toggle.classList.add('active');
+    if (href && !href.startsWith('http') && !href.startsWith('mailto:')) {
+      const cleanHref = href.split('#')[0].split('/').filter(Boolean).pop() || '';
+      const normalizedHref = cleanHref.replace(/\.html$/, '');
+
+      const isHomeMatch = (currentPath === '' || currentPath === 'index') && (normalizedHref === '' || normalizedHref === 'index');
+      const isPageMatch = currentPath !== '' && currentPath !== 'index' && normalizedHref === currentPath;
+
+      if (isHomeMatch || isPageMatch) {
+        link.classList.add('active');
+        // If inside a dropdown, highlight the toggle too
+        const dropdown = link.closest('.dropdown, .dropup');
+        if (dropdown) {
+          const toggle = dropdown.querySelector('.dropdown-toggle');
+          if (toggle) toggle.classList.add('active');
+        }
       }
     }
   });

@@ -4,6 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
   <title>Pedro Vega | Technical Writer | Portfolio Site</title>
   <!-- Primary Meta Tags -->
   <meta name="description" content="Technical Writing portfolio of Pedro Vega — featuring software documentation, API guides, UX writing, and Docs-as-Code.">
@@ -146,27 +152,27 @@
       <!-- Desktop Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation"
         aria-label="Desktop navigation">
-        <a class="navbar-brand ms-3" href="index.html">
+        <a class="navbar-brand ms-3" href="/">
           <img src="images/logo.png" alt="Logo" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
 
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop1" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Technical writing
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
-                <li><a class="dropdown-item" href="technical-writing-hardware.html">Hardware</a></li>
+                <li><a class="dropdown-item" href="/technical-writing-hardware">Hardware</a></li>
                 <li><a class="dropdown-item" href="https://pvega62.github.io/software" target="_self">Software</a></li>
 
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="uxwriting.html">UX writing</a></li>
-            <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
-            <li class="nav-item"><a class="nav-link about-link" href="aboutme.html">About me</a></li>
+            <li class="nav-item"><a class="nav-link" href="/uxwriting">UX writing</a></li>
+            <li class="nav-item"><a class="nav-link" href="/articles">Articles</a></li>
+            <li class="nav-item"><a class="nav-link about-link" href="/aboutme">About me</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop2" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -196,7 +202,7 @@
       <!-- Mobile Navbar (App Tab Bar) -->
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation"
         aria-label="Mobile navigation">
-        <a class="navbar-brand ms-2 me-1" href="index.html">
+        <a class="navbar-brand ms-2 me-1" href="/">
           <img src="images/icon-logo.png" alt="Logo" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
@@ -208,18 +214,18 @@
               <img src="images/icon-tech-writing.svg" alt="" class="mobile-nav-icon">
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-              <li><a class="dropdown-item" href="technical-writing-hardware.html">Hardware</a></li>
+              <li><a class="dropdown-item" href="/technical-writing-hardware">Hardware</a></li>
               <li><a class="dropdown-item" href="https://pvega62.github.io/software" target="_self">Software</a></li>
             </ul>
           </li>
           <li class="nav-item d-flex align-items-center">
-            <a class="nav-link px-2 d-flex align-items-center" href="uxwriting.html" aria-label="UX writing"
+            <a class="nav-link px-2 d-flex align-items-center" href="/uxwriting" aria-label="UX writing"
               title="UX writing">
               <img src="images/icon-ux-writing.svg" alt="" class="mobile-nav-icon">
             </a>
           </li>
           <li class="nav-item d-flex align-items-center">
-            <a class="nav-link px-2 d-flex align-items-center" href="articles.html"
+            <a class="nav-link px-2 d-flex align-items-center" href="/articles"
               aria-label="Articles" title="Articles">
               <img src="images/icon-articles.svg" alt="" class="mobile-nav-icon">
             </a>
@@ -231,7 +237,7 @@
               <img src="images/icon-vector1.svg" alt="" class="mobile-nav-icon" style="transform: scaleY(-1);">
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAbout">
-              <li><a class="dropdown-item" href="aboutme.html">About Me</a></li>
+              <li><a class="dropdown-item" href="/aboutme">About Me</a></li>
               <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank"
                   rel="noopener noreferrer">LinkedIn</a></li>
               <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank"
