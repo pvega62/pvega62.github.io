@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
+  <title>हार्डवेयर तकनीकी लेखन | पेड्रो वेगा</title>
+  <meta name="description" content="पेड्रो वेगा द्वारा हार्डवेयर तकनीकी लेखन के नमूने, जिनमें चिकित्सा और उपभोक्ता उपकरणों के उपयोगकर्ता मैनुअल शामिल हैं।">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pvega62.github.io/hi/technical-writing-hardware">
+  <meta property="og:title" content="हार्डवेयर तकनीकी लेखन | पेड्रो वेगा">
+  <meta property="og:description" content="पेड्रो वेगा द्वारा हार्डवेयर तकनीकी लेखन के नमूने, जिनमें चिकित्सा और उपभोक्ता उपकरणों के उपयोगकर्ता मैनुअल शामिल हैं।">
+  <meta property="og:image" content="https://pvega62.github.io/images/social-card.png">
+  <meta property="og:image:width" content="1050">
+  <meta property="og:image:height" content="600">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pvega62.github.io/hi/technical-writing-hardware">
+  <meta name="twitter:title" content="हार्डवेयर तकनीकी लेखन | पेड्रो वेगा">
+  <meta name="twitter:description" content="पेड्रो वेगा द्वारा हार्डवेयर तकनीकी लेखन के नमूने, जिनमें चिकित्सा और उपभोक्ता उपकरणों के उपयोगकर्ता मैनुअल शामिल हैं।">
+  <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css?v=6">
+  <link rel="stylesheet" href="/css/page-specific.css?v=9">
+  <link rel="icon" href="/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" />
+  <link rel="stylesheet" href="/css/interactive.css">
+  <style>.DocSearch-SidepanelButton.floating { display: none !important; } body { font-family: 'Noto Sans Devanagari', sans-serif; }</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+  <header class="sticky-top">
+    <!-- Mobile Search Bar -->
+    <div class="d-lg-none d-flex justify-content-end w-100">
+      <div class="mobile-nav-search-container" style="position: absolute; right: 2px; top: 8px; z-index: 1050; padding: 0; margin: 0;">
+        <div class="docsearch-container"></div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      <!-- Desktop Navbar -->
+      <nav aria-label="Desktop navigation" class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation">
+        <a class="navbar-brand ms-3" href="/hi/">
+          <img alt="Logo" height="40" src="/images/logo.png"/>
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
+          <ul class="navbar-nav me-3">
+            <li class="nav-item"><a class="nav-link" href="/hi/">होम</a></li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdownDesktop1" role="button">
+                तकनीकी लेखन
+              </a>
+              <ul aria-labelledby="navbarDropdownDesktop1" class="dropdown-menu">
+                <li class="dropend position-relative">
+                  <a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">सॉफ़्टवेयर/डेव दस्तावेज़</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/intro">परिचय</a></li>
+                    <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/category/cloud-data-pipeline-documentation">क्लाउड डेटा पाइपलाइन्स</a></li>
+                    <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/category/typescript-sdk-sui-blockchain-documentation">टाइपस्क्रिप्ट ट्यूटोरियल</a></li>
+                    <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/category/stripe-api-documentation">Stripe API</a></li>
+                    <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/category/pet-store-api-documentation">पेट स्टोर एपीआई</a></li>
+                    <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/category/commit-messages-and-pull-requests">कमिट संदेश और पुल रिक्वेस्ट</a></li>
+                    <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/artie-case-study">आर्टी AI असिस्टेंट केस स्टडी</a></li>
+                    <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/google-chrome-theme-installation">Google Chrome थीम</a></li>
+                    <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/word-github-wiki-writage">Writage वर्कफ़्लो</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="/hi/technical-writing-hardware">हार्डवेयर नमूने</a></li>
+                <li><hr class="dropdown-divider"/></li>
+                <li><a class="dropdown-item" href="/hi/technical-writing-hardwareblog">ब्लॉग</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/hi/uxwriting">यूएक्स राइटिंग</a></li>
+            <li class="nav-item"><a class="nav-link" href="/hi/articles">लेख</a></li>
+            <li class="nav-item"><a class="nav-link about-link" href="/hi/aboutme">मेरे बारे में</a></li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdownDesktop2" role="button">
+                संपर्क
+              </a>
+              <ul aria-labelledby="navbarDropdownDesktop2" class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">लिंक्डइन</a></li>
+                <li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">गिटहब</a></li>
+                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">ईमेल</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">रिकॉर्ड-कीपिंग</a></li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" aria-label="Language: Hindi" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLang" role="button" title="Language: Hindi">
+                <svg aria-hidden="true" class="me-1" height="20" style="fill: currentColor;" viewBox="0 0 24 24" width="20"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg><img alt="" class="nav-flag-toggle" src="/images/flags/in.svg"/><span>हिन्दी</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLang">
+                <li><a class="dropdown-item" href="/technical-writing-hardware" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+                <li><a class="dropdown-item" href="/es/technical-writing-hardware" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+                <li><a class="dropdown-item" href="/fr/technical-writing-hardware" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+                <li><a class="dropdown-item" href="/ar/technical-writing-hardware" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+                <li><a class="dropdown-item" href="/zh/technical-writing-hardware" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+                <li><a class="dropdown-item" href="/ja/technical-writing-hardware" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+                <li><a class="dropdown-item active" href="/hi/technical-writing-hardware" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-flex align-items-center ms-1">
+              <div class="docsearch-container"></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Mobile Navbar -->
+      <nav aria-label="Mobile navigation" class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation">
+        <a class="navbar-brand ms-2 me-1" href="/hi/">
+          <img alt="Logo" height="40" src="/images/icon-logo.png"/>
+        </a>
+        <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
+          <li class="nav-item dropup d-flex align-items-center">
+            <a aria-expanded="false" aria-label="Technical writing" class="nav-link dropdown-toggle px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdown1" role="button" title="Technical writing">
+              <img alt="" class="mobile-nav-icon" src="/images/icon-tech-writing.svg"/>
+            </a>
+            <ul aria-labelledby="navbarDropdown1" class="dropdown-menu">
+              <li class="dropend position-relative">
+                <a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">सॉफ़्टवेयर/डेव दस्तावेज़</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/intro">परिचय</a></li>
+                  <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/category/cloud-data-pipeline-documentation">क्लाउड डेटा पाइपलाइन्स</a></li>
+                  <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/category/typescript-sdk-sui-blockchain-documentation">टाइपस्क्रिप्ट ट्यूटोरियल</a></li>
+                  <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/category/stripe-api-documentation">Stripe API</a></li>
+                  <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/category/pet-store-api-documentation">पेट स्टोर एपीआई</a></li>
+                  <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/category/commit-messages-and-pull-requests">कमिट संदेश और पुल रिक्वेस्ट</a></li>
+                  <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/artie-case-study">आर्टी AI असिस्टेंट केस स्टडी</a></li>
+                  <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/google-chrome-theme-installation">Google Chrome थीम</a></li>
+                  <li><a class="dropdown-item" href="/hi/technical-writing-hardwaredocs/word-github-wiki-writage">Writage वर्कफ़्लो</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="/hi/technical-writing-hardware">हार्डवेयर नमूने</a></li>
+              <li><hr class="dropdown-divider"/></li>
+              <li><a class="dropdown-item" href="/hi/technical-writing-hardwareblog">ब्लॉग</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a aria-label="UX writing" class="nav-link px-2 d-flex align-items-center" href="/hi/uxwriting" title="UX writing">
+              <img alt="" class="mobile-nav-icon" src="/images/icon-ux-writing.svg"/>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a aria-label="Articles" class="nav-link px-2 d-flex align-items-center" href="/hi/articles" title="Articles">
+              <img alt="" class="mobile-nav-icon" src="/images/icon-articles.svg"/>
+            </a>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a aria-expanded="false" aria-label="About me and Contact" class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownAbout" role="button" title="About me and Contact">
+              <img alt="" class="mobile-nav-icon" src="/images/icon-vector1.svg" style="transform: scaleY(-1);"/>
+            </a>
+            <ul aria-labelledby="navbarDropdownAbout" class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="/hi/aboutme">मेरे बारे में</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">लिंक्डइन</a></li>
+              <li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">गिटहब</a></li>
+              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">ईमेल</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a aria-expanded="false" aria-label="Languages" class="nav-link dropdown-toggle px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLangMobile" role="button" title="Languages">
+              <img alt="" class="mobile-nav-icon" src="/images/icon-languages.svg"/>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLangMobile">
+              <li><a class="dropdown-item" href="/technical-writing-hardware" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+              <li><a class="dropdown-item" href="/es/technical-writing-hardware" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+              <li><a class="dropdown-item" href="/fr/technical-writing-hardware" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+              <li><a class="dropdown-item" href="/ar/technical-writing-hardware" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+              <li><a class="dropdown-item" href="/zh/technical-writing-hardware" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+              <li><a class="dropdown-item" href="/ja/technical-writing-hardware" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+              <li><a class="dropdown-item active" href="/hi/technical-writing-hardware" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a aria-label="Recordkeeping" class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/" title="Recordkeeping">
+              <img alt="" class="mobile-nav-icon-colored" src="/images/icon-recordkeeping.svg"/>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main id="main-content" tabindex="-1">
+  <div class="hero-section">
+    <div class="container-fluid px-4">
+      <div class="text-center">
+        <h1 class="display-4 fw-bold text-white">हार्डवेयर तकनीकी लेखन</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center intro-text text-white">
+            <p>यह पृष्ठ चिकित्सा प्रशीतन से लेकर घरेलू उपकरणों और उपभोक्ता इलेक्ट्रॉनिक्स तक विभिन्न हार्डवेयर दस्तावेज़ों के नमूने प्रस्तुत करता है। मुख्य रूप से Felix Storch, Inc. में तकनीकी लेखक के रूप में मेरे काम पर आधारित, जिसमें Summit, EQTemp, और MOMCUBE जैसे ब्रांडों के उपयोगकर्ता मैनुअल, इंस्टॉलेशन गाइड और ADA अनुपालन निर्देश शामिल हैं।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="light-section py-5" id="vaccine-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <div class="ratio ratio-1x1">
+          <iframe title="EQTemps वैक्सीन रेफ्रिजरेटर उपयोगकर्ता मैनुअल" src="/samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf" class="rounded" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="col-md-6 inno-text">
+        <div class="sample-card" role="button" tabindex="0" data-pdf="/samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf" aria-label="EQTemps वैक्सीन रेफ्रिजरेटर उपयोगकर्ता मैनुअल खोलें" style="cursor: pointer;">
+          <h2 class="fw-bold card-title text-decoration-underline">EQTemps वैक्सीन रेफ्रिजरेटर उपयोगकर्ता मैनुअल</h2>
+        </div>
+        <p class="text-secondary">तापमान निगरानी, अलार्म सिस्टम और सीडीसी भंडारण आवश्यकताओं पर केंद्रित एक विशेष वैक्सीन रेफ्रिजरेटर मैनुअल।</p>
+        <p class="text-secondary">यह दस्तावेज़ उद्योग मानकों और सुरक्षा प्रोटोकॉल के अनुसार तैयार किया गया है ताकि स्वास्थ्य सेवा प्रदाता टीकों की प्रभावकारिता के लिए आवश्यक सटीक तापमान बनाए रख सकें।</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="py-5 bg-custom-dark">
+  <div class="container">
+    <div class="hardware-filter-wrapper text-center">
+      <div class="text-center mb-2">
+        <span class="text-uppercase fw-bold small" style="letter-spacing: 1.2px; color: #e8c47c; font-size: 0.8rem;">
+          <i class="bi bi-funnel-fill me-1"></i> उद्योग अनुसार फ़िल्टर करें
+        </span>
+      </div>
+      <div class="hardware-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
+        <button type="button" class="btn hardware-filter-pill active" data-filter="all">सभी <span class="badge ms-1">8</span></button>
+        <button type="button" class="btn hardware-filter-pill" data-filter="medical">चिकित्सा और कोल्ड-चेन <span class="badge ms-1">1</span></button>
+        <button type="button" class="btn hardware-filter-pill" data-filter="appliances">घरेलू और वाणिज्यिक उपकरण <span class="badge ms-1">5</span></button>
+        <button type="button" class="btn hardware-filter-pill" data-filter="ada">अभिगम्यता और ADA <span class="badge ms-1">3</span></button>
+        <button type="button" class="btn hardware-filter-pill" data-filter="consumer-tech">उपभोक्ता तकनीक <span class="badge ms-1">1</span></button>
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 hardware-card-col" data-category="appliances">
+        <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="/samples/technical-writing/hardware/warming-and-cooling-drawer.pdf" aria-label="फ़्रॉस्ट-फ़्री वार्मिंग और कूलिंग ड्रॉअर खोलें">
+          <div class="ratio ratio-4x3 mb-3"><iframe title="फ़्रॉस्ट-फ़्री वार्मिंग और कूलिंग ड्रॉअर" src="/samples/technical-writing/hardware/warming-and-cooling-drawer.pdf" class="rounded" loading="lazy"></iframe></div>
+          <div class="card-body">
+            <h3 class="card-title fw-bold text-black">फ़्रॉस्ट-फ़्री वार्मिंग और कूलिंग ड्रॉअर उपयोगकर्ता मैनुअल</h3>
+            <p class="card-text text-black">SPHC30/36 दोहरे कार्य वाले वार्मिंग और कूलिंग ड्रॉअर के लिए उपयोगकर्ता मैनुअल। इसमें तापमान नियंत्रण, सबाथ मोड और स्थापना निर्देश शामिल हैं।</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 hardware-card-col" data-category="medical">
+        <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="/samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf" aria-label="ब्रेस्ट मिल्क फ्रीज़र उपयोगकर्ता मैनुअल खोलें">
+          <div class="ratio ratio-4x3 mb-3"><iframe title="ब्रेस्ट मिल्क फ्रीज़र उपयोगकर्ता मैनुअल" src="/samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf" class="rounded" loading="lazy"></iframe></div>
+          <div class="card-body">
+            <h3 class="card-title fw-bold text-black">ब्रेस्ट मिल्क फ्रीज़र</h3>
+            <p class="card-text text-black text-center">चिकित्सा-ग्रेड ब्रेस्ट मिल्क फ्रीज़र के लिए एक व्यापक उपयोगकर्ता मैनुअल, जिसमें सुरक्षा प्रक्रियाएं, स्थापना और तापमान प्रबंधन शामिल हैं।</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 d-none d-md-block hardware-layout-break"></div>
+
+      <div class="col-md-4 hardware-card-col" data-category="appliances">
+        <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="/samples/technical-writing/hardware/handle-installation-instructions-FFBF279SSX-H72.pdf" aria-label="हैंडल स्थापना निर्देश खोलें">
+          <div class="ratio ratio-4x3 mb-3"><iframe title="हैंडल स्थापना निर्देश" src="/samples/technical-writing/hardware/handle-installation-instructions-FFBF279SSX-H72.pdf" class="rounded" loading="lazy"></iframe></div>
+          <div class="card-body">
+            <h3 class="card-title fw-bold text-black">हैंडल स्थापना निर्देश</h3>
+            <p class="card-text text-black text-center">स्टेनलेस स्टील उपकरण हैंडल के लिए चरण-दर-चरण स्थापना गाइड, जिसमें आवश्यक उपकरण और माउंटिंग प्रक्रियाएं शामिल हैं।</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 hardware-card-col" data-category="appliances ada">
+        <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="/samples/technical-writing/hardware/SEH1536SSADA-User-Manual.pdf" aria-label="ADA-अनुरूप रेंज हुड उपयोगकर्ता मैनुअल खोलें">
+          <div class="ratio ratio-4x3 mb-3"><iframe title="ADA-अनुरूप रेंज हुड उपयोगकर्ता मैनुअल" src="/samples/technical-writing/hardware/SEH1536SSADA-User-Manual.pdf" class="rounded" loading="lazy"></iframe></div>
+          <div class="card-body">
+            <h3 class="card-title fw-bold text-black">ADA-अनुरूप रेंज हुड उपयोगकर्ता मैनुअल</h3>
+            <p class="card-text text-black">ADA-अनुरूप रेंज हुड के लिए आवश्यक उपयोगकर्ता मैनुअल, जिसमें संचालन निर्देश, फ़िल्टर प्रतिस्थापन और रखरखाव शामिल हैं।</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 hardware-card-col" data-category="consumer-tech">
+        <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="/samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf" aria-label="InnoGear अरोमाथेरेपी डिफ्यूज़र उपयोगकर्ता मैनुअल खोलें">
+          <div class="ratio ratio-4x3 mb-3"><iframe title="InnoGear अरोमाथेरेपी डिफ्यूज़र उपयोगकर्ता मैनुअल" src="/samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf" class="rounded" loading="lazy"></iframe></div>
+          <div class="card-body">
+            <h3 class="card-title fw-bold text-black">InnoGear अरोमाथेरेपी डिफ्यूज़र उपयोगकर्ता मैनुअल</h3>
+            <p class="card-text text-black">मौजूदा गाइड में अनुवाद की अस्पष्टताओं और संरचनात्मक समस्याओं का समाधान किया गया। निर्देशों को अधिक सहज और उपयोगकर्ता-अनुकूल लेआउट में पुनर्गठित किया गया।</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 hardware-card-col" data-category="ada">
+        <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="/samples/technical-writing/hardware/remote-switch-installation-guide.pdf" aria-label="ADA रेंज हुड के लिए रिमोट स्विच इंस्टॉलेशन गाइड खोलें">
+          <div class="ratio ratio-4x3 mb-3"><iframe title="ADA रेंज हुड के लिए रिमोट स्विच इंस्टॉलेशन गाइड" src="/samples/technical-writing/hardware/remote-switch-installation-guide.pdf" class="rounded" loading="lazy"></iframe></div>
+          <div class="card-body">
+            <h3 class="card-title fw-bold text-black">ADA रेंज हुड के लिए रिमोट स्विच इंस्टॉलेशन गाइड</h3>
+            <p class="card-text text-black text-center">ADA-अनुरूप वॉल-माउंटेड रेंज हुड पर रिमोट स्विच स्थापित करने के लिए एक गाइड, जिसमें माउंटिंग ऊंचाई और वायरिंग आवश्यकताएं निर्दिष्ट हैं।</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 hardware-card-col" data-category="appliances ada">
+        <div class="card h-100 text-center card-border sample-card bg-light" tabindex="0" data-pdf="/samples/technical-writing/hardware/ada-conversion-ADRD18H34.pdf" aria-label="ADA रूपांतरण (ADRD18H34) खोलें">
+          <div class="ratio ratio-4x3 mb-3"><iframe title="ADA रूपांतरण (ADRD18H34)" src="/samples/technical-writing/hardware/ada-conversion-ADRD18H34.pdf" class="rounded" loading="lazy"></iframe></div>
+          <div class="card-body">
+            <h3 class="card-title fw-bold text-black">ADA रूपांतरण (ADRD18H34)</h3>
+            <p class="card-text text-black text-center">रिमोट स्विच का उपयोग करके ADRD18H34 रेफ्रिजरेटर को ADA अनुपालन में बदलने की प्रक्रिया।</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 hardware-card-col" data-category="appliances">
+        <div class="card h-100 text-center card-border sample-card bg-light" tabindex="0" data-pdf="/samples/technical-writing/hardware/pnr-instructions.pdf" aria-label="PNR स्थापना निर्देश खोलें">
+          <div class="ratio ratio-4x3 mb-3"><iframe title="PNR स्थापना निर्देश" src="/samples/technical-writing/hardware/pnr-instructions.pdf" class="rounded" loading="lazy"></iframe></div>
+          <div class="card-body">
+            <h3 class="card-title fw-bold text-black">PNR स्थापना निर्देश</h3>
+            <p class="card-text text-black">PNR श्रृंखला के उपकरणों पर कस्टम ओवरले पैनल स्थापित करने के निर्देश, जिसमें पैनल आयाम और काज समायोजन शामिल हैं।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="py-3 bg-tan">
+  <div class="container text-center">
+    <p class="text-color-dark text fs-4 mb-0"><b>विशेष बोनस…</b></p>
+  </div>
+</div>
+<div class="bg-custom-dark">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/technical-writing/hardware/bat-pole-project.pdf" aria-label="त्वरित पोशाक परिवर्तन स्लाइडिंग पोल स्थापना गाइड खोलें">
+          <div class="ratio ratio-4x3 mb-3"><iframe title="त्वरित पोशाक परिवर्तन स्लाइडिंग पोल स्थापना गाइड" src="/samples/technical-writing/hardware/bat-pole-project.pdf" class="rounded" loading="lazy"></iframe></div>
+          <div class="card-body">
+            <h3 class="card-title fw-bold text-black">त्वरित पोशाक परिवर्तन स्लाइडिंग पोल स्थापना गाइड</h3>
+            <p class="card-text text-black text-center">Wayne Enterprises के त्वरित पोशाक परिवर्तन स्लाइडिंग पोल के लिए विस्तृत स्थापना गाइड।</p>
+            <p class="text-black text-center">टीवी पर जैसा देखा गया! <i>बैटमैन (1966).</i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p class="text-white text-center">&copy; 2026 Pedro Vega | HTML &bull; CSS &bull; JS &bull; GitHub Pages द्वारा निर्मित</p>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/js/pdf-viewer.js?v=2"></script>
+  <script src="/js/sticky-nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
+  <script>
+    document.querySelectorAll('.docsearch-container').forEach((container) => {
+      docsearch({ container, appId: 'XMDO29FL1L', apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a', indexName: 'portfolio_site', insights: true, searchParameters: { facetFilters: ['lang:hi'] } });
+    });
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const div = document.createElement('div'); div.id = 'docsearch-sidepanel'; document.body.appendChild(div);
+      sidepanelInstance = docsearchSidepanel({ container: '#docsearch-sidepanel', indexName: 'portfolio_site', appId: 'XMDO29FL1L', apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a', assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159', agentStudio: true, searchParameters: {}, showButton: false, button: false, variant: 'inline' });
+    }
+    const SPARKLE = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+    function addAskAI(container) {
+      const iv = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (!btn) return; clearInterval(iv);
+        const w = document.createElement('div'); w.className = 'DocSearch-SearchBar';
+        btn.parentNode.insertBefore(w, btn); w.appendChild(btn);
+        const ai = document.createElement('button'); ai.className = 'DocSearch-SidepanelButton inline'; ai.type = 'button';
+        ai.setAttribute('aria-label','Ask Artie (Control+i)'); ai.setAttribute('aria-keyshortcuts','Control+i');
+        ai.innerHTML = SPARKLE;
+        ai.addEventListener('click', e => { e.preventDefault(); sidepanelInstance ? sidepanelInstance.open() : btn.click(); });
+        w.appendChild(ai);
+      }, 50);
+    }
+    document.querySelectorAll('.docsearch-container').forEach(addAskAI);
+    (function(){
+      var msc = document.querySelector('.mobile-nav-search-container');
+      new MutationObserver(() => { if(msc) msc.style.visibility = document.querySelector('.DocSearch-Modal') ? 'hidden' : 'visible'; }).observe(document.body,{childList:true,subtree:true});
+    })();
+  </script>
+  <script src="/js/page-specific.js?v=9"></script>
+  <script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+</body>
+</html>

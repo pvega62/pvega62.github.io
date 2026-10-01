@@ -87,6 +87,7 @@ Docs-as-Code Workflow:
 │   ├── uxwriting.html         # UX writing and content design samples
 │   ├── articles.html          # Articles and publications
 │   ├── Pedro Vega Resume.pdf  # Downloadable resume
+│   ├── es/                    # Localized Spanish pages (/es/, /es/articles, etc.)
 │   ├── css/                   # Stylesheets and custom responsive rules
 │   ├── js/                    # Search, modal viewers, and navigation scripts
 │   ├── samples/               # PDF documentation samples

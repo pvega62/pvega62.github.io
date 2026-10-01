@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
+  <title>Acerca de mí | Pedro Vega</title>
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="Conozca más sobre Pedro Vega, redactor técnico, redactor UX y diseñador de contenido radicado en Nueva York.">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pvega62.github.io/es/aboutme">
+  <meta property="og:title" content="Acerca de mí | Pedro Vega">
+  <meta property="og:description" content="Conozca más sobre Pedro Vega, redactor técnico, redactor UX y diseñador de contenido radicado en Nueva York.">
+  <meta property="og:image" content="https://pvega62.github.io/images/social-card.png">
+  <meta property="og:image:width" content="1050">
+  <meta property="og:image:height" content="600">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pvega62.github.io/es/aboutme">
+  <meta name="twitter:title" content="Acerca de mí | Pedro Vega">
+  <meta name="twitter:description" content="Conozca más sobre Pedro Vega, redactor técnico, redactor UX y diseñador de contenido radicado en Nueva York.">
+  <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
+  <link rel="icon" href="/images/logo.png" type="image/png">
+  <!-- DocSearch CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" />
+  <style>
+    /* Force hide the default Algolia floating sidepanel button globally */
+    .DocSearch-SidepanelButton.floating {
+      display: none !important;
+    }
+  </style>
+      <link href="/css/interactive.css" rel="stylesheet"/>
+  <!-- Hreflang Localization -->
+  <link rel="alternate" hreflang="en" href="https://pvega62.github.io/aboutme" />
+  <link rel="alternate" hreflang="es" href="https://pvega62.github.io/es/aboutme" />
+  <link rel="alternate" hreflang="x-default" href="https://pvega62.github.io/aboutme" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <!-- Header and Navbar -->
+  <header class="sticky-top">
+    <!-- Mobile Search Bar -->
+    <div class="d-lg-none d-flex justify-content-end w-100"><div class="mobile-nav-search-container" style="position: absolute; right: 2px; top: 8px; z-index: 1050; padding: 0; margin: 0;">
+            <div class="docsearch-container"></div>
+          </div></div>
+
+    <div class="container-fluid px-0">
+      
+      <!-- Desktop Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="Navegación de escritorio">
+        <a class="navbar-brand ms-3" href="/es/">
+          <img src="/images/logo.png" alt="Logo" height="40">
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
+          <ul class="navbar-nav me-3">
+            
+            <li class="nav-item"><a class="nav-link" href="/es/">Inicio</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Redacción técnica
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
+                <li class="dropend position-relative">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/software/es/docs/intro">Introducción</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/category/typescript-sdk-sui-blockchain-documentation">Tutorial de TypeScript</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/category/stripe-api-documentation">API de Stripe</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/category/pet-store-api-documentation">API de Pet Store</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/category/commit-messages-and-pull-requests">Mensajes de commit y pull requests</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/artie-case-study">Caso de estudio: Asistente de IA Ask Artie</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/google-chrome-theme-installation">Tema de Google Chrome</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/word-github-wiki-writage">Flujo de trabajo de Writage</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="/es/technical-writing-hardware">Muestras de hardware</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/software/es/blog">Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/es/uxwriting">Redacción UX</a></li>
+            <li class="nav-item"><a class="nav-link" href="/es/articles">Artículos</a></li>
+            <li class="nav-item"><a class="nav-link about-link" href="/es/aboutme">Acerca de mí</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contacto
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop2">
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Correo electrónico</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">Recordkeeping</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownLang" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Idioma: Español" title="Idioma: Español">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="me-1" style="fill: currentColor;"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><img src="/images/flags/do.svg" alt="" class="nav-flag-toggle"><span>Español</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLang">
+                <li><a class="dropdown-item" href="/aboutme" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+                <li><a class="dropdown-item active" href="/es/aboutme" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+                <li><a class="dropdown-item" href="/fr/aboutme" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+                <li><a class="dropdown-item" href="/ar/aboutme" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+                <li><a class="dropdown-item" href="/zh/aboutme" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+                <li><a class="dropdown-item" href="/ja/aboutme" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+                <li><a class="dropdown-item" href="/hi/aboutme" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+              </ul>
+            </li>
+          
+              <li class="nav-item d-flex align-items-center ms-1">
+                <div class="docsearch-container"></div>
+              </li>
+            </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile Navbar (App Tab Bar) -->
+      <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="Navegación móvil">
+        <a class="navbar-brand ms-2 me-1" href="/es/">
+          <img src="/images/icon-logo.png" alt="Logo" height="40">
+        </a>
+        <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Redacción técnica" title="Redacción técnica">
+              <img src="/images/icon-tech-writing.svg" alt="" class="mobile-nav-icon">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li class="dropend position-relative">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/software/es/docs/intro">Introducción</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/category/typescript-sdk-sui-blockchain-documentation">Tutorial de TypeScript</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/category/stripe-api-documentation">API de Stripe</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/category/pet-store-api-documentation">API de Pet Store</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/category/commit-messages-and-pull-requests">Mensajes de commit y pull requests</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/artie-case-study">Caso de estudio: Asistente de IA Ask Artie</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/google-chrome-theme-installation">Tema de Google Chrome</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/word-github-wiki-writage">Flujo de trabajo de Writage</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="/es/technical-writing-hardware">Muestras de hardware</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/software/es/blog">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="/es/uxwriting" aria-label="Redacción UX" title="Redacción UX">
+              <img src="/images/icon-ux-writing.svg" alt="" class="mobile-nav-icon">
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="/es/articles" aria-label="Artículos" title="Artículos">
+              <img src="/images/icon-articles.svg" alt="" class="mobile-nav-icon">
+            </a>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Acerca de mí y contacto" title="Acerca de mí y contacto">
+              <img src="/images/icon-vector1.svg" alt="" class="mobile-nav-icon" style="transform: scaleY(-1);">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAbout">
+              <li><a class="dropdown-item" href="/es/aboutme">Acerca de mí</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Correo electrónico</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#"
+              id="navbarDropdownLangMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="Idiomas" title="Idiomas">
+              <img src="/images/icon-languages.svg" alt="" class="mobile-nav-icon">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLangMobile">
+              <li><a class="dropdown-item" href="/aboutme" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+              <li><a class="dropdown-item active" href="/es/aboutme" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+              <li><a class="dropdown-item" href="/fr/aboutme" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+              <li><a class="dropdown-item" href="/ar/aboutme" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+              <li><a class="dropdown-item" href="/zh/aboutme" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+              <li><a class="dropdown-item" href="/ja/aboutme" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+              <li><a class="dropdown-item" href="/hi/aboutme" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/" aria-label="Recordkeeping" title="Recordkeeping">
+              <img src="/images/icon-recordkeeping.svg" alt="" class="mobile-nav-icon-colored">
+            </a>
+          </li>
+</ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+  <div class="hero-section">
+<div class="container-fluid px-4">
+<div class="text-center">
+<h1 class="display-4 fw-bold text-white">Acerca de mí</h1>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center intro-text text-white">
+<p>¡El redactor que estás a punto de contratar!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<section class="light-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>Soy redactor técnico y traduzco tecnología compleja a un lenguaje claro y accesible para todos. Con experiencia en soporte de TI, edición y periodismo, creo documentación intuitiva y centrada en las personas. Así reduzco la fricción y devuelvo a los usuarios el control sobre sus herramientas. Ya sean guías de API, tutoriales de código o diseño de prompts para IA, convierto la jerga técnica en explicaciones sencillas y directas.</p>
+          <p>Mi primer empleo, recién saliendo del high school, fue como técnico de servicios multimedia en el New York City College of Technology mientras estudiaba allí. Mi labor consistía en guiar paso a paso y con paciencia a usuarios sin experiencia técnica para resolver problemas de soporte; fue ahí, técnicamente, donde arrancó mi carrera en la redacción técnica.</p>
+          <p>Veo mi labor como la de un traductor, algo que llevo en la sangre desde chiquito. Al crecer en una familia de inmigrantes, me tocó ser el intérprete oficial en casa para descifrar desde el inglés del día a día hasta trámites y documentos legales. Es una vocación que me ha acompañado siempre y que hoy aplico para tender un puente entre la complejidad del software y las personas que lo utilizan.</p>
+
+          <h2 class="text-center mt-5 mb-4">Habilidades profesionales</h2>
+          
+          <!-- Desktop View: Side-by-Side Grid -->
+          <div class="d-none d-md-block">
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <h5>Documentación técnica y de API</h5>
+                <ul>
+                  <li><strong>Documentación principal:</strong> Docs-as-Code &middot; REST &amp; OpenAPI &middot; Integración de MCP &middot; IA &middot; SOPs &middot; Guías de inicio rápido &middot; CI/CD</li>
+                  <li><strong>Herramientas de desarrollo:</strong> Git (GitHub, GitLab) &middot; Linux/CLI &middot; Docker &middot; VS Code &middot; Postman &middot; Swagger &middot; Docusaurus &middot; Algolia &middot; Jira &middot; Notion</li>
+                </ul>
+              </div>
+              <div class="col-md-6 mb-4">
+                <h5>Redacción UX y diseño de contenido</h5>
+                <ul>
+                  <li><strong>Práctica de diseño:</strong> Redacción UX &middot; Microcopia &middot; Diseño de prompts &middot; Sistemas de contenido &middot; Investigación UX &middot; Wireframes &middot; Accesibilidad WCAG</li>
+                  <li><strong>Herramientas de diseño:</strong> Figma &middot; Snagit &middot; MS Word</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <h5>Hardware y sistemas</h5>
+                <ul>
+                  <li><strong>Sistemas y control de calidad:</strong> Hardware médico y de consumo &middot; Pruebas de hardware &middot; Pantallas comerciales y AV &middot; Enrutamiento de señal &middot; Cableado de red &middot; POE &middot; Registros de equipos</li>
+                </ul>
+              </div>
+              <div class="col-md-6 mb-4">
+                <h5>Stack técnico e IA</h5>
+                <ul>
+                  <li><strong>Stack y lenguajes:</strong> HTML &middot; CSS &middot; JavaScript &middot; TypeScript &middot; Markdown &middot; React &middot; Node.js &middot; Bootstrap</li>
+                  <li><strong>Modelos de IA y prompting:</strong> Gemini &middot; Claude &middot; GPT (Diseño de prompts para microcopia de UI, estados de error y documentación técnica)</li>
+                  <li><strong>Sistemas y herramientas de IA:</strong> Model Context Protocol (MCP) para localización y herramientas &middot; DeepL &middot; Lara (TMX) &middot; Búsqueda semántica AskAI &middot; Galileo &middot; Vale</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row justify-content-center text-center">
+              <div class="col-md-10 mb-4">
+                <h5>Habilidades adicionales e idiomas</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-1"><strong>Publicación y traducción:</strong> Optimización SEO &middot; Traducción técnica &middot; Estilo AP &middot; Adobe Suite (InDesign, Illustrator, Acrobat) &middot; MadCap Flare</li>
+                  <li><strong>Idiomas:</strong> Inglés (nativo/fluido) &middot; Español (nativo/fluido) &middot; Francés (intermedio)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile View: Accordion -->
+          <div class="d-md-none">
+            <div class="accordion" id="skillsAccordion">
+
+              <!-- 1. Technical & API Documentation -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTechDocs">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechDocs" aria-expanded="false" aria-controls="collapseTechDocs">
+                    Documentación técnica y de API
+                  </button>
+                </h2>
+                <div id="collapseTechDocs" class="accordion-collapse collapse" aria-labelledby="headingTechDocs" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li class="mb-2"><strong>Documentación principal:</strong> Docs-as-Code &middot; REST &amp; OpenAPI &middot; Integración de MCP &middot; IA &middot; SOPs &middot; Guías de inicio rápido &middot; CI/CD</li>
+                      <li><strong>Herramientas de desarrollo:</strong> Git (GitHub, GitLab) &middot; Linux/CLI &middot; Docker &middot; VS Code &middot; Postman &middot; Swagger &middot; Docusaurus &middot; Algolia &middot; Jira &middot; Notion</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. UX Writing & Content Design -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingUX">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUX" aria-expanded="false" aria-controls="collapseUX">
+                    Redacción UX y diseño de contenido
+                  </button>
+                </h2>
+                <div id="collapseUX" class="accordion-collapse collapse" aria-labelledby="headingUX" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li class="mb-2"><strong>Práctica de diseño:</strong> Redacción UX &middot; Microcopia &middot; Diseño de prompts &middot; Sistemas de contenido &middot; Investigación UX &middot; Wireframes &middot; Accesibilidad WCAG</li>
+                      <li><strong>Herramientas de diseño:</strong> Figma &middot; Snagit &middot; MS Word</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Hardware & Systems -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingHardware">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardware" aria-expanded="false" aria-controls="collapseHardware">
+                    Hardware y sistemas
+                  </button>
+                </h2>
+                <div id="collapseHardware" class="accordion-collapse collapse" aria-labelledby="headingHardware" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li><strong>Sistemas y control de calidad:</strong> Hardware médico y de consumo &middot; Pruebas de hardware &middot; Pantallas comerciales y AV &middot; Enrutamiento de señal &middot; Cableado de red &middot; POE &middot; Registros de equipos</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Technical Stack & AI -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTechStack">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechStack" aria-expanded="false" aria-controls="collapseTechStack">
+                    Stack técnico e IA
+                  </button>
+                </h2>
+                <div id="collapseTechStack" class="accordion-collapse collapse" aria-labelledby="headingTechStack" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li class="mb-2"><strong>Stack y lenguajes:</strong> HTML &middot; CSS &middot; JavaScript &middot; TypeScript &middot; Markdown &middot; React &middot; Node.js &middot; Bootstrap</li>
+                      <li class="mb-2"><strong>Modelos de IA y prompting:</strong> Gemini &middot; Claude &middot; GPT (Diseño de prompts para microcopia de UI, estados de error y documentación técnica)</li>
+                      <li><strong>Sistemas y herramientas de IA:</strong> Model Context Protocol (MCP) para localización y herramientas &middot; DeepL &middot; Lara (TMX) &middot; Búsqueda semántica AskAI &middot; Galileo &middot; Vale</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5. Additional & Languages -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAddSkills">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAddSkills" aria-expanded="false" aria-controls="collapseAddSkills">
+                    Habilidades adicionales e idiomas
+                  </button>
+                </h2>
+                <div id="collapseAddSkills" class="accordion-collapse collapse" aria-labelledby="headingAddSkills" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li class="mb-2"><strong>Publicación y traducción:</strong> Optimización SEO &middot; Traducción técnica &middot; Estilo AP &middot; Adobe Suite (InDesign, Illustrator, Acrobat) &middot; MadCap Flare</li>
+                      <li><strong>Idiomas:</strong> Inglés (nativo/fluido) &middot; Español (nativo/fluido) &middot; Francés (intermedio)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="text-center mb-4">Experiencia relevante</h2>
+          <p class="text-center"><a href="/Pedro%20Vega%20Resume.pdf" class="text-white">Ver currículum completo aquí</a></p>
+          <!-- Desktop View: Vertical List -->
+          <div class="d-none d-md-block">
+            <div>
+              <h4>Redactor técnico independiente</h4>
+              <h5>En remoto | Abril de 2024 - Actualidad</h5>
+              <ul>
+                <li>Lideré el ciclo de vida completo de la documentación técnica para desarrolladores. Elaboré referencias de API y guías de SDK para enrutamiento de datos en la nube, integrando pipelines de Datadog y trazabilidad de LLM con Galileo.</li>
+                <li>Documenté métodos y lógica del SDK de TypeScript para la plataforma blockchain Sui, creando guías de inicio rápido y tutoriales detallados con código funcional.</li>
+                <li>Elaboré guías prácticas y tutoriales para desarrolladores, incluyendo una guía integral sobre configuración de servidores simulados en Postman para validar endpoints de API REST.</li>
+                <li>Gestioné especificaciones OpenAPI para documentar endpoints de API REST y diseñar arquitecturas de documentación de API de extremo a extremo.</li>
+                <li>Integré herramientas de IA generativa y servidores Model Context Protocol (MCP) en un entorno CLI local. Conecté Vale, DeepL y Figma a Gemini CLI para automatizar flujos de linting, traducción y desarrollo.</li>
+                <li>Diseñé una arquitectura de búsqueda avanzada en sitios personalizados de HTML y Docusaurus integrando Algolia y AskAI, aportando búsqueda semántica e IA generativa a documentación técnica compleja.</li>
+              </ul>
+            </div>
+            <hr>
+            <div>
+              <h4>Redactor UX</h4>
+              <h5>Culangex | En remoto | Diciembre de 2024 - Enero de 2026</h5>
+              <ul>
+                <li>Colaboré con equipos multifuncionales en la creación de una guía de estilo integral que consolidó una voz de marca consistente y cumplió con los estándares de accesibilidad WCAG.</li>
+                <li>Coordiné con el equipo ágil la gestión de textos de UI, errores y tooltips. Aseguré una integración fluida del contenido durante todo el ciclo de desarrollo.</li>
+                <li>Traduje y localicé contenidos orientados al usuario para el equipo hispanohablante, facilitando el lanzamiento exitoso del producto en mercados de habla hispana.</li>
+              </ul>
+            </div>
+            <hr>
+            <div>
+              <h4>Redactor técnico</h4>
+              <h5>Felix Storch Inc. | El Bronx, NY | Marzo de 2022 - Febrero de 2024</h5>
+              <ul> 
+                <li>Gestioné la documentación técnica de 5 marcas de hardware médico y de consumo, redactando y actualizando más de 150 manuales de usuario, guías de instalación y fichas técnicas originales.</li>
+                <li>Colaboré directamente con equipos de ingeniería para relevar requisitos técnicos, validar especificaciones y elaborar manuales operativos precisos para nuevas líneas de productos.</li>
+                <li>Estandaricé plantillas de control documental y flujos de publicación, reduciendo los tiempos de producción manual en un 40%.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Mobile View: Accordion -->
+          <div class="d-md-none">
+            <div class="accordion" id="experienceAccordion">
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingExp1">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp1" aria-expanded="false" aria-controls="collapseExp1">
+                    <div class="d-flex flex-column text-start">
+                      <span>Redactor técnico independiente</span>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">En remoto | Abr 2024 - Actualidad</small>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseExp1" class="accordion-collapse collapse" aria-labelledby="headingExp1" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li>Lideré el ciclo de vida completo de la documentación técnica para desarrolladores. Elaboré referencias de API y guías de SDK para enrutamiento de datos en la nube, integrando pipelines de Datadog y trazabilidad de LLM con Galileo.</li>
+                      <li>Documenté métodos y lógica del SDK de TypeScript para la plataforma blockchain Sui, creando guías de inicio rápido y tutoriales detallados con código funcional.</li>
+                      <li>Elaboré guías prácticas y tutoriales para desarrolladores, incluyendo una guía integral sobre configuración de servidores simulados en Postman para validar endpoints de API REST.</li>
+                      <li>Gestioné especificaciones OpenAPI para documentar endpoints de API REST y diseñar arquitecturas de documentación de API de extremo a extremo.</li>
+                      <li>Integré herramientas de IA generativa y servidores Model Context Protocol (MCP) en un entorno CLI local. Conecté Vale, DeepL y Figma a Gemini CLI para automatizar flujos de linting, traducción y desarrollo.</li>
+                      <li>Diseñé una arquitectura de búsqueda avanzada en sitios personalizados de HTML y Docusaurus integrando Algolia y AskAI, aportando búsqueda semántica e IA generativa a documentación técnica compleja.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingExp2">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp2" aria-expanded="false" aria-controls="collapseExp2">
+                    <div class="d-flex flex-column text-start">
+                      <span>Redactor UX</span>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Culangex | Dic 2024 - Ene 2026</small>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseExp2" class="accordion-collapse collapse" aria-labelledby="headingExp2" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li>Colaboré con equipos multifuncionales en la creación de una guía de estilo integral que consolidó una voz de marca consistente y cumplió con los estándares de accesibilidad WCAG.</li>
+                      <li>Coordiné con el equipo ágil la gestión de textos de UI, errores y tooltips. Aseguré una integración fluida del contenido durante todo el ciclo de desarrollo.</li>
+                      <li>Traduje y localicé contenidos orientados al usuario para el equipo hispanohablante, facilitando el lanzamiento exitoso del producto en mercados de habla hispana.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingExp3">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp3" aria-expanded="false" aria-controls="collapseExp3">
+                    <div class="d-flex flex-column text-start">
+                      <span>Redactor técnico</span>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Felix Storch Inc. | Mar 2022 - Feb 2024</small>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseExp3" class="accordion-collapse collapse" aria-labelledby="headingExp3" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li>Gestioné la documentación técnica de 5 marcas de hardware médico y de consumo, redactando y actualizando más de 150 manuales de usuario, guías de instalación y fichas técnicas originales.</li>
+                      <li>Colaboré directamente con equipos de ingeniería para relevar requisitos técnicos, validar especificaciones y elaborar manuales operativos precisos para nuevas líneas de productos.</li>
+                      <li>Estandaricé plantillas de control documental y flujos de publicación, reduciendo los tiempos de producción manual en un 40%.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- Knicks Ticker -->
+    <div class="knicks-ticker" role="region" aria-label="Cintillo de victoria de los Knicks" tabindex="0">
+      <div class="marquee-wrapper">
+        <span class="marquee-content"><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
+        <span class="marquee-content" aria-hidden="true"><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
+      </div>
+    </div>
+  <section class="light-section py-5">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="text-center mb-4">Intereses personales (La vida de 5 a 9)</h2>
+          <ul>
+            <li>Lectura (disfruto mis novelas tanto en prosa como en formato de novela gráfica).</li>
+            <li>Cine</li>
+            <li>Música</li>
+            <li>Los New York Yankees (apoyar a los equipos de Nueva York nunca ha sido fácil... ¡excepto con los NEW YORK KNICKS!). ¡Un saludo especial a mi gente, <i>de lo mío personal</i>, #BigBodegaKAT! Le declaro mi lealtad absoluta al capitán Jalen Brunson, quien nació para jugar básquetbol.</li>
+            <li>Garabatear y dibujar a mano alzada</li>
+            <li>Puyar e inventar con la tecnología: me fascina explorar nuevos aparatos y desbaratarlos para ver cómo funcionan por dentro. ¡Hasta me cogió la corriente un par de veces de chiquito desarmando cámaras fotográficas, pero valió la pena!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+  <section class="hero-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="and-divider">Y</p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3 class="text-center">Canción del momento</h3>
+          <p class="text-center">¡DÍMELO! LOS NEW YORK KNICKS SON LOS MEJORES DEL MUNDO. NÚMERO UNO. ¡LOS MEJORES DEL MUNDO!</p>
+          <div class="text-center">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/KU5V5WZVcVE?si=Q9Y2JcXQapX8WGtx" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+      </div>
+    </div>
+  </section>
+  
+<footer>
+  <p class="text-white text-center">&copy; 2026 Pedro Vega | Creado con HTML &bull; CSS &bull; JS &bull; GitHub Pages</p>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/js/sticky-nav.js"></script>
+  <!-- DocSearch JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
+    <script>
+    document.querySelectorAll('.docsearch-container').forEach((container) => {
+      docsearch({
+        container: container,
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        indexName: 'portfolio_site',
+        insights: true,
+        searchParameters: {
+          facetFilters: ['lang:es']
+        }
+      });
+    });
+
+    // Initialize Ask AI side panel
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const sidepanelDiv = document.createElement('div');
+      sidepanelDiv.id = 'docsearch-sidepanel';
+      document.body.appendChild(sidepanelDiv);
+      
+      sidepanelInstance = docsearchSidepanel({
+        container: '#docsearch-sidepanel',
+        indexName: 'portfolio_site',
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159',
+        agentStudio: true,
+        searchParameters: {},
+        showButton: false,
+        button: false,
+        variant: 'inline',
+      });
+    }
+
+    // Emulate Docusaurus SearchBar layout exactly for desktop and add Ask AI button
+    const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('.d-lg-none'));
+    desktopContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          // Wrap button in DocSearch-SearchBar div
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+  
+    // Append Docusaurus Ask AI side panel button for mobile only
+    const mobileContainers = Array.from(document.querySelectorAll('.d-lg-none .docsearch-container'));
+    mobileContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+
+    // Mobile search close fix - hides mobile search buttons while modal is open, revealing the native X button
+    (function () {
+      var mobileSearchContainer = document.querySelector('.mobile-nav-search-container');
+      function showSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'visible'; }
+      function hideSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'hidden'; }
+      var closeObserver = new MutationObserver(function () {
+        if (document.querySelector('.DocSearch-Modal')) { hideSearchButtons(); } else { showSearchButtons(); }
+      });
+      closeObserver.observe(document.body, { childList: true, subtree: true });
+    })();
+
+  </script>
+    <script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+</body>
+</html>
+

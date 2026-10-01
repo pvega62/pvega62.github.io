@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script>
+    if (window.location.pathname.endsWith('.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
+<title>كتابة تجربة المستخدم وتصميم المحتوى | بيدرو فيجا</title>
+<!-- Primary Meta Tags -->
+<meta content="عينات من كتابة تجربة المستخدم (UX Writing)، والنصوص المصغرة (microcopy)، وتصميم المحتوى، وتوثيق مسار المستخدم، من إعداد بيدرو فيغا." name="description"/>
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta content="website" property="og:type"/>
+<meta content="https://pvega62.github.io/ar/uxwriting" property="og:url"/>
+<meta content="كتابة تجربة المستخدم وتصميم المحتوى | بيدرو فيجا" property="og:title"/>
+<meta content="عينات من كتابة تجربة المستخدم (UX Writing)، والنصوص المصغرة (microcopy)، وتصميم المحتوى، وتوثيق مسار المستخدم، من إعداد بيدرو فيغا." property="og:description"/>
+<meta content="https://pvega62.github.io/images/social-card.png" property="og:image"/>
+<meta content="1050" property="og:image:width"/>
+<meta content="600" property="og:image:height"/>
+<!-- Twitter / X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://pvega62.github.io/ar/uxwriting" name="twitter:url"/>
+<meta content="كتابة تجربة المستخدم وتصميم المحتوى | بيدرو فيجا" name="twitter:title"/>
+<meta content="عينات من كتابة تجربة المستخدم (UX Writing)، والنصوص المصغرة (microcopy)، وتصميم المحتوى، وتوثيق مسار المستخدم، من إعداد بيدرو فيغا." name="twitter:description"/>
+<meta content="https://pvega62.github.io/images/social-card.png" name="twitter:image"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="/css/styles.css?v=6" rel="stylesheet"/>
+<link href="/css/page-specific.css?v=8" rel="stylesheet"/>
+<link href="/images/logo.png" rel="icon" type="image/png"/>
+<!-- DocSearch CSS -->
+<link href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" rel="stylesheet"/>
+<style>
+    /* Force hide the default Algolia floating sidepanel button globally */
+    .DocSearch-SidepanelButton.floating {
+      display: none !important;
+    }
+  </style>
+<link href="/css/interactive.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main-content">الانتقال إلى المحتوى الرئيسي</a>
+<!-- Header and Navbar -->
+<header class="sticky-top">
+<!-- Mobile Search Bar -->
+<div class="d-lg-none d-flex justify-content-end w-100"><div class="mobile-nav-search-container" style="position: absolute; right: 2px; top: 8px; z-index: 1050; padding: 0; margin: 0;">
+<div class="docsearch-container"></div>
+</div></div>
+<div class="container-fluid px-0">
+<!-- Desktop Navbar -->
+<nav aria-label="Desktop navigation" class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation">
+<a class="navbar-brand ms-3" href="/ar/">
+<img alt="Logo" height="40" src="/images/logo.png"/>
+</a>
+<div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
+<ul class="navbar-nav me-3">
+<li class="nav-item"><a class="nav-link" href="/ar/">الرئيسية</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdownDesktop1" role="button">
+                الكتابة التقنية
+              </a>
+<ul aria-labelledby="navbarDropdownDesktop1" class="dropdown-menu">
+<li class="dropend position-relative">
+<a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">توثيق البرمجيات</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/software/ar/docs/intro">مقدمة</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/category/cloud-data-pipeline-documentation">خطوط أنابيب البيانات السحابية</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/category/typescript-sdk-sui-blockchain-documentation">برنامج تعليمي لحزمة SDK لـ TypeScript</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/category/stripe-api-documentation">واجهة برمجة تطبيقات Stripe</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/category/pet-store-api-documentation">واجهة برمجة تطبيقات Pet Store</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/category/commit-messages-and-pull-requests">رسائل الالتزام وطلبات السحب</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/artie-case-study">دراسة حالة: مساعد الذكاء الاصطناعي Ask Artie</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/google-chrome-theme-installation">سمة Google Chrome</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/word-github-wiki-writage">سير عمل Writage</a></li>
+</ul>
+</li>
+<li><a class="dropdown-item" href="/ar/technical-writing-hardware">عينات الأجهزة</a></li>
+<li><hr class="dropdown-divider"/></li>
+<li><a class="dropdown-item" href="/software/ar/blog">المدونة</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="/ar/uxwriting">كتابة تجربة المستخدم (UX)</a></li>
+<li class="nav-item"><a class="nav-link" href="/ar/articles">المقالات</a></li>
+<li class="nav-item"><a class="nav-link about-link" href="/ar/aboutme">نبذة عني</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdownDesktop2" role="button">
+                اتصل بي
+              </a>
+<ul aria-labelledby="navbarDropdownDesktop2" class="dropdown-menu">
+<li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">لينكد إن</a></li>
+<li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">جيت هب</a></li>
+<li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">البريد الإلكتروني</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">Recordkeeping</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" aria-label="اللغة: العربية" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLang" role="button" title="اللغة: العربية">
+<svg aria-hidden="true" class="me-1" height="20" style="fill: currentColor;" viewbox="0 0 24 24" width="20"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg><img alt="" class="nav-flag-toggle" src="/images/flags/ma.svg"/><span>العربية</span>
+</a>
+<ul aria-labelledby="navbarDropdownLang" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/uxwriting" hreflang="en-US" lang="en-US"><img alt="" class="dropdown-flag" src="/images/flags/us.svg"/><span>English</span></a></li>
+<li><a class="dropdown-item" href="/es/uxwriting" hreflang="es" lang="es"><img alt="" class="dropdown-flag" src="/images/flags/do.svg"/><span>Español</span></a></li>
+<li><a class="dropdown-item" href="/fr/uxwriting" hreflang="fr-FR" lang="fr-FR"><img alt="" class="dropdown-flag" src="/images/flags/fr.svg"/><span>Français</span></a></li>
+<li><a class="dropdown-item active" href="/ar/uxwriting" hreflang="ar" lang="ar"><img alt="" class="dropdown-flag" src="/images/flags/ma.svg"/><span>العربية</span></a></li>
+<li><a class="dropdown-item" href="/zh/uxwriting" hreflang="zh-Hans" lang="zh-Hans"><img alt="" class="dropdown-flag" src="/images/flags/cn.svg"/><span>普通话</span></a></li>
+<li><a class="dropdown-item" href="/ja/uxwriting" hreflang="ja" lang="ja" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/jp.svg"/><span>日本語</span></a></li>
+<li><a class="dropdown-item" href="/hi/uxwriting" hreflang="hi" lang="hi" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/in.svg"/><span>हिन्दी</span></a></li>
+</ul>
+</li>
+<li class="nav-item d-flex align-items-center ms-1">
+<div class="docsearch-container"></div>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Mobile Navbar (App Tab Bar) -->
+<nav aria-label="Mobile navigation" class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation">
+<a class="navbar-brand ms-2 me-1" href="/ar/">
+<img alt="Logo" height="40" src="/images/icon-logo.png"/>
+</a>
+<ul class="navbar-nav flex-row w-100 justify-content-around me-2">
+<li class="nav-item dropup d-flex align-items-center">
+<a aria-expanded="false" aria-label="Technical writing" class="nav-link dropdown-toggle px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdown1" role="button" title="Technical writing">
+<img alt="" class="mobile-nav-icon" src="/images/icon-tech-writing.svg"/>
+</a>
+<ul aria-labelledby="navbarDropdown1" class="dropdown-menu">
+<li class="dropend position-relative">
+<a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">توثيق البرمجيات</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/software/ar/docs/intro">مقدمة</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/category/cloud-data-pipeline-documentation">خطوط أنابيب البيانات السحابية</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/category/typescript-sdk-sui-blockchain-documentation">برنامج تعليمي لحزمة SDK لـ TypeScript</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/category/stripe-api-documentation">واجهة برمجة تطبيقات Stripe</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/category/pet-store-api-documentation">واجهة برمجة تطبيقات Pet Store</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/category/commit-messages-and-pull-requests">رسائل الالتزام وطلبات السحب</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/artie-case-study">دراسة حالة: مساعد الذكاء الاصطناعي Ask Artie</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/google-chrome-theme-installation">سمة Google Chrome</a></li>
+<li><a class="dropdown-item" href="/software/ar/docs/word-github-wiki-writage">سير عمل Writage</a></li>
+</ul>
+</li>
+<li><a class="dropdown-item" href="/ar/technical-writing-hardware">عينات الأجهزة</a></li>
+<li><hr class="dropdown-divider"/></li>
+<li><a class="dropdown-item" href="/software/ar/blog">المدونة</a></li>
+</ul>
+</li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="كتابة تجربة المستخدم" class="nav-link px-2 d-flex align-items-center" href="/ar/uxwriting" title="كتابة تجربة المستخدم">
+<img alt="" class="mobile-nav-icon" src="/images/icon-ux-writing.svg"/>
+</a>
+</li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="المقالات" class="nav-link px-2 d-flex align-items-center" href="/ar/articles" title="المقالات">
+<img alt="" class="mobile-nav-icon" src="/images/icon-articles.svg"/>
+</a>
+</li>
+<li class="nav-item dropup d-flex align-items-center">
+<a aria-expanded="false" aria-label="نبذة عني والاتصال" class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownAbout" role="button" title="نبذة عني والاتصال">
+<img alt="" class="mobile-nav-icon" src="/images/icon-vector1.svg" style="transform: scaleY(-1);"/>
+</a>
+<ul aria-labelledby="navbarDropdownAbout" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/ar/aboutme">نبذة عني</a></li>
+<li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">لينكد إن</a></li>
+<li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">جيت هب</a></li>
+<li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">البريد الإلكتروني</a></li>
+</ul>
+</li>
+<li class="nav-item dropup d-flex align-items-center">
+<a aria-expanded="false" aria-label="Languages" class="nav-link dropdown-toggle px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLangMobile" role="button" title="Languages">
+<img alt="" class="mobile-nav-icon" src="/images/icon-languages.svg"/>
+</a>
+<ul aria-labelledby="navbarDropdownLangMobile" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/uxwriting" hreflang="en-US" lang="en-US"><img alt="" class="dropdown-flag" src="/images/flags/us.svg"/><span>English</span></a></li>
+<li><a class="dropdown-item" href="/es/uxwriting" hreflang="es" lang="es"><img alt="" class="dropdown-flag" src="/images/flags/do.svg"/><span>Español</span></a></li>
+<li><a class="dropdown-item" href="/fr/uxwriting" hreflang="fr-FR" lang="fr-FR"><img alt="" class="dropdown-flag" src="/images/flags/fr.svg"/><span>Français</span></a></li>
+<li><a class="dropdown-item active" href="/ar/uxwriting" hreflang="ar" lang="ar"><img alt="" class="dropdown-flag" src="/images/flags/ma.svg"/><span>العربية</span></a></li>
+<li><a class="dropdown-item" href="/zh/uxwriting" hreflang="zh-Hans" lang="zh-Hans"><img alt="" class="dropdown-flag" src="/images/flags/cn.svg"/><span>普通话</span></a></li>
+<li><a class="dropdown-item" href="/ja/uxwriting" hreflang="ja" lang="ja" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/jp.svg"/><span>日本語</span></a></li>
+<li><a class="dropdown-item" href="/hi/uxwriting" hreflang="hi" lang="hi" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/in.svg"/><span>हिन्दी</span></a></li>
+</ul>
+</li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="Recordkeeping" class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/" title="Recordkeeping">
+<img alt="" class="mobile-nav-icon-colored" src="/images/icon-recordkeeping.svg"/>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main-content" tabindex="-1">
+<div class="hero-section">
+<div class="container-fluid px-4">
+<div class="text-center">
+<h1 class="display-4 fw-bold text-white">UX Writing &amp; Content Design</h1>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center intro-text text-white">
+<p class="lead">نصوص تتمحور حول المستخدم، ومسارات إفصاح تدريجي، وأنظمة تصميم متكاملة في Figma.</p>
+<p>تتناول كل دراسة حالة نقاط الاحتكاك المعقدة عبر دورة حياة المنتج: بدءاً من بناء الثقة أثناء التهيئة والحالات الفارغة، وحتى التوجيه الدقيق عند الأخطاء والإشعارات المحسوبة بحسب درجة الأهمية. توضح النماذج التفاعلية كل حالة تفاعل برمجياً وبصرياً.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- light band with cards -->
+<div class="py-5 light-section" id="ux-carousel-container">
+<div class="container-fluid px-4">
+<!-- Category Filter Tabs (High-Contrast Navy Dock) -->
+<div class="ux-filter-wrapper text-center">
+<div class="text-center mb-2">
+<span class="text-uppercase fw-bold small" style="letter-spacing: 1.2px; color: #1f3850; font-size: 0.8rem;">
+<i class="bi bi-funnel-fill me-1"></i> تصفية حسب مجال التركيز
+</span>
+</div>
+<div class="ux-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
+<button class="btn ux-filter-pill active" data-filter="all" type="button">الكل <span class="badge ms-1">15</span></button>
+<button class="btn ux-filter-pill" data-filter="prototype" type="button"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;"></i> نموذج أولي فعال <span class="badge ms-1">8</span></button>
+<button class="btn ux-filter-pill" data-filter="high-stakes" type="button">المواقف الحرجة والتنبيهات <span class="badge ms-1">3</span></button>
+<button class="btn ux-filter-pill" data-filter="error-recovery" type="button">معالجة الأخطاء وتقليل الاحتكاك <span class="badge ms-1">5</span></button>
+<button class="btn ux-filter-pill" data-filter="onboarding" type="button">التهيئة وبناء الثقة <span class="badge ms-1">2</span></button>
+<button class="btn ux-filter-pill" data-filter="subscriptions" type="button">الاشتراكات والنصوص المصغرة <span class="badge ms-1">5</span></button>
+</div>
+</div>
+<div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="uxSamplesCarousel">
+<div class="carousel-inner"><div class="carousel-item active" data-category="onboarding prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-15.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-15.pdf" title="UX Writing Case Study: Banking App Onboarding Flow"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">مسار التسجيل في تطبيق الخدمات المصرفية</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يواجه مستخدمو تطبيقات الخدمات المصرفية الجديدة شعورًا بالقلق ويتخلون عن إجراءات إعداد الأتمتة المالية المتعددة الخطوات. قم بتوجيه المستخدمين خلال عملية إنشاء الحساب، وتصنيف الفواتير، والمدفوعات الشهرية التلقائية، مع بناء الثقة في مستوى الأمان.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 45 حرف<br/>
+<b>النص الأساسي:</b> 100 حرف<br/>
+<b>الأزرار:</b> 25 حرف</p>
+<button aria-controls="ux-details-1" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-1" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-1" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>تعمل الاستراتيجية الأساسية على تعزيز ثقة المستخدم في كل مرحلة من مراحل التفاعل. وتساهم النصوص المصغرة الاحترافية والواضحة والمطمئنة في إضفاء شعور بالأمان والبساطة على عمليات الأتمتة المالية. كما يعرض مسار العملية المزايا الرئيسية بشكل تدريجي لتجنب إرهاق العقل.</p>
+<ul>
+<li><strong>الشاشة 1: عرض القيمة الأساسية.</strong><code>Never fear, Paymate's here!</code></li>
+<li><strong>الشاشة 2: بناء الثقة الأمنية.</strong><code>Fort Knox security. In your pocket.</code></li>
+<li><strong>الشاشة 3: تسليط الضوء على الميزات الذكية.</strong><code>Smartphone, smart banking, smart user</code></li>
+<li><strong>الشاشات 4-7: عملية الإعداد.</strong><code>Enough about us, let's focus on you.</code><code>Welcome Aboard!</code></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>يقلل الكشف التدريجي بشكل منهجي من قلق المستخدمين، ويخفف من الصعوبات التي تواجه عملية الإعداد، ويعزز معدلات إتمام عملية التسجيل. وتحوّل هذه التجربة عملية التسجيل المالي المعقدة إلى رحلة مستخدم تتميز بثقة عالية وخالية من العقبات.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FNjNjYmTQPlZiU2aoxaHdV/UX-Writing-Challenge--15?node-id=4-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=4%3A2&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">النموذج الأولي</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3 d-flex flex-column p-2">
+<div aria-label="مبدل معاينة الإصدار" class="btn-group btn-group-sm w-100 mb-2 rounded-2" role="group" style="background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.18);">
+<button class="btn btn-draft-toggle active fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" type="button">
+<i class="bi bi-check2 me-1"></i> الإصدار المعتمد v2
+    </button>
+<button class="btn btn-draft-toggle fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14-draft1.pdf" type="button">
+<i class="bi bi-x-lg me-1"></i> المسودة الأولى (ملغاة)
+    </button>
+</div>
+<div class="flex-grow-1 position-relative" style="min-height: 280px;">
+<iframe allowfullscreen="" class="w-100 h-100 position-absolute top-0 start-0" frameborder="0" id="challenge14Iframe" src="/samples/ux-writing/ux-writing-challenge-14.pdf" title="UX Writing Case Study: App Error with Unknown Cause"></iframe>
+</div>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">خطأ في التطبيق لسبب غير معروف</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يؤدي انقطاع الخدمة إلى منع وصول المستخدم إلى بيانات مقارنة الأسعار دون ظهور رمز خطأ محدد. قم بإبلاغ المستخدم بشكل شفاف، ومنع فقدان العملاء، وتوفير خيارات استعادة الخدمة على الفور.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 30 حرف كحد أقصى<br/>
+<b>النص الأساسي:</b> 120 حرف كحد أقصى<br/>
+<b>الأزرار:</b> 15 حرف كحد أقصى</p>
+<button aria-controls="ux-details-2" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-2" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-2" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>توضح دراسة الحالة هذه عملية المعايرة الصوتية التكرارية وأهمية إدراك فشل المسودة الأولى. فعندما يتعذر على المستخدمين الوصول إلى الوظيفة الأساسية للتطبيق، تبدو النصوص المضحكة وكأنها تقلل من شأنهم وتستخف بهم. لذا، يتحول التصميم من أسلوب خيالي ساخر إلى نهج استعادة مباشر وشفاف ومتعاطف.</p>
+<ul class="mb-3">
+<li><strong style="color: #ff9999 !important;"><i class="bi bi-x-circle me-1"></i>المسودة 1 (تم استبعادها، فشل المسودة الأولى).</strong>
+
+</li>
+<li class="mt-3"><strong style="color: #85e3a8 !important;"><i class="bi bi-check-circle me-1"></i>المسودة 2 (نسخة مرسلة ومعايرة).</strong>
+
+</li>
+<li class="mt-3"><strong style="color: #e8c47c !important;">نقطة مهمة في استراتيجية <i class="bi bi-lightbulb me-1"></i>المحتوى.</strong>
+</li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>التواصل الشفاف يحافظ على مصداقية العلامة التجارية أثناء فترات تعطل الخدمة. أما نظام الاستعادة ثنائي المسار فيقلل من عدد طلبات الدعم ويحافظ على تفاعل المستخدمين حتى أثناء الانقطاعات غير المتوقعة في الخدمة.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/design/KSZ6n1AWQbgiIWX2BLo6o1/UX-Writing-Challenge--14?node-id=0-1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">النموذج الأولي</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="high-stakes prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-1.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-1.pdf" title="UX Writing Case Study: Flight Cancellation Notification"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">إشعار بإلغاء الرحلة</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>تؤدي الأحوال الجوية القاسية إلى إلغاء رحلة أحد المسافرين بشكل مفاجئ. قم بإبلاغ الراكب على الفور بتعليمات عملية وملحة زمنياً لمساعدته على التنقل داخل المطار والوصول إلى مكتب إعادة الحجز دون إثارة الذعر.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 45 حرف<br/>
+<b>النص الأساسي:</b> 175 حرف كحد أقصى<br/>
+<b>الأزرار:</b> 25 حرف كحد أقصى</p>
+<button aria-controls="ux-details-3" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-3" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-3" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>تتطلب حالات انقطاع السفر التي تنطوي على ضغوط شديدة أسلوبًا صوتيًا مباشرًا وبسيطًا، يولي الأولوية للفهم السريع على حساب العبارات الملء في المحادثة.</p>
+<ul>
+<li><strong>العنوان:</strong><code>FLIGHT CANCELLED. GO TO HELP DESK</code></li>
+<li><strong>النص:</strong><code>DOC063</code></li>
+<li><strong>الأزرار:</strong><code>Got it</code><code>Airport Map</code></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>يساعد التواصل المباشر على تهدئة ذعر المسافرين وتنظيم تدفق الحشود نحو مكاتب الخدمة المخصصة. كما أن التوجيه الذاتي السريع عبر الهاتف المحمول يقلل من معاناة الركاب ويحافظ على سمعة العلامة التجارية على المدى الطويل في حالات الاضطرابات الشديدة في الرحلات الجوية.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/2NGMklaY5uH05Qy22ZnHP4/UX-Writing-Challenge--1?node-id=19-124&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=19%3A124&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">النموذج الأولي</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-6.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-6.pdf" title="UX Writing Case Study: Fire Alert Notification"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">إشعار تنبيه بحريق</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يهدد حريق غابات متفجر بالقرب من مسار تنقل أحد السائقين بإغلاق الطرق ويشكل خطراً على سلامته الشخصية. قم بإرسال إشعار عاجل لا يتطلب جهداً كبيراً في الفهم، يحث على تغيير المسار فوراً وبأمان.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 30 حرف كحد أقصى<br/>
+<b>النص الأساسي:</b> 45 حرف كحد أقصى</p>
+<button aria-controls="ux-details-4" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-4" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-4" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>تتطلب التنبيهات المتنقلة ذات الأهمية الحاسمة للسلامة في سياقات المركبات فهمًا فوريًا وسريعًا بمجرد النظرة الأولى.</p>
+<ul>
+<li><strong>التصميم والنبرة:</strong></li>
+<li><strong>العنوان:</strong><code>FIRE ON ATLANTIC AVE</code></li>
+<li><strong>النص:</strong><code>FIRE MAY AFFECT YOUR ROUTE. REROUTE.</code></li>
+<li><strong>الزر:</strong><code>REROUTE TO SAFETY</code></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>إن إعطاء الأولوية لسلامة السائقين وإجراء تعديلات سريعة على مسار الرحلة يمنع المستخدمين من المرور بمناطق خطرة، مما يفي بالتزامات منصة الملاحة المتعلقة بواجب العناية.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-9.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-9.pdf" title="UX Writing Case Study: Expired Credit Card Error"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">خطأ في بطاقة الائتمان منتهية الصلاحية</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يحاول أحد العملاء إتمام حجز سيارة مستعارة في موعد محدد، لكن طريقة الدفع المسجلة في ملفه قد انتهت صلاحيتها. حدد المشكلة بدقة ووجه المستخدم إلى تحديث التفاصيل دون إلغاء الحجز.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 30 حرف<br/>
+<b>النص الأساسي:</b> 45 حرف</p>
+<button aria-controls="ux-details-5" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-5" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-5" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>تتطلب أخطاء الدفع عند إتمام عملية الشراء حلولاً مباشرة وواضحة. فالغموض في هذه المرحلة يؤدي مباشرةً إلى إلغاء المعاملة.</p>
+<ul>
+<li><strong>العنوان:</strong><code>YOUR CARD IS EXPIRED!</code></li>
+<li><strong>النص الرئيسي:</strong><code>Update card details or add a new one</code></li>
+<li><strong>تنسيق واجهة المستخدم:</strong></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>تحمي النسخة الواضحة الخاصة باسترداد المدفوعات معدلات التحويل عند إتمام عملية الدفع، مما يمنع انخفاض معدلات إتمام الحجز خلال مسارات الحجز التي تتسم بدرجة عالية من الرغبة في الشراء.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/RjNFdKOJncmtaAH0IzURy2/UX-Writing-Challenge--9?node-id=9-42&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=9%3A42&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">النموذج الأولي</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-12.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-12.pdf" title="UX Writing Case Study: 'Fake Name' Error Message"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">رسالة الخطأ "اسم مزيف"</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يقوم نظام الكشف الآلي عن الاحتيال بتمييز الأسماء الفريدة أو غير الشائعة للمستخدمين الشرعيين أثناء إنشاء الحساب. قم بالتحقق من الهوية على الفور وبأسلوب محترم، دون إثارة استياء المستخدم أو إحراجه.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>45 حرف كحد أقصى</b></p>
+<button aria-controls="ux-details-6" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-6" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-6" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>قد تؤدي النتائج الإيجابية الخاطئة الناتجة عن الخوارزميات إلى إبعاد المستخدمين الذين يحملون أسماء متنوعة ثقافيًّا أو فريدة من نوعها. ويُعيد النص صياغة الشك الآلي ليصبح خطوة تحقق شاملة ومحترمة.</p>
+<ul>
+<li><strong>نبرة شاملة ومشجعة:</strong><code>That's an interesting name!</code></li>
+<li><strong>النصوص التفاعلية:</strong><code>Please help us verify it</code></li>
+<li><strong>مسار التحقق المباشر:</strong></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>تساهم المعالجة المتعاطفة للأخطاء في الحد من معدل توقف العملاء الجدد من مختلف الفئات السكانية، مما يحافظ على القيمة الدائمة للعميل وسلامة العلامة التجارية.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-11.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-11.pdf" title="UX Writing Case Study: Contact Lens Subscription - Title &amp; Meta Description"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">اشتراك العدسات اللاصقة - العنوان والوصف الموجز</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يعاني المستخدمون من ذوي الإعاقة البصرية وكبار السن من «قلق تكنولوجي» عند التفكير في خدمة التوصيل الطبي المتكرر. قم بصياغة عناوين ونصوص وصفية مُحسَّنة لمحركات البحث، تعمل على بناء الثقة وتؤكد على سهولة تجديد المخزون حتى عتبة الباب.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان:</b> 60 حرف كحد أقصى<br/>
+<b>الوصف التعريفي (Meta Description):</b> 160 حرف كحد أقصى</p>
+<button aria-controls="ux-details-7" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-7" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-7" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>يتطلب تصميم خدمات الرعاية الصحية التي تراعي احتياجات ذوي الإعاقة توفير قابلية عالية للقراءة ولغة بسيطة ومطمئنة ومصممة خصيصًا لتناسب الفئة العمرية الأكبر سنًا.</p>
+<ul>
+<li><strong>العنوان:</strong><code>Vision Quest: Hassle-Free Contact Lens Delivery Every 30 Days!</code></li>
+<li><strong>وصف ميتا:</strong></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>تساهم البيانات الوصفية لـ SEO الواضحة والمراعية لمعايير إمكانية الوصول في جذب نقرات بحث عضوية مؤهلة من شرائح سكانية حذرة، مما يسهم في توسيع نطاق اكتساب العملاء المشتركين.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-13.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-13.pdf" title="UX Writing Case Study: Truck Driver Delay Notification"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">إشعار بتأخير سائق الشاحنة</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يتأخر سائق لوجستيات المسافات القصيرة عن الموعد المحدد بسبب ازدحام حركة المرور على الطريق السريع. قم بإرسال إشعار فوري سهل القراءة ولا يتطلب استخدام اليدين، يعرض خيارات مسارات سريعة دون الإخلال بسلامة القيادة.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 30 حرف كحد أقصى<br/>
+<b>النص الأساسي:</b> 45 حرف كحد أقصى<br/>
+<b>الأزرار:</b> 25 حرف كحد أقصى</p>
+<button aria-controls="ux-details-8" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-8" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-8" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>تتطلب الإشعارات اللوجستية اتباع نهج اقتصادي معرفي صارم لحماية سلامة المشغل أثناء عملية النقل الفعلي.</p>
+<ul>
+<li><strong>نبرة غير اتهامية:</strong><code>Running Late?</code></li>
+<li><strong>الإيجاز الشديد:</strong></li>
+<li><strong>خيارات قابلة للتنفيذ:</strong><code>Fuel up now or keep going?</code><code>REROUTE TO PITSTOP</code><code>KEEP GOING</code></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>تساعد الإشعارات التي تُرسل في الوقت المناسب على تنظيم وتيرة التسليم في سلسلة التوريد، مع الحفاظ في الوقت نفسه على رفاهية السائقين وكفاءة المسارات.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="onboarding"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-10.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-10.pdf" title="UX Writing Case Study: Car Buying Website Location Request"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">طلب تحديد موقع موقع إلكتروني لشراء السيارات</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يتطلب سوق السيارات معرفة موقع المستخدم لعرض المخزون المتوفر في منطقته والأسعار السائدة في المنطقة. اطلب التفاصيل الجغرافية بشفافية دون إثارة مخاوف تتعلق بخصوصية البيانات أو تسبب في انخفاض معدل الزيارات.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 25 حرف<br/>
+<b>النص الأساسي:</b> 45 حرف<br/>
+<b>الزر:</b> 15 حرف</p>
+<button aria-controls="ux-details-9" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-9" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-9" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>يتم نجاح تهيئة الإذن عندما تربط الواجهة عملية جمع البيانات مباشرةً بقيمة واضحة للمستخدم.</p>
+<ul>
+<li><strong>عنوان يركز على الفوائد:</strong><code>Your dream car is here.</code></li>
+<li><strong>شخصية جذابة:</strong><code>(Yes, even THAT one)</code></li>
+<li><strong>مدخلات تراعي الخصوصية:</strong></li>
+<li><strong>دعوة مقنعة للعمل:</strong><code>VIEW OUR DEALS</code></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>إن تحديد القيمة بوضوح يرفع معدلات قبول العروض ويسرع الانتقال إلى مرحلة تصفح المخزون الفعلي.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-5.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-5.pdf" title="UX Writing Case Study: App Crash Recovery Message"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">رسالة استعادة البيانات بعد تعطل التطبيق</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يؤدي إيقاف تشغيل جهاز محمول بشكل غير متوقع إلى مقاطعة عمل مصمم جرافيكي أثناء جلسة تقييم. يجب طمأنة المستخدم عند إعادة تشغيل التطبيق، والتأكد من حالة الاستعادة التلقائية للمستند، وتوفير مسارات سلسة لاستعادة المستند أو البدء من جديد.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 40 حرف كحد أقصى<br/>
+<b>النص الأساسي:</b> 140 حرف كحد أقصى<br/>
+<b>الأزرار:</b> 20 حرف كحد أقصى</p>
+<button aria-controls="ux-details-10" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-10" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-10" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>تؤدي أعطال النظام إلى شعور حاد بالقلق بشأن فقدان العمل. يجب أن يقوم مربع حوار إعادة التشغيل على الفور بالتحقق من حالة الاستعادة واستئناف سير عمل المستخدم.</p>
+<ul>
+<li><strong>العنوان:</strong><code>ACME DESIGNS Crashed Unexpectedly</code></li>
+<li><strong>النص:</strong></li>
+<li><strong>الأزرار:</strong><code>Restore</code><code>New</code></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>تحافظ الاتصالات الموثوقة لاستعادة الخدمة بعد الأعطال على ثقة المستخدمين، وتعزز مرونة سير العمل، وتقلل من حالات التخلي عن التطبيق.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/t0mfj5ZNbl8cMwxPL8ieUk/UX-Writing-Challenge--5?node-id=5-342&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A135&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">النموذج الأولي</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-4.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-4.pdf" title="UX Writing Case Study: Grocery Subscription Promotion"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">عرض ترويجي لاشتراك البقالة</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>قم بتقديم اشتراك شهري برسوم ثابتة لتوصيل البقالة عبر شاشة هبوط داخل التطبيق. قم بالتأكيد على الراحة التي يوفرها الاشتراك المتكرر وشفافية التكلفة دون اللجوء إلى أساليب البيع المكثفة.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 45 حرف كحد أقصى<br/>
+<b>النص الأساسي:</b> 175 حرف كحد أقصى<br/>
+<b>الأزرار:</b> 25 حرف كحد أقصى</p>
+<button aria-controls="ux-details-11" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-11" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-11" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>تنجح عمليات بيع المنتجات الإضافية في إطار الاشتراكات من خلال ربط الخدمات بتحسين نمط الحياة واتباع سياسة تسعير شفافة.</p>
+<ul>
+<li><strong>العنوان:</strong><code>ENJOY THE COMFORT OF HOME, WE'LL SHOP FOR YOU.</code></li>
+<li><strong>النص:</strong></li>
+<li><strong>الأزرار:</strong><code>LEARN MORE</code><code>NO THANKS</code></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>تساهم الرسائل الشفافة المتعلقة بالاشتراك في تعزيز الاحتفاظ المستدام بالعملاء ورضاهم، مقارنةً بعمليات التحويل المكثفة على المدى القصير.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/YqzCMRqdg1xA41oflpHwnd/UX-Writing-Challenge--4?node-id=24-130&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=24%3A130&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">النموذج الأولي</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-3.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-3.pdf" title="UX Writing Case Study: Incorrect Email Error Message"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">رسالة خطأ تتعلق بعنوان بريد إلكتروني غير صحيح</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يقوم مستخدم عائد بإدخال عنوان بريد إلكتروني غير مرتبط بالحساب أو تمت كتابته بشكل خاطئ أثناء تسجيل الدخول. قم بتوضيح المشكلة المحددة التي تعوق تسجيل الدخول وكرر ما تم إدخاله لتسهيل تصحيح الأخطاء المطبعية بسرعة دون الكشف عن نقاط الضعف المتعلقة بتعداد الحسابات.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>40 حرف كحد أقصى.</b></p>
+<button aria-controls="ux-details-12" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-12" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-12" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>تعد الصعوبات المتعلقة بالمصادقة أحد الأسباب الرئيسية لترك الموقع. وتساعد الرسائل الصريحة التي توضح الأخطاء المستخدمين على تصحيحها على الفور.</p>
+<ul>
+<li><strong>الوضوح الموجه:</strong><code>Retype email address, '[email]'</code></li>
+<li><strong>فعل مباشر:</strong></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>تساهم التعليقات المباشرة الموجهة في تقليل طلبات إعادة تعيين كلمة المرور وإزالة العوائق التي تعترض عمليات المصادقة بسرعة.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-2.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-2.pdf" title="UX Writing Case Study: Sports Fan App Promotion"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">الترويج لتطبيق «Sports Fan»</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يواجه الآباء والأمهات الذين يعانون من ضيق الوقت ومشجعو الرياضة المشغولون صعوبة في متابعة البث المباشر. استفد من ميزات عرض أبرز لحظات المباريات بشكل غير متزامن، والتنبيهات المخصصة للفرق، وتحديثات النتائج الموجزة للتخلص من «الخوف من تفويت أي شيء» (FOMO).</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 40 حرف كحد أقصى<br/>
+<b>النص الأساسي:</b> 175 حرف كحد أقصى<br/>
+<b>الأزرار:</b> 25 حرف كحد أقصى</p>
+<button aria-controls="ux-details-13" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-13" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-13" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>تتناول النصوص الترويجية الخاصة بمرحلة التمهيد القيود التي يواجهها المستخدمون في نمط حياتهم، وذلك من خلال صياغة حيوية لا تُنسى.</p>
+<ul>
+<li><strong>العنوان والنص:</strong></li>
+<li><strong>تعزيز عبارة "اتخذ إجراءً" (CTA):</strong><code>Score a win against FOMO!</code></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>إن مواءمة مزايا التطبيق مع قيود نمط الحياة يؤدي إلى زيادة معدلات تفعيل الحسابات ومعدلات الاشتراك في الإشعارات اليومية.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/UR8ck1CIuVgmjYalHckj8o/UX-Writing-Challenge--2?node-id=1-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A2&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">النموذج الأولي</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-8.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-8.pdf" title="UX Writing Case Study: Concert Promotion"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">الترويج للحفلات الموسيقية</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>تقوم خدمة البث المدمجة في التطبيق بالكشف عن مواعيد الجولات المحلية لفنان ما في سجل الاستماع الخاص بالمستخدم. وحوّل اهتمام المستخدمين العفوي بالبث إلى تفاعل مع عملية البيع المسبق للتذاكر من خلال نصوص مستهدفة وحصرية.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 30 حرف كحد أقصى<br/>
+<b>النص الأساسي:</b> 45 حرف كحد أقصى<br/>
+<b>الزر:</b> 25 حرف</p>
+<button aria-controls="ux-details-14" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-14" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-14" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>تستفيد العروض الترويجية المرتبطة بالأحداث من عادات المستمعين لتقديم تجارب تفاعلية حصرية في الوقت المناسب.</p>
+<ul>
+<li><strong>العنوان والنبرة:</strong><code>YEAH! YEAH! YEAH!</code><code>The Beatles are back in your city!</code></li>
+<li><strong>التسمية التحفيزية:</strong><code>FAB4</code></li>
+<li><strong>زر:</strong><code>PRESALE</code></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>تحول النصوص المصغرة الخاصة ببيع التذاكر، التي تراعي السياق، المستمعين السلبيين للموسيقى إلى مشترين ذوي قيمة عالية لخدمات الترفيه الحي.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FpYJKY0IXwxYVe7d7rHJwh/UX-Writing-Challenge--8?node-id=1-51&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A51&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">النموذج الأولي</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-7.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-7.pdf" title="UX Writing Case Study: Rivalry Score Update"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">تحديث نتائج المنافسة</h5>
+<p class="card-text"><b>مشكلة المستخدم والسياق:</b></p>
+<ul>
+<li>يحتاج المشجع الذي يحضر مناسبة اجتماعية رسمية إلى تحديثات سرية وفورية حول مباراة حاسمة بين فريقين متنافسين. قم بإرسال تنبيه فوري عاجل ومكثف يتضمن النتيجة، واللاعب الرئيسي، ونتيجة اللعبة في أقل من 50 حرفًا.</li>
+</ul>
+<p class="card-text"><b>القيود:</b><br/>
+<b>العنوان الرئيسي:</b> 30 حرف كحد أقصى<br/>
+<b>النص الأساسي:</b> 45 حرف كحد أقصى</p>
+<button aria-controls="ux-details-15" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-15" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> عرض الاستراتيجية والمبررات</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> إخفاء الاستراتيجية والمبررات</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-15" onclick="event.stopPropagation()">
+<h6><b>الاستراتيجية والمبررات</b></h6>
+<p>تتطلب التنبيهات غير الملفتة للنظر أقصى قدر من الكثافة المعلوماتية في أقل وقت ممكن للرمية السريعة.</p>
+<ul>
+<li><strong>العنوان:</strong><code>ALL RISE FOR GRAND SLAM</code></li>
+<li><strong>النص:</strong><code>Aaron Judge blasts a Grand Slam. NYY lead BOS 5-0</code></li>
+</ul>
+<h6><b>الأثر على الأعمال والنتائج المتوقعة</b></h6>
+<p>تساعد التحديثات الفورية التي يمكن الاطلاع عليها بنظرة سريعة المستخدمين على البقاء على اتصال أثناء انشغالهم بأمور الحياة اليومية، مما يعزز التفاعل مع التطبيق وفائدة الإشعارات.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div></div>
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#uxSamplesCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #1f3850; font-size: 4rem;">❮</span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#uxSamplesCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #1f3850; font-size: 4rem;">❯</span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Visual Design & Print Work: Classroom Hall Passes (Open Showcase) -->
+<div class="py-5 bg-custom-dark border-top border-secondary border-opacity-25" id="visual-design-section">
+<div class="container-fluid px-4">
+<div class="text-center mb-4">
+<span class="badge px-3 py-2 rounded-pill text-uppercase mb-2" style="background-color: rgba(232, 196, 124, 0.15); color: #e8c47c; border: 1px solid rgba(232, 196, 124, 0.35); letter-spacing: 1.2px; font-size: 0.8rem;">
+<i class="bi bi-palette-fill me-1"></i> Visual Design &amp; Print Work
+</span>
+<h2 class="display-6 fw-bold text-white mb-2">Classroom Hall Passes</h2>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center text-white-50">
+<p class="mb-0 fs-6">Custom double-sided passes engineered for high school classroom management using curated vintage comic art and dynamic print layouts. Redacted for privacy.</p>
+</div>
+</div>
+</div>
+<div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="hallPassCarousel">
+<div class="carousel-inner">
+<div class="carousel-item active"><div class="row justify-content-center"><div class="col-11 col-lg-10">
+<div aria-label="Open Spidey Bathroom Pass sample" class="card card-border sample-card hallpass-card hallpass-card-spidey mb-4" data-pdf="/samples/ux-writing/spidey-bathroom-pass.pdf" role="button" tabindex="0">
+<div class="row g-0 align-items-center">
+<div class="col-md-5 p-3 p-lg-4">
+<div class="hallpass-preview-wrapper position-relative">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spidey-bathroom-pass.pdf" style="min-height: 360px;" title="Bathroom Pass"></iframe>
+<div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
+<i class="bi bi-arrows-fullscreen"></i> انقر على البطاقة لعرض ملف PDF الكامل
+</div>
+</div>
+</div>
+<div class="col-md-7 p-3 p-lg-4">
+<div class="card-body p-0 text-start">
+<h3 class="card-title fw-bold mb-2">تصريح مرور سبايدي</h3>
+<p class="card-text mb-4 fs-6">Custom pass featuring panels from Spider-Man's comic history, including the famous sequence teaching The Beyonder.</p>
+<div class="hallpass-meta p-3 rounded-3 mb-0">
+<div class="hallpass-meta-item mb-2">
+<div class="hallpass-meta-icon hallpass-meta-icon-quote">
+<i class="bi bi-chat-quote-fill"></i>
+</div>
+<div>
+<strong class="small d-block">فقاعة التفكير:</strong>
+<span class="small">Features panels from <em>Secret Wars II #8</em>, where Spidey taught cosmic god The Beyonder.</span>
+</div>
+</div>
+<div class="hallpass-meta-item mb-0">
+<div class="hallpass-meta-icon hallpass-meta-icon-objective">
+<i class="bi bi-lightbulb-fill"></i>
+</div>
+<div>
+<strong class="small d-block">الهدف التصميمي:</strong>
+<span class="small">تصريح مخصص بوجهين صُمم لإضفاء لمسة من الفكاهة والشخصية على إدارة حركة الطلاب.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+<div class="carousel-item"><div class="row justify-content-center"><div class="col-11 col-lg-10">
+<div aria-label="Open Hulk Hall Pass sample" class="card card-border sample-card hallpass-card hallpass-card-hulk mb-4" data-pdf="/samples/ux-writing/hulk-hall-pass.pdf" role="button" tabindex="0">
+<div class="row g-0 align-items-center">
+<div class="col-md-5 p-3 p-lg-4">
+<div class="hallpass-preview-wrapper position-relative">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/hulk-hall-pass.pdf" style="min-height: 360px;" title="Hulk Hall Pass"></iframe>
+<div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
+<i class="bi bi-arrows-fullscreen"></i> انقر على البطاقة لعرض ملف PDF الكامل
+</div>
+</div>
+</div>
+<div class="col-md-7 p-3 p-lg-4">
+<div class="card-body p-0 text-start">
+<h3 class="card-title fw-bold mb-2">تصريح مرور هولك</h3>
+<p class="card-text mb-4 fs-6">تصريح مخصص يضم مشاهد من السلسلة القصصية المصورة للعملاق هولك الخارق.</p>
+<div class="hallpass-meta p-3 rounded-3 mb-0">
+<div class="hallpass-meta-item mb-2">
+<div class="hallpass-meta-icon hallpass-meta-icon-quote">
+<i class="bi bi-chat-quote-fill"></i>
+</div>
+<div>
+<strong class="small d-block">فقاعة التفكير:</strong>
+<span class="small">مشاهد كلاسيكية مختارة بعناية توثق لحظة التحول الدرامية من بروس بانر إلى العملاق الأخضر.</span>
+</div>
+</div>
+<div class="hallpass-meta-item mb-0">
+<div class="hallpass-meta-icon hallpass-meta-icon-objective">
+<i class="bi bi-lightbulb-fill"></i>
+</div>
+<div>
+<strong class="small d-block">الهدف التصميمي:</strong>
+<span class="small">تصريح مدرسي مستوحى من فكرة القوة التي لا تقهر، صُمم ليكون لافتاً ومسلياً لمراقبي الممرات.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+</div>
+<div class="carousel-indicators position-relative mt-2 mb-0">
+<button aria-current="true" aria-label="تصريح مرور سبايدي" class="active" data-bs-slide-to="0" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
+<button aria-label="تصريح مرور هولك" data-bs-slide-to="1" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
+</div>
+<button aria-label="التصريح السابق" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">❮</span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button aria-label="التصريح التالي" class="carousel-control-next" data-bs-slide="next" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">❯</span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</div>
+<footer>
+<p class="text-white text-center">© 2026 Pedro Vega | Built with HTML • CSS • JS • GitHub Pages</p>
+</footer>
+</main>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Shared PDF viewer -->
+<script src="/js/pdf-viewer.js?v=2"></script>
+<script src="/js/sticky-nav.js"></script>
+<script src="/js/page-specific.js?v=8"></script>
+<script src="/js/figma-viewer.js"></script>
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="figmaModalLabel" class="modal fade" id="figmaModal" tabindex="-1">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="figmaModalLabel">النموذج الأولي</h5>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<div class="ratio ratio-16x9">
+<iframe allowfullscreen="" height="450" src="" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- DocSearch JS -->
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
+<script>
+    document.querySelectorAll('.docsearch-container').forEach((container) => {
+      docsearch({
+        container: container,
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        indexName: 'portfolio_site',
+        insights: true,
+        searchParameters: {
+          facetFilters: ['lang:ar']
+        }
+      });
+    });
+
+    // Initialize Ask AI side panel
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const sidepanelDiv = document.createElement('div');
+      sidepanelDiv.id = 'docsearch-sidepanel';
+      document.body.appendChild(sidepanelDiv);
+      
+      sidepanelInstance = docsearchSidepanel({
+        container: '#docsearch-sidepanel',
+        indexName: 'portfolio_site',
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159',
+        agentStudio: true,
+        searchParameters: {},
+        showButton: false,
+        button: false,
+        variant: 'inline',
+      });
+    }
+
+    // Emulate Docusaurus SearchBar layout exactly for desktop and add Ask AI button
+    const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('.d-lg-none'));
+    desktopContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          // Wrap button in DocSearch-SearchBar div
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+  
+    // Append Docusaurus Ask AI side panel button for mobile only
+    const mobileContainers = Array.from(document.querySelectorAll('.d-lg-none .docsearch-container'));
+    mobileContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+
+    // Mobile search close fix - hides mobile search buttons while modal is open, revealing the native X button
+    (function () {
+      var mobileSearchContainer = document.querySelector('.mobile-nav-search-container');
+      function showSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'visible'; }
+      function hideSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'hidden'; }
+      var closeObserver = new MutationObserver(function () {
+        if (document.querySelector('.DocSearch-Modal')) { hideSearchButtons(); } else { showSearchButtons(); }
+      });
+      closeObserver.observe(document.body, { childList: true, subtree: true });
+    })();
+
+  </script>
+<script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+</body>
+</html>

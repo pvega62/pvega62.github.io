@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
+  <title>Artículos | Pedro Vega</title>
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="Artículos publicados y periodismo sobre pobreza global, salud pública, educación y tecnología por Pedro Vega.">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pvega62.github.io/es/articles">
+  <meta property="og:title" content="Artículos | Pedro Vega">
+  <meta property="og:description" content="Artículos publicados y periodismo sobre pobreza global, salud pública, educación y tecnología por Pedro Vega.">
+  <meta property="og:image" content="https://pvega62.github.io/images/social-card.png">
+  <meta property="og:image:width" content="1050">
+  <meta property="og:image:height" content="600">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pvega62.github.io/es/articles">
+  <meta name="twitter:title" content="Artículos | Pedro Vega">
+  <meta name="twitter:description" content="Artículos publicados y periodismo sobre pobreza global, salud pública, educación y tecnología por Pedro Vega.">
+  <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/styles.css?v=2">
+  <link rel="stylesheet" href="/css/page-specific.css?v=9">
+  <link rel="icon" href="/images/logo.png" type="image/png">
+  <!-- DocSearch CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" />
+  <style>
+    /* Force hide the default Algolia floating sidepanel button globally */
+    .DocSearch-SidepanelButton.floating {
+      display: none !important;
+    }
+  </style>
+      <link href="/css/interactive.css" rel="stylesheet"/>
+  <!-- Hreflang Localization -->
+  <link rel="alternate" hreflang="en" href="https://pvega62.github.io/articles" />
+  <link rel="alternate" hreflang="es" href="https://pvega62.github.io/es/articles" />
+  <link rel="alternate" hreflang="x-default" href="https://pvega62.github.io/articles" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <!-- Header and Navbar -->
+  <header class="sticky-top">
+    <!-- Mobile Search Bar -->
+    <div class="d-lg-none d-flex justify-content-end w-100"><div class="mobile-nav-search-container" style="position: absolute; right: 2px; top: 8px; z-index: 1050; padding: 0; margin: 0;">
+            <div class="docsearch-container"></div>
+          </div></div>
+
+    <div class="container-fluid px-0">
+      
+      <!-- Desktop Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="Navegación de escritorio">
+        <a class="navbar-brand ms-3" href="/es/">
+          <img src="/images/logo.png" alt="Logo" height="40">
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
+          <ul class="navbar-nav me-3">
+            
+            <li class="nav-item"><a class="nav-link" href="/es/">Inicio</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Redacción técnica
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
+                <li class="dropend position-relative">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/software/es/docs/intro">Introducción</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/category/typescript-sdk-sui-blockchain-documentation">Tutorial de TypeScript</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/category/stripe-api-documentation">API de Stripe</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/category/pet-store-api-documentation">API de Pet Store</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/category/commit-messages-and-pull-requests">Mensajes de commit y pull requests</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/artie-case-study">Caso de estudio: Asistente de IA Ask Artie</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/google-chrome-theme-installation">Tema de Google Chrome</a></li>
+                    <li><a class="dropdown-item" href="/software/es/docs/word-github-wiki-writage">Flujo de trabajo de Writage</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="/es/technical-writing-hardware">Muestras de hardware</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/software/es/blog">Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/es/uxwriting">Redacción UX</a></li>
+            <li class="nav-item"><a class="nav-link" href="/es/articles">Artículos</a></li>
+            <li class="nav-item"><a class="nav-link about-link" href="/es/aboutme">Acerca de mí</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contacto
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop2">
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Correo electrónico</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">Recordkeeping</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownLang" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Idioma: Español" title="Idioma: Español">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="me-1" style="fill: currentColor;"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><img src="/images/flags/do.svg" alt="" class="nav-flag-toggle"><span>Español</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLang">
+                <li><a class="dropdown-item" href="/articles" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+                <li><a class="dropdown-item active" href="/es/articles" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+                <li><a class="dropdown-item" href="/fr/articles" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+                <li><a class="dropdown-item" href="/ar/articles" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+                <li><a class="dropdown-item" href="/zh/articles" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+                <li><a class="dropdown-item" href="/ja/articles" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+                <li><a class="dropdown-item" href="/hi/articles" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+              </ul>
+            </li>
+          
+              <li class="nav-item d-flex align-items-center ms-1">
+                <div class="docsearch-container"></div>
+              </li>
+            </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile Navbar (App Tab Bar) -->
+      <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="Navegación móvil">
+        <a class="navbar-brand ms-2 me-1" href="/es/">
+          <img src="/images/icon-logo.png" alt="Logo" height="40">
+        </a>
+        <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Redacción técnica" title="Redacción técnica">
+              <img src="/images/icon-tech-writing.svg" alt="" class="mobile-nav-icon">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li class="dropend position-relative">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/software/es/docs/intro">Introducción</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/category/typescript-sdk-sui-blockchain-documentation">Tutorial de TypeScript</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/category/stripe-api-documentation">API de Stripe</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/category/pet-store-api-documentation">API de Pet Store</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/category/commit-messages-and-pull-requests">Mensajes de commit y pull requests</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/artie-case-study">Caso de estudio: Asistente de IA Ask Artie</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/google-chrome-theme-installation">Tema de Google Chrome</a></li>
+                  <li><a class="dropdown-item" href="/software/es/docs/word-github-wiki-writage">Flujo de trabajo de Writage</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="/es/technical-writing-hardware">Muestras de hardware</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/software/es/blog">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="/es/uxwriting" aria-label="Redacción UX" title="Redacción UX">
+              <img src="/images/icon-ux-writing.svg" alt="" class="mobile-nav-icon">
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="/es/articles" aria-label="Artículos" title="Artículos">
+              <img src="/images/icon-articles.svg" alt="" class="mobile-nav-icon">
+            </a>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Acerca de mí y contacto" title="Acerca de mí y contacto">
+              <img src="/images/icon-vector1.svg" alt="" class="mobile-nav-icon" style="transform: scaleY(-1);">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAbout">
+              <li><a class="dropdown-item" href="/es/aboutme">Acerca de mí</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Correo electrónico</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#"
+              id="navbarDropdownLangMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="Idiomas" title="Idiomas">
+              <img src="/images/icon-languages.svg" alt="" class="mobile-nav-icon">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLangMobile">
+              <li><a class="dropdown-item" href="/articles" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+              <li><a class="dropdown-item active" href="/es/articles" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+              <li><a class="dropdown-item" href="/fr/articles" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+              <li><a class="dropdown-item" href="/ar/articles" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+              <li><a class="dropdown-item" href="/zh/articles" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+              <li><a class="dropdown-item" href="/ja/articles" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+              <li><a class="dropdown-item" href="/hi/articles" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/" aria-label="Recordkeeping" title="Recordkeeping">
+              <img src="/images/icon-recordkeeping.svg" alt="" class="mobile-nav-icon-colored">
+            </a>
+          </li>
+</ul>
+      </nav>
+
+    </div>
+  </header>
+  
+  <main id="main-content" tabindex="-1">
+  <div class="hero-section">
+<div class="container-fluid px-4">
+<div class="text-center">
+<h1 class="display-4 fw-bold text-white">Artículos</h1>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center intro-text text-white">
+<p>Una recopilación de artículos publicados sobre pobreza global, salud pública, desarrollo internacional e iniciativas tecnológicas.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <!-- light band with cards -->
+<div class="py-5 light-section">
+      <div class="container">
+        <!-- Category Filter Tabs (High-Contrast Navy Dock) -->
+        <div class="article-filter-wrapper text-center">
+          <div class="text-center mb-2">
+            <span class="text-uppercase fw-bold small" style="letter-spacing: 1.2px; color: #1f3850; font-size: 0.8rem;">
+              <i class="bi bi-funnel-fill me-1"></i> Filtrar por tema
+            </span>
+          </div>
+          <div class="article-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
+            <button type="button" class="btn article-filter-pill active" data-filter="all">Todos <span class="badge ms-1">9</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="social-poverty">Impacto social y pobreza <span class="badge ms-1">4</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="healthcare-crisis">Salud y crisis <span class="badge ms-1">3</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="rights-education">Derechos humanos y educación <span class="badge ms-1">2</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="tech-sdgs">Tecnología y ODS <span class="badge ms-1">2</span></button>
+          </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4 article-card-col" data-category="healthcare-crisis tech-sdgs">
+            <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" aria-label="Abrir artículo: 4 formas de usar la tecnología contra la pandemia">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="4 formas de usar la tecnología contra la pandemia" src="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">4 formas de usar la tecnología contra la pandemia</h3>
+                <p class="card-text text-black">Analiza cuatro soluciones tecnológicas clave que los sistemas de salud implementaron para contener y gestionar la crisis del COVID-19.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 article-card-col" data-category="rights-education">
+            <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" aria-label="Abrir artículo: Educación en la República Dominicana">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Educación en la República Dominicana" src="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">Educación en la República Dominicana</h3>
+                <p class="card-text text-black">Examina los retos del sistema educativo dominicano, el impacto de la desigualdad económica y las iniciativas en marcha para alcanzar los estándares de la ONU.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 article-card-col" data-category="rights-education">
+            <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" aria-label="Abrir artículo: Igualdad de género en la República Dominicana: Actualización">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Igualdad de género en la República Dominicana: Actualización" src="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">Igualdad de género en la República Dominicana: Actualización</h3>
+                <p class="card-text text-black">Evalúa la brecha de género, las oportunidades laborales y las reformas sociales para promover los derechos de las mujeres en la República Dominicana.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 article-card-col" data-category="social-poverty healthcare-crisis">
+            <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" aria-label="Abrir artículo: La pandemia global agrava el hambre en Puerto Rico">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="La pandemia global agrava el hambre en Puerto Rico" src="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">La pandemia global agrava el hambre en Puerto Rico</h3>
+                <p class="card-text text-black">Investiga la vulnerabilidad de las cadenas de suministro en Puerto Rico tras los huracanes. Analiza el impacto de la pandemia en la inseguridad alimentaria.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 article-card-col" data-category="healthcare-crisis">
+            <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" aria-label="Abrir artículo: Mejor atención médica: El sistema de salud en la República Dominicana">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Mejor atención médica: El sistema de salud en la República Dominicana" src="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">Mejor atención médica: El sistema de salud en la República Dominicana</h3>
+                <p class="card-text text-black">Presenta una radiografía del sistema de salud en la República Dominicana, analizando la atención a enfermedades crónicas y las reformas hospitalarias necesarias.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 article-card-col" data-category="social-poverty">
+            <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" aria-label="Abrir artículo: La carga heredada: La situación de las personas sin hogar en Guyana">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="La carga heredada: La situación de las personas sin hogar en Guyana" src="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">La carga heredada: La situación de las personas sin hogar en Guyana</h3>
+                <p class="card-text text-black">Aborda la problemática de la vivienda, la precariedad habitacional y los programas de asistencia comunitaria en Guyana.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 article-card-col" data-category="social-poverty">
+            <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" aria-label="Abrir artículo: El hambre en la República Dominicana">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="El hambre en la República Dominicana" src="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">El hambre en la República Dominicana</h3>
+                <p class="card-text text-black">Desglosa las causas estructurales del hambre, la desnutrición infantil y las redes de apoyo comunitario en territorio dominicano.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 article-card-col" data-category="tech-sdgs">
+            <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" aria-label="Abrir artículo: La aplicación Samsung Global Goals">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="La aplicación Samsung Global Goals: Apoyando los ODS con un toque" src="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">La aplicación Samsung Global Goals: Apoyando los ODS con un toque</h3>
+                <p class="card-text text-black">Explora la alianza entre Samsung y el PNUD para canalizar microdonaciones y promover los Objetivos de Desarrollo Sostenible a través de la tecnología móvil.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 article-card-col" data-category="social-poverty">
+            <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" aria-label="Abrir artículo: La pobreza en la República Dominicana">
+              <div class="ratio ratio-4x3 mb-3"><iframe title="La pobreza en la República Dominicana" src="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="card-body">
+                <h3 class="card-title fw-bold text-black">La pobreza en la República Dominicana</h3>
+                <p class="card-text text-black">Analiza los factores económicos que perpetúan la pobreza en la República Dominicana y las políticas públicas orientadas a fortalecer la red de protección social.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+  </main>
+<footer>
+  <p class="text-white text-center">&copy; 2026 Pedro Vega | Creado con HTML &bull; CSS &bull; JS &bull; GitHub Pages</p>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Shared PDF viewer -->
+    <script src="/js/pdf-viewer.js?v=1790225886305"></script>
+    <script src="/js/sticky-nav.js"></script>
+    <script src="/js/page-specific.js?v=9"></script>
+
+    <!-- DocSearch JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
+    <script>
+    document.querySelectorAll('.docsearch-container').forEach((container) => {
+      docsearch({
+        container: container,
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        indexName: 'portfolio_site',
+        insights: true,
+        searchParameters: {
+          facetFilters: ['lang:es']
+        }
+      });
+    });
+
+    // Initialize Ask AI side panel
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const sidepanelDiv = document.createElement('div');
+      sidepanelDiv.id = 'docsearch-sidepanel';
+      document.body.appendChild(sidepanelDiv);
+      
+      sidepanelInstance = docsearchSidepanel({
+        container: '#docsearch-sidepanel',
+        indexName: 'portfolio_site',
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159',
+        agentStudio: true,
+        searchParameters: {},
+        showButton: false,
+        button: false,
+        variant: 'inline',
+      });
+    }
+
+    // Emulate Docusaurus SearchBar layout exactly for desktop and add Ask AI button
+    const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('.d-lg-none'));
+    desktopContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          // Wrap button in DocSearch-SearchBar div
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+  
+    // Append Docusaurus Ask AI side panel button for mobile only
+    const mobileContainers = Array.from(document.querySelectorAll('.d-lg-none .docsearch-container'));
+    mobileContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+
+    // Mobile search close fix - hides mobile search buttons while modal is open, revealing the native X button
+    (function () {
+      var mobileSearchContainer = document.querySelector('.mobile-nav-search-container');
+      function showSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'visible'; }
+      function hideSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'hidden'; }
+      var closeObserver = new MutationObserver(function () {
+        if (document.querySelector('.DocSearch-Modal')) { hideSearchButtons(); } else { showSearchButtons(); }
+      });
+      closeObserver.observe(document.body, { childList: true, subtree: true });
+    })();
+
+  </script>
+    <script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+</body>
+  </html>
+

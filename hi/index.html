@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="hi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script>
+    if (window.location.pathname.endsWith('.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
+<title>पेड्रो वेगा | तकनीकी लेखक | पोर्टफोलियो साइट</title>
+<!-- Primary Meta Tags -->
+<meta content="Technical Writing portfolio of Pedro Vega — featuring software documentation, API guides, UX writing, and Docs-as-Code." name="description"/>
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta content="website" property="og:type"/>
+<meta content="https://pvega62.github.io/" property="og:url"/>
+<meta content="Pedro Vega | Technical Writer | Portfolio Site" property="og:title"/>
+<meta content="Technical Writing portfolio of Pedro Vega — featuring software documentation, API guides, UX writing, and Docs-as-Code." property="og:description"/>
+<meta content="https://pvega62.github.io/images/social-card.png" property="og:image"/>
+<meta content="1050" property="og:image:width"/>
+<meta content="600" property="og:image:height"/>
+<!-- Twitter / X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://pvega62.github.io/" name="twitter:url"/>
+<meta content="Pedro Vega | Technical Writer | Portfolio Site" name="twitter:title"/>
+<meta content="Technical Writing portfolio of Pedro Vega — featuring software documentation, API guides, UX writing, and Docs-as-Code." name="twitter:description"/>
+<meta content="https://pvega62.github.io/images/social-card.png" name="twitter:image"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="/css/styles.css?v=5" rel="stylesheet"/>
+<link href="/images/logo.png" rel="icon" type="image/png"/>
+<link crossorigin="" href="https://XMDO29FL1L-dsn.algolia.net" rel="preconnect"/>
+<!-- DocSearch CSS -->
+<link href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" rel="stylesheet"/>
+<style>
+    /* Force hide the default Algolia floating sidepanel button globally */
+    .DocSearch-SidepanelButton.floating {
+      display: none !important;
+    }
+  </style>
+<style>
+    /* ===== Interactive Feature Styles ===== */
+
+    /* Scroll Progress Bar */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #d4d1ce, #e8c47c, #d4d1ce);
+      background-size: 200% 100%;
+      animation: progress-shimmer 2s ease-in-out infinite;
+      z-index: 9999;
+      width: 0%;
+      pointer-events: none;
+    }
+    @keyframes progress-shimmer {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    /* Typewriter Font */
+    .hero-typewriter {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    /* Scroll Reveal */
+    .reveal-element {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-element.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 3D Card Tilt Enhancement */
+    .sample-card {
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .sample-card:hover {
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    /* Particles Canvas */
+    .particles-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-section, .bg-custom-dark:not(.navbar) {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-section > .container-fluid, .bg-custom-dark > .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* 3D TARDIS WebGL Canvas */
+    #tardis-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0; /* Strictly behind all headlines, cards, badges, and text */
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+    #tardis-canvas.active {
+      opacity: 0.70; /* Soft, atmospheric background presence */
+    }
+  </style>
+</head>
+<body>
+<div class="bg-custom-dark position-fixed top-0 start-0" id="scroll-progress" style="height: 4px; z-index: 9999; transition: width 0.1s;"></div>
+<div aria-hidden="true" class="scroll-progress"></div>
+<a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+<!-- Header and Navbar -->
+<header class="sticky-top">
+<!-- Mobile Search Bar -->
+<div class="d-lg-none d-flex justify-content-end w-100">
+<div class="mobile-nav-search-container" style="position: absolute; right: 2px; top: 8px; z-index: 1050; padding: 0; margin: 0;">
+<div class="docsearch-container"></div>
+</div>
+</div>
+<div class="container-fluid px-0">
+<!-- Desktop Navbar -->
+<nav aria-label="Desktop navigation" class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation">
+<a class="navbar-brand ms-3" href="/hi/">
+<img alt="Logo" height="40" src="/images/logo.png"/>
+</a>
+<div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
+<ul class="navbar-nav me-3">
+<li class="nav-item"><a class="nav-link" href="/hi/">होम</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdownDesktop1" role="button">
+                तकनीकी लेखन
+              </a>
+<ul aria-labelledby="navbarDropdownDesktop1" class="dropdown-menu">
+<li class="dropend position-relative">
+<a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">सॉफ़्टवेयर/डेव दस्तावेज़</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/intro">परिचय</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/category/cloud-data-pipeline-documentation">क्लाउड डेटा पाइपलाइन्स</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/category/typescript-sdk-sui-blockchain-documentation">टाइपस्क्रिप्ट ट्यूटोरियल</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/category/stripe-api-documentation">Stripe API</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/category/pet-store-api-documentation">पेट स्टोर एपीआई</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/category/commit-messages-and-pull-requests">कमिट संदेश और पुल रिक्वेस्ट</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/artie-case-study">आर्टी एआई असिस्टेंट केस स्टडी</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/google-chrome-theme-installation">Google Chrome थीम</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/word-github-wiki-writage">Writage वर्कफ़्लो</a></li>
+</ul>
+</li>
+<li><a class="dropdown-item" href="/hi/technical-writing-hardware">हार्डवेयर नमूने</a></li>
+<li><hr class="dropdown-divider"/></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/blog">ब्लॉग</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="/hi/uxwriting">यूएक्स राइटिंग</a></li>
+<li class="nav-item"><a class="nav-link" href="/hi/articles">लेख</a></li>
+<li class="nav-item"><a class="nav-link about-link" href="/hi/aboutme">मेरे बारे में</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdownDesktop2" role="button">
+                संपर्क
+              </a>
+<ul aria-labelledby="navbarDropdownDesktop2" class="dropdown-menu">
+<li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">लिंक्डइन</a></li>
+<li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">गिटहब</a></li>
+<li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">ईमेल</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">रिकॉर्ड-कीपिंग</a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" aria-label="Language: Hindi" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLang" role="button" title="Language: Hindi">
+<svg aria-hidden="true" class="me-1" height="20" style="fill: currentColor;" viewBox="0 0 24 24" width="20"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg><img alt="" class="nav-flag-toggle" src="/images/flags/in.svg"/><span>हिन्दी</span>
+</a>
+
+<ul aria-labelledby="navbarDropdownLang" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/" hreflang="en-US" lang="en-US"><img alt="" class="dropdown-flag" src="/images/flags/us.svg"/><span>English</span></a></li>
+<li><a class="dropdown-item" href="/es/" hreflang="es" lang="es"><img alt="" class="dropdown-flag" src="/images/flags/do.svg"/><span>Español</span></a></li>
+<li><a class="dropdown-item" href="/fr/" hreflang="fr-FR" lang="fr-FR"><img alt="" class="dropdown-flag" src="/images/flags/fr.svg"/><span>Français</span></a></li>
+<li><a class="dropdown-item" href="/ar/" hreflang="ar" lang="ar" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/ma.svg"/><span>العربية</span></a></li>
+<li><a class="dropdown-item" href="/zh/" hreflang="zh-Hans" lang="zh-Hans"><img alt="" class="dropdown-flag" src="/images/flags/cn.svg"/><span>普通话</span></a></li>
+<li><a class="dropdown-item" href="/ja/" hreflang="ja" lang="ja" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/jp.svg"/><span>日本語</span></a></li>
+<li><a class="dropdown-item active" href="/hi/" hreflang="hi" lang="hi" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/in.svg"/><span>हिन्दी</span></a></li>
+</ul>
+
+</li>
+<li class="nav-item d-flex align-items-center ms-1">
+<div class="docsearch-container"></div>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Mobile Navbar (App Tab Bar) -->
+<nav aria-label="Mobile navigation" class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation">
+<a class="navbar-brand ms-2 me-1" href="/hi/">
+<img alt="Logo" height="40" src="/images/icon-logo.png"/>
+</a>
+<ul class="navbar-nav flex-row w-100 justify-content-around me-2">
+<li class="nav-item dropup d-flex align-items-center">
+<a aria-expanded="false" aria-label="Technical writing" class="nav-link dropdown-toggle px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdown1" role="button" title="Technical writing">
+<img alt="" class="mobile-nav-icon" src="/images/icon-tech-writing.svg"/>
+</a>
+<ul aria-labelledby="navbarDropdown1" class="dropdown-menu">
+<li class="dropend position-relative">
+<a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">सॉफ़्टवेयर/डेव दस्तावेज़</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/intro">परिचय</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/category/cloud-data-pipeline-documentation">क्लाउड डेटा पाइपलाइन्स</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/category/typescript-sdk-sui-blockchain-documentation">टाइपस्क्रिप्ट ट्यूटोरियल</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/category/stripe-api-documentation">Stripe API</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/category/pet-store-api-documentation">पेट स्टोर एपीआई</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/category/commit-messages-and-pull-requests">कमिट संदेश और पुल रिक्वेस्ट</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/artie-case-study">आर्टी AI असिस्टेंट केस स्टडी</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/google-chrome-theme-installation">Google Chrome थीम</a></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/docs/word-github-wiki-writage">Writage वर्कफ़्लो</a></li>
+</ul>
+</li>
+<li><a class="dropdown-item" href="/hi/technical-writing-hardware">हार्डवेयर नमूने</a></li>
+<li><hr class="dropdown-divider"/></li>
+<li><a class="dropdown-item" href="https://pvega62.github.io/software/hi/blog">ब्लॉग</a></li>
+</ul>
+</li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="UX writing" class="nav-link px-2 d-flex align-items-center" href="/hi/uxwriting" title="UX writing">
+<img alt="" class="mobile-nav-icon" src="/images/icon-ux-writing.svg"/>
+</a>
+</li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="Articles" class="nav-link px-2 d-flex align-items-center" href="/hi/articles" title="Articles">
+<img alt="" class="mobile-nav-icon" src="/images/icon-articles.svg"/>
+</a>
+</li>
+<li class="nav-item dropup d-flex align-items-center">
+<a aria-expanded="false" aria-label="About me and Contact" class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownAbout" role="button" title="About me and Contact">
+<img alt="" class="mobile-nav-icon" src="/images/icon-vector1.svg" style="transform: scaleY(-1);"/>
+</a>
+<ul aria-labelledby="navbarDropdownAbout" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/hi/aboutme">मेरे बारे में</a></li>
+<li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">लिंक्डइन</a></li>
+<li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+<li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">ईमेल</a></li>
+</ul>
+</li>
+<li class="nav-item dropup d-flex align-items-center">
+<a aria-expanded="false" aria-label="Languages" class="nav-link dropdown-toggle px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLangMobile" role="button" title="Languages">
+<img alt="" class="mobile-nav-icon" src="/images/icon-languages.svg"/>
+</a>
+
+<ul aria-labelledby="navbarDropdownLangMobile" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/" hreflang="en-US" lang="en-US"><img alt="" class="dropdown-flag" src="/images/flags/us.svg"/><span>English</span></a></li>
+<li><a class="dropdown-item" href="/es/" hreflang="es" lang="es"><img alt="" class="dropdown-flag" src="/images/flags/do.svg"/><span>Español</span></a></li>
+<li><a class="dropdown-item" href="/fr/" hreflang="fr-FR" lang="fr-FR"><img alt="" class="dropdown-flag" src="/images/flags/fr.svg"/><span>Français</span></a></li>
+<li><a class="dropdown-item" href="/ar/" hreflang="ar" lang="ar" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/ma.svg"/><span>العربية</span></a></li>
+<li><a class="dropdown-item" href="/zh/" hreflang="zh-Hans" lang="zh-Hans"><img alt="" class="dropdown-flag" src="/images/flags/cn.svg"/><span>普通话</span></a></li>
+<li><a class="dropdown-item" href="/ja/" hreflang="ja" lang="ja" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/jp.svg"/><span>日本語</span></a></li>
+<li><a class="dropdown-item active" href="/hi/" hreflang="hi" lang="hi" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/in.svg"/><span>हिन्दी</span></a></li>
+</ul>
+
+</li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="Recordkeeping" class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/" title="Recordkeeping">
+<img alt="" class="mobile-nav-icon-colored" src="/images/icon-recordkeeping.svg"/>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main-content" tabindex="-1">
+<div class="hero-section">
+<canvas aria-hidden="true" class="particles-canvas"></canvas>
+<div class="container-fluid px-4">
+<div class="text-center">
+<h1 class="display-4 fw-bold">तकनीकी लेखक। यूएक्स लेखक। सामग्री डिजाइनर।</h1>
+<p class="lead fs-3 hero-typewriter">मुझे बस शब्द बहुत पसंद हैं।</p>
+<div class="mt-4 mb-4">
+<a class="me-3" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">
+<img alt="LinkedIn" height="52" src="/images/linkedin-button.svg" width="52"/>
+</a>
+<a class="me-3" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">
+<svg fill="none" height="52" viewBox="0 0 62 61" width="52" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#24292F" height="60.8604" rx="15" width="61.4389"></rect>
+<path d="M30.7195 19C24.2478 19 19 24.2469 19 30.7195C19 35.8976 22.358 40.2905 27.0146 41.8402C27.6002 41.9487 27.8153 41.586 27.8153 41.2764C27.8153 40.997 27.8044 40.0737 27.7994 39.0945C24.5389 39.8034 23.851 37.7117 23.851 37.7117C23.3179 36.3571 22.5497 35.997 22.5497 35.997C21.4865 35.2696 22.6299 35.2844 22.6299 35.2844C23.8067 35.3672 24.4264 36.4922 24.4264 36.4922C25.4717 38.2839 27.168 37.7659 27.8368 37.4665C27.942 36.7089 28.2457 36.192 28.5809 35.8993C25.9779 35.6029 23.2414 34.598 23.2414 30.1075C23.2414 28.828 23.6992 27.7825 24.449 26.9618C24.3273 26.6666 23.9261 25.4746 24.5625 23.8603C24.5625 23.8603 25.5466 23.5453 27.7862 25.0617C28.7209 24.8019 29.7235 24.6718 30.7195 24.6673C31.7155 24.6718 32.7188 24.8019 33.6554 25.0617C35.8924 23.5453 36.8751 23.8603 36.8751 23.8603C37.513 25.4746 37.1117 26.6666 36.99 26.9618C37.7414 27.7825 38.1961 28.8279 38.1961 30.1075C38.1961 34.6087 35.4545 35.5999 32.8449 35.89C33.2652 36.2537 33.6397 36.9669 33.6397 38.0602C33.6397 39.6283 33.6261 40.8904 33.6261 41.2764C33.6261 41.5883 33.8371 41.9537 34.4312 41.8387C39.0852 40.2872 42.439 35.8959 42.439 30.7195C42.439 24.2469 37.1918 19 30.7195 19Z" fill="white"></path>
+<path d="M23.3892 35.6942C23.3635 35.7524 23.2717 35.7699 23.1884 35.73C23.1034 35.6918 23.0556 35.6123 23.0831 35.5539C23.1084 35.494 23.2001 35.4772 23.285 35.5175C23.3702 35.5556 23.4187 35.6358 23.3892 35.6942ZM23.9657 36.2086C23.9098 36.2604 23.8005 36.2364 23.7264 36.1545C23.6497 36.0727 23.6354 35.9636 23.6921 35.9109C23.7497 35.8591 23.8557 35.8833 23.9325 35.9651C24.0092 36.0477 24.0241 36.1563 23.9656 36.2087M24.3612 36.8667C24.2893 36.9166 24.1719 36.8698 24.0993 36.7656C24.0276 36.6615 24.0276 36.5365 24.1009 36.4864C24.1737 36.4363 24.2893 36.4813 24.3629 36.5847C24.4345 36.6907 24.4345 36.8157 24.3611 36.8668M25.03 37.6289C24.9657 37.6997 24.829 37.6808 24.7288 37.5841C24.6264 37.4896 24.5978 37.3555 24.6622 37.2846C24.7272 37.2137 24.8648 37.2336 24.9657 37.3295C25.0675 37.4238 25.0985 37.5589 25.0301 37.6289M25.8943 37.8863C25.8661 37.978 25.7343 38.0198 25.6016 37.9808C25.469 37.9406 25.3823 37.8331 25.409 37.7403C25.4366 37.648 25.569 37.6045 25.7027 37.6462C25.835 37.6862 25.922 37.7929 25.8944 37.8863M26.8782 37.9954C26.8815 38.0921 26.7689 38.1723 26.6296 38.174C26.4894 38.177 26.3761 38.0988 26.3746 38.0038C26.3746 37.9062 26.4846 37.8267 26.6247 37.8244C26.764 37.8217 26.8782 37.8994 26.8782 37.9954ZM27.8446 37.9584C27.8613 38.0527 27.7644 38.1495 27.6261 38.1753C27.4901 38.2001 27.3641 38.1419 27.3468 38.0484C27.3298 37.9518 27.4286 37.855 27.5643 37.8299C27.7029 37.8058 27.8269 37.8625 27.8446 37.9584Z" fill="white"></path>
+</svg>
+</a>
+<br/>
+<br/>
+<a class="me-3" href="https://pvega62.github.io/software/hi/docs/intro" rel="noopener noreferrer" target="_blank">
+<img src="/images/docs-button-hi.svg" alt="सॉफ़्टवेयर/डेव दस्तावेज़" width="220" height="38">
+</a>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center intro-text">
+<p>कई वर्षों से, मेरा पेशेवर करियर एक मुख्य लक्ष्य पर केंद्रित रहा है: आम दर्शकों के लिए जटिल अवधारणाओं को सरल बनाना। चाहे एक ट्यूटर, एक पत्रकार, या एक तकनीकी लेखक के रूप में, मेरा ध्यान हमेशा सुलभ और समझने योग्य सामग्री बनाने पर रहता है।</p>
+<p>यह पोर्टफोलियो प्रत्येक क्षेत्र के विभिन्न नमूने प्रस्तुत करता है। आपको कुछ लेख और निबंध, तकनीकी दस्तावेज़ीकरण (जैसे हार्डवेयर और सॉफ्टवेयर के लिए उपयोगकर्ता गाइड, और एपीआई दस्तावेज़ीकरण), और यूएक्स राइटिंग के नमूने मिलेंगे। मैंने स्पष्ट, चरण-दर-चरण डेवलपर वर्कफ़्लो का प्रदर्शन करने के लिए Swagger और Postman जैसे प्लेटफ़ॉर्म का उपयोग करके ये नमूने बनाए हैं।</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Cloud Data Pipeline Section -->
+<div class="light-section py-5">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-6 text-center mb-4 mb-md-0">
+<div class="ratio ratio-16x9">
+<iframe class="rounded" loading="lazy" src="https://pvega62.github.io/software/hi/docs/category/cloud-data-pipeline-documentation" title="Cloud Data Pipeline Documentation"></iframe>
+</div>
+</div>
+<div class="col-md-6 inno-text">
+<a class="inno-link" href="https://pvega62.github.io/software/hi/docs/category/cloud-data-pipeline-documentation">
+<h2 class="fw-bold">क्लाउड और एआई ऑब्ज़र्वबिलिटी पाइपलाइन दस्तावेज़ीकरण</h2>
+</a>
+<p class="text-secondary">एक डुअल-ट्रैक ऑब्ज़र्वेबिलिटी पाइपलाइन के लिए एक बहु-स्तरीय दस्तावेज़ीकरण सुइट बनाया, जिसमें क्लाउड लॉग इनजेक्शन के लिए <b>डेटाडॉग</b> और एआई/एलएलएम ट्रैसिंग के लिए <b>गैलीलियो को</b> एकीकृत किया गया। इस प्रोजेक्ट में वैचारिक मॉडल, एक स्ट्रीमिंग इनजेस्ट एपीआई संदर्भ, और क्लाउड-नेटिव प्रोसेसर के माध्यम से टेलीमेट्री को रूट करने के लिए एक व्यावहारिक गाइड शामिल है।</p>
+<p class="text-secondary"><b>डॉक्ससॉरस</b> और <b>मार्कडाउन</b> का उपयोग करके एक आधुनिक <b>डॉक्स-एज़-कोड</b> वर्कफ़्लो के साथ बनाया गया। <b>मर्मैड</b> और <b>ASCII</b> में आरेख समवर्ती डेटा स्ट्रीम और दोहरे-ट्रैक ऑब्ज़र्वेबिलिटी आर्किटेक्चर को दर्शाते हैं।
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Selected Works Section -->
+<div class="py-5 bg-custom-dark" id="selected-works">
+<canvas aria-hidden="true" class="particles-canvas"></canvas>
+<div class="container">
+<h2 class="text-center text-white mb-5">चयनित कार्य</h2>
+<!-- Combined Row for all works -->
+<div class="row g-4 justify-content-center">
+<!-- TypeScript SDK Sui Documentation Sample card -->
+<div class="col-md-4">
+<div aria-label="Open TypeScript SDK Sui Documentation Sample" class="card h-100 text-center sample-card" data-href="https://pvega62.github.io/software/hi/docs/category/typescript-sdk-sui-blockchain-documentation" tabindex="0">
+<div class="card-body text-center" data-bs-target="#pdfModal" data-bs-toggle="modal">
+<div class="ratio ratio-4x3 mb-3">
+<iframe class="rounded" loading="lazy" src="https://pvega62.github.io/software/hi/docs/category/typescript-sdk-sui-blockchain-documentation" title="TypeScript SDK Sui Documentation Sample"></iframe>
+</div>
+<h3 class="card-title fw-bold text-black">टाइपस्क्रिप्ट एसडीके सुई दस्तावेज़ीकरण नमूना</h3>
+<p class="card-text text-black">डेवलपर्स को TypeScript SDK का उपयोग करके Sui ब्लॉकचेन पर डेटा पढ़ने और लिखने का तरीका सिखाने वाला एक व्यापक दस्तावेज़ीकरण नमूना बनाया गया है। इस सेट में एक वैचारिक गाइड, एक ट्यूटोरियल, और API संदर्भ पृष्ठ शामिल हैं जो SuiClient ऑब्जेक्ट डेटा को क्वेरी करने और उसके साथ इंटरैक्ट करने पर केंद्रित हैं।</p>
+</div>
+</div>
+</div>
+<!-- Stripe API card -->
+<div class="col-md-4">
+<div aria-label="Open Stripe API Documentation Sample" class="card text-center sample-card h-100" data-href="https://pvega62.github.io/software/hi/docs/category/stripe-api-documentation" tabindex="0">
+<div class="card-body text-center" data-bs-target="#pdfModal" data-bs-toggle="modal">
+<div class="ratio ratio-4x3 mb-3">
+<iframe class="rounded" loading="lazy" src="https://pvega62.github.io/software/hi/docs/category/stripe-api-documentation" title="Stripe API Documentation Sample"></iframe>
+</div>
+<h3 class="card-title fw-bold text-black">Stripe API दस्तावेज़ीकरण नमूना</h3>
+<p class="card-text text-black text-center"><b>VSCode</b> का उपयोग करके <b>मार्कडाउन</b> में <b>REST API</b> दस्तावेज़ीकरण लिखा और <b>Vale</b> से लिंट किया। <b>Postman</b> का उपयोग करके एंडपॉइंट्स को मान्य किया, प्रमाणीकरण प्रवाह का दस्तावेजीकरण किया, और <b>GitHub विकी</b> में दस्तावेज़ों को बनाए रखा। यह एंड-टू-एंड डेवलपर दस्तावेज़ीकरण वर्कफ़्लो को प्रदर्शित करता है।
+              </p>
+</div>
+</div>
+</div>
+<!-- UX Writing Challenge card -->
+<div class="col-md-4">
+<div aria-label="Open UX Writing Challenge sample" class="card h-100 text-center sample-card" data-pdf="samples/ux-writing/ux-writing-challenge-15.pdf" tabindex="0">
+<div class="card-body text-center" data-bs-target="#pdfModal" data-bs-toggle="modal">
+<div class="ratio ratio-4x3 mb-3">
+<iframe class="rounded" loading="lazy" src="/samples/ux-writing/ux-writing-challenge-15.pdf" title="UX Writing Challenge: #15"></iframe>
+</div>
+<h3 class="card-title fw-bold text-black">बैंकिंग ऐप ऑनबोर्डिंग फ्लो</h3>
+<p class="card-text text-black">यह नमूना एक वित्तीय ऐप के लिए एक व्यापक ऑनबोर्डिंग प्रक्रिया को प्रदर्शित करता है।
+                यह सख्त तकनीकी बाधाओं का पालन करते हुए एक आत्मविश्वासी, स्पष्ट और पेशेवर लहजे के साथ उपयोगकर्ता का विश्वास बनाने की क्षमता को प्रदर्शित करता है।</p>
+</div>
+</div>
+</div>
+<!-- InnoGear Aromatherapy Diffuser card -->
+<div class="col-md-4">
+<div aria-label="Open InnoGear Aromatherapy Diffuser User Manual" class="card h-100 text-center sample-card" data-pdf="samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf" tabindex="0">
+<div class="card-body text-center" data-bs-target="#pdfModal" data-bs-toggle="modal">
+<div class="ratio ratio-4x3 mb-3">
+<iframe class="rounded" loading="lazy" src="/samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf" title="InnoGear Aromatherapy Diffuser User Manual"></iframe>
+</div>
+<h3 class="card-title fw-bold text-black">इनोगियर अरोमाथेरेपी डिफ्यूज़र उपयोगकर्ता मैनुअल</h3>
+<p class="card-text text-black">एक मौजूदा गाइड में अनुवाद की अस्पष्टता और संगठनात्मक मुद्दों की पहचान की और उन्हें हल किया। बेहतर उपयोगकर्ता समझ के लिए निर्देशों को अधिक सहज बनाने हेतु फिर से लिखा और लेआउट को अनुकूलित किया।</p>
+</div>
+</div>
+</div>
+<!-- Vaccine Refrigerator User Manual card -->
+<div class="col-md-4">
+<div aria-label="Open Vaccine Refrigerator User Manual" class="card h-100 text-center sample-card" data-pdf="samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf" tabindex="0">
+<div class="card-body text-center" data-bs-target="#pdfModal" data-bs-toggle="modal">
+<div class="ratio ratio-4x3 mb-3">
+<iframe class="rounded" loading="lazy" src="/samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf" title="Vaccine Refrigerator User Manual"></iframe>
+</div>
+<h3 class="card-title fw-bold text-black">टीका रेफ्रिजरेटर उपयोगकर्ता मैनुअल</h3>
+<p class="card-text text-black">टीका रेफ्रिजरेटर के लिए विशेष मैनुअल, जो तापमान की निगरानी, अलार्म सिस्टम, और सीडीसी (CDC) भंडारण आवश्यकताओं पर केंद्रित है।</p>
+</div>
+</div>
+</div>
+<!-- Recordkeeping card -->
+<div class="col-md-4">
+<div aria-label="Open Recordkeeping documentation sample" class="card h-100 text-center sample-card" data-href="https://pvega62.github.io/Recordkeeping/" tabindex="0">
+<div class="card-body text-center">
+<div class="ratio ratio-4x3 mb-3">
+<svg aria-label="Recordkeeping site logo" class="rounded" dir="ltr" role="img" style="direction: ltr;" version="1.1" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+                      @font-face {
+                        font-family: 'FantiqueFourr';
+                        src: url('/fonts/FantiqueFourr.woff') format('woff'),
+                          url('/fonts/FantiqueFourr.ttf') format('truetype');
+                      }
+                      .st0 {
+                        fill: #fff;
+                        font-family: 'FantiqueFourr';
+                        font-size: 56px;
+                        direction: ltr;
+                        unicode-bidi: isolate;
+                      }
+                      .st1 {
+                        fill: #1f3850;
+                        stroke: #1f3850;
+                        stroke-miterlimit: 10;
+                      }
+                    </style>
+</defs>
+<g id="Layer_1">
+<rect class="st1" height="182.91" rx="5.54" ry="5.54" width="323.77" x="-3.77"></rect>
+</g>
+<g id="Layer_2">
+<text class="st0" direction="ltr" transform="translate(5.17 98.13)">
+<tspan x="0" y="0">Recordkeeping</tspan>
+</text>
+</g>
+</svg>
+</div>
+<h3 class="card-title fw-bold text-black">रिकॉर्ड रखरखाव</h3>
+<p class="card-text text-black">मेरे व्यक्तिगत विनाइल रिकॉर्ड संग्रह की सूची रखने के लिए HTML, बूटस्ट्रैप और जावास्क्रिप्ट का उपयोग करके बनाई गई एक वेबसाइट।</p>
+</div>
+</div>
+</div>
+<!-- Education in the Dominican Republic card -->
+<div class="col-md-4">
+<div aria-label="Open Education in the Dominican Republic article" class="card h-100 text-center sample-card" data-pdf="samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" tabindex="0">
+<div class="card-body text-center" data-bs-target="#pdfModal" data-bs-toggle="modal">
+<div class="ratio ratio-4x3 mb-3">
+<iframe class="rounded" loading="lazy" src="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" title="Education in the Dominican Republic"></iframe>
+</div>
+<h3 class="card-title fw-bold text-black">डोमिनिकन गणराज्य में शिक्षा</h3>
+<p class="card-text text-black">संयुक्त राष्ट्र के सतत विकास लक्ष्यों पर मैंने डोमिनिकन गणराज्य के बारे में लिखे लेखों की एक श्रृंखला का हिस्सा।</p>
+</div>
+</div>
+</div>
+<!-- Breast Milk Freezer User Manual card -->
+<div class="col-md-4">
+<div aria-label="Open Breast Milk Freezer User Manual" class="card h-100 text-center sample-card" data-pdf="samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf" tabindex="0">
+<div class="card-body text-center" data-bs-target="#pdfModal" data-bs-toggle="modal">
+<div class="ratio ratio-4x3 mb-3">
+<iframe class="rounded" loading="lazy" src="/samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf" title="Breast Milk Freezer User Manual"></iframe>
+</div>
+<h3 class="card-title fw-bold text-black">स्तन के दूध के फ्रीजर के लिए उपयोगकर्ता मैनुअल</h3>
+<p class="card-text text-black">एक मेडिकल-ग्रेड स्तन के दूध के फ्रीजर के लिए व्यापक उपयोगकर्ता मैनुअल, जिसमें सुरक्षा प्रोटोकॉल, स्थापना और तापमान प्रबंधन शामिल हैं।</p>
+</div>
+</div>
+</div>
+<!-- Frost-Free Warming and Cooling Drawer card -->
+<div class="col-md-4">
+<div aria-label="Open Frost-Free Warming and Cooling Drawer sample" class="card h-100 text-center sample-card" data-pdf="samples/technical-writing/hardware/warming-and-cooling-drawer.pdf" tabindex="0">
+<div class="card-body text-center" data-bs-target="#pdfModal" data-bs-toggle="modal">
+<div class="ratio ratio-4x3 mb-3">
+<iframe class="rounded" loading="lazy" src="/samples/technical-writing/hardware/warming-and-cooling-drawer.pdf" title="Frost-Free Warming and Cooling Drawer"></iframe>
+</div>
+<h3 class="card-title fw-bold text-black">फ्रॉस्ट-फ्री वार्मिंग और कूलिंग ड्रॉअर</h3>
+<p class="card-text text-black">अपने तरह के पहले दोहरे-कार्य वाले वार्मिंग और कूलिंग ड्रॉअर के लिए उपयोगकर्ता मैनुअल, जिसमें तापमान नियंत्रण, सब्बाथ मोड और इंस्टॉलेशन का विवरण है।</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<p class="text-white text-center">© 2026 पेड्रो वेगा | HTML • CSS • JS • गिटहब पेजेज़ से निर्मित</p>
+</footer>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Shared PDF viewer -->
+<script src="/js/pdf-viewer.js?v=2"></script>
+<script src="/js/sticky-nav.js"></script>
+<!-- DocSearch JS -->
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
+<script>
+    document.querySelectorAll('.docsearch-container').forEach((container) => {
+      docsearch({
+        container: container,
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        indexName: 'portfolio_site',
+        insights: true,
+        searchParameters: {
+          facetFilters: ['lang:hi']
+        }
+      });
+    });
+
+    // Initialize Ask AI side panel
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const sidepanelDiv = document.createElement('div');
+      sidepanelDiv.id = 'docsearch-sidepanel';
+      document.body.appendChild(sidepanelDiv);
+
+      sidepanelInstance = docsearchSidepanel({
+        container: '#docsearch-sidepanel',
+        indexName: 'portfolio_site',
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159',
+        agentStudio: true,
+        searchParameters: {},
+        showButton: false,
+        button: false,
+        variant: 'inline',
+      });
+    }
+
+    // Emulate Docusaurus SearchBar layout exactly for desktop and add Ask AI button
+    const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('.d-lg-none'));
+    desktopContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          // Wrap button in DocSearch-SearchBar div
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+
+    // Append Docusaurus Ask AI side panel button for mobile only
+    const mobileContainers = Array.from(document.querySelectorAll('.d-lg-none .docsearch-container'));
+    mobileContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+
+    // Mobile search close fix - hides mobile search buttons while modal is open, revealing the native X button
+    (function () {
+      var mobileSearchContainer = document.querySelector('.mobile-nav-search-container');
+      function showSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'visible'; }
+      function hideSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'hidden'; }
+      var closeObserver = new MutationObserver(function () {
+        if (document.querySelector('.DocSearch-Modal')) { hideSearchButtons(); } else { showSearchButtons(); }
+      });
+      closeObserver.observe(document.body, { childList: true, subtree: true });
+    })();
+
+    // ===== Interactive Features =====
+
+    // 1. Scroll Progress Bar
+    (function () {
+      var bar = document.querySelector('.scroll-progress');
+      if (!bar) return;
+      window.addEventListener('scroll', function () {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.width = (scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0) + '%';
+      }, { passive: true });
+    })();
+
+    // 2. Typewriter Effect on Hero Heading
+    (function () {
+      var el = document.querySelector('.hero-typewriter');
+      if (!el) return;
+      var text = el.textContent;
+      // Lock the height to prevent layout shift
+      var rect = el.getBoundingClientRect();
+      el.style.minHeight = rect.height + 'px';
+      el.textContent = '';
+      var i = 0;
+      function type() {
+        if (i < text.length) {
+          el.textContent += text[i];
+          i++;
+          // Slowed down animation for more impact
+          setTimeout(type, 100 + Math.random() * 80);
+        }
+      }
+      setTimeout(type, 600);
+    })();
+
+    // 3. Scroll-Reveal Animations
+    (function () {
+      var targets = document.querySelectorAll(
+        '.col-md-4, .col-md-6.inno-text, .col-md-6.text-center, #selected-works > .container > h2'
+      );
+      targets.forEach(function (el) {
+        el.classList.add('reveal-element');
+        // Stagger siblings within the same row
+        var siblings = el.parentElement.querySelectorAll('.col-md-4, .col-md-6');
+        var sibIdx = Array.from(siblings).indexOf(el);
+        if (sibIdx >= 0) {
+          el.style.transitionDelay = (sibIdx * 0.12) + 's';
+        }
+      });
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      targets.forEach(function (el) { observer.observe(el); });
+    })();
+
+    // 4. 3D Parallax Card Tilt (desktop / pointer devices only)
+    (function () {
+      if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      document.querySelectorAll('.sample-card').forEach(function (card) {
+        card.addEventListener('mousemove', function (e) {
+          var rect = card.getBoundingClientRect();
+          var x = e.clientX - rect.left;
+          var y = e.clientY - rect.top;
+          var rotateX = ((y - rect.height / 2) / (rect.height / 2)) * -6;
+          var rotateY = ((x - rect.width / 2) / (rect.width / 2)) * 6;
+          card.style.transform = 'perspective(800px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale(1.03)';
+          card.style.transition = 'transform 0.1s ease-out, box-shadow 0.3s ease';
+        });
+        card.addEventListener('mouseleave', function () {
+          card.style.transform = 'perspective(800px) rotateX(0) rotateY(0) scale(1)';
+          card.style.transition = 'transform 0.45s ease, box-shadow 0.45s ease';
+        });
+      });
+    })();
+
+    // 5. Constellations managed globally via js/interactive.js
+
+    // 6. TARDIS 3D Easter Egg (WebGL / Three.js)
+    // Three.js integration loaded as ES module below
+
+  </script>
+<script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+<!-- 3D TARDIS WebGL Implementation (Three.js UMD) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script>
+    (function () {
+      var heroSection = document.querySelector('.hero-section');
+      if (!heroSection) return;
+
+      // 1. Create WebGL canvas
+      var canvas = document.createElement('canvas');
+      canvas.id = 'tardis-canvas';
+      canvas.setAttribute('aria-hidden', 'true');
+      heroSection.appendChild(canvas);
+
+      // 2. Scene, Camera, Renderer
+      var scene = new THREE.Scene();
+      var width = heroSection.offsetWidth || window.innerWidth;
+      var height = heroSection.offsetHeight || 500;
+      var camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 1000);
+      camera.position.set(0, 0, 32);
+
+      var renderer = new THREE.WebGLRenderer({
+        canvas: canvas,
+        alpha: true,
+        antialias: true,
+        powerPreference: 'high-performance'
+      });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+      renderer.setSize(width, height);
+      if (renderer.outputEncoding !== undefined) {
+        renderer.outputEncoding = THREE.sRGBEncoding;
+      }
+
+      // 3. Balanced Muted Space Lighting (Natural neutral light, zero color pollution)
+      var ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+      scene.add(ambientLight);
+
+      var keyLight = new THREE.DirectionalLight(0xffffff, 0.85);
+      keyLight.position.set(12, 16, 20);
+      scene.add(keyLight);
+
+      var rimLight = new THREE.DirectionalLight(0x445566, 0.4);
+      rimLight.position.set(-15, -10, -12);
+      scene.add(rimLight);
+
+      // Soft top lantern beacon light
+      var beaconLight = new THREE.PointLight(0xfffaea, 0, 15);
+
+      // Create glowing halo texture for flashing lantern beacon
+      function createGlowTexture() {
+        var c = document.createElement('canvas');
+        c.width = 64;
+        c.height = 64;
+        var ctx = c.getContext('2d');
+        var g = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
+        g.addColorStop(0, 'rgba(255, 255, 255, 1)');
+        g.addColorStop(0.2, 'rgba(235, 250, 255, 0.95)');
+        g.addColorStop(0.5, 'rgba(180, 230, 255, 0.4)');
+        g.addColorStop(1, 'rgba(0, 0, 0, 0)');
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, 64, 64);
+        return new THREE.CanvasTexture(c);
+      }
+
+      var glowSprite = new THREE.Sprite(new THREE.SpriteMaterial({
+        map: createGlowTexture(),
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+        depthWrite: false
+      }));
+
+      // 4. Model container
+      var tardisGroup = new THREE.Group();
+      scene.add(tardisGroup);
+
+      var tardisMesh = null;
+      var lampMesh = null;
+      var isFlying = false;
+      var flightStartTime = 0;
+      var flightDuration = 11000; // 11 seconds per flight
+      var animFrameId = null;
+
+      var loader = new THREE.GLTFLoader();
+      loader.load(
+        'images/tardis.glb?v=' + Date.now(),
+        function (gltf) {
+          tardisMesh = gltf.scene;
+
+          // Convert sRGB hex codes to Linear space for Three.js sRGBEncoding pipeline
+          var pantoneBlue = new THREE.Color('#003865').convertSRGBToLinear();
+          var windowCyan = new THREE.Color('#e0f7fa').convertSRGBToLinear();
+          var darkTrim = new THREE.Color('#111111').convertSRGBToLinear();
+
+          tardisMesh.traverse(function (child) {
+            if (child.isMesh && child.material) {
+              child.material = child.material.clone();
+              var matName = child.material.name || '';
+              var meshName = child.name || '';
+
+              // 1. TARDIS Main Body (Pantone 2955 C: #003865)
+              if (
+                matName === 'Material.002' ||
+                matName === 'Material.003' ||
+                matName === 'Material.004' ||
+                meshName.indexOf('Cube_Material003') !== -1 ||
+                meshName.indexOf('Cube_Material002') !== -1 ||
+                meshName.indexOf('Cube_Material004') !== -1
+              ) {
+                child.material.color.copy(pantoneBlue);
+                child.material.emissive.set(0x000000);
+                child.material.roughness = 0.65;
+                child.material.metalness = 0.0;
+              }
+              // 2. Windows & Sign Text (Soft cool cyan-white: #e0f7fa)
+              else if (matName === 'Material.001' || meshName.indexOf('Material001') !== -1) {
+                child.material.color.copy(windowCyan);
+                child.material.emissive.set(0x000000);
+                child.material.roughness = 0.45;
+                child.material.metalness = 0.0;
+              }
+              // 3. Top Roof Lantern Lamp Glass Bulb (Cube_Material007_0)
+              else if (meshName.indexOf('Cube_Material007') !== -1) {
+                lampMesh = child;
+                child.material = new THREE.MeshBasicMaterial({ color: 0xffffff });
+              }
+              // 4. Door Phone Sign Plate & Details
+              else if (meshName.indexOf('Cube_Material005') !== -1) {
+                child.material.color.copy(windowCyan);
+                child.material.emissive.set(0x000000);
+                child.material.roughness = 0.5;
+              }
+              // 5. Sign Backing & Door Phone Lettering
+              else {
+                child.material.color.copy(darkTrim);
+                child.material.emissive.set(0x000000);
+                child.material.roughness = 0.8;
+                child.material.metalness = 0.0;
+              }
+
+              child.material.needsUpdate = true;
+            }
+          });
+
+          // Center geometry pivot inside tardisGroup
+          var box = new THREE.Box3().setFromObject(tardisMesh);
+          var center = box.getCenter(new THREE.Vector3());
+          var size = box.getSize(new THREE.Vector3());
+
+          tardisMesh.position.set(-center.x, -center.y, -center.z);
+          tardisGroup.add(tardisMesh);
+
+          // Position beacon light & halo sprite directly at top lantern (y = 1.35)
+          beaconLight.position.set(0, 1.35, 0);
+          tardisGroup.add(beaconLight);
+
+          glowSprite.position.set(0, 1.35, 0);
+          glowSprite.scale.set(0.6, 0.6, 1);
+          tardisGroup.add(glowSprite);
+
+          // Scale to match subtle ~75-85px profile
+          var maxDim = Math.max(size.x, size.y, size.z);
+          var targetScale = 3.8 / maxDim;
+          tardisGroup.scale.set(targetScale, targetScale, targetScale);
+
+          tardisGroup.visible = false;
+
+          // Launch immediately on load
+          setTimeout(triggerFlight, 10000);
+
+          // Repeat every 80 seconds
+          setInterval(triggerFlight, 80000);
+        },
+        undefined,
+        function (err) {
+          console.warn('TARDIS 3D model could not be loaded:', err);
+        }
+      );
+
+      function resize() {
+        if (!heroSection || !renderer || !camera) return;
+        var w = heroSection.offsetWidth;
+        var h = heroSection.offsetHeight;
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        renderer.setSize(w, h);
+      }
+      window.addEventListener('resize', resize);
+
+      function triggerFlight() {
+        if (!tardisMesh || isFlying) return;
+        isFlying = true;
+        flightStartTime = performance.now();
+        tardisGroup.visible = true;
+        canvas.classList.add('active');
+
+        // Elevated flight path: flies across the upper starry background above the headline
+        var yOffset = 2.6 + (Math.random() - 0.5) * 0.8;
+
+        function animate(now) {
+          var elapsed = now - flightStartTime;
+          var p = Math.min(elapsed / flightDuration, 1);
+
+          var vFov = (camera.fov * Math.PI) / 180;
+          var visH = 2 * Math.tan(vFov / 2) * camera.position.z;
+          var visW = visH * camera.aspect;
+
+          // 1. Position: Fly smoothly across upper hero sky
+          var startX = -visW * 0.6;
+          var endX = visW * 0.6;
+          tardisGroup.position.x = startX + (endX - startX) * p;
+
+          // Gentle vertical drift in the upper sky (stays above text)
+          tardisGroup.position.y = yOffset + Math.sin(p * Math.PI) * 0.9;
+
+          // 3D Depth: graceful background arc
+          tardisGroup.position.z = -7 + Math.sin(p * Math.PI) * 3;
+
+          // 2. Rotation: Smooth spin around its own vertical axis
+          tardisGroup.rotation.y = p * Math.PI * 16;
+
+          // Subtle natural flight bank
+          tardisGroup.rotation.z = -0.16 + Math.sin(p * Math.PI * 3) * 0.03;
+          tardisGroup.rotation.x = Math.sin(p * Math.PI * 2) * 0.05;
+
+          // 3. Soft, non-distracting synchronized flash in rhythm with spin
+          var pulse = Math.pow(Math.max(0, Math.cos(tardisGroup.rotation.y)), 2.5);
+
+          // Subtle bulb pulse
+          if (lampMesh && lampMesh.material) {
+            var b = 0.2 + pulse * 0.65;
+            lampMesh.material.color.setRGB(b, b, b);
+          }
+
+          // Soft halo flare
+          if (glowSprite) {
+            var s = 0.35 + pulse * 0.8;
+            glowSprite.scale.set(s, s, 1);
+            glowSprite.material.opacity = pulse * 0.65;
+          }
+
+          // Gentle roof light
+          if (beaconLight) {
+            beaconLight.intensity = pulse * 1.8;
+          }
+
+          renderer.render(scene, camera);
+
+          if (p < 1) {
+            animFrameId = requestAnimationFrame(animate);
+          } else {
+            isFlying = false;
+            tardisGroup.visible = false;
+            canvas.classList.remove('active');
+            renderer.clear();
+          }
+        }
+
+        animFrameId = requestAnimationFrame(animate);
+      }
+
+      window.triggerTardis = triggerFlight;
+
+      heroSection.addEventListener('click', function (e) {
+        if (e.target.closest('a, button, input, textarea')) return;
+        triggerFlight();
+      });
+    })();
+  </script></body>
+</html>

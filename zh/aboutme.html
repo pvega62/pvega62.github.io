@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
+  <title>关于我 | 佩德罗·维加</title>
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="了解有关佩德罗·维加的更多信息：他是一位常驻纽约的技术与用户体验（UX）撰稿人，专长于API文档、代码化文档（Docs-as-Code）、硬件手册和内容设计。">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pvega62.github.io/zh/aboutme">
+  <meta property="og:title" content="关于我 | 佩德罗·维加">
+  <meta property="og:description" content="了解有关佩德罗·维加的更多信息：他是一位常驻纽约的技术与用户体验（UX）撰稿人，专长于API文档、代码化文档（Docs-as-Code）、硬件手册和内容设计。">
+  <meta property="og:image" content="https://pvega62.github.io/images/social-card.png">
+  <meta property="og:image:width" content="1050">
+  <meta property="og:image:height" content="600">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pvega62.github.io/zh/aboutme">
+  <meta name="twitter:title" content="关于我 | 佩德罗·维加">
+  <meta name="twitter:description" content="了解有关佩德罗·维加的更多信息：他是一位常驻纽约的技术与用户体验（UX）撰稿人，专长于API文档、代码化文档（Docs-as-Code）、硬件手册和内容设计。">
+  <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
+  <link rel="icon" href="/images/logo.png" type="image/png">
+  <!-- DocSearch CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" />
+  <style>
+    /* Force hide the default Algolia floating sidepanel button globally */
+    .DocSearch-SidepanelButton.floating {
+      display: none !important;
+    }
+  </style>
+      <link href="/css/interactive.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">跳转至主要内容</a>
+
+  <!-- Header and Navbar -->
+  <header class="sticky-top">
+    <!-- Mobile Search Bar -->
+    <div class="d-lg-none d-flex justify-content-end w-100"><div class="mobile-nav-search-container" style="position: absolute; right: 2px; top: 8px; z-index: 1050; padding: 0; margin: 0;">
+            <div class="docsearch-container"></div>
+          </div></div>
+
+    <div class="container-fluid px-0">
+      
+      <!-- Desktop Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="Desktop navigation">
+        <a class="navbar-brand ms-3" href="/zh/">
+          <img src="/images/logo.png" alt="Logo" height="40">
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
+          <ul class="navbar-nav me-3">
+            
+            <li class="nav-item"><a class="nav-link" href="/zh/">首页</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                技术写作
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
+                <li class="dropend position-relative">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">软件 / 开发文档</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/software/zh/docs/intro">介绍</a></li>
+                    <li><a class="dropdown-item" href="/software/zh/docs/category/cloud-data-pipeline-documentation">云数据管道</a></li>
+                    <li><a class="dropdown-item" href="/software/zh/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript 教程</a></li>
+                    <li><a class="dropdown-item" href="/software/zh/docs/category/stripe-api-documentation">Stripe API</a></li>
+                    <li><a class="dropdown-item" href="/software/zh/docs/category/pet-store-api-documentation">Pet Store API</a></li>
+                    <li><a class="dropdown-item" href="/software/zh/docs/category/commit-messages-and-pull-requests">提交信息与拉取请求</a></li>
+                    <li><a class="dropdown-item" href="/software/zh/docs/artie-case-study">案例研究：Ask Artie AI 助手</a></li>
+                    <li><a class="dropdown-item" href="/software/zh/docs/google-chrome-theme-installation">Google Chrome 主题</a></li>
+                    <li><a class="dropdown-item" href="/software/zh/docs/word-github-wiki-writage">Writage 工作流</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="/zh/technical-writing-hardware">硬件文档样本</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/software/zh/blog">博客</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/zh/uxwriting">UX 写作</a></li>
+            <li class="nav-item"><a class="nav-link" href="/zh/articles">文章</a></li>
+            <li class="nav-item"><a class="nav-link about-link" href="/zh/aboutme">关于我</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                联系我
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop2">
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">领英</a></li>
+                <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">电子邮箱</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">Recordkeeping</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownLang" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" aria-label="语言：普通话" title="语言：普通话">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="me-1" style="fill: currentColor;"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><img src="/images/flags/cn.svg" alt="" class="nav-flag-toggle"><span>普通话</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLang">
+                <li><a class="dropdown-item" href="/aboutme" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+                <li><a class="dropdown-item" href="/es/aboutme" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+                <li><a class="dropdown-item" href="/fr/aboutme" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+                <li><a class="dropdown-item" href="/ar/aboutme" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+                <li><a class="dropdown-item active" href="/zh/aboutme" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+                <li><a class="dropdown-item" href="/ja/aboutme" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+                <li><a class="dropdown-item" href="/hi/aboutme" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+              </ul>
+            </li>
+          
+              <li class="nav-item d-flex align-items-center ms-1">
+                <div class="docsearch-container"></div>
+              </li>
+            </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile Navbar (App Tab Bar) -->
+      <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="Mobile navigation">
+        <a class="navbar-brand ms-2 me-1" href="/zh/">
+          <img src="/images/icon-logo.png" alt="Logo" height="40">
+        </a>
+        <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#" id="navbarDropdown1"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="技术写作"
+              title="技术写作">
+              <img src="/images/icon-tech-writing.svg" alt="" class="mobile-nav-icon">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li class="dropend position-relative">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">软件 / 开发文档</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/software/zh/docs/intro">介绍</a></li>
+                  <li><a class="dropdown-item" href="/software/zh/docs/category/cloud-data-pipeline-documentation">云数据管道</a></li>
+                  <li><a class="dropdown-item" href="/software/zh/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript 教程</a></li>
+                  <li><a class="dropdown-item" href="/software/zh/docs/category/stripe-api-documentation">Stripe API</a></li>
+                  <li><a class="dropdown-item" href="/software/zh/docs/category/pet-store-api-documentation">Pet Store API</a></li>
+                  <li><a class="dropdown-item" href="/software/zh/docs/category/commit-messages-and-pull-requests">提交信息与拉取请求</a></li>
+                  <li><a class="dropdown-item" href="/software/zh/docs/artie-case-study">案例研究：Ask Artie AI 助手</a></li>
+                  <li><a class="dropdown-item" href="/software/zh/docs/google-chrome-theme-installation">Google Chrome 主题</a></li>
+                  <li><a class="dropdown-item" href="/software/zh/docs/word-github-wiki-writage">Writage 工作流</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="/zh/technical-writing-hardware">硬件文档样本</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/software/zh/blog">博客</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="/zh/uxwriting" aria-label="UX 写作" title="UX 写作">
+              <img src="/images/icon-ux-writing.svg" alt="" class="mobile-nav-icon">
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="/zh/articles" aria-label="文章" title="文章">
+              <img src="/images/icon-articles.svg" alt="" class="mobile-nav-icon">
+            </a>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="关于我和联系方式" title="关于我和联系方式">
+              <img src="/images/icon-vector1.svg" alt="" class="mobile-nav-icon" style="transform: scaleY(-1);">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAbout">
+              <li><a class="dropdown-item" href="/zh/aboutme">关于我</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">领英</a></li>
+              <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">电子邮箱</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#"
+              id="navbarDropdownLangMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="语言选择" title="语言选择">
+              <img src="/images/icon-languages.svg" alt="" class="mobile-nav-icon">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLangMobile">
+              <li><a class="dropdown-item" href="/aboutme" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+              <li><a class="dropdown-item" href="/es/aboutme" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+              <li><a class="dropdown-item" href="/fr/aboutme" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+              <li><a class="dropdown-item" href="/ar/aboutme" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+              <li><a class="dropdown-item active" href="/zh/aboutme" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+              <li><a class="dropdown-item" href="/ja/aboutme" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+              <li><a class="dropdown-item" href="/hi/aboutme" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/" aria-label="Recordkeeping" title="Recordkeeping">
+              <img src="/images/icon-recordkeeping.svg" alt="" class="mobile-nav-icon-colored">
+            </a>
+          </li>
+</ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+  <div class="hero-section">
+<div class="container-fluid px-4">
+<div class="text-center">
+<h1 class="display-4 fw-bold text-white">关于我</h1>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center intro-text text-white">
+<p>您即将聘请的专业写作者！</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<section class="light-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>我是一名技术写作者，致力于让复杂的技术变得清晰易懂。凭借在技术支持与 IT、出版和新闻领域的跨界背景，我擅长打造以用户为中心、赋能用户的技术文档。无论是撰写 API 参考文档、实操教程，还是进行提示词工程（Prompt Engineering），我都专注于将艰深的技术术语转化为流畅易懂的指南。</p>
+          <p>高中毕业后，我的第一份工作是在就读纽约市立技术学院期间担任媒体服务技术人员。在技术支持方面的实践经历，包括成功指导非技术背景的用户完成故障排查，实质上开启了我的技术写作之旅。</p>
+          <p>我认为自己的角色就像一名“翻译官”——这是我从小就磨练出的技能。作为一个移民家庭的孩子，我经常担任官方翻译，协助家人理解英语和复杂的法律程序。这份独特的经历塑造了我的沟通能力，如今我正将其专业地运用于弥合软件复杂性与终端用户之间的鸿沟。</p>
+
+          <h2 class="text-center mt-5 mb-4">专业技能</h2>
+          
+          <!-- Desktop View: Side-by-Side Grid -->
+          <div class="d-none d-md-block">
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <h5>技术与 API 文档</h5>
+                <ul>
+                  <li><strong>核心文档：</strong> Docs-as-Code &middot; REST &amp; OpenAPI &middot; MCP Integration &middot; IA &middot; SOPs &middot; Quickstarts &middot; CI/CD</li>
+                  <li><strong>开发者工具：</strong> Git (GitHub, GitLab) &middot; Linux/CLI &middot; Docker &middot; VS Code &middot; Postman &middot; Swagger &middot; Docusaurus &middot; Algolia &middot; Jira &middot; Notion</li>
+                </ul>
+              </div>
+              <div class="col-md-6 mb-4">
+                <h5>UX 写作与内容设计</h5>
+                <ul>
+                  <li><strong>设计实践：</strong> UX Writing &middot; Microcopy &middot; Prompt Design &middot; Content Systems &middot; UX Research &middot; Wireframes &middot; WCAG Accessibility</li>
+                  <li><strong>设计工具：</strong> Figma &middot; Snagit &middot; MS Word</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <h5>硬件与系统</h5>
+                <ul>
+                  <li><strong>系统与质量保证（QA）：</strong> Medical &amp; Consumer Hardware &middot; Hardware Testing &middot; Commercial Displays &amp; AV &middot; Signal Routing &middot; Network Cabling &middot; SOPs &middot; Equipment Logs</li>
+                </ul>
+              </div>
+              <div class="col-md-6 mb-4">
+                <h5>技术栈与 AI</h5>
+                <ul>
+                  <li><strong>开发栈与语言：</strong> HTML &middot; CSS &middot; JavaScript &middot; TypeScript &middot; Markdown &middot; React &middot; Node.js &middot; Bootstrap</li>
+                  <li><strong>AI 模型与提示词工程：</strong> Gemini &middot; Claude &middot; GPT (Prompt Design for UI Microcopy, Error States &amp; Technical Docs)</li>
+                  <li><strong>AI 系统与工程工具：</strong> Model Context Protocol (MCP) for Localization &amp; Tooling &middot; DeepL &amp; Lara (TMX) &middot; AskAI Semantic Search &middot; Galileo &middot; Vale</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row justify-content-center text-center">
+              <div class="col-md-10 mb-4">
+                <h5>其他技能与语言</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-1"><strong>出版与翻译：</strong> SEO Optimization &middot; Technical Translation &middot; AP Style &middot; Adobe Suite (InDesign, Illustrator, Acrobat) &middot; MadCap Flare</li>
+                  <li><strong>语言：</strong> 西班牙语（流利） &middot; 法语（中级）</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile View: Accordion -->
+          <div class="d-md-none">
+            <div class="accordion" id="skillsAccordion">
+
+              <!-- 1. Technical & API Documentation -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTechDocs">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechDocs" aria-expanded="false" aria-controls="collapseTechDocs">
+                    Technical &amp; API Documentation
+                  </button>
+                </h2>
+                <div id="collapseTechDocs" class="accordion-collapse collapse" aria-labelledby="headingTechDocs" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li class="mb-2"><strong>核心文档：</strong> Docs-as-Code &middot; REST &amp; OpenAPI &middot; MCP Integration &middot; IA &middot; SOPs &middot; Quickstarts &middot; CI/CD</li>
+                      <li><strong>开发者工具：</strong> Git (GitHub, GitLab) &middot; Linux/CLI &middot; Docker &middot; VS Code &middot; Postman &middot; Swagger &middot; Docusaurus &middot; Algolia &middot; Jira &middot; Notion</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. UX Writing & Content Design -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingUX">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUX" aria-expanded="false" aria-controls="collapseUX">
+                    UX Writing &amp; Content Design
+                  </button>
+                </h2>
+                <div id="collapseUX" class="accordion-collapse collapse" aria-labelledby="headingUX" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li class="mb-2"><strong>设计实践：</strong> UX Writing &middot; Microcopy &middot; Prompt Design &middot; Content Systems &middot; UX Research &middot; Wireframes &middot; WCAG Accessibility</li>
+                      <li><strong>设计工具：</strong> Figma &middot; Snagit &middot; MS Word</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Hardware & Systems -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingHardware">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardware" aria-expanded="false" aria-controls="collapseHardware">
+                    Hardware &amp; Systems
+                  </button>
+                </h2>
+                <div id="collapseHardware" class="accordion-collapse collapse" aria-labelledby="headingHardware" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li><strong>系统与质量保证（QA）：</strong> Medical &amp; Consumer Hardware &middot; Hardware Testing &middot; Commercial Displays &amp; AV &middot; Signal Routing &middot; Network Cabling &middot; SOPs &middot; Equipment Logs</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Technical Stack & AI -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTechStack">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechStack" aria-expanded="false" aria-controls="collapseTechStack">
+                    Technical Stack &amp; AI
+                  </button>
+                </h2>
+                <div id="collapseTechStack" class="accordion-collapse collapse" aria-labelledby="headingTechStack" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li class="mb-2"><strong>开发栈与语言：</strong> HTML &middot; CSS &middot; JavaScript &middot; TypeScript &middot; Markdown &middot; React &middot; Node.js &middot; Bootstrap</li>
+                      <li class="mb-2"><strong>AI 模型与提示词工程：</strong> Gemini &middot; Claude &middot; GPT (Prompt Design for UI Microcopy, Error States &amp; Technical Docs)</li>
+                      <li><strong>AI 系统与工程工具：</strong> Model Context Protocol (MCP) for Localization &amp; Tooling &middot; DeepL &amp; Lara (TMX) &middot; AskAI Semantic Search &middot; Galileo &middot; Vale</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5. Additional & Languages -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAddSkills">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAddSkills" aria-expanded="false" aria-controls="collapseAddSkills">
+                    Additional &amp; Languages
+                  </button>
+                </h2>
+                <div id="collapseAddSkills" class="accordion-collapse collapse" aria-labelledby="headingAddSkills" data-bs-parent="#skillsAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li class="mb-2"><strong>出版与翻译：</strong> SEO Optimization &middot; Technical Translation &middot; AP Style &middot; Adobe Suite (InDesign, Illustrator, Acrobat) &middot; MadCap Flare</li>
+                      <li><strong>语言：</strong> 西班牙语（流利） &middot; 法语（中级）</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="text-center mb-4">相关工作经历</h2>
+          <p class="text-center"><a href="/Pedro%20Vega%20Resume.pdf" class="text-white">在此查看完整简历</a></p>
+          <!-- Desktop View: Vertical List -->
+          <div class="d-none d-md-block">
+            <div>
+              <h4>自由职业技术写作者</h4>
+              <h5>远程 | 2024年4月 - 至今</h5>
+              <ul>
+                <li>主导面向开发者项目的完整文档生命周期，针对与 Datadog 及用于 LLM 追踪的 Galileo 集成的云遥测路由器架构，编写 API 参考与 SDK 入门指南。</li>
+                <li>为 Sui 区块链的 TypeScript SDK 方法与逻辑编写文档，编写包含实操代码示例的快速入门与深度指南。</li>
+                <li>编写开发者指南与教程，包括在 Postman 中创建模拟服务器（Mock Servers）以测试 REST API 端点的详尽操作手册。</li>
+                <li>维护用于记录 API 端点的 OpenAPI 规范，构建结构清晰、易于导航的完整文档层次体系。</li>
+                <li>将生成式 AI 工具与模型上下文协议（MCP）服务器直接集成到命令行（CLI）环境，将 Vale、DeepL 和 Figma 深度链接到 Gemini CLI，实现自动化审计、翻译与开发。</li>
+                <li>通过集成 Algolia 与 AskAI，在 HTML 和 Docusaurus 站点上构建先进的搜索架构，为技术文档提供强大的语义和生成式搜索体验。</li>
+              </ul>
+            </div>
+            <hr>
+            <div>
+              <h4>UX 写作者</h4>
+              <h5>Culangex | 远程 | 2024年12月 - 2026年1月</h5>
+              <ul>
+                <li>与跨职能团队紧密协作，共同编写详尽的内容风格指南，确保品牌调性的一致性并全面符合 WCAG 无障碍标准。</li>
+                <li>深入敏捷开发流程，负责界面微文案（Microcopy）、错误提示信息和操作引导文案，确保内容在整个软件开发生命周期中的无缝融入。</li>
+                <li>为西班牙语本地化团队翻译面向用户的关键内容，助力产品在讲西语的市场成功发布。</li>
+              </ul>
+            </div>
+            <hr>
+            <div>
+              <h4>技术写作者</h4>
+              <h5>Felix Storch Inc. | 纽约布朗克斯 | 2022年3月 - 2024年2月</h5>
+              <ul> 
+                <li>全面管理旗下 5 个消费级与医疗级硬件品牌的技术文档，独立编写并持续迭代超过 150 份用户手册、安装指南和规格表。</li>
+                <li>直接与工程研发团队对接，搜集技术指标，验证产品规格，并为新生产线量身编制精准的操作手册。</li>
+                <li>规范文档受控模板与发布流程，使手册的人工制作周期缩短了 40%。</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Mobile View: Accordion -->
+          <div class="d-md-none">
+            <div class="accordion" id="experienceAccordion">
+              
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingExp1">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp1" aria-expanded="false" aria-controls="collapseExp1">
+                    <div class="d-flex flex-column text-start">
+                      <span>自由职业技术写作者</span>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">远程 | 2024年4月 - 至今</small>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseExp1" class="accordion-collapse collapse" aria-labelledby="headingExp1" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li>主导面向开发者项目的完整文档生命周期，针对与 Datadog 及用于 LLM 追踪的 Galileo 集成的云遥测路由器架构，编写 API 参考与 SDK 入门指南。</li>
+                <li>为 Sui 区块链的 TypeScript SDK 方法与逻辑编写文档，编写包含实操代码示例的快速入门与深度指南。</li>
+                <li>编写开发者指南与教程，包括在 Postman 中创建模拟服务器（Mock Servers）以测试 REST API 端点的详尽操作手册。</li>
+                <li>维护用于记录 API 端点的 OpenAPI 规范，构建结构清晰、易于导航的完整文档层次体系。</li>
+                <li>将生成式 AI 工具与模型上下文协议（MCP）服务器直接集成到命令行（CLI）环境，将 Vale、DeepL 和 Figma 深度链接到 Gemini CLI，实现自动化审计、翻译与开发。</li>
+                <li>通过集成 Algolia 与 AskAI，在 HTML 和 Docusaurus 站点上构建先进的搜索架构，为技术文档提供强大的语义和生成式搜索体验。</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingExp2">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp2" aria-expanded="false" aria-controls="collapseExp2">
+                    <div class="d-flex flex-column text-start">
+                      <span>UX 写作者</span>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Culangex | 2024年12月 - 2026年1月</small>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseExp2" class="accordion-collapse collapse" aria-labelledby="headingExp2" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li>与跨职能团队紧密协作，共同编写详尽的内容风格指南，确保品牌调性的一致性并全面符合 WCAG 无障碍标准。</li>
+                <li>深入敏捷开发流程，负责界面微文案（Microcopy）、错误提示信息和操作引导文案，确保内容在整个软件开发生命周期中的无缝融入。</li>
+                <li>为西班牙语本地化团队翻译面向用户的关键内容，助力产品在讲西语的市场成功发布。</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingExp3">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp3" aria-expanded="false" aria-controls="collapseExp3">
+                    <div class="d-flex flex-column text-start">
+                      <span>技术写作者</span>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Felix Storch Inc. | 2022年3月 - 2024年2月</small>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseExp3" class="accordion-collapse collapse" aria-labelledby="headingExp3" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <ul class="mb-0 ps-3">
+                      <li>全面管理旗下 5 个消费级与医疗级硬件品牌的技术文档，独立编写并持续迭代超过 150 份用户手册、安装指南和规格表。</li>
+                <li>直接与工程研发团队对接，搜集技术指标，验证产品规格，并为新生产线量身编制精准的操作手册。</li>
+                <li>规范文档受控模板与发布流程，使手册的人工制作周期缩短了 40%。</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- Knicks Ticker -->
+    <div class="knicks-ticker" role="region" aria-label="Knicks victory ticker" tabindex="0">
+      <div class="marquee-wrapper">
+        <span class="marquee-content"><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
+        <span class="marquee-content" aria-hidden="true"><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>纽约尼克斯队是世界冠军！ 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>外星人威胁：已被成功化解</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
+      </div>
+    </div>
+  <section class="light-section py-5">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="text-center mb-4">个人兴趣（工作之余的生活）</h2>
+          <ul>
+            <li>阅读（我既喜欢传统的文字小说，也热衷于图像小说与漫画绘本）。</li>
+            <li>电影鉴赏</li>
+            <li>音乐</li>
+            <li>纽约洋基队（支持纽约的球队从来都不容易——不过好在还有状态极佳的纽约尼克斯队！）。特别向我们的多米尼加同胞球星 #BigBodegaKAT 致敬！在这里我也要毫不动摇地宣示对队长杰伦·布伦森的绝对支持，他就是为篮球而生的传奇领袖。</li>
+            <li>涂鸦与创意速写</li>
+            <li>动手倒腾硬件：我热爱探索新硬件并拆解设备以探究其内部工作原理。小时候拆解废旧一次性胶卷相机时，甚至还不小心被里面的电容电击过好几次！</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+  <section class="hero-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="and-divider">以及</p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3 class="text-center">当下的心动单曲</h3>
+          <p class="text-center">耶！纽约尼克斯队是全世界最棒的球队。无可争议的第一名！</p>
+          <div class="text-center">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/KU5V5WZVcVE?si=Q9Y2JcXQapX8WGtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+      </div>
+    </div>
+  </section>
+  
+<footer>
+  <p class="text-white text-center">&copy; 2026 佩德罗·维加 | 基于 HTML &bull; CSS &bull; JS &bull; GitHub Pages 构建</p>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/js/sticky-nav.js"></script>
+  <!-- DocSearch JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
+    <script>
+    document.querySelectorAll('.docsearch-container').forEach((container) => {
+      docsearch({
+        container: container,
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        indexName: 'portfolio_site',
+        insights: true,
+        searchParameters: {
+          facetFilters: ['lang:zh']
+        }
+      });
+    });
+
+    // Initialize Ask AI side panel
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const sidepanelDiv = document.createElement('div');
+      sidepanelDiv.id = 'docsearch-sidepanel';
+      document.body.appendChild(sidepanelDiv);
+      
+      sidepanelInstance = docsearchSidepanel({
+        container: '#docsearch-sidepanel',
+        indexName: 'portfolio_site',
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159',
+        agentStudio: true,
+        searchParameters: {},
+        showButton: false,
+        button: false,
+        variant: 'inline',
+      });
+    }
+
+    // Emulate Docusaurus SearchBar layout exactly for desktop and add Ask AI button
+    const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('.d-lg-none'));
+    desktopContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          // Wrap button in DocSearch-SearchBar div
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+  
+    // Append Docusaurus Ask AI side panel button for mobile only
+    const mobileContainers = Array.from(document.querySelectorAll('.d-lg-none .docsearch-container'));
+    mobileContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+
+    // Mobile search close fix - hides mobile search buttons while modal is open, revealing the native X button
+    (function () {
+      var mobileSearchContainer = document.querySelector('.mobile-nav-search-container');
+      function showSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'visible'; }
+      function hideSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'hidden'; }
+      var closeObserver = new MutationObserver(function () {
+        if (document.querySelector('.DocSearch-Modal')) { hideSearchButtons(); } else { showSearchButtons(); }
+      });
+      closeObserver.observe(document.body, { childList: true, subtree: true });
+    })();
+
+  </script>
+    <script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+</body>
+</html>
+

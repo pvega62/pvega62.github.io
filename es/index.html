@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="es" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -10,30 +10,30 @@
       window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
     }
   </script>
-  <title>Pedro Vega | Technical Writer | Portfolio Site</title>
+  <title>Pedro Vega | Redactor técnico | Portafolio</title>
   <!-- Primary Meta Tags -->
-  <meta name="description" content="Technical Writing portfolio of Pedro Vega — featuring software documentation, API guides, UX writing, and Docs-as-Code.">
+  <meta name="description" content="Portafolio de redacción técnica de Pedro Vega: documentación de software, guías de API, redacción UX y Docs-as-Code.">
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pvega62.github.io/">
-  <meta property="og:title" content="Pedro Vega | Technical Writer | Portfolio Site">
-  <meta property="og:description" content="Technical Writing portfolio of Pedro Vega — featuring software documentation, API guides, UX writing, and Docs-as-Code.">
+  <meta property="og:url" content="https://pvega62.github.io/es/">
+  <meta property="og:title" content="Pedro Vega | Redactor técnico | Portafolio">
+  <meta property="og:description" content="Portafolio de redacción técnica de Pedro Vega: documentación de software, guías de API, redacción UX y Docs-as-Code.">
   <meta property="og:image" content="https://pvega62.github.io/images/social-card.png">
   <meta property="og:image:width" content="1050">
   <meta property="og:image:height" content="600">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://pvega62.github.io/">
-  <meta name="twitter:title" content="Pedro Vega | Technical Writer | Portfolio Site">
-  <meta name="twitter:description" content="Technical Writing portfolio of Pedro Vega — featuring software documentation, API guides, UX writing, and Docs-as-Code.">
+  <meta name="twitter:url" content="https://pvega62.github.io/es/">
+  <meta name="twitter:title" content="Pedro Vega | Redactor técnico | Portafolio">
+  <meta name="twitter:description" content="Portafolio de redacción técnica de Pedro Vega: documentación de software, guías de API, redacción UX y Docs-as-Code.">
   <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/styles.css?v=5">
-  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="/css/styles.css?v=5">
+  <link rel="icon" href="/images/logo.png" type="image/png">
   <link rel="preconnect" href="https://XMDO29FL1L-dsn.algolia.net" crossorigin />
   <!-- DocSearch CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
@@ -129,13 +129,17 @@
     }
   </style>
 
+  <!-- Hreflang Localization -->
+  <link rel="alternate" hreflang="en" href="https://pvega62.github.io/" />
+  <link rel="alternate" hreflang="es" href="https://pvega62.github.io/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://pvega62.github.io/" />
 </head>
 
 <body>
   <div id="scroll-progress" class="bg-custom-dark position-fixed top-0 start-0" style="height: 4px; z-index: 9999; transition: width 0.1s;"></div>
   <div class="scroll-progress" aria-hidden="true"></div>
 
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
   <!-- Header and Navbar -->
   <header class="sticky-top">
@@ -151,53 +155,53 @@
 
       <!-- Desktop Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation"
-        aria-label="Desktop navigation">
-        <a class="navbar-brand ms-3" href="/">
-          <img src="images/logo.png" alt="Logo" height="40">
+        aria-label="Navegación de escritorio">
+        <a class="navbar-brand ms-3" href="/es/">
+          <img src="/images/logo.png" alt="Logo" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
 
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/es/">Inicio</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop1" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                Technical writing
+                Redacción técnica
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Software/Dev Docs</a>
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/intro">Introduction</a></li>
-                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
-                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript Tutorial</a></li>
-                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/stripe-api-documentation">Stripe API</a></li>
-                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/pet-store-api-documentation">Pet Store API</a></li>
-                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/commit-messages-and-pull-requests">Commit Messages and Pull Requests</a></li>
-                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/artie-case-study">Ask Artie AI Assistant Case Study</a></li>
-                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/google-chrome-theme-installation">Google Chrome Theme</a></li>
-                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/word-github-wiki-writage">Writage Workflow</a></li>
+                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/intro">Introducción</a></li>
+                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
+                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/category/typescript-sdk-sui-blockchain-documentation">Tutorial de TypeScript</a></li>
+                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/category/stripe-api-documentation">API de Stripe</a></li>
+                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/category/pet-store-api-documentation">API de Pet Store</a></li>
+                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/category/commit-messages-and-pull-requests">Mensajes de commit y pull requests</a></li>
+                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/artie-case-study">Caso de estudio: Asistente de IA Ask Artie</a></li>
+                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/google-chrome-theme-installation">Tema de Google Chrome</a></li>
+                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/word-github-wiki-writage">Flujo de trabajo de Writage</a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="/technical-writing-hardware">Hardware Samples</a></li>
+                <li><a class="dropdown-item" href="/es/technical-writing-hardware">Muestras de hardware</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="https://pvega62.github.io/software/blog">Blog</a></li>
+                <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/blog">Blog</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="/uxwriting">UX writing</a></li>
-            <li class="nav-item"><a class="nav-link" href="/articles">Articles</a></li>
-            <li class="nav-item"><a class="nav-link about-link" href="/aboutme">About me</a></li>
+            <li class="nav-item"><a class="nav-link" href="/es/uxwriting">Redacción UX</a></li>
+            <li class="nav-item"><a class="nav-link" href="/es/articles">Artículos</a></li>
+            <li class="nav-item"><a class="nav-link about-link" href="/es/aboutme">Acerca de mí</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop2" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                Contact
+                Contacto
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop2">
                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank"
                     rel="noopener noreferrer">LinkedIn</a></li>
                 <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank"
                     rel="noopener noreferrer">GitHub</a></li>
-                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Email</a></li>
+                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Correo electrónico</a></li>
 
               </ul>
             </li>
@@ -205,12 +209,12 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownLang" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language: English" title="Language: English">
-                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="me-1" style="fill: currentColor;"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><img src="/images/flags/us.svg" alt="" class="nav-flag-toggle"><span>English</span>
+                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Idioma: Español" title="Idioma: Español">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="me-1" style="fill: currentColor;"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><img src="/images/flags/do.svg" alt="" class="nav-flag-toggle"><span>Español</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLang">
-                <li><a class="dropdown-item active" href="/" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
-                <li><a class="dropdown-item" href="/es/" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+                <li><a class="dropdown-item" href="/" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+                <li><a class="dropdown-item active" href="/es/" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
                 <li><a class="dropdown-item" href="/fr/" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
                 <li><a class="dropdown-item" href="/ar/" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
                 <li><a class="dropdown-item" href="/zh/" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
@@ -230,74 +234,72 @@
 
       <!-- Mobile Navbar (App Tab Bar) -->
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation"
-        aria-label="Mobile navigation">
-        <a class="navbar-brand ms-2 me-1" href="/">
-          <img src="images/icon-logo.png" alt="Logo" height="40">
+        aria-label="Navegación móvil">
+        <a class="navbar-brand ms-2 me-1" href="/es/">
+          <img src="/images/icon-logo.png" alt="Logo" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
 
           <li class="nav-item dropup d-flex align-items-center">
-            <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#" id="navbarDropdown1"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Technical writing"
-              title="Technical writing">
+            <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Redacción técnica" title="Redacción técnica">
               <img src="/images/icon-tech-writing.svg" alt="" class="mobile-nav-icon">
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Software/Dev Docs</a>
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/intro">Introduction</a></li>
-                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
-                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript Tutorial</a></li>
-                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/stripe-api-documentation">Stripe API</a></li>
-                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/pet-store-api-documentation">Pet Store API</a></li>
-                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/commit-messages-and-pull-requests">Commit Messages and Pull Requests</a></li>
-                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/artie-case-study">Ask Artie AI Assistant Case Study</a></li>
-                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/google-chrome-theme-installation">Google Chrome Theme</a></li>
-                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/word-github-wiki-writage">Writage Workflow</a></li>
+                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/intro">Introducción</a></li>
+                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
+                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/category/typescript-sdk-sui-blockchain-documentation">Tutorial de TypeScript</a></li>
+                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/category/stripe-api-documentation">API de Stripe</a></li>
+                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/category/pet-store-api-documentation">API de Pet Store</a></li>
+                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/category/commit-messages-and-pull-requests">Mensajes de commit y pull requests</a></li>
+                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/artie-case-study">Caso de estudio: Asistente de IA Ask Artie</a></li>
+                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/google-chrome-theme-installation">Tema de Google Chrome</a></li>
+                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/docs/word-github-wiki-writage">Flujo de trabajo de Writage</a></li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="/technical-writing-hardware">Hardware Samples</a></li>
+              <li><a class="dropdown-item" href="/es/technical-writing-hardware">Muestras de hardware</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="https://pvega62.github.io/software/blog">Blog</a></li>
+              <li><a class="dropdown-item" href="https://pvega62.github.io/software/es/blog">Blog</a></li>
             </ul>
           </li>
           <li class="nav-item d-flex align-items-center">
-            <a class="nav-link px-2 d-flex align-items-center" href="/uxwriting" aria-label="UX writing"
-              title="UX writing">
-              <img src="images/icon-ux-writing.svg" alt="" class="mobile-nav-icon">
+            <a class="nav-link px-2 d-flex align-items-center" href="/es/uxwriting" aria-label="Redacción UX"
+              title="Redacción UX">
+              <img src="/images/icon-ux-writing.svg" alt="" class="mobile-nav-icon">
             </a>
           </li>
           <li class="nav-item d-flex align-items-center">
-            <a class="nav-link px-2 d-flex align-items-center" href="/articles"
-              aria-label="Articles" title="Articles">
-              <img src="images/icon-articles.svg" alt="" class="mobile-nav-icon">
+            <a class="nav-link px-2 d-flex align-items-center" href="/es/articles"
+              aria-label="Artículos" title="Artículos">
+              <img src="/images/icon-articles.svg" alt="" class="mobile-nav-icon">
             </a>
           </li>
           <li class="nav-item dropup d-flex align-items-center">
             <a class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" href="#"
               id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-              aria-label="About me and Contact" title="About me and Contact">
-              <img src="images/icon-vector1.svg" alt="" class="mobile-nav-icon" style="transform: scaleY(-1);">
+              aria-label="Acerca de mí y contacto" title="Acerca de mí y contacto">
+              <img src="/images/icon-vector1.svg" alt="" class="mobile-nav-icon" style="transform: scaleY(-1);">
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAbout">
-              <li><a class="dropdown-item" href="/aboutme">About Me</a></li>
+              <li><a class="dropdown-item" href="/es/aboutme">Acerca de mí</a></li>
               <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank"
                   rel="noopener noreferrer">LinkedIn</a></li>
               <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank"
                   rel="noopener noreferrer">GitHub</a></li>
-              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Email</a></li>
+              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Correo electrónico</a></li>
             </ul>
           </li>
           <li class="nav-item dropup d-flex align-items-center">
             <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#"
               id="navbarDropdownLangMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-              aria-label="Languages" title="Languages">
-              <img src="images/icon-languages.svg" alt="" class="mobile-nav-icon">
+              aria-label="Idiomas" title="Idiomas">
+              <img src="/images/icon-languages.svg" alt="" class="mobile-nav-icon">
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLangMobile">
-              <li><a class="dropdown-item active" href="/" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
-              <li><a class="dropdown-item" href="/es/" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+              <li><a class="dropdown-item" href="/" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+              <li><a class="dropdown-item active" href="/es/" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
               <li><a class="dropdown-item" href="/fr/" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
               <li><a class="dropdown-item" href="/ar/" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
               <li><a class="dropdown-item" href="/zh/" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
@@ -308,7 +310,7 @@
           <li class="nav-item d-flex align-items-center">
             <a class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/"
               aria-label="Recordkeeping" title="Recordkeeping">
-              <img src="images/icon-recordkeeping.svg" alt="" class="mobile-nav-icon-colored">
+              <img src="/images/icon-recordkeeping.svg" alt="" class="mobile-nav-icon-colored">
             </a>
           </li>
         </ul>
@@ -322,11 +324,11 @@
       <canvas class="particles-canvas" aria-hidden="true"></canvas>
       <div class="container-fluid px-4">
         <div class="text-center">
-          <h1 class="display-4 fw-bold">Technical Writer. UX Writer. Content Designer.</h1>
-          <p class="lead fs-3 hero-typewriter">I just really like words.</p>
+          <h1 class="display-4 fw-bold">Redactor técnico. Redactor UX. Diseñador de contenido.</h1>
+          <p class="lead fs-3 hero-typewriter">Amo a las palabras.</p>
           <div class="mt-4 mb-4">
             <a href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3">
-              <img src="images/linkedin-button.svg" alt="LinkedIn" width="52" height="52">
+              <img src="/images/linkedin-button.svg" alt="LinkedIn" width="52" height="52">
             </a>
             <a href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3 ">
               <svg width="52" height="52" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -341,22 +343,17 @@
             </a>
             <br>
             <br>
-            <a href="https://pvega62.github.io/software/docs/intro" target="_blank" rel="noopener noreferrer"
+            <a href="https://pvega62.github.io/software/es/docs/intro" target="_blank" rel="noopener noreferrer"
               class="me-3">
-              <img src="images/docs-button.svg" alt="Software/Dev Docs" width="167" height="38">
+              <img src="/images/docs-button-es.svg" alt="Documentación de Software" width="280" height="38">
             </a>
           </div>
         </div>
 
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center intro-text">
-            <p>For years, my professional career has centered on one core goal: demystifying complex concepts for the
-              general audience. Whether as a tutor, a journalist, or a technical writer, my focus is always on creating
-              accessible and understandable content.</p>
-            <p>This portfolio showcases different pieces from each area. You'll find some articles and essays, technical
-              documentation (such as user guides for hardware and software, and API documentation), and UX writing samples.
-              I created these samples using platforms such as Swagger and Postman to demonstrate clear, step-by-step
-              developer workflows.</p>
+            <p>Por años, mi carrera profesional se ha centrado en un objetivo fundamental: desmitificar conceptos complejos para el público general. Ya sea como tutor, periodista o redactor técnico, mi enfoque siempre es crear contenido accesible y comprensible.</p>
+            <p>Este portafolio reúne trabajos destacados de cada faceta: artículos de divulgación, documentación técnica (manuales de usuario para hardware y software, y guías de APIs) y proyectos de redacción UX. Diseñé estos ejemplos con herramientas como Swagger y Postman para ilustrar flujos de desarrollo claros, funcionales y bien estructurados.</p>
           </div>
         </div>
       </div>
@@ -369,52 +366,45 @@
       <div class="row align-items-center">
         <div class="col-md-6 text-center mb-4 mb-md-0">
           <div class="ratio ratio-16x9">
-            <iframe title="Cloud Data Pipeline Documentation"
-              src="https://pvega62.github.io/software/docs/category/cloud-data-pipeline-documentation"
+            <iframe title="Documentación técnica: Arquitectura de observabilidad en la nube y para IA"
+              src="https://pvega62.github.io/software/es/docs/category/cloud-data-pipeline-documentation"
               class="rounded" loading="lazy"></iframe>
           </div>
         </div>
         <div class="col-md-6 inno-text">
-          <a href="https://pvega62.github.io/software/docs/category/cloud-data-pipeline-documentation"
+          <a href="https://pvega62.github.io/software/es/docs/category/cloud-data-pipeline-documentation"
             class="inno-link">
-            <h2 class="fw-bold">Cloud and AI Observability Pipeline Documentation</h2>
+            <h2 class="fw-bold">Documentación técnica: Arquitectura de observabilidad en la nube y para IA</h2>
           </a>
-          <p class="text-secondary">Built a multi-layered documentation suite for a dual-track observability pipeline,
-            integrating <b>Datadog</b> for cloud log ingestion and <b>Galileo</b> for AI/LLM tracing. This project
-            features conceptual models, a streaming ingest API reference, and a hands-on guide for routing telemetry
-            through cloud-native processors.</p>
-          <p class="text-secondary">Built with a modern <b>Docs-as-Code</b> workflow using <b>Docusaurus</b> and
-            <b>Markdown</b>. Diagrams in <b>Mermaid</b> and <b>ASCII</b> illustrate concurrent data streams and the
-            dual-track observability architecture.
+          <p class="text-secondary">Diseñé una suite documental integral para un pipeline dual de observabilidad. El sistema integra <b>Datadog</b> para ingesta de registros y <b>Galileo</b> para la trazabilidad de modelos LLM e inteligencia artificial. El proyecto incluye modelos conceptuales, referencias de API para ingesta en streaming y guías prácticas para enrutar telemetría mediante procesadores nativos de la nube.</p>
+          <p class="text-secondary">Desarrollado bajo el paradigma <b>Docs-as-Code</b> con <b>Docusaurus</b> y <b>Markdown</b>. Cuenta con diagramas interactivos en <b>Mermaid</b> y <b>ASCII</b> que ilustran con precisión los flujos concurrentes de datos y la arquitectura técnica del sistema.
           </p>
         </div>
       </div>
     </div>
   </div>
-    <!-- Selected Works Section -->
+    <!-- Trabajos seleccionados Section -->
   <div id="selected-works" class="py-5 bg-custom-dark">
     <canvas class="particles-canvas" aria-hidden="true"></canvas>
     <div class="container">
-      <h2 class="text-center text-white mb-5">Selected Works</h2>
+      <h2 class="text-center text-white mb-5">Trabajos seleccionados</h2>
       
       <!-- Combined Row for all works -->
       <div class="row g-4 justify-content-center">
       
-        <!-- TypeScript SDK Sui Documentation Sample card -->
+        <!-- Muestra de documentación: SDK de TypeScript para Sui card -->
         <div class="col-md-4">
           <div class="card h-100 text-center sample-card" tabindex="0"
-            data-href="https://pvega62.github.io/software/docs/category/typescript-sdk-sui-blockchain-documentation"
-            aria-label="Open TypeScript SDK Sui Documentation Sample">
+            data-href="https://pvega62.github.io/software/es/docs/category/typescript-sdk-sui-blockchain-documentation"
+            aria-label="Abrir muestra de documentación: SDK de TypeScript para Sui">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
               <div class="ratio ratio-4x3 mb-3">
-                <iframe title="TypeScript SDK Sui Documentation Sample"
-                  src="https://pvega62.github.io/software/docs/category/typescript-sdk-sui-blockchain-documentation"
+                <iframe title="Muestra de documentación: SDK de TypeScript para Sui"
+                  src="https://pvega62.github.io/software/es/docs/category/typescript-sdk-sui-blockchain-documentation"
                   class="rounded" loading="lazy"></iframe>
               </div>
-              <h3 class="card-title fw-bold text-black">TypeScript SDK Sui Documentation Sample</h3>
-              <p class="card-text text-black">Created a comprehensive documentation sample teaching developers how to
-                read and write data on the Sui blockchain using the TypeScript SDK. This set includes a conceptual
-                guide, a tutorial, and API reference pages centered on querying and interacting with SuiClient object data.</p>
+              <h3 class="card-title fw-bold text-black">Muestra de documentación: SDK de TypeScript para Sui</h3>
+              <p class="card-text text-black">Guía práctica y completa para desarrolladores sobre cómo consultar y registrar transacciones en la blockchain de Sui con el SDK de TypeScript. Incluye conceptos clave, tutoriales paso a paso y páginas de referencia de API para interactuar con objetos de SuiClient.</p>
             </div>
           </div>
         </div>
@@ -422,19 +412,16 @@
         <!-- Stripe API card -->
         <div class="col-md-4">
           <div class="card text-center sample-card h-100" tabindex="0"
-            data-href="https://pvega62.github.io/software/docs/category/stripe-api-documentation"
-            aria-label="Open Stripe API Documentation Sample">
+            data-href="https://pvega62.github.io/software/es/docs/category/stripe-api-documentation"
+            aria-label="Abrir muestra de documentación: API de Stripe">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
               <div class="ratio ratio-4x3 mb-3">
-                <iframe title="Stripe API Documentation Sample"
-                  src="https://pvega62.github.io/software/docs/category/stripe-api-documentation" class="rounded"
+                <iframe title="Muestra de documentación: API de Stripe"
+                  src="https://pvega62.github.io/software/es/docs/category/stripe-api-documentation" class="rounded"
                   loading="lazy"></iframe>
               </div>
-              <h3 class="card-title fw-bold text-black">Stripe API Documentation Sample</h3>
-              <p class="card-text text-black text-center">Wrote <b>REST API</b> documentation in <b>Markdown</b> using
-                <b>VSCode</b> and linted with <b>Vale</b>. Validated endpoints using <b>Postman</b>, documented
-                authentication flow, and maintained docs in a <b>GitHub Wiki</b>. Demonstrates end-to-end developer
-                documentation workflow.
+              <h3 class="card-title fw-bold text-black">Muestra de documentación: API de Stripe</h3>
+              <p class="card-text text-black text-center">Documentación de <b>API REST</b> desarrollada en <b>Markdown</b> con <b>VS Code</b> y validada con <b>Vale</b>. Endpoints verificados en <b>Postman</b>, arquitectura de autenticación detallada y control de versiones en <b>GitHub Wiki</b>. Demuestra un flujo de trabajo profesional de Docs-as-Code para desarrolladores.
               </p>
             </div>
           </div>
@@ -443,16 +430,14 @@
         <!-- UX Writing Challenge card -->
         <div class="col-md-4">
           <div class="card h-100 text-center sample-card" tabindex="0"
-            data-pdf="samples/ux-writing/ux-writing-challenge-15.pdf" aria-label="Open UX Writing Challenge sample">
+            data-pdf="/samples/ux-writing/ux-writing-challenge-15.pdf" aria-label="Abrir muestra de redacción UX">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
               <div class="ratio ratio-4x3 mb-3">
-                <iframe title="UX Writing Challenge: #15" src="samples/ux-writing/ux-writing-challenge-15.pdf"
+                <iframe title="Desafío de redacción UX: #15" src="/samples/ux-writing/ux-writing-challenge-15.pdf"
                   class="rounded" loading="lazy"></iframe>
               </div>
-              <h3 class="card-title fw-bold text-black">Banking App Onboarding Flow</h3>
-              <p class="card-text text-black">This sample showcases a comprehensive onboarding flow for a financial app.
-                It demonstrates an ability to build user trust with a confident, clear, and professional tone while
-                adhering to strict technical constraints.</p>
+              <h3 class="card-title fw-bold text-black">Flujo de incorporación para aplicación bancaria</h3>
+              <p class="card-text text-black">Flujo de onboarding completo para una aplicación de finanzas personales. Diseñado para generar confianza y guiar al usuario paso a paso en la automatización de pagos, cumpliendo estrictas restricciones de espacio y tono.</p>
             </div>
           </div>
         </div>
@@ -460,36 +445,33 @@
         <!-- InnoGear Aromatherapy Diffuser card -->
         <div class="col-md-4">
           <div class="card h-100 text-center sample-card" tabindex="0"
-            data-pdf="samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf"
-            aria-label="Open InnoGear Aromatherapy Diffuser User Manual">
+            data-pdf="/samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf"
+            aria-label="Abrir manual de usuario: Difusor de aromaterapia InnoGear">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
               <div class="ratio ratio-4x3 mb-3">
-                <iframe title="InnoGear Aromatherapy Diffuser User Manual"
-                  src="samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf" class="rounded"
+                <iframe title="Manual de usuario: Difusor de aromaterapia InnoGear"
+                  src="/samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf" class="rounded"
                   loading="lazy"></iframe>
               </div>
-              <h3 class="card-title fw-bold text-black">InnoGear Aromatherapy Diffuser User Manual</h3>
-              <p class="card-text text-black">Identified and resolved translation murkiness and organizational issues in
-                an existing guide. Rewrote instructions to be more intuitive and optimized the layout for better user
-                comprehension.</p>
+              <h3 class="card-title fw-bold text-black">Manual de usuario: Difusor de aromaterapia InnoGear</h3>
+              <p class="card-text text-black">Optimización integral de una guía de usuario con deficiencias estructurales y de traducción. Reescritura de instrucciones con lenguaje directo y rediseño visual enfocado en facilitar la comprensión inmediata.</p>
             </div>
           </div>
         </div>
 
-        <!-- Vaccine Refrigerator User Manual card -->
+        <!-- Manual de usuario: Refrigerador para vacunas card -->
         <div class="col-md-4">
           <div class="card h-100 text-center sample-card" tabindex="0"
-            data-pdf="samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf"
-            aria-label="Open Vaccine Refrigerator User Manual">
+            data-pdf="/samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf"
+            aria-label="Abrir manual de usuario: Refrigerador para vacunas">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
               <div class="ratio ratio-4x3 mb-3">
-                <iframe title="Vaccine Refrigerator User Manual"
-                  src="samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf" class="rounded"
+                <iframe title="Manual de usuario: Refrigerador para vacunas"
+                  src="/samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf" class="rounded"
                   loading="lazy"></iframe>
               </div>
-              <h3 class="card-title fw-bold text-black">Vaccine Refrigerator User Manual</h3>
-              <p class="card-text text-black">Specialized manual for a vaccine refrigerator, focusing on temperature
-                monitoring, alarm systems, and CDC storage requirements.</p>
+              <h3 class="card-title fw-bold text-black">Manual de usuario: Refrigerador para vacunas</h3>
+              <p class="card-text text-black">Manual especializado para refrigeradores de vacunas de grado médico. Centrado en protocolos de monitoreo térmico, configuración de alarmas y normativas de almacenamiento de los CDC.</p>
             </div>
           </div>
         </div>
@@ -498,7 +480,7 @@
         <div class="col-md-4">
           <div class="card h-100 text-center sample-card" tabindex="0"
             data-href="https://pvega62.github.io/Recordkeeping/"
-            aria-label="Open Recordkeeping documentation sample">
+            aria-label="Abrir muestra de documentación de Recordkeeping">
             <div class="card-body text-center">
               <div class="ratio ratio-4x3 mb-3">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 320 180" role="img"
@@ -535,62 +517,58 @@
                 </svg>
               </div>
               <h3 class="card-title fw-bold text-black">Recordkeeping</h3>
-              <p class="card-text text-black">A website I built using HTML, Bootstrap, and JavaScript to keep a catalog
-                of my personal vinyl record collection.</p>
+              <p class="card-text text-black">Un sitio web que desarrollé con HTML, Bootstrap y JavaScript para catalogar mi colección personal de discos de vinilo.</p>
             </div>
           </div>
         </div>
 
-        <!-- Education in the Dominican Republic card -->
+        <!-- Educación en la República Dominicana card -->
         <div class="col-md-4">
           <div class="card h-100 text-center sample-card" tabindex="0"
-            data-pdf="samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf"
-            aria-label="Open Education in the Dominican Republic article">
+            data-pdf="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf"
+            aria-label="Abrir artículo sobre la educación en la República Dominicana">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
               <div class="ratio ratio-4x3 mb-3">
-                <iframe title="Education in the Dominican Republic"
-                  src="samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf"
+                <iframe title="Educación en la República Dominicana"
+                  src="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf"
                   class="rounded" loading="lazy"></iframe>
               </div>
-              <h3 class="card-title fw-bold text-black">Education in the Dominican Republic</h3>
-              <p class="card-text text-black">Part of a series of articles I wrote about the UN's Sustainable
-                Development Goals in the Dominican Republic.</p>
+              <h3 class="card-title fw-bold text-black">Educación en la República Dominicana</h3>
+              <p class="card-text text-black">Parte de una serie de artículos que escribí sobre los Objetivos de Desarrollo Sostenible de la ONU en la República Dominicana.</p>
             </div>
           </div>
         </div>
 
-        <!-- Breast Milk Freezer User Manual card -->
+        <!-- Manual de usuario: Congelador de leche materna card -->
         <div class="col-md-4">
           <div class="card h-100 text-center sample-card" tabindex="0"
-            data-pdf="samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf"
-            aria-label="Open Breast Milk Freezer User Manual">
+            data-pdf="/samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf"
+            aria-label="Abrir manual de usuario: Congelador de leche materna">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
               <div class="ratio ratio-4x3 mb-3">
-                <iframe title="Breast Milk Freezer User Manual"
-                  src="samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf" class="rounded"
+                <iframe title="Manual de usuario: Congelador de leche materna"
+                  src="/samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf" class="rounded"
                   loading="lazy"></iframe>
               </div>
-              <h3 class="card-title fw-bold text-black">Breast Milk Freezer User Manual</h3>
-              <p class="card-text text-black">Comprehensive user manual for a medical-grade breast milk freezer,
-                covering safety protocols, installation, and temperature management.</p>
+              <h3 class="card-title fw-bold text-black">Manual de usuario: Congelador de leche materna</h3>
+              <p class="card-text text-black">Manual técnico y de operación para congeladores de leche materna de grado médico, con énfasis en bioseguridad, calibración de temperatura e instalación.</p>
             </div>
           </div>
         </div>
 
-        <!-- Frost-Free Warming and Cooling Drawer card -->
+        <!-- Cajón térmico y de enfriamiento sin escarcha card -->
         <div class="col-md-4">
           <div class="card h-100 text-center sample-card" tabindex="0"
-            data-pdf="samples/technical-writing/hardware/warming-and-cooling-drawer.pdf"
-            aria-label="Open Frost-Free Warming and Cooling Drawer sample">
+            data-pdf="/samples/technical-writing/hardware/warming-and-cooling-drawer.pdf"
+            aria-label="Abrir manual de usuario: Cajón térmico y de enfriamiento sin escarcha">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
               <div class="ratio ratio-4x3 mb-3">
-                <iframe title="Frost-Free Warming and Cooling Drawer"
-                  src="samples/technical-writing/hardware/warming-and-cooling-drawer.pdf" class="rounded"
+                <iframe title="Cajón térmico y de enfriamiento sin escarcha"
+                  src="/samples/technical-writing/hardware/warming-and-cooling-drawer.pdf" class="rounded"
                   loading="lazy"></iframe>
               </div>
-              <h3 class="card-title fw-bold text-black">Frost-Free Warming and Cooling Drawer</h3>
-              <p class="card-text text-black">User manual for the first-of-its-kind dual-function warming and
-                cooling drawer, detailing temperature control, Sabbath mode, and installation.</p>
+              <h3 class="card-title fw-bold text-black">Cajón térmico y de enfriamiento sin escarcha</h3>
+              <p class="card-text text-black">Manual de usuario para el cajón térmico y refrigerador SPHC30/36. Incluye instrucciones de control de temperatura, configuración de modo Sabbath y procedimientos de instalación.</p>
             </div>
           </div>
         </div>
@@ -600,7 +578,7 @@
   </div>
 
   <footer>
-    <p class="text-white text-center">&copy; 2026 Pedro Vega | Built with HTML &bull; CSS &bull; JS &bull; GitHub Pages</p>
+    <p class="text-white text-center">&copy; 2026 Pedro Vega | Creado con HTML &bull; CSS &bull; JS &bull; GitHub Pages</p>
   </footer>
 
 
@@ -609,8 +587,8 @@
     crossorigin="anonymous"></script>
 
   <!-- Shared PDF viewer -->
-  <script src="js/pdf-viewer.js?v=2"></script>
-  <script src="js/sticky-nav.js"></script>
+  <script src="/js/pdf-viewer.js?v=2"></script>
+  <script src="/js/sticky-nav.js"></script>
   <!-- DocSearch JS -->
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
@@ -623,7 +601,7 @@
         indexName: 'portfolio_site',
         insights: true,
         searchParameters: {
-          facetFilters: ['lang:en']
+          facetFilters: ['lang:es']
         }
       });
     });
@@ -812,7 +790,7 @@
     // Three.js integration loaded as ES module below
 
   </script>
-  <script src="js/interactive.js?v=infinite-carousels-v6"></script>
+  <script src="/js/interactive.js?v=infinite-carousels-v6"></script>
   <!-- 3D TARDIS WebGL Implementation (Three.js UMD) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>

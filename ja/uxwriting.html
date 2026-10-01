@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" data-theme="dark">
+<html lang="ja" data-theme="dark">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -10,30 +10,33 @@
       window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
     }
   </script>
-<title>UX Writing | Pedro Vega</title>
+<title>UXライティング | ペドロ・ベガ</title>
 <!-- Primary Meta Tags -->
-<meta name="description" content="UX writing, microcopy, content design, and user flow documentation samples by Pedro Vega.">
+<meta name="description" content="ペドロ・ベガによるUXライティング、マイクロコピー、コンテンツデザイン、およびユーザーフローのドキュメントのサンプルです。">
 
 <!-- Open Graph / Facebook / LinkedIn -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://pvega62.github.io/uxwriting">
+<meta property="og:url" content="https://pvega62.github.io/ja/uxwriting">
 <meta property="og:title" content="UX Writing | Pedro Vega">
-<meta property="og:description" content="UX writing, microcopy, content design, and user flow documentation samples by Pedro Vega.">
+<meta property="og:description" content="ペドロ・ベガによるUXライティング、マイクロコピー、コンテンツデザイン、およびユーザーフローのドキュメントのサンプルです。">
 <meta property="og:image" content="https://pvega62.github.io/images/social-card.png">
 <meta property="og:image:width" content="1050">
 <meta property="og:image:height" content="600">
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://pvega62.github.io/uxwriting">
+<meta name="twitter:url" content="https://pvega62.github.io/ja/uxwriting">
 <meta name="twitter:title" content="UX Writing | Pedro Vega">
-<meta name="twitter:description" content="UX writing, microcopy, content design, and user flow documentation samples by Pedro Vega.">
+<meta name="twitter:description" content="ペドロ・ベガによるUXライティング、マイクロコピー、コンテンツデザイン、およびユーザーフローのドキュメントのサンプルです。">
 <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link href="css/styles.css?v=2" rel="stylesheet"/>
-<link href="css/page-specific.css?v=8" rel="stylesheet"/>
-<link href="images/logo.png" rel="icon" type="image/png"/>
+<link href="/css/styles.css?v=2" rel="stylesheet"/>
+<link href="/css/page-specific.css?v=8" rel="stylesheet"/>
+<link href="/images/logo.png" rel="icon" type="image/png"/>
   <!-- DocSearch CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" />
@@ -43,10 +46,11 @@
       display: none !important;
     }
   </style>
-      <link href="css/interactive.css" rel="stylesheet"/>
+<style>body { font-family: 'Noto Sans JP', sans-serif; }</style>
+      <link href="/css/interactive.css" rel="stylesheet"/>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
+<a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>
 <!-- Header and Navbar -->
 <header class="sticky-top">
     <!-- Mobile Search Bar -->
@@ -57,65 +61,65 @@
     <div class="container-fluid px-0">
       
       <!-- Desktop Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="Desktop navigation">
-        <a class="navbar-brand ms-3" href="/">
-          <img src="images/logo.png" alt="Logo" height="40">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="デスクトップナビゲーション">
+        <a class="navbar-brand ms-3" href="/ja/">
+          <img src="/images/logo.png" alt="Logo" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
             
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/ja/">ホーム</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop1" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                Technical writing
+                テクニカルライティング
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Software/Dev Docs</a>
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/software/docs/intro">Introduction</a></li>
-                    <li><a class="dropdown-item" href="/software/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
-                    <li><a class="dropdown-item" href="/software/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript Tutorial</a></li>
-                    <li><a class="dropdown-item" href="/software/docs/category/stripe-api-documentation">Stripe API</a></li>
-                    <li><a class="dropdown-item" href="/software/docs/category/pet-store-api-documentation">Pet Store API</a></li>
-                    <li><a class="dropdown-item" href="/software/docs/category/commit-messages-and-pull-requests">Commit Messages and Pull Requests</a></li>
-                    <li><a class="dropdown-item" href="/software/docs/artie-case-study">Ask Artie AI Assistant Case Study</a></li>
-                    <li><a class="dropdown-item" href="/software/docs/google-chrome-theme-installation">Google Chrome Theme</a></li>
-                    <li><a class="dropdown-item" href="/software/docs/word-github-wiki-writage">Writage Workflow</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/intro">はじめに</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript チュートリアル</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/category/stripe-api-documentation">Stripe API</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/category/pet-store-api-documentation">Pet Store API</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/category/commit-messages-and-pull-requests">コミットメッセージとプルリクエスト</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/artie-case-study">Artie AIアシスタントのケーススタディ</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/google-chrome-theme-installation">Google Chrome テーマ</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/word-github-wiki-writage">Writageのワークフロー</a></li>
                   </ul>
                 </li>
-                <li><a class="dropdown-item" href="/technical-writing-hardware">Hardware Samples</a></li>
+                <li><a class="dropdown-item" href="/ja/technical-writing-hardware">ハードウェアサンプル</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="/software/blog">Blog</a></li>
+                <li><a class="dropdown-item" href="/software/ja/blog">ブログ</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="/uxwriting">UX writing</a></li>
-            <li class="nav-item"><a class="nav-link" href="/articles">Articles</a></li>
-            <li class="nav-item"><a class="nav-link about-link" href="/aboutme">About me</a></li>
+            <li class="nav-item"><a class="nav-link" href="/ja/uxwriting">UXライティング</a></li>
+            <li class="nav-item"><a class="nav-link" href="/ja/articles">記事</a></li>
+            <li class="nav-item"><a class="nav-link about-link" href="/ja/aboutme">自己紹介</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Contact
+                お問い合わせ
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop2">
                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                 <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Email</a></li>
+                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">メール</a></li>
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">Recordkeeping</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownLang" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language: English" title="Language: English">
-                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="me-1" style="fill: currentColor;"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><img src="/images/flags/us.svg" alt="" class="nav-flag-toggle"><span>English</span>
+                data-bs-toggle="dropdown" aria-expanded="false" aria-label="言語：日本語" title="言語：日本語">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="me-1" style="fill: currentColor;"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><img src="/images/flags/jp.svg" alt="" class="nav-flag-toggle"><span>日本語</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLang">
-                <li><a class="dropdown-item active" href="/uxwriting" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+                <li><a class="dropdown-item" href="/uxwriting" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
                 <li><a class="dropdown-item" href="/es/uxwriting" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
                 <li><a class="dropdown-item" href="/fr/uxwriting" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
                 <li><a class="dropdown-item" href="/ar/uxwriting" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
                 <li><a class="dropdown-item" href="/zh/uxwriting" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
-                <li><a class="dropdown-item" href="/ja/uxwriting" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+                <li><a class="dropdown-item active" href="/ja/uxwriting" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
                 <li><a class="dropdown-item" href="/hi/uxwriting" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
               </ul>
             </li>
@@ -128,77 +132,77 @@
       </nav>
 
       <!-- Mobile Navbar (App Tab Bar) -->
-      <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="Mobile navigation">
-        <a class="navbar-brand ms-2 me-1" href="/">
-          <img src="images/icon-logo.png" alt="Logo" height="40">
+      <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="モバイルナビゲーション">
+        <a class="navbar-brand ms-2 me-1" href="/ja/">
+          <img src="/images/icon-logo.png" alt="Logo" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
           <li class="nav-item dropup d-flex align-items-center">
             <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#" id="navbarDropdown1"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Technical writing"
-              title="Technical writing">
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="テクニカルライティング"
+              title="テクニカルライティング">
               <img src="/images/icon-tech-writing.svg" alt="" class="mobile-nav-icon">
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Software/Dev Docs</a>
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/software/docs/intro">Introduction</a></li>
-                  <li><a class="dropdown-item" href="/software/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
-                  <li><a class="dropdown-item" href="/software/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript Tutorial</a></li>
-                  <li><a class="dropdown-item" href="/software/docs/category/stripe-api-documentation">Stripe API</a></li>
-                  <li><a class="dropdown-item" href="/software/docs/category/pet-store-api-documentation">Pet Store API</a></li>
-                  <li><a class="dropdown-item" href="/software/docs/category/commit-messages-and-pull-requests">Commit Messages and Pull Requests</a></li>
-                  <li><a class="dropdown-item" href="/software/docs/artie-case-study">Ask Artie AI Assistant Case Study</a></li>
-                  <li><a class="dropdown-item" href="/software/docs/google-chrome-theme-installation">Google Chrome Theme</a></li>
-                  <li><a class="dropdown-item" href="/software/docs/word-github-wiki-writage">Writage Workflow</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/intro">はじめに</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript チュートリアル</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/category/stripe-api-documentation">Stripe API</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/category/pet-store-api-documentation">Pet Store API</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/category/commit-messages-and-pull-requests">コミットメッセージとプルリクエスト</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/artie-case-study">Artie AIアシスタントのケーススタディ</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/google-chrome-theme-installation">Google Chrome テーマ</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/word-github-wiki-writage">Writageのワークフロー</a></li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="/technical-writing-hardware">Hardware Samples</a></li>
+              <li><a class="dropdown-item" href="/ja/technical-writing-hardware">ハードウェアサンプル</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="/software/blog">Blog</a></li>
+              <li><a class="dropdown-item" href="/software/ja/blog">ブログ</a></li>
             </ul>
           </li>
           <li class="nav-item d-flex align-items-center">
-            <a class="nav-link px-2 d-flex align-items-center" href="/uxwriting" aria-label="UX writing" title="UX writing">
-              <img src="images/icon-ux-writing.svg" alt="" class="mobile-nav-icon">
+            <a class="nav-link px-2 d-flex align-items-center" href="/ja/uxwriting" aria-label="UXライティング" title="UXライティング">
+              <img src="/images/icon-ux-writing.svg" alt="" class="mobile-nav-icon">
             </a>
           </li>
           <li class="nav-item d-flex align-items-center">
-            <a class="nav-link px-2 d-flex align-items-center" href="/articles" aria-label="Articles" title="Articles">
-              <img src="images/icon-articles.svg" alt="" class="mobile-nav-icon">
+            <a class="nav-link px-2 d-flex align-items-center" href="/ja/articles" aria-label="記事" title="記事">
+              <img src="/images/icon-articles.svg" alt="" class="mobile-nav-icon">
             </a>
           </li>
           <li class="nav-item dropup d-flex align-items-center">
-            <a class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="About me and Contact" title="About me and Contact">
-              <img src="images/icon-vector1.svg" alt="" class="mobile-nav-icon" style="transform: scaleY(-1);">
+            <a class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="自己紹介および連絡先" title="自己紹介および連絡先">
+              <img src="/images/icon-vector1.svg" alt="" class="mobile-nav-icon" style="transform: scaleY(-1);">
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAbout">
-              <li><a class="dropdown-item" href="/aboutme">About Me</a></li>
+              <li><a class="dropdown-item" href="/ja/aboutme">自己紹介</a></li>
               <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
               <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Email</a></li>
+              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">メール</a></li>
             </ul>
           </li>
           <li class="nav-item dropup d-flex align-items-center">
             <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#"
               id="navbarDropdownLangMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-              aria-label="Languages" title="Languages">
-              <img src="images/icon-languages.svg" alt="" class="mobile-nav-icon">
+              aria-label="言語" title="言語">
+              <img src="/images/icon-languages.svg" alt="" class="mobile-nav-icon">
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLangMobile">
-              <li><a class="dropdown-item active" href="/uxwriting" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+              <li><a class="dropdown-item" href="/uxwriting" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
               <li><a class="dropdown-item" href="/es/uxwriting" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
               <li><a class="dropdown-item" href="/fr/uxwriting" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
               <li><a class="dropdown-item" href="/ar/uxwriting" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
               <li><a class="dropdown-item" href="/zh/uxwriting" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
-              <li><a class="dropdown-item" href="/ja/uxwriting" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+              <li><a class="dropdown-item active" href="/ja/uxwriting" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
               <li><a class="dropdown-item" href="/hi/uxwriting" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
             </ul>
           </li>
           <li class="nav-item d-flex align-items-center">
             <a class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/" aria-label="Recordkeeping" title="Recordkeeping">
-              <img src="images/icon-recordkeeping.svg" alt="" class="mobile-nav-icon-colored">
+              <img src="/images/icon-recordkeeping.svg" alt="" class="mobile-nav-icon-colored">
             </a>
           </li>
 </ul>
@@ -210,11 +214,11 @@
 <div class="hero-section">
 <div class="container-fluid px-4">
 <div class="text-center">
-<h1 class="display-4 fw-bold text-white">UX Writing &amp; Content Design</h1>
+<h1 class="display-4 fw-bold text-white">UXライティング＆コンテンツデザイン</h1>
 <div class="row justify-content-center">
 <div class="col-lg-8 text-center intro-text text-white">
-<p class="lead">User centered copy, progressive disclosure flows, and design systems in Figma.</p>
-<p>Each case study tackles high-friction moments across product lifecycles, from onboarding trust architecture and empty states to clear error recovery and urgency-calibrated notifications. Interactive prototypes show each interaction state in code and design.</p>
+<p class="lead">ユーザー中心のコピー、段階的開示フロー、FigmaによるデザインシステムをFeatureします。</p>
+<p>各ケーススタディは、製品ライフサイクル全体にわたる摩擦の大きい場面に取り組んでいます。オンボーディングの信頼アーキテクチャやエンプティステートから、明確なエラー回復や緊急度に応じた通知まで。インタラクティブなプロトタイプにより、コードとデザインの各インタラクション状態を確認できます。</p>
 </div>
 </div>
 </div>
@@ -228,24 +232,24 @@
 <div class="ux-filter-wrapper text-center">
 <div class="text-center mb-2">
 <span class="text-uppercase fw-bold small" style="letter-spacing: 1.2px; color: #1f3850; font-size: 0.8rem;">
-<i class="bi bi-funnel-fill me-1"></i> Filter by Focus Area
+<i class="bi bi-funnel-fill me-1"></i> フォーカスエリア別フィルター
 </span>
 </div>
 <div class="ux-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
-<button type="button" class="btn ux-filter-pill active" data-filter="all">All <span class="badge ms-1">15</span></button>
-<button type="button" class="btn ux-filter-pill" data-filter="prototype"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;"></i> Functional Prototype <span class="badge ms-1">8</span></button>
-<button type="button" class="btn ux-filter-pill" data-filter="high-stakes">High-Stakes &amp; Alerts <span class="badge ms-1">3</span></button>
-<button type="button" class="btn ux-filter-pill" data-filter="error-recovery">Error Recovery &amp; Friction <span class="badge ms-1">5</span></button>
-<button type="button" class="btn ux-filter-pill" data-filter="onboarding">Onboarding &amp; Trust <span class="badge ms-1">2</span></button>
-<button type="button" class="btn ux-filter-pill" data-filter="subscriptions">Subscriptions &amp; Microcopy <span class="badge ms-1">5</span></button>
+<button type="button" class="btn ux-filter-pill active" data-filter="all">すべて <span class="badge ms-1">15</span></button>
+<button type="button" class="btn ux-filter-pill" data-filter="prototype"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;"></i>機能的プロトタイプ <span class="badge ms-1">8</span></button>
+<button type="button" class="btn ux-filter-pill" data-filter="high-stakes">高リスク・アラート <span class="badge ms-1">3</span></button>
+<button type="button" class="btn ux-filter-pill" data-filter="error-recovery">エラー回復・摩擦 <span class="badge ms-1">5</span></button>
+<button type="button" class="btn ux-filter-pill" data-filter="onboarding">オンボーディング・信頼 <span class="badge ms-1">2</span></button>
+<button type="button" class="btn ux-filter-pill" data-filter="subscriptions">サブスクリプション・マイクロコピー <span class="badge ms-1">5</span></button>
 </div>
 </div>
 <div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="uxSamplesCarousel">
 <div class="carousel-inner"><div class="carousel-item active" data-category="onboarding prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-15.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-15.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-15.pdf" title="UX Writing Case Study: Banking App Onboarding Flow"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-15.pdf" title="UX Writing Case Study: Banking App Onboarding Flow"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -260,8 +264,8 @@
 <b>Buttons:</b> 25 characters</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-1" aria-expanded="false" aria-controls="ux-details-1">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-1" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -281,19 +285,19 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-14.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3 d-flex flex-column p-2">
   <div class="btn-group btn-group-sm w-100 mb-2 rounded-2" role="group" aria-label="Version preview switcher" style="background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.18);">
-    <button type="button" class="btn btn-draft-toggle active fw-semibold small py-1 px-2" data-pdf="samples/ux-writing/ux-writing-challenge-14.pdf">
+    <button type="button" class="btn btn-draft-toggle active fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf">
       <i class="bi bi-check2 me-1"></i> Shipped v2
     </button>
-    <button type="button" class="btn btn-draft-toggle fw-semibold small py-1 px-2" data-pdf="samples/ux-writing/ux-writing-challenge-14-draft1.pdf">
+    <button type="button" class="btn btn-draft-toggle fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14-draft1.pdf">
       <i class="bi bi-x-lg me-1"></i> Draft 1 Scrapped
     </button>
   </div>
   <div class="flex-grow-1 position-relative" style="min-height: 280px;">
-    <iframe id="challenge14Iframe" allowfullscreen="" class="w-100 h-100 position-absolute top-0 start-0" frameborder="0" src="samples/ux-writing/ux-writing-challenge-14.pdf" title="UX Writing Case Study: App Error with Unknown Cause"></iframe>
+    <iframe id="challenge14Iframe" allowfullscreen="" class="w-100 h-100 position-absolute top-0 start-0" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-14.pdf" title="UX Writing Case Study: App Error with Unknown Cause"></iframe>
   </div>
 </div>
 <div class="col-md-9">
@@ -309,8 +313,8 @@
 <b>Buttons:</b> 15 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-2" aria-expanded="false" aria-controls="ux-details-2">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-2" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -342,10 +346,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="high-stakes prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-1.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-1.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-1.pdf" title="UX Writing Case Study: Flight Cancellation Notification"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-1.pdf" title="UX Writing Case Study: Flight Cancellation Notification"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -360,8 +364,8 @@
 <b>Buttons:</b> 25 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-3" aria-expanded="false" aria-controls="ux-details-3">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-3" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -380,10 +384,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-6.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-6.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-6.pdf" title="UX Writing Case Study: Fire Alert Notification"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-6.pdf" title="UX Writing Case Study: Fire Alert Notification"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -397,8 +401,8 @@
 <b>Body:</b> 45 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-4" aria-expanded="false" aria-controls="ux-details-4">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-4" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -417,10 +421,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-9.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-9.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-9.pdf" title="UX Writing Case Study: Expired Credit Card Error"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-9.pdf" title="UX Writing Case Study: Expired Credit Card Error"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -434,8 +438,8 @@
 <b>Body:</b> 45 characters</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-5" aria-expanded="false" aria-controls="ux-details-5">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-5" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -454,10 +458,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-12.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-12.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-12.pdf" title="UX Writing Case Study: 'Fake Name' Error Message"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-12.pdf" title="UX Writing Case Study: 'Fake Name' Error Message"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -470,8 +474,8 @@
 <b>45 characters max</b></p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-6" aria-expanded="false" aria-controls="ux-details-6">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-6" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -489,10 +493,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-11.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-11.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-11.pdf" title="UX Writing Case Study: Contact Lens Subscription - Title &amp; Meta Description"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-11.pdf" title="UX Writing Case Study: Contact Lens Subscription - Title &amp; Meta Description"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -506,8 +510,8 @@
 <b>Meta Description:</b> 160 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-7" aria-expanded="false" aria-controls="ux-details-7">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-7" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -524,10 +528,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-13.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-13.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-13.pdf" title="UX Writing Case Study: Truck Driver Delay Notification"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-13.pdf" title="UX Writing Case Study: Truck Driver Delay Notification"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -542,8 +546,8 @@
 <b>Buttons:</b> 25 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-8" aria-expanded="false" aria-controls="ux-details-8">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-8" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -561,10 +565,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="onboarding"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-10.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-10.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-10.pdf" title="UX Writing Case Study: Car Buying Website Location Request"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-10.pdf" title="UX Writing Case Study: Car Buying Website Location Request"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -579,8 +583,8 @@
 <b>Button:</b> 15 characters</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-9" aria-expanded="false" aria-controls="ux-details-9">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-9" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -599,10 +603,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-5.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-5.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-5.pdf" title="UX Writing Case Study: App Crash Recovery Message"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-5.pdf" title="UX Writing Case Study: App Crash Recovery Message"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -617,8 +621,8 @@
 <b>Buttons:</b> 20 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-10" aria-expanded="false" aria-controls="ux-details-10">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-10" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -637,10 +641,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-4.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-4.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-4.pdf" title="UX Writing Case Study: Grocery Subscription Promotion"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-4.pdf" title="UX Writing Case Study: Grocery Subscription Promotion"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -655,8 +659,8 @@
 <b>Buttons:</b> 25 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-11" aria-expanded="false" aria-controls="ux-details-11">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-11" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -675,10 +679,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-3.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-3.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-3.pdf" title="UX Writing Case Study: Incorrect Email Error Message"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-3.pdf" title="UX Writing Case Study: Incorrect Email Error Message"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -691,8 +695,8 @@
 <b>40 characters max.</b></p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-12" aria-expanded="false" aria-controls="ux-details-12">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-12" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -709,10 +713,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-2.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-2.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-2.pdf" title="UX Writing Case Study: Sports Fan App Promotion"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-2.pdf" title="UX Writing Case Study: Sports Fan App Promotion"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -727,8 +731,8 @@
 <b>Buttons:</b> 25 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-13" aria-expanded="false" aria-controls="ux-details-13">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-13" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -746,10 +750,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-8.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-8.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-8.pdf" title="UX Writing Case Study: Concert Promotion"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-8.pdf" title="UX Writing Case Study: Concert Promotion"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -764,8 +768,8 @@
 <b>Button:</b> 25 characters</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-14" aria-expanded="false" aria-controls="ux-details-14">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-14" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -784,10 +788,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="samples/ux-writing/ux-writing-challenge-7.pdf" role="button" tabindex="0">
+<div aria-label="Open UX Writing sample" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-7.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/ux-writing-challenge-7.pdf" title="UX Writing Case Study: Rivalry Score Update"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-7.pdf" title="UX Writing Case Study: Rivalry Score Update"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -801,8 +805,8 @@
 <b>Body:</b> 45 characters max</p>
 
 <button class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" type="button" onclick="event.stopPropagation()" data-bs-toggle="collapse" data-bs-target="#ux-details-15" aria-expanded="false" aria-controls="ux-details-15">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> View Strategy &amp; Rationale</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Hide Strategy &amp; Rationale</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 戦略と根拠を見る</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 戦略と根拠を隠す</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-15" onclick="event.stopPropagation()">
 <h6><b>Strategy &amp; Rationale</b></h6>
@@ -853,11 +857,11 @@
 <div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="hallPassCarousel">
 <div class="carousel-inner">
 <div class="carousel-item active"><div class="row justify-content-center"><div class="col-11 col-lg-10">
-<div aria-label="Open Spidey Bathroom Pass sample" class="card card-border sample-card hallpass-card hallpass-card-spidey mb-4" data-pdf="samples/ux-writing/spidey-bathroom-pass.pdf" role="button" tabindex="0">
+<div aria-label="Open Spidey Bathroom Pass sample" class="card card-border sample-card hallpass-card hallpass-card-spidey mb-4" data-pdf="/samples/ux-writing/spidey-bathroom-pass.pdf" role="button" tabindex="0">
 <div class="row g-0 align-items-center">
 <div class="col-md-5 p-3 p-lg-4">
 <div class="hallpass-preview-wrapper position-relative">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/spidey-bathroom-pass.pdf" style="min-height: 360px;" title="Bathroom Pass"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spidey-bathroom-pass.pdf" style="min-height: 360px;" title="Bathroom Pass"></iframe>
 <div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
 <i class="bi bi-arrows-fullscreen"></i> Click card to view full PDF
 </div>
@@ -893,11 +897,11 @@
 </div>
 </div></div></div>
 <div class="carousel-item"><div class="row justify-content-center"><div class="col-11 col-lg-10">
-<div aria-label="Open Hulk Hall Pass sample" class="card card-border sample-card hallpass-card hallpass-card-hulk mb-4" data-pdf="samples/ux-writing/hulk-hall-pass.pdf" role="button" tabindex="0">
+<div aria-label="Open Hulk Hall Pass sample" class="card card-border sample-card hallpass-card hallpass-card-hulk mb-4" data-pdf="/samples/ux-writing/hulk-hall-pass.pdf" role="button" tabindex="0">
 <div class="row g-0 align-items-center">
 <div class="col-md-5 p-3 p-lg-4">
 <div class="hallpass-preview-wrapper position-relative">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="samples/ux-writing/hulk-hall-pass.pdf" style="min-height: 360px;" title="Hulk Hall Pass"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/hulk-hall-pass.pdf" style="min-height: 360px;" title="Hulk Hall Pass"></iframe>
 <div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
 <i class="bi bi-arrows-fullscreen"></i> Click card to view full PDF
 </div>
@@ -949,15 +953,15 @@
 </div>
 </div>
 <footer>
-<p class="text-white text-center">&copy; 2026 Pedro Vega | Built with HTML &bull; CSS &bull; JS &bull; GitHub Pages</p>
+<p class="text-white text-center">&copy; 2026 Pedro Vega | HTML &bull; CSS &bull; JS &bull; GitHub Pages を使用して構築</p>
 </footer>
 </main>
 <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Shared PDF viewer -->
-<script src="js/pdf-viewer.js?v=2"></script>
-<script src="js/sticky-nav.js"></script>
-<script src="js/page-specific.js?v=8"></script>
-<script src="js/figma-viewer.js"></script>
+<script src="/js/pdf-viewer.js?v=2"></script>
+<script src="/js/sticky-nav.js"></script>
+<script src="/js/page-specific.js?v=8"></script>
+<script src="/js/figma-viewer.js"></script>
 <!-- Modal -->
 <div aria-hidden="true" aria-labelledby="figmaModalLabel" class="modal fade" id="figmaModal" tabindex="-1">
 <div class="modal-dialog modal-xl">
@@ -986,7 +990,7 @@
         indexName: 'portfolio_site',
         insights: true,
         searchParameters: {
-          facetFilters: ['lang:en']
+          facetFilters: ['lang:ja']
         }
       });
     });
@@ -1091,7 +1095,7 @@
     })();
 
   </script>
-    <script src="js/interactive.js?v=infinite-carousels-v6"></script>
+    <script src="/js/interactive.js?v=infinite-carousels-v6"></script>
 </body>
 </html>
 

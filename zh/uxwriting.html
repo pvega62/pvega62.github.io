@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script>
+    if (window.location.pathname.endsWith('.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
+<title>UX 写作与内容设计 | 佩德罗·维加</title>
+<!-- Primary Meta Tags -->
+<meta content="佩德罗·维加（Pedro Vega）的用户体验文案示例、微文案、内容设计及用户旅程文档。" name="description"/>
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta content="website" property="og:type"/>
+<meta content="https://pvega62.github.io/zh/uxwriting" property="og:url"/>
+<meta content="UX 写作与内容设计 | 佩德罗·维加" property="og:title"/>
+<meta content="佩德罗·维加（Pedro Vega）的用户体验文案示例、微文案、内容设计及用户旅程文档。" property="og:description"/>
+<meta content="https://pvega62.github.io/images/social-card.png" property="og:image"/>
+<meta content="1050" property="og:image:width"/>
+<meta content="600" property="og:image:height"/>
+<!-- Twitter / X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://pvega62.github.io/zh/uxwriting" name="twitter:url"/>
+<meta content="UX 写作与内容设计 | 佩德罗·维加" name="twitter:title"/>
+<meta content="佩德罗·维加（Pedro Vega）的用户体验文案示例、微文案、内容设计及用户旅程文档。" name="twitter:description"/>
+<meta content="https://pvega62.github.io/images/social-card.png" name="twitter:image"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="/css/styles.css?v=2" rel="stylesheet"/>
+<link href="/css/page-specific.css?v=8" rel="stylesheet"/>
+<link href="/images/logo.png" rel="icon" type="image/png"/>
+<!-- DocSearch CSS -->
+<link href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" rel="stylesheet"/>
+<style>
+    /* Force hide the default Algolia floating sidepanel button globally */
+    .DocSearch-SidepanelButton.floating {
+      display: none !important;
+    }
+  </style>
+<link href="/css/interactive.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳转至主要内容</a>
+<!-- Header and Navbar -->
+<header class="sticky-top">
+<!-- Mobile Search Bar -->
+<div class="d-lg-none d-flex justify-content-end w-100"><div class="mobile-nav-search-container" style="position: absolute; right: 2px; top: 8px; z-index: 1050; padding: 0; margin: 0;">
+<div class="docsearch-container"></div>
+</div></div>
+<div class="container-fluid px-0">
+<!-- Desktop Navbar -->
+<nav aria-label="Desktop navigation" class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation">
+<a class="navbar-brand ms-3" href="/zh/">
+<img alt="Logo" height="40" src="/images/logo.png"/>
+</a>
+<div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
+<ul class="navbar-nav me-3">
+<li class="nav-item"><a class="nav-link" href="/zh/">首页</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdownDesktop1" role="button">
+                技术写作
+              </a>
+<ul aria-labelledby="navbarDropdownDesktop1" class="dropdown-menu">
+<li class="dropend position-relative">
+<a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">软件 / 开发文档</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/software/zh/docs/intro">介绍</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/category/cloud-data-pipeline-documentation">云数据管道</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript 教程</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/category/stripe-api-documentation">Stripe API</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/category/pet-store-api-documentation">Pet Store API</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/category/commit-messages-and-pull-requests">提交信息与拉取请求</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/artie-case-study">案例研究：Ask Artie AI 助手</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/google-chrome-theme-installation">Google Chrome 主题</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/word-github-wiki-writage">Writage 工作流</a></li>
+</ul>
+</li>
+<li><a class="dropdown-item" href="/zh/technical-writing-hardware">硬件文档样本</a></li>
+<li><hr class="dropdown-divider"/></li>
+<li><a class="dropdown-item" href="/software/zh/blog">博客</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="/zh/uxwriting">UX 写作</a></li>
+<li class="nav-item"><a class="nav-link" href="/zh/articles">文章</a></li>
+<li class="nav-item"><a class="nav-link about-link" href="/zh/aboutme">关于我</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdownDesktop2" role="button">
+                联系我
+              </a>
+<ul aria-labelledby="navbarDropdownDesktop2" class="dropdown-menu">
+<li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">领英</a></li>
+<li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+<li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">电子邮箱</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">Recordkeeping</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" aria-label="语言：普通话" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLang" role="button" title="语言：普通话">
+<svg aria-hidden="true" class="me-1" height="20" style="fill: currentColor;" viewbox="0 0 24 24" width="20"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg><img alt="" class="nav-flag-toggle" src="/images/flags/cn.svg"/><span>普通话</span>
+</a>
+<ul aria-labelledby="navbarDropdownLang" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/uxwriting" hreflang="en-US" lang="en-US"><img alt="" class="dropdown-flag" src="/images/flags/us.svg"/><span>English</span></a></li>
+<li><a class="dropdown-item" href="/es/uxwriting" hreflang="es" lang="es"><img alt="" class="dropdown-flag" src="/images/flags/do.svg"/><span>Español</span></a></li>
+<li><a class="dropdown-item" href="/fr/uxwriting" hreflang="fr-FR" lang="fr-FR"><img alt="" class="dropdown-flag" src="/images/flags/fr.svg"/><span>Français</span></a></li>
+<li><a class="dropdown-item" href="/ar/uxwriting" hreflang="ar" lang="ar"><img alt="" class="dropdown-flag" src="/images/flags/ma.svg"/><span>العربية</span></a></li>
+<li><a class="dropdown-item active" href="/zh/uxwriting" hreflang="zh-Hans" lang="zh-Hans"><img alt="" class="dropdown-flag" src="/images/flags/cn.svg"/><span>普通话</span></a></li>
+<li><a class="dropdown-item" href="/ja/uxwriting" hreflang="ja" lang="ja" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/jp.svg"/><span>日本語</span></a></li>
+<li><a class="dropdown-item" href="/hi/uxwriting" hreflang="hi" lang="hi" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/in.svg"/><span>हिन्दी</span></a></li>
+</ul>
+</li>
+<li class="nav-item d-flex align-items-center ms-1">
+<div class="docsearch-container"></div>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Mobile Navbar (App Tab Bar) -->
+<nav aria-label="Mobile navigation" class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation">
+<a class="navbar-brand ms-2 me-1" href="/zh/">
+<img alt="Logo" height="40" src="/images/icon-logo.png"/>
+</a>
+<ul class="navbar-nav flex-row w-100 justify-content-around me-2">
+<li class="nav-item dropup d-flex align-items-center">
+<a aria-expanded="false" aria-label="技术写作" class="nav-link dropdown-toggle px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdown1" role="button" title="技术写作">
+<img alt="" class="mobile-nav-icon" src="/images/icon-tech-writing.svg"/>
+</a>
+<ul aria-labelledby="navbarDropdown1" class="dropdown-menu">
+<li class="dropend position-relative">
+<a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">软件 / 开发文档</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/software/zh/docs/intro">介绍</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/category/cloud-data-pipeline-documentation">云数据管道</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript 教程</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/category/stripe-api-documentation">Stripe API</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/category/pet-store-api-documentation">Pet Store API</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/category/commit-messages-and-pull-requests">提交信息与拉取请求</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/artie-case-study">案例研究：Ask Artie AI 助手</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/google-chrome-theme-installation">Google Chrome 主题</a></li>
+<li><a class="dropdown-item" href="/software/zh/docs/word-github-wiki-writage">Writage 工作流</a></li>
+</ul>
+</li>
+<li><a class="dropdown-item" href="/zh/technical-writing-hardware">硬件文档样本</a></li>
+<li><hr class="dropdown-divider"/></li>
+<li><a class="dropdown-item" href="/software/zh/blog">博客</a></li>
+</ul>
+</li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="UX 写作" class="nav-link px-2 d-flex align-items-center" href="/zh/uxwriting" title="UX 写作">
+<img alt="" class="mobile-nav-icon" src="/images/icon-ux-writing.svg"/>
+</a>
+</li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="文章" class="nav-link px-2 d-flex align-items-center" href="/zh/articles" title="文章">
+<img alt="" class="mobile-nav-icon" src="/images/icon-articles.svg"/>
+</a>
+</li>
+<li class="nav-item dropup d-flex align-items-center">
+<a aria-expanded="false" aria-label="关于我和联系方式" class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownAbout" role="button" title="关于我和联系方式">
+<img alt="" class="mobile-nav-icon" src="/images/icon-vector1.svg" style="transform: scaleY(-1);"/>
+</a>
+<ul aria-labelledby="navbarDropdownAbout" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/zh/aboutme">关于我</a></li>
+<li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">领英</a></li>
+<li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+<li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">电子邮箱</a></li>
+</ul>
+</li>
+<li class="nav-item dropup d-flex align-items-center">
+<a aria-expanded="false" aria-label="语言选择" class="nav-link dropdown-toggle px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLangMobile" role="button" title="语言选择">
+<img alt="" class="mobile-nav-icon" src="/images/icon-languages.svg"/>
+</a>
+<ul aria-labelledby="navbarDropdownLangMobile" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/uxwriting" hreflang="en-US" lang="en-US"><img alt="" class="dropdown-flag" src="/images/flags/us.svg"/><span>English</span></a></li>
+<li><a class="dropdown-item" href="/es/uxwriting" hreflang="es" lang="es"><img alt="" class="dropdown-flag" src="/images/flags/do.svg"/><span>Español</span></a></li>
+<li><a class="dropdown-item" href="/fr/uxwriting" hreflang="fr-FR" lang="fr-FR"><img alt="" class="dropdown-flag" src="/images/flags/fr.svg"/><span>Français</span></a></li>
+<li><a class="dropdown-item" href="/ar/uxwriting" hreflang="ar" lang="ar"><img alt="" class="dropdown-flag" src="/images/flags/ma.svg"/><span>العربية</span></a></li>
+<li><a class="dropdown-item active" href="/zh/uxwriting" hreflang="zh-Hans" lang="zh-Hans"><img alt="" class="dropdown-flag" src="/images/flags/cn.svg"/><span>普通话</span></a></li>
+<li><a class="dropdown-item" href="/ja/uxwriting" hreflang="ja" lang="ja" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/jp.svg"/><span>日本語</span></a></li>
+<li><a class="dropdown-item" href="/hi/uxwriting" hreflang="hi" lang="hi" target="_self"><img alt="" class="dropdown-flag" src="/images/flags/in.svg"/><span>हिन्दी</span></a></li>
+</ul>
+</li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="Recordkeeping" class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/" title="Recordkeeping">
+<img alt="" class="mobile-nav-icon-colored" src="/images/icon-recordkeeping.svg"/>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main-content" tabindex="-1">
+<div class="hero-section">
+<div class="container-fluid px-4">
+<div class="text-center">
+<h1 class="display-4 fw-bold text-white">UX 写作与内容设计</h1>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center intro-text text-white">
+<p class="lead">以用户为中心的文案、渐进式信息披露流程以及 Figma 中的设计系统。</p>
+<p>每份案例研究都探讨了产品生命周期中各阶段的高摩擦环节，从建立信任架构和处理空状态，到清晰的错误恢复以及根据紧急程度调整的通知。交互式原型通过代码和设计展示了每个交互状态。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- light band with cards -->
+<div class="py-5 light-section" id="ux-carousel-container">
+<div class="container-fluid px-4">
+<!-- Category Filter Tabs (High-Contrast Navy Dock) -->
+<div class="ux-filter-wrapper text-center">
+<div class="text-center mb-2">
+<span class="text-uppercase fw-bold small" style="letter-spacing: 1.2px; color: #1f3850; font-size: 0.8rem;">
+<i class="bi bi-funnel-fill me-1"></i> 按核心领域筛选
+</span>
+</div>
+<div class="ux-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
+<button class="btn ux-filter-pill active" data-filter="all" type="button">全部 <span class="badge ms-1">15</span></button>
+<button class="btn ux-filter-pill" data-filter="prototype" type="button"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;"></i> 交互式原型 <span class="badge ms-1">8</span></button>
+<button class="btn ux-filter-pill" data-filter="high-stakes" type="button">高风险场景与警报 <span class="badge ms-1">3</span></button>
+<button class="btn ux-filter-pill" data-filter="error-recovery" type="button">错误恢复与降低摩擦 <span class="badge ms-1">5</span></button>
+<button class="btn ux-filter-pill" data-filter="onboarding" type="button">新手引导与信任构建 <span class="badge ms-1">2</span></button>
+<button class="btn ux-filter-pill" data-filter="subscriptions" type="button">订阅流程与微文案 <span class="badge ms-1">5</span></button>
+</div>
+</div>
+<div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="uxSamplesCarousel">
+<div class="carousel-inner">
+<div class="carousel-item active" data-category="onboarding prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-15.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-15.pdf" title="用户体验文案案例研究：银行应用注册流程"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">银行应用注册流程</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>新用户在使用银行应用时常感到焦虑，并容易在多步骤的财务自动化设置中途放弃。在建立安全信任的同时，引导用户完成账户创建、账单分类和自动月度扣款。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 45 字符<br/>
+<b>正文内容：</b> 100 字符<br/>
+<b>操作按钮：</b> 25 字符</p>
+<button aria-controls="ux-details-1" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-1" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-1" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>该核心策略旨在通过每个交互环节增强用户信心。专业、清晰且令人安心的微文案，让财务自动化显得既安全又简单明了。该流程循序渐进地展现关键优势，以避免用户产生认知负荷。</p>
+<ul>
+<li><strong>屏幕 1：核心价值主张。</strong> 第一屏以主标题 <code>Never fear, Paymate's here!</code> 直接切入用户痛点，传递核心便利：自动化账单管理与及时的缴费提醒。</li>
+<li><strong>屏幕 2：建立安全信任。</strong> 在请求用户敏感数据前，第二屏直面安全顾虑。主标题 <code>Fort Knox security. In your pocket.</code> 借用家喻户晓的诺克斯堡金库隐喻传递坚实防护，正文进一步强调行业尖端网络安全保障。</li>
+<li><strong>屏幕 3：突出智能功能。</strong> 本屏介绍自动化账单分类功能。主标题 <code>Smartphone, smart banking, smart user</code> 强化用户掌控感，同时展现系统智能化水平。</li>
+<li><strong>屏幕 4–7：设置流程。</strong> 建立信任后，流程顺利过渡至账户创建与支付方式绑定。简洁的微文案（<code>Enough about us, let's focus on you.</code>）引导用户完成清晰易填的表单，最终以明确的成功确认页（<code>Welcome Aboard!</code>）收尾。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>渐进式信息披露有效缓解了用户焦虑，消除了流程阻力，显著提升了新手引导的完成率。复杂的金融注册由此转变为高信任度、无障碍的用户旅程。</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FNjNjYmTQPlZiU2aoxaHdV/UX-Writing-Challenge--15?node-id=4-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=4%3A2&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">查看原型</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div>
+<div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3 d-flex flex-column p-2">
+<div aria-label="版本预览切换器" class="btn-group btn-group-sm w-100 mb-2 rounded-2" role="group" style="background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.18);">
+<button class="btn btn-draft-toggle active fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" type="button">
+<i class="bi bi-check2 me-1"></i> 上线最终版 v2
+</button>
+<button class="btn btn-draft-toggle fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14-draft1.pdf" type="button">
+<i class="bi bi-x-lg me-1"></i> 初版草案（废弃）
+</button>
+</div>
+<div class="flex-grow-1 position-relative" style="min-height: 280px;">
+<iframe allowfullscreen="" class="w-100 h-100 position-absolute top-0 start-0" frameborder="0" id="challenge14Iframe" src="/samples/ux-writing/ux-writing-challenge-14.pdf" title="用户体验文案案例研究：原因未知的应用错误"></iframe>
+</div>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">原因未知的应用错误</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>系统突发故障导致用户无法获取比价数据，且未返回具体错误代码。需要以透明诚恳的方式告知用户，防止用户流失，并提供即时的恢复路径。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 30 字数上限<br/>
+<b>正文内容：</b> 120 字数上限<br/>
+<b>操作按钮：</b> 15 字数上限</p>
+<button aria-controls="ux-details-2" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-2" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-2" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>本案例展示了迭代式文案语调校准的过程，以及承认初稿失败的重要价值。当用户无法使用核心功能时，幽默调侃会让用户感到被忽视与轻慢。设计果断放弃轻佻的虚构叙事，转向直接、透明且富有同理心的恢复体验。</p>
+<ul class="mb-3">
+<li><strong style="color: #ff9999 !important;"><i class="bi bi-x-circle me-1"></i>初稿 1（已废弃；初稿失败案例）。</strong><br/><span class="d-block my-1" style="color: #e2e8f0 !important;">主标题：<code>ERROR CODE: 42</code>（14 字符） &bull; 正文：<em>"It looks like the elf we have tracking your prices (Alan) stepped out for a quick call or something. Let's give Al a second. If you're in a rush, try our website."</em>（154 字符） &bull; 按钮：<code>RETRY</code>、<code>WEBSITE</code></span><span style="color: #cbd5e1 !important;"><strong>为何失败：</strong> 轻浮搞笑的语气在服务中断时极易激怒用户。虚构的精灵桥段拖延了解决时机，任意编造的错误代码掩盖了真正原因，且字数严重超出 120 字符限制。</span></li>
+<li class="mt-3"><strong style="color: #85e3a8 !important;"><i class="bi bi-check-circle me-1"></i>定稿 2（已上线；校准后文案）。</strong><br/><span class="d-block my-1" style="color: #e2e8f0 !important;">主标题：<code>Prices are unavailable.</code>（23 字符） &bull; 正文：<em>"We can't load prices right now. Please try again soon or visit our website for the latest info and prices."</em>（101 字符） &bull; 按钮：<code>RETRY</code>、<code>WEBSITE</code></span><span style="color: #cbd5e1 !important;"><strong>为何成功：</strong> 完全透明诚实，直截了当说明系统限制且无晦涩技术黑话。清晰的双路径恢复机制（重试 <code>RETRY</code> 与访问网页端 <code>WEBSITE</code>）赋予用户主动权并维系了品牌公信力。</span></li>
+<li class="mt-3"><strong style="color: #e8c47c !important;"><i class="bi bi-lightbulb me-1"></i>内容设计要点。</strong><br/><span style="color: #cbd5e1 !important;">优秀的内容设计不仅在于如何表达，更在于懂得何时<em>不</em>使用幽默。关键错误恢复必须优先保证绝对清晰、同理心与快速自救通道，而非盲目卖弄品牌人设。</span></li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>宕机期间的透明沟通有效守护了品牌信誉。即使面对突发服务中断，双路径恢复也能大幅减少支持工单并保持用户黏性。</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/design/KSZ6n1AWQbgiIWX2BLo6o1/UX-Writing-Challenge--14?node-id=0-1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">查看原型</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="high-stakes prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-1.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-1.pdf" title="用户体验文案案例研究：航班取消通知"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">航班取消通知</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>恶劣天气导致某位旅客的航班突然取消。请立即向该乘客发出通知，提供切实可行且具有时效性的指引，帮助其在机场内顺利通行并抵达改签柜台，同时避免引发恐慌。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 45 字符<br/>
+<b>正文内容：</b> 175 字数上限<br/>
+<b>操作按钮：</b> 25 字数上限</p>
+<button aria-controls="ux-details-3" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-3" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-3" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>在压力巨大的旅行中断情况下，需要采用直接、不花哨的表达方式，优先确保信息快速被理解，而非使用闲聊中的填充语。</p>
+<ul>
+<li><strong>主标题：</strong> <code>FLIGHT CANCELLED. GO TO HELP DESK</code> 具备极高的扫视效率，开门见山说明发生了什么以及下一步去向。</li>
+<li><strong>正文内容：</strong> 文案明确提供了具体航班号（<code>DOC063</code>）与清晰原因（“恶劣天气”），并强化了即时行动指南：“请前往服务台”。</li>
+<li><strong>操作按钮：</strong> <code>Got it</code> 按钮可直接关闭通知，而 <code>Airport Map</code> 则能直接调出机场寻路导航，避免乘客在复杂航站楼内迷失方向。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>明确直接的沟通有效平息了旅客的恐慌情绪，并有序引导客流前往指定服务窗口。移动端的快速自助导航将乘客焦虑降至最低，在严重航班变故中维护了长期品牌好感。</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/2NGMklaY5uH05Qy22ZnHP4/UX-Writing-Challenge--1?node-id=19-124&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=19%3A124&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">查看原型</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div>
+<div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-6.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-6.pdf" title="用户体验文案案例研究：火情警报通知"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">火情警报通知</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>司机通勤路线上突发野火，威胁道路通行与人身安全。需要向驾驶中的用户推送紧急、认知负荷极低的通知，促成迅速安全的重新规划路线。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 30 字数上限<br/>
+<b>正文内容：</b> 45 字数上限</p>
+<button aria-controls="ux-details-4" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-4" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-4" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>驾车场景下关乎人身安全的移动警报，必须实现瞬间一瞥即可完全理解。</p>
+<ul>
+<li><strong>设计与基调：</strong> 采用高对比度警示色与简洁的全大写排版，在不干扰屏幕视线的前提下传递最高级别的安全优先级。</li>
+<li><strong>主标题：</strong> <code>FIRE ON ATLANTIC AVE</code> 在 25 字符内准确传达危险类型与地理临近度。</li>
+<li><strong>正文内容：</strong> <code>FIRE MAY AFFECT YOUR ROUTE. REROUTE.</code> 简明下达行动指令，不分散用户的驾驶注意力。</li>
+<li><strong>操作按钮：</strong> <code>REROUTE TO SAFETY</code> 让避险操作明确果断、直奔安全主题。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>优先保障驾驶员生命安全并迅速绕行，防止用户误入危险区域，全面履行了导航平台的安全注意义务。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div>
+<div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-9.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-9.pdf" title="用户体验文案案例研究：信用卡过期错误提示"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">信用卡过期错误提示</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>客户尝试完成时间紧迫的租车预订，但系统绑定的支付方式已过期。需要准确指明症结，引导用户更新信息，避免导致订单放弃。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 30 字符<br/>
+<b>正文内容：</b> 45 字符</p>
+<button aria-controls="ux-details-5" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-5" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-5" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>结账支付错误必须具备直接清晰的解决方案。此阶段任何含糊不清都会直接导致交易流失。</p>
+<ul>
+<li><strong>主标题：</strong> <code>YOUR CARD IS EXPIRED!</code> 瞬间锁定具体阻碍，避免与额度超限、网络故障或登录失效混淆。</li>
+<li><strong>正文内容：</strong> <code>Update card details or add a new one</code> 在 40 字符内清晰告知两种解决途径。</li>
+<li><strong>界面排版：</strong> 表单中的视觉引导直接高亮过期日期输入框，将视线直引至解题入口。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>清晰的支付自救微文案守护了结账转化率，防止高意向预订流程中出现用户流失。</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/RjNFdKOJncmtaAH0IzURy2/UX-Writing-Challenge--9?node-id=9-42&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=9%3A42&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">查看原型</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-12.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-12.pdf" title="用户体验文案案例研究：“虚假姓名”拦截错误提示"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">“虚假姓名”拦截错误提示</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>在账户创建过程中，自动欺诈检测系统会将合法用户的独特或不常见的姓名标记为可疑。应及时进行身份验证，同时保持尊重，避免让用户感到疏远或难堪。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>正文内容：</b> 45 字数上限</p>
+<button aria-controls="ux-details-6" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-6" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-6" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>算法产生的误报可能会让那些姓名具有文化多样性或独特性的用户感到疏远。该文案将自动产生的怀疑重新表述为一个包容且尊重用户的验证步骤。</p>
+<ul>
+<li><strong>包容、肯定的语气：</strong>比起弹出令人沮丧的冰冷错误代码，<code>That's an interesting name!</code>（这个名字真有趣！）将算法产生的摩擦转化为温和礼貌的人性化互动。</li>
+<li><strong>协作式微文案：</strong><code>Please help us verify it</code>（请协助我们进行核实）以邀请用户合作的口吻代替了咄咄逼人的质问。</li>
+<li><strong>直接验证通道：</strong>内嵌直达验证链接，提供即时的身份确认入口，避免用户在注册流程中感到无所适从。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>富有同理心的错误处理机制能够降低不同人群在用户入门阶段的流失率，从而保障客户终身价值和品牌声誉。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-11.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-11.pdf" title="用户体验文案案例研究：隐形眼镜定期订购——标题与元描述"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">隐形眼镜定期订购——标题与元描述</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>视障用户和老年用户在考虑定期医疗用品配送服务时会感到技术焦虑。请撰写经过搜索优化、能够建立信任并强调“轻松、送货上门”补货服务的标题和元描述。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>标题：</b> 60 字数上限<br/>
+<b>元描述（Meta Description）：</b> 160 字数上限</p>
+<button aria-controls="ux-details-7" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-7" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-7" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>设计无障碍医疗服务时，需要确保内容易于阅读，并采用通俗易懂、令人安心的语言，以满足老年用户群体的需求。</p>
+<ul>
+<li><strong>标题：</strong><code>Vision Quest: Hassle-Free Contact Lens Delivery Every 30 Days!</code> 强调服务的可靠性与清晰可预测的配送周期。</li>
+<li><strong>元描述：</strong>量化设置耗时（“15 分钟以内”）并突出送货上门服务，有效降低用户对注册与使用流程的心理门槛。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>清晰且注重无障碍性的 SEO 元数据，能够吸引谨慎型用户群体点击优质自然搜索结果，从而扩大订阅用户的获取规模。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-13.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-13.pdf" title="用户体验文案案例研究：卡车司机延误通知"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">卡车司机延误通知</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>一名短途物流司机因高速公路交通拥堵而耽误了行程。发送一条一目了然且适合免提操作的推送通知，在确保行车安全的同时，提供快速路线选择方案。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 30 字数上限<br/>
+<b>正文内容：</b> 45 字数上限<br/>
+<b>操作按钮：</b> 25 字数上限</p>
+<button aria-controls="ux-details-8" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-8" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-8" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>物流通知需要严格遵循认知经济原则，以确保操作员在运输过程中的人身安全。</p>
+<ul>
+<li><strong>非指责性语气：</strong>主标题 <code>Running Late?</code> 避免主观责备，充分考虑到了系统同步延迟或突发路况等不可控因素。</li>
+<li><strong>极简表达：</strong>短小精炼的词句完美适配语音车载助手播报，杜绝冗长信息对驾驶专注度的干扰。</li>
+<li><strong>清晰行动选项：</strong><code>Fuel up now or keep going?</code> 搭配明确的按钮触发词（<code>REROUTE TO PITSTOP</code> 与 <code>KEEP GOING</code>），便于司机快速做出果断决策。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>及时的通知既有助于控制供应链的配送节奏，又能保障司机的福利和路线效率。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="onboarding"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-10.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-10.pdf" title="用户体验文案案例研究：购车平台位置权限申请"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">购车平台位置权限申请</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>汽车交易平台需要获取用户位置信息，以便显示本地化的车源和区域性价格。应以透明的方式请求地理位置信息，同时避免引发数据隐私问题或导致用户流失。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 25 字符<br/>
+<b>正文内容：</b> 45 字符<br/>
+<b>操作按钮：</b> 15 字符</p>
+<button aria-controls="ux-details-9" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-9" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-9" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>当界面将数据收集直接与明确的用户价值联系起来时，权限启动即告成功。</p>
+<ul>
+<li><strong>利益导向型主标题：</strong><code>Your dream car is here.</code>（你的理想座驾就在这里）将用户的核心诉求置于平台数据采集之上。</li>
+<li><strong>生动亲和的品牌个性：</strong>幽默风趣的微文案 <code>(Yes, even THAT one)</code>（没错，哪怕是那辆梦想之车）迅速拉近与用户的心理距离。</li>
+<li><strong>尊重隐私的输入项：</strong>仅索取邮政编码而非详细街道地址，在满足区域库存检索的同时最大程度保护个人隐私。</li>
+<li><strong>极具吸引力的行动号召（CTA）：</strong><code>VIEW OUR DEALS</code> 将数据录入重新定义为“解锁特惠”，而非让渡隐私信息。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>清晰的价值定位能提高许可接受率，并加速用户转向主动浏览库存。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-5.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-5.pdf" title="用户体验文案案例研究：应用崩溃恢复提示"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">应用崩溃恢复提示</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>一款移动设备意外关机，打断了一位平面设计师正在进行的评审。在应用重启后，应安抚用户情绪，确认文档自动恢复状态，并提供无缝的恢复或重新开始路径。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 40 字数上限<br/>
+<b>正文内容：</b> 140 字数上限<br/>
+<b>操作按钮：</b> 20 字数上限</p>
+<button aria-controls="ux-details-10" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-10" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-10" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>系统故障会引发用户对工作丢失的强烈焦虑。重启对话框必须立即验证恢复状态，并恢复用户操作流程。</p>
+<ul>
+<li><strong>主标题：</strong><code>ACME DESIGNS Crashed Unexpectedly</code> 诚实且透明地承认系统异常，避免模糊推诿。</li>
+<li><strong>正文内容：</strong>“您的设计文件已成功恢复”在给出恢复或新建工作区选项前，第一时间消除用户对数据丢失的恐慌。</li>
+<li><strong>操作按钮：</strong><code>Restore</code>（恢复）与 <code>New</code>（新建）提供清晰明确、非此即彼的决断触发器。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>可靠的崩溃恢复通信能够维护用户信任、增强工作流的弹性，并减少用户放弃应用的情况。</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/t0mfj5ZNbl8cMwxPL8ieUk/UX-Writing-Challenge--5?node-id=5-342&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A135&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">查看原型</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-4.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-4.pdf" title="用户体验文案案例研究：生鲜杂货订阅会员推广"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">生鲜杂货订阅会员推广</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>在应用内的落地页上推出一项按月付费的固定费用生鲜配送订阅服务。在避免高压销售手段的同时，向用户传达定期订阅的便利性及价格透明度。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 45 字数上限<br/>
+<b>正文内容：</b> 175 字数上限<br/>
+<b>操作按钮：</b> 25 字数上限</p>
+<button aria-controls="ux-details-11" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-11" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-11" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>订阅服务的追加销售之所以成功，是因为将服务定位为提升生活品质，并实行透明定价。</p>
+<ul>
+<li><strong>主标题：</strong><code>ENJOY THE COMFORT OF HOME, WE'LL SHOP FOR YOU.</code> 以“享受居家惬意时光，采购由我们代劳”切入，直击用户节省个人时间的核心诉求。</li>
+<li><strong>正文内容：</strong>具象数据细节（“整月生鲜储备”、“每月固定 20 美元”）清晰传递价值，杜绝任何隐藏条款。</li>
+<li><strong>操作按钮：</strong><code>LEARN MORE</code> 提供低阻力的探索入口，而 <code>NO THANKS</code> 则支持无压力婉拒，绝无制造内疚感的诱导操控设计。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>透明的订阅信息沟通，比激进的短期转化更能促进用户留存率和客户满意度的持续提升。</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/YqzCMRqdg1xA41oflpHwnd/UX-Writing-Challenge--4?node-id=24-130&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=24%3A130&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">查看原型</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-3.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-3.pdf" title="用户体验文案案例研究：邮箱输入错误提示"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">邮箱输入错误提示</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>回头客在登录时输入了未关联或输入有误的电子邮件地址。应明确指出具体的登录障碍，并显示用户输入的内容，以便用户快速更正输入错误，同时避免暴露账户枚举漏洞。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>40 字数上限</b></p>
+<button aria-controls="ux-details-12" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-12" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-12" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>身份验证过程中的摩擦是导致用户流失的主要原因之一。明确的错误提示能引导用户立即进行修正。</p>
+<ul>
+<li><strong>针对性清晰反馈：</strong><code>Retype email address, '[email]'</code> 明确告知用户不匹配的具体位置，并回显其输入内容，以便立即发现拼写笔误。</li>
+<li><strong>明确直接的行动动词：</strong>以祈使动词“重新输入”（Retype）开头，清晰无误地指明下一步操作，消除认知迟疑。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>有针对性的内联反馈可减少密码重置请求，并快速解除身份验证流程的阻塞。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-2.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-2.pdf" title="用户体验文案案例研究：体育迷应用注册推广"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">体育迷应用注册推广</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>时间紧迫的家长和忙碌的体育迷们很难跟上直播。通过提供异步比赛集锦、个性化的球队提醒以及简短的比分更新，帮助他们消除“害怕错过”（FOMO）的焦虑。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 40 字数上限<br/>
+<b>正文内容：</b> 175 字数上限<br/>
+<b>操作按钮：</b> 25 字数上限</p>
+<button aria-controls="ux-details-13" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-13" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-13" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>促销类入门文案通过充满活力且令人难忘的措辞，与用户的生活方式限制产生共鸣。</p>
+<ul>
+<li><strong>主标题与正文：</strong>巧妙借用充满韵律的口号“精彩球赛不容错过，最新动态时刻掌握！”与“决不错过下一次暴扣！”，将功能塑造成忙碌生活中的贴心观赛搭档。</li>
+<li><strong>赋能型行动号召（CTA）：</strong><code>Score a win against FOMO!</code>（击败“害怕错过”的焦虑！）将用户的情感共鸣直接转化为订阅行动。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>将应用的优势与用户的生活方式限制相结合，可以提高用户激活率和每日通知订阅率。</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/UR8ck1CIuVgmjYalHckj8o/UX-Writing-Challenge--2?node-id=1-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A2&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">查看原型</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-8.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-8.pdf" title="用户体验文案案例研究：演唱会门票抢购推广"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">演唱会门票抢购推广</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>一款应用内流媒体服务会根据用户的收听记录，识别出该艺人在当地的巡演日期。通过精准定位的独家文案，将用户对该艺人的日常收听兴趣转化为预售门票的参与度。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 30 字数上限<br/>
+<b>正文内容：</b> 45 字数上限<br/>
+<b>操作按钮：</b> 25 字符</p>
+<button aria-controls="ux-details-14" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-14" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-14" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>基于情境的事件推广利用听众的习惯，提供及时且独家的互动体验。</p>
+<ul>
+<li><strong>主标题与基调：</strong><code>YEAH! YEAH! YEAH!</code> 与 <code>The Beatles are back in your city!</code> 唤醒怀旧情怀与本地化巡演狂欢。</li>
+<li><strong>认同感标签与专属感：</strong>将普通听众尊称为“忠实乐迷”（loyal listeners），深化情感共鸣并激发参与欲；醒目标注预售码（<code>FAB4</code>），便于快速兑换抢票。</li>
+<li><strong>操作按钮：</strong>直截了当的 <code>PRESALE</code>（预售入口）引导用户直达购票流程，避免冗余跳转。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>基于情境的票务微文案能够将被动听众转化为高价值的现场娱乐购票者。</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FpYJKY0IXwxYVe7d7rHJwh/UX-Writing-Challenge--8?node-id=1-51&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A51&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">查看原型</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-7.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-7.pdf" title="用户体验文案案例研究：宿敌对决实时比分推送"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">宿敌对决实时比分推送</h5>
+<p class="card-text"><b>用户痛点与业务场景：</b></p>
+<ul>
+<li>一位参加正式社交活动的球迷需要及时、低调地获取一场关键对决的最新动态。请发送一条紧急、信息密集的推送通知，在50个字符以内包含比分、关键球员和比赛结果。</li>
+</ul>
+<p class="card-text"><b>设计约束条件：</b><br/>
+<b>主标题：</b> 30 字数上限<br/>
+<b>正文内容：</b> 45 字数上限</p>
+<button aria-controls="ux-details-15" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-15" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> 查看设计策略与依据</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> 收起设计策略与依据</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-15" onclick="event.stopPropagation()">
+<h6><b>设计策略与依据</b></h6>
+<p>不显眼的提醒需要在最短的瞥视时间内提供最大信息密度。</p>
+<ul>
+<li><strong>主标题：</strong><code>ALL RISE FOR GRAND SLAM</code> 巧妙借用俱乐部标志性助威口号，在用户阅读正文前即刻传达比赛关键转折点。</li>
+<li><strong>正文内容：</strong>精准简练的数据直击核心，确认球员、精彩进攻与实时比分（<code>Aaron Judge blasts a Grand Slam. NYY lead BOS 5-0</code>）。</li>
+</ul>
+<h6><b>商业影响与预期成效</b></h6>
+<p>即时、一目了然的更新让用户在处理现实生活事务时仍能保持联系，从而提升应用参与度和通知的实用性。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div></div>
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#uxSamplesCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #1f3850; font-size: 4rem;">❮</span>
+<span class="visually-hidden">上一项</span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#uxSamplesCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #1f3850; font-size: 4rem;">❯</span>
+<span class="visually-hidden">下一项</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Visual Design & Print Work: Classroom Hall Passes (Open Showcase) -->
+<div class="py-5 bg-custom-dark border-top border-secondary border-opacity-25" id="visual-design-section">
+<div class="container-fluid px-4">
+<div class="text-center mb-4">
+<span class="badge px-3 py-2 rounded-pill text-uppercase mb-2" style="background-color: rgba(232, 196, 124, 0.15); color: #e8c47c; border: 1px solid rgba(232, 196, 124, 0.35); letter-spacing: 1.2px; font-size: 0.8rem;">
+<i class="bi bi-palette-fill me-1"></i> 视觉设计与印刷品
+</span>
+<h2 class="display-6 fw-bold text-white mb-2">趣味课堂通行证</h2>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center text-white-50">
+<p class="mb-0 fs-6">为高中课堂管理定制的双面通行证，融合精选复古漫画艺术与动感印刷排版。出于隐私保护考虑，部分信息已做脱敏处理。</p>
+</div>
+</div>
+</div>
+<div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="hallPassCarousel">
+<div class="carousel-inner">
+<div class="carousel-item active"><div class="row justify-content-center"><div class="col-11 col-lg-10">
+<div aria-label="查看蜘蛛侠卫生间通行证样本" class="card card-border sample-card hallpass-card hallpass-card-spidey mb-4" data-pdf="/samples/ux-writing/spidey-bathroom-pass.pdf" role="button" tabindex="0">
+<div class="row g-0 align-items-center">
+<div class="col-md-5 p-3 p-lg-4">
+<div class="hallpass-preview-wrapper position-relative">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spidey-bathroom-pass.pdf" style="min-height: 360px;" title="蜘蛛侠卫生间通行证"></iframe>
+<div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
+<i class="bi bi-arrows-fullscreen"></i> 点击卡片查看完整 PDF
+</div>
+</div>
+</div>
+<div class="col-md-7 p-3 p-lg-4">
+<div class="card-body p-0 text-start">
+<h3 class="card-title fw-bold mb-2">蜘蛛侠卫生间通行证</h3>
+<p class="card-text mb-4 fs-6">精选自《蜘蛛侠》经典漫画历史画页的定制通行证，包含教导宇宙神明“超越者”（The Beyonder）的著名经典分镜。</p>
+<div class="hallpass-meta p-3 rounded-3 mb-0">
+<div class="hallpass-meta-item mb-2">
+<div class="hallpass-meta-icon hallpass-meta-icon-quote">
+<i class="bi bi-chat-quote-fill"></i>
+</div>
+<div>
+<strong class="small d-block">内心独白气泡：</strong>
+<span class="small">采用《秘密战争 II》第 8 期分镜，展现了蜘蛛侠指导宇宙神明“超越者”的经典场景。</span>
+</div>
+</div>
+<div class="hallpass-meta-item mb-0">
+<div class="hallpass-meta-icon hallpass-meta-icon-objective">
+<i class="bi bi-lightbulb-fill"></i>
+</div>
+<div>
+<strong class="small d-block">设计目标：</strong>
+<span class="small">定制的双面通行证，旨在为高中课堂管理增添幽默感与亲和力。</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+<div class="carousel-item"><div class="row justify-content-center"><div class="col-11 col-lg-10">
+<div aria-label="查看绿巨人走廊通行证样本" class="card card-border sample-card hallpass-card hallpass-card-hulk mb-4" data-pdf="/samples/ux-writing/hulk-hall-pass.pdf" role="button" tabindex="0">
+<div class="row g-0 align-items-center">
+<div class="col-md-5 p-3 p-lg-4">
+<div class="hallpass-preview-wrapper position-relative">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/hulk-hall-pass.pdf" style="min-height: 360px;" title="绿巨人走廊通行证"></iframe>
+<div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
+<i class="bi bi-arrows-fullscreen"></i> 点击卡片查看完整 PDF
+</div>
+</div>
+</div>
+<div class="col-md-7 p-3 p-lg-4">
+<div class="card-body p-0 text-start">
+<h3 class="card-title fw-bold mb-2">绿巨人走廊通行证</h3>
+<p class="card-text mb-4 fs-6">精选自《无敌浩克》经典漫画画页的定制通行证。</p>
+<div class="hallpass-meta p-3 rounded-3 mb-0">
+<div class="hallpass-meta-item mb-2">
+<div class="hallpass-meta-icon hallpass-meta-icon-quote">
+<i class="bi bi-chat-quote-fill"></i>
+</div>
+<div>
+<strong class="small d-block">内心独白气泡：</strong>
+<span class="small">精选自《Big Green》漫画中极具视觉爆发力的复古分镜，生动展现了布鲁斯·班纳变身为浩克的过程。</span>
+</div>
+</div>
+<div class="hallpass-meta-item mb-0">
+<div class="hallpass-meta-icon hallpass-meta-icon-objective">
+<i class="bi bi-lightbulb-fill"></i>
+</div>
+<div>
+<strong class="small d-block">设计目标：</strong>
+<span class="small">以“坚不可摧”为主题的教室走廊通行证，设计出众，既引人注目又能逗乐走廊值日人员。</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+</div>
+<div class="carousel-indicators position-relative mt-2 mb-0">
+<button aria-current="true" aria-label="蜘蛛侠卫生间通行证" class="active" data-bs-slide-to="0" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
+<button aria-label="绿巨人走廊通行证" data-bs-slide-to="1" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
+</div>
+<button aria-label="上一张通行证" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">❮</span>
+<span class="visually-hidden">上一张</span>
+</button>
+<button aria-label="下一张通行证" class="carousel-control-next" data-bs-slide="next" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">❯</span>
+<span class="visually-hidden">下一张</span>
+</button>
+</div>
+</div>
+</div>
+<footer>
+<p class="text-white text-center">&copy; 2026 佩德罗·维加 | 基于 HTML &bull; CSS &bull; JS &bull; GitHub Pages 构建</p>
+</footer>
+</main>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Shared PDF viewer -->
+<script src="/js/pdf-viewer.js?v=2"></script>
+<script src="/js/sticky-nav.js"></script>
+<script src="/js/page-specific.js?v=8"></script>
+<script src="/js/figma-viewer.js"></script>
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="figmaModalLabel" class="modal fade" id="figmaModal" tabindex="-1">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="figmaModalLabel">交互原型</h5>
+<button aria-label="关闭" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<div class="ratio ratio-16x9">
+<iframe allowfullscreen="" height="450" src="" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- DocSearch JS -->
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
+<script>
+    document.querySelectorAll('.docsearch-container').forEach((container) => {
+      docsearch({
+        container: container,
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        indexName: 'portfolio_site',
+        insights: true,
+        searchParameters: {
+          facetFilters: ['lang:zh']
+        }
+      });
+    });
+
+    // Initialize Ask AI side panel
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const sidepanelDiv = document.createElement('div');
+      sidepanelDiv.id = 'docsearch-sidepanel';
+      document.body.appendChild(sidepanelDiv);
+      
+      sidepanelInstance = docsearchSidepanel({
+        container: '#docsearch-sidepanel',
+        indexName: 'portfolio_site',
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159',
+        agentStudio: true,
+        searchParameters: {},
+        showButton: false,
+        button: false,
+        variant: 'inline',
+      });
+    }
+
+    // Emulate Docusaurus SearchBar layout exactly for desktop and add Ask AI button
+    const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('.d-lg-none'));
+    desktopContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          // Wrap button in DocSearch-SearchBar div
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+  
+    // Append Docusaurus Ask AI side panel button for mobile only
+    const mobileContainers = Array.from(document.querySelectorAll('.d-lg-none .docsearch-container'));
+    mobileContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+
+    // Mobile search close fix - hides mobile search buttons while modal is open, revealing the native X button
+    (function () {
+      var mobileSearchContainer = document.querySelector('.mobile-nav-search-container');
+      function showSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'visible'; }
+      function hideSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'hidden'; }
+      var closeObserver = new MutationObserver(function () {
+        if (document.querySelector('.DocSearch-Modal')) { hideSearchButtons(); } else { showSearchButtons(); }
+      });
+      closeObserver.observe(document.body, { childList: true, subtree: true });
+    })();
+
+  </script>
+<script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+</body>
+</html>

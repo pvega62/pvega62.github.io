@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script>
+    if (window.location.pathname.endsWith('.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
+<title>Rédaction UX | Pedro Vega</title>
+<!-- Primary Meta Tags -->
+<meta content="Exemples de rédaction UX, microcopie, conception de contenu et documentation de parcours utilisateur par Pedro Vega." name="description"/>
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta content="website" property="og:type"/>
+<meta content="https://pvega62.github.io/fr/uxwriting" property="og:url"/>
+<meta content="Rédaction UX | Pedro Vega" property="og:title"/>
+<meta content="Exemples de rédaction UX, microcopie, conception de contenu et documentation de parcours utilisateur par Pedro Vega." property="og:description"/>
+<meta content="https://pvega62.github.io/images/social-card.png" property="og:image"/>
+<meta content="1050" property="og:image:width"/>
+<meta content="600" property="og:image:height"/>
+<!-- Twitter / X -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://pvega62.github.io/fr/uxwriting" name="twitter:url"/>
+<meta content="Rédaction UX | Pedro Vega" name="twitter:title"/>
+<meta content="Exemples de rédaction UX, microcopie, conception de contenu et documentation de parcours utilisateur par Pedro Vega." name="twitter:description"/>
+<meta content="https://pvega62.github.io/images/social-card.png" name="twitter:image"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="/css/styles.css?v=2" rel="stylesheet"/>
+<link href="/css/page-specific.css?v=8" rel="stylesheet"/>
+<link href="/images/logo.png" rel="icon" type="image/png"/>
+<!-- DocSearch CSS -->
+<link href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" rel="stylesheet"/>
+<style>
+    /* Force hide the default Algolia floating sidepanel button globally */
+    .DocSearch-SidepanelButton.floating {
+      display: none !important;
+    }
+  </style>
+<link href="/css/interactive.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+<!-- Header and Navbar -->
+<header class="sticky-top">
+<!-- Mobile Search Bar -->
+<div class="d-lg-none d-flex justify-content-end w-100"><div class="mobile-nav-search-container" style="position: absolute; right: 2px; top: 8px; z-index: 1050; padding: 0; margin: 0;">
+<div class="docsearch-container"></div>
+</div></div>
+<div class="container-fluid px-0">
+<!-- Desktop Navbar -->
+<nav aria-label="Navigation principale" class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation">
+<a class="navbar-brand ms-3" href="/fr/">
+<img alt="Logo" height="40" src="/images/logo.png"/>
+</a>
+<div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
+<ul class="navbar-nav me-3">
+<li class="nav-item"><a class="nav-link" href="/fr/">Accueil</a></li>
+<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Rédaction technique
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
+                <li class="dropend position-relative">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentation Logicielle</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/software/fr/docs/intro">Introduction</a></li>
+                    <li><a class="dropdown-item" href="/software/fr/docs/category/cloud-data-pipeline-documentation">Pipelines de données cloud</a></li>
+                    <li><a class="dropdown-item" href="/software/fr/docs/category/typescript-sdk-sui-blockchain-documentation">Tutoriel TypeScript</a></li>
+                    <li><a class="dropdown-item" href="/software/fr/docs/category/stripe-api-documentation">API Stripe</a></li>
+                    <li><a class="dropdown-item" href="/software/fr/docs/category/pet-store-api-documentation">API Pet Store</a></li>
+                    <li><a class="dropdown-item" href="/software/fr/docs/category/commit-messages-and-pull-requests">Messages de commit et pull requests</a></li>
+                    <li><a class="dropdown-item" href="/software/fr/docs/artie-case-study">Étude de cas : Assistant IA Ask Artie</a></li>
+                    <li><a class="dropdown-item" href="/software/fr/docs/google-chrome-theme-installation">Thème Google Chrome</a></li>
+                    <li><a class="dropdown-item" href="/software/fr/docs/word-github-wiki-writage">Flux de travail Writage</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="/fr/technical-writing-hardware">Exemples de matériel</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/software/fr/blog">Blog</a></li>
+              </ul>
+            </li>
+<li class="nav-item"><a class="nav-link" href="/fr/uxwriting">Rédaction UX</a></li>
+<li class="nav-item"><a class="nav-link" href="/fr/articles">Articles</a></li>
+<li class="nav-item"><a class="nav-link about-link" href="/fr/aboutme">À propos de moi</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdownDesktop2" role="button">
+                Contact
+              </a>
+<ul aria-labelledby="navbarDropdownDesktop2" class="dropdown-menu">
+<li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+<li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+<li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">E-mail</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">Recordkeeping</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" aria-label="Langue: Français" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLang" role="button" title="Langue: Français">
+<svg aria-hidden="true" class="me-1" height="20" style="fill: currentColor;" viewbox="0 0 24 24" width="20"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg><img src="/images/flags/fr.svg" alt="" class="nav-flag-toggle"><span>Français</span>
+</a>
+<ul aria-labelledby="navbarDropdownLang" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/uxwriting" hreflang="en-US" lang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+<li><a class="dropdown-item" href="/es/uxwriting" hreflang="es" lang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+<li><a class="dropdown-item active" href="/fr/uxwriting" hreflang="fr-FR" lang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+<li><a class="dropdown-item" href="/ar/uxwriting" hreflang="ar" lang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+<li><a class="dropdown-item" href="/zh/uxwriting" hreflang="zh-Hans" lang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+<li><a class="dropdown-item" href="/ja/uxwriting" hreflang="ja" lang="ja" target="_self"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+<li><a class="dropdown-item" href="/hi/uxwriting" hreflang="hi" lang="hi" target="_self"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+</ul>
+</li>
+<li class="nav-item d-flex align-items-center ms-1">
+<div class="docsearch-container"></div>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Mobile Navbar (App Tab Bar) -->
+<nav aria-label="Navigation mobile" class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation">
+<a class="navbar-brand ms-2 me-1" href="/fr/">
+<img alt="Logo" height="40" src="/images/icon-logo.png"/>
+</a>
+<ul class="navbar-nav flex-row w-100 justify-content-around me-2">
+<li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Rédaction technique" title="Rédaction technique">
+              <img src="/images/icon-tech-writing.svg" alt="" class="mobile-nav-icon">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li class="dropend position-relative">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentation Logicielle</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/software/fr/docs/intro">Introduction</a></li>
+                  <li><a class="dropdown-item" href="/software/fr/docs/category/cloud-data-pipeline-documentation">Pipelines de données cloud</a></li>
+                  <li><a class="dropdown-item" href="/software/fr/docs/category/typescript-sdk-sui-blockchain-documentation">Tutoriel TypeScript</a></li>
+                  <li><a class="dropdown-item" href="/software/fr/docs/category/stripe-api-documentation">API Stripe</a></li>
+                  <li><a class="dropdown-item" href="/software/fr/docs/category/pet-store-api-documentation">API Pet Store</a></li>
+                  <li><a class="dropdown-item" href="/software/fr/docs/category/commit-messages-and-pull-requests">Messages de commit et pull requests</a></li>
+                  <li><a class="dropdown-item" href="/software/fr/docs/artie-case-study">Étude de cas : Assistant IA Ask Artie</a></li>
+                  <li><a class="dropdown-item" href="/software/fr/docs/google-chrome-theme-installation">Thème Google Chrome</a></li>
+                  <li><a class="dropdown-item" href="/software/fr/docs/word-github-wiki-writage">Flux de travail Writage</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="/fr/technical-writing-hardware">Exemples de matériel</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/software/fr/blog">Blog</a></li>
+            </ul>
+          </li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="Rédaction UX" class="nav-link px-2 d-flex align-items-center" href="/fr/uxwriting" title="Rédaction UX">
+<img alt="" class="mobile-nav-icon" src="/images/icon-ux-writing.svg"/>
+</a>
+</li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="Articles" class="nav-link px-2 d-flex align-items-center" href="/fr/articles" title="Articles">
+<img alt="" class="mobile-nav-icon" src="/images/icon-articles.svg"/>
+</a>
+</li>
+<li class="nav-item dropup d-flex align-items-center">
+<a aria-expanded="false" aria-label="À propos de moi et contact" class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownAbout" role="button" title="À propos de moi et contact">
+<img alt="" class="mobile-nav-icon" src="/images/icon-vector1.svg" style="transform: scaleY(-1);"/>
+</a>
+<ul aria-labelledby="navbarDropdownAbout" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/fr/aboutme">À propos de moi</a></li>
+<li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+<li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+<li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">E-mail</a></li>
+</ul>
+</li>
+<li class="nav-item dropup d-flex align-items-center">
+<a aria-expanded="false" aria-label="Langues" class="nav-link dropdown-toggle px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLangMobile" role="button" title="Langues">
+<img alt="" class="mobile-nav-icon" src="/images/icon-languages.svg"/>
+</a>
+<ul aria-labelledby="navbarDropdownLangMobile" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="/uxwriting" hreflang="en-US" lang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+<li><a class="dropdown-item" href="/es/uxwriting" hreflang="es" lang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+<li><a class="dropdown-item active" href="/fr/uxwriting" hreflang="fr-FR" lang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+<li><a class="dropdown-item" href="/ar/uxwriting" hreflang="ar" lang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+<li><a class="dropdown-item" href="/zh/uxwriting" hreflang="zh-Hans" lang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+<li><a class="dropdown-item" href="/ja/uxwriting" hreflang="ja" lang="ja" target="_self"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+<li><a class="dropdown-item" href="/hi/uxwriting" hreflang="hi" lang="hi" target="_self"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+</ul>
+</li>
+<li class="nav-item d-flex align-items-center">
+<a aria-label="Recordkeeping" class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/" title="Recordkeeping">
+<img alt="" class="mobile-nav-icon-colored" src="/images/icon-recordkeeping.svg"/>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main-content" tabindex="-1">
+<div class="hero-section">
+<div class="container-fluid px-4">
+<div class="text-center">
+<h1 class="display-4 fw-bold text-white">Rédaction UX et conception de contenu</h1>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center intro-text text-white">
+<p class="lead">Textes centrés sur l'utilisateur, flux de divulgation progressive et systèmes de design dans Figma.</p>
+<p>Chaque étude de cas cible les moments de forte friction du parcours produit. De l'onboarding aux alertes d'urgence et à la reprise après erreur, les flux privilégient la clarté. Des prototypes interactifs illustrent chaque état d'interaction dans le code et le design.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- light band with cards -->
+<div class="py-5 light-section" id="ux-carousel-container">
+<div class="container-fluid px-4">
+<!-- Category Filter Tabs (High-Contrast Navy Dock) -->
+<div class="ux-filter-wrapper text-center">
+<div class="text-center mb-2">
+<span class="text-uppercase fw-bold small" style="letter-spacing: 1.2px; color: #1f3850; font-size: 0.8rem;">
+<i class="bi bi-funnel-fill me-1"></i> Filtrer par domaine d'intervention
+</span>
+</div>
+<div class="ux-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
+<button class="btn ux-filter-pill active" data-filter="all" type="button">Tous <span class="badge ms-1">15</span></button>
+<button class="btn ux-filter-pill" data-filter="prototype" type="button"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;"></i> Prototype fonctionnel <span class="badge ms-1">8</span></button>
+<button class="btn ux-filter-pill" data-filter="high-stakes" type="button">Situations critiques et alertes <span class="badge ms-1">3</span></button>
+<button class="btn ux-filter-pill" data-filter="error-recovery" type="button">Récupération d'erreurs et friction <span class="badge ms-1">5</span></button>
+<button class="btn ux-filter-pill" data-filter="onboarding" type="button">Onboarding et confiance <span class="badge ms-1">2</span></button>
+<button class="btn ux-filter-pill" data-filter="subscriptions" type="button">Abonnements et microcopie <span class="badge ms-1">5</span></button>
+</div>
+</div>
+<div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="uxSamplesCarousel">
+<div class="carousel-inner"><div class="carousel-item active" data-category="onboarding prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-15.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-15.pdf" title="Étude de cas en rédaction UX : Parcours d'onboarding pour application bancaire"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Parcours d'onboarding pour application bancaire</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Les nouveaux utilisateurs d'applications bancaires ressentent souvent de l'anxiété et abandonnent les flux d'inscription à étapes multiples. Guidez les utilisateurs lors de la création du compte, de la catégorisation des factures et des paiements automatiques tout en renforçant la confiance dans la sécurité.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 45 caractères<br/>
+<b>Corps :</b> 100 caractères<br/>
+<b>Boutons :</b> 25 caractères</p>
+<button aria-controls="ux-details-1" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-1" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-1" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>La stratégie principale consolide la confiance de l'utilisateur à chaque étape. Une microcopie professionnelle, claire et rassurante rend l'automatisation financière simple et sûre. Le parcours présente progressivement les fonctionnalités clés pour éviter toute surcharge cognitive.</p>
+<ul><li><strong>Écran 1 : Proposition de valeur centrale.</strong> Le premier écran met en avant la sérénité de l'utilisateur avec l'accroche <code>Never fear, Paymate's here!</code>. Il présente l'avantage clé : facturation automatisée et rappels opportuns.</li><li><strong>Écran 2 : Confiance dans la sécurité.</strong> Avant de demander des données personnelles, le deuxième écran lève les craintes liées à la sécurité. Le titre <code>Fort Knox security. In your pocket.</code> emploie une métaphore familière. Le corps confirme des normes strictes de cybersécurité.</li><li><strong>Écran 3 : Fonctions intelligentes.</strong> Cet écran met en avant la catégorisation automatisée des factures. L'accroche <code>Smartphone, smart banking, smart user</code> renforce l'autonomie de l'utilisateur et souligne l'intelligence du système.</li><li><strong>Écrans 4 à 7 : Flux de configuration.</strong> Une fois la confiance établie, le flux guide la création de compte et les moyens de paiement. Une microcopie concise (<code>Enough about us, let's focus on you.</code>) mène l'utilisateur à travers des formulaires accessibles jusqu'à la confirmation finale (<code>Welcome Aboard!</code>).</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>La divulgation progressive réduit l'anxiété de l'utilisateur et élimine les frictions à l'inscription, augmentant le taux de complétion. L'expérience transforme un enregistrement bancaire complexe en un parcours fluide et sécurisant.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FNjNjYmTQPlZiU2aoxaHdV/UX-Writing-Challenge--15?node-id=4-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=4%3A2&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3 d-flex flex-column p-2">
+<div aria-label="Sélecteur de version préliminaire" class="btn-group btn-group-sm w-100 mb-2 rounded-2" role="group" style="background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.18);">
+<button class="btn btn-draft-toggle active fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" type="button">
+<i class="bi bi-check2 me-1"></i> Version finale v2
+    </button>
+<button class="btn btn-draft-toggle fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14-draft1.pdf" type="button">
+<i class="bi bi-x-lg me-1"></i> Brouillon 1 abandonné
+    </button>
+</div>
+<div class="flex-grow-1 position-relative" style="min-height: 280px;">
+<iframe allowfullscreen="" class="w-100 h-100 position-absolute top-0 start-0" frameborder="0" id="challenge14Iframe" src="/samples/ux-writing/ux-writing-challenge-14.pdf" title="Étude de cas en rédaction UX : Erreur d'application de cause inconnue"></iframe>
+</div>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Erreur d'application de cause inconnue</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Une panne système empêche d'accéder aux données de comparaison de prix sans renvoyer de code d'erreur spécifique. Informez l'utilisateur avec transparence, évitez l'abandon du service et offrez des options immédiates de reprise.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 30 caractères max.<br/>
+<b>Corps :</b> 120 caractères max.<br/>
+<b>Boutons :</b> 15 caractères max.</p>
+<button aria-controls="ux-details-2" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-2" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-2" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Cette étude de cas illustre le calibrage minutieux de la voix de marque. Lors d'une panne bloquant l'accès à la fonctionnalité clé, un ton humoristique frustre l'utilisateur. Le design abandonne l'humour désinvolte au profit d'une communication directe, transparente et empathique.</p>
+<ul class="mb-3"><li><strong>Brouillon 1 (Abandonné ; échec de premier jet).</strong><br/>Titre : <code>ERROR CODE: 42</code> (14 car.) • Corps : <em>« It looks like the elf we have tracking your prices (Alan) stepped out for a quick call or something. Let's give Al a second. If you're in a rush, try our website. »</em> (154 car.) • Boutons : <code>RETRY</code>, <code>WEBSITE</code><br/>Pourquoi ce brouillon a échoué : l'humour désinvolte agace lors d'un dysfonctionnement. Le récit fantaisiste retarde la résolution, masque la panne derrière un code arbitraire et dépasse la limite de 120 caractères.</li><li><strong>Brouillon 2 (Retenu ; texte calibré).</strong><br/>Titre : <code>Prices are unavailable.</code> (23 car.) • Corps : <em>« We can't load prices right now. Please try again soon or visit our website for the latest info and prices. »</em> (101 car.) • Boutons : <code>RETRY</code>, <code>WEBSITE</code><br/>Pourquoi cette version fonctionne : la transparence totale explique la limite du système sans jargon. La double option (<code>RETRY</code> et <code>WEBSITE</code>) préserve l'autonomie de l'utilisateur et protège la crédibilité de la marque.</li><li><strong>Leçon de conception de contenu.</strong> Une bonne stratégie éditoriale sait écarter l'humour. Face à une erreur critique, privilégiez toujours la clarté immédiate et des solutions d'action concrètes.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Une communication transparente préserve la crédibilité de la marque lors des pannes. La double option de reprise diminue les tickets de support et retient l'utilisateur.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/design/KSZ6n1AWQbgiIWX2BLo6o1/UX-Writing-Challenge--14?node-id=0-1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="high-stakes prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-1.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-1.pdf" title="Étude de cas en rédaction UX : Notification d'annulation de vol"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Notification d'annulation de vol</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Des intempéries entraînent l'annulation soudaine du vol d'un voyageur. Avertissez-le immédiatement avec des instructions claires pour rejoindre le comptoir d'assistance sans susciter de panique.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 45 caractères<br/>
+<b>Corps :</b> 175 caractères max.<br/>
+<b>Boutons :</b> 25 caractères max.</p>
+<button aria-controls="ux-details-3" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-3" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-3" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Les perturbations de voyage très stressantes exigent un ton direct et sans détour. Privilégiez la clarté immédiate plutôt que des formules superflues.</p>
+<ul><li><strong>Titre :</strong> <code>FLIGHT CANCELLED. GO TO HELP DESK</code> garantit une lisibilité maximale. Il indique immédiatement ce qui s'est passé et la démarche à suivre.</li><li><strong>Corps :</strong> Le texte précise le numéro de vol (<code>DOC063</code>) et la cause directe (<em>« inclement weather »</em>). Il renforce l'action immédiate : <em>« Please head to the help desk. »</em></li><li><strong>Boutons :</strong> Le bouton <code>Got it</code> permet de fermer rapidement l'alerte. Le bouton <code>Airport Map</code> ouvre directement le plan du terminal pour faciliter l'orientation.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Une information limpide apaise l'angoisse des passagers et fluidifie le flux vers le comptoir d'assistance. Le guidage mobile rapide protège la réputation de la compagnie lors des perturbations majeures.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/2NGMklaY5uH05Qy22ZnHP4/UX-Writing-Challenge--1?node-id=19-124&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=19%3A124&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-6.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-6.pdf" title="Étude de cas en rédaction UX : Alerte incendie sur itinéraire"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Alerte incendie sur itinéraire</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Un incendie de forêt actif près de la trajectoire d'un conducteur entraîne la fermeture de routes. Concevez une notification urgente à faible charge cognitive pour inciter à un détour immédiat et sécurisé.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 30 caractères max.<br/>
+<b>Corps :</b> 45 caractères max.</p>
+<button aria-controls="ux-details-4" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-4" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-4" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Les alertes mobiles cruciales pour la sécurité routière exigent une compréhension instantanée d'un simple coup d'œil.</p>
+<ul><li><strong>Design et contraste :</strong> Des couleurs d'avertissement vives et des majuscules concises signalent l'urgence sans encombrer l'écran.</li><li><strong>Titre :</strong> <code>FIRE ON ATLANTIC AVE</code> transmet le danger et la localisation en moins de 25 caractères.</li><li><strong>Corps :</strong> <code>FIRE MAY AFFECT YOUR ROUTE. REROUTE.</code> prescrit l'action vitale sans distraire de la conduite.</li><li><strong>Bouton :</strong> <code>REROUTE TO SAFETY</code> rend l'action directe et axée sur la protection du conducteur.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Prioriser la sécurité et le recalcul immédiat de l'itinéraire empêche les automobilistes de pénétrer dans des zones dangereuses.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-9.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-9.pdf" title="Étude de cas en rédaction UX : Erreur de carte bancaire expirée"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Erreur de carte bancaire expirée</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Un client tente de finaliser une réservation de véhicule urgente, mais sa carte bancaire enregistrée a expiré. Indiquez précisément l'erreur et guidez l'utilisateur pour mettre à jour ses coordonnées sans abandonner sa commande.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 30 caractères<br/>
+<b>Corps :</b> 45 caractères</p>
+<button aria-controls="ux-details-5" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-5" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-5" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Les échecs lors du paiement requièrent des instructions immédiates et précises. Toute ambiguïté à cette étape entraîne l'abandon direct du panier.</p>
+<ul><li><strong>Titre :</strong> <code>YOUR CARD IS EXPIRED!</code> identifie la cause exacte sans délai, évitant toute confusion avec un plafond de crédit ou un incident réseau.</li><li><strong>Corps :</strong> <em>« Update card details or add a new one »</em> donne des consignes claires pour régler le blocage bancaire sans hésitation.</li><li><strong>Mise en valeur visuelle :</strong> Des repères graphiques mettent en évidence le champ de date d'expiration afin de guider le regard vers la correction.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Une microcopie de rattrapage claire préserve les taux de conversion lors du paiement et prévient l'abandon de commandes urgentes.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/RjNFdKOJncmtaAH0IzURy2/UX-Writing-Challenge--9?node-id=9-42&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=9%3A42&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-12.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-12.pdf" title="Étude de cas en rédaction UX : Message d'erreur « Faux nom détecté »"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Message d'erreur : « Faux nom détecté »</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>L'outil de détection automatique des fraudes signale le patronyme authentique mais atypique d'un utilisateur. Sollicitez une vérification d'identité avec bienveillance, sans blesser ni rejeter l'utilisateur.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>45 caractères max.</b></p>
+<button aria-controls="ux-details-6" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-6" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-6" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Les faux positifs algorithmiques risquent d'exclure les personnes portant des noms rares ou culturellement variés. Le texte transforme un soupçon automatisé en une démarche de vérification respectueuse.</p>
+<ul><li><strong>Ton bienveillant :</strong> Au lieu d'afficher une alerte accusatrice, <em>« That's an interesting name! »</em> dédramatise la vérification algorithmique avec cordialité.</li><li><strong>Microcopie coopérative :</strong> <em>« Please help us verify it »</em> sollicite la participation bienveillante de l'utilisateur plutôt qu'un ordre rigide.</li><li><strong>Lien d'assistance direct :</strong> Un accès intégré permet de téléverser rapidement un justificatif sans bloquer le compte.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Un traitement empathique des anomalies limite l'abandon lors de l'inscription et renforce la fidélité de profils d'utilisateurs diversifiés.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-11.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-11.pdf" title="Étude de cas en rédaction UX : Abonnement lentilles de contact - Titre et méta-description"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Abonnement lentilles de contact : Titre et méta-description</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Les utilisateurs malvoyants ou âgés redoutent souvent la complexité technique des abonnements médicaux en ligne. Rédigez un titre et une méta-description optimisés pour le référencement (SEO) qui inspirent confiance et valorisent la livraison à domicile.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 60 caractères max.<br/>
+<b>Méta-description :</b> 160 caractères max.</p>
+<button aria-controls="ux-details-7" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-7" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-7" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Concevoir pour la santé accessible exige une grande clarté et un vocabulaire rassurant, particulièrement adapté aux seniors.</p>
+<ul><li><strong>Titre SEO :</strong> <em>« Vision Quest: Hassle-Free Contact Lens Delivery Every 30 Days! »</em> insiste sur la régularité et la simplicité de livraison.</li><li><strong>Méta-description :</strong> Préciser le temps d'inscription (<em>« 15 minutes or less »</em>) et la réception à domicile réduit la complexité perçue.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Des métadonnées SEO claires et accessibles génèrent des clics qualifiés et favorisent l'adhésion d'utilisateurs prudents.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-13.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-13.pdf" title="Étude de cas en rédaction UX : Notification de retard pour chauffeurs routiers"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Notification de retard pour chauffeurs routiers</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Un chauffeur routier subit des ralentissements causés par des embouteillages. Envoyez une notification push lisible d'un coup d'œil et compatible avec les commandes vocales pour proposer des options d'itinéraire sans compromettre la sécurité.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 30 caractères max.<br/>
+<b>Corps :</b> 45 caractères max.<br/>
+<b>Boutons :</b> 25 caractères max.</p>
+<button aria-controls="ux-details-8" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-8" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-8" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Les alertes logistiques exigent une concision extrême afin de préserver l'attention du conducteur sur la route.</p>
+<ul><li><strong>Ton sans reproche :</strong> Le titre <code>Running Late?</code> ne blâme pas le chauffeur et prend en compte les imprévus du trafic.</li><li><strong>Concision maximale :</strong> Des phrases très courtes s'adaptent parfaitement aux synthèses vocales embarquées sans saturer l'écoute.</li><li><strong>Choix clairs :</strong> <em>« Fuel up now or keep going? »</em> s'accompagne de boutons distincts (<code>REROUTE TO PITSTOP</code> contre <code>KEEP GOING</code>) pour décider vite et bien.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Des alertes opportunes soutiennent les délais de livraison tout en garantissant le confort et la sécurité des chauffeurs.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="onboarding"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-10.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-10.pdf" title="Étude de cas en rédaction UX : Demande de localisation pour concessionnaire en ligne"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Demande de localisation pour concessionnaire en ligne</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Un portail de vente automobile requiert la localisation de l'internaute pour afficher les véhicules disponibles et les tarifs régionaux. Demandez cette donnée avec transparence sans éveiller de craintes sur la vie privée.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 25 caractères<br/>
+<b>Corps :</b> 45 caractères<br/>
+<b>Bouton :</b> 15 caractères</p>
+<button aria-controls="ux-details-9" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-9" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-9" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>La demande d'autorisation fonctionne dès que l'interface démontre un bénéfice direct et immédiat pour le visiteur.</p>
+<ul><li><strong>Titre axé sur la valeur :</strong> <code>Your dream car is here.</code> met en lumière l'objectif de l'acheteur plutôt que la collecte de données.</li><li><strong>Ton chaleureux :</strong> Une touche d'humour complice (<code>Yes, even THAT one</code>) crée un lien immédiat avec la marque.</li><li><strong>Respect des données :</strong> Demander seulement le code postal plutôt qu'une adresse complète respecte la vie privée tout en filtrant le stock local.</li><li><strong>Appel à l'action incitatif :</strong> <code>VIEW OUR DEALS</code> valorise la consultation des offres plutôt qu'une saisie administrative.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Exposer clairement l'avantage concret augmente le taux d'acceptation de la localisation et accélère la découverte du catalogue.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-5.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-5.pdf" title="Étude de cas en rédaction UX : Message de récupération après plantage"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Message de récupération après plantage</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Une coupure inattendue de l'appareil mobile interrompt le travail d'un graphiste. Au redémarrage, rassurez l'utilisateur, confirmez la sauvegarde automatique et proposez des options simples pour reprendre ou créer un nouveau projet.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 40 caractères max.<br/>
+<b>Corps :</b> 140 caractères max.<br/>
+<b>Boutons :</b> 20 caractères max.</p>
+<button aria-controls="ux-details-10" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-10" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-10" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Un arrêt brutal suscite la crainte de perdre ses créations. Le dialogue de réouverture doit rassurer sur-le-champ et restaurer la sérénité du travail.</p>
+<ul><li><strong>Titre franc :</strong> <code>ACME DESIGNS Crashed Unexpectedly</code> reconnaît l'incident avec honnêteté.</li><li><strong>Corps rassurant :</strong> <em>« Your design files were recovered »</em> dissipe immédiatement l'inquiétude avant d'orienter vers la reprise du travail.</li><li><strong>Boutons distincts :</strong> <code>Restore</code> et <code>New</code> offrent des choix clairs et sans ambiguïté.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Une information solide lors d'un plantage préserve la confiance dans l'outil et évite l'abandon de l'application.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/t0mfj5ZNbl8cMwxPL8ieUk/UX-Writing-Challenge--5?node-id=5-342&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A135&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-4.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-4.pdf" title="Étude de cas en rédaction UX : Promotion d'abonnement pour courses alimentaires"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Promotion d'abonnement pour courses alimentaires</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Présentez un forfait mensuel de livraison de courses à domicile au sein de l'application. Mettez en avant le gain de temps et la transparence tarifaire sans recourir à des méthodes de vente agressives.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 45 caractères max.<br/>
+<b>Corps :</b> 175 caractères max.<br/>
+<b>Boutons :</b> 25 caractères max.</p>
+<button aria-controls="ux-details-11" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-11" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-11" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>La présentation d'un abonnement réussit lorsqu'elle souligne un confort de vie concret avec une tarification lisible et honnête.</p>
+<ul><li><strong>Titre attrayant :</strong> <code>ENJOY THE COMFORT OF HOME, WE'LL SHOP FOR YOU.</code> valorise le repos et le temps retrouvé.</li><li><strong>Détails concrets :</strong> Des indications précises (<em>« month's worth of groceries »</em>, <em>« flat fee of $20/mo »</em>) instaurent une confiance sans frais cachés.</li><li><strong>Boutons équilibrés :</strong> <code>LEARN MORE</code> incite à la découverte sans engagement, tandis que <code>NO THANKS</code> autorise un refus courtois sans culpabilisation.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Des messages transparents favorisent une adhésion durable et une satisfaction client élevée, loin des incitations intrusives.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/YqzCMRqdg1xA41oflpHwnd/UX-Writing-Challenge--4?node-id=24-130&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=24%3A130&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-3.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-3.pdf" title="Étude de cas en rédaction UX : Erreur de saisie d'adresse e-mail"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Erreur de saisie d'adresse e-mail</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Un utilisateur récurrent tape une adresse inconnue ou mal orthographiée lors de sa connexion. Décrivez précisément l'erreur et réaffichez l'adresse saisie pour permettre une rectification rapide sans exposer de failles de sécurité.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>40 caractères max.</b></p>
+<button aria-controls="ux-details-12" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-12" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-12" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Les frictions lors de l'authentification constituent une cause majeure d'abandon. Des indications précises guident l'internaute vers une solution rapide.</p>
+<ul><li><strong>Précision du guidage :</strong> <em>« Retype email address, '[email]' »</em> montre où se situe l'erreur et rappelle le texte saisi pour repérer les fautes de frappe.</li><li><strong>Verbe d'action direct :</strong> Commencer par l'impératif <em>« Retype »</em> indique immédiatement le geste attendu.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Un retour contextuel réduit les demandes de réinitialisation de mot de passe et accélère l'accès au service.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-2.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-2.pdf" title="Étude de cas en rédaction UX : Promotion d'application pour passionnés de sport"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Promotion d'application pour passionnés de sport</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Des parents au planning chargé et des amateurs occupés peinent à suivre les matchs en direct. Valorisez les résumés vidéo, les alertes sur-mesure et les scores en temps réel pour dissiper la peur de manquer un moment clé (FOMO).</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 40 caractères max.<br/>
+<b>Corps :</b> 175 caractères max.<br/>
+<b>Boutons :</b> 25 caractères max.</p>
+<button aria-controls="ux-details-13" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-13" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-13" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Le texte promotionnel s'accorde au rythme de vie effréné des supporters avec une formulation entraînante et complice.</p>
+<ul><li><strong>Titre et corps dynamiques :</strong> <em>« Don't miss hoops, stay in the loop! »</em> et <em>« we'll make sure you don't miss the next slam! »</em> positionnent le service comme un allié précieux au quotidien.</li><li><strong>Appel à l'action stimulant :</strong> <code>Score a win against FOMO!</code> oriente l'envie de l'utilisateur directement vers l'activation de l'abonnement.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Associer les fonctions de l'application aux contraintes d'emploi du temps augmente l'engagement et l'activation des alertes quotidiennes.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/UR8ck1CIuVgmjYalHckj8o/UX-Writing-Challenge--2?node-id=1-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A2&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-8.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-8.pdf" title="Étude de cas en rédaction UX : Vente anticipée de billets de concert"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Vente anticipée de billets de concert</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Une plateforme musicale identifie des dates de tournée près de chez un auditeur fidèle d'un groupe. Transformez cet intérêt en achat anticipé de billets grâce à un message personnalisé et exclusif.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 30 caractères max.<br/>
+<b>Corps :</b> 45 caractères max.<br/>
+<b>Bouton :</b> 25 caractères</p>
+<button aria-controls="ux-details-14" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-14" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-14" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Les promotions ciblées s'appuient sur les goûts musicaux de l'abonné pour lui offrir un accès privilégié et valorisant.</p>
+<ul><li><strong>Titre enthousiaste :</strong> <code>YEAH! YEAH! YEAH!</code> et <code>The Beatles are back in your city!</code> réveillent la passion musicale et l'actualité locale.</li><li><strong>Reconnaissance de l'auditeur :</strong> Qualifier l'utilisateur de <em>« loyal listeners »</em> renforce l'attachement à la plateforme. La mise en avant du code promo (<code>FAB4</code>) facilite l'achat.</li><li><strong>Bouton direct :</strong> L'appel <code>PRESALE</code> mène directement vers la billetterie sans détour inutile.</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Une communication contextualisée transforme l'écoute musicale en ventes concrètes de billets de spectacle.</p>
+</div>
+<a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FpYJKY0IXwxYVe7d7rHJwh/UX-Writing-Challenge--8?node-id=1-51&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A51&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototype</a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
+<div aria-label="Ouvrir l'échantillon de rédaction UX" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-7.pdf" role="button" tabindex="0">
+<div class="row g-0">
+<div class="col-md-3">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-7.pdf" title="Étude de cas en rédaction UX : Alerte score en direct pour derby classique"></iframe>
+</div>
+<div class="col-md-9">
+<div class="card-body text-start">
+<h5 class="card-title">Alerte score en direct pour derby classique</h5>
+<p class="card-text"><b>Problème utilisateur et contexte :</b></p>
+<ul>
+<li>Un passionné assistant à une réunion formelle souhaite suivre discrètement l'évolution d'un match décisif. Transmettez une notification push dense et immédiate avec le score, le joueur décisif et l'action en moins de 50 caractères.</li>
+</ul>
+<p class="card-text"><b>Contraintes :</b><br/>
+<b>Titre :</b> 30 caractères max.<br/>
+<b>Corps :</b> 45 caractères max.</p>
+<button aria-controls="ux-details-15" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-15" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
+<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Voir la stratégie et les justifications</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Masquer la stratégie et les justifications</span>
+</button>
+<div class="collapse d-md-block ux-details-collapse" id="ux-details-15" onclick="event.stopPropagation()">
+<h6><b>Stratégie et justifications</b></h6>
+<p>Les notifications discrètes exigent une concentration maximale d'informations visibles en un éclair.</p>
+<ul><li><strong>Titre fort :</strong> <code>ALL RISE FOR GRAND SLAM</code> reprend l'expression emblématique de l'équipe pour annoncer l'exploit avant même la lecture du corps.</li><li><strong>Corps précis :</strong> Données chiffrées indiquant le joueur, l'action et le score mis à jour (<em>« Aaron Judge blasts a Grand Slam. NYY lead BOS 5-0 »</em>).</li></ul>
+<h6><b>Impact commercial et résultats attendus</b></h6>
+<p>Des alertes concises et rapides maintiennent le lien avec le supporter pendant ses obligations professionnelles et renforcent l'attachement à l'application.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div></div>
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#uxSamplesCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #1f3850; font-size: 4rem;">❮</span>
+<span class="visually-hidden">Précédent</span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#uxSamplesCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #1f3850; font-size: 4rem;">❯</span>
+<span class="visually-hidden">Suivant</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Visual Design & Print Work: Classroom Hall Passes (Open Showcase) -->
+<div class="py-5 bg-custom-dark border-top border-secondary border-opacity-25" id="visual-design-section">
+<div class="container-fluid px-4">
+<div class="text-center mb-4">
+<span class="badge px-3 py-2 rounded-pill text-uppercase mb-2" style="background-color: rgba(232, 196, 124, 0.15); color: #e8c47c; border: 1px solid rgba(232, 196, 124, 0.35); letter-spacing: 1.2px; font-size: 0.8rem;">
+<i class="bi bi-palette-fill me-1"></i> Design visuel et créations imprimées
+</span>
+<h2 class="display-6 fw-bold text-white mb-2">Pass de couloir scolaires</h2>
+<div class="row justify-content-center">
+<div class="col-lg-8 text-center text-white-50">
+<p class="mb-0 fs-6">Pass recto-verso personnalisés conçus pour la gestion de classe au lycée, utilisant des planches de comics vintage sélectionnées et des mises en page d'impression dynamiques. Anonymisés pour préserver la confidentialité.</p>
+</div>
+</div>
+</div>
+<div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="hallPassCarousel">
+<div class="carousel-inner">
+<div class="carousel-item active"><div class="row justify-content-center"><div class="col-11 col-lg-10">
+<div aria-label="Ouvrir l'échantillon du pass toilettes Spidey" class="card card-border sample-card hallpass-card hallpass-card-spidey mb-4" data-pdf="/samples/ux-writing/spidey-bathroom-pass.pdf" role="button" tabindex="0">
+<div class="row g-0 align-items-center">
+<div class="col-md-5 p-3 p-lg-4">
+<div class="hallpass-preview-wrapper position-relative">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spidey-bathroom-pass.pdf" style="min-height: 360px;" title="Pass toilettes Spidey"></iframe>
+<div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
+<i class="bi bi-arrows-fullscreen"></i> Cliquez sur la carte pour voir le PDF complet
+</div>
+</div>
+</div>
+<div class="col-md-7 p-3 p-lg-4">
+<div class="card-body p-0 text-start">
+<h3 class="card-title fw-bold mb-2">Le pass toilettes Spidey</h3>
+<p class="card-text mb-4 fs-6">Pass personnalisé présentant des planches issues de l'histoire des comics de Spider-Man, dont la célèbre séquence où il fait la leçon au Beyonder.</p>
+<div class="hallpass-meta p-3 rounded-3 mb-0">
+<div class="hallpass-meta-item mb-2">
+<div class="hallpass-meta-icon hallpass-meta-icon-quote">
+<i class="bi bi-chat-quote-fill"></i>
+</div>
+<div>
+<strong class="small d-block">Bulle de pensée :</strong>
+<span class="small">Présente des cases de <em>Secret Wars II #8</em>, où Spidey donne des conseils d'humanité à l'entité cosmique Le Beyonder.</span>
+</div>
+</div>
+<div class="hallpass-meta-item mb-0">
+<div class="hallpass-meta-icon hallpass-meta-icon-objective">
+<i class="bi bi-lightbulb-fill"></i>
+</div>
+<div>
+<strong class="small d-block">Objectif de conception :</strong>
+<span class="small">Pass recto-verso personnalisé conçu pour apporter humour et personnalité à la gestion de la classe.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+<div class="carousel-item"><div class="row justify-content-center"><div class="col-11 col-lg-10">
+<div aria-label="Ouvrir l'échantillon du pass de couloir Hulk" class="card card-border sample-card hallpass-card hallpass-card-hulk mb-4" data-pdf="/samples/ux-writing/hulk-hall-pass.pdf" role="button" tabindex="0">
+<div class="row g-0 align-items-center">
+<div class="col-md-5 p-3 p-lg-4">
+<div class="hallpass-preview-wrapper position-relative">
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/hulk-hall-pass.pdf" style="min-height: 360px;" title="Pass de couloir Hulk"></iframe>
+<div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
+<i class="bi bi-arrows-fullscreen"></i> Cliquez sur la carte pour voir le PDF complet
+</div>
+</div>
+</div>
+<div class="col-md-7 p-3 p-lg-4">
+<div class="card-body p-0 text-start">
+<h3 class="card-title fw-bold mb-2">Le pass de couloir Hulk</h3>
+<p class="card-text mb-4 fs-6">Pass personnalisé présentant des planches classiques des comics de l'Incroyable Hulk.</p>
+<div class="hallpass-meta p-3 rounded-3 mb-0">
+<div class="hallpass-meta-item mb-2">
+<div class="hallpass-meta-icon hallpass-meta-icon-quote">
+<i class="bi bi-chat-quote-fill"></i>
+</div>
+<div>
+<strong class="small d-block">Bulle de pensée :</strong>
+<span class="small">Sélection de planches vintage explosives du Géant Vert illustrant la transformation de Bruce Banner en Hulk.</span>
+</div>
+</div>
+<div class="hallpass-meta-item mb-0">
+<div class="hallpass-meta-icon hallpass-meta-icon-objective">
+<i class="bi bi-lightbulb-fill"></i>
+</div>
+<div>
+<strong class="small d-block">Objectif de conception :</strong>
+<span class="small">Pass de couloir scolaire sur le thème de l'invulnérabilité, conçu pour sortir du lot et amuser les surveillants.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+</div>
+<div class="carousel-indicators position-relative mt-2 mb-0">
+<button aria-current="true" aria-label="Le pass toilettes Spidey" class="active" data-bs-slide-to="0" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
+<button aria-label="Le pass de couloir Hulk" data-bs-slide-to="1" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
+</div>
+<button aria-label="Pass précédent" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">❮</span>
+<span class="visually-hidden">Précédent</span>
+</button>
+<button aria-label="Pass suivant" class="carousel-control-next" data-bs-slide="next" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button">
+<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">❯</span>
+<span class="visually-hidden">Suivant</span>
+</button>
+</div>
+</div>
+</div>
+<footer>
+<p class="text-white text-center">© 2026 Pedro Vega | Conçu avec HTML • CSS • JS • GitHub Pages</p>
+</footer>
+</main>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Shared PDF viewer -->
+<script src="/js/pdf-viewer.js?v=2"></script>
+<script src="/js/sticky-nav.js"></script>
+<script src="/js/page-specific.js?v=8"></script>
+<script src="/js/figma-viewer.js"></script>
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="figmaModalLabel" class="modal fade" id="figmaModal" tabindex="-1">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="figmaModalLabel">Prototype</h5>
+<button aria-label="Fermer" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<div class="ratio ratio-16x9">
+<iframe allowfullscreen="" height="450" src="" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- DocSearch JS -->
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
+<script>
+    document.querySelectorAll('.docsearch-container').forEach((container) => {
+      docsearch({
+        container: container,
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        indexName: 'portfolio_site',
+        insights: true,
+        searchParameters: {
+          facetFilters: ['lang:fr']
+        }
+      });
+    });
+
+    // Initialize Ask AI side panel
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const sidepanelDiv = document.createElement('div');
+      sidepanelDiv.id = 'docsearch-sidepanel';
+      document.body.appendChild(sidepanelDiv);
+      
+      sidepanelInstance = docsearchSidepanel({
+        container: '#docsearch-sidepanel',
+        indexName: 'portfolio_site',
+        appId: 'XMDO29FL1L',
+        apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a',
+        assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159',
+        agentStudio: true,
+        searchParameters: {},
+        showButton: false,
+        button: false,
+        variant: 'inline',
+      });
+    }
+
+    // Emulate Docusaurus SearchBar layout exactly for desktop and add Ask AI button
+    const desktopContainers = Array.from(document.querySelectorAll('.docsearch-container')).filter(container => !container.closest('.d-lg-none'));
+    desktopContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          // Wrap button in DocSearch-SearchBar div
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+  
+    // Append Docusaurus Ask AI side panel button for mobile only
+    const mobileContainers = Array.from(document.querySelectorAll('.d-lg-none .docsearch-container'));
+    mobileContainers.forEach(container => {
+      const interval = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (btn) {
+          clearInterval(interval);
+          const wrapper = document.createElement('div');
+          wrapper.className = 'DocSearch-SearchBar';
+          btn.parentNode.insertBefore(wrapper, btn);
+          wrapper.appendChild(btn);
+          
+          const askAiBtn = document.createElement('button');
+          askAiBtn.className = 'DocSearch-SidepanelButton inline';
+          askAiBtn.type = 'button';
+          askAiBtn.setAttribute('aria-label', 'Ask Artie (Control+i)');
+          askAiBtn.setAttribute('aria-keyshortcuts', 'Control+i');
+          askAiBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles "><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+          
+          askAiBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sidepanelInstance) {
+              sidepanelInstance.open();
+            } else {
+              btn.click();
+            }
+          });
+          
+          wrapper.appendChild(askAiBtn);
+        }
+      }, 50);
+    });
+
+    // Mobile search close fix - hides mobile search buttons while modal is open, revealing the native X button
+    (function () {
+      var mobileSearchContainer = document.querySelector('.mobile-nav-search-container');
+      function showSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'visible'; }
+      function hideSearchButtons() { if (mobileSearchContainer) mobileSearchContainer.style.visibility = 'hidden'; }
+      var closeObserver = new MutationObserver(function () {
+        if (document.querySelector('.DocSearch-Modal')) { hideSearchButtons(); } else { showSearchButtons(); }
+      });
+      closeObserver.observe(document.body, { childList: true, subtree: true });
+    })();
+
+  </script>
+<script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+</body>
+</html>

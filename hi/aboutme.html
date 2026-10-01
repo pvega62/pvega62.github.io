@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
+  <title>मेरे बारे में | पेड्रो वेगा</title>
+  <meta name="description" content="सॉफ़्टवेयर/डेव दस्तावेज़ीकरण, एपीआई गाइड और यूएक्स राइटिंग में अनुभव रखने वाले तकनीकी लेखक और कंटेंट डिज़ाइनर पेड्रो वेगा के बारे में जानें।">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pvega62.github.io/hi/aboutme">
+  <meta property="og:title" content="मेरे बारे में | पेड्रो वेगा">
+  <meta property="og:description" content="सॉफ़्टवेयर/डेव दस्तावेज़ीकरण, एपीआई गाइड और यूएक्स राइटिंग में अनुभव रखने वाले तकनीकी लेखक और कंटेंट डिज़ाइनर पेड्रो वेगा के बारे में जानें।">
+  <meta property="og:image" content="https://pvega62.github.io/images/social-card.png">
+  <meta property="og:image:width" content="1050">
+  <meta property="og:image:height" content="600">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pvega62.github.io/hi/aboutme">
+  <meta name="twitter:title" content="मेरे बारे में | पेड्रो वेगा">
+  <meta name="twitter:description" content="सॉफ़्टवेयर/डेव दस्तावेज़ीकरण, एपीआई गाइड और यूएक्स राइटिंग में अनुभव रखने वाले तकनीकी लेखक और कंटेंट डिज़ाइनर पेड्रो वेगा के बारे में जानें।">
+  <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css?v=6">
+  <link rel="stylesheet" href="/css/page-specific.css?v=9">
+  <link rel="icon" href="/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" />
+  <link rel="stylesheet" href="/css/interactive.css">
+  <style>.DocSearch-SidepanelButton.floating { display: none !important; } body { font-family: 'Noto Sans Devanagari', sans-serif; }</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+  <header class="sticky-top">
+    <!-- Mobile Search Bar -->
+    <div class="d-lg-none d-flex justify-content-end w-100">
+      <div class="mobile-nav-search-container" style="position: absolute; right: 2px; top: 8px; z-index: 1050; padding: 0; margin: 0;">
+        <div class="docsearch-container"></div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      <!-- Desktop Navbar -->
+      <nav aria-label="Desktop navigation" class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation">
+        <a class="navbar-brand ms-3" href="/hi/">
+          <img alt="Logo" height="40" src="/images/logo.png"/>
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
+          <ul class="navbar-nav me-3">
+            <li class="nav-item"><a class="nav-link" href="/hi/">होम</a></li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdownDesktop1" role="button">
+                तकनीकी लेखन
+              </a>
+              <ul aria-labelledby="navbarDropdownDesktop1" class="dropdown-menu">
+                <li class="dropend position-relative">
+                  <a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">सॉफ़्टवेयर/डेव दस्तावेज़</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/hi/aboutmedocs/intro">परिचय</a></li>
+                    <li><a class="dropdown-item" href="/hi/aboutmedocs/category/cloud-data-pipeline-documentation">क्लाउड डेटा पाइपलाइन्स</a></li>
+                    <li><a class="dropdown-item" href="/hi/aboutmedocs/category/typescript-sdk-sui-blockchain-documentation">टाइपस्क्रिप्ट ट्यूटोरियल</a></li>
+                    <li><a class="dropdown-item" href="/hi/aboutmedocs/category/stripe-api-documentation">Stripe API</a></li>
+                    <li><a class="dropdown-item" href="/hi/aboutmedocs/category/pet-store-api-documentation">पेट स्टोर एपीआई</a></li>
+                    <li><a class="dropdown-item" href="/hi/aboutmedocs/category/commit-messages-and-pull-requests">कमिट संदेश और पुल रिक्वेस्ट</a></li>
+                    <li><a class="dropdown-item" href="/hi/aboutmedocs/artie-case-study">आर्टी AI असिस्टेंट केस स्टडी</a></li>
+                    <li><a class="dropdown-item" href="/hi/aboutmedocs/google-chrome-theme-installation">Google Chrome थीम</a></li>
+                    <li><a class="dropdown-item" href="/hi/aboutmedocs/word-github-wiki-writage">Writage वर्कफ़्लो</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="/hi/technical-writing-hardware">हार्डवेयर नमूने</a></li>
+                <li><hr class="dropdown-divider"/></li>
+                <li><a class="dropdown-item" href="/hi/aboutmeblog">ब्लॉग</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/hi/uxwriting">यूएक्स राइटिंग</a></li>
+            <li class="nav-item"><a class="nav-link" href="/hi/articles">लेख</a></li>
+            <li class="nav-item"><a class="nav-link about-link active" href="/hi/aboutme">मेरे बारे में</a></li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdownDesktop2" role="button">
+                संपर्क
+              </a>
+              <ul aria-labelledby="navbarDropdownDesktop2" class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">लिंक्डइन</a></li>
+                <li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">गिटहब</a></li>
+                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">ईमेल</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">रिकॉर्ड-कीपिंग</a></li>
+            <li class="nav-item dropdown">
+              <a aria-expanded="false" aria-label="Language: Hindi" class="nav-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLang" role="button" title="Language: Hindi">
+                <svg aria-hidden="true" class="me-1" height="20" style="fill: currentColor;" viewBox="0 0 24 24" width="20"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg><img alt="" class="nav-flag-toggle" src="/images/flags/in.svg"/><span>हिन्दी</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLang">
+                <li><a class="dropdown-item" href="/aboutme" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+                <li><a class="dropdown-item" href="/es/aboutme" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+                <li><a class="dropdown-item" href="/fr/aboutme" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+                <li><a class="dropdown-item" href="/ar/aboutme" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+                <li><a class="dropdown-item" href="/zh/aboutme" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+                <li><a class="dropdown-item" href="/ja/aboutme" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+                <li><a class="dropdown-item active" href="/hi/aboutme" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-flex align-items-center ms-1">
+              <div class="docsearch-container"></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Mobile Navbar -->
+      <nav aria-label="Mobile navigation" class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation">
+        <a class="navbar-brand ms-2 me-1" href="/hi/">
+          <img alt="Logo" height="40" src="/images/icon-logo.png"/>
+        </a>
+        <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
+          <li class="nav-item dropup d-flex align-items-center">
+            <a aria-expanded="false" aria-label="Technical writing" class="nav-link dropdown-toggle px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdown1" role="button" title="Technical writing">
+              <img alt="" class="mobile-nav-icon" src="/images/icon-tech-writing.svg"/>
+            </a>
+            <ul aria-labelledby="navbarDropdown1" class="dropdown-menu">
+              <li class="dropend position-relative">
+                <a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">सॉफ़्टवेयर/डेव दस्तावेज़</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/hi/aboutmedocs/intro">परिचय</a></li>
+                  <li><a class="dropdown-item" href="/hi/aboutmedocs/category/cloud-data-pipeline-documentation">क्लाउड डेटा पाइपलाइन्स</a></li>
+                  <li><a class="dropdown-item" href="/hi/aboutmedocs/category/typescript-sdk-sui-blockchain-documentation">टाइपस्क्रिप्ट ट्यूटोरियल</a></li>
+                  <li><a class="dropdown-item" href="/hi/aboutmedocs/category/stripe-api-documentation">Stripe API</a></li>
+                  <li><a class="dropdown-item" href="/hi/aboutmedocs/category/pet-store-api-documentation">पेट स्टोर एपीआई</a></li>
+                  <li><a class="dropdown-item" href="/hi/aboutmedocs/category/commit-messages-and-pull-requests">कमिट संदेश और पुल रिक्वेस्ट</a></li>
+                  <li><a class="dropdown-item" href="/hi/aboutmedocs/artie-case-study">आर्टी AI असिस्टेंट केस स्टडी</a></li>
+                  <li><a class="dropdown-item" href="/hi/aboutmedocs/google-chrome-theme-installation">Google Chrome थीम</a></li>
+                  <li><a class="dropdown-item" href="/hi/aboutmedocs/word-github-wiki-writage">Writage वर्कफ़्लो</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="/hi/technical-writing-hardware">हार्डवेयर नमूने</a></li>
+              <li><hr class="dropdown-divider"/></li>
+              <li><a class="dropdown-item" href="/hi/aboutmeblog">ब्लॉग</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a aria-label="UX writing" class="nav-link px-2 d-flex align-items-center" href="/hi/uxwriting" title="UX writing">
+              <img alt="" class="mobile-nav-icon" src="/images/icon-ux-writing.svg"/>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a aria-label="Articles" class="nav-link px-2 d-flex align-items-center" href="/hi/articles" title="Articles">
+              <img alt="" class="mobile-nav-icon" src="/images/icon-articles.svg"/>
+            </a>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a aria-expanded="false" aria-label="About me and Contact" class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownAbout" role="button" title="About me and Contact">
+              <img alt="" class="mobile-nav-icon" src="/images/icon-vector1.svg" style="transform: scaleY(-1);"/>
+            </a>
+            <ul aria-labelledby="navbarDropdownAbout" class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="/hi/aboutme">मेरे बारे में</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" rel="noopener noreferrer" target="_blank">लिंक्डइन</a></li>
+              <li><a class="dropdown-item" href="https://github.com/pvega62/" rel="noopener noreferrer" target="_blank">गिटहब</a></li>
+              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">ईमेल</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a aria-expanded="false" aria-label="Languages" class="nav-link dropdown-toggle px-2 d-flex align-items-center" data-bs-toggle="dropdown" href="#" id="navbarDropdownLangMobile" role="button" title="Languages">
+              <img alt="" class="mobile-nav-icon" src="/images/icon-languages.svg"/>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLangMobile">
+              <li><a class="dropdown-item" href="/aboutme" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+              <li><a class="dropdown-item" href="/es/aboutme" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+              <li><a class="dropdown-item" href="/fr/aboutme" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+              <li><a class="dropdown-item" href="/ar/aboutme" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+              <li><a class="dropdown-item" href="/zh/aboutme" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+              <li><a class="dropdown-item" href="/ja/aboutme" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+              <li><a class="dropdown-item active" href="/hi/aboutme" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a aria-label="Recordkeeping" class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/" title="Recordkeeping">
+              <img alt="" class="mobile-nav-icon-colored" src="/images/icon-recordkeeping.svg"/>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main id="main-content" tabindex="-1">
+  <div class="hero-section">
+    <div class="container-fluid px-4">
+      <div class="text-center">
+        <h1 class="display-4 fw-bold text-white">मेरे बारे में</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center intro-text text-white">
+            <p>वह लेखक जिसे आप नियुक्त करने जा रहे हैं!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="light-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <p>मैं एक तकनीकी लेखक हूँ जो जटिल तकनीक को सभी के लिए सुलभ और समझने योग्य बनाने में विशेषज्ञता रखता हूँ। आईटी सपोर्ट, प्रकाशन और पत्रकारिता की पृष्ठभूमि के साथ, मैं स्पष्ट और उपयोगकर्ता-केंद्रित दस्तावेज़ तैयार करता हूँ जो ग्राहकों की निराशा को कम करते हैं और उपयोगकर्ताओं को उनके उपकरणों में महारत हासिल करने में सक्षम बनाते हैं। एपीआई गाइड और ट्यूटोरियल से लेकर प्रॉम्प्ट इंजीनियरिंग तक, मेरा मिशन जटिल तकनीकी शब्दावली को सरल और स्पष्ट भाषा में बदलना है।</p>
+        <p>हाई स्कूल के बाद मेरी पहली नौकरी मीडिया सर्विसेज तकनीशियन के रूप में थी। इसके बाद न्यूयॉर्क सिटी कॉलेज ऑफ टेक्नोलॉजी में पढ़ाई के दौरान आईटी सपोर्ट के अनुभव ने मुझे गैर-तकनीकी उपयोगकर्ताओं को सफलतापूर्वक तकनीकी समस्याओं का समाधान कराने में मदद की। यहीं से मेरे तकनीकी लेखन करियर की शुरुआत हुई।</p>
+        <p>मैं अपनी भूमिका को एक 'अनुवादक' के रूप में देखता हूँ—एक ऐसा कौशल जिसे मैंने बचपन से निखारा है। एक अप्रवासी परिवार के बच्चे के रूप में, मैंने अक्सर अंग्रेजी और कानूनी शब्दावली का अनुवाद और व्याख्या की। आज मैं उसी कौशल का उपयोग जटिल तकनीक और उसके उपयोगकर्ताओं के बीच की दूरी को पाटने के लिए करता हूँ।</p>
+
+        <h2 class="text-center mt-5 mb-4">कौशल सेट</h2>
+
+        <!-- Desktop Grid -->
+        <div class="d-none d-md-block">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h5>तकनीकी और एपीआई दस्तावेज़ीकरण</h5>
+              <ul>
+                <li><strong>मुख्य दस्तावेज़ीकरण:</strong> Docs-as-Code &middot; REST &amp; OpenAPI &middot; MCP Integration &middot; IA &middot; SOPs &middot; Quickstarts &middot; CI/CD</li>
+                <li><strong>डेवलपर टूल्स:</strong> Git (GitHub, GitLab) &middot; Linux/CLI &middot; Docker &middot; VS Code &middot; Postman &middot; Swagger &middot; Docusaurus &middot; Algolia &middot; Jira &middot; Notion</li>
+              </ul>
+            </div>
+            <div class="col-md-6 mb-4">
+              <h5>यूएक्स राइटिंग और कंटेंट डिज़ाइन</h5>
+              <ul>
+                <li><strong>डिज़ाइन अभ्यास:</strong> UX Writing &middot; Microcopy &middot; Prompt Design &middot; Content Systems &middot; UX Research &middot; Wireframes &middot; WCAG Accessibility</li>
+                <li><strong>डिज़ाइन टूल्स:</strong> Figma &middot; Snagit &middot; MS Word</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h5>हार्डवेयर और सिस्टम्स</h5>
+              <ul>
+                <li><strong>सिस्टम और क्यूए:</strong> मेडिकल और कंज्यूमर हार्डवेयर &middot; हार्डवेयर परीक्षण &middot; कमर्शियल डिस्प्ले और एवी &middot; सिग्नल रूटिंग &middot; नेटवर्क वायरिंग &middot; SOPs &middot; उपकरण लॉग</li>
+              </ul>
+            </div>
+            <div class="col-md-6 mb-4">
+              <h5>तकनीकी स्टैक और एआई</h5>
+              <ul>
+                <li><strong>स्टैक और भाषाएँ:</strong> HTML &middot; CSS &middot; JavaScript &middot; TypeScript &middot; Markdown &middot; React &middot; Node.js &middot; Bootstrap</li>
+                <li><strong>एआई मॉडल और प्रॉम्प्ट्स:</strong> Gemini &middot; Claude &middot; GPT (UI Microcopy, Error States और Technical Docs के लिए प्रॉम्प्ट डिज़ाइन)</li>
+                <li><strong>एआई सिस्टम और टूल्स:</strong> लोकलाइज़ेशन और टूलिंग के लिए Model Context Protocol (MCP) &middot; DeepL &amp; Lara (TMX) &middot; AskAI सिमेंटिक सर्च &middot; Galileo &middot; Vale</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-10 mb-4">
+              <h5>अतिरिक्त कौशल और भाषाएँ</h5>
+              <ul class="list-unstyled">
+                <li class="mb-1"><strong>प्रकाशन और अनुवाद:</strong> SEO अनुकूलन &middot; तकनीकी अनुवाद &middot; AP Style &middot; Adobe Suite (InDesign, Illustrator, Acrobat) &middot; MadCap Flare</li>
+                <li><strong>भाषाएँ:</strong> स्पेनिश (धाराप्रवाह) &middot; फ्रेंच (मध्यवर्ती)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Accordion -->
+        <div class="d-md-none">
+          <div class="accordion" id="skillsAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTechDocs">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechDocs" aria-expanded="false" aria-controls="collapseTechDocs">तकनीकी और एपीआई दस्तावेज़ीकरण</button>
+              </h2>
+              <div id="collapseTechDocs" class="accordion-collapse collapse" aria-labelledby="headingTechDocs" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li class="mb-2"><strong>मुख्य दस्तावेज़ीकरण:</strong> Docs-as-Code &middot; REST &amp; OpenAPI &middot; MCP Integration &middot; IA &middot; SOPs &middot; Quickstarts &middot; CI/CD</li>
+                    <li><strong>डेवलपर टूल्स:</strong> Git (GitHub, GitLab) &middot; Linux/CLI &middot; Docker &middot; VS Code &middot; Postman &middot; Swagger &middot; Docusaurus &middot; Algolia &middot; Jira &middot; Notion</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingUX">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUX" aria-expanded="false" aria-controls="collapseUX">यूएक्स राइटिंग और कंटेंट डिज़ाइन</button>
+              </h2>
+              <div id="collapseUX" class="accordion-collapse collapse" aria-labelledby="headingUX" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li class="mb-2"><strong>डिज़ाइन अभ्यास:</strong> UX Writing &middot; Microcopy &middot; Prompt Design &middot; Content Systems &middot; UX Research &middot; Wireframes &middot; WCAG Accessibility</li>
+                    <li><strong>डिज़ाइन टूल्स:</strong> Figma &middot; Snagit &middot; MS Word</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingHardware">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardware" aria-expanded="false" aria-controls="collapseHardware">हार्डवेयर और सिस्टम्स</button>
+              </h2>
+              <div id="collapseHardware" class="accordion-collapse collapse" aria-labelledby="headingHardware" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li><strong>सिस्टम और क्यूए:</strong> मेडिकल और कंज्यूमर हार्डवेयर &middot; हार्डवेयर परीक्षण &middot; कमर्शियल डिस्प्ले और एवी &middot; सिग्नल रूटिंग &middot; नेटवर्क वायरिंग &middot; SOPs &middot; उपकरण लॉग</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTechStack">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechStack" aria-expanded="false" aria-controls="collapseTechStack">तकनीकी स्टैक और एआई</button>
+              </h2>
+              <div id="collapseTechStack" class="accordion-collapse collapse" aria-labelledby="headingTechStack" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li class="mb-2"><strong>स्टैक और भाषाएँ:</strong> HTML &middot; CSS &middot; JavaScript &middot; TypeScript &middot; Markdown &middot; React &middot; Node.js &middot; Bootstrap</li>
+                    <li class="mb-2"><strong>एआई मॉडल और प्रॉम्प्ट्स:</strong> Gemini &middot; Claude &middot; GPT (UI Microcopy, Error States और Technical Docs के लिए प्रॉम्प्ट डिज़ाइन)</li>
+                    <li><strong>एआई सिस्टम और टूल्स:</strong> लोकलाइज़ेशन और टूलिंग के लिए Model Context Protocol (MCP) &middot; DeepL &amp; Lara (TMX) &middot; AskAI सिमेंटिक सर्च &middot; Galileo &middot; Vale</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingAddSkills">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAddSkills" aria-expanded="false" aria-controls="collapseAddSkills">अतिरिक्त कौशल और भाषाएँ</button>
+              </h2>
+              <div id="collapseAddSkills" class="accordion-collapse collapse" aria-labelledby="headingAddSkills" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li class="mb-2"><strong>प्रकाशन और अनुवाद:</strong> SEO अनुकूलन &middot; तकनीकी अनुवाद &middot; AP Style &middot; Adobe Suite (InDesign, Illustrator, Acrobat) &middot; MadCap Flare</li>
+                    <li><strong>भाषाएँ:</strong> स्पेनिश (धाराप्रवाह) &middot; फ्रेंच (मध्यवर्ती)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <h2 class="text-center mb-4">प्रासंगिक अनुभव</h2>
+        <p class="text-center"><a href="/Pedro Vega Resume.pdf" class="text-white">बायोडाटा / रिज़्यूमे यहाँ देखें</a></p>
+        <!-- Desktop -->
+        <div class="d-none d-md-block">
+          <div>
+            <h4>फ्रीलांस तकनीकी लेखक</h4>
+            <h5>रिमोट | अप्रैल 2024 - वर्तमान</h5>
+            <ul>
+              <li>डेवलपर-केंद्रित परियोजनाओं के लिए शुरू से अंत तक दस्तावेज़ तैयार किए। Datadog लॉग पाइपलाइन और Galileo LLM ट्रेसिंग को एकीकृत करने वाले क्लाउड डेटा रूटिंग आर्किटेक्चर के लिए एपीआई संदर्भ और SDK गाइड विकसित किए।</li>
+              <li>Sui ब्लॉकचेन प्लेटफॉर्म के लिए TypeScript SDK विधियों और लॉजिक का दस्तावेज़ीकरण किया। व्यावहारिक कोड उदाहरणों के साथ क्विकस्टार्ट और वॉकथ्रू गाइड बनाए।</li>
+              <li>REST API एंडपॉइंट्स को सत्यापित करने के लिए Postman मॉक सर्वर कॉन्फ़िगरेशन सहित व्यापक डेवलपर कुकबुक और ट्यूटोरियल लिखे।</li>
+              <li>OpenAPI विनिर्देशों का प्रबंधन किया और एंड-टू-एंड एपीआई दस्तावेज़ीकरण आर्किटेक्चर बनाया।</li>
+              <li>जेनेरेटिव एआई टूल्स और Model Context Protocol (MCP) सर्वर को सीधे स्थानीय सीएलआई वातावरण में एकीकृत किया। लिंटिंग, अनुवाद और वर्कफ़्लो स्वचालन के लिए Vale, DeepL और Figma को Gemini CLI से जोड़ा।</li>
+              <li>Algolia और AskAI को एकीकृत करके कस्टम HTML और Docusaurus साइटों पर उन्नत खोज आर्किटेक्चर बनाया, जिससे जटिल तकनीकी दस्तावेज़ों में जेनेरेटिव एआई और सिमेंटिक खोज की सुविधा मिली।</li>
+            </ul>
+          </div>
+          <hr>
+          <div>
+            <h4>यूएक्स राइटर</h4>
+            <h5>Culangex | रिमोट | दिसंबर 2024 - जनवरी 2026</h5>
+            <ul>
+              <li>एक सुसंगत ब्रांड वॉइस सुनिश्चित करने और WCAG अभिगम्यता (Accessibility) मानकों को पूरा करने के लिए क्रॉस-फ़ंक्शनल टीमों के साथ मिलकर एक व्यापक स्टाइल गाइड का सह-निर्माण किया।</li>
+              <li>सॉफ़्टवेयर विकास जीवनचक्र में निर्बाध सामग्री एकीकरण प्रदान करने के लिए चुस्त (Agile) इंजीनियरिंग टीमों के साथ यूआई टेक्स्ट, त्रुटि संदेश और टूलटिप्स का प्रबंधन किया।</li>
+              <li>स्पैनिश-भाषी बाज़ारों में उत्पाद लॉन्च की तैयारी के लिए उपयोगकर्ता-सामग्री का स्पैनिश स्थानीयकरण किया।</li>
+            </ul>
+          </div>
+          <hr>
+          <div>
+            <h4>तकनीकी लेखक</h4>
+            <h5>Felix Storch Inc. | ब्रोंक्स, न्यूयॉर्क | मार्च 2022 - फरवरी 2024</h5>
+            <ul>
+              <li>5 कंज्यूमर और मेडिकल हार्डवेयर ब्रांडों के तकनीकी दस्तावेज़ों का प्रबंधन किया। 150 से अधिक हार्डवेयर उपयोगकर्ता मैनुअल, इंस्टॉलेशन गाइड और विनिर्देश पत्रक बनाए और अपडेट किए।</li>
+              <li>तकनीकी आवश्यकताओं को समझने, उत्पाद विनिर्देशों की पुष्टि करने और नए उत्पाद लाइनों के लिए सटीक संचालन गाइड तैयार करने के लिए इंजीनियरिंग टीमों के साथ मिलकर काम किया।</li>
+              <li>दस्तावेज़ प्रबंधन टेम्प्लेट और प्रकाशन वर्कफ़्लो का मानकीकरण किया, जिससे मैन्युअल उत्पादन समय में 40% की कमी आई।</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Mobile Accordion -->
+        <div class="d-md-none">
+          <div class="accordion" id="experienceAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingExp1">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp1" aria-expanded="false" aria-controls="collapseExp1">
+                  <div class="d-flex flex-column text-start"><span>फ्रीलांस तकनीकी लेखक</span><small class="text-muted fw-normal" style="font-size: 0.85em;">रिमोट | अप्रैल 2024 - वर्तमान</small></div>
+                </button>
+              </h2>
+              <div id="collapseExp1" class="accordion-collapse collapse" aria-labelledby="headingExp1" data-bs-parent="#experienceAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li>डेवलपर परियोजनाओं के लिए शुरू से अंत तक दस्तावेज़ तैयार किए। Datadog और Galileo के साथ क्लाउड डेटा रूटिंग एपीआई संदर्भ और SDK गाइड का निर्माण किया।</li>
+                    <li>Sui ब्लॉकचेन के लिए TypeScript SDK विधियों का दस्तावेज़ीकरण और व्यावहारिक ट्यूटोरियल तैयार किए।</li>
+                    <li>Postman मॉक सर्वर कॉन्फ़िगरेशन सहित व्यापक डेवलपर कुकबुक और ट्यूटोरियल लिखे।</li>
+                    <li>OpenAPI विनिर्देशों का प्रबंधन और एंड-टू-एंड एपीआई दस्तावेज़ीकरण।</li>
+                    <li>Gemini CLI के साथ Vale, DeepL और Figma को एकीकृत करके वर्कफ़्लो को स्वचालित किया।</li>
+                    <li>Algolia और AskAI के साथ सिमेंटिक खोज और जेनेरेटिव एआई क्षमताएं जोड़ीं।</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingExp2">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp2" aria-expanded="false" aria-controls="collapseExp2">
+                  <div class="d-flex flex-column text-start"><span>यूएक्स राइटर</span><small class="text-muted fw-normal" style="font-size: 0.85em;">Culangex | दिसंबर 2024 - जनवरी 2026</small></div>
+                </button>
+              </h2>
+              <div id="collapseExp2" class="accordion-collapse collapse" aria-labelledby="headingExp2" data-bs-parent="#experienceAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li>WCAG अभिगम्यता मानकों और सुसंगत ब्रांड वॉइस के साथ व्यापक स्टाइल गाइड का सह-निर्माण किया।</li>
+                    <li>सॉफ़्टवेयर विकास में यूआई टेक्स्ट, त्रुटि संदेश और टूलटिप्स का निर्बाध प्रबंधन किया।</li>
+                    <li>स्पैनिश-भाषी बाज़ारों के लिए उपयोगकर्ता सामग्री का स्थानीयकरण किया।</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingExp3">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp3" aria-expanded="false" aria-controls="collapseExp3">
+                  <div class="d-flex flex-column text-start"><span>तकनीकी लेखक</span><small class="text-muted fw-normal" style="font-size: 0.85em;">Felix Storch Inc. | मार्च 2022 - फरवरी 2024</small></div>
+                </button>
+              </h2>
+              <div id="collapseExp3" class="accordion-collapse collapse" aria-labelledby="headingExp3" data-bs-parent="#experienceAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li>5 ब्रांडों में 150 से अधिक हार्डवेयर उपयोगकर्ता मैनुअल, इंस्टॉलेशन गाइड और विनिर्देश पत्रक तैयार किए।</li>
+                    <li>इंजीनियरिंग टीमों के साथ उत्पाद विनिर्देशों की पुष्टि और सटीक संचालन गाइड का निर्माण किया।</li>
+                    <li>दस्तावेज़ प्रबंधन टेम्प्लेट को मानकीकृत करके उत्पादन समय में 40% की कमी की।</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Knicks Ticker (Easter egg) -->
+<div class="knicks-ticker" role="region" aria-label="Knicks victory ticker" tabindex="0">
+  <div class="marquee-wrapper">
+    <span class="marquee-content"><span>NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin: 0 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="/images/larry.svg" alt="" style="height: 1.2em; vertical-align: text-bottom; margin: 0 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="/images/noufos.svg" alt="" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
+    <span class="marquee-content" aria-hidden="true"><span>NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="/images/larry.svg" alt="" style="height: 1.2em; vertical-align: text-bottom; margin: 0 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="/images/noufos.svg" alt="" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
+  </div>
+</div>
+
+<section class="light-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <h2 class="text-center mb-4">शौक और रुचियाँ (काम से परे जीवन)</h2>
+        <ul>
+          <li>किताबें पढ़ना (उपन्यास और ग्राफिक उपन्यास दोनों पसंद हैं)।</li>
+          <li>फ़िल्में देखना।</li>
+          <li>संगीत।</li>
+          <li>न्यूयॉर्क यांकीज़ और न्यूयॉर्क निक्स (NY खेल टीमों का समर्थन करना आसान नहीं है, लेकिन न्यूयॉर्क निक्स बहुत खास हैं!) #BigBodegaKAT को विशेष सलाम! और हमारे कप्तान जालेन ब्रूनसन, जो बास्केटबॉल के लिए ही बने हैं!</li>
+          <li>डूडलिंग और रेखाचित्र बनाना।</li>
+          <li>गैजेट्स और नई तकनीक के साथ प्रयोग करना। मुझे यह समझने के लिए चीज़ों को खोलना पसंद है कि वे कैसे काम करती हैं! बचपन में कैमरे खोलते समय मुझे कुछ झटके भी लगे थे!</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="and-divider">AND</p>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3 class="text-center">महीने का गाना</h3>
+        <p class="text-center">AYE! NEW YORK KNICKS ARE THE BEST IN THE WORLD. NUMBER ONE. THE BEST IN THE WORLD.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KU5V5WZVcVE?si=Q9Y2JcXQapX8WGtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="text-white text-center">&copy; 2026 Pedro Vega | HTML &bull; CSS &bull; JS &bull; GitHub Pages द्वारा निर्मित</p>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/js/pdf-viewer.js?v=2"></script>
+  <script src="/js/sticky-nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
+  <script>
+    document.querySelectorAll('.docsearch-container').forEach((container) => {
+      docsearch({ container, appId: 'XMDO29FL1L', apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a', indexName: 'portfolio_site', insights: true, searchParameters: { facetFilters: ['lang:hi'] } });
+    });
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const div = document.createElement('div'); div.id = 'docsearch-sidepanel'; document.body.appendChild(div);
+      sidepanelInstance = docsearchSidepanel({ container: '#docsearch-sidepanel', indexName: 'portfolio_site', appId: 'XMDO29FL1L', apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a', assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159', agentStudio: true, searchParameters: {}, showButton: false, button: false, variant: 'inline' });
+    }
+    const SPARKLE = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+    function addAskAI(container) {
+      const iv = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (!btn) return; clearInterval(iv);
+        const w = document.createElement('div'); w.className = 'DocSearch-SearchBar';
+        btn.parentNode.insertBefore(w, btn); w.appendChild(btn);
+        const ai = document.createElement('button'); ai.className = 'DocSearch-SidepanelButton inline'; ai.type = 'button';
+        ai.setAttribute('aria-label','Ask Artie (Control+i)'); ai.setAttribute('aria-keyshortcuts','Control+i');
+        ai.innerHTML = SPARKLE;
+        ai.addEventListener('click', e => { e.preventDefault(); sidepanelInstance ? sidepanelInstance.open() : btn.click(); });
+        w.appendChild(ai);
+      }, 50);
+    }
+    document.querySelectorAll('.docsearch-container').forEach(addAskAI);
+    (function(){
+      var msc = document.querySelector('.mobile-nav-search-container');
+      new MutationObserver(() => { if(msc) msc.style.visibility = document.querySelector('.DocSearch-Modal') ? 'hidden' : 'visible'; }).observe(document.body,{childList:true,subtree:true});
+    })();
+  </script>
+  <script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+</body>
+</html>

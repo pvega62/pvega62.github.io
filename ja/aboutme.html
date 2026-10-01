@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+      const cleanPath = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+      window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
+    }
+  </script>
+  <title>自己紹介 | ペドロ・ベガ</title>
+  <meta name="description" content="ソフトウェアのドキュメント、APIガイド、UXライティングの経験を持つテクニカルライター兼コンテンツデザイナー、ペドロ・ベガについてご紹介します。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pvega62.github.io/ja/aboutme">
+  <meta property="og:title" content="自己紹介 | ペドロ・ベガ">
+  <meta property="og:description" content="ソフトウェアのドキュメント、APIガイド、UXライティングの経験を持つテクニカルライター兼コンテンツデザイナー、ペドロ・ベガについてご紹介します。">
+  <meta property="og:image" content="https://pvega62.github.io/images/social-card.png">
+  <meta property="og:image:width" content="1050">
+  <meta property="og:image:height" content="600">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pvega62.github.io/ja/aboutme">
+  <meta name="twitter:title" content="自己紹介 | ペドロ・ベガ">
+  <meta name="twitter:description" content="ソフトウェアのドキュメント、APIガイド、UXライティングの経験を持つテクニカルライター兼コンテンツデザイナー、ペドロ・ベガについてご紹介します。">
+  <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css?v=6">
+  <link rel="stylesheet" href="/css/page-specific.css?v=9">
+  <link rel="icon" href="/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4.6.3/dist/sidepanel.css" />
+  <link rel="stylesheet" href="/css/interactive.css">
+  <style>.DocSearch-SidepanelButton.floating { display: none !important; } body { font-family: 'Noto Sans JP', sans-serif; }</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>
+  <header class="sticky-top">
+    <!-- Mobile Search Bar -->
+    <div class="d-lg-none d-flex justify-content-end w-100">
+      <div class="mobile-nav-search-container" style="position: absolute; right: 2px; top: 8px; z-index: 1050; padding: 0; margin: 0;">
+        <div class="docsearch-container"></div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      <!-- Desktop Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="デスクトップナビゲーション">
+        <a class="navbar-brand ms-3" href="/ja/">
+          <img src="/images/logo.png" alt="Logo" height="40">
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
+          <ul class="navbar-nav me-3">
+            
+            <li class="nav-item"><li class="nav-item"><a class="nav-link" href="/ja/">ホーム</a></li></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop1" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">テクニカルライティング</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
+                <li class="dropend position-relative">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/software/ja/docs/intro">はじめに</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript チュートリアル</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/category/stripe-api-documentation">Stripe API</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/category/pet-store-api-documentation">Pet Store API</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/category/commit-messages-and-pull-requests">コミットメッセージとプルリクエスト</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/artie-case-study">Artie AIアシスタントのケーススタディ</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/google-chrome-theme-installation">Google Chrome テーマ</a></li>
+                    <li><a class="dropdown-item" href="/software/ja/docs/word-github-wiki-writage">Writageのワークフロー</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="/ja/technical-writing-hardware">ハードウェアサンプル</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/software/ja/blog">ブログ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/ja/uxwriting">UXライティング</a></li>
+            <li class="nav-item"><a class="nav-link" href="/ja/articles">記事</a></li>
+            <li class="nav-item"><a class="nav-link about-link" href="/ja/aboutme">自己紹介</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDesktop2" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">お問い合わせ</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop2">
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">メール</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">Recordkeeping</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownLang" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" aria-label="言語：日本語" title="言語：日本語">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="me-1" style="fill: currentColor;"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
+                <img src="/images/flags/jp.svg" alt="" class="nav-flag-toggle"><span>日本語</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLang">
+                <li><a class="dropdown-item" href="/aboutme" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+                <li><a class="dropdown-item" href="/es/aboutme" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+                <li><a class="dropdown-item" href="/fr/aboutme" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+                <li><a class="dropdown-item" href="/ar/aboutme" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+                <li><a class="dropdown-item" href="/zh/aboutme" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+                <li><a class="dropdown-item active" href="/ja/aboutme" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+                <li><a class="dropdown-item" href="/hi/aboutme" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-flex align-items-center ms-1">
+              <div class="docsearch-container"></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Mobile Navbar -->
+      <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="モバイルナビゲーション">
+        <a class="navbar-brand ms-2 me-1" href="/ja/">
+          <img src="/images/icon-logo.png" alt="Logo" height="40">
+        </a>
+        
+        <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#" id="navbarDropdown1"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="テクニカルライティング"
+              title="テクニカルライティング">
+              <img src="/images/icon-tech-writing.svg" alt="" class="mobile-nav-icon">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li class="dropend position-relative">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/software/ja/docs/intro">はじめに</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript チュートリアル</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/category/stripe-api-documentation">Stripe API</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/category/pet-store-api-documentation">Pet Store API</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/category/commit-messages-and-pull-requests">コミットメッセージとプルリクエスト</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/artie-case-study">Artie AIアシスタントのケーススタディ</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/google-chrome-theme-installation">Google Chrome テーマ</a></li>
+                  <li><a class="dropdown-item" href="/software/ja/docs/word-github-wiki-writage">Writageのワークフロー</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="/ja/technical-writing-hardware">ハードウェアサンプル</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/software/ja/blog">ブログ</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="/ja/uxwriting" aria-label="UXライティング" title="UXライティング">
+              <img src="/images/icon-ux-writing.svg" alt="" class="mobile-nav-icon">
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="/ja/articles" aria-label="記事" title="記事">
+              <img src="/images/icon-articles.svg" alt="" class="mobile-nav-icon">
+            </a>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle about-link px-2 d-flex align-items-center" href="#"
+              id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="自己紹介および連絡先" title="自己紹介および連絡先">
+              <img src="/images/icon-vector1.svg" alt="" class="mobile-nav-icon" style="transform: scaleY(-1);">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAbout">
+              <li><a class="dropdown-item" href="/ja/aboutme">自己紹介</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">メール</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropup d-flex align-items-center">
+            <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" href="#"
+              id="navbarDropdownLangMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              aria-label="言語" title="言語">
+              <img src="/images/icon-languages.svg" alt="" class="mobile-nav-icon">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLang">
+                <li><a class="dropdown-item" href="/aboutme" lang="en-US" hreflang="en-US"><img src="/images/flags/us.svg" alt="" class="dropdown-flag"><span>English</span></a></li>
+                <li><a class="dropdown-item" href="/es/aboutme" lang="es" hreflang="es"><img src="/images/flags/do.svg" alt="" class="dropdown-flag"><span>Español</span></a></li>
+                <li><a class="dropdown-item" href="/fr/aboutme" lang="fr-FR" hreflang="fr-FR"><img src="/images/flags/fr.svg" alt="" class="dropdown-flag"><span>Français</span></a></li>
+                <li><a class="dropdown-item" href="/ar/aboutme" target="_self" lang="ar" hreflang="ar"><img src="/images/flags/ma.svg" alt="" class="dropdown-flag"><span>العربية</span></a></li>
+                <li><a class="dropdown-item" href="/zh/aboutme" lang="zh-Hans" hreflang="zh-Hans"><img src="/images/flags/cn.svg" alt="" class="dropdown-flag"><span>普通话</span></a></li>
+                <li><a class="dropdown-item active" href="/ja/aboutme" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
+                <li><a class="dropdown-item" href="/hi/aboutme" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
+              </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link px-2 d-flex align-items-center" href="https://pvega62.github.io/Recordkeeping/"
+              aria-label="Recordkeeping" title="Recordkeeping">
+              <img src="/images/icon-recordkeeping.svg" alt="" class="mobile-nav-icon-colored">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main id="main-content" tabindex="-1">
+  <div class="hero-section">
+    <div class="container-fluid px-4">
+      <div class="text-center">
+        <h1 class="display-4 fw-bold text-white">自己紹介</h1>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center intro-text text-white">
+            <p>これからご採用いただくライターです！</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="light-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <p>私は、複雑なテクノロジーをすべての人にわかりやすく伝えることを専門とするテクニカルライターです。ITサポート、出版、ジャーナリズムのバックグラウンドを持ち、明確でユーザー中心のドキュメント作成を得意としています。顧客のフラストレーションを軽減し、ユーザーが使用するツールをより自在に扱えるよう支援します。APIガイド、チュートリアル、プロンプトエンジニアリングなど、専門用語を平易な言葉に翻訳することが私の使命です。</p>
+        <p>高校卒業後の最初の仕事は、メディアサービス技術者でした。ニューヨーク市立工科大学（在学中）でのITサポートの経験では、技術に不慣れなユーザーのトラブルシューティングを成功裏にサポートしました。これが、私のテクニカルライティングキャリアの出発点となりました。</p>
+        <p>私は自分の役割を「翻訳者」と捉えています。これは幼少期から磨いてきたスキルです。移民家庭の子として、英語や法律用語の通訳を頻繁に担ってきました。そのスキルを今、複雑なテクノロジーとそのユーザーの橋渡しに活かしています。</p>
+
+        <h2 class="text-center mt-5 mb-4">スキルセット</h2>
+
+        <!-- Desktop Grid -->
+        <div class="d-none d-md-block">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h5>テクニカル・APIドキュメント</h5>
+              <ul>
+                <li><strong>コアドキュメント：</strong> Docs-as-Code &middot; REST &amp; OpenAPI &middot; MCP Integration &middot; IA &middot; SOPs &middot; Quickstarts &middot; CI/CD</li>
+                <li><strong>開発者ツール：</strong> Git (GitHub, GitLab) &middot; Linux/CLI &middot; Docker &middot; VS Code &middot; Postman &middot; Swagger &middot; Docusaurus &middot; Algolia &middot; Jira &middot; Notion</li>
+              </ul>
+            </div>
+            <div class="col-md-6 mb-4">
+              <h5>UXライティング・コンテンツデザイン</h5>
+              <ul>
+                <li><strong>デザインプラクティス：</strong> UX Writing &middot; Microcopy &middot; Prompt Design &middot; Content Systems &middot; UX Research &middot; Wireframes &middot; WCAG Accessibility</li>
+                <li><strong>デザインツール：</strong> Figma &middot; Snagit &middot; MS Word</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h5>ハードウェア・システム</h5>
+              <ul>
+                <li><strong>システム・QA：</strong> 医療用・民生用ハードウェア &middot; ハードウェアテスト &middot; 商業ディスプレイ・AV &middot; 信号ルーティング &middot; ネットワーク配線 &middot; SOPs &middot; 機器ログ</li>
+              </ul>
+            </div>
+            <div class="col-md-6 mb-4">
+              <h5>技術スタック・AI</h5>
+              <ul>
+                <li><strong>スタック・言語：</strong> HTML &middot; CSS &middot; JavaScript &middot; TypeScript &middot; Markdown &middot; React &middot; Node.js &middot; Bootstrap</li>
+                <li><strong>AIモデル・プロンプト：</strong> Gemini &middot; Claude &middot; GPT（UI Microcopy、エラー状態、技術ドキュメント向けプロンプトデザイン）</li>
+                <li><strong>AIシステム・ツール：</strong> ローカライズ・ツールのための Model Context Protocol (MCP) &middot; DeepL &amp; Lara (TMX) &middot; AskAI セマンティック検索 &middot; Galileo &middot; Vale</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-10 mb-4">
+              <h5>その他・使用言語</h5>
+              <ul class="list-unstyled">
+                <li class="mb-1"><strong>出版・翻訳：</strong> SEO最適化 &middot; 技術翻訳 &middot; AP Style &middot; Adobe Suite (InDesign, Illustrator, Acrobat) &middot; MadCap Flare</li>
+                <li><strong>言語：</strong> スペイン語（流暢） &middot; フランス語（中級）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Accordion -->
+        <div class="d-md-none">
+          <div class="accordion" id="skillsAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTechDocs">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechDocs" aria-expanded="false" aria-controls="collapseTechDocs">テクニカル・APIドキュメント</button>
+              </h2>
+              <div id="collapseTechDocs" class="accordion-collapse collapse" aria-labelledby="headingTechDocs" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li class="mb-2"><strong>コアドキュメント：</strong> Docs-as-Code &middot; REST &amp; OpenAPI &middot; MCP Integration &middot; IA &middot; SOPs &middot; Quickstarts &middot; CI/CD</li>
+                    <li><strong>開発者ツール：</strong> Git (GitHub, GitLab) &middot; Linux/CLI &middot; Docker &middot; VS Code &middot; Postman &middot; Swagger &middot; Docusaurus &middot; Algolia &middot; Jira &middot; Notion</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingUX">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUX" aria-expanded="false" aria-controls="collapseUX">UXライティング・コンテンツデザイン</button>
+              </h2>
+              <div id="collapseUX" class="accordion-collapse collapse" aria-labelledby="headingUX" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li class="mb-2"><strong>デザインプラクティス：</strong> UX Writing &middot; Microcopy &middot; Prompt Design &middot; Content Systems &middot; UX Research &middot; Wireframes &middot; WCAG Accessibility</li>
+                    <li><strong>デザインツール：</strong> Figma &middot; Snagit &middot; MS Word</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingHardware">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardware" aria-expanded="false" aria-controls="collapseHardware">ハードウェア・システム</button>
+              </h2>
+              <div id="collapseHardware" class="accordion-collapse collapse" aria-labelledby="headingHardware" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li><strong>システム・QA：</strong> 医療用・民生用ハードウェア &middot; ハードウェアテスト &middot; 商業ディスプレイ・AV &middot; 信号ルーティング &middot; ネットワーク配線 &middot; SOPs &middot; 機器ログ</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTechStack">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechStack" aria-expanded="false" aria-controls="collapseTechStack">技術スタック・AI</button>
+              </h2>
+              <div id="collapseTechStack" class="accordion-collapse collapse" aria-labelledby="headingTechStack" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li class="mb-2"><strong>スタック・言語：</strong> HTML &middot; CSS &middot; JavaScript &middot; TypeScript &middot; Markdown &middot; React &middot; Node.js &middot; Bootstrap</li>
+                    <li class="mb-2"><strong>AIモデル・プロンプト：</strong> Gemini &middot; Claude &middot; GPT（Prompt Design for UI Microcopy, Error States &amp; Technical Docs）</li>
+                    <li><strong>AIシステム・ツール：</strong> Model Context Protocol (MCP) for Localization &amp; Tooling &middot; DeepL &amp; Lara (TMX) &middot; AskAI Semantic Search &middot; Galileo &middot; Vale</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingAddSkills">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAddSkills" aria-expanded="false" aria-controls="collapseAddSkills">その他・使用言語</button>
+              </h2>
+              <div id="collapseAddSkills" class="accordion-collapse collapse" aria-labelledby="headingAddSkills" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li class="mb-2"><strong>出版・翻訳：</strong> SEO最適化 &middot; 技術翻訳 &middot; AP Style &middot; Adobe Suite (InDesign, Illustrator, Acrobat) &middot; MadCap Flare</li>
+                    <li><strong>言語：</strong> スペイン語（流暢） &middot; フランス語（中級）</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <h2 class="text-center mb-4">関連経験</h2>
+        <p class="text-center"><a href="/Pedro Vega Resume.pdf" class="text-white">履歴書はこちら</a></p>
+        <!-- Desktop -->
+        <div class="d-none d-md-block">
+          <div>
+            <h4>フリーランス テクニカルライター</h4>
+            <h5>リモート | 2024年4月 - 現在</h5>
+            <ul>
+              <li>開発者向けプロジェクトのドキュメント全工程を担当。DatadogのログパイプラインとガリレオのLLMトレースを統合したクラウドデータルーティングアーキテクチャのAPIリファレンスおよびSDKガイドを作成。</li>
+              <li>Suiブロックチェーンプラットフォーム向けにTypeScript SDKのメソッドとロジックをドキュメント化。動作するコード例を含むクイックスタートとウォークスルーガイドを作成。</li>
+              <li>開発者向けクックブックとチュートリアルを執筆。REST APIエンドポイントを確認するためのPostmanモックサーバーの設定に関する包括的なガイドを含む。</li>
+              <li>OpenAPI仕様を管理し、REST APIエンドポイントをドキュメント化してエンドツーエンドのAPIドキュメントアーキテクチャを構築。</li>
+              <li>生成AIツールとModel Context Protocol (MCP) サーバーをローカルCLI環境に直接統合。Vale、DeepL、FigmaをGemini CLIに接続し、リンティング、翻訳、開発ワークフローを自動化。</li>
+              <li>AlgoliaとAskAIを統合することで、カスタムHTMLサイトとDocusaurusサイトにわたる高度な検索アーキテクチャを構築し、複雑なドキュメントに生成AIとセマンティック検索機能を実装。</li>
+            </ul>
+          </div>
+          <hr>
+          <div>
+            <h4>UXライター</h4>
+            <h5>Culangex | リモート | 2024年12月 - 2026年1月</h5>
+            <ul>
+              <li>部門横断チームと協力して包括的なスタイルガイドを共同作成。一貫したブランドボイスの確保とWCAGアクセシビリティ基準への適合を実現。</li>
+              <li>アジャイル開発チームと連携し、UIテキスト、エラーメッセージ、ツールチップを管理。ソフトウェア開発ライフサイクル全体にわたるシームレスなコンテンツ統合を実現。</li>
+              <li>スペイン語ローカライゼーションチーム向けにユーザー向けコンテンツを翻訳し、スペイン語圏市場へのプロダクトローンチを準備。</li>
+            </ul>
+          </div>
+          <hr>
+          <div>
+            <h4>テクニカルライター</h4>
+            <h5>Felix Storch Inc. | ニューヨーク州ブロンクス | 2022年3月 - 2024年2月</h5>
+            <ul>
+              <li>5つの民生用・医療用ハードウェアブランドにわたる技術ドキュメントを管理。150点以上のハードウェアユーザーマニュアル、設置ガイド、仕様書を作成・更新。</li>
+              <li>エンジニアリングチームと直接連携し、技術要件を把握、製品仕様を確認、新製品ラインの正確な操作ガイドを作成。</li>
+              <li>ドキュメント管理テンプレートと公開ワークフローを標準化し、手作業による制作時間を40%削減。</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Mobile Accordion -->
+        <div class="d-md-none">
+          <div class="accordion" id="experienceAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingExp1">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp1" aria-expanded="false" aria-controls="collapseExp1">
+                  <div class="d-flex flex-column text-start"><span>フリーランス テクニカルライター</span><small class="text-muted fw-normal" style="font-size: 0.85em;">リモート | 2024年4月 - 現在</small></div>
+                </button>
+              </h2>
+              <div id="collapseExp1" class="accordion-collapse collapse" aria-labelledby="headingExp1" data-bs-parent="#experienceAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li>開発者向けプロジェクトのドキュメント全工程を担当。DatadogのログパイプラインとGalileoのLLMトレースを統合したクラウドデータルーティングアーキテクチャのAPIリファレンスおよびSDKガイドを作成。</li>
+                    <li>SuiブロックチェーンプラットフォームのTypeScript SDKメソッドとロジックをドキュメント化。動作するコード例付きクイックスタートとガイドを作成。</li>
+                    <li>Postmanモックサーバーの設定ガイドを含む開発者向けクックブックとチュートリアルを執筆。</li>
+                    <li>OpenAPI仕様の管理とエンドツーエンドのAPIドキュメントアーキテクチャの構築。</li>
+                    <li>Vale、DeepL、FigmaをGemini CLIに接続し、ワークフローを自動化。</li>
+                    <li>AlgoliaとAskAIを統合した高度な検索アーキテクチャを構築。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingExp2">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp2" aria-expanded="false" aria-controls="collapseExp2">
+                  <div class="d-flex flex-column text-start"><span>UXライター</span><small class="text-muted fw-normal" style="font-size: 0.85em;">Culangex | 2024年12月 - 2026年1月</small></div>
+                </button>
+              </h2>
+              <div id="collapseExp2" class="accordion-collapse collapse" aria-labelledby="headingExp2" data-bs-parent="#experienceAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li>包括的なスタイルガイドを共同作成し、WCAGアクセシビリティ基準を満たすブランドボイスを確立。</li>
+                    <li>UIテキスト、エラーメッセージ、ツールチップを管理し、ソフトウェア開発ライフサイクル全体でのコンテンツ統合を実現。</li>
+                    <li>スペイン語圏市場向けのユーザー向けコンテンツを翻訳。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingExp3">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp3" aria-expanded="false" aria-controls="collapseExp3">
+                  <div class="d-flex flex-column text-start"><span>テクニカルライター</span><small class="text-muted fw-normal" style="font-size: 0.85em;">Felix Storch Inc. | 2022年3月 - 2024年2月</small></div>
+                </button>
+              </h2>
+              <div id="collapseExp3" class="accordion-collapse collapse" aria-labelledby="headingExp3" data-bs-parent="#experienceAccordion">
+                <div class="accordion-body">
+                  <ul class="mb-0 ps-3">
+                    <li>5ブランドにわたる150点以上のハードウェアマニュアル・設置ガイド・仕様書を作成・更新。</li>
+                    <li>エンジニアリングチームと連携し、製品仕様を確認して正確な操作ガイドを作成。</li>
+                    <li>ドキュメント管理テンプレートを標準化し、制作時間を40%削減。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Knicks Ticker (kept as fun Easter egg) -->
+<div class="knicks-ticker" role="region" aria-label="Knicks victory ticker" tabindex="0">
+  <div class="marquee-wrapper">
+    <span class="marquee-content"><span>NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="/images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin: 0 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="/images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="/images/larry.svg" alt="" style="height: 1.2em; vertical-align: text-bottom; margin: 0 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="/images/noufos.svg" alt="" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
+    <span class="marquee-content" aria-hidden="true"><span>NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="/images/larry.svg" alt="" style="height: 1.2em; vertical-align: text-bottom; margin: 0 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="/images/noufos.svg" alt="" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
+  </div>
+</div>
+
+<section class="light-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <h2 class="text-center mb-4">趣味・関心（仕事以外の生活）</h2>
+        <ul>
+          <li>読書（小説も、グラフィックノベル形式も好きです。）</li>
+          <li>映画</li>
+          <li>音楽</li>
+          <li>ニューヨーク・ヤンキース（NYのスポーツ応援は楽ではないですが、ニューヨーク・ニックスは別格！）シャウトアウトを #BigBodegaKAT に！バスケットボールのために生まれた、キャプテン、ジェイレン・ブランソンに永遠の忠誠を誓います。</li>
+          <li>落書き</li>
+          <li>工作。新しいテクノロジーを探索したり、ガジェットを分解して仕組みを調べたりするのが大好きです。子どもの頃、カメラを分解していて何度か感電したこともあります！</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="and-divider">AND</p>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3 class="text-center">今月の一曲</h3>
+        <p class="text-center">AYE！ NEW YORK KNICKS ARE THE BEST IN THE WORLD. NUMBER ONE. THE BEST IN THE WORLD.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KU5V5WZVcVE?si=Q9Y2JcXQapX8WGtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="text-white text-center">&copy; 2026 Pedro Vega | HTML &bull; CSS &bull; JS &bull; GitHub Pages を使用して構築</p>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/js/pdf-viewer.js?v=2"></script>
+  <script src="/js/sticky-nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
+  <script>
+    document.querySelectorAll('.docsearch-container').forEach((container) => {
+      docsearch({ container, appId: 'XMDO29FL1L', apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a', indexName: 'portfolio_site', insights: true, searchParameters: { facetFilters: ['lang:ja'] } });
+    });
+    let sidepanelInstance = null;
+    if (typeof docsearchSidepanel !== 'undefined') {
+      const div = document.createElement('div'); div.id = 'docsearch-sidepanel'; document.body.appendChild(div);
+      sidepanelInstance = docsearchSidepanel({ container: '#docsearch-sidepanel', indexName: 'portfolio_site', appId: 'XMDO29FL1L', apiKey: '51f9c4cfd6c2249e8fbde1a6499c641a', assistantId: '0d70cdeb-2ec6-467f-b028-e51427f5a159', agentStudio: true, searchParameters: {}, showButton: false, button: false, variant: 'inline' });
+    }
+    const SPARKLE = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="DocSearch-Hit-icon-sparkles"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>`;
+    function addAskAI(container) {
+      const iv = setInterval(() => {
+        const btn = container.querySelector('.DocSearch-Button');
+        if (!btn) return; clearInterval(iv);
+        const w = document.createElement('div'); w.className = 'DocSearch-SearchBar';
+        btn.parentNode.insertBefore(w, btn); w.appendChild(btn);
+        const ai = document.createElement('button'); ai.className = 'DocSearch-SidepanelButton inline'; ai.type = 'button';
+        ai.setAttribute('aria-label','Ask Artie (Control+i)'); ai.setAttribute('aria-keyshortcuts','Control+i');
+        ai.innerHTML = SPARKLE;
+        ai.addEventListener('click', e => { e.preventDefault(); sidepanelInstance ? sidepanelInstance.open() : btn.click(); });
+        w.appendChild(ai);
+      }, 50);
+    }
+    document.querySelectorAll('.docsearch-container').forEach(addAskAI);
+    (function(){
+      var msc = document.querySelector('.mobile-nav-search-container');
+      new MutationObserver(() => { if(msc) msc.style.visibility = document.querySelector('.DocSearch-Modal') ? 'hidden' : 'visible'; }).observe(document.body,{childList:true,subtree:true});
+    })();
+  </script>
+  <script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+</body>
+</html>
