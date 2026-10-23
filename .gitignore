@@ -7,3 +7,9 @@ inject_search.js
 relocate_search.js
 fix_mobile_nav.js
 script_block.html
+.agents/
+.vscode/
+
+# Spanish Sample Experiment (in progress)
+samples/technical-writing/hardware/es
+samples/technical-writing/hardware/momcube-fixes-es.md

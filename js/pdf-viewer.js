@@ -38,6 +38,16 @@
 
     const bsModal = new bootstrap.Modal(modalEl, { keyboard: true });
 
+    // Some link cards also carry a Bootstrap modal toggle, so both the card handler and the
+    // modal data API can react to one click. Skip the duplicate navigation.
+    let lastLinkOpen = { card: null, at: 0 };
+    function openLink(card, href) {
+      const now = Date.now();
+      if (lastLinkOpen.card === card && now - lastLinkOpen.at < 500) return;
+      lastLinkOpen = { card: card, at: now };
+      window.open(href, '_blank', 'noopener');
+    }
+
     function showSpinner(show) {
       if (!spinner) return;
       spinner.style.display = show ? 'block' : 'none';
@@ -65,12 +75,18 @@
       const button = event.relatedTarget;
       if (!button) return;
       const card = button.closest('.sample-card');
-      if (card) {
-        const pdf = card.getAttribute('data-pdf');
-        const title = (card.querySelector('.card-title') || {}).textContent || '';
-        if (pdf) {
-          loadPdf(pdf, title.trim());
-        }
+      if (!card) return;
+      const pdf = card.getAttribute('data-pdf');
+      const href = card.getAttribute('data-href');
+      if (!pdf && href) {
+        // Link cards go straight to their destination; the viewer handles PDFs only.
+        event.preventDefault();
+        openLink(card, href);
+        return;
+      }
+      const title = (card.querySelector('.card-title') || {}).textContent || '';
+      if (pdf) {
+        loadPdf(pdf, title.trim());
       }
     });
 
@@ -232,15 +248,12 @@
     }
 
     sampleCards.forEach(card => {
-      console.log('Processing card:', card);
       const pdf = card.getAttribute('data-pdf');
       const href = card.getAttribute('data-href');
       const title = (card.querySelector('.card-title') || {}).textContent || '';
 
   // If the card has a thumbnail (img/svg/other .card-img-top) and a pdf, insert a preview wrapper
   const thumb = card.querySelector('.card-img-top');
-      console.log('Found thumb:', thumb);
-      console.log('Found pdf:', pdf);
       if (thumb && pdf) {
         try {
           const previewWrapper = document.createElement('div');
@@ -287,24 +300,32 @@
 
       // attach open handlers
       card.addEventListener('click', (e) => {
-        // Failsafe: Ignore clicks on interactive controls, buttons, links, or inside collapsible content
-        if (e.target.closest('button, a, input, select, textarea, [data-bs-toggle], .collapse, .ux-details-toggle, .btn')) {
+        // Links and controls keep their own behavior.
+        if (e.target.closest('a, button, input, select, textarea, .collapse, .ux-details-toggle, .btn')) {
           return;
         }
         if (href) {
-          window.open(href, '_blank', 'noopener');
-        } else if (pdf) {
+          e.preventDefault();
+          openLink(card, href);
+          return;
+        }
+        // Cards wired to the modal through Bootstrap data attributes open the viewer themselves.
+        if (e.target.closest('[data-bs-toggle]')) {
+          return;
+        }
+        if (pdf) {
           openPdf(pdf, title.trim());
         }
       });
       card.addEventListener('keydown', (ev) => {
-        if (ev.key === 'Enter' || ev.key === ' ') {
-          if (ev.target.closest('button, a, input, select, textarea, [data-bs-toggle], .collapse, .ux-details-toggle, .btn')) {
-            return;
-          }
-          ev.preventDefault();
-          if (href) window.open(href, '_blank', 'noopener'); else if (pdf) openPdf(pdf, title.trim());
+        if (ev.key !== 'Enter' && ev.key !== ' ') {
+          return;
         }
+        if (ev.target.closest('a, button, input, select, textarea, .collapse, .ux-details-toggle, .btn')) {
+          return;
+        }
+        ev.preventDefault();
+        if (href) openLink(card, href); else if (pdf) openPdf(pdf, title.trim());
       });
     });
 

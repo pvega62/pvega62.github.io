@@ -169,6 +169,7 @@
                   <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">软件 / 开发文档</a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/intro">介绍</a></li>
+                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/category/cloud-data-pipeline-documentation">云数据管道</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript 教程</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/category/stripe-api-documentation">Stripe API</a></li>
@@ -247,6 +248,7 @@
                 <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">软件 / 开发文档</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/intro">介绍</a></li>
+                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/category/cloud-data-pipeline-documentation">云数据管道</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript 教程</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/category/stripe-api-documentation">Stripe API</a></li>
@@ -358,24 +360,30 @@
     </div>
   </main>
 
-  <!-- Cloud Data Pipeline Section -->
+  <!-- Sweepy Feature Section -->
   <div class="light-section py-5">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 text-center mb-4 mb-md-0">
           <div class="ratio ratio-16x9">
-            <iframe title="云与 AI 可观测性数据管道文档"
-              src="https://pvega62.github.io/software/zh/docs/category/cloud-data-pipeline-documentation"
+            <iframe title="Sweepy 求职搜索文档"
+              src="https://pvega62.github.io/software/zh/docs/category/sweepy"
               class="rounded" loading="lazy"></iframe>
           </div>
         </div>
         <div class="col-md-6 inno-text">
-          <a href="https://pvega62.github.io/software/zh/docs/category/cloud-data-pipeline-documentation"
-            class="inno-link">
-            <h2 class="fw-bold">云与 AI 可观测性数据管道文档</h2>
+          <a href="https://pvega62.github.io/software/zh/docs/sweepy/intro" class="inno-link">
+            <h2 class="fw-bold">Sweepy：开源求职搜索工具</h2>
           </a>
-          <p class="text-secondary">为双轨可观测性数据管道构建了多层级文档套件，整合了用于云日志摄取的 <b>Datadog</b> 与用于 AI/LLM 追踪的 <b>Galileo</b>。该项目包含概念模型、流式摄取 API 参考，以及通过云原生处理器路由遥测数据的实操指南。</p>
-          <p class="text-secondary">采用基于 <b>Docusaurus</b> 和 <b>Markdown</b> 的现代 <b>Docs-as-Code（文档即代码）</b>工作流构建。通过 <b>Mermaid</b> 和 <b>ASCII</b> 图表清晰展示并发数据流与双轨可观测性架构。
+          <p class="text-secondary">Sweepy 会扫描 <b>Greenhouse</b>、<b>Ashby</b>、<b>Lever</b>、<b>Workable</b> 以及 Built In New York City 招聘板上的空缺职位。只需一条命令，它就能读取 PDF 或 Word 简历，并为每个职位评分。在任何结果进入报告之前，Sweepy 会确认每个链接均可访问。每次扫描结束时，都会生成按匹配度排序的 PDF 目录和 CSV 求职进度表。</p>
+          <p class="text-secondary">Sweepy 可通过可选的下载引擎扫描更多招聘板。</p>
+          <p class="text-secondary">我将 Sweepy 开发为开源 <b>Python</b> 软件包。命令行入口为 <b>swee.py</b>。配套的 <b>server.py</b> 通过 <b>Model Context Protocol</b>（MCP）向 AI 助手提供相同的扫描能力。<b>PyMuPDF</b> 解析简历。<b>ReportLab</b> 渲染 PDF 卡片，YAML 配置文件让每次搜索都可移植。Sweepy 以 MIT 许可证发布。</p>
+          <p class="text-secondary">作为创作者，我编写了全部代码和 13 个文档页面。<b>Sweepy 文档</b>涵盖安装、评分和 MCP 工具。<b>Mermaid</b> 图表描绘五阶段流水线，<b>Vale</b> 检查错误，并确保每个页面符合我的<b>样式指南</b>。</p>
+          <p class="mb-0">
+            <a href="https://github.com/pvega62/sweepy" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.shields.io/badge/GitHub-pvega62%2Fsweepy-181717?style=for-the-badge&amp;logo=github"
+                alt="GitHub 上的 Sweepy 源代码" height="28" loading="lazy">
+            </a>
           </p>
         </div>
       </div>
@@ -395,7 +403,7 @@
           <div class="card h-100 text-center sample-card" tabindex="0"
             data-href="https://pvega62.github.io/software/zh/docs/category/typescript-sdk-sui-blockchain-documentation"
             aria-label="打开 TypeScript SDK Sui 文档样本">
-            <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
+            <div class="card-body text-center">
               <div class="ratio ratio-4x3 mb-3">
                 <iframe title="TypeScript SDK Sui 文档样本"
                   src="https://pvega62.github.io/software/zh/docs/category/typescript-sdk-sui-blockchain-documentation"
@@ -412,7 +420,7 @@
           <div class="card text-center sample-card h-100" tabindex="0"
             data-href="https://pvega62.github.io/software/zh/docs/category/stripe-api-documentation"
             aria-label="打开 Stripe API 文档样本">
-            <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
+            <div class="card-body text-center">
               <div class="ratio ratio-4x3 mb-3">
                 <iframe title="Stripe API 文档样本"
                   src="https://pvega62.github.io/software/zh/docs/category/stripe-api-documentation" class="rounded"
@@ -585,7 +593,7 @@
     crossorigin="anonymous"></script>
 
   <!-- Shared PDF viewer -->
-  <script src="/js/pdf-viewer.js?v=2"></script>
+  <script src="/js/pdf-viewer.js?v=3"></script>
   <script src="/js/sticky-nav.js"></script>
   <!-- DocSearch JS -->
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>

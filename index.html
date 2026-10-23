@@ -169,6 +169,7 @@
                   <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Software/Dev Docs</a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/intro">Introduction</a></li>
+                    <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript Tutorial</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/stripe-api-documentation">Stripe API</a></li>
@@ -247,6 +248,7 @@
                 <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Software/Dev Docs</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/intro">Introduction</a></li>
+                  <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/typescript-sdk-sui-blockchain-documentation">TypeScript Tutorial</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/stripe-api-documentation">Stripe API</a></li>
@@ -363,29 +365,38 @@
     </div>
   </main>
 
-  <!-- Cloud Data Pipeline Section -->
+  <!-- Sweepy Feature Section -->
   <div class="light-section py-5">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 text-center mb-4 mb-md-0">
           <div class="ratio ratio-16x9">
-            <iframe title="Cloud Data Pipeline Documentation"
-              src="https://pvega62.github.io/software/docs/category/cloud-data-pipeline-documentation"
+            <iframe title="Sweepy job search documentation"
+              src="https://pvega62.github.io/software/docs/category/sweepy"
               class="rounded" loading="lazy"></iframe>
           </div>
         </div>
         <div class="col-md-6 inno-text">
-          <a href="https://pvega62.github.io/software/docs/category/cloud-data-pipeline-documentation"
-            class="inno-link">
-            <h2 class="fw-bold">Cloud and AI Observability Pipeline Documentation</h2>
+          <a href="https://pvega62.github.io/software/docs/sweepy/intro" class="inno-link">
+            <h2 class="fw-bold">Sweepy, an Open Source Job Search Tool</h2>
           </a>
-          <p class="text-secondary">Built a multi-layered documentation suite for a dual-track observability pipeline,
-            integrating <b>Datadog</b> for cloud log ingestion and <b>Galileo</b> for AI/LLM tracing. This project
-            features conceptual models, a streaming ingest API reference, and a hands-on guide for routing telemetry
-            through cloud-native processors.</p>
-          <p class="text-secondary">Built with a modern <b>Docs-as-Code</b> workflow using <b>Docusaurus</b> and
-            <b>Markdown</b>. Diagrams in <b>Mermaid</b> and <b>ASCII</b> illustrate concurrent data streams and the
-            dual-track observability architecture.
+          <p class="text-secondary">Sweepy scans <b>Greenhouse</b>, <b>Ashby</b>, <b>Lever</b>, <b>Workable</b>, and
+            the Built In New York City board for open roles. One command reads a PDF or Word resume and scores every
+            posting against it. Before anything reaches the report, Sweepy checks that each link resolves. A sweep
+            ends with a ranked PDF directory and a CSV pipeline tracker.</p>
+          <p class="text-secondary">Sweepy can scan additional job boards using optional downloadable engines.</p>
+          <p class="text-secondary">I built Sweepy as an open source <b>Python</b> package. The command-line entry
+            point is <b>swee.py</b>. A companion <b>server.py</b> exposes the same sweeps to AI assistants over the
+            <b>Model Context Protocol</b> (MCP). <b>PyMuPDF</b> parses resumes. <b>ReportLab</b> renders the PDF cards,
+            and YAML profiles make each search portable. Sweepy releases under the MIT license.</p>
+          <p class="text-secondary">As the creator, I wrote the code and all 13 documentation pages. The
+            <b>Sweepy docs</b> cover setup, scoring, and the MCP tools. A <b>Mermaid</b> diagram maps the
+            five-stage pipeline, and <b>Vale</b> lints for errors and to make sure every page sticks with my <b>style guide</b>.</p>
+          <p class="mb-0">
+            <a href="https://github.com/pvega62/sweepy" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.shields.io/badge/GitHub-pvega62%2Fsweepy-181717?style=for-the-badge&amp;logo=github"
+                alt="Sweepy source code on GitHub" height="28" loading="lazy">
+            </a>
           </p>
         </div>
       </div>
@@ -405,7 +416,7 @@
           <div class="card h-100 text-center sample-card" tabindex="0"
             data-href="https://pvega62.github.io/software/docs/category/typescript-sdk-sui-blockchain-documentation"
             aria-label="Open TypeScript SDK Sui Documentation Sample">
-            <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
+            <div class="card-body text-center">
               <div class="ratio ratio-4x3 mb-3">
                 <iframe title="TypeScript SDK Sui Documentation Sample"
                   src="https://pvega62.github.io/software/docs/category/typescript-sdk-sui-blockchain-documentation"
@@ -424,7 +435,7 @@
           <div class="card text-center sample-card h-100" tabindex="0"
             data-href="https://pvega62.github.io/software/docs/category/stripe-api-documentation"
             aria-label="Open Stripe API Documentation Sample">
-            <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
+            <div class="card-body text-center">
               <div class="ratio ratio-4x3 mb-3">
                 <iframe title="Stripe API Documentation Sample"
                   src="https://pvega62.github.io/software/docs/category/stripe-api-documentation" class="rounded"
@@ -609,7 +620,7 @@
     crossorigin="anonymous"></script>
 
   <!-- Shared PDF viewer -->
-  <script src="js/pdf-viewer.js?v=2"></script>
+  <script src="js/pdf-viewer.js?v=3"></script>
   <script src="js/sticky-nav.js"></script>
   <!-- DocSearch JS -->
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
