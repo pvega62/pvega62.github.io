@@ -30,7 +30,7 @@
   <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="/css/styles.css?v=2">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
   <link rel="stylesheet" href="/css/page-specific.css?v=9">
   <link rel="icon" href="/images/logo.png" type="image/png">
   <!-- DocSearch CSS -->
@@ -64,7 +64,7 @@
       <!-- Desktop Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="Navegación de escritorio">
         <a class="navbar-brand ms-3" href="/es/">
-          <img src="/images/logo.png" alt="Logo" height="40">
+          <img src="/images/logo.png" alt="Pedro Vega" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -77,8 +77,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">Documentación de Software</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="/software/es/docs/intro">Introducción</a></li>
                     <li><a class="dropdown-item" href="/software/es/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
@@ -136,7 +136,7 @@
       <!-- Mobile Navbar (App Tab Bar) -->
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="Navegación móvil">
         <a class="navbar-brand ms-2 me-1" href="/es/">
-          <img src="/images/icon-logo.png" alt="Logo" height="40">
+          <img src="/images/icon-logo.png" alt="Pedro Vega" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
           <li class="nav-item dropup d-flex align-items-center">
@@ -145,8 +145,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">Documentación de Software</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="/software/es/docs/intro">Introducción</a></li>
                   <li><a class="dropdown-item" href="/software/es/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
@@ -219,7 +219,7 @@
 <h1 class="display-4 fw-bold text-white">Artículos</h1>
 <div class="row justify-content-center">
 <div class="col-lg-8 text-center intro-text text-white">
-<p>Una recopilación de artículos publicados sobre pobreza global, salud pública, desarrollo internacional e iniciativas tecnológicas.</p>
+<p>Una colección de artículos publicados sobre pobreza global, salud pública, desarrollo internacional y tecnología. Los textos abordan la República Dominicana, Puerto Rico, Guyana y las iniciativas de desarrollo global.</p>
 </div>
 </div>
 </div>
@@ -236,19 +236,20 @@
               <i class="bi bi-funnel-fill me-1"></i> Filtrar por tema
             </span>
           </div>
-          <div class="article-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
-            <button type="button" class="btn article-filter-pill active" data-filter="all">Todos <span class="badge ms-1">9</span></button>
-            <button type="button" class="btn article-filter-pill" data-filter="social-poverty">Impacto social y pobreza <span class="badge ms-1">4</span></button>
-            <button type="button" class="btn article-filter-pill" data-filter="healthcare-crisis">Salud y crisis <span class="badge ms-1">3</span></button>
-            <button type="button" class="btn article-filter-pill" data-filter="rights-education">Derechos humanos y educación <span class="badge ms-1">2</span></button>
-            <button type="button" class="btn article-filter-pill" data-filter="tech-sdgs">Tecnología y ODS <span class="badge ms-1">2</span></button>
+          <div class="article-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2" role="group" aria-label="Filtrar artículos por tema">
+            <button type="button" class="btn article-filter-pill active" data-filter="all" aria-pressed="true">Todos <span class="badge ms-1">9</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="social-poverty" aria-pressed="false">Impacto social y pobreza <span class="badge ms-1">4</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="healthcare-crisis" aria-pressed="false">Salud y crisis <span class="badge ms-1">3</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="rights-education" aria-pressed="false">Derechos humanos y educación <span class="badge ms-1">2</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="tech-sdgs" aria-pressed="false">Tecnología y ODS <span class="badge ms-1">2</span></button>
           </div>
         </div>
 
+        <h2 class="visually-hidden">Artículos publicados</h2>
         <div class="row g-4 justify-content-center">
           <div class="col-md-4 article-card-col" data-category="healthcare-crisis tech-sdgs">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" aria-label="Abrir artículo: 4 formas de usar la tecnología contra la pandemia">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="4 formas de usar la tecnología contra la pandemia" src="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="4 formas de usar la tecnología contra la pandemia" src="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">4 formas de usar la tecnología contra la pandemia</h3>
                 <p class="card-text text-black">Analiza cuatro soluciones tecnológicas clave que los sistemas de salud implementaron para contener y gestionar la crisis del COVID-19.</p>
@@ -257,7 +258,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="rights-education">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" aria-label="Abrir artículo: Educación en la República Dominicana">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="Educación en la República Dominicana" src="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Educación en la República Dominicana" src="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">Educación en la República Dominicana</h3>
                 <p class="card-text text-black">Examina los retos del sistema educativo dominicano, el impacto de la desigualdad económica y las iniciativas en marcha para alcanzar los estándares de la ONU.</p>
@@ -266,7 +267,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="rights-education">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" aria-label="Abrir artículo: Igualdad de género en la República Dominicana: Actualización">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="Igualdad de género en la República Dominicana: Actualización" src="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Igualdad de género en la República Dominicana: Actualización" src="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">Igualdad de género en la República Dominicana: Actualización</h3>
                 <p class="card-text text-black">Evalúa la brecha de género, las oportunidades laborales y las reformas sociales para promover los derechos de las mujeres en la República Dominicana.</p>
@@ -275,7 +276,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="social-poverty healthcare-crisis">
             <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" aria-label="Abrir artículo: La pandemia global agrava el hambre en Puerto Rico">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="La pandemia global agrava el hambre en Puerto Rico" src="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="La pandemia global agrava el hambre en Puerto Rico" src="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">La pandemia global agrava el hambre en Puerto Rico</h3>
                 <p class="card-text text-black">Investiga la vulnerabilidad de las cadenas de suministro en Puerto Rico tras los huracanes. Analiza el impacto de la pandemia en la inseguridad alimentaria.</p>
@@ -284,7 +285,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="healthcare-crisis">
             <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" aria-label="Abrir artículo: Mejor atención médica: El sistema de salud en la República Dominicana">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="Mejor atención médica: El sistema de salud en la República Dominicana" src="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Mejor atención médica: El sistema de salud en la República Dominicana" src="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">Mejor atención médica: El sistema de salud en la República Dominicana</h3>
                 <p class="card-text text-black">Presenta una radiografía del sistema de salud en la República Dominicana, analizando la atención a enfermedades crónicas y las reformas hospitalarias necesarias.</p>
@@ -293,7 +294,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="social-poverty">
             <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" aria-label="Abrir artículo: La carga heredada: La situación de las personas sin hogar en Guyana">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="La carga heredada: La situación de las personas sin hogar en Guyana" src="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="La carga heredada: La situación de las personas sin hogar en Guyana" src="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">La carga heredada: La situación de las personas sin hogar en Guyana</h3>
                 <p class="card-text text-black">Aborda la problemática de la vivienda, la precariedad habitacional y los programas de asistencia comunitaria en Guyana.</p>
@@ -302,7 +303,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="social-poverty">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" aria-label="Abrir artículo: El hambre en la República Dominicana">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="El hambre en la República Dominicana" src="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="El hambre en la República Dominicana" src="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">El hambre en la República Dominicana</h3>
                 <p class="card-text text-black">Desglosa las causas estructurales del hambre, la desnutrición infantil y las redes de apoyo comunitario en territorio dominicano.</p>
@@ -311,7 +312,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="tech-sdgs">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" aria-label="Abrir artículo: La aplicación Samsung Global Goals">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="La aplicación Samsung Global Goals: Apoyando los ODS con un toque" src="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="La aplicación Samsung Global Goals: Apoyando los ODS con un toque" src="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">La aplicación Samsung Global Goals: Apoyando los ODS con un toque</h3>
                 <p class="card-text text-black">Explora la alianza entre Samsung y el PNUD para canalizar microdonaciones y promover los Objetivos de Desarrollo Sostenible a través de la tecnología móvil.</p>
@@ -320,7 +321,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="social-poverty">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" aria-label="Abrir artículo: La pobreza en la República Dominicana">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="La pobreza en la República Dominicana" src="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="La pobreza en la República Dominicana" src="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">La pobreza en la República Dominicana</h3>
                 <p class="card-text text-black">Analiza los factores económicos que perpetúan la pobreza en la República Dominicana y las políticas públicas orientadas a fortalecer la red de protección social.</p>
@@ -338,7 +339,7 @@
 
     <!-- Shared PDF viewer -->
     <script src="/js/pdf-viewer.js?v=1790225886305"></script>
-    <script src="/js/sticky-nav.js"></script>
+    <script src="/js/sticky-nav.js?v=2"></script>
     <script src="/js/page-specific.js?v=9"></script>
 
     <!-- DocSearch JS -->

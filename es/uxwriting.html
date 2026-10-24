@@ -29,7 +29,7 @@
 <meta content="https://pvega62.github.io/images/social-card.png" name="twitter:image"/>
 <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
-<link href="/css/styles.css?v=2" rel="stylesheet"/>
+<link href="/css/styles.css?v=3" rel="stylesheet"/>
 <link href="/css/page-specific.css?v=8" rel="stylesheet"/>
 <link href="/images/logo.png" rel="icon" type="image/png"/>
 <!-- DocSearch CSS -->
@@ -71,8 +71,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">Documentación de Software</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="/software/es/docs/intro">Introducción</a></li>
                     <li><a class="dropdown-item" href="/software/es/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
@@ -136,8 +136,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">Documentación de Software</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="/software/es/docs/intro">Introducción</a></li>
                   <li><a class="dropdown-item" href="/software/es/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
@@ -220,12 +220,12 @@
 <div class="ux-filter-wrapper text-center">
 <div class="text-center mb-2">
 <span class="text-uppercase fw-bold small" style="letter-spacing: 1.2px; color: #1f3850; font-size: 0.8rem;">
-<i class="bi bi-funnel-fill me-1"></i> Filtrar por área de enfoque
+<i class="bi bi-funnel-fill me-1" aria-hidden="true"></i> Filtrar por área de enfoque
 </span>
 </div>
 <div class="ux-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
 <button class="btn ux-filter-pill active" data-filter="all" type="button">Todos <span class="badge ms-1">15</span></button>
-<button class="btn ux-filter-pill" data-filter="prototype" type="button"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;"></i> Prototipo funcional <span class="badge ms-1">8</span></button>
+<button class="btn ux-filter-pill" data-filter="prototype" type="button"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;" aria-hidden="true"></i> Prototipo funcional <span class="badge ms-1">8</span></button>
 <button class="btn ux-filter-pill" data-filter="high-stakes" type="button">Casos críticos y alertas <span class="badge ms-1">3</span></button>
 <button class="btn ux-filter-pill" data-filter="error-recovery" type="button">Resolución de errores y fricción <span class="badge ms-1">5</span></button>
 <button class="btn ux-filter-pill" data-filter="onboarding" type="button">Onboarding y confianza <span class="badge ms-1">2</span></button>
@@ -241,24 +241,24 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Flujo de onboarding para aplicación bancaria</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Flujo de onboarding para aplicación bancaria</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Los nuevos usuarios de aplicaciones bancarias suelen sentir incertidumbre y abandonar los procesos de configuración con múltiples pasos. Guía a los usuarios en la creación de cuentas, la categorización de facturas y los pagos mensuales automáticos, consolidando la confianza en la seguridad del sistema.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 45 caracteres<br/>
-<b>Cuerpo:</b> 100 caracteres<br/>
-<b>Botones:</b> 25 caracteres</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 45 caracteres<br/>
+<strong>Cuerpo:</strong> 100 caracteres<br/>
+<strong>Botones:</strong> 25 caracteres</p>
 <button aria-controls="ux-details-1" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-1" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-1" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>La estrategia principal fomenta la confianza del usuario en cada estado de interacción. Una microcopia profesional, clara y tranquilizadora hace que la automatización financiera resulte segura y sencilla. El flujo presenta las ventajas clave de forma progresiva para evitar la sobrecarga cognitiva.</p>
 <ul><li><strong>Pantalla 1: Propuesta de valor principal.</strong> La primera pantalla aborda de inmediato la comodidad del usuario con el titular <code>Never fear, Paymate's here!</code> y establece la ventaja central: facturación automatizada y recordatorios puntuales.</li><li><strong>Pantalla 2: Construcción de confianza en la seguridad.</strong> Antes de solicitar datos personales, la segunda pantalla disipa directamente las inquietudes de seguridad. El titular <code>Fort Knox security. In your pocket.</code> recurre a una metáfora cercana de protección, mientras que el cuerpo refuerza los estándares avanzados de ciberseguridad.</li><li><strong>Pantalla 3: Funciones inteligentes.</strong> Esta pantalla presenta la categorización automatizada de facturas. El titular <code>Smartphone, smart banking, smart user</code> refuerza la autonomía del usuario y subraya la inteligencia del sistema.</li><li><strong>Pantallas 4-7: Proceso de configuración.</strong> Una vez consolidada la confianza, el flujo avanza hacia la creación de la cuenta y los métodos de pago. Una microcopia concisa (<code>Enough about us, let's focus on you.</code>) guía al usuario por formularios accesibles hasta una confirmación final de éxito (<code>Welcome Aboard!</code>).</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>La divulgación progresiva reduce sistemáticamente la ansiedad del usuario, eliminando fricciones de configuración y elevando las tasas de finalización del proceso de incorporación. La experiencia transforma un registro financiero complejo en un recorrido ágil y de alta confianza.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FNjNjYmTQPlZiU2aoxaHdV/UX-Writing-Challenge--15?node-id=4-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=4%3A2&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototipo</a>
@@ -272,10 +272,10 @@
 <div class="col-md-3 d-flex flex-column p-2">
 <div aria-label="Selector de versión preliminar" class="btn-group btn-group-sm w-100 mb-2 rounded-2" role="group" style="background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.18);">
 <button class="btn btn-draft-toggle active fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" type="button">
-<i class="bi bi-check2 me-1"></i> Versión definitiva v2
+<i class="bi bi-check2 me-1" aria-hidden="true"></i> Versión definitiva v2
     </button>
 <button class="btn btn-draft-toggle fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14-draft1.pdf" type="button">
-<i class="bi bi-x-lg me-1"></i> Borrador 1 descartado
+<i class="bi bi-x-lg me-1" aria-hidden="true"></i> Borrador 1 descartado
     </button>
 </div>
 <div class="flex-grow-1 position-relative" style="min-height: 280px;">
@@ -284,24 +284,24 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Error de aplicación por causa desconocida</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Error de aplicación por causa desconocida</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Una interrupción del sistema impide acceder a los datos de comparación de precios sin arrojar un código de error específico. Informa al usuario con transparencia, previene el abandono del servicio y ofrece opciones inmediatas de recuperación.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 30 caracteres máx.<br/>
-<b>Cuerpo:</b> 120 caracteres máx.<br/>
-<b>Botones:</b> 15 caracteres máx.</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 30 caracteres máx.<br/>
+<strong>Cuerpo:</strong> 120 caracteres máx.<br/>
+<strong>Botones:</strong> 15 caracteres máx.</p>
 <button aria-controls="ux-details-2" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-2" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-2" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>Este caso práctico ilustra la calibración iterativa de la voz de marca y el valor de identificar fallos en el primer borrador. Cuando los usuarios no pueden acceder a la función principal, el tono humorístico resulta frustrante e indolente. El diseño cambia de una narrativa frívola a una recuperación directa, transparente y empática.</p>
-<ul class="mb-3"><li><strong>Borrador 1 (Descartado; fallo de primer borrador).</strong><br/>Titular: <code>ERROR CODE: 42</code> (14 car.) • Cuerpo: <em>«It looks like the elf we have tracking your prices (Alan) stepped out for a quick call or something. Let's give Al a second. If you're in a rush, try our website.»</em> (154 car.) • Botones: <code>RETRY</code>, <code>WEBSITE</code><br/>Por qué no funcionó: el humor forzado irrita al usuario durante una caída del servicio. La narrativa fantasiosa retrasa la solución, oculta la causa raíz con un código arbitrario y supera el límite de 120 caracteres.</li><li><strong>Borrador 2 (Publicado; texto calibrado).</strong><br/>Titular: <code>Prices are unavailable.</code> (23 car.) • Cuerpo: <em>«We can't load prices right now. Please try again soon or visit our website for the latest info and prices.»</em> (101 car.) • Botones: <code>RETRY</code>, <code>WEBSITE</code><br/>Por qué sí funcionó: la transparencia total explica la situación sin tecnicismos ni rodeos. La doble vía de recuperación (<code>RETRY</code> frente a <code>WEBSITE</code>) preserva la autonomía del usuario y cuida la credibilidad de la marca.</li><li><strong>Lección de estrategia de contenido.</strong> El diseño de contenido sólido exige saber cuándo evitar el humor. La recuperación ante errores críticos demanda claridad absoluta, empatía y rutas ágiles de solución antes que juegos de marca.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<ul class="mb-3"><li><strong style="color: #ff9999 !important;"><i class="bi bi-x-circle me-1" aria-hidden="true"></i>Borrador 1 (Descartado; fallo de primer borrador).</strong><br/>Titular: <code>ERROR CODE: 42</code> (14 car.) • Cuerpo: <em>«It looks like the elf we have tracking your prices (Alan) stepped out for a quick call or something. Let's give Al a second. If you're in a rush, try our website.»</em> (154 car.) • Botones: <code>RETRY</code>, <code>WEBSITE</code><br/>Por qué no funcionó: el humor forzado irrita al usuario durante una caída del servicio. La narrativa fantasiosa retrasa la solución, oculta la causa raíz con un código arbitrario y supera el límite de 120 caracteres.</li><li><strong style="color: #85e3a8 !important;"><i class="bi bi-check-circle me-1" aria-hidden="true"></i>Borrador 2 (Publicado; texto calibrado).</strong><br/>Titular: <code>Prices are unavailable.</code> (23 car.) • Cuerpo: <em>«We can't load prices right now. Please try again soon or visit our website for the latest info and prices.»</em> (101 car.) • Botones: <code>RETRY</code>, <code>WEBSITE</code><br/>Por qué sí funcionó: la transparencia total explica la situación sin tecnicismos ni rodeos. La doble vía de recuperación (<code>RETRY</code> frente a <code>WEBSITE</code>) preserva la autonomía del usuario y cuida la credibilidad de la marca.</li><li><strong style="color: #e8c47c !important;"><i class="bi bi-lightbulb me-1" aria-hidden="true"></i>Lección de estrategia de contenido.</strong> El diseño de contenido sólido exige saber cuándo evitar el humor. La recuperación ante errores críticos demanda claridad absoluta, empatía y rutas ágiles de solución antes que juegos de marca.</li></ul>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>La comunicación transparente protege la credibilidad de la marca durante caídas de servicio. La recuperación por doble vía reduce tickets de soporte y retiene el interés del usuario incluso ante incidencias imprevistas.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/design/KSZ6n1AWQbgiIWX2BLo6o1/UX-Writing-Challenge--14?node-id=0-1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototipo</a>
@@ -317,24 +317,24 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Notificación de cancelación de vuelo</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Notificación de cancelación de vuelo</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Condiciones meteorológicas adversas provocan la cancelación repentina del vuelo de un pasajero. Notifícale de inmediato con instrucciones directas y urgentes para desplazarse por el aeropuerto y acudir al mostrador de reprogramación sin generar pánico.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 45 caracteres<br/>
-<b>Cuerpo:</b> 175 caracteres máx.<br/>
-<b>Botones:</b> 25 caracteres máx.</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 45 caracteres<br/>
+<strong>Cuerpo:</strong> 175 caracteres máx.<br/>
+<strong>Botones:</strong> 25 caracteres máx.</p>
 <button aria-controls="ux-details-3" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-3" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-3" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>Las interrupciones en viajes con alto nivel de estrés exigen una voz directa y sin artificios que priorice la comprensión inmediata frente al texto de relleno.</p>
 <ul><li><strong>Titular:</strong> <code>FLIGHT CANCELLED. GO TO HELP DESK</code> ofrece máxima legibilidad visual, respondiendo de inmediato a qué sucedió y qué paso seguir a continuación.</li><li><strong>Cuerpo:</strong> El texto especifica el código de vuelo (<code>DOC063</code>) y la causa directa (<em>«inclement weather»</em>). Refuerza la acción inmediata: <em>«Please head to the help desk.»</em></li><li><strong>Botones:</strong> El botón <code>Got it</code> permite cerrar el aviso fácilmente, mientras que <code>Airport Map</code> abre directamente la guía de orientación para evitar confusiones en terminales amplias.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>La comunicación clara disipa el pánico de los pasajeros y organiza el flujo hacia los puntos de atención designados. La orientación móvil rápida minimiza la angustia del usuario y protege la reputación de la marca durante incidencias críticas en vuelos.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/2NGMklaY5uH05Qy22ZnHP4/UX-Writing-Challenge--1?node-id=19-124&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=19%3A124&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototipo</a>
@@ -350,23 +350,23 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Notificación de alerta de incendio</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Notificación de alerta de incendio</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Un incendio forestal activo cerca de la ruta de un conductor genera cierres de vías y pone en riesgo su seguridad. Diseña una notificación urgente y de mínima carga cognitiva que impulse un desvío inmediato y seguro.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 30 caracteres máx.<br/>
-<b>Cuerpo:</b> 45 caracteres máx.</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 30 caracteres máx.<br/>
+<strong>Cuerpo:</strong> 45 caracteres máx.</p>
 <button aria-controls="ux-details-4" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-4" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-4" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>Las alertas móviles críticas para la seguridad al volante exigen una comprensión instantánea a simple vista.</p>
 <ul><li><strong>Diseño y tono:</strong> Colores de advertencia de alto contraste y tipografía concisa en mayúsculas transmiten prioridad urgente de seguridad sin saturar la pantalla.</li><li><strong>Titular:</strong> <code>FIRE ON ATLANTIC AVE</code> transmite peligro y cercanía geográfica en menos de 25 caracteres.</li><li><strong>Cuerpo:</strong> <code>FIRE MAY AFFECT YOUR ROUTE. REROUTE.</code> indica la acción sin desviar la atención de la conducción.</li><li><strong>Botón:</strong> <code>REROUTE TO SAFETY</code> hace que la acción sea contundente y centrada en la protección.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>Priorizar la seguridad del conductor y los desvíos inmediatos evita que los usuarios ingresen a zonas peligrosas, satisfaciendo el deber de diligencia de la plataforma de navegación.</p>
 </div>
 </div>
@@ -381,23 +381,23 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Error por tarjeta de crédito caducada</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Error por tarjeta de crédito caducada</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Un cliente intenta completar una reserva de alquiler de vehículo urgente, pero su método de pago registrado ha caducado. Señala con precisión el problema y orienta al usuario para actualizar los datos sin abandonar el proceso de compra.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 30 caracteres<br/>
-<b>Cuerpo:</b> 45 caracteres</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 30 caracteres<br/>
+<strong>Cuerpo:</strong> 45 caracteres</p>
 <button aria-controls="ux-details-5" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-5" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-5" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>Los errores en la pasarela de pago requieren vías de resolución directas y claras. La ambigüedad en esta fase provoca el abandono inmediato de la transacción.</p>
 <ul><li><strong>Titular:</strong> <code>YOUR CARD IS EXPIRED!</code> localiza el motivo con exactitud al instante, evitando confusiones con límites de crédito, caídas de red o credenciales caducadas.</li><li><strong>Cuerpo:</strong> <em>«Update card details or add a new one»</em> proporciona instrucciones precisas para solucionar el problema de pago de inmediato.</li><li><strong>Alineación de UI:</strong> Indicadores visuales en el formulario resaltan el campo de fecha de caducidad, guiando la atención del usuario directo a la solución.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>Una microcopia clara de recuperación de pago protege las tasas de conversión en el checkout, evitando abandonos en flujos de reserva de alta intención.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/RjNFdKOJncmtaAH0IzURy2/UX-Writing-Challenge--9?node-id=9-42&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=9%3A42&amp;show-proto-sidebar=1&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototipo</a>
@@ -413,22 +413,22 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Mensaje de error: "Nombre ficticio"</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Mensaje de error: "Nombre ficticio"</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>El sistema automatizado contra fraudes señala el nombre legítimo y poco común de un usuario durante el registro de cuenta. Solicita la verificación de identidad de forma respetuosa sin alienar ni incomodar al usuario.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>45 caracteres máx.</b></p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>45 caracteres máx.</strong></p>
 <button aria-controls="ux-details-6" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-6" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-6" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>Los falsos positivos de los algoritmos pueden alejar a usuarios con nombres culturalmente diversos o únicos. El texto transforma la sospecha automatizada en un paso de verificación respetuoso e integrador.</p>
 <ul><li><strong>Tono inclusivo y afirmativo:</strong> En lugar de emitir un código de error negativo, <em>«That's an interesting name!»</em> convierte la fricción algorítmica en una interacción humana cordial.</li><li><strong>Microcopia colaborativa:</strong> <em>«Please help us verify it»</em> invita a la cooperación del usuario en lugar de imponer una exigencia acusatoria.</li><li><strong>Vía de verificación directa:</strong> Un enlace de verificación integrado permite confirmar la identidad al instante sin dejar desasistido al usuario.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>Una gestión empática de errores reduce el abandono durante el registro en diversos grupos de usuarios. Además, protege el valor de vida del cliente y la reputación de la marca.</p>
 </div>
 </div>
@@ -443,23 +443,23 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Suscripción de lentes de contacto: Título y metadescripción</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Suscripción de lentes de contacto: Título y metadescripción</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Los usuarios con discapacidad visual o personas de edad avanzada suelen experimentar ansiedad tecnológica ante envíos médicos periódicos. Diseña un título y una metadescripción optimizados para SEO que generen confianza y destaquen la reposición a domicilio sin esfuerzo.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Título:</b> 60 caracteres máx.<br/>
-<b>Metadescripción:</b> 160 caracteres máx.</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Título:</strong> 60 caracteres máx.<br/>
+<strong>Metadescripción:</strong> 160 caracteres máx.</p>
 <button aria-controls="ux-details-7" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-7" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-7" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>Diseñar para servicios de salud accesibles exige alta legibilidad y un lenguaje directo y tranquilizador, adaptado a usuarios mayores.</p>
 <ul><li><strong>Título:</strong> <em>«Vision Quest: Hassle-Free Contact Lens Delivery Every 30 Days!»</em> enfatiza la fiabilidad y una frecuencia de entrega predecible.</li><li><strong>Metadescripción:</strong> Cuantificar el tiempo de configuración (<em>«15 minutes or less»</em>) y resaltar la entrega a domicilio disminuye la complejidad percibida en el registro.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>Metadatos de SEO claros y accesibles atraen clics orgánicos cualificados de usuarios precavidos, ampliando la captación de suscriptores.</p>
 </div>
 </div>
@@ -474,24 +474,24 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Notificación de retraso para conductores de camión</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Notificación de retraso para conductores de camión</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Un conductor logístico de corta distancia sufre retrasos debido a la congestión del tráfico en la autopista. Envía una notificación push legible de un vistazo y apta para manos libres que ofrezca opciones rápidas de ruta sin comprometer la seguridad vial.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 30 caracteres máx.<br/>
-<b>Cuerpo:</b> 45 caracteres máx.<br/>
-<b>Botones:</b> 25 caracteres máx.</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 30 caracteres máx.<br/>
+<strong>Cuerpo:</strong> 45 caracteres máx.<br/>
+<strong>Botones:</strong> 25 caracteres máx.</p>
 <button aria-controls="ux-details-8" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-8" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-8" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>Las notificaciones de logística exigen una estricta economía cognitiva para proteger la seguridad del operador en ruta.</p>
 <ul><li><strong>Tono no inculpatorio:</strong> El titular <code>Running Late?</code> evita culpar al conductor, contemplando retrasos de sincronización del sistema o imprevistos del tráfico.</li><li><strong>Extrema brevedad:</strong> Frases cortas que se adaptan a asistentes por voz sin saturar el audio.</li><li><strong>Opciones prácticas:</strong> <em>«Fuel up now or keep going?»</em> se enlaza con botones bien diferenciados (<code>REROUTE TO PITSTOP</code> frente a <code>KEEP GOING</code>) para una decisión ágil y segura.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>Notificaciones oportunas que respaldan los tiempos de entrega en la cadena de suministro mientras protegen el bienestar del conductor y la eficiencia de la ruta.</p>
 </div>
 </div>
@@ -506,24 +506,24 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Solicitud de ubicación en sitio web de compra de vehículos</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Solicitud de ubicación en sitio web de compra de vehículos</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Un portal de compraventa de vehículos requiere la ubicación del usuario para mostrar el inventario regional y precios locales. Solicita la información geográfica con transparencia sin despertar recelos de privacidad ni provocar abandonos.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 25 caracteres<br/>
-<b>Cuerpo:</b> 45 caracteres<br/>
-<b>Botón:</b> 15 caracteres</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 25 caracteres<br/>
+<strong>Cuerpo:</strong> 45 caracteres<br/>
+<strong>Botón:</strong> 15 caracteres</p>
 <button aria-controls="ux-details-9" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-9" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-9" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>La preparación de permisos resulta efectiva cuando la interfaz asocia la recopilación de datos con un valor tangible y directo para el usuario.</p>
 <ul><li><strong>Titular centrado en ventajas:</strong> <code>Your dream car is here.</code> resalta el objetivo principal del usuario por encima de la recolección de datos.</li><li><strong>Personalidad atractiva:</strong> Una microcopia cercana (<code>Yes, even THAT one</code>) establece una conexión empática con la marca.</li><li><strong>Campo respetuoso de la privacidad:</strong> Solicitar únicamente el código postal protege la privacidad del usuario. Además, cumple con los requisitos necesarios para mostrar el catálogo regional.</li><li><strong>Llamada a la acción persuasiva:</strong> <code>VIEW OUR DEALS</code> presenta el ingreso de datos como el desbloqueo de ofertas en lugar de una cesión de información personal.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>Comunicar claramente el beneficio eleva las tasas de aceptación de permisos y agiliza la transición hacia la navegación activa del catálogo.</p>
 </div>
 </div>
@@ -538,24 +538,24 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Mensaje de recuperación tras bloqueo de la aplicación</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Mensaje de recuperación tras bloqueo de la aplicación</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>El apagado repentino del dispositivo móvil interrumpe a un diseñador gráfico en plena sesión de trabajo. Al reiniciar la app, tranquiliza al usuario, confirma el estado de recuperación automática del archivo y ofrece rutas sencillas para restaurar o comenzar de nuevo.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 40 caracteres máx.<br/>
-<b>Cuerpo:</b> 140 caracteres máx.<br/>
-<b>Botones:</b> 20 caracteres máx.</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 40 caracteres máx.<br/>
+<strong>Cuerpo:</strong> 140 caracteres máx.<br/>
+<strong>Botones:</strong> 20 caracteres máx.</p>
 <button aria-controls="ux-details-10" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-10" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-10" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>Los fallos del sistema provocan una gran preocupación por la pérdida del trabajo. El diálogo de reinicio debe confirmar de inmediato el estado de recuperación y devolver la fluidez al flujo de trabajo.</p>
 <ul><li><strong>Titular:</strong> <code>ACME DESIGNS Crashed Unexpectedly</code> asume el error con honestidad y total transparencia.</li><li><strong>Cuerpo:</strong> <em>«Your design files were recovered»</em> mitiga de inmediato el pánico antes de ofrecer opciones para restaurar el contenido o iniciar un nuevo espacio de trabajo.</li><li><strong>Botones:</strong> <code>Restore</code> y <code>New</code> proporcionan acciones claras y diferenciadas.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>Una comunicación sólida ante bloqueos preserva la confianza del usuario, refuerza la estabilidad del flujo de trabajo y evita el abandono de la aplicación.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/t0mfj5ZNbl8cMwxPL8ieUk/UX-Writing-Challenge--5?node-id=5-342&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A135&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototipo</a>
@@ -571,24 +571,24 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Promoción de suscripción de supermercado</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Promoción de suscripción de supermercado</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Presenta una suscripción mensual con tarifa plana de entrega de compras en una pantalla dentro de la app. Comunica la comodidad del servicio periódico y la transparencia de tarifas sin tácticas agresivas de venta.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 45 caracteres máx.<br/>
-<b>Cuerpo:</b> 175 caracteres máx.<br/>
-<b>Botones:</b> 25 caracteres máx.</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 45 caracteres máx.<br/>
+<strong>Cuerpo:</strong> 175 caracteres máx.<br/>
+<strong>Botones:</strong> 25 caracteres máx.</p>
 <button aria-controls="ux-details-11" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-11" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-11" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>La venta de suscripciones tiene éxito cuando enmarca los servicios como una mejora del estilo de vida con precios claros y honestos.</p>
 <ul><li><strong>Titular:</strong> <code>ENJOY THE COMFORT OF HOME, WE'LL SHOP FOR YOU.</code> destaca la recuperación de tiempo personal sin esfuerzo.</li><li><strong>Cuerpo:</strong> Datos tangibles (<em>«month's worth of groceries»</em>, <em>«flat fee of $20/mo»</em>) generan un valor inequívoco sin términos ocultos.</li><li><strong>Botones:</strong> <code>LEARN MORE</code> ofrece una vía exploratoria de baja fricción, mientras que <code>NO THANKS</code> permite rechazar la oferta respetuosamente sin manipular con culpa.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>Los mensajes transparentes sobre suscripciones promueven la retención a largo plazo y la satisfacción del usuario por encima de conversiones inmediatas y agresivas.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/YqzCMRqdg1xA41oflpHwnd/UX-Writing-Challenge--4?node-id=24-130&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=24%3A130&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototipo</a>
@@ -604,22 +604,22 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Mensaje de error: Correo electrónico incorrecto</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Mensaje de error: Correo electrónico incorrecto</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Un usuario recurrente introduce un correo no registrado o con errores tipográficos al iniciar sesión. Explica el problema exacto y replica el texto introducido para facilitar la corrección inmediata sin revelar vulnerabilidades de enumeración de cuentas.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>40 caracteres máx..</b></p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>40 caracteres máx..</strong></p>
 <button aria-controls="ux-details-12" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-12" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-12" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>La fricción en la autenticación es una de las causas principales de abandono. Mensajes de error específicos guían al usuario hacia una corrección directa.</p>
 <ul><li><strong>Claridad focalizada:</strong> <em>«Retype email address, '[email]'»</em> indica al usuario dónde se produjo el desacierto y replica su entrada para identificar errores tipográficos al instante.</li><li><strong>Verbo de acción directo:</strong> Iniciar con el imperativo <em>«Retype»</em> define la acción inmediata sin ambigüedad.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>La retroalimentación integrada y focalizada disminuye las solicitudes de restablecimiento de contraseña y agiliza los flujos de acceso.</p>
 </div>
 </div>
@@ -634,24 +634,24 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Promoción de aplicación para aficionados al deporte</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Promoción de aplicación para aficionados al deporte</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Padres con agendas ajustadas y aficionados ocupados tienen dificultades para seguir transmisiones en vivo. Destaca resúmenes asíncronos, alertas personalizadas de equipos y resultados breves para evitar la sensación de perderse la acción (FOMO).</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 40 caracteres máx.<br/>
-<b>Cuerpo:</b> 175 caracteres máx.<br/>
-<b>Botones:</b> 25 caracteres máx.</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 40 caracteres máx.<br/>
+<strong>Cuerpo:</strong> 175 caracteres máx.<br/>
+<strong>Botones:</strong> 25 caracteres máx.</p>
 <button aria-controls="ux-details-13" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-13" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-13" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>Los textos promocionales de registro conectan con los hábitos del usuario a través de un lenguaje ágil y memorable.</p>
 <ul><li><strong>Titular y cuerpo:</strong> <em>«Don't miss hoops, stay in the loop!»</em> y <em>«we'll make sure you don't miss the next slam!»</em>. Estos mensajes presentan el servicio como un asistente cercano y fiable para personas ocupadas.</li><li><strong>Llamada a la acción motivadora:</strong> <code>Score a win against FOMO!</code> canaliza la motivación emocional del usuario directamente hacia la activación de la suscripción.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>Vincular las ventajas de la aplicación con las limitaciones de tiempo del usuario incrementa la activación y las tasas de aceptación de notificaciones diarias.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/UR8ck1CIuVgmjYalHckj8o/UX-Writing-Challenge--2?node-id=1-2&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A2&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototipo</a>
@@ -667,24 +667,24 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Promoción de conciertos</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Promoción de conciertos</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Un servicio de música en streaming detecta fechas de gira locales para un artista presente en el historial del usuario. Transforma el interés musical en compras anticipadas de entradas mediante un texto exclusivo y dirigido.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 30 caracteres máx.<br/>
-<b>Cuerpo:</b> 45 caracteres máx.<br/>
-<b>Botón:</b> 25 caracteres</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 30 caracteres máx.<br/>
+<strong>Cuerpo:</strong> 45 caracteres máx.<br/>
+<strong>Botón:</strong> 25 caracteres</p>
 <button aria-controls="ux-details-14" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-14" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-14" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>Las promociones contextuales de eventos aprovechan las preferencias de los oyentes para ofrecer experiencias exclusivas y oportunas.</p>
 <ul><li><strong>Titular y tono:</strong> <code>YEAH! YEAH! YEAH!</code> y <code>The Beatles are back in your city!</code> evocan nostalgia y entusiasmo a nivel local.</li><li><strong>Etiquetado aspiracional:</strong> Tratar a oyentes habituales como <em>«loyal listeners»</em> profundiza la conexión afectiva e incentiva la participación. El diseño visible del código de preventa (<code>FAB4</code>) facilita su canje ágil.</li><li><strong>Botón:</strong> La llamada a la acción <code>PRESALE</code> guía al usuario directamente hacia la compra de entradas sin rodeos.</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>La microcopia contextual para venta de entradas convierte a oyentes de música en compradores activos de espectáculos en vivo.</p>
 </div>
 <a class="btn btn-primary btn-sm" data-bs-target="#figmaModal" data-bs-toggle="modal" data-figma-src="https://embed.figma.com/proto/FpYJKY0IXwxYVe7d7rHJwh/UX-Writing-Challenge--8?node-id=1-51&amp;p=f&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A51&amp;embed-host=share" href="#" onclick="event.stopPropagation()" style="background-color: rgba(31, 56, 80, 1); border-color: rgba(31, 56, 80, 1);">Prototipo</a>
@@ -700,23 +700,23 @@
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
-<h5 class="card-title">Alerta en vivo: Clásico de béisbol (Yankees vs. Red Sox)</h5>
-<p class="card-text"><b>Problema del usuario y contexto:</b></p>
+<h2 class="h5 card-title">Alerta en vivo: Clásico de béisbol (Yankees vs. Red Sox)</h2>
+<p class="card-text"><strong>Problema del usuario y contexto:</strong></p>
 <ul>
 <li>Un aficionado en un evento formal necesita actualizaciones discretas e inmediatas sobre un clásico decisivo. Envía una alerta push urgente y concisa. Debe incluir el marcador, el jugador clave y la jugada en menos de 50 caracteres.</li>
 </ul>
-<p class="card-text"><b>Restricciones:</b><br/>
-<b>Titular:</b> 30 caracteres máx.<br/>
-<b>Cuerpo:</b> 45 caracteres máx.</p>
+<p class="card-text"><strong>Restricciones:</strong><br/>
+<strong>Titular:</strong> 30 caracteres máx.<br/>
+<strong>Cuerpo:</strong> 45 caracteres máx.</p>
 <button aria-controls="ux-details-15" aria-expanded="false" class="btn btn-sm ux-details-toggle collapsed w-100 d-md-none mt-3 mb-2" data-bs-target="#ux-details-15" data-bs-toggle="collapse" onclick="event.stopPropagation()" type="button">
-<span class="show-text"><i class="bi bi-chevron-down me-1"></i> Ver estrategia y justificación</span>
-<span class="hide-text"><i class="bi bi-chevron-up me-1"></i> Ocultar estrategia y justificación</span>
+<span class="show-text"><i class="bi bi-chevron-down me-1" aria-hidden="true"></i> Ver estrategia y justificación</span>
+<span class="hide-text"><i class="bi bi-chevron-up me-1" aria-hidden="true"></i> Ocultar estrategia y justificación</span>
 </button>
 <div class="collapse d-md-block ux-details-collapse" id="ux-details-15" onclick="event.stopPropagation()">
-<h6><b>Estrategia y justificación</b></h6>
+<h3 class="h6"><strong>Estrategia y justificación</strong></h3>
 <p>Las alertas discretas requieren la máxima densidad informativa en un tiempo mínimo de visualización.</p>
 <ul><li><strong>Titular:</strong> <code>ALL RISE FOR GRAND SLAM</code> aprovecha el lenguaje icónico del equipo, comunicando el momento decisivo antes de que el usuario lea el cuerpo.</li><li><strong>Cuerpo:</strong> Datos precisos que confirman jugador, jugada y marcador actualizado (<em>«Aaron Judge blasts a Grand Slam. NYY lead BOS 5-0»</em>).</li></ul>
-<h6><b>Impacto comercial y resultado esperado</b></h6>
+<h3 class="h6"><strong>Impacto comercial y resultado esperado</strong></h3>
 <p>Las notificaciones inmediatas y fáciles de consultar mantienen conectado al usuario en sus compromisos cotidianos, aumentando la fidelidad hacia la aplicación.</p>
 </div>
 </div>
@@ -740,7 +740,7 @@
 <div class="container-fluid px-4">
 <div class="text-center mb-4">
 <span class="badge px-3 py-2 rounded-pill text-uppercase mb-2" style="background-color: rgba(232, 196, 124, 0.15); color: #e8c47c; border: 1px solid rgba(232, 196, 124, 0.35); letter-spacing: 1.2px; font-size: 0.8rem;">
-<i class="bi bi-palette-fill me-1"></i> Diseño visual y trabajo editorial
+<i class="bi bi-palette-fill me-1" aria-hidden="true"></i> Diseño visual y trabajo editorial
 </span>
 <h2 class="display-6 fw-bold text-white mb-2">Pases de pasillo escolares</h2>
 <div class="row justify-content-center">
@@ -758,7 +758,7 @@
 <div class="hallpass-preview-wrapper position-relative">
 <iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spidey-bathroom-pass.pdf" style="min-height: 360px;" title="El pase de baño de Spidey"></iframe>
 <div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
-<i class="bi bi-arrows-fullscreen"></i> Haz clic en la tarjeta para ver el PDF completo
+<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Haz clic en la tarjeta para ver el PDF completo
 </div>
 </div>
 </div>
@@ -769,7 +769,7 @@
 <div class="hallpass-meta p-3 rounded-3 mb-0">
 <div class="hallpass-meta-item mb-2">
 <div class="hallpass-meta-icon hallpass-meta-icon-quote">
-<i class="bi bi-chat-quote-fill"></i>
+<i class="bi bi-chat-quote-fill" aria-hidden="true"></i>
 </div>
 <div>
 <strong class="small d-block">Globo de pensamiento:</strong>
@@ -778,7 +778,7 @@
 </div>
 <div class="hallpass-meta-item mb-0">
 <div class="hallpass-meta-icon hallpass-meta-icon-objective">
-<i class="bi bi-lightbulb-fill"></i>
+<i class="bi bi-lightbulb-fill" aria-hidden="true"></i>
 </div>
 <div>
 <strong class="small d-block">Objetivo de diseño:</strong>
@@ -798,7 +798,7 @@
 <div class="hallpass-preview-wrapper position-relative">
 <iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/hulk-hall-pass.pdf" style="min-height: 360px;" title="El pase de pasillo de Hulk"></iframe>
 <div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
-<i class="bi bi-arrows-fullscreen"></i> Haz clic en la tarjeta para ver el PDF completo
+<i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Haz clic en la tarjeta para ver el PDF completo
 </div>
 </div>
 </div>
@@ -809,7 +809,7 @@
 <div class="hallpass-meta p-3 rounded-3 mb-0">
 <div class="hallpass-meta-item mb-2">
 <div class="hallpass-meta-icon hallpass-meta-icon-quote">
-<i class="bi bi-chat-quote-fill"></i>
+<i class="bi bi-chat-quote-fill" aria-hidden="true"></i>
 </div>
 <div>
 <strong class="small d-block">Globo de pensamiento:</strong>
@@ -818,7 +818,7 @@
 </div>
 <div class="hallpass-meta-item mb-0">
 <div class="hallpass-meta-icon hallpass-meta-icon-objective">
-<i class="bi bi-lightbulb-fill"></i>
+<i class="bi bi-lightbulb-fill" aria-hidden="true"></i>
 </div>
 <div>
 <strong class="small d-block">Objetivo de diseño:</strong>
@@ -854,7 +854,7 @@
 <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Shared PDF viewer -->
 <script src="/js/pdf-viewer.js?v=2"></script>
-<script src="/js/sticky-nav.js"></script>
+<script src="/js/sticky-nav.js?v=2"></script>
 <script src="/js/page-specific.js?v=8"></script>
 <script src="/js/figma-viewer.js"></script>
 <!-- Modal -->
@@ -867,7 +867,7 @@
 </div>
 <div class="modal-body">
 <div class="ratio ratio-16x9">
-<iframe allowfullscreen="" height="450" src="" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"></iframe>
+<iframe allowfullscreen="" height="450" src="" title="Visor de prototipos de Figma" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"></iframe>
 </div>
 </div>
 </div>

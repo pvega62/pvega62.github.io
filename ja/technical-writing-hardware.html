@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=6">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
   <link rel="stylesheet" href="/css/page-specific.css?v=9">
   <link rel="icon" href="/images/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
@@ -49,8 +49,8 @@
     <div class="container-fluid px-0">
       <!-- Desktop Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="デスクトップナビゲーション">
-        <a class="navbar-brand ms-3" href="/ja/">
-          <img src="/images/logo.png" alt="Logo" height="40">
+        <a class="navbar-brand ms-3" href="/ja/" aria-label="ホーム">
+          <img src="/images/logo.png" alt="" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -61,8 +61,8 @@
                 data-bs-toggle="dropdown" aria-expanded="false">テクニカルライティング</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">ソフトウェア / 開発ドキュメント</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="/software/ja/docs/intro">はじめに</a></li>
                     <li><a class="dropdown-item" href="/software/ja/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -117,8 +117,8 @@
       </nav>
       <!-- Mobile Navbar -->
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="モバイルナビゲーション">
-        <a class="navbar-brand ms-2 me-1" href="/ja/">
-          <img src="/images/icon-logo.png" alt="Logo" height="40">
+        <a class="navbar-brand ms-2 me-1" href="/ja/" aria-label="ホーム">
+          <img src="/images/icon-logo.png" alt="" height="40">
         </a>
         
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
@@ -130,8 +130,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">ソフトウェア / 開発ドキュメント</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="/software/ja/docs/intro">はじめに</a></li>
                   <li><a class="dropdown-item" href="/software/ja/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -205,7 +205,7 @@
         <h1 class="display-4 fw-bold text-white">ハードウェア技術文書作成</h1>
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center intro-text text-white">
-            <p>このページでは、医療用冷蔵機器から家電製品や民生用電子機器まで、多様なハードウェアドキュメントのサンプルを紹介しています。主に Felix Storch, Inc. でのテクニカルライターとしての実績を中心に、Summit、EQTemp、MOMCUBE などのブランドを網羅し、ユーザーマニュアル、設置ガイド、ADAコンプライアンス対応の説明書などを掲載しています。</p>
+            <p>このページでは、医療用冷蔵機器から家電製品、民生用電子機器まで、ハードウェアドキュメントをまとめています。サンプルは主に Felix Storch, Inc. でテクニカルライターとして携わった成果で、ブランドには Summit、EQTemp、MOMCUBE が含まれます。ユーザーマニュアル、設置ガイド、ADA 準拠の指示書を収録しています。</p>
           </div>
         </div>
       </div>
@@ -215,7 +215,8 @@
 
 <div class="light-section py-5" id="vaccine-section">
   <div class="container">
-    <div class="row align-items-center">
+    <h2 class="visually-hidden">注目のサンプル</h2>
+      <div class="row align-items-center">
       <div class="col-md-6 text-center">
         <div class="ratio ratio-1x1">
           <iframe title="EQTemps ワクチン用冷蔵庫の取扱説明書" src="/samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf" class="rounded" loading="lazy"></iframe>
@@ -223,10 +224,9 @@
       </div>
       <div class="col-md-6 inno-text">
         <div class="sample-card" role="button" tabindex="0" data-pdf="/samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf" aria-label="EQTemps ワクチン用冷蔵庫の取扱説明書を開く" style="cursor: pointer;">
-          <h2 class="fw-bold card-title text-decoration-underline">EQTemps ワクチン用冷蔵庫の取扱説明書</h2>
+          <h3 class="h2 fw-bold card-title text-decoration-underline">EQTemps ワクチン用冷蔵庫の取扱説明書</h3>
         </div>
-        <p class="text-secondary">ワクチン用冷蔵庫の専門マニュアルで、温度監視、警報システム、およびCDCの保管要件に焦点を当てています。</p>
-        <p class="text-secondary">このドキュメントは、医療従事者がワクチンの有効性に必要な厳格な温度管理を維持できるよう、業界標準と安全プロトコルに従って作成されています。</p>
+        <p class="text-secondary">ワクチン冷蔵庫のユーザーマニュアル。温度監視、アラームシステム、CDC の保管要件を扱っています。</p>
       </div>
     </div>
   </div>
@@ -249,7 +249,8 @@
       </div>
     </div>
 
-    <div class="row g-4 justify-content-center">
+    <h2 class="visually-hidden">ハードウェアドキュメントのサンプル一覧</h2>
+        <div class="row g-4 justify-content-center">
       <div class="col-md-4 hardware-card-col" data-category="appliances">
         <div class="card h-100 text-center card-border sample-card" tabindex="0" data-pdf="/samples/technical-writing/hardware/warming-and-cooling-drawer.pdf" aria-label="霜取り不要の温冷兼用引き出しを開く">
           <div class="ratio ratio-4x3 mb-3"><iframe title="霜取り不要の温冷兼用引き出し" src="/samples/technical-writing/hardware/warming-and-cooling-drawer.pdf" class="rounded" loading="lazy"></iframe></div>
@@ -342,7 +343,8 @@
 </div>
 <div class="bg-custom-dark">
   <div class="container py-5">
-    <div class="row justify-content-center">
+    <h2 class="visually-hidden">おまけのサンプル</h2>
+        <div class="row justify-content-center">
       <div class="col-md-4">
         <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/technical-writing/hardware/bat-pole-project.pdf" aria-label="「インスタント衣装チェンジ用スライディングポール設置ガイド」を開く">
           <div class="ratio ratio-4x3 mb-3"><iframe title="インスタント衣装チェンジ用スライディングポール設置ガイド" src="/samples/technical-writing/hardware/bat-pole-project.pdf" class="rounded" loading="lazy"></iframe></div>
@@ -363,7 +365,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="/js/pdf-viewer.js?v=2"></script>
-  <script src="/js/sticky-nav.js"></script>
+  <script src="/js/sticky-nav.js?v=2"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
   <script>

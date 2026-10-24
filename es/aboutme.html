@@ -29,7 +29,7 @@
   <meta name="twitter:description" content="Conozca más sobre Pedro Vega, redactor técnico, redactor UX y diseñador de contenido radicado en Nueva York.">
   <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/styles.css?v=3">
+  <link rel="stylesheet" href="/css/styles.css?v=4">
   <link rel="icon" href="/images/logo.png" type="image/png">
   <!-- DocSearch CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
@@ -62,7 +62,7 @@
       <!-- Desktop Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="Navegación de escritorio">
         <a class="navbar-brand ms-3" href="/es/">
-          <img src="/images/logo.png" alt="Logo" height="40">
+          <img src="/images/logo.png" alt="Pedro Vega inicio" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -75,8 +75,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">Documentación de Software</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="/software/es/docs/intro">Introducción</a></li>
                     <li><a class="dropdown-item" href="/software/es/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
@@ -134,7 +134,7 @@
       <!-- Mobile Navbar (App Tab Bar) -->
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="Navegación móvil">
         <a class="navbar-brand ms-2 me-1" href="/es/">
-          <img src="/images/icon-logo.png" alt="Logo" height="40">
+          <img src="/images/icon-logo.png" alt="Pedro Vega inicio" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
           <li class="nav-item dropup d-flex align-items-center">
@@ -143,8 +143,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentación de Software</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">Documentación de Software</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="/software/es/docs/intro">Introducción</a></li>
                   <li><a class="dropdown-item" href="/software/es/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="/software/es/docs/category/cloud-data-pipeline-documentation">Pipelines de datos en la nube</a></li>
@@ -223,6 +223,7 @@
 </div>
 </div>
 </div>
+</div>
 </main>
 
 <section class="light-section py-5">
@@ -239,14 +240,14 @@
           <div class="d-none d-md-block">
             <div class="row">
               <div class="col-md-6 mb-4">
-                <h5>Documentación técnica y de API</h5>
+                <h3 class="h5">Documentación técnica y de API</h3>
                 <ul>
                   <li><strong>Documentación principal:</strong> Docs-as-Code &middot; REST &amp; OpenAPI &middot; Integración de MCP &middot; IA &middot; SOPs &middot; Guías de inicio rápido &middot; CI/CD</li>
                   <li><strong>Herramientas de desarrollo:</strong> Git (GitHub, GitLab) &middot; Linux/CLI &middot; Docker &middot; VS Code &middot; Postman &middot; Swagger &middot; Docusaurus &middot; Algolia &middot; Jira &middot; Notion</li>
                 </ul>
               </div>
               <div class="col-md-6 mb-4">
-                <h5>Redacción UX y diseño de contenido</h5>
+                <h3 class="h5">Redacción UX y diseño de contenido</h3>
                 <ul>
                   <li><strong>Práctica de diseño:</strong> Redacción UX &middot; Microcopia &middot; Diseño de prompts &middot; Sistemas de contenido &middot; Investigación UX &middot; Wireframes &middot; Accesibilidad WCAG</li>
                   <li><strong>Herramientas de diseño:</strong> Figma &middot; Snagit &middot; MS Word</li>
@@ -255,13 +256,13 @@
             </div>
             <div class="row">
               <div class="col-md-6 mb-4">
-                <h5>Hardware y sistemas</h5>
+                <h3 class="h5">Hardware y sistemas</h3>
                 <ul>
                   <li><strong>Sistemas y control de calidad:</strong> Hardware médico y de consumo &middot; Pruebas de hardware &middot; Pantallas comerciales y AV &middot; Enrutamiento de señal &middot; Cableado de red &middot; POE &middot; Registros de equipos</li>
                 </ul>
               </div>
               <div class="col-md-6 mb-4">
-                <h5>Stack técnico e IA</h5>
+                <h3 class="h5">Stack técnico e IA</h3>
                 <ul>
                   <li><strong>Stack y lenguajes:</strong> HTML &middot; CSS &middot; JavaScript &middot; TypeScript &middot; Markdown &middot; React &middot; Node.js &middot; Bootstrap</li>
                   <li><strong>Modelos de IA y prompting:</strong> Gemini &middot; Claude &middot; GPT (Diseño de prompts para microcopia de UI, estados de error y documentación técnica)</li>
@@ -271,7 +272,7 @@
             </div>
             <div class="row justify-content-center text-center">
               <div class="col-md-10 mb-4">
-                <h5>Habilidades adicionales e idiomas</h5>
+                <h3 class="h5">Habilidades adicionales e idiomas</h3>
                 <ul class="list-unstyled">
                   <li class="mb-1"><strong>Publicación y traducción:</strong> Optimización SEO &middot; Traducción técnica &middot; Estilo AP &middot; Adobe Suite (InDesign, Illustrator, Acrobat) &middot; MadCap Flare</li>
                   <li><strong>Idiomas:</strong> Inglés (nativo/fluido) &middot; Español (nativo/fluido) &middot; Francés (intermedio)</li>
@@ -286,11 +287,11 @@
 
               <!-- 1. Technical & API Documentation -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTechDocs">
+                <h3 class="accordion-header" id="headingTechDocs">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechDocs" aria-expanded="false" aria-controls="collapseTechDocs">
                     Documentación técnica y de API
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseTechDocs" class="accordion-collapse collapse" aria-labelledby="headingTechDocs" data-bs-parent="#skillsAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -303,11 +304,11 @@
 
               <!-- 2. UX Writing & Content Design -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingUX">
+                <h3 class="accordion-header" id="headingUX">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUX" aria-expanded="false" aria-controls="collapseUX">
                     Redacción UX y diseño de contenido
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseUX" class="accordion-collapse collapse" aria-labelledby="headingUX" data-bs-parent="#skillsAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -320,11 +321,11 @@
 
               <!-- 3. Hardware & Systems -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingHardware">
+                <h3 class="accordion-header" id="headingHardware">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardware" aria-expanded="false" aria-controls="collapseHardware">
                     Hardware y sistemas
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseHardware" class="accordion-collapse collapse" aria-labelledby="headingHardware" data-bs-parent="#skillsAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -336,11 +337,11 @@
 
               <!-- 4. Technical Stack & AI -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTechStack">
+                <h3 class="accordion-header" id="headingTechStack">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechStack" aria-expanded="false" aria-controls="collapseTechStack">
                     Stack técnico e IA
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseTechStack" class="accordion-collapse collapse" aria-labelledby="headingTechStack" data-bs-parent="#skillsAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -354,11 +355,11 @@
 
               <!-- 5. Additional & Languages -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingAddSkills">
+                <h3 class="accordion-header" id="headingAddSkills">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAddSkills" aria-expanded="false" aria-controls="collapseAddSkills">
                     Habilidades adicionales e idiomas
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseAddSkills" class="accordion-collapse collapse" aria-labelledby="headingAddSkills" data-bs-parent="#skillsAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -385,8 +386,8 @@
           <!-- Desktop View: Vertical List -->
           <div class="d-none d-md-block">
             <div>
-              <h4>Redactor técnico independiente</h4>
-              <h5>En remoto | Abril de 2024 - Actualidad</h5>
+              <h3 class="h4">Redactor técnico independiente</h3>
+              <p class="h5 mb-2">En remoto | Abril de 2024 - Actualidad</p>
               <ul>
                 <li>Lideré el ciclo de vida completo de la documentación técnica para desarrolladores. Elaboré referencias de API y guías de SDK para enrutamiento de datos en la nube, integrando pipelines de Datadog y trazabilidad de LLM con Galileo.</li>
                 <li>Documenté métodos y lógica del SDK de TypeScript para la plataforma blockchain Sui, creando guías de inicio rápido y tutoriales detallados con código funcional.</li>
@@ -398,8 +399,8 @@
             </div>
             <hr>
             <div>
-              <h4>Redactor UX</h4>
-              <h5>Culangex | En remoto | Diciembre de 2024 - Enero de 2026</h5>
+              <h3 class="h4">Redactor UX</h3>
+              <p class="h5 mb-2">Culangex | En remoto | Diciembre de 2024 - Enero de 2026</p>
               <ul>
                 <li>Colaboré con equipos multifuncionales en la creación de una guía de estilo integral que consolidó una voz de marca consistente y cumplió con los estándares de accesibilidad WCAG.</li>
                 <li>Coordiné con el equipo ágil la gestión de textos de UI, errores y tooltips. Aseguré una integración fluida del contenido durante todo el ciclo de desarrollo.</li>
@@ -408,8 +409,8 @@
             </div>
             <hr>
             <div>
-              <h4>Redactor técnico</h4>
-              <h5>Felix Storch Inc. | El Bronx, NY | Marzo de 2022 - Febrero de 2024</h5>
+              <h3 class="h4">Redactor técnico</h3>
+              <p class="h5 mb-2">Felix Storch Inc. | El Bronx, NY | Marzo de 2022 - Febrero de 2024</p>
               <ul> 
                 <li>Gestioné la documentación técnica de 5 marcas de hardware médico y de consumo, redactando y actualizando más de 150 manuales de usuario, guías de instalación y fichas técnicas originales.</li>
                 <li>Colaboré directamente con equipos de ingeniería para relevar requisitos técnicos, validar especificaciones y elaborar manuales operativos precisos para nuevas líneas de productos.</li>
@@ -423,14 +424,14 @@
             <div class="accordion" id="experienceAccordion">
               
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingExp1">
+                <h3 class="accordion-header" id="headingExp1">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp1" aria-expanded="false" aria-controls="collapseExp1">
                     <div class="d-flex flex-column text-start">
                       <span>Redactor técnico independiente</span>
                       <small class="text-muted fw-normal" style="font-size: 0.85em;">En remoto | Abr 2024 - Actualidad</small>
                     </div>
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseExp1" class="accordion-collapse collapse" aria-labelledby="headingExp1" data-bs-parent="#experienceAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -446,14 +447,14 @@
               </div>
 
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingExp2">
+                <h3 class="accordion-header" id="headingExp2">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp2" aria-expanded="false" aria-controls="collapseExp2">
                     <div class="d-flex flex-column text-start">
                       <span>Redactor UX</span>
                       <small class="text-muted fw-normal" style="font-size: 0.85em;">Culangex | Dic 2024 - Ene 2026</small>
                     </div>
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseExp2" class="accordion-collapse collapse" aria-labelledby="headingExp2" data-bs-parent="#experienceAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -466,14 +467,14 @@
               </div>
 
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingExp3">
+                <h3 class="accordion-header" id="headingExp3">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp3" aria-expanded="false" aria-controls="collapseExp3">
                     <div class="d-flex flex-column text-start">
                       <span>Redactor técnico</span>
                       <small class="text-muted fw-normal" style="font-size: 0.85em;">Felix Storch Inc. | Mar 2022 - Feb 2024</small>
                     </div>
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseExp3" class="accordion-collapse collapse" aria-labelledby="headingExp3" data-bs-parent="#experienceAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -494,7 +495,7 @@
  <!-- Knicks Ticker -->
     <div class="knicks-ticker" role="region" aria-label="Cintillo de victoria de los Knicks" tabindex="0">
       <div class="marquee-wrapper">
-        <span class="marquee-content"><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
+        <span class="marquee-content" aria-hidden="true"><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
         <span class="marquee-content" aria-hidden="true"><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>¡LOS NEW YORK KNICKS SON CAMPEONES DEL MUNDO! 🗽<img src="/images/larry.svg" alt="Trofeo Larry O'Brien" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>AMENAZA ALIENÍGENA: NEUTRALIZADA</span><img src="/images/noufos.svg" alt="Sin ovnis" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
       </div>
     </div>
@@ -533,16 +534,17 @@
         </div>
         <div class="col-md-6">
           <div class="ratio ratio-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/KU5V5WZVcVE?si=Q9Y2JcXQapX8WGtx" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/KU5V5WZVcVE?si=Q9Y2JcXQapX8WGtx" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe>        </div>
       </div>
     </div>
+  </div>
   </section>
   
 <footer>
   <p class="text-white text-center">&copy; 2026 Pedro Vega | Creado con HTML &bull; CSS &bull; JS &bull; GitHub Pages</p>
 </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="/js/sticky-nav.js"></script>
+  <script src="/js/sticky-nav.js?v=2"></script>
   <!-- DocSearch JS -->
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>

@@ -155,10 +155,10 @@
     <div class="container-fluid px-0">
 
       <!-- Desktop Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation"
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex"
         aria-label="デスクトップナビゲーション">
         <a class="navbar-brand ms-3" href="/ja/">
-          <img src="/images/logo.png" alt="Logo" height="40">
+          <img src="/images/logo.png" alt="Pedro Vega、ホーム" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -171,8 +171,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">ソフトウェア / 開発ドキュメント</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/ja/docs/intro">はじめに</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/ja/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -238,7 +238,7 @@
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation"
         aria-label="モバイルナビゲーション">
         <a class="navbar-brand ms-2 me-1" href="/ja/">
-          <img src="/images/icon-logo.png" alt="Logo" height="40">
+          <img src="/images/icon-logo.png" alt="Pedro Vega、ホーム" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
 
@@ -250,8 +250,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">ソフトウェア / 開発ドキュメント</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/ja/docs/intro">はじめに</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/ja/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -335,7 +335,7 @@
             <a href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3">
               <img src="/images/linkedin-button.svg" alt="LinkedIn" width="52" height="52">
             </a>
-            <a href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3 ">
+            <a href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3" aria-label="GitHub プロフィール">
               <svg width="52" height="52" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="61.4389" height="60.8604" rx="15" fill="#24292F" />
                 <path
@@ -346,10 +346,8 @@
                   fill="white" />
               </svg>
             </a>
-            <br>
-            <br>
             <a href="https://pvega62.github.io/software/ja/docs/intro" target="_blank" rel="noopener noreferrer"
-              class="me-3">
+              class="me-3 d-inline-block mt-5">
               <img src="/images/docs-button-ja.svg" alt="ソフトウェア / 開発ドキュメント" width="300" height="38">
             </a>
           </div>
@@ -357,13 +355,12 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center intro-text">
-            <p>長年にわたり、私の職業人生は一つの核心的な目標を中心に展開してきました。それは、一般の方々に複雑な概念を分かりやすく解説することです。講師、ジャーナリスト、あるいはテクニカルライターとして活動するにせよ、私の焦点は常に、親しみやすく理解しやすいコンテンツを作成することにあります。</p>
-            <p>このポートフォリオでは、各分野のさまざまな作品を紹介しています。記事やエッセイ、技術文書（ハードウェアやソフトウェアのユーザーガイド、APIドキュメントなど）、およびUXライティングのサンプルをご覧いただけます。これらのサンプルは、SwaggerやPostmanなどのプラットフォームを使用して作成し、明確で段階的な開発者のワークフローを示すようにしました。</p>
+            <p>私は長年、複雑な概念を一般の読者にわかりやすく伝えることを軸にキャリアを築いてきました。講師、ジャーナリスト、テクニカルライターとして、一度読めば理解できるコンテンツを作っています。</p>
+            <p>このポートフォリオには、各分野のサンプルをまとめています。記事、ユーザーマニュアル、API リファレンス、UX ライティングです。どれも Swagger と Postman で作り、開発の流れが明確に伝わるようにしました。</p>
           </div>
         </div>
       </div>
     </div>
-  </main>
 
   <!-- Sweepy Feature Section -->
   <div class="light-section py-5">
@@ -380,10 +377,10 @@
           <a href="https://pvega62.github.io/software/ja/docs/sweepy/intro" class="inno-link">
             <h2 class="fw-bold">Sweepy：オープンソースの求人検索ツール</h2>
           </a>
-          <p class="text-secondary">Sweepyは<b>Greenhouse</b>、<b>Ashby</b>、<b>Lever</b>、<b>Workable</b>、およびBuilt In New York Cityの掲載サイトをスキャンして、募集中の求人を探します。1つのコマンドでPDFまたはWord形式の履歴書を読み取り、すべての求人票をスコアリングします。レポートに掲載する前に、Sweepyは各リンクが解決することを確認します。スキャンは、順位付けされたPDFディレクトリとCSVの応募トラッカーで完了します。</p>
+          <p class="text-secondary">Sweepyは<strong>Greenhouse</strong>、<strong>Ashby</strong>、<strong>Lever</strong>、<strong>Workable</strong>、およびBuilt In New York Cityの掲載サイトをスキャンして、募集中の求人を探します。1つのコマンドでPDFまたはWord形式の履歴書を読み取り、すべての求人票をスコアリングします。レポートに掲載する前に、Sweepyは各リンクが解決することを確認します。スキャンは、順位付けされたPDFディレクトリとCSVの応募トラッカーで完了します。</p>
           <p class="text-secondary">Sweepyは、オプションのダウンロード可能なエンジンを使って追加の求人ボードをスキャンできます。</p>
-          <p class="text-secondary">Sweepyはオープンソースの<b>Python</b>パッケージとして開発しました。コマンドラインのエントリポイントは<b>swee.py</b>です。併設の<b>server.py</b>は、<b>Model Context Protocol</b>（MCP）を介して同じスキャンをAIアシスタントに公開します。<b>PyMuPDF</b>が履歴書を解析します。<b>ReportLab</b>がPDFカードをレンダリングし、YAMLプロファイルによって各検索をポータブルにします。SweepyはMITライセンスでリリースしています。</p>
-          <p class="text-secondary">制作者として、コードと13ページのドキュメントをすべて執筆しました。<b>Sweepyのドキュメント</b>では、セットアップ、スコアリング、MCPツールを扱っています。<b>Mermaid</b>の図で5段階のパイプラインを示し、<b>Vale</b>がエラーを検出し、すべてのページが私の<b>スタイルガイド</b>に従っていることを確認します。</p>
+          <p class="text-secondary">Sweepyはオープンソースの<strong>Python</strong>パッケージとして開発しました。コマンドラインのエントリポイントは<strong>swee.py</strong>です。併設の<strong>server.py</strong>は、<strong>Model Context Protocol</strong>（MCP）を介して同じスキャンをAIアシスタントに公開します。<strong>PyMuPDF</strong>が履歴書を解析します。<strong>ReportLab</strong>がPDFカードをレンダリングし、YAMLプロファイルによって各検索をポータブルにします。SweepyはMITライセンスでリリースしています。</p>
+          <p class="text-secondary">制作者として、コードと13ページのドキュメントをすべて執筆しました。<strong>Sweepyのドキュメント</strong>では、セットアップ、スコアリング、MCPツールを扱っています。<strong>Mermaid</strong>の図で5段階のパイプラインを示し、<strong>Vale</strong>がエラーを検出し、すべてのページが私の<strong>スタイルガイド</strong>に従っていることを確認します。</p>
           <p class="mb-0">
             <a href="https://github.com/pvega62/sweepy" target="_blank" rel="noopener noreferrer">
               <img src="https://img.shields.io/badge/GitHub-pvega62%2Fsweepy-181717?style=for-the-badge&amp;logo=github"
@@ -415,7 +412,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">TypeScript SDK Sui ドキュメントのサンプル</h3>
-              <p class="card-text text-black">TypeScript SDK を使用して Sui ブロックチェーン上のデータを読み書きする方法を開発者に解説する、包括的なドキュメントサンプルを作成しました。このセットには、概念ガイド、チュートリアル、および SuiClient オブジェクトデータのクエリや操作を中心とした API リファレンスページが含まれています。</p>
+              <p class="card-text text-black">Sui の TypeScript SDK 向けドキュメント一式を作成しました。ガイドとチュートリアルで、ブロックチェーン上のデータを読み書きする方法を解説しています。API リファレンスでは SuiClient のクエリを扱っています。</p>
             </div>
           </div>
         </div>
@@ -432,8 +429,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Stripe API ドキュメントのサンプル</h3>
-              <p class="card-text text-black text-center"><b>VSCode</b>を使用して<b>Markdown</b>形式で<b>REST API</b>のドキュメントを作成し、<b>Vale</b>でリンティングを行いました。<b>Postman</b>を使用してエンドポイントを検証し、認証フローを文書化し、<b>GitHub Wiki</b>でドキュメントを管理しました。開発者向けドキュメント作成のエンドツーエンドのワークフローを示しています。
-              </p>
+              <p class="card-text text-black text-center"><strong>VS Code</strong> と <strong>Vale</strong> で <strong>REST API</strong> ドキュメントを <strong>Markdown</strong> で執筆しました。すべてのエンドポイントを <strong>Postman</strong> で検証しました。ドキュメントは <strong>GitHub Wiki</strong> で管理し、認証フローも文書化しました。開発者向けドキュメントの一連の流れを示すサンプルです。</p>
             </div>
           </div>
         </div>
@@ -448,7 +444,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">銀行アプリのオンボーディングフロー</h3>
-              <p class="card-text text-black">このサンプルは、金融アプリ向けの包括的なオンボーディングフローを紹介しています。厳格な技術的制約を守りつつ、自信に満ちた、明確でプロフェッショナルな口調でユーザーの信頼を築くことができることを示しています。</p>
+              <p class="card-text text-black">このサンプルは、金融アプリのオンボーディング全体を新規ユーザーに案内します。厳しい文字数制限の中で、自信のある明確でプロフェッショナルなトーンで信頼を築きます。</p>
             </div>
           </div>
         </div>
@@ -465,7 +461,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">InnoGear アロマテラピーディフューザー ユーザーマニュアル</h3>
-              <p class="card-text text-black">既存のガイドにおいて、翻訳上の曖昧さや構成上の問題点を特定し、解決いたしました。指示文をより直感的に書き直し、ユーザーが理解しやすいようレイアウトを最適化いたしました。</p>
+              <p class="card-text text-black">既存ガイドの翻訳ミスを修正しました。各手順を書き直し、レイアウトを再構成しました。ユーザーは設定をそのまま進められます。</p>
             </div>
           </div>
         </div>
@@ -482,7 +478,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">ワクチン用冷蔵庫の取扱説明書</h3>
-              <p class="card-text text-black">ワクチン用冷蔵庫に関する専門マニュアルで、温度監視、警報システム、およびCDCの保管要件に焦点を当てています。</p>
+              <p class="card-text text-black">ワクチン冷蔵庫のマニュアルを執筆しました。温度管理とアラームを扱い、疾病予防管理センター（CDC）の低温保管規則も説明しています。</p>
             </div>
           </div>
         </div>
@@ -528,7 +524,7 @@
                 </svg>
               </div>
               <h3 class="card-title fw-bold text-black">Recordkeeping</h3>
-              <p class="card-text text-black">HTML、Bootstrap、JavaScriptを使用して、私の個人的なレコードコレクションのカタログを管理するために作成したウェブサイトです。</p>
+              <p class="card-text text-black">レコードコレクションを整理するサイトを制作しました。HTML、Bootstrap、JavaScript で構築しています。</p>
             </div>
           </div>
         </div>
@@ -545,7 +541,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">ドミニカ共和国における教育</h3>
-              <p class="card-text text-black">これは、ドミニカ共和国における国連の持続可能な開発目標（SDGs）について私が執筆した一連の記事の一部です。</p>
+              <p class="card-text text-black">ドミニカ共和国の学校について記事を執筆しました。国連の開発目標を扱う連載の一本です。</p>
             </div>
           </div>
         </div>
@@ -562,7 +558,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">母乳冷凍庫の取扱説明書</h3>
-              <p class="card-text text-black">医療用母乳冷凍庫に関する包括的なユーザーマニュアルで、安全手順、設置方法、および温度管理について解説しています。</p>
+              <p class="card-text text-black">病院で母乳を保管する冷凍庫のマニュアルを執筆しました。安全性、設置、温度管理を扱っています。</p>
             </div>
           </div>
         </div>
@@ -579,7 +575,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">霜取り不要の温冷兼用引き出し</h3>
-              <p class="card-text text-black">業界初となる冷暖房兼用引き出しのユーザーマニュアルです。温度調節、サバトモード、および設置方法について詳しく説明しています。</p>
+              <p class="card-text text-black">保温・保冷ドロワーのマニュアルを執筆しました。温度管理、安息日モード、設置方法を扱っています。</p>
             </div>
           </div>
         </div>
@@ -587,6 +583,8 @@
       </div>
     </div>
   </div>
+
+  </main>
 
   <footer>
     <p class="text-white text-center">&copy; 2026 Pedro Vega | HTML &bull; CSS &bull; JS &bull; GitHub Pages を使用して構築</p>
@@ -599,7 +597,7 @@
 
   <!-- Shared PDF viewer -->
   <script src="/js/pdf-viewer.js?v=3"></script>
-  <script src="/js/sticky-nav.js"></script>
+  <script src="/js/sticky-nav.js?v=2"></script>
   <script src="/js/interactive.js?v=infinite-carousels-v6"></script>
   <!-- DocSearch JS -->
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>

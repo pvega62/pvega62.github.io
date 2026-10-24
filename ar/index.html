@@ -152,10 +152,10 @@
     <div class="container-fluid px-0">
 
       <!-- Desktop Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation"
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex"
         aria-label="Desktop navigation">
         <a class="navbar-brand ms-3" href="/ar/">
-          <img src="/images/logo.png" alt="Logo" height="40">
+          <img src="/images/logo.png" alt="Pedro Vega، الصفحة الرئيسية" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -168,8 +168,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">توثيق البرمجيات</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">توثيق البرمجيات</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/ar/docs/intro">مقدمة</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/ar/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/ar/docs/category/cloud-data-pipeline-documentation">خطوط أنابيب البيانات السحابية</a></li>
@@ -235,7 +235,7 @@
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation"
         aria-label="Mobile navigation">
         <a class="navbar-brand ms-2 me-1" href="/ar/">
-          <img src="/images/icon-logo.png" alt="Logo" height="40">
+          <img src="/images/icon-logo.png" alt="Pedro Vega، الصفحة الرئيسية" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
 
@@ -247,8 +247,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">توثيق البرمجيات</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">توثيق البرمجيات</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/ar/docs/intro">مقدمة</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/ar/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/ar/docs/category/cloud-data-pipeline-documentation">خطوط أنابيب البيانات السحابية</a></li>
@@ -332,7 +332,7 @@
             <a href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3">
               <img src="/images/linkedin-button.svg" alt="LinkedIn" width="52" height="52">
             </a>
-            <a href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3 ">
+            <a href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3" aria-label="ملف GitHub">
               <svg width="52" height="52" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="61.4389" height="60.8604" rx="15" fill="#24292F" />
                 <path
@@ -343,10 +343,8 @@
                   fill="white" />
               </svg>
             </a>
-            <br>
-            <br>
             <a href="https://pvega62.github.io/software/ar/docs/intro" target="_blank" rel="noopener noreferrer"
-              class="me-3">
+              class="me-3 d-inline-block mt-5">
               <img src="/images/docs-button-ar.svg" alt="توثيق البرمجيات" width="200" height="38">
             </a>
           </div>
@@ -354,13 +352,12 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center intro-text">
-            <p>لسنوات عديدة، ركزت في عملي على تبسيط المفاهيم المعقدة وشرحها للجمهور. وبصفتي معلماً وصحفياً وكاتباً تقنياً، كنت دائماً أضع في مقدمة أولوياتي إنشاء محتوى واضح وجذاب وسهل الفهم.</p>
-            <p>يضم هذا الملف نماذج متنوعة من أعمالي في هذه المجالات: مقالات منشورة، ووثائق تقنية (أدلة مستخدم للأجهزة والبرمجيات، بالإضافة إلى مراجع واجهات برمجة التطبيقات API)، ونماذج لكتابة تجربة المستخدم UX. وقد طورت هذه النماذج باستخدام أدوات متقدمة مثل Swagger وPostman لتقديم مسارات عمل متكاملة وواضحة للمطورين والمستخدمين على حد سواء.</p>
+            <p>على مدى سنوات، وجّهت مسيرتي المهنية نحو هدف واحد: جعل المفاهيم المعقدة واضحة لجمهور عام. بصفتي مدرّسًا وصحفيًا وكاتبًا تقنيًا، أصنع محتوى يُفهم من القراءة الأولى.</p>
+            <p>يجمع هذا الموقع نماذج من كل مجال: مقالات، وأدلة مستخدم، ومراجع API، وكتابة UX. أنشأت كل نموذج في Swagger وPostman لعرض مسارات تطوير واضحة.</p>
           </div>
         </div>
       </div>
     </div>
-  </main>
 
   <!-- Sweepy Feature Section -->
   <div class="light-section py-5">
@@ -377,10 +374,10 @@
           <a href="https://pvega62.github.io/software/ar/docs/sweepy/intro" class="inno-link">
             <h2 class="fw-bold">Sweepy، أداة مفتوحة المصدر للبحث عن الوظائف</h2>
           </a>
-          <p class="text-secondary">يفحص Sweepy منصات <b>Greenhouse</b> و<b>Ashby</b> و<b>Lever</b> و<b>Workable</b> ولوحة Built In New York City بحثًا عن الوظائف الشاغرة. يقرأ أمر واحد سيرة ذاتية بصيغة PDF أو Word ويقيّم كل إعلان وظيفي. وقبل أن يصل أي إعلان إلى التقرير، يتحقق Sweepy من أن كل رابط يعمل. وينتهي كل فحص بدليل PDF مرتّب ومتتبع للطلبات بصيغة CSV.</p>
+          <p class="text-secondary">يفحص Sweepy منصات <strong>Greenhouse</strong> و<strong>Ashby</strong> و<strong>Lever</strong> و<strong>Workable</strong> ولوحة Built In New York City بحثًا عن الوظائف الشاغرة. يقرأ أمر واحد سيرة ذاتية بصيغة PDF أو Word ويقيّم كل إعلان وظيفي. وقبل أن يصل أي إعلان إلى التقرير، يتحقق Sweepy من أن كل رابط يعمل. وينتهي كل فحص بدليل PDF مرتّب ومتتبع للطلبات بصيغة CSV.</p>
           <p class="text-secondary">يستطيع Sweepy فحص منصات وظائف إضافية عبر محركات اختيارية قابلة للتنزيل.</p>
-          <p class="text-secondary">بنيت Sweepy كحزمة <b>Python</b> مفتوحة المصدر. نقطة الدخول من سطر الأوامر هي <b>swee.py</b>. ويعرض <b>server.py</b> المرافق عمليات الفحص نفسها لمساعدي الذكاء الاصطناعي عبر <b>Model Context Protocol</b> (MCP). يحلل <b>PyMuPDF</b> السير الذاتية. وتُنشئ <b>ReportLab</b> بطاقات PDF، وتجعل ملفات تعريف YAML كل بحث قابلًا للنقل. ويُصدر Sweepy بموجب ترخيص MIT.</p>
-          <p class="text-secondary">بصفتي المنشئ، كتبت الشيفرة وجميع صفحات التوثيق الثلاث عشرة. يغطي <b>توثيق Sweepy</b> الإعداد والتقييم وأدوات MCP. ويرسم مخطط <b>Mermaid</b> خط الأنابيب ذا المراحل الخمس، ويكشف <b>Vale</b> الأخطاء ويضمن التزام كل صفحة بـ<b>دليل الأسلوب</b> الخاص بي.</p>
+          <p class="text-secondary">بنيت Sweepy كحزمة <strong>Python</strong> مفتوحة المصدر. نقطة الدخول من سطر الأوامر هي <strong>swee.py</strong>. ويعرض <strong>server.py</strong> المرافق عمليات الفحص نفسها لمساعدي الذكاء الاصطناعي عبر <strong>Model Context Protocol</strong> (MCP). يحلل <strong>PyMuPDF</strong> السير الذاتية. وتُنشئ <strong>ReportLab</strong> بطاقات PDF، وتجعل ملفات تعريف YAML كل بحث قابلًا للنقل. ويُصدر Sweepy بموجب ترخيص MIT.</p>
+          <p class="text-secondary">بصفتي المنشئ، كتبت الشيفرة وجميع صفحات التوثيق الثلاث عشرة. يغطي <strong>توثيق Sweepy</strong> الإعداد والتقييم وأدوات MCP. ويرسم مخطط <strong>Mermaid</strong> خط الأنابيب ذا المراحل الخمس، ويكشف <strong>Vale</strong> الأخطاء ويضمن التزام كل صفحة بـ<strong>دليل الأسلوب</strong> الخاص بي.</p>
           <p class="mb-0">
             <a href="https://github.com/pvega62/sweepy" target="_blank" rel="noopener noreferrer">
               <img src="https://img.shields.io/badge/GitHub-pvega62%2Fsweepy-181717?style=for-the-badge&amp;logo=github"
@@ -412,7 +409,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">نموذج توثيق حزمة TypeScript SDK لـ Sui</h3>
-              <p class="card-text text-black">أنشأت نموذج توثيق شاملاً يُعلّم المطورين كيفية قراءة البيانات وكتابتها على بلوكتشين Sui باستخدام حزمة TypeScript SDK. يضم الملف دليلاً مفاهيمياً وبرنامجاً تعليمياً وصفحات مرجعية لـ API تمحورت حول الاستعلام عن بيانات كائن SuiClient والتفاعل معها.</p>
+              <p class="card-text text-black">أنشأت مجموعة وثائق لـ SDK TypeScript الخاص بـ Sui. يوضح دليل وبرنامج تعليمي للمطورين كيفية قراءة بيانات البلوك تشين وكتابتها. وتغطي صفحات مرجع API استعلامات SuiClient.</p>
             </div>
           </div>
         </div>
@@ -429,8 +426,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">نموذج وثائق واجهة برمجة تطبيقات Stripe</h3>
-              <p class="card-text text-black text-center">كتبت وثائق <b>REST API</b> بتنسيق <b>Markdown</b> في <b>VSCode</b> مع التحقق منها باستخدام <b>Vale</b>. تحققت من نقاط النهاية باستخدام <b>Postman</b>، ووثقت تدفق المصادقة، وأدرت الوثائق في <b>GitHub Wiki</b>. يُظهر النموذج سير عمل توثيق المطورين الكاملة من البداية إلى النهاية.
-              </p>
+              <p class="card-text text-black text-center">كتبت وثائق <strong>API REST</strong> بصيغة <strong>Markdown</strong> باستخدام <strong>VS Code</strong> و<strong>Vale</strong>. اختبرت كل نقطة نهاية في <strong>Postman</strong>. حفظت الوثائق في <strong>ويكي GitHub</strong> ووثّقت مسار المصادقة. يعرض النموذج مسار عمل كامل لتوثيق المطورين.</p>
             </div>
           </div>
         </div>
@@ -445,7 +441,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">مسار تهيئة وبدء الاستخدام لتطبيق مصرفي</h3>
-              <p class="card-text text-black">يعرض هذا النموذج مسار تهيئة شاملاً لتطبيق مالي، ويُبرز القدرة على بناء ثقة المستخدم بأسلوب واثق وواضح واحترافي مع الالتزام بالقيود التقنية الصارمة.</p>
+              <p class="card-text text-black">يرشد هذا النموذج مستخدمًا جديدًا عبر مسار تعريف كامل لتطبيق مالي. تبني النصوص الثقة بنبرة واثقة وواضحة ومهنية ضمن حدود صارمة لعدد الأحرف.</p>
             </div>
           </div>
         </div>
@@ -462,7 +458,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">دليل مستخدم جهاز توزيع الروائح InnoGear</h3>
-              <p class="card-text text-black">رصدت مشكلات الترجمة الركيكة والتنظيم غير المنهجي في الدليل الأصلي وعالجتها. أعدت كتابة التعليمات لتكون أكثر سهولة وبديهية، وحسّنت تصميم الصفحة لتعزيز فهم المستخدمين.</p>
+              <p class="card-text text-black">صححت أخطاء الترجمة في دليل قائم. أعدت كتابة كل خطوة وأعدت ترتيب التصميم. يستطيع المستخدمون الآن متابعة الإعداد.</p>
             </div>
           </div>
         </div>
@@ -479,7 +475,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">دليل مستخدم ثلاجة حفظ اللقاحات</h3>
-              <p class="card-text text-black">دليل مستخدم متخصص لثلاجة حفظ اللقاحات، يركز على مراقبة درجات الحرارة وأنظمة الإنذار ومتطلبات تخزين مركز السيطرة على الأمراض والوقاية منها (CDC).</p>
+              <p class="card-text text-black">كتبت دليلًا لثلاجة حفظ اللقاحات. يغطي فحوص درجة الحرارة والإنذارات. ويشرح أيضًا قواعد التخزين المبرد الصادرة عن المراكز الأمريكية لمكافحة الأمراض والوقاية منها (CDC).</p>
             </div>
           </div>
         </div>
@@ -525,7 +521,7 @@
                 </svg>
               </div>
               <h3 class="card-title fw-bold text-black">Recordkeeping</h3>
-              <p class="card-text text-black">موقع إلكتروني بنيته باستخدام HTML وBootstrap وJavaScript لحفظ فهرس مجموعتي الشخصية من الأسطوانات الفينيلية.</p>
+              <p class="card-text text-black">أنشأت موقعًا لفهرسة أسطوانات الفينيل الخاصة بي. يستخدم HTML وBootstrap وJavaScript.</p>
             </div>
           </div>
         </div>
@@ -542,7 +538,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">التعليم في جمهورية الدومينيكان</h3>
-              <p class="card-text text-black">جزء من سلسلة مقالات كتبتها حول أهداف التنمية المستدامة للأمم المتحدة في جمهورية الدومينيكان.</p>
+              <p class="card-text text-black">كتبت مقالًا عن المدارس في جمهورية الدومينيكان. وهو جزء من سلسلة عن أهداف الأمم المتحدة للتنمية.</p>
             </div>
           </div>
         </div>
@@ -559,7 +555,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">دليل مستخدم فريزر حفظ حليب الأم</h3>
-              <p class="card-text text-black">دليل مستخدم شامل لمجمّد حليب الأم بمواصفات طبية، يغطي بروتوكولات السلامة وإجراءات التركيب وإدارة درجات الحرارة.</p>
+              <p class="card-text text-black">كتبت دليل مجمّد يحفظ حليب الأم في المستشفيات. يغطي السلامة والتركيب والتحكم في درجة الحرارة.</p>
             </div>
           </div>
         </div>
@@ -576,7 +572,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">درج التدفئة والتبريد المقاوم للتجمد</h3>
-              <p class="card-text text-black">دليل مستخدم لدرج التدفئة والتبريد المشترك ACME SPHC30/36، يوضح التحكم بدرجات الحرارة ووضع السبت (Sabbath mode) وإجراءات التركيب.</p>
+              <p class="card-text text-black">كتبت دليل درج التدفئة والتبريد. يغطي التحكم في درجة الحرارة ووضع السبت والتركيب.</p>
             </div>
           </div>
         </div>
@@ -584,6 +580,8 @@
       </div>
     </div>
   </div>
+
+  </main>
 
   <footer>
     <p class="text-white text-center">&copy; 2026 بيدرو فيجا | صُمم باستخدام HTML &bull; CSS &bull; JS &bull; صفحات GitHub</p>
@@ -596,7 +594,7 @@
 
   <!-- Shared PDF viewer -->
   <script src="/js/pdf-viewer.js?v=3"></script>
-  <script src="/js/sticky-nav.js"></script>
+  <script src="/js/sticky-nav.js?v=2"></script>
   <!-- DocSearch JS -->
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>

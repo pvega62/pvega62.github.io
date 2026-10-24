@@ -315,6 +315,23 @@ body {
   color: #e1dedb;
 }
 
+/* Current-page indicator (JS adds .active to the matching nav link) */
+header .navbar .nav-link.active,
+header .navbar .nav-link.active:hover,
+header .navbar .nav-link.active:focus {
+  color: #e8c47c !important;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+/* Light sticky-nav state: gold loses contrast on the tan background */
+header.is-light .navbar .nav-link.active,
+header.is-light .navbar .nav-link.active:hover,
+header.is-light .navbar .nav-link.active:focus {
+  color: #1f3850 !important;
+}
+
 .inno-link {
   text-decoration: none;
   color: inherit;

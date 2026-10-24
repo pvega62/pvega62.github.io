@@ -86,11 +86,13 @@ Docs-as-Code Workflow:
 │   ├── technical-writing-hardware.html # Hardware documentation showcase
 │   ├── uxwriting.html         # UX writing and content design samples
 │   ├── articles.html          # Articles and publications
+│   ├── search.html            # Algolia DocSearch verification page
 │   ├── Pedro Vega Resume.pdf  # Downloadable resume
-│   ├── es/                    # Localized Spanish pages (/es/, /es/articles, etc.)
+│   ├── es/ fr/ ar/ hi/ ja/ zh/ # Localized copies of every page, including search.html
 │   ├── css/                   # Stylesheets and custom responsive rules
 │   ├── js/                    # Search, modal viewers, and navigation scripts
 │   ├── samples/               # PDF documentation samples
+│   ├── sitemap.xml            # Search engine URL index
 │   └── images/                # Site assets, logos, and previews
 └── (External Repositories)
     ├── /software              # Docusaurus software documentation portal

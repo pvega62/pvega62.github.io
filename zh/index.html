@@ -32,7 +32,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="/css/styles.css?v=5">
+  <link rel="stylesheet" href="/css/styles.css?v=6">
   <link rel="icon" href="/images/logo.png" type="image/png">
   <link rel="preconnect" href="https://XMDO29FL1L-dsn.algolia.net" crossorigin />
   <!-- DocSearch CSS -->
@@ -150,10 +150,10 @@
     <div class="container-fluid px-0">
 
       <!-- Desktop Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation"
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex"
         aria-label="Desktop navigation">
         <a class="navbar-brand ms-3" href="/zh/">
-          <img src="/images/logo.png" alt="Logo" height="40">
+          <img src="/images/logo.png" alt="Pedro Vega，首页" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -166,8 +166,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">软件 / 开发文档</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">软件 / 开发文档</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/intro">介绍</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/category/cloud-data-pipeline-documentation">云数据管道</a></li>
@@ -233,7 +233,7 @@
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation"
         aria-label="Mobile navigation">
         <a class="navbar-brand ms-2 me-1" href="/zh/">
-          <img src="/images/icon-logo.png" alt="Logo" height="40">
+          <img src="/images/icon-logo.png" alt="Pedro Vega，首页" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
 
@@ -245,8 +245,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">软件 / 开发文档</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">软件 / 开发文档</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/intro">介绍</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/zh/docs/category/cloud-data-pipeline-documentation">云数据管道</a></li>
@@ -330,7 +330,7 @@
             <a href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3">
               <img src="/images/linkedin-button.svg" alt="LinkedIn" width="52" height="52">
             </a>
-            <a href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3 ">
+            <a href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3" aria-label="GitHub 个人资料">
               <svg width="52" height="52" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="61.4389" height="60.8604" rx="15" fill="#24292F" />
                 <path
@@ -341,10 +341,8 @@
                   fill="white" />
               </svg>
             </a>
-            <br>
-            <br>
             <a href="https://pvega62.github.io/software/zh/docs/intro" target="_blank" rel="noopener noreferrer"
-              class="me-3">
+              class="me-3 d-inline-block mt-5">
               <img src="/images/docs-button-cmn.svg" alt="软件 / 开发文档" width="190" height="38">
             </a>
           </div>
@@ -352,13 +350,12 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center intro-text">
-            <p>多年来，我的工作重点一直是将复杂的概念转化为通俗易懂的内容供大众阅读。作为一名教育工作者、记者和技术写作者，清晰、引人入胜且易于理解的内容始终是我的首要追求。</p>
-            <p>本作品集收录了我在这些领域的代表作品：已发表的文章、技术文档（涵盖硬件与软件用户指南，以及 API 参考资料）和 UX 写作样本。这些内容运用 Swagger 和 Postman 等先进工具开发，旨在为开发人员和终端用户提供端到端的工作流程与卓越体验。</p>
+            <p>多年来，我把职业重心放在一个目标上：让复杂概念对普通读者变得清晰。作为讲师、记者和技术撰稿人，我写的内容读一遍就能明白。</p>
+            <p>本作品集汇集了各领域的样本：文章、用户手册、API 参考和 UX 文案。每个样本都用 Swagger 和 Postman 制作，以呈现清晰的开发流程。</p>
           </div>
         </div>
       </div>
     </div>
-  </main>
 
   <!-- Sweepy Feature Section -->
   <div class="light-section py-5">
@@ -375,10 +372,10 @@
           <a href="https://pvega62.github.io/software/zh/docs/sweepy/intro" class="inno-link">
             <h2 class="fw-bold">Sweepy：开源求职搜索工具</h2>
           </a>
-          <p class="text-secondary">Sweepy 会扫描 <b>Greenhouse</b>、<b>Ashby</b>、<b>Lever</b>、<b>Workable</b> 以及 Built In New York City 招聘板上的空缺职位。只需一条命令，它就能读取 PDF 或 Word 简历，并为每个职位评分。在任何结果进入报告之前，Sweepy 会确认每个链接均可访问。每次扫描结束时，都会生成按匹配度排序的 PDF 目录和 CSV 求职进度表。</p>
+          <p class="text-secondary">Sweepy 会扫描 <strong>Greenhouse</strong>、<strong>Ashby</strong>、<strong>Lever</strong>、<strong>Workable</strong> 以及 Built In New York City 招聘板上的空缺职位。只需一条命令，它就能读取 PDF 或 Word 简历，并为每个职位评分。在任何结果进入报告之前，Sweepy 会确认每个链接均可访问。每次扫描结束时，都会生成按匹配度排序的 PDF 目录和 CSV 求职进度表。</p>
           <p class="text-secondary">Sweepy 可通过可选的下载引擎扫描更多招聘板。</p>
-          <p class="text-secondary">我将 Sweepy 开发为开源 <b>Python</b> 软件包。命令行入口为 <b>swee.py</b>。配套的 <b>server.py</b> 通过 <b>Model Context Protocol</b>（MCP）向 AI 助手提供相同的扫描能力。<b>PyMuPDF</b> 解析简历。<b>ReportLab</b> 渲染 PDF 卡片，YAML 配置文件让每次搜索都可移植。Sweepy 以 MIT 许可证发布。</p>
-          <p class="text-secondary">作为创作者，我编写了全部代码和 13 个文档页面。<b>Sweepy 文档</b>涵盖安装、评分和 MCP 工具。<b>Mermaid</b> 图表描绘五阶段流水线，<b>Vale</b> 检查错误，并确保每个页面符合我的<b>样式指南</b>。</p>
+          <p class="text-secondary">我将 Sweepy 开发为开源 <strong>Python</strong> 软件包。命令行入口为 <strong>swee.py</strong>。配套的 <strong>server.py</strong> 通过 <strong>Model Context Protocol</strong>（MCP）向 AI 助手提供相同的扫描能力。<strong>PyMuPDF</strong> 解析简历。<strong>ReportLab</strong> 渲染 PDF 卡片，YAML 配置文件让每次搜索都可移植。Sweepy 以 MIT 许可证发布。</p>
+          <p class="text-secondary">作为创作者，我编写了全部代码和 13 个文档页面。<strong>Sweepy 文档</strong>涵盖安装、评分和 MCP 工具。<strong>Mermaid</strong> 图表描绘五阶段流水线，<strong>Vale</strong> 检查错误，并确保每个页面符合我的<strong>样式指南</strong>。</p>
           <p class="mb-0">
             <a href="https://github.com/pvega62/sweepy" target="_blank" rel="noopener noreferrer">
               <img src="https://img.shields.io/badge/GitHub-pvega62%2Fsweepy-181717?style=for-the-badge&amp;logo=github"
@@ -410,7 +407,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">TypeScript SDK Sui 文档样本</h3>
-              <p class="card-text text-black">创建了详尽的文档样本，指导开发人员如何使用 TypeScript SDK 在 Sui 区块链上读写数据。该套件包含概念指南、教程以及围绕查询和交互 SuiClient 对象数据的 API 参考页面。</p>
+              <p class="card-text text-black">为 Sui 的 TypeScript SDK 编写了一套文档。指南和教程演示开发者如何读写区块链数据，API 参考页覆盖 SuiClient 查询。</p>
             </div>
           </div>
         </div>
@@ -427,8 +424,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Stripe API 文档样本</h3>
-              <p class="card-text text-black text-center">使用 <b>VSCode</b> 编写 <b>Markdown</b> 格式的 <b>REST API</b> 文档，并使用 <b>Vale</b> 进行风格与语法检查。通过 <b>Postman</b> 验证端点，记录身份验证流程，并在 <b>GitHub Wiki</b> 中进行维护，充分展现端到端开发者文档工作流。
-              </p>
+              <p class="card-text text-black text-center">用 <strong>VS Code</strong> 和 <strong>Vale</strong> 以 <strong>Markdown</strong> 编写 <strong>REST API</strong> 文档，在 <strong>Postman</strong> 中逐一验证接口，并将文档保存在 <strong>GitHub Wiki</strong> 中，同时说明认证流程。该样本展示了完整的开发者文档工作流。</p>
             </div>
           </div>
         </div>
@@ -443,7 +439,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">银行应用新用户引导流程</h3>
-              <p class="card-text text-black">本样本展示了金融应用的完整新用户引导流程。在遵守严格技术约束条件的同时，通过自信、清晰且专业的语气建立用户信任。</p>
+              <p class="card-text text-black">该样本带新用户走完金融应用的完整入门流程，文案在严格字数限制下以自信、清晰、专业的语气建立信任。</p>
             </div>
           </div>
         </div>
@@ -460,7 +456,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">InnoGear 香薰机用户手册</h3>
-              <p class="card-text text-black">识别并解决了现有指南中存在的翻译模糊和结构混乱问题。重写了操作说明以提升直观性，并优化了排版布局，更便于用户理解。</p>
+              <p class="card-text text-black">修正了现有指南中的翻译错误，重写每个步骤并调整布局，用户现在可以顺利按步骤完成设置。</p>
             </div>
           </div>
         </div>
@@ -477,7 +473,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">疫苗冷藏箱用户手册</h3>
-              <p class="card-text text-black">专为疫苗冷藏箱编写的专业用户手册，重点涵盖温度监控、报警系统以及美国疾控中心（CDC）的存储规范要求。</p>
+              <p class="card-text text-black">为疫苗冷藏柜编写手册，涵盖温度检查与报警，并说明美国疾病控制与预防中心（CDC）的冷藏要求。</p>
             </div>
           </div>
         </div>
@@ -523,7 +519,7 @@
                 </svg>
               </div>
               <h3 class="card-title fw-bold text-black">Recordkeeping</h3>
-              <p class="card-text text-black">一个使用 HTML、Bootstrap 和 JavaScript 构建的个人黑胶唱片收藏目录网站。</p>
+              <p class="card-text text-black">搭建了一个整理黑胶唱片收藏的网站，使用 HTML、Bootstrap 和 JavaScript。</p>
             </div>
           </div>
         </div>
@@ -540,7 +536,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">多米尼加共和国的教育</h3>
-              <p class="card-text text-black">关于联合国在多米尼加共和国推进的可持续发展目标（SDGs）系列深度撰文之一。</p>
+              <p class="card-text text-black">撰写了关于多米尼加共和国学校的文章，属于联合国发展目标系列。</p>
             </div>
           </div>
         </div>
@@ -557,7 +553,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">母乳冷冻箱用户手册</h3>
-              <p class="card-text text-black">医用级母乳冷冻箱综合用户手册，涵盖安全规范、设备安装及温度管理指南。</p>
+              <p class="card-text text-black">为医院储存母乳的冷柜编写手册，涵盖安全、安装和温度控制。</p>
             </div>
           </div>
         </div>
@@ -574,7 +570,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">无霜保温冷藏抽屉</h3>
-              <p class="card-text text-black">ACME SPHC30/36 双功能保温冷藏抽屉用户手册，详细阐述了温度控制、安息日模式与安装规范。</p>
+              <p class="card-text text-black">为保温保冷抽屉编写手册，涵盖温度控制、安息日模式和安装。</p>
             </div>
           </div>
         </div>
@@ -582,6 +578,8 @@
       </div>
     </div>
   </div>
+
+  </main>
 
   <footer>
     <p class="text-white text-center">&copy; 2026 佩德罗·维加 | 基于 HTML &bull; CSS &bull; JS &bull; GitHub Pages 构建</p>
@@ -594,7 +592,7 @@
 
   <!-- Shared PDF viewer -->
   <script src="/js/pdf-viewer.js?v=3"></script>
-  <script src="/js/sticky-nav.js"></script>
+  <script src="/js/sticky-nav.js?v=2"></script>
   <!-- DocSearch JS -->
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>

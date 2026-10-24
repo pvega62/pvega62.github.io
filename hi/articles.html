@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=6">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
   <link rel="stylesheet" href="/css/page-specific.css?v=9">
   <link rel="icon" href="/images/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
@@ -50,7 +50,7 @@
       <!-- Desktop Navbar -->
       <nav aria-label="Desktop navigation" class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation">
         <a class="navbar-brand ms-3" href="/hi/">
-          <img alt="Logo" height="40" src="/images/logo.png"/>
+          <img alt="Pedro Vega" height="40" src="/images/logo.png"/>
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -61,8 +61,8 @@
               </a>
               <ul aria-labelledby="navbarDropdownDesktop1" class="dropdown-menu">
                 <li class="dropend position-relative">
-                  <a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">सॉफ़्टवेयर/डेव दस्तावेज़</a>
-                  <ul class="dropdown-menu">
+                  <a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">सॉफ़्टवेयर/डेव दस्तावेज़</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="/hi/articlesdocs/intro">परिचय</a></li>
                     <li><a class="dropdown-item" href="/hi/articlesdocs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="/hi/articlesdocs/category/cloud-data-pipeline-documentation">क्लाउड डेटा पाइपलाइन्स</a></li>
@@ -117,7 +117,7 @@
       <!-- Mobile Navbar -->
       <nav aria-label="Mobile navigation" class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation">
         <a class="navbar-brand ms-2 me-1" href="/hi/">
-          <img alt="Logo" height="40" src="/images/icon-logo.png"/>
+          <img alt="Pedro Vega" height="40" src="/images/icon-logo.png"/>
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
           <li class="nav-item dropup d-flex align-items-center">
@@ -126,8 +126,8 @@
             </a>
             <ul aria-labelledby="navbarDropdown1" class="dropdown-menu">
               <li class="dropend position-relative">
-                <a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button">सॉफ़्टवेयर/डेव दस्तावेज़</a>
-                <ul class="dropdown-menu">
+                <a aria-expanded="false" class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">सॉफ़्टवेयर/डेव दस्तावेज़</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="/hi/articlesdocs/intro">परिचय</a></li>
                   <li><a class="dropdown-item" href="/hi/articlesdocs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="/hi/articlesdocs/category/cloud-data-pipeline-documentation">क्लाउड डेटा पाइपलाइन्स</a></li>
@@ -196,7 +196,7 @@
         <h1 class="display-4 fw-bold text-white">लेख</h1>
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center intro-text text-white">
-            <p>वैश्विक गरीबी, सार्वजनिक स्वास्थ्य, अंतर्राष्ट्रीय विकास और प्रौद्योगिकी पर केंद्रित प्रकाशित लेखों का संग्रह।</p>
+            <p>वैश्विक गरीबी, सार्वजनिक स्वास्थ्य, अंतर्राष्ट्रीय विकास और तकनीक पर प्रकाशित लेखों का संग्रह। ये लेख डोमिनिकन गणराज्य, प्यूर्टो रिको, गुयाना और वैश्विक विकास पहलों को कवर करते हैं।</p>
           </div>
         </div>
       </div>
@@ -211,19 +211,20 @@
             <i class="bi bi-funnel-fill me-1"></i> विषय अनुसार फ़िल्टर करें
           </span>
         </div>
-        <div class="article-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
-          <button type="button" class="btn article-filter-pill active" data-filter="all">सभी <span class="badge ms-1">9</span></button>
-          <button type="button" class="btn article-filter-pill" data-filter="social-poverty">सामाजिक प्रभाव और गरीबी <span class="badge ms-1">4</span></button>
-          <button type="button" class="btn article-filter-pill" data-filter="healthcare-crisis">स्वास्थ्य सेवा और संकट <span class="badge ms-1">3</span></button>
-          <button type="button" class="btn article-filter-pill" data-filter="rights-education">अधिकार और शिक्षा <span class="badge ms-1">2</span></button>
-          <button type="button" class="btn article-filter-pill" data-filter="tech-sdgs">प्रौद्योगिकी और सतत विकास लक्ष्य <span class="badge ms-1">2</span></button>
+        <div class="article-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2" role="group" aria-label="विषय के अनुसार लेख फ़िल्टर करें">
+          <button type="button" class="btn article-filter-pill active" data-filter="all" aria-pressed="true">सभी <span class="badge ms-1">9</span></button>
+          <button type="button" class="btn article-filter-pill" data-filter="social-poverty" aria-pressed="false">सामाजिक प्रभाव और गरीबी <span class="badge ms-1">4</span></button>
+          <button type="button" class="btn article-filter-pill" data-filter="healthcare-crisis" aria-pressed="false">स्वास्थ्य सेवा और संकट <span class="badge ms-1">3</span></button>
+          <button type="button" class="btn article-filter-pill" data-filter="rights-education" aria-pressed="false">अधिकार और शिक्षा <span class="badge ms-1">2</span></button>
+          <button type="button" class="btn article-filter-pill" data-filter="tech-sdgs" aria-pressed="false">प्रौद्योगिकी और सतत विकास लक्ष्य <span class="badge ms-1">2</span></button>
         </div>
       </div>
 
-      <div class="row g-4 justify-content-center">
+      <h2 class="visually-hidden">प्रकाशित लेख</h2>
+        <div class="row g-4 justify-content-center">
         <div class="col-md-4 article-card-col" data-category="healthcare-crisis tech-sdgs">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" aria-label="महामारियों से निपटने के लिए तकनीक का उपयोग करने के 4 तरीके लेख खोलें">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="महामारियों से निपटने के लिए तकनीक का उपयोग करने के 4 तरीके" src="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="महामारियों से निपटने के लिए तकनीक का उपयोग करने के 4 तरीके" src="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">महामारियों से निपटने के लिए तकनीक का उपयोग करने के 4 तरीके</h3>
               <p class="card-text text-black">COVID-19 महामारी से निपटने में स्वास्थ्य सेवा टीमों की सहायता के लिए उपयोग की जा सकने वाली 4 तकनीकों पर एक विस्तृत लेख।</p>
@@ -232,7 +233,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="rights-education">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" aria-label="डोमिनिकन गणराज्य में शिक्षा लेख खोलें">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="डोमिनिकन गणराज्य में शिक्षा" src="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="डोमिनिकन गणराज्य में शिक्षा" src="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">डोमिनिकन गणराज्य में शिक्षा</h3>
               <p class="card-text text-black">डोमिनिकन गणराज्य में शिक्षा की स्थिति, गरीबी का उस पर प्रभाव और सुधार के प्रयासों की जांच करने वाला विश्लेषणात्मक लेख।</p>
@@ -241,7 +242,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="rights-education">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" aria-label="डोमिनिकन गणराज्य में लैंगिक समानता लेख खोलें">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="डोमिनिकन गणराज्य में लैंगिक समानता" src="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="डोमिनिकन गणराज्य में लैंगिक समानता" src="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">डोमिनिकन गणराज्य में लैंगिक समानता: एक अद्यतन</h3>
               <p class="card-text text-black">डोमिनिकन गणराज्य में लैंगिक समानता की वर्तमान स्थिति, प्रगति और चुनौतियों की समीक्षा करने वाला लेख।</p>
@@ -250,7 +251,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="social-poverty healthcare-crisis">
           <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" aria-label="वैश्विक महामारी ने प्यूर्टो रिको में भुखमरी को बढ़ाया लेख खोलें">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="वैश्विक महामारी ने प्यूर्टो रिको में भुखमरी को बढ़ाया" src="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="वैश्विक महामारी ने प्यूर्टो रिको में भुखमरी को बढ़ाया" src="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">वैश्विक महामारी ने प्यूर्टो रिको में भुखमरी को और बढ़ाया</h3>
               <p class="card-text text-black">यह लेख विस्तार से बताता है कि कैसे वैश्विक महामारी और तूफान मारिया ने प्यूर्टो रिको में भुखमरी के संकट को गहरा कर दिया।</p>
@@ -259,7 +260,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="healthcare-crisis">
           <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" aria-label="डोमिनिकन गणराज्य में स्वास्थ्य सेवा लेख खोलें">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="डोमिनिकन गणराज्य में स्वास्थ्य सेवा" src="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="डोमिनिकन गणराज्य में स्वास्थ्य सेवा" src="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">बेहतर देखभाल की ओर: डोमिनिकन गणराज्य में स्वास्थ्य सेवा</h3>
               <p class="card-text text-black">डोमिनिकन गणराज्य की स्वास्थ्य सेवा प्रणाली और सार्वजनिक स्वास्थ्य बुनियादी ढांचे का अवलोकन प्रदान करने वाला लेख।</p>
@@ -268,7 +269,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="social-poverty">
           <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" aria-label="गुयाना में बेघर होने की समस्या लेख खोलें">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="गुयाना में बेघर होने की समस्या" src="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="गुयाना में बेघर होने की समस्या" src="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">विरासत में मिला बोझ: गुयाना में बेघर होने की समस्या</h3>
               <p class="card-text text-black">गुयाना में बेघर होने के संकट, आर्थिक कारकों और प्रभावित समुदायों पर इसके प्रभावों पर केंद्रित एक लेख।</p>
@@ -277,7 +278,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="social-poverty">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" aria-label="डोमिनिकन गणराज्य में भुखमरी लेख खोलें">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="डोमिनिकन गणराज्य में भुखमरी" src="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="डोमिनिकन गणराज्य में भुखमरी" src="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">डोमिनिकन गणराज्य में भुखमरी</h3>
               <p class="card-text text-black">डोमिनिकन गणराज्य में खाद्य सुरक्षा, पोषण और भुखमरी की चुनौतियों पर प्रकाश डालने वाला लेख।</p>
@@ -286,7 +287,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="tech-sdgs">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" aria-label="सैमसंग ग्लोबल गोल्स ऐप लेख खोलें">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="सैमसंग ग्लोबल गोल्स ऐप" src="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="सैमसंग ग्लोबल गोल्स ऐप" src="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">सैमसंग ग्लोबल गोल्स ऐप: एक टैप से सतत विकास लक्ष्यों का समर्थन</h3>
               <p class="card-text text-black">संयुक्त राष्ट्र के सतत विकास लक्ष्यों (SDGs) का समर्थन करने वाली सैमसंग की तकनीकी पहल पर एक लेख।</p>
@@ -295,7 +296,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="social-poverty">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" aria-label="डोमिनिकन गणराज्य में गरीबी लेख खोलें">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="डोमिनिकन गणराज्य में गरीबी" src="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="डोमिनिकन गणराज्य में गरीबी" src="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">डोमिनिकन गणराज्य में गरीबी</h3>
               <p class="card-text text-black">डोमिनिकन गणराज्य में आर्थिक असमानता और गरीबी के विभिन्न पहलुओं की पड़ताल करने वाला एक लेख।</p>
@@ -312,7 +313,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="/js/pdf-viewer.js?v=2"></script>
-  <script src="/js/sticky-nav.js"></script>
+  <script src="/js/sticky-nav.js?v=2"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
   <script>

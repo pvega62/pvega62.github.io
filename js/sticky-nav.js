@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     const href = link.getAttribute('href');
-    if (href && !href.startsWith('http') && !href.startsWith('mailto:')) {
+    // href="#" placeholders (dropdown toggles) must not match the homepage slug
+    if (href && href !== '#' && !href.startsWith('http') && !href.startsWith('mailto:')) {
       const linkSegments = href.split('#')[0].split('?')[0].split('/').filter(Boolean);
       const linkIsLang = ['es', 'fr', 'ar', 'zh', 'ja', 'hi', 'cmn'].includes(linkSegments[0]);
       const linkPageSegment = linkIsLang ? (linkSegments[1] || '') : (linkSegments[0] || '');
@@ -77,9 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const isShown = subMenu.classList.contains('show');
         parent.parentElement.querySelectorAll('.dropend .dropdown-menu.show').forEach(m => m.classList.remove('show'));
         parent.parentElement.querySelectorAll('.dropend.show').forEach(d => d.classList.remove('show'));
+        parent.parentElement.querySelectorAll('.dropend > .dropdown-toggle').forEach(t => t.setAttribute('aria-expanded', 'false'));
         if (!isShown) {
           subMenu.classList.add('show');
           parent.classList.add('show');
+          toggle.setAttribute('aria-expanded', 'true');
         }
       }
     });
@@ -90,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdown.addEventListener('hidden.bs.dropdown', () => {
       dropdown.querySelectorAll('.dropdown-menu.show').forEach(m => m.classList.remove('show'));
       dropdown.querySelectorAll('.dropend.show').forEach(d => d.classList.remove('show'));
+      dropdown.querySelectorAll('.dropend > .dropdown-toggle').forEach(t => t.setAttribute('aria-expanded', 'false'));
     });
   });
 });

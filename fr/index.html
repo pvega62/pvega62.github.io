@@ -32,7 +32,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="/css/styles.css?v=5">
+  <link rel="stylesheet" href="/css/styles.css?v=6">
   <link rel="icon" href="/images/logo.png" type="image/png">
   <link rel="preconnect" href="https://XMDO29FL1L-dsn.algolia.net" crossorigin />
   <!-- DocSearch CSS -->
@@ -150,10 +150,10 @@
     <div class="container-fluid px-0">
 
       <!-- Desktop Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation"
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex"
         aria-label="Navigation principale">
         <a class="navbar-brand ms-3" href="/fr/">
-          <img src="/images/logo.png" alt="Logo" height="40">
+          <img src="/images/logo.png" alt="Pedro Vega, accueil" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -166,8 +166,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentation Logicielle</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">Documentation Logicielle</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/fr/docs/intro">Introduction</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/fr/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/fr/docs/category/cloud-data-pipeline-documentation">Pipelines de données cloud</a></li>
@@ -233,7 +233,7 @@
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation"
         aria-label="Navigation mobile">
         <a class="navbar-brand ms-2 me-1" href="/fr/">
-          <img src="/images/icon-logo.png" alt="Logo" height="40">
+          <img src="/images/icon-logo.png" alt="Pedro Vega, accueil" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
 
@@ -243,8 +243,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Documentation Logicielle</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">Documentation Logicielle</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/fr/docs/intro">Introduction</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/fr/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/fr/docs/category/cloud-data-pipeline-documentation">Pipelines de données cloud</a></li>
@@ -328,7 +328,7 @@
             <a href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3">
               <img src="/images/linkedin-button.svg" alt="LinkedIn" width="52" height="52">
             </a>
-            <a href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3 ">
+            <a href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3" aria-label="Profil GitHub">
               <svg width="52" height="52" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="61.4389" height="60.8604" rx="15" fill="#24292F" />
                 <path
@@ -339,10 +339,8 @@
                   fill="white" />
               </svg>
             </a>
-            <br>
-            <br>
             <a href="https://pvega62.github.io/software/fr/docs/intro" target="_blank" rel="noopener noreferrer"
-              class="me-3">
+              class="me-3 d-inline-block mt-5">
               <img src="/images/docs-button-fr.svg" alt="Documentation Logicielle" width="240" height="38">
             </a>
           </div>
@@ -350,13 +348,12 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center intro-text">
-            <p>Depuis des années, ma carrière professionnelle s'articule autour d'un objectif fondamental : démystifier des concepts complexes pour le grand public. Que ce soit en tant que tuteur, journaliste ou rédacteur technique, je veille toujours à créer des contenus clairs, accessibles et intuitifs.</p>
-            <p>Ce portfolio réunit une sélection de mes réalisations. Vous y découvrirez des articles de vulgarisation, de la documentation technique (guides matériel, guides logiciel, références d'API) et des projets de rédaction UX. J'ai conçu ces exemples avec Swagger et Postman afin d'illustrer des parcours de développement fluides et structurés.</p>
+            <p>Depuis des années, je consacre ma carrière à un objectif : rendre clairs des concepts complexes pour un public général. Comme tuteur, journaliste et rédacteur technique, je crée des contenus qu'on comprend dès la première lecture.</p>
+            <p>Ce portfolio rassemble des exemples de chaque domaine : articles, manuels utilisateur, références d'API et rédaction UX. J'ai créé chaque exemple dans Swagger et Postman pour montrer des workflows de développement clairs.</p>
           </div>
         </div>
       </div>
     </div>
-  </main>
 
   <!-- Sweepy Feature Section -->
   <div class="light-section py-5">
@@ -373,10 +370,10 @@
           <a href="https://pvega62.github.io/software/fr/docs/sweepy/intro" class="inno-link">
             <h2 class="fw-bold">Sweepy, un outil open source de recherche d'emploi</h2>
           </a>
-          <p class="text-secondary">Sweepy parcourt les plateformes <b>Greenhouse</b>, <b>Ashby</b>, <b>Lever</b>, <b>Workable</b> et le site Built In New York City à la recherche de postes ouverts. Une seule commande lit un CV au format PDF ou Word et note chaque offre. Avant qu'un résultat n'atteigne le rapport, Sweepy vérifie que chaque lien répond. Chaque balayage se termine par un répertoire de PDF classés et un suivi des candidatures au format CSV.</p>
+          <p class="text-secondary">Sweepy parcourt les plateformes <strong>Greenhouse</strong>, <strong>Ashby</strong>, <strong>Lever</strong>, <strong>Workable</strong> et le site Built In New York City à la recherche de postes ouverts. Une seule commande lit un CV au format PDF ou Word et note chaque offre. Avant qu'un résultat n'atteigne le rapport, Sweepy vérifie que chaque lien répond. Chaque balayage se termine par un répertoire de PDF classés et un suivi des candidatures au format CSV.</p>
           <p class="text-secondary">Sweepy peut analyser d'autres plateformes grâce à des moteurs téléchargeables en option.</p>
-          <p class="text-secondary">J'ai créé Sweepy sous forme de paquet <b>Python</b> open source. Le point d'entrée en ligne de commande est <b>swee.py</b>. Un <b>server.py</b> complémentaire expose les mêmes balayages aux assistants IA via le <b>Model Context Protocol</b> (MCP). <b>PyMuPDF</b> analyse les CV. <b>ReportLab</b> génère les fiches PDF et les profils YAML rendent chaque recherche portable. Sweepy est publié sous licence MIT.</p>
-          <p class="text-secondary">En tant que créateur, j'ai écrit le code et les 13 pages de documentation. La <b>documentation Sweepy</b> couvre l'installation, la notation et les outils MCP. Un diagramme <b>Mermaid</b> cartographie le pipeline en cinq étapes, et <b>Vale</b> signale les erreurs et garantit que chaque page respecte mon <b>guide de style</b>.</p>
+          <p class="text-secondary">J'ai créé Sweepy sous forme de paquet <strong>Python</strong> open source. Le point d'entrée en ligne de commande est <strong>swee.py</strong>. Un <strong>server.py</strong> complémentaire expose les mêmes balayages aux assistants IA via le <strong>Model Context Protocol</strong> (MCP). <strong>PyMuPDF</strong> analyse les CV. <strong>ReportLab</strong> génère les fiches PDF et les profils YAML rendent chaque recherche portable. Sweepy est publié sous licence MIT.</p>
+          <p class="text-secondary">En tant que créateur, j'ai écrit le code et les 13 pages de documentation. La <strong>documentation Sweepy</strong> couvre l'installation, la notation et les outils MCP. Un diagramme <strong>Mermaid</strong> cartographie le pipeline en cinq étapes, et <strong>Vale</strong> signale les erreurs et garantit que chaque page respecte mon <strong>guide de style</strong>.</p>
           <p class="mb-0">
             <a href="https://github.com/pvega62/sweepy" target="_blank" rel="noopener noreferrer">
               <img src="https://img.shields.io/badge/GitHub-pvega62%2Fsweepy-181717?style=for-the-badge&amp;logo=github"
@@ -408,9 +405,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Extrait de documentation : SDK TypeScript de Sui</h3>
-              <p class="card-text text-black">Création d'un ensemble documentaire complet guidant les développeurs pour
-                lire et écrire des données sur la blockchain Sui via le SDK TypeScript. Cet ensemble comprend un guide
-                conceptuel, un tutoriel et des pages de référence d'API axées sur l'interrogation et la manipulation des objets SuiClient.</p>
+              <p class="card-text text-black">J'ai rédigé un ensemble de documentation pour le SDK TypeScript de Sui. Un guide et un tutoriel montrent aux développeurs comment lire et écrire des données sur la chaîne. Les pages de référence d'API couvrent les requêtes SuiClient.</p>
             </div>
           </div>
         </div>
@@ -427,11 +422,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Extrait de documentation : API Stripe</h3>
-              <p class="card-text text-black text-center">Rédaction d'une documentation d'<b>API REST</b> en <b>Markdown</b> sous
-                <b>VSCode</b> avec vérification de style via <b>Vale</b>. Validation des points de terminaison avec <b>Postman</b>,
-                documentation du flux d'authentification et gestion continue dans un <b>Wiki GitHub</b>. Illustre un cycle documentaire
-                complet pour développeurs.
-              </p>
+              <p class="card-text text-black text-center">J'ai rédigé la documentation de l'<strong>API REST</strong> en <strong>Markdown</strong> avec <strong>VS Code</strong> et <strong>Vale</strong>. J'ai testé chaque endpoint dans <strong>Postman</strong>. J'ai conservé la documentation dans un <strong>Wiki GitHub</strong> et décrit le flux d'authentification. L'exemple illustre un workflow complet de documentation développeur.</p>
             </div>
           </div>
         </div>
@@ -446,9 +437,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Parcours d'intégration pour application bancaire</h3>
-              <p class="card-text text-black">Cet extrait présente un parcours d'intégration complet pour une application financière.
-                Il démontre la capacité d'instaurer la confiance des utilisateurs grâce à un ton assuré, clair et professionnel tout en
-                respectant des contraintes techniques rigoureuses.</p>
+              <p class="card-text text-black">Cet exemple guide un nouvel utilisateur dans un parcours d'onboarding complet pour une application financière. La copie installe la confiance avec un ton assuré, clair et professionnel, sous des limites de caractères strictes.</p>
             </div>
           </div>
         </div>
@@ -465,9 +454,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Manuel d'utilisation : diffuseur d'aromathérapie InnoGear</h3>
-              <p class="card-text text-black">Identification et résolution des ambiguïtés de traduction et des problèmes de structure dans
-                un guide existant. Réécriture des instructions pour une utilisation plus intuitive et optimisation de la mise en page pour
-                faciliter la compréhension.</p>
+              <p class="card-text text-black">J'ai corrigé les erreurs de traduction d'un guide existant. J'ai réécrit chaque étape et réorganisé la mise en page. Les utilisateurs peuvent désormais suivre l'installation.</p>
             </div>
           </div>
         </div>
@@ -484,8 +471,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Manuel d'utilisation : réfrigérateur pour vaccins</h3>
-              <p class="card-text text-black">Manuel spécialisé pour un réfrigérateur de vaccins, axé sur la surveillance de la température,
-                les systèmes d'alarme et les normes de conservation du CDC.</p>
+              <p class="card-text text-black">J'ai rédigé un manuel pour un réfrigérateur à vaccins. Il couvre les contrôles de température et les alarmes. Il explique aussi les règles de stockage au froid des Centers for Disease Control and Prevention (CDC).</p>
             </div>
           </div>
         </div>
@@ -531,8 +517,7 @@
                 </svg>
               </div>
               <h3 class="card-title fw-bold text-black">Recordkeeping</h3>
-              <p class="card-text text-black">Site web que j'ai conçu avec HTML, Bootstrap et JavaScript pour cataloguer ma
-                collection personnelle de disques vinyles.</p>
+              <p class="card-text text-black">J'ai créé un site pour cataloguer mes vinyles. Il repose sur HTML, Bootstrap et JavaScript.</p>
             </div>
           </div>
         </div>
@@ -549,8 +534,7 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Éducation en République dominicaine</h3>
-              <p class="card-text text-black">Article issu d'une série que j'ai rédigée sur les Objectifs de développement
-                durable de l'ONU en République dominicaine.</p>
+              <p class="card-text text-black">J'ai écrit un article sur les écoles en République dominicaine. Il fait partie d'une série sur les objectifs de développement de l'ONU.</p>
             </div>
           </div>
         </div>
@@ -567,8 +551,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Manuel d'utilisation : congélateur de lait maternel</h3>
-              <p class="card-text text-black">Manuel d'utilisation complet pour un congélateur de lait maternel de qualité médicale,
-                couvrant les protocoles de sécurité, l'installation et la régulation de la température.</p>
+              <p class="card-text text-black">J'ai rédigé le manuel d'un congélateur qui stocke le lait maternel dans les hôpitaux. Il couvre la sécurité, l'installation et le contrôle de la température.</p>
             </div>
           </div>
         </div>
@@ -585,8 +568,7 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Tiroir réchauffeur et refroidisseur sans givre</h3>
-              <p class="card-text text-black">Manuel d'utilisation pour le tiroir réchauffeur et refroidisseur à double fonction ACME
-                SPHC30/36, détaillant le contrôle de la température, le mode Sabbat et l'installation.</p>
+              <p class="card-text text-black">J'ai rédigé le manuel d'un tiroir chauffant et réfrigérant. Il couvre le contrôle de la température, le mode Sabbath et l'installation.</p>
             </div>
           </div>
         </div>
@@ -594,6 +576,8 @@
       </div>
     </div>
   </div>
+
+  </main>
 
   <footer>
     <p class="text-white text-center">&copy; 2026 Pedro Vega | Conçu avec HTML &bull; CSS &bull; JS &bull; GitHub Pages</p>
@@ -606,7 +590,7 @@
 
   <!-- Shared PDF viewer -->
   <script src="/js/pdf-viewer.js?v=3"></script>
-  <script src="/js/sticky-nav.js"></script>
+  <script src="/js/sticky-nav.js?v=2"></script>
   <!-- DocSearch JS -->
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>

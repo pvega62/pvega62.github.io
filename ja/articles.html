@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=6">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
   <link rel="stylesheet" href="/css/page-specific.css?v=9">
   <link rel="icon" href="/images/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
@@ -50,7 +50,7 @@
       <!-- Desktop Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="デスクトップナビゲーション">
         <a class="navbar-brand ms-3" href="/ja/">
-          <img src="/images/logo.png" alt="Logo" height="40">
+          <img src="/images/logo.png" alt="Pedro Vega" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -61,8 +61,8 @@
                 data-bs-toggle="dropdown" aria-expanded="false">テクニカルライティング</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">ソフトウェア / 開発ドキュメント</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="/software/ja/docs/intro">はじめに</a></li>
                     <li><a class="dropdown-item" href="/software/ja/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -118,7 +118,7 @@
       <!-- Mobile Navbar -->
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="モバイルナビゲーション">
         <a class="navbar-brand ms-2 me-1" href="/ja/">
-          <img src="/images/icon-logo.png" alt="Logo" height="40">
+          <img src="/images/icon-logo.png" alt="Pedro Vega" height="40">
         </a>
         
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
@@ -130,8 +130,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">ソフトウェア / 開発ドキュメント</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="/software/ja/docs/intro">はじめに</a></li>
                   <li><a class="dropdown-item" href="/software/ja/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -205,7 +205,7 @@
         <h1 class="display-4 fw-bold text-white">記事</h1>
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center intro-text text-white">
-            <p>世界の貧困、公衆衛生、国際開発、テクノロジーをテーマとした、掲載済みの記事コレクションです。</p>
+            <p>世界の貧困、公衆衛生、国際開発、テクノロジーに関する公開記事を集めました。ドミニカ共和国、プエルトリコ、ガイアナ、そして国際開発の取り組みを扱っています。</p>
           </div>
         </div>
       </div>
@@ -220,19 +220,20 @@
             <i class="bi bi-funnel-fill me-1"></i> トピック別フィルター
           </span>
         </div>
-        <div class="article-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
-          <button type="button" class="btn article-filter-pill active" data-filter="all">すべて <span class="badge ms-1">9</span></button>
-          <button type="button" class="btn article-filter-pill" data-filter="social-poverty">社会的インパクトと貧困 <span class="badge ms-1">4</span></button>
-          <button type="button" class="btn article-filter-pill" data-filter="healthcare-crisis">医療と危機 <span class="badge ms-1">3</span></button>
-          <button type="button" class="btn article-filter-pill" data-filter="rights-education">人権と教育 <span class="badge ms-1">2</span></button>
-          <button type="button" class="btn article-filter-pill" data-filter="tech-sdgs">技術とSDGs <span class="badge ms-1">2</span></button>
+        <div class="article-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2" role="group" aria-label="トピック別に記事を絞り込む">
+          <button type="button" class="btn article-filter-pill active" data-filter="all" aria-pressed="true">すべて <span class="badge ms-1">9</span></button>
+          <button type="button" class="btn article-filter-pill" data-filter="social-poverty" aria-pressed="false">社会的インパクトと貧困 <span class="badge ms-1">4</span></button>
+          <button type="button" class="btn article-filter-pill" data-filter="healthcare-crisis" aria-pressed="false">医療と危機 <span class="badge ms-1">3</span></button>
+          <button type="button" class="btn article-filter-pill" data-filter="rights-education" aria-pressed="false">人権と教育 <span class="badge ms-1">2</span></button>
+          <button type="button" class="btn article-filter-pill" data-filter="tech-sdgs" aria-pressed="false">技術とSDGs <span class="badge ms-1">2</span></button>
         </div>
       </div>
 
-      <div class="row g-4 justify-content-center">
+      <h2 class="visually-hidden">公開記事</h2>
+        <div class="row g-4 justify-content-center">
         <div class="col-md-4 article-card-col" data-category="healthcare-crisis tech-sdgs">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" aria-label="「パンデミックに対抗するテクノロジー活用法4選」の記事を開く">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="パンデミックに対抗するテクノロジー活用法4選" src="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="パンデミックに対抗するテクノロジー活用法4選" src="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">パンデミックに対抗するテクノロジー活用法4選</h3>
               <p class="card-text text-black">医療チームがCOVID-19パンデミックに対処するために活用できたであろう4つのテクノロジーについて解説した記事です。</p>
@@ -241,7 +242,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="rights-education">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" aria-label="「ドミニカ共和国における教育」の記事を開く">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="ドミニカ共和国における教育" src="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="ドミニカ共和国における教育" src="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">ドミニカ共和国における教育</h3>
               <p class="card-text text-black">ドミニカ共和国の教育状況、貧困がそれに与える影響、および改善に向けた取り組みについて論じた記事です。</p>
@@ -250,7 +251,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="rights-education">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" aria-label="「ドミニカ共和国のジェンダー平等」の記事を開く">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="ドミニカ共和国のジェンダー平等" src="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="ドミニカ共和国のジェンダー平等" src="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">ドミニカ共和国のジェンダー平等：最新動向</h3>
               <p class="card-text text-black">ドミニカ共和国のジェンダー平等をテーマに考察した記事です。</p>
@@ -259,7 +260,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="social-poverty healthcare-crisis">
           <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" aria-label="「世界的パンデミックがプエルトリコの飢餓を悪化させる」の記事を開く">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="世界的パンデミックがプエルトリコの飢餓を悪化させる" src="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="世界的パンデミックがプエルトリコの飢餓を悪化させる" src="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">世界的パンデミックがプエルトリコの飢餓を悪化させる</h3>
               <p class="card-text text-black">世界的なパンデミックとハリケーン・マリアがプエルトリコの飢餓問題をいかに深刻化させたかを詳説した記事です。</p>
@@ -268,7 +269,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="healthcare-crisis">
           <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" aria-label="「ドミニカ共和国の医療」の記事を開く">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="ドミニカ共和国の医療" src="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="ドミニカ共和国の医療" src="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">より良いケアを目指して：ドミニカ共和国の医療</h3>
               <p class="card-text text-black">ドミニカ共和国の医療制度の概要を説明した記事です。</p>
@@ -277,7 +278,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="social-poverty">
           <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" aria-label="「ガイアナのホームレス問題」の記事を開く">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="ガイアナのホームレス問題" src="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="ガイアナのホームレス問題" src="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">受け継がれた重荷：ガイアナのホームレス問題</h3>
               <p class="card-text text-black">ガイアナのホームレス危機について論じた記事です。</p>
@@ -286,7 +287,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="social-poverty">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" aria-label="「ドミニカ共和国の飢餓」の記事を開く">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="ドミニカ共和国の飢餓" src="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="ドミニカ共和国の飢餓" src="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">ドミニカ共和国の飢餓</h3>
               <p class="card-text text-black">ドミニカ共和国の飢餓問題を取り上げた記事です。</p>
@@ -295,7 +296,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="tech-sdgs">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" aria-label="「Samsung Global Goals アプリ」の記事を開く">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="Samsung Global Goals アプリ" src="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="Samsung Global Goals アプリ" src="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">Samsung Global Goals アプリ：タップでSDGsを支援</h3>
               <p class="card-text text-black">国連の持続可能な開発目標（SDGs）に関連したSamsungの取り組みを紹介した記事です。</p>
@@ -304,7 +305,7 @@
         </div>
         <div class="col-md-4 article-card-col" data-category="social-poverty">
           <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" aria-label="「ドミニカ共和国の貧困」の記事を開く">
-            <div class="ratio ratio-4x3 mb-3"><iframe title="ドミニカ共和国の貧困" src="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+            <div class="ratio ratio-4x3 mb-3"><iframe title="ドミニカ共和国の貧困" src="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
             <div class="card-body">
               <h3 class="card-title fw-bold text-black">ドミニカ共和国の貧困</h3>
               <p class="card-text text-black">ドミニカ共和国の貧困問題を検証した記事です。</p>
@@ -321,7 +322,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="/js/pdf-viewer.js?v=2"></script>
-  <script src="/js/sticky-nav.js"></script>
+  <script src="/js/sticky-nav.js?v=2"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
   <script>

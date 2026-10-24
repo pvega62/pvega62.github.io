@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=6">
+  <link rel="stylesheet" href="/css/styles.css?v=4">
   <link rel="stylesheet" href="/css/page-specific.css?v=9">
   <link rel="icon" href="/images/logo.png" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
@@ -50,7 +50,7 @@
       <!-- Desktop Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="デスクトップナビゲーション">
         <a class="navbar-brand ms-3" href="/ja/">
-          <img src="/images/logo.png" alt="Logo" height="40">
+          <img src="/images/logo.png" alt="Pedro Vega ホーム" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -61,8 +61,8 @@
                 data-bs-toggle="dropdown" aria-expanded="false">テクニカルライティング</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">ソフトウェア / 開発ドキュメント</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="/software/ja/docs/intro">はじめに</a></li>
                     <li><a class="dropdown-item" href="/software/ja/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -118,7 +118,7 @@
       <!-- Mobile Navbar -->
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="モバイルナビゲーション">
         <a class="navbar-brand ms-2 me-1" href="/ja/">
-          <img src="/images/icon-logo.png" alt="Logo" height="40">
+          <img src="/images/icon-logo.png" alt="Pedro Vega ホーム" height="40">
         </a>
         
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
@@ -130,8 +130,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">ソフトウェア / 開発ドキュメント</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">ソフトウェア / 開発ドキュメント</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="/software/ja/docs/intro">はじめに</a></li>
                   <li><a class="dropdown-item" href="/software/ja/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="/software/ja/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -227,14 +227,14 @@
         <div class="d-none d-md-block">
           <div class="row">
             <div class="col-md-6 mb-4">
-              <h5>テクニカル・APIドキュメント</h5>
+              <h3 class="h5">テクニカル・APIドキュメント</h3>
               <ul>
                 <li><strong>コアドキュメント：</strong> Docs-as-Code &middot; REST &amp; OpenAPI &middot; MCP Integration &middot; IA &middot; SOPs &middot; Quickstarts &middot; CI/CD</li>
                 <li><strong>開発者ツール：</strong> Git (GitHub, GitLab) &middot; Linux/CLI &middot; Docker &middot; VS Code &middot; Postman &middot; Swagger &middot; Docusaurus &middot; Algolia &middot; Jira &middot; Notion</li>
               </ul>
             </div>
             <div class="col-md-6 mb-4">
-              <h5>UXライティング・コンテンツデザイン</h5>
+              <h3 class="h5">UXライティング・コンテンツデザイン</h3>
               <ul>
                 <li><strong>デザインプラクティス：</strong> UX Writing &middot; Microcopy &middot; Prompt Design &middot; Content Systems &middot; UX Research &middot; Wireframes &middot; WCAG Accessibility</li>
                 <li><strong>デザインツール：</strong> Figma &middot; Snagit &middot; MS Word</li>
@@ -243,13 +243,13 @@
           </div>
           <div class="row">
             <div class="col-md-6 mb-4">
-              <h5>ハードウェア・システム</h5>
+              <h3 class="h5">ハードウェア・システム</h3>
               <ul>
                 <li><strong>システム・QA：</strong> 医療用・民生用ハードウェア &middot; ハードウェアテスト &middot; 商業ディスプレイ・AV &middot; 信号ルーティング &middot; ネットワーク配線 &middot; SOPs &middot; 機器ログ</li>
               </ul>
             </div>
             <div class="col-md-6 mb-4">
-              <h5>技術スタック・AI</h5>
+              <h3 class="h5">技術スタック・AI</h3>
               <ul>
                 <li><strong>スタック・言語：</strong> HTML &middot; CSS &middot; JavaScript &middot; TypeScript &middot; Markdown &middot; React &middot; Node.js &middot; Bootstrap</li>
                 <li><strong>AIモデル・プロンプト：</strong> Gemini &middot; Claude &middot; GPT（UI Microcopy、エラー状態、技術ドキュメント向けプロンプトデザイン）</li>
@@ -259,7 +259,7 @@
           </div>
           <div class="row justify-content-center text-center">
             <div class="col-md-10 mb-4">
-              <h5>その他・使用言語</h5>
+              <h3 class="h5">その他・使用言語</h3>
               <ul class="list-unstyled">
                 <li class="mb-1"><strong>出版・翻訳：</strong> SEO最適化 &middot; 技術翻訳 &middot; AP Style &middot; Adobe Suite (InDesign, Illustrator, Acrobat) &middot; MadCap Flare</li>
                 <li><strong>言語：</strong> スペイン語（流暢） &middot; フランス語（中級）</li>
@@ -272,9 +272,9 @@
         <div class="d-md-none">
           <div class="accordion" id="skillsAccordion">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTechDocs">
+              <h3 class="accordion-header" id="headingTechDocs">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechDocs" aria-expanded="false" aria-controls="collapseTechDocs">テクニカル・APIドキュメント</button>
-              </h2>
+              </h3>
               <div id="collapseTechDocs" class="accordion-collapse collapse" aria-labelledby="headingTechDocs" data-bs-parent="#skillsAccordion">
                 <div class="accordion-body">
                   <ul class="mb-0 ps-3">
@@ -285,9 +285,9 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingUX">
+              <h3 class="accordion-header" id="headingUX">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUX" aria-expanded="false" aria-controls="collapseUX">UXライティング・コンテンツデザイン</button>
-              </h2>
+              </h3>
               <div id="collapseUX" class="accordion-collapse collapse" aria-labelledby="headingUX" data-bs-parent="#skillsAccordion">
                 <div class="accordion-body">
                   <ul class="mb-0 ps-3">
@@ -298,9 +298,9 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingHardware">
+              <h3 class="accordion-header" id="headingHardware">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardware" aria-expanded="false" aria-controls="collapseHardware">ハードウェア・システム</button>
-              </h2>
+              </h3>
               <div id="collapseHardware" class="accordion-collapse collapse" aria-labelledby="headingHardware" data-bs-parent="#skillsAccordion">
                 <div class="accordion-body">
                   <ul class="mb-0 ps-3">
@@ -310,9 +310,9 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTechStack">
+              <h3 class="accordion-header" id="headingTechStack">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechStack" aria-expanded="false" aria-controls="collapseTechStack">技術スタック・AI</button>
-              </h2>
+              </h3>
               <div id="collapseTechStack" class="accordion-collapse collapse" aria-labelledby="headingTechStack" data-bs-parent="#skillsAccordion">
                 <div class="accordion-body">
                   <ul class="mb-0 ps-3">
@@ -324,9 +324,9 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingAddSkills">
+              <h3 class="accordion-header" id="headingAddSkills">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAddSkills" aria-expanded="false" aria-controls="collapseAddSkills">その他・使用言語</button>
-              </h2>
+              </h3>
               <div id="collapseAddSkills" class="accordion-collapse collapse" aria-labelledby="headingAddSkills" data-bs-parent="#skillsAccordion">
                 <div class="accordion-body">
                   <ul class="mb-0 ps-3">
@@ -348,12 +348,12 @@
     <div class="row">
       <div class="col-md-8 mx-auto">
         <h2 class="text-center mb-4">関連経験</h2>
-        <p class="text-center"><a href="/Pedro Vega Resume.pdf" class="text-white">履歴書はこちら</a></p>
+        <p class="text-center"><a href="/Pedro%20Vega%20Resume.pdf" class="text-white">履歴書はこちら</a></p>
         <!-- Desktop -->
         <div class="d-none d-md-block">
           <div>
-            <h4>フリーランス テクニカルライター</h4>
-            <h5>リモート | 2024年4月 - 現在</h5>
+            <h3 class="h4">フリーランス テクニカルライター</h3>
+            <p class="h5 mb-2">リモート | 2024年4月 - 現在</p>
             <ul>
               <li>開発者向けプロジェクトのドキュメント全工程を担当。DatadogのログパイプラインとガリレオのLLMトレースを統合したクラウドデータルーティングアーキテクチャのAPIリファレンスおよびSDKガイドを作成。</li>
               <li>Suiブロックチェーンプラットフォーム向けにTypeScript SDKのメソッドとロジックをドキュメント化。動作するコード例を含むクイックスタートとウォークスルーガイドを作成。</li>
@@ -365,8 +365,8 @@
           </div>
           <hr>
           <div>
-            <h4>UXライター</h4>
-            <h5>Culangex | リモート | 2024年12月 - 2026年1月</h5>
+            <h3 class="h4">UXライター</h3>
+            <p class="h5 mb-2">Culangex | リモート | 2024年12月 - 2026年1月</p>
             <ul>
               <li>部門横断チームと協力して包括的なスタイルガイドを共同作成。一貫したブランドボイスの確保とWCAGアクセシビリティ基準への適合を実現。</li>
               <li>アジャイル開発チームと連携し、UIテキスト、エラーメッセージ、ツールチップを管理。ソフトウェア開発ライフサイクル全体にわたるシームレスなコンテンツ統合を実現。</li>
@@ -375,8 +375,8 @@
           </div>
           <hr>
           <div>
-            <h4>テクニカルライター</h4>
-            <h5>Felix Storch Inc. | ニューヨーク州ブロンクス | 2022年3月 - 2024年2月</h5>
+            <h3 class="h4">テクニカルライター</h3>
+            <p class="h5 mb-2">Felix Storch Inc. | ニューヨーク州ブロンクス | 2022年3月 - 2024年2月</p>
             <ul>
               <li>5つの民生用・医療用ハードウェアブランドにわたる技術ドキュメントを管理。150点以上のハードウェアユーザーマニュアル、設置ガイド、仕様書を作成・更新。</li>
               <li>エンジニアリングチームと直接連携し、技術要件を把握、製品仕様を確認、新製品ラインの正確な操作ガイドを作成。</li>
@@ -388,11 +388,11 @@
         <div class="d-md-none">
           <div class="accordion" id="experienceAccordion">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingExp1">
+              <h3 class="accordion-header" id="headingExp1">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp1" aria-expanded="false" aria-controls="collapseExp1">
                   <div class="d-flex flex-column text-start"><span>フリーランス テクニカルライター</span><small class="text-muted fw-normal" style="font-size: 0.85em;">リモート | 2024年4月 - 現在</small></div>
                 </button>
-              </h2>
+              </h3>
               <div id="collapseExp1" class="accordion-collapse collapse" aria-labelledby="headingExp1" data-bs-parent="#experienceAccordion">
                 <div class="accordion-body">
                   <ul class="mb-0 ps-3">
@@ -407,11 +407,11 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingExp2">
+              <h3 class="accordion-header" id="headingExp2">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp2" aria-expanded="false" aria-controls="collapseExp2">
                   <div class="d-flex flex-column text-start"><span>UXライター</span><small class="text-muted fw-normal" style="font-size: 0.85em;">Culangex | 2024年12月 - 2026年1月</small></div>
                 </button>
-              </h2>
+              </h3>
               <div id="collapseExp2" class="accordion-collapse collapse" aria-labelledby="headingExp2" data-bs-parent="#experienceAccordion">
                 <div class="accordion-body">
                   <ul class="mb-0 ps-3">
@@ -423,11 +423,11 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingExp3">
+              <h3 class="accordion-header" id="headingExp3">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp3" aria-expanded="false" aria-controls="collapseExp3">
                   <div class="d-flex flex-column text-start"><span>テクニカルライター</span><small class="text-muted fw-normal" style="font-size: 0.85em;">Felix Storch Inc. | 2022年3月 - 2024年2月</small></div>
                 </button>
-              </h2>
+              </h3>
               <div id="collapseExp3" class="accordion-collapse collapse" aria-labelledby="headingExp3" data-bs-parent="#experienceAccordion">
                 <div class="accordion-body">
                   <ul class="mb-0 ps-3">
@@ -448,7 +448,7 @@
 <!-- Knicks Ticker (kept as fun Easter egg) -->
 <div class="knicks-ticker" role="region" aria-label="ニックス勝利速報ティッカー" tabindex="0">
   <div class="marquee-wrapper">
-    <span class="marquee-content"><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
+    <span class="marquee-content" aria-hidden="true"><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
     <span class="marquee-content" aria-hidden="true"><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>ニューヨーク・ニックスが世界チャンピオン！ 🗽<img src="/images/larry.svg" alt="ラリー・オブライエン・トロフィー" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>エイリアンの脅威：排除完了</span><img src="/images/noufos.svg" alt="UFO禁止" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
   </div>
 </div>
@@ -485,7 +485,7 @@
       </div>
       <div class="col-md-6">
         <div class="ratio ratio-16x9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/KU5V5WZVcVE?si=Q9Y2JcXQapX8WGtx" title="YouTube 動画プレーヤー" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KU5V5WZVcVE?si=Q9Y2JcXQapX8WGtx" title="YouTube 動画プレーヤー" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -498,7 +498,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="/js/pdf-viewer.js?v=2"></script>
-  <script src="/js/sticky-nav.js"></script>
+  <script src="/js/sticky-nav.js?v=2"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>
   <script>

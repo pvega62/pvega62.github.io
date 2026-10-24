@@ -2,6 +2,9 @@
 <html lang="en" data-theme="dark">
 
 <head>
+  <!-- vale Direct.Ease = NO -->
+  <!-- Metadata and inline CSS carry no prose sentences, so Vale reads the
+       concatenated strings as one run-on. Re-enabled before </head>. -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
@@ -10,15 +13,15 @@
       window.history.replaceState(null, '', cleanPath + window.location.search + window.location.hash);
     }
   </script>
-  <title>Pedro Vega | Technical Writer | Portfolio Site</title>
+  <title>Pedro Vega | Technical Writer</title>
   <!-- Primary Meta Tags -->
-  <meta name="description" content="Technical Writing portfolio of Pedro Vega — featuring software documentation, API guides, UX writing, and Docs-as-Code.">
+  <meta name="description" content="Technical writing portfolio of Pedro Vega. Software documentation, API guides, UX writing, and docs-as-code.">
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pvega62.github.io/">
-  <meta property="og:title" content="Pedro Vega | Technical Writer | Portfolio Site">
-  <meta property="og:description" content="Technical Writing portfolio of Pedro Vega — featuring software documentation, API guides, UX writing, and Docs-as-Code.">
+  <meta property="og:title" content="Pedro Vega | Technical Writer">
+  <meta property="og:description" content="Technical writing portfolio of Pedro Vega. Software documentation, API guides, UX writing, and docs-as-code.">
   <meta property="og:image" content="https://pvega62.github.io/images/social-card.png">
   <meta property="og:image:width" content="1050">
   <meta property="og:image:height" content="600">
@@ -26,13 +29,13 @@
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://pvega62.github.io/">
-  <meta name="twitter:title" content="Pedro Vega | Technical Writer | Portfolio Site">
-  <meta name="twitter:description" content="Technical Writing portfolio of Pedro Vega — featuring software documentation, API guides, UX writing, and Docs-as-Code.">
+  <meta name="twitter:title" content="Pedro Vega | Technical Writer">
+  <meta name="twitter:description" content="Technical writing portfolio of Pedro Vega. Software documentation, API guides, UX writing, and docs-as-code.">
   <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/styles.css?v=5">
+  <link rel="stylesheet" href="css/styles.css?v=6">
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="preconnect" href="https://XMDO29FL1L-dsn.algolia.net" crossorigin />
   <!-- DocSearch CSS -->
@@ -128,11 +131,14 @@
       opacity: 0.70; /* Soft, atmospheric background presence */
     }
   </style>
+  <!-- vale Direct.Ease = YES -->
 
 </head>
 
 <body>
-  <div id="scroll-progress" class="bg-custom-dark position-fixed top-0 start-0" style="height: 4px; z-index: 9999; transition: width 0.1s;"></div>
+  <!-- vale Google.FirstPerson = NO -->
+  <!-- vale Microsoft.FirstPerson = NO -->
+  <!-- vale Std.Usage.FirstPersonSingular = NO -->
   <div class="scroll-progress" aria-hidden="true"></div>
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -150,10 +156,10 @@
     <div class="container-fluid px-0">
 
       <!-- Desktop Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation"
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex"
         aria-label="Desktop navigation">
         <a class="navbar-brand ms-3" href="/">
-          <img src="images/logo.png" alt="Logo" height="40">
+          <img src="images/logo.png" alt="Pedro Vega, home" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -166,8 +172,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Software/Dev Docs</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" id="softwareDocsSubmenu" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">Software/Dev Docs</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/intro">Introduction</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -198,13 +204,15 @@
                     rel="noopener noreferrer">LinkedIn</a></li>
                 <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank"
                     rel="noopener noreferrer">GitHub</a></li>
-                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Email</a></li>
+                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">email</a></li>
 
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">Recordkeeping</a>
             </li>
             <li class="nav-item dropdown">
+              <!-- vale Direct.Ease = NO -->
+              <!-- Language names form a label list, not prose. -->
               <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownLang" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language: English" title="Language: English">
                 <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="me-1" style="fill: currentColor;"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg><img src="/images/flags/us.svg" alt="" class="nav-flag-toggle"><span>English</span>
@@ -218,6 +226,7 @@
                 <li><a class="dropdown-item" href="/ja/" target="_self" lang="ja" hreflang="ja"><img src="/images/flags/jp.svg" alt="" class="dropdown-flag"><span>日本語</span></a></li>
                 <li><a class="dropdown-item" href="/hi/" target="_self" lang="hi" hreflang="hi"><img src="/images/flags/in.svg" alt="" class="dropdown-flag"><span>हिन्दी</span></a></li>
               </ul>
+              <!-- vale Direct.Ease = YES -->
             </li>
 
 
@@ -233,7 +242,7 @@
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation"
         aria-label="Mobile navigation">
         <a class="navbar-brand ms-2 me-1" href="/">
-          <img src="images/icon-logo.png" alt="Logo" height="40">
+          <img src="images/icon-logo.png" alt="Pedro Vega, home" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
 
@@ -245,8 +254,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Software/Dev Docs</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" id="softwareDocsSubmenuMobile" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">Software/Dev Docs</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/intro">Introduction</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="https://pvega62.github.io/software/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -283,12 +292,12 @@
               <img src="images/icon-vector1.svg" alt="" class="mobile-nav-icon" style="transform: scaleY(-1);">
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAbout">
-              <li><a class="dropdown-item" href="/aboutme">About Me</a></li>
+              <li><a class="dropdown-item" href="/aboutme">About me</a></li>
               <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank"
                   rel="noopener noreferrer">LinkedIn</a></li>
               <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank"
                   rel="noopener noreferrer">GitHub</a></li>
-              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Email</a></li>
+              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">email</a></li>
             </ul>
           </li>
           <li class="nav-item dropup d-flex align-items-center">
@@ -330,7 +339,8 @@
             <a href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3">
               <img src="images/linkedin-button.svg" alt="LinkedIn" width="52" height="52">
             </a>
-            <a href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3 ">
+            <a href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer" class="me-3"
+              aria-label="GitHub profile">
               <svg width="52" height="52" viewBox="0 0 62 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="61.4389" height="60.8604" rx="15" fill="#24292F" />
                 <path
@@ -341,10 +351,8 @@
                   fill="white" />
               </svg>
             </a>
-            <br>
-            <br>
             <a href="https://pvega62.github.io/software/docs/intro" target="_blank" rel="noopener noreferrer"
-              class="me-3">
+              class="me-3 d-inline-block mt-5">
               <img src="images/docs-button.svg" alt="Software/Dev Docs" width="167" height="38">
             </a>
           </div>
@@ -352,18 +360,14 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center intro-text">
-            <p>For years, my professional career has centered on one core goal: demystifying complex concepts for the
-              general audience. Whether as a tutor, a journalist, or a technical writer, my focus is always on creating
-              accessible and understandable content.</p>
-            <p>This portfolio showcases different pieces from each area. You'll find some articles and essays, technical
-              documentation (such as user guides for hardware and software, and API documentation), and UX writing samples.
-              I created these samples using platforms such as Swagger and Postman to demonstrate clear, step-by-step
-              developer workflows.</p>
+            <p>For years, I have aimed my career at one goal: making complex concepts clear to a general audience. As
+              a tutor, a journalist, and a technical writer, I build content people can read once and understand.</p>
+            <p>This portfolio collects samples from each area. You'll find articles, user guides, API references, and
+              UX writing. I built each sample in Swagger and Postman to show clear developer workflows.</p>
           </div>
         </div>
       </div>
     </div>
-  </main>
 
   <!-- Sweepy Feature Section -->
   <div class="light-section py-5">
@@ -378,20 +382,19 @@
         </div>
         <div class="col-md-6 inno-text">
           <a href="https://pvega62.github.io/software/docs/sweepy/intro" class="inno-link">
-            <h2 class="fw-bold">Sweepy, an Open Source Job Search Tool</h2>
+            <h2 class="fw-bold">Sweepy, an open source tool for job searches</h2>
           </a>
-          <p class="text-secondary">Sweepy scans <b>Greenhouse</b>, <b>Ashby</b>, <b>Lever</b>, <b>Workable</b>, and
-            the Built In New York City board for open roles. One command reads a PDF or Word resume and scores every
-            posting against it. Before anything reaches the report, Sweepy checks that each link resolves. A sweep
-            ends with a ranked PDF directory and a CSV pipeline tracker.</p>
-          <p class="text-secondary">Sweepy can scan additional job boards using optional downloadable engines.</p>
-          <p class="text-secondary">I built Sweepy as an open source <b>Python</b> package. The command-line entry
-            point is <b>swee.py</b>. A companion <b>server.py</b> exposes the same sweeps to AI assistants over the
-            <b>Model Context Protocol</b> (MCP). <b>PyMuPDF</b> parses resumes. <b>ReportLab</b> renders the PDF cards,
-            and YAML profiles make each search portable. Sweepy releases under the MIT license.</p>
-          <p class="text-secondary">As the creator, I wrote the code and all 13 documentation pages. The
-            <b>Sweepy docs</b> cover setup, scoring, and the MCP tools. A <b>Mermaid</b> diagram maps the
-            five-stage pipeline, and <b>Vale</b> lints for errors and to make sure every page sticks with my <b>style guide</b>.</p>
+          <p class="text-secondary">Sweepy scans <strong>Greenhouse</strong>, <strong>Ashby</strong>, <strong>Lever</strong>, <strong>Workable</strong>, and
+            the Built In NYC board for open roles. One command reads a PDF or Word resume and scores each posting.
+            Sweepy checks every link before the report runs. A sweep ends with a ranked PDF and a CSV tracker.</p>
+          <p class="text-secondary">Optional engines add more job boards.</p>
+          <p class="text-secondary">I built Sweepy as an open source <strong>Python</strong> package. The command-line entry
+            point is <strong>swee.py</strong>, which runs a sweep. A companion <strong>server.py</strong> exposes the same engine to AI
+            assistants over the <strong>Model Context Protocol</strong> (MCP). <strong>PyMuPDF</strong> parses resumes.
+            <strong>ReportLab</strong> renders the PDF cards, and YAML profiles make each search portable. Sweepy uses the MIT license.</p>
+          <p class="text-secondary">I wrote the code and all 13 documentation pages. The
+            <strong>Sweepy docs</strong> cover setup, scoring, and the MCP tools. A <strong>Mermaid</strong> diagram maps the
+            five-stage pipeline, and <strong>Vale</strong> enforces my <strong>style guide</strong> on every page.</p>
           <p class="mb-0">
             <a href="https://github.com/pvega62/sweepy" target="_blank" rel="noopener noreferrer">
               <img src="https://img.shields.io/badge/GitHub-pvega62%2Fsweepy-181717?style=for-the-badge&amp;logo=github"
@@ -423,9 +426,8 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">TypeScript SDK Sui Documentation Sample</h3>
-              <p class="card-text text-black">Created a comprehensive documentation sample teaching developers how to
-                read and write data on the Sui blockchain using the TypeScript SDK. This set includes a conceptual
-                guide, a tutorial, and API reference pages centered on querying and interacting with SuiClient object data.</p>
+              <p class="card-text text-black">Built a docs set for the Sui TypeScript SDK. A guide and a tutorial show
+                developers how to read and write blockchain data. API reference pages cover <strong>SuiClient</strong> queries.</p>
             </div>
           </div>
         </div>
@@ -442,10 +444,9 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Stripe API Documentation Sample</h3>
-              <p class="card-text text-black text-center">Wrote <b>REST API</b> documentation in <b>Markdown</b> using
-                <b>VSCode</b> and linted with <b>Vale</b>. Validated endpoints using <b>Postman</b>, documented
-                authentication flow, and maintained docs in a <b>GitHub Wiki</b>. Demonstrates end-to-end developer
-                documentation workflow.
+              <p class="card-text text-black text-center">Wrote <strong>REST API</strong> docs in <strong>Markdown</strong> with
+                <strong>VS Code</strong> and <strong>Vale</strong>. Tested every endpoint in <strong>Postman</strong>. Kept the docs
+                in a <strong>GitHub Wiki</strong> and documented the auth flow. The sample shows a full developer docs workflow.
               </p>
             </div>
           </div>
@@ -457,13 +458,13 @@
             data-pdf="samples/ux-writing/ux-writing-challenge-15.pdf" aria-label="Open UX Writing Challenge sample">
             <div class="card-body text-center" data-bs-toggle="modal" data-bs-target="#pdfModal">
               <div class="ratio ratio-4x3 mb-3">
-                <iframe title="UX Writing Challenge: #15" src="samples/ux-writing/ux-writing-challenge-15.pdf"
+                <iframe title="Banking app onboarding flow sample" src="samples/ux-writing/ux-writing-challenge-15.pdf"
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Banking App Onboarding Flow</h3>
-              <p class="card-text text-black">This sample showcases a comprehensive onboarding flow for a financial app.
-                It demonstrates an ability to build user trust with a confident, clear, and professional tone while
-                adhering to strict technical constraints.</p>
+              <p class="card-text text-black">This sample walks a new user through a full onboarding flow for a
+                financial app. The copy builds trust with a confident, clear, professional tone under tight character
+                limits.</p>
             </div>
           </div>
         </div>
@@ -480,9 +481,8 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">InnoGear Aromatherapy Diffuser User Manual</h3>
-              <p class="card-text text-black">Identified and resolved translation murkiness and organizational issues in
-                an existing guide. Rewrote instructions to be more intuitive and optimized the layout for better user
-                comprehension.</p>
+              <p class="card-text text-black">Fixed translation errors in an existing guide. Rewrote each step and
+                reordered the layout. Users can now follow the setup.</p>
             </div>
           </div>
         </div>
@@ -499,8 +499,9 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Vaccine Refrigerator User Manual</h3>
-              <p class="card-text text-black">Specialized manual for a vaccine refrigerator, focusing on temperature
-                monitoring, alarm systems, and CDC storage requirements.</p>
+              <p class="card-text text-black">Wrote a manual for a vaccine refrigerator. It covers temperature checks
+                and alarms. It also explains cold-storage rules from the Centers for Disease Control and Prevention
+                (CDC).</p>
             </div>
           </div>
         </div>
@@ -514,6 +515,8 @@
               <div class="ratio ratio-4x3 mb-3">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 320 180" role="img"
                   aria-label="Recordkeeping site logo" class="rounded" dir="ltr" style="direction: ltr;">
+                  <!-- vale Direct.Ease = NO -->
+                  <!-- Inline CSS is not prose. -->
                   <defs>
                     <style>
                       @font-face {
@@ -535,6 +538,7 @@
                       }
                     </style>
                   </defs>
+                  <!-- vale Direct.Ease = YES -->
                   <g id="Layer_1">
                     <rect class="st1" x="-3.77" width="323.77" height="182.91" rx="5.54" ry="5.54" />
                   </g>
@@ -546,8 +550,8 @@
                 </svg>
               </div>
               <h3 class="card-title fw-bold text-black">Recordkeeping</h3>
-              <p class="card-text text-black">A website I built using HTML, Bootstrap, and JavaScript to keep a catalog
-                of my personal vinyl record collection.</p>
+              <p class="card-text text-black">Built a site to catalog my vinyl records. It uses HTML, Bootstrap, and
+                JavaScript.</p>
             </div>
           </div>
         </div>
@@ -564,8 +568,8 @@
                   class="rounded" loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Education in the Dominican Republic</h3>
-              <p class="card-text text-black">Part of a series of articles I wrote about the UN's Sustainable
-                Development Goals in the Dominican Republic.</p>
+              <p class="card-text text-black">Wrote an article about schools in the Dominican Republic. It's part of a
+                series on UN development goals.</p>
             </div>
           </div>
         </div>
@@ -582,8 +586,8 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Breast Milk Freezer User Manual</h3>
-              <p class="card-text text-black">Comprehensive user manual for a medical-grade breast milk freezer,
-                covering safety protocols, installation, and temperature management.</p>
+              <p class="card-text text-black">Wrote the manual for a freezer that stores breast milk in hospitals. It
+                covers safety, setup, and temperature control.</p>
             </div>
           </div>
         </div>
@@ -600,8 +604,8 @@
                   loading="lazy"></iframe>
               </div>
               <h3 class="card-title fw-bold text-black">Frost-Free Warming and Cooling Drawer</h3>
-              <p class="card-text text-black">User manual for the first-of-its-kind dual-function warming and
-                cooling drawer, detailing temperature control, Sabbath mode, and installation.</p>
+              <p class="card-text text-black">Wrote the manual for a warming and cooling drawer. It covers temperature
+                control, Sabbath mode, and setup.</p>
             </div>
           </div>
         </div>
@@ -609,6 +613,7 @@
       </div>
     </div>
   </div>
+  </main>
 
   <footer>
     <p class="text-white text-center">&copy; 2026 Pedro Vega | Built with HTML &bull; CSS &bull; JS &bull; GitHub Pages</p>
@@ -621,7 +626,7 @@
 
   <!-- Shared PDF viewer -->
   <script src="js/pdf-viewer.js?v=3"></script>
-  <script src="js/sticky-nav.js"></script>
+  <script src="js/sticky-nav.js?v=2"></script>
   <!-- DocSearch JS -->
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>

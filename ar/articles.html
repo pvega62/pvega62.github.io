@@ -33,7 +33,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="/css/styles.css?v=6">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
   <link rel="stylesheet" href="/css/page-specific.css?v=9">
   <link rel="icon" href="/images/logo.png" type="image/png">
   <!-- DocSearch CSS -->
@@ -63,7 +63,7 @@
       <!-- Desktop Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="Desktop navigation">
         <a class="navbar-brand ms-3" href="/ar/">
-          <img src="/images/logo.png" alt="Logo" height="40">
+          <img src="/images/logo.png" alt="Pedro Vega" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -76,8 +76,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">توثيق البرمجيات</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">توثيق البرمجيات</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="/software/ar/docs/intro">مقدمة</a></li>
                     <li><a class="dropdown-item" href="/software/ar/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="/software/ar/docs/category/cloud-data-pipeline-documentation">خطوط أنابيب البيانات السحابية</a></li>
@@ -135,7 +135,7 @@
       <!-- Mobile Navbar (App Tab Bar) -->
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="Mobile navigation">
         <a class="navbar-brand ms-2 me-1" href="/ar/">
-          <img src="/images/icon-logo.png" alt="Logo" height="40">
+          <img src="/images/icon-logo.png" alt="Pedro Vega" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
           <li class="nav-item dropup d-flex align-items-center">
@@ -146,8 +146,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">توثيق البرمجيات</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">توثيق البرمجيات</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="/software/ar/docs/intro">مقدمة</a></li>
                   <li><a class="dropdown-item" href="/software/ar/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="/software/ar/docs/category/cloud-data-pipeline-documentation">خطوط أنابيب البيانات السحابية</a></li>
@@ -220,7 +220,7 @@
 <h1 class="display-4 fw-bold text-white">المقالات</h1>
 <div class="row justify-content-center">
 <div class="col-lg-8 text-center intro-text text-white">
-<p>مجموعة من المقالات المنشورة التي تغطي الفقر العالمي، والرعاية الصحية العامة، والتنمية الدولية، والمبادرات التكنولوجية.</p>
+<p>مجموعة من المقالات المنشورة عن الفقر العالمي والصحة العامة والتنمية الدولية والتقنية. تتناول النصوص جمهورية الدومينيكان وبورتوريكو وغيانا ومبادرات التنمية العالمية.</p>
 </div>
 </div>
 </div>
@@ -237,19 +237,20 @@
               <i class="bi bi-funnel-fill me-1"></i> تصفية حسب الموضوع
             </span>
           </div>
-          <div class="article-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
-            <button type="button" class="btn article-filter-pill active" data-filter="all">الكل <span class="badge ms-1">9</span></button>
-            <button type="button" class="btn article-filter-pill" data-filter="social-poverty">الأثر الاجتماعي والفقر <span class="badge ms-1">4</span></button>
-            <button type="button" class="btn article-filter-pill" data-filter="healthcare-crisis">الرعاية الصحية والأزمات <span class="badge ms-1">3</span></button>
-            <button type="button" class="btn article-filter-pill" data-filter="rights-education">حقوق الإنسان والتعليم <span class="badge ms-1">2</span></button>
-            <button type="button" class="btn article-filter-pill" data-filter="tech-sdgs">Tech &amp; SDGs <span class="badge ms-1">2</span></button>
+          <div class="article-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2" role="group" aria-label="تصفية المقالات حسب الموضوع">
+            <button type="button" class="btn article-filter-pill active" data-filter="all" aria-pressed="true">الكل <span class="badge ms-1">9</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="social-poverty" aria-pressed="false">الأثر الاجتماعي والفقر <span class="badge ms-1">4</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="healthcare-crisis" aria-pressed="false">الرعاية الصحية والأزمات <span class="badge ms-1">3</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="rights-education" aria-pressed="false">حقوق الإنسان والتعليم <span class="badge ms-1">2</span></button>
+            <button type="button" class="btn article-filter-pill" data-filter="tech-sdgs" aria-pressed="false">Tech &amp; SDGs <span class="badge ms-1">2</span></button>
           </div>
         </div>
 
+        <h2 class="visually-hidden">المقالات المنشورة</h2>
         <div class="row g-4 justify-content-center">
           <div class="col-md-4 article-card-col" data-category="healthcare-crisis tech-sdgs">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" aria-label="Open 4 Ways to Use Tech Article">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="4 طرق لاستخدام التكنولوجيا في مواجهة الجائحة" src="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="4 طرق لاستخدام التكنولوجيا في مواجهة الجائحة" src="/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">4 طرق لاستخدام التكنولوجيا في مواجهة الجائحة</h3>
                 <p class="card-text text-black">This article explores four technologies that healthcare teams could have used to combat the COVID-19 pandemic.</p>
@@ -258,7 +259,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="rights-education">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" aria-label="فتح مقال: التعليم في جمهورية الدومينيكان">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="التعليم في جمهورية الدومينيكان" src="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="التعليم في جمهورية الدومينيكان" src="/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">التعليم في جمهورية الدومينيكان</h3>
                 <p class="card-text text-black">This article discusses the state of education, how poverty affects it, and initiatives aimed at improving it in the Dominican Republic.</p>
@@ -267,7 +268,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="rights-education">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" aria-label="Open Gender Equality in the Dominican Republic Article">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="Gender Equality in the Dominican Republic Article" src="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Gender Equality in the Dominican Republic Article" src="/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">المساواة بين الجنسين في جمهورية الدومينيكان: تقرير محدث</h3>
                 <p class="card-text text-black">This article examines the topic of gender equality in the Dominican Republic.</p>
@@ -276,7 +277,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="social-poverty healthcare-crisis">
             <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" aria-label="فتح مقال: الجائحة العالمية تفاقم أزمة الجوع في بورتوريكو">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="الجائحة العالمية تفاقم أزمة الجوع في بورتوريكو" src="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="الجائحة العالمية تفاقم أزمة الجوع في بورتوريكو" src="/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">الجائحة العالمية تفاقم أزمة الجوع في بورتوريكو</h3>
                 <p class="card-text text-black">This article details how the global pandemic and Hurricane Maria have worsened hunger in Puerto Rico.</p>
@@ -285,7 +286,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="healthcare-crisis">
             <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" aria-label="Open Healthcare in the Dominican Republic Article">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="Healthcare in the Dominican Republic Article" src="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Healthcare in the Dominican Republic Article" src="/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">رعاية أفضل: منظومة الرعاية الصحية في جمهورية الدومينيكان</h3>
                 <p class="card-text text-black">This article provides an overview of the healthcare system in the Dominican Republic.</p>
@@ -294,7 +295,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="social-poverty">
             <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" aria-label="Open Homelessness in Guyana Article">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="Homelessness in Guyana Article" src="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Homelessness in Guyana Article" src="/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">العبء المتوارث: أزمة التشرد في غيانا</h3>
                 <p class="card-text text-black">This article addresses the homelessness crisis in Guyana.</p>
@@ -303,7 +304,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="social-poverty">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" aria-label="فتح مقال: الجوع في جمهورية الدومينيكان">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="الجوع في جمهورية الدومينيكان" src="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="الجوع في جمهورية الدومينيكان" src="/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">الجوع في جمهورية الدومينيكان</h3>
                 <p class="card-text text-black">This article covers the problem of hunger in the Dominican Republic.</p>
@@ -312,7 +313,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="tech-sdgs">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" aria-label="Open Samsung Global Goals Article">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="Samsung Global Goals Article" src="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="Samsung Global Goals Article" src="/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">تطبيق أهداف سامسونج العالمية: دعم التنمية المستدامة بلمسة زر</h3>
                 <p class="card-text text-black">This article highlights Samsung's initiatives related to the UN's Sustainable Development Goals.</p>
@@ -321,7 +322,7 @@
           </div>
           <div class="col-md-4 article-card-col" data-category="social-poverty">
             <div class="card h-100 text-center card-border sample-card bg-white" role="button" tabindex="0" data-pdf="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" aria-label="فتح مقال: الفقر في جمهورية الدومينيكان">
-              <div class="ratio ratio-4x3 mb-3"><iframe title="الفقر في جمهورية الدومينيكان" src="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy"></iframe></div>
+              <div class="ratio ratio-4x3 mb-3"><iframe title="الفقر في جمهورية الدومينيكان" src="/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf" class="rounded" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div>
               <div class="card-body">
                 <h3 class="card-title fw-bold text-black">الفقر في جمهورية الدومينيكان</h3>
                 <p class="card-text text-black">This article explores the issue of poverty in the Dominican Republic.</p>
@@ -339,7 +340,7 @@
 
     <!-- Shared PDF viewer -->
     <script src="/js/pdf-viewer.js?v=1790225886305"></script>
-    <script src="/js/sticky-nav.js"></script>
+    <script src="/js/sticky-nav.js?v=2"></script>
     <script src="/js/page-specific.js?v=9"></script>
 
     <!-- DocSearch JS -->

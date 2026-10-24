@@ -205,8 +205,12 @@
           const filter = this.getAttribute('data-filter');
 
           // Update active pill button state
-          filterButtons.forEach(b => b.classList.remove('active'));
+          filterButtons.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-pressed', 'false');
+          });
           this.classList.add('active');
+          this.setAttribute('aria-pressed', 'true');
 
           // Center active pill in horizontal scroll dock on mobile
           if (window.innerWidth < 768) {

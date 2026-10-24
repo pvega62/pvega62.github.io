@@ -10,6 +10,15 @@
     }
   </script>
   <title>About Me | Pedro Vega</title>
+  <link rel="canonical" href="https://pvega62.github.io/aboutme">
+  <link rel="alternate" hreflang="en-US" href="https://pvega62.github.io/aboutme">
+  <link rel="alternate" hreflang="es" href="https://pvega62.github.io/es/aboutme">
+  <link rel="alternate" hreflang="fr-FR" href="https://pvega62.github.io/fr/aboutme">
+  <link rel="alternate" hreflang="ar" href="https://pvega62.github.io/ar/aboutme">
+  <link rel="alternate" hreflang="zh-Hans" href="https://pvega62.github.io/zh/aboutme">
+  <link rel="alternate" hreflang="ja" href="https://pvega62.github.io/ja/aboutme">
+  <link rel="alternate" hreflang="hi" href="https://pvega62.github.io/hi/aboutme">
+  <link rel="alternate" hreflang="x-default" href="https://pvega62.github.io/aboutme">
   <!-- Primary Meta Tags -->
   <meta name="description" content="Learn more about Pedro Vega, Technical Writer, UX Writer, and Content Designer based in New York.">
 
@@ -29,7 +38,7 @@
   <meta name="twitter:description" content="Learn more about Pedro Vega, Technical Writer, UX Writer, and Content Designer based in New York.">
   <meta name="twitter:image" content="https://pvega62.github.io/images/social-card.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css?v=3">
+  <link rel="stylesheet" href="css/styles.css?v=4">
   <link rel="icon" href="images/logo.png" type="image/png">
   <!-- DocSearch CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" />
@@ -58,7 +67,7 @@
       <!-- Desktop Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="Desktop navigation">
         <a class="navbar-brand ms-3" href="/">
-          <img src="images/logo.png" alt="Logo" height="40">
+          <img src="images/logo.png" alt="Pedro Vega home" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -71,8 +80,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Software/Dev Docs</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" id="softwareDocsSubmenu" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">Software/Dev Docs</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="/software/docs/intro">Introduction</a></li>
                     <li><a class="dropdown-item" href="/software/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="/software/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -100,7 +109,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop2">
                 <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                 <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Email</a></li>
+                <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">email</a></li>
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="https://pvega62.github.io/Recordkeeping/">Recordkeeping</a></li>
@@ -130,7 +139,7 @@
       <!-- Mobile Navbar (App Tab Bar) -->
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="Mobile navigation">
         <a class="navbar-brand ms-2 me-1" href="/">
-          <img src="images/icon-logo.png" alt="Logo" height="40">
+          <img src="images/icon-logo.png" alt="Pedro Vega home" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
           <li class="nav-item dropup d-flex align-items-center">
@@ -141,8 +150,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">Software/Dev Docs</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" id="softwareDocsSubmenuMobile" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">Software/Dev Docs</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="/software/docs/intro">Introduction</a></li>
                   <li><a class="dropdown-item" href="/software/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="/software/docs/category/cloud-data-pipeline-documentation">Cloud Data Pipelines</a></li>
@@ -175,10 +184,10 @@
               <img src="images/icon-vector1.svg" alt="" class="mobile-nav-icon" style="transform: scaleY(-1);">
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownAbout">
-              <li><a class="dropdown-item" href="/aboutme">About Me</a></li>
+              <li><a class="dropdown-item" href="/aboutme">About me</a></li>
               <li><a class="dropdown-item" href="https://www.linkedin.com/in/pvega62/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
               <li><a class="dropdown-item" href="https://github.com/pvega62/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">Email</a></li>
+              <li><a class="dropdown-item" href="mailto:vega.pedro96@gmail.com">email</a></li>
             </ul>
           </li>
           <li class="nav-item dropup d-flex align-items-center">
@@ -221,15 +230,14 @@
 </div>
 </div>
 </div>
-</main>
 
 <section class="light-section py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <p>I'm a technical writer who specializes in making complex technology understandable for everyone. With a background in IT support, publishing, and journalism, I excel at creating clear, user-focused documentation. I reduce customer frustration and grant users greater control over the tools they use. Whether it's API guides, tutorials, or prompt engineering, I translate "technobabble" into plain English.</p>
-          <p>My first job out of high school was as a media services technician. This was at the New York City College of Technology while I was a student there. My experience in IT support involved successfully guiding non-technical users through troubleshooting, which is technically when my technical writing career started.</p>
-          <p>I view my role as that of a translator, a skill I've honed since childhood. As the child of an immigrant family, I was often the designated translator for English and legalese. It's a skill I've carried with me and now apply professionally to bridge the gap between complex technology and the people who use it.</p>
+          <p>I'm a technical writer who specializes in making complex technology understandable for everyone. With a background in IT support, publishing, and journalism, I excel at creating clear, user-focused documentation. I reduce customer frustration and give users more control over the tools they use. Whether it's API guides, tutorials, or prompt engineering, I translate "technobabble" into plain English.</p>
+          <p>My first job was as a media services technician at the New York City College of Technology, where I studied at the time. Guiding non-technical users through troubleshooting started my technical writing career.</p>
+          <p>I view my role as that of a translator, a skill I've honed since childhood. As the child of an immigrant family, I was often the designated translator for English and legalese. I still use that skill today, bridging the gap between complex technology and the people who use it.</p>
 
           <h2 class="text-center mt-5 mb-4">Skill Set</h2>
           
@@ -237,14 +245,14 @@
           <div class="d-none d-md-block">
             <div class="row">
               <div class="col-md-6 mb-4">
-                <h5>Technical &amp; API Documentation</h5>
+                <h3 class="h5">Technical &amp; API Documentation</h3>
                 <ul>
                   <li><strong>Core Documentation:</strong> Docs-as-Code &middot; REST &amp; OpenAPI &middot; MCP Integration &middot; IA &middot; SOPs &middot; Quickstarts &middot; CI/CD</li>
                   <li><strong>Developer Tools:</strong> Git (GitHub, GitLab) &middot; Linux/CLI &middot; Docker &middot; VS Code &middot; Postman &middot; Swagger &middot; Docusaurus &middot; Algolia &middot; Jira &middot; Notion</li>
                 </ul>
               </div>
               <div class="col-md-6 mb-4">
-                <h5>UX Writing &amp; Content Design</h5>
+                <h3 class="h5">UX Writing &amp; Content Design</h3>
                 <ul>
                   <li><strong>Design Practice:</strong> UX Writing &middot; Microcopy &middot; Prompt Design &middot; Content Systems &middot; UX Research &middot; Wireframes &middot; WCAG Accessibility</li>
                   <li><strong>Design Tools:</strong> Figma &middot; Snagit &middot; MS Word</li>
@@ -253,13 +261,13 @@
             </div>
             <div class="row">
               <div class="col-md-6 mb-4">
-                <h5>Hardware &amp; Systems</h5>
+                <h3 class="h5">Hardware &amp; Systems</h3>
                 <ul>
                   <li><strong>Systems &amp; QA:</strong> Medical &amp; Consumer Hardware &middot; Hardware Testing &middot; Commercial Displays &amp; AV &middot; Signal Routing &middot; Network Cabling &middot; SOPs &middot; Equipment Logs</li>
                 </ul>
               </div>
               <div class="col-md-6 mb-4">
-                <h5>Technical Stack &amp; AI</h5>
+                <h3 class="h5">Technical Stack &amp; AI</h3>
                 <ul>
                   <li><strong>Stack &amp; Languages:</strong> HTML &middot; CSS &middot; JavaScript &middot; TypeScript &middot; Markdown &middot; React &middot; Node.js &middot; Bootstrap</li>
                   <li><strong>AI Models &amp; Prompting:</strong> Gemini &middot; Claude &middot; GPT (Prompt Design for UI Microcopy, Error States &amp; Technical Docs)</li>
@@ -269,7 +277,7 @@
             </div>
             <div class="row justify-content-center text-center">
               <div class="col-md-10 mb-4">
-                <h5>Additional &amp; Languages</h5>
+                <h3 class="h5">Additional &amp; Languages</h3>
                 <ul class="list-unstyled">
                   <li class="mb-1"><strong>Publishing &amp; Translation:</strong> SEO Optimization &middot; Technical Translation &middot; AP Style &middot; Adobe Suite (InDesign, Illustrator, Acrobat) &middot; MadCap Flare</li>
                   <li><strong>Languages:</strong> Spanish (Fluent) &middot; French (Intermediate)</li>
@@ -284,11 +292,11 @@
 
               <!-- 1. Technical & API Documentation -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTechDocs">
+                <h3 class="accordion-header" id="headingTechDocs">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechDocs" aria-expanded="false" aria-controls="collapseTechDocs">
                     Technical &amp; API Documentation
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseTechDocs" class="accordion-collapse collapse" aria-labelledby="headingTechDocs" data-bs-parent="#skillsAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -301,11 +309,11 @@
 
               <!-- 2. UX Writing & Content Design -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingUX">
+                <h3 class="accordion-header" id="headingUX">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUX" aria-expanded="false" aria-controls="collapseUX">
                     UX Writing &amp; Content Design
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseUX" class="accordion-collapse collapse" aria-labelledby="headingUX" data-bs-parent="#skillsAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -318,11 +326,11 @@
 
               <!-- 3. Hardware & Systems -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingHardware">
+                <h3 class="accordion-header" id="headingHardware">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardware" aria-expanded="false" aria-controls="collapseHardware">
                     Hardware &amp; Systems
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseHardware" class="accordion-collapse collapse" aria-labelledby="headingHardware" data-bs-parent="#skillsAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -334,11 +342,11 @@
 
               <!-- 4. Technical Stack & AI -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTechStack">
+                <h3 class="accordion-header" id="headingTechStack">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTechStack" aria-expanded="false" aria-controls="collapseTechStack">
                     Technical Stack &amp; AI
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseTechStack" class="accordion-collapse collapse" aria-labelledby="headingTechStack" data-bs-parent="#skillsAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -352,11 +360,11 @@
 
               <!-- 5. Additional & Languages -->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingAddSkills">
+                <h3 class="accordion-header" id="headingAddSkills">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAddSkills" aria-expanded="false" aria-controls="collapseAddSkills">
                     Additional &amp; Languages
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseAddSkills" class="accordion-collapse collapse" aria-labelledby="headingAddSkills" data-bs-parent="#skillsAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
@@ -379,38 +387,38 @@
       <div class="row">
         <div class="col-md-8 mx-auto">
           <h2 class="text-center mb-4">Relevant Experience</h2>
-          <p class="text-center"><a href="Pedro Vega Resume.pdf" class="text-white">View Full Resume Here</a></p>
+          <p class="text-center"><a href="Pedro%20Vega%20Resume.pdf" class="text-white">View Full Resume Here</a></p>
           <!-- Desktop View: Vertical List -->
           <div class="d-none d-md-block">
             <div>
-              <h4>Freelance Technical Writer</h4>
-              <h5>Remote | April 2024 - Present</h5>
+              <h3 class="h4">Freelance Technical Writer</h3>
+              <p class="h5 mb-2">Remote | April 2024 to Present</p>
               <ul>
-                <li>Owned the full documentation lifecycle for developer-facing projects, authoring API references and SDK guides for cloud data routing architectures that integrate with Datadog log pipelines and Galileo LLM tracing.</li>
+                <li>Owned the full documentation lifecycle for developer-facing projects. Authored API references and SDK guides for cloud data routing architectures that integrate with Datadog log pipelines and Galileo LLM tracing.</li>
                 <li>Documented TypeScript SDK methods and logic for the Sui blockchain platform, producing quickstarts and walkthrough guides with working code examples.</li>
-                <li>Authored developer cookbooks and tutorials, including a comprehensive guide on setting up Postman mock servers to confirm REST API endpoints.</li>
+                <li>Authored developer cookbooks and tutorials, including a step-by-step guide to setting up Postman mock servers for testing REST API endpoints.</li>
                 <li>Managed OpenAPI specifications to document REST API endpoints to draft end-to-end API documentation architecture.</li>
-                <li>Integrated generative AI tools and Model Context Protocol (MCP) servers directly into a local CLI environment, connecting Vale, DeepL, and Figma to a Gemini CLI to automate linting, translation, and development workflows.</li>
-                <li>Engineered an advanced search architecture across custom HTML and Docusaurus sites by integrating Algolia and AskAI, delivering generative AI and semantic search capabilities for complex documentation.</li>
+                <li>Connected Vale, DeepL, and Figma to a local Gemini CLI through Model Context Protocol (MCP) servers. The setup automates linting, translation, and development workflows.</li>
+                <li>Integrated Algolia and AskAI across custom HTML and Docusaurus sites. The combined search stack delivers semantic and generative AI answers for complex documentation.</li>
               </ul>
             </div>
             <hr>
             <div>
-              <h4>UX Writer</h4>
-              <h5>Culangex | Remote | December 2024 - January 2026</h5>
+              <h3 class="h4">UX Writer</h3>
+              <p class="h5 mb-2">Culangex | Remote | December 2024 to January 2026</p>
               <ul>
-                <li>Collaborated with cross-functional teams to co-author a comprehensive style guide that ensured consistent brand voice and met WCAG accessibility standards.</li>
-                <li>Partnered with the agile development team to manage UI text, error messages, and tooltips to ensure seamless content integration throughout the software development lifecycle.</li>
+                <li>Co-authored a shared style guide with cross-functional teams, defining brand voice rules that met WCAG accessibility standards.</li>
+                <li>Partnered with the agile development team to write UI text, error messages, and tooltips, keeping copy consistent from sprint to release.</li>
                 <li>Translated user-facing content for the Spanish localization team, positioning the product for launch in Spanish-speaking markets.</li>
               </ul>
             </div>
             <hr>
             <div>
-              <h4>Technical Writer</h4>
-              <h5>Felix Storch Inc. | The Bronx, NY | March 2022 - February 2024</h5>
+              <h3 class="h4">Technical Writer</h3>
+              <p class="h5 mb-2">Felix Storch Inc. | The Bronx, NY | March 2022 to February 2024</p>
               <ul> 
-                <li>Managed technical documentation across 5 consumer and medical hardware brands, authoring and updating over 150 original hardware user manuals, installation guides, and spec sheets.</li>
-                <li>Partnered directly with engineering teams to capture technical requirements, verify product specifications, and compile accurate operational guides for new product lines.</li>
+                <li>Managed technical documentation for five consumer and medical hardware brands. Authored and updated more than 150 hardware manuals, installation guides, and specification sheets.</li>
+                <li>Partnered directly with engineering teams to capture requirements and verify specifications, then compiled operational guides for new product lines.</li>
                 <li>Standardized document control templates and publishing workflows, reducing manual production times by 40%.</li>
               </ul>
             </div>
@@ -421,42 +429,42 @@
             <div class="accordion" id="experienceAccordion">
               
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingExp1">
+                <h3 class="accordion-header" id="headingExp1">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp1" aria-expanded="false" aria-controls="collapseExp1">
                     <div class="d-flex flex-column text-start">
                       <span>Freelance Technical Writer</span>
-                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Remote | Apr 2024 - Present</small>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Remote | April 2024 to Present</small>
                     </div>
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseExp1" class="accordion-collapse collapse" aria-labelledby="headingExp1" data-bs-parent="#experienceAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
-                      <li>Owned the full documentation lifecycle for developer-facing projects, authoring API references and SDK guides for cloud data routing architectures that integrate with Datadog log pipelines and Galileo LLM tracing.</li>
+                      <li>Owned the full documentation lifecycle for developer-facing projects. Authored API references and SDK guides for cloud data routing architectures that integrate with Datadog log pipelines and Galileo LLM tracing.</li>
                       <li>Documented TypeScript SDK methods and logic for the Sui blockchain platform, producing quickstarts and walkthrough guides with working code examples.</li>
-                      <li>Authored developer cookbooks and tutorials, including a comprehensive guide on setting up Postman mock servers to confirm REST API endpoints.</li>
+                      <li>Authored developer cookbooks and tutorials, including a step-by-step guide to setting up Postman mock servers for testing REST API endpoints.</li>
                       <li>Managed OpenAPI specifications to document REST API endpoints to draft end-to-end API documentation architecture.</li>
-                      <li>Integrated generative AI tools and Model Context Protocol (MCP) servers directly into a local CLI environment, connecting Vale, DeepL, and Figma to a Gemini CLI to automate linting, translation, and development workflows.</li>
-                      <li>Engineered an advanced search architecture across custom HTML and Docusaurus sites by integrating Algolia and AskAI, delivering generative AI and semantic search capabilities for complex documentation.</li>
+                      <li>Connected Vale, DeepL, and Figma to a local Gemini CLI through Model Context Protocol (MCP) servers. The setup automates linting, translation, and development workflows.</li>
+                      <li>Integrated Algolia and AskAI across custom HTML and Docusaurus sites. The combined search stack delivers semantic and generative AI answers for complex documentation.</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingExp2">
+                <h3 class="accordion-header" id="headingExp2">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp2" aria-expanded="false" aria-controls="collapseExp2">
                     <div class="d-flex flex-column text-start">
                       <span>UX Writer</span>
-                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Culangex | Dec 2024 - Jan 2026</small>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Culangex | December 2024 to January 2026</small>
                     </div>
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseExp2" class="accordion-collapse collapse" aria-labelledby="headingExp2" data-bs-parent="#experienceAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
-                      <li>Collaborated with cross-functional teams to co-author a comprehensive style guide that ensured consistent brand voice and met WCAG accessibility standards.</li>
-                      <li>Partnered with the agile development team to manage UI text, error messages, and tooltips to ensure seamless content integration throughout the software development lifecycle.</li>
+                      <li>Co-authored a shared style guide with cross-functional teams, defining brand voice rules that met WCAG accessibility standards.</li>
+                      <li>Partnered with the agile development team to write UI text, error messages, and tooltips, keeping copy consistent from sprint to release.</li>
                       <li>Translated user-facing content for the Spanish localization team, positioning the product for launch in Spanish-speaking markets.</li>
                     </ul>
                   </div>
@@ -464,19 +472,19 @@
               </div>
 
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingExp3">
+                <h3 class="accordion-header" id="headingExp3">
                   <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExp3" aria-expanded="false" aria-controls="collapseExp3">
                     <div class="d-flex flex-column text-start">
                       <span>Technical Writer</span>
-                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Felix Storch Inc. | Mar 2022 - Feb 2024</small>
+                      <small class="text-muted fw-normal" style="font-size: 0.85em;">Felix Storch Inc. | March 2022 to February 2024</small>
                     </div>
                   </button>
-                </h2>
+                </h3>
                 <div id="collapseExp3" class="accordion-collapse collapse" aria-labelledby="headingExp3" data-bs-parent="#experienceAccordion">
                   <div class="accordion-body">
                     <ul class="mb-0 ps-3">
-                      <li>Managed technical documentation across 5 consumer and medical hardware brands, authoring and updating over 150 original hardware user manuals, installation guides, and spec sheets.</li>
-                      <li>Partnered directly with engineering teams to capture technical requirements, verify product specifications, and compile accurate operational guides for new product lines.</li>
+                      <li>Managed technical documentation for five consumer and medical hardware brands. Authored and updated more than 150 hardware manuals, installation guides, and specification sheets.</li>
+                      <li>Partnered directly with engineering teams to capture requirements and verify specifications, then compiled operational guides for new product lines.</li>
                       <li>Standardized document control templates and publishing workflows, reducing manual production times by 40%.</li>
                     </ul>
                   </div>
@@ -492,7 +500,7 @@
  <!-- Knicks Ticker -->
     <div class="knicks-ticker" role="region" aria-label="Knicks victory ticker" tabindex="0">
       <div class="marquee-wrapper">
-        <span class="marquee-content"><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
+        <span class="marquee-content" aria-hidden="true"><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
         <span class="marquee-content" aria-hidden="true"><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span><span>THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽<img src="images/larry.svg" alt="Larry O'Brien Trophy" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 0.3em;" /><span>ALIEN THREAT: NEUTRALIZED</span><img src="images/noufos.svg" alt="No UFOs" style="height: 1.2em; vertical-align: text-bottom; margin-left: 0.3em; margin-right: 1.5rem;" /></span></span>
       </div>
     </div>
@@ -502,12 +510,12 @@
         <div class="col-md-8 mx-auto">
           <h2 class="text-center mb-4">Interests (Life from 5 to 9)</h2>
           <ul>
-            <li>Reading (I like my novels in prose AND in graphic novel format.)</li>
+            <li>Reading prose and graphic novels.</li>
             <li>Movies</li>
             <li>Music</li>
-            <li>The New York Yankees (Supporting NY sports has not been easy—except for them NEW YORK KNICKS!) Shout-out to <i>de lo mio personal,</i> #BigBodegaKAT! I hereby pledge my unyielding fealty to Captain Jalen Brunson, born to play basketball.</li>
+            <li>The New York Yankees (supporting NY sports hasn't been easy, except for those New York Knicks!) Shout-out to <i>de lo mio personal,</i> #BigBodegaKAT! I hereby pledge my unyielding fealty to Captain Jalen Brunson, born to play basketball.</li>
             <li>Doodling</li>
-            <li>Tinkering. I love exploring new tech and disassembling gadgets to see how they work. I even got shocked a couple of times as a kid taking apart cameras!</li>
+            <li>Tinkering. I love exploring new tech and disassembling gadgets to see how they work. I even took a few shocks as a child while dismantling cameras.</li>
           </ul>
         </div>
       </div>
@@ -526,21 +534,21 @@
         <div class="col-md-6">
           <h3 class="text-center">Song of the Moment</h3>
           <p class="text-center">AYE! THE NEW YORK KNICKS ARE THE BEST IN THE WORLD. NUMBER ONE. THE BEST IN THE WORLD.</p>
-          <div class="text-center">
-          </div>
         </div>
         <div class="col-md-6">
           <div class="ratio ratio-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/KU5V5WZVcVE?si=Q9Y2JcXQapX8WGtx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/KU5V5WZVcVE?si=Q9Y2JcXQapX8WGtx" title="YouTube video player" style="border:0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
       </div>
     </div>
+    </div>
   </section>
+</main>
   
 <footer>
   <p class="text-white text-center">&copy; 2026 Pedro Vega | Built with HTML &bull; CSS &bull; JS &bull; GitHub Pages</p>
 </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="js/sticky-nav.js"></script>
+  <script src="js/sticky-nav.js?v=2"></script>
   <!-- DocSearch JS -->
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3"></script>

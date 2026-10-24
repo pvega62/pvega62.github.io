@@ -33,7 +33,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="/css/styles.css?v=6">
+  <link rel="stylesheet" href="/css/styles.css?v=3">
   <link rel="stylesheet" href="/css/page-specific.css?v=9">
   <link rel="icon" href="/images/logo.png" type="image/png">
   <!-- DocSearch CSS -->
@@ -62,8 +62,8 @@
       
       <!-- Desktop Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation" aria-label="Desktop navigation">
-        <a class="navbar-brand ms-3" href="/ar/">
-          <img src="/images/logo.png" alt="Logo" height="40">
+        <a class="navbar-brand ms-3" href="/ar/" aria-label="الصفحة الرئيسية">
+          <img src="/images/logo.png" alt="" height="40">
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
           <ul class="navbar-nav me-3">
@@ -76,8 +76,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownDesktop1">
                 <li class="dropend position-relative">
-                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">توثيق البرمجيات</a>
-                  <ul class="dropdown-menu">
+                  <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenu" aria-haspopup="true" aria-controls="softwareDocsSubmenuMenu">توثيق البرمجيات</a>
+                  <ul class="dropdown-menu" id="softwareDocsSubmenuMenu" aria-labelledby="softwareDocsSubmenu">
                     <li><a class="dropdown-item" href="/software/ar/docs/intro">مقدمة</a></li>
                     <li><a class="dropdown-item" href="/software/ar/docs/sweepy/intro">Sweepy</a></li>
                     <li><a class="dropdown-item" href="/software/ar/docs/category/cloud-data-pipeline-documentation">خطوط أنابيب البيانات السحابية</a></li>
@@ -134,8 +134,8 @@
 
       <!-- Mobile Navbar (App Tab Bar) -->
       <nav class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation" aria-label="Mobile navigation">
-        <a class="navbar-brand ms-2 me-1" href="/ar/">
-          <img src="/images/icon-logo.png" alt="Logo" height="40">
+        <a class="navbar-brand ms-2 me-1" href="/ar/" aria-label="الصفحة الرئيسية">
+          <img src="/images/icon-logo.png" alt="" height="40">
         </a>
         <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
           <li class="nav-item dropup d-flex align-items-center">
@@ -146,8 +146,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
               <li class="dropend position-relative">
-                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false">توثيق البرمجيات</a>
-                <ul class="dropdown-menu">
+                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" aria-expanded="false" id="softwareDocsSubmenuMobile" aria-haspopup="true" aria-controls="softwareDocsSubmenuMobileMenu">توثيق البرمجيات</a>
+                <ul class="dropdown-menu" id="softwareDocsSubmenuMobileMenu" aria-labelledby="softwareDocsSubmenuMobile">
                   <li><a class="dropdown-item" href="/software/ar/docs/intro">مقدمة</a></li>
                   <li><a class="dropdown-item" href="/software/ar/docs/sweepy/intro">Sweepy</a></li>
                   <li><a class="dropdown-item" href="/software/ar/docs/category/cloud-data-pipeline-documentation">خطوط أنابيب البيانات السحابية</a></li>
@@ -220,7 +220,7 @@
 <h1 class="display-4 fw-bold text-white">الكتابة التقنية للأجهزة</h1>
 <div class="row justify-content-center">
 <div class="col-lg-8 text-center intro-text text-white">
-<p>تعرض هذه الصفحة مجموعة متنوعة من وثائق الأجهزة، تتراوح بين وحدات التبريد الطبية والأجهزة المنزلية والإلكترونيات الاستهلاكية. تضمّ هذه المجموعة في معظمها أعمالي بصفتي كاتبًا تقنيًا لشركة Felix Storch, Inc.، وتشمل علامات تجارية كـ Summit وEQTemp وMOMCUBE، وتندرج فيها أدلة المستخدم وأدلة التركيب وتعليمات الامتثال لمعايير قانون الأمريكيين ذوي الإعاقة (ADA).</p>
+<p>تجمع هذه الصفحة وثائق الأجهزة، من وحدات التبريد الطبية إلى الأجهزة المنزلية والإلكترونيات الاستهلاكية. تأتي النماذج في معظمها من عملي كاتبًا تقنيًا في Felix Storch, Inc.، التي تشمل علاماتها التجارية Summit وEQTemp وMOMCUBE. وتغطي المجموعة أدلة المستخدم وأدلة التركيب وتعليمات الامتثال لمعايير ADA.</p>
 </div>
 </div>
 </div>
@@ -230,6 +230,7 @@
     <!-- light band with cards -->
 <div class="light-section py-5" id="vaccine-section">
     <div class="container">
+      <h2 class="visually-hidden">عينة مميزة</h2>
       <div class="row align-items-center">
         <div class="col-md-6 text-center">
           <div class="ratio ratio-1x1">
@@ -238,10 +239,9 @@
         </div>
         <div class="col-md-6 inno-text">
           <div class="sample-card" role="button" tabindex="0" data-pdf="/samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf" aria-label="فتح دليل مستخدم ثلاجة حفظ اللقاحات EQTemps" style="cursor: pointer;">
-            <h2 class="fw-bold card-title text-decoration-underline">دليل مستخدم ثلاجة حفظ لقاحات EQTemps</h2>
+            <h3 class="h2 fw-bold card-title text-decoration-underline">دليل مستخدم ثلاجة حفظ لقاحات EQTemps</h3>
           </div>
-          <p class="text-secondary">دليل متخصص لثلاجة حفظ اللقاحات، يركز على مراقبة درجات الحرارة وأنظمة الإنذار ومتطلبات تخزين مركز السيطرة على الأمراض والوقاية منها (CDC).</p>
-          <p class="text-secondary">يضمن هذا الدليل قدرة المتخصصين الطبيين على الحفاظ على ضبط دقيق لدرجات الحرارة الضرورية للحفاظ على فعالية اللقاحات، وفق معايير الصناعة وبروتوكولات السلامة.</p>
+          <p class="text-secondary">دليل مستخدم لثلاجة حفظ اللقاحات. يغطي مراقبة درجة الحرارة وأنظمة الإنذار ومتطلبات التخزين لدى CDC.</p>
         </div>
       </div>
     </div>
@@ -267,6 +267,7 @@
         </div>
 
         <!-- Single unified row: 1 continuous carousel on mobile, reversed pyramid (2 -> 3 -> 3) on desktop -->
+        <h2 class="visually-hidden">مكتبة نماذج توثيق الأجهزة</h2>
         <div class="row g-4 justify-content-center">
           <!-- 1. Frost-Free Warming and Cooling Drawer -->
           <div class="col-md-4 hardware-card-col" data-category="appliances">
@@ -370,6 +371,7 @@
     </div>
     <div class="bg-custom-dark">
       <div class="container py-5">
+        <h2 class="visually-hidden">عينة إضافية</h2>
         <div class="row justify-content-center">
           <div class="col-md-4">
             <div class="card h-100 text-center card-border sample-card bg-light" role="button" tabindex="0" data-pdf="/samples/technical-writing/hardware/bat-pole-project.pdf" aria-label="فتح دليل تركيب عمود الانزلاق لتغيير الملابس فورياً">
@@ -392,7 +394,7 @@
 
     <!-- Shared PDF viewer -->
     <script src="/js/pdf-viewer.js?v=1790224597970"></script>
-    <script src="/js/sticky-nav.js"></script>
+    <script src="/js/sticky-nav.js?v=2"></script>
     <script src="/js/page-specific.js?v=9"></script>
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@docsearch/sidepanel-js@4.6.3/dist/sidepanel.js"></script>
