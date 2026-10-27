@@ -30,7 +30,7 @@
 <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
 <link href="/css/styles.css?v=3" rel="stylesheet"/>
-<link href="/css/page-specific.css?v=8" rel="stylesheet"/>
+<link href="/css/page-specific.css?v=10" rel="stylesheet"/>
 <link href="/images/logo.png" rel="icon" type="image/png"/>
 <!-- DocSearch CSS -->
 <link href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" rel="stylesheet"/>
@@ -55,7 +55,7 @@
 <!-- Desktop Navbar -->
 <nav aria-label="Desktop navigation" class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation">
 <a class="navbar-brand ms-3" href="/zh/">
-<img alt="Logo" height="40" src="/images/logo.png"/>
+<img alt="Pedro Vega Portfolio" height="40" src="/images/logo.png"/>
 </a>
 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
 <ul class="navbar-nav me-3">
@@ -122,7 +122,7 @@
 <!-- Mobile Navbar (App Tab Bar) -->
 <nav aria-label="Mobile navigation" class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation">
 <a class="navbar-brand ms-2 me-1" href="/zh/">
-<img alt="Logo" height="40" src="/images/icon-logo.png"/>
+<img alt="Pedro Vega Portfolio" height="40" src="/images/icon-logo.png"/>
 </a>
 <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
 <li class="nav-item dropup d-flex align-items-center">
@@ -201,8 +201,8 @@
 <h1 class="display-4 fw-bold text-white">UX 写作与内容设计</h1>
 <div class="row justify-content-center">
 <div class="col-lg-8 text-center intro-text text-white">
-<p class="lead">以用户为中心的文案、渐进式信息披露流程以及 Figma 中的设计系统。</p>
-<p>每份案例研究都探讨了产品生命周期中各阶段的高摩擦环节，从建立信任架构和处理空状态，到清晰的错误恢复以及根据紧急程度调整的通知。交互式原型通过代码和设计展示了每个交互状态。</p>
+<p class="lead">根据实际字符限制撰写的界面文案、错误状态文案和通知文案，均以交互式 Figma 原型形式发布。</p>
+<p>每项研究都针对特定的用户流失点，并提供了基于约束条件的界面文案。这18个作品集项目展示了系统化的用户体验内容设计。下文的“内容模式”概述了其背后的规则。</p>
 </div>
 </div>
 </div>
@@ -215,25 +215,25 @@
 <div class="ux-filter-wrapper text-center">
 <div class="text-center mb-2">
 <span class="text-uppercase fw-bold small" style="letter-spacing: 1.2px; color: #1f3850; font-size: 0.8rem;">
-<i class="bi bi-funnel-fill me-1" aria-hidden="true"></i> 按核心领域筛选
+<i class="bi bi-funnel-fill me-1" aria-hidden="true"></i> 按模式筛选
 </span>
 </div>
 <div class="ux-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
 <button class="btn ux-filter-pill active" data-filter="all" type="button">全部 <span class="badge ms-1">15</span></button>
-<button class="btn ux-filter-pill" data-filter="prototype" type="button"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;" aria-hidden="true"></i> 交互式原型 <span class="badge ms-1">8</span></button>
-<button class="btn ux-filter-pill" data-filter="high-stakes" type="button">高风险场景与警报 <span class="badge ms-1">3</span></button>
-<button class="btn ux-filter-pill" data-filter="error-recovery" type="button">错误恢复与降低摩擦 <span class="badge ms-1">5</span></button>
-<button class="btn ux-filter-pill" data-filter="onboarding" type="button">新手引导与信任构建 <span class="badge ms-1">2</span></button>
-<button class="btn ux-filter-pill" data-filter="subscriptions" type="button">订阅流程与微文案 <span class="badge ms-1">5</span></button>
+<button class="btn ux-filter-pill" data-filter="prototype" type="button"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;" aria-hidden="true"></i> 产品流程 <span class="badge ms-1">8</span></button>
+<button class="btn ux-filter-pill" data-filter="high-stakes" type="button">提示文案 <span class="badge ms-1">3</span></button>
+<button class="btn ux-filter-pill" data-filter="error-recovery" type="button">错误状态 <span class="badge ms-1">5</span></button>
+<button class="btn ux-filter-pill" data-filter="onboarding" type="button">用户引导与信任 <span class="badge ms-1">2</span></button>
+<button class="btn ux-filter-pill" data-filter="subscriptions" type="button">订阅与元文案 <span class="badge ms-1">5</span></button>
 </div>
 </div>
 <div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="uxSamplesCarousel">
 <div class="carousel-inner">
 <div class="carousel-item active" data-category="onboarding prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-15.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-banking-onboarding.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-15.pdf" title="用户体验文案案例研究：银行应用注册流程"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-banking-onboarding.pdf" title="用户体验文案案例研究：银行应用注册流程"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -269,19 +269,19 @@
 </div>
 </div></div></div></div>
 <div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-error-unknown-cause.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3 d-flex flex-column p-2">
 <div aria-label="版本预览切换器" class="btn-group btn-group-sm w-100 mb-2 rounded-2" role="group" style="background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.18);">
-<button class="btn btn-draft-toggle active fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" type="button">
+<button class="btn btn-draft-toggle active fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/spec-error-unknown-cause.pdf" type="button">
 <i class="bi bi-check2 me-1" aria-hidden="true"></i> 上线最终版 v2
 </button>
-<button class="btn btn-draft-toggle fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14-draft1.pdf" type="button">
+<button class="btn btn-draft-toggle fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/spec-error-unknown-cause-draft.pdf" type="button">
 <i class="bi bi-x-lg me-1" aria-hidden="true"></i> 初版草案（废弃）
 </button>
 </div>
 <div class="flex-grow-1 position-relative" style="min-height: 280px;">
-<iframe allowfullscreen="" class="w-100 h-100 position-absolute top-0 start-0" frameborder="0" id="challenge14Iframe" src="/samples/ux-writing/ux-writing-challenge-14.pdf" title="用户体验文案案例研究：原因未知的应用错误"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100 position-absolute top-0 start-0" frameborder="0" id="errorUnknownIframe" src="/samples/ux-writing/spec-error-unknown-cause.pdf" title="用户体验文案案例研究：原因未知的应用错误"></iframe>
 </div>
 </div>
 <div class="col-md-9">
@@ -316,10 +316,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="high-stakes prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-1.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-flight-cancellation.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-1.pdf" title="用户体验文案案例研究：航班取消通知"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-flight-cancellation.pdf" title="用户体验文案案例研究：航班取消通知"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -354,10 +354,10 @@
 </div>
 </div></div></div></div>
 <div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-6.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-fire-alert.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-6.pdf" title="用户体验文案案例研究：火情警报通知"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-fire-alert.pdf" title="用户体验文案案例研究：火情警报通知"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -391,10 +391,10 @@
 </div>
 </div></div></div></div>
 <div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-9.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-expired-card.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-9.pdf" title="用户体验文案案例研究：信用卡过期错误提示"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-expired-card.pdf" title="用户体验文案案例研究：信用卡过期错误提示"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -427,10 +427,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-12.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-fake-name-error.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-12.pdf" title="用户体验文案案例研究：“虚假姓名”拦截错误提示"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-fake-name-error.pdf" title="用户体验文案案例研究：“虚假姓名”拦截错误提示"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -461,10 +461,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-11.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-contact-lens-meta.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-11.pdf" title="用户体验文案案例研究：隐形眼镜定期订购——标题与元描述"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-contact-lens-meta.pdf" title="用户体验文案案例研究：隐形眼镜定期订购——标题与元描述"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -495,10 +495,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-13.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-truck-delay.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-13.pdf" title="用户体验文案案例研究：卡车司机延误通知"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-truck-delay.pdf" title="用户体验文案案例研究：卡车司机延误通知"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -531,10 +531,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="onboarding"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-10.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-location-permission.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-10.pdf" title="用户体验文案案例研究：购车平台位置权限申请"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-location-permission.pdf" title="用户体验文案案例研究：购车平台位置权限申请"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -568,10 +568,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-5.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-app-crash-recovery.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-5.pdf" title="用户体验文案案例研究：应用崩溃恢复提示"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-app-crash-recovery.pdf" title="用户体验文案案例研究：应用崩溃恢复提示"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -605,10 +605,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-4.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-grocery-subscription.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-4.pdf" title="用户体验文案案例研究：生鲜杂货订阅会员推广"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-grocery-subscription.pdf" title="用户体验文案案例研究：生鲜杂货订阅会员推广"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -642,10 +642,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-3.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-incorrect-email.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-3.pdf" title="用户体验文案案例研究：邮箱输入错误提示"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-incorrect-email.pdf" title="用户体验文案案例研究：邮箱输入错误提示"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -675,10 +675,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-2.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-sports-fan-promo.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-2.pdf" title="用户体验文案案例研究：体育迷应用注册推广"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-sports-fan-promo.pdf" title="用户体验文案案例研究：体育迷应用注册推广"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -711,10 +711,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-8.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-concert-promo.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-8.pdf" title="用户体验文案案例研究：演唱会门票抢购推广"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-concert-promo.pdf" title="用户体验文案案例研究：演唱会门票抢购推广"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -748,10 +748,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-7.pdf" role="button" tabindex="0">
+<div aria-label="查看用户体验文案样本" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-rivalry-score.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-7.pdf" title="用户体验文案案例研究：宿敌对决实时比分推送"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-rivalry-score.pdf" title="用户体验文案案例研究：宿敌对决实时比分推送"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -793,16 +793,82 @@
 </div>
 </div>
 </div>
+<section class="py-5 bg-custom-dark" id="ux-content-patterns">
+<div class="container-fluid px-4">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<h2 class="fw-bold mb-3" style="color: #ffffff;">内容模式</h2>
+<p class="mb-4" style="color: rgba(255, 255, 255, 0.75);">规范这些作品集案例的设计标准。每种模式均详细记录了触发条件、要求的语气以及文案结构。</p>
+<div class="row g-4" id="patternAccordion">
+<div class="col-md-4">
+<button aria-controls="pattern-collapse-1" aria-expanded="false" class="btn pattern-accordion-btn d-md-none d-flex justify-content-between align-items-center collapsed mb-0" data-bs-target="#pattern-collapse-1" data-bs-toggle="collapse" type="button">
+<h3 class="h6 text-uppercase fw-bold mb-0" style="letter-spacing: 1px; color: #ffffff;">错误状态 <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">5</span></h3>
+<i class="bi bi-chevron-down pattern-chevron" aria-hidden="true"></i>
+</button>
+<div class="d-none d-md-block">
+<h3 class="h6 text-uppercase fw-bold mb-2" style="letter-spacing: 1px; color: #ffffff;">错误状态 <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">5</span></h3>
+</div>
+<div class="collapse d-md-block pattern-collapse-body" id="pattern-collapse-1">
+<ol class="ps-3 mb-0" style="color: rgba(255, 255, 255, 0.8); font-size: 0.95rem;">
+<li class="mb-2">在提出解决方案之前，先在第一句中说明问题原因。</li>
+<li class="mb-2">将恢复步骤放在第二位，并采用命令式语气：“请重新输入您注册时使用的邮箱地址。”</li>
+<li class="mb-2">切勿归咎于读者。该“假名研究”先展示了反模式，随后给出了重写示例。</li>
+<li class="mb-2">标题字符数上限为45，正文字符数上限为100，按钮标签字符数上限为25。</li>
+<li>失败时避免使用感叹号。沉稳的文案能体现专业能力。</li>
+</ol>
+</div>
+</div>
+<div class="col-md-4">
+<button aria-controls="pattern-collapse-2" aria-expanded="false" class="btn pattern-accordion-btn d-md-none d-flex justify-content-between align-items-center collapsed mb-0" data-bs-target="#pattern-collapse-2" data-bs-toggle="collapse" type="button">
+<h3 class="h6 text-uppercase fw-bold mb-0" style="letter-spacing: 1px; color: #ffffff;">提示文案 <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">3</span></h3>
+<i class="bi bi-chevron-down pattern-chevron" aria-hidden="true"></i>
+</button>
+<div class="d-none d-md-block">
+<h3 class="h6 text-uppercase fw-bold mb-2" style="letter-spacing: 1px; color: #ffffff;">提示文案 <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">3</span></h3>
+</div>
+<div class="collapse d-md-block pattern-collapse-body" id="pattern-collapse-2">
+<ol class="ps-3 mb-0" style="color: rgba(255, 255, 255, 0.8); font-size: 0.95rem;">
+<li class="mb-2">首先突出后果和时间范围，然后才是具体行动。</li>
+<li class="mb-2">每个提示仅提供一项操作。在紧急情况下，过多的选择会导致决策疲劳。</li>
+<li class="mb-2">根据严重程度而非重复次数进行分级。大写关键词可直接传达紧迫感。</li>
+<li>应明确说明用户的下一步操作，而非仅报告系统的内部状态。</li>
+</ol>
+</div>
+</div>
+<div class="col-md-4">
+<button aria-controls="pattern-collapse-3" aria-expanded="false" class="btn pattern-accordion-btn d-md-none d-flex justify-content-between align-items-center collapsed mb-0" data-bs-target="#pattern-collapse-3" data-bs-toggle="collapse" type="button">
+<h3 class="h6 text-uppercase fw-bold mb-0" style="letter-spacing: 1px; color: #ffffff;">订阅与元文案 <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">5</span></h3>
+<i class="bi bi-chevron-down pattern-chevron" aria-hidden="true"></i>
+</button>
+<div class="d-none d-md-block">
+<h3 class="h6 text-uppercase fw-bold mb-2" style="letter-spacing: 1px; color: #ffffff;">订阅与元文案 <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">5</span></h3>
+</div>
+<div class="collapse d-md-block pattern-collapse-body" id="pattern-collapse-3">
+<ol class="ps-3 mb-0" style="color: rgba(255, 255, 255, 0.8); font-size: 0.95rem;">
+<li class="mb-2">将产品优势放在标题中，将价格放在正文中。</li>
+<li class="mb-2">删除营造紧迫感的形容词。“周五截止”比“最后机会”更有效。</li>
+<li class="mb-2">请将元描述写成一个独立的句子，因为它会在不显示页面内容的情况下单独呈现。</li>
+<li>按钮标签应侧重于操作结果，而非操作机制。</li>
+</ol>
+</div>
+</div>
+</div>
+<p class="mt-4 mb-0" style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">案例文件概述了设计约束、文案依据以及最终的用户界面字符串。这些精选的“通行证”设计同样将这一设计规范应用于印刷媒体。</p>
+</div>
+</div>
+</div>
+</section>
+
 <!-- Visual Design & Print Work: Classroom Hall Passes (Open Showcase) -->
-<div class="py-5 bg-custom-dark border-top border-secondary border-opacity-25" id="visual-design-section">
+<div class="py-5 light-section" id="visual-design-section">
 <div class="container-fluid px-4">
 <div class="text-center mb-4">
-<span class="badge px-3 py-2 rounded-pill text-uppercase mb-2" style="background-color: rgba(232, 196, 124, 0.15); color: #e8c47c; border: 1px solid rgba(232, 196, 124, 0.35); letter-spacing: 1.2px; font-size: 0.8rem;">
+<span class="badge px-3 py-2 rounded-pill text-uppercase mb-2" style="background-color: #1f3850; color: #ffffff; border: 1px solid #1f3850; letter-spacing: 1.2px; font-size: 0.8rem;">
 <i class="bi bi-palette-fill me-1" aria-hidden="true"></i> 视觉设计与印刷品
 </span>
-<h2 class="display-6 fw-bold text-white mb-2">趣味课堂通行证</h2>
+<h2 class="display-6 fw-bold mb-2" style="color: #1f3850;">趣味课堂通行证</h2>
 <div class="row justify-content-center">
-<div class="col-lg-8 text-center text-white-50">
+<div class="col-lg-8 text-center" style="color: #495057;">
 <p class="mb-0 fs-6">为高中课堂管理定制的双面通行证，融合精选复古漫画艺术与动感印刷排版。出于隐私保护考虑，部分信息已做脱敏处理。</p>
 </div>
 </div>
@@ -810,11 +876,11 @@
 <div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="hallPassCarousel">
 <div class="carousel-inner">
 <div class="carousel-item active"><div class="row justify-content-center"><div class="col-11 col-lg-10">
-<div aria-label="查看蜘蛛侠卫生间通行证样本" class="card card-border sample-card hallpass-card hallpass-card-spidey mb-4" data-pdf="/samples/ux-writing/spidey-bathroom-pass.pdf" role="button" tabindex="0">
+<div aria-label="查看蜘蛛侠卫生间通行证样本" class="card card-border sample-card hallpass-card hallpass-card-spidey mb-4" data-pdf="/samples/ux-writing/spec-hall-pass-spidey.pdf" role="button" tabindex="0">
 <div class="row g-0 align-items-center">
 <div class="col-md-5 p-3 p-lg-4">
 <div class="hallpass-preview-wrapper position-relative">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spidey-bathroom-pass.pdf" style="min-height: 360px;" title="蜘蛛侠卫生间通行证"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-hall-pass-spidey.pdf" style="min-height: 360px;" title="蜘蛛侠卫生间通行证"></iframe>
 <div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
 <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> 点击卡片查看完整 PDF
 </div>
@@ -850,11 +916,11 @@
 </div>
 </div></div></div>
 <div class="carousel-item"><div class="row justify-content-center"><div class="col-11 col-lg-10">
-<div aria-label="查看绿巨人走廊通行证样本" class="card card-border sample-card hallpass-card hallpass-card-hulk mb-4" data-pdf="/samples/ux-writing/hulk-hall-pass.pdf" role="button" tabindex="0">
+<div aria-label="查看绿巨人走廊通行证样本" class="card card-border sample-card hallpass-card hallpass-card-hulk mb-4" data-pdf="/samples/ux-writing/spec-hall-pass-hulk.pdf" role="button" tabindex="0">
 <div class="row g-0 align-items-center">
 <div class="col-md-5 p-3 p-lg-4">
 <div class="hallpass-preview-wrapper position-relative">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/hulk-hall-pass.pdf" style="min-height: 360px;" title="绿巨人走廊通行证"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-hall-pass-hulk.pdf" style="min-height: 360px;" title="绿巨人走廊通行证"></iframe>
 <div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
 <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> 点击卡片查看完整 PDF
 </div>
@@ -891,21 +957,22 @@
 </div></div></div>
 </div>
 <div class="carousel-indicators position-relative mt-2 mb-0">
-<button aria-current="true" aria-label="蜘蛛侠卫生间通行证" class="active" data-bs-slide-to="0" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
-<button aria-label="绿巨人走廊通行证" data-bs-slide-to="1" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
+<button aria-current="true" aria-label="蜘蛛侠卫生间通行证" class="active" data-bs-slide-to="0" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #1f3850;" type="button"></button>
+<button aria-label="绿巨人走廊通行证" data-bs-slide-to="1" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #1f3850;" type="button"></button>
 </div>
 <button aria-label="上一张通行证" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button">
-<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">❮</span>
+<span aria-hidden="true" class="fw-bolder" style="color: #1f3850; font-size: 3.5rem;">❮</span>
 <span class="visually-hidden">上一张</span>
 </button>
 <button aria-label="下一张通行证" class="carousel-control-next" data-bs-slide="next" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button">
-<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">❯</span>
+<span aria-hidden="true" class="fw-bolder" style="color: #1f3850; font-size: 3.5rem;">❯</span>
 <span class="visually-hidden">下一张</span>
 </button>
 </div>
 </div>
 </div>
-<footer>
+<footer class="bg-custom-dark">
+<canvas aria-hidden="true" class="particles-canvas"></canvas>
 <p class="text-white text-center">&copy; 2026 佩德罗·维加 | 基于 HTML &bull; CSS &bull; JS &bull; GitHub Pages 构建</p>
 </footer>
 </main>
@@ -920,7 +987,7 @@
 <div class="modal-dialog modal-xl">
 <div class="modal-content">
 <div class="modal-header">
-<h5 class="modal-title" id="figmaModalLabel">交互原型</h5>
+<h2 class="modal-title h5" id="figmaModalLabel">交互原型</h2>
 <button aria-label="关闭" class="btn-close" data-bs-dismiss="modal" type="button"></button>
 </div>
 <div class="modal-body">
@@ -1049,5 +1116,6 @@
 
   </script>
 <script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+<script src="/js/constellations.js?v=1"></script>
 </body>
 </html>
