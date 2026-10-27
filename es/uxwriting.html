@@ -30,7 +30,7 @@
 <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
 <link href="/css/styles.css?v=3" rel="stylesheet"/>
-<link href="/css/page-specific.css?v=8" rel="stylesheet"/>
+<link href="/css/page-specific.css?v=10" rel="stylesheet"/>
 <link href="/images/logo.png" rel="icon" type="image/png"/>
 <!-- DocSearch CSS -->
 <link href="https://cdn.jsdelivr.net/npm/@docsearch/css@4" rel="stylesheet"/>
@@ -59,7 +59,7 @@
 <!-- Desktop Navbar -->
 <nav aria-label="Navegación de escritorio" class="navbar navbar-expand-lg navbar-dark bg-custom-dark d-none d-lg-flex" role="navigation">
 <a class="navbar-brand ms-3" href="/es/">
-<img alt="Logo" height="40" src="/images/logo.png"/>
+<img alt="Pedro Vega Portfolio" height="40" src="/images/logo.png"/>
 </a>
 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDesktop">
 <ul class="navbar-nav me-3">
@@ -127,7 +127,7 @@
 <!-- Mobile Navbar (App Tab Bar) -->
 <nav aria-label="Navegación móvil" class="navbar navbar-expand navbar-dark bg-custom-dark d-flex d-lg-none" role="navigation">
 <a class="navbar-brand ms-2 me-1" href="/es/">
-<img alt="Logo" height="40" src="/images/icon-logo.png"/>
+<img alt="Pedro Vega Portfolio" height="40" src="/images/icon-logo.png"/>
 </a>
 <ul class="navbar-nav flex-row w-100 justify-content-around me-2">
 <li class="nav-item dropup d-flex align-items-center">
@@ -206,8 +206,8 @@
 <h1 class="display-4 fw-bold text-white">Redacción UX y diseño de contenido</h1>
 <div class="row justify-content-center">
 <div class="col-lg-8 text-center intro-text text-white">
-<p class="lead">Textos centrados en el usuario, flujos de divulgación progresiva y sistemas de diseño en Figma.</p>
-<p>Cada caso de estudio aborda momentos de alta fricción en el producto. Examina desde la incorporación y estados vacíos hasta la recuperación de errores y notificaciones calibradas según su urgencia. Los prototipos interactivos ilustran cada estado de interacción tanto en código como en diseño.</p>
+<p class="lead">Textos de interfaz, estados de error y notificaciones redactados respetando límites reales de caracteres, cada uno publicado como prototipo interactivo en Figma.</p>
+<p>Cada estudio identifica un punto concreto de abandono y ofrece textos basados en restricciones reales. Estos 18 proyectos del portafolio demuestran un diseño sistemático de contenidos UX. Los patrones de contenido que se muestran a continuación describen las reglas subyacentes.</p>
 </div>
 </div>
 </div>
@@ -220,24 +220,24 @@
 <div class="ux-filter-wrapper text-center">
 <div class="text-center mb-2">
 <span class="text-uppercase fw-bold small" style="letter-spacing: 1.2px; color: #1f3850; font-size: 0.8rem;">
-<i class="bi bi-funnel-fill me-1" aria-hidden="true"></i> Filtrar por área de enfoque
+<i class="bi bi-funnel-fill me-1" aria-hidden="true"></i> Filtrar por patrón
 </span>
 </div>
 <div class="ux-filter-dock d-flex d-md-inline-flex flex-nowrap flex-md-wrap justify-content-start justify-content-md-center gap-2">
 <button class="btn ux-filter-pill active" data-filter="all" type="button">Todos <span class="badge ms-1">15</span></button>
-<button class="btn ux-filter-pill" data-filter="prototype" type="button"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;" aria-hidden="true"></i> Prototipo funcional <span class="badge ms-1">8</span></button>
-<button class="btn ux-filter-pill" data-filter="high-stakes" type="button">Casos críticos y alertas <span class="badge ms-1">3</span></button>
-<button class="btn ux-filter-pill" data-filter="error-recovery" type="button">Resolución de errores y fricción <span class="badge ms-1">5</span></button>
-<button class="btn ux-filter-pill" data-filter="onboarding" type="button">Onboarding y confianza <span class="badge ms-1">2</span></button>
-<button class="btn ux-filter-pill" data-filter="subscriptions" type="button">Suscripciones y microcopia <span class="badge ms-1">5</span></button>
+<button class="btn ux-filter-pill" data-filter="prototype" type="button"><i class="bi bi-play-circle-fill me-1" style="font-size: 0.85em;" aria-hidden="true"></i> Flujos de producto <span class="badge ms-1">8</span></button>
+<button class="btn ux-filter-pill" data-filter="high-stakes" type="button">Texto de alerta <span class="badge ms-1">3</span></button>
+<button class="btn ux-filter-pill" data-filter="error-recovery" type="button">Estados de error <span class="badge ms-1">5</span></button>
+<button class="btn ux-filter-pill" data-filter="onboarding" type="button">Incorporación y confianza <span class="badge ms-1">2</span></button>
+<button class="btn ux-filter-pill" data-filter="subscriptions" type="button">Suscripción y textos de meta <span class="badge ms-1">5</span></button>
 </div>
 </div>
 <div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="uxSamplesCarousel">
 <div class="carousel-inner"><div class="carousel-item active" data-category="onboarding prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Flujo de onboarding para aplicación bancaria" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-15.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Flujo de onboarding para aplicación bancaria" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-banking-onboarding.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-15.pdf" title="Caso de estudio de redacción UX: Flujo de onboarding para aplicación bancaria"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-banking-onboarding.pdf" title="Caso de estudio de redacción UX: Flujo de onboarding para aplicación bancaria"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -267,19 +267,19 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Error de aplicación por causa desconocida" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Error de aplicación por causa desconocida" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-error-unknown-cause.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3 d-flex flex-column p-2">
 <div aria-label="Selector de versión preliminar" class="btn-group btn-group-sm w-100 mb-2 rounded-2" role="group" style="background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.18);">
-<button class="btn btn-draft-toggle active fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14.pdf" type="button">
+<button class="btn btn-draft-toggle active fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/spec-error-unknown-cause.pdf" type="button">
 <i class="bi bi-check2 me-1" aria-hidden="true"></i> Versión definitiva v2
     </button>
-<button class="btn btn-draft-toggle fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/ux-writing-challenge-14-draft1.pdf" type="button">
+<button class="btn btn-draft-toggle fw-semibold small py-1 px-2" data-pdf="/samples/ux-writing/spec-error-unknown-cause-draft.pdf" type="button">
 <i class="bi bi-x-lg me-1" aria-hidden="true"></i> Borrador 1 descartado
     </button>
 </div>
 <div class="flex-grow-1 position-relative" style="min-height: 280px;">
-<iframe allowfullscreen="" class="w-100 h-100 position-absolute top-0 start-0" frameborder="0" id="challenge14Iframe" src="/samples/ux-writing/ux-writing-challenge-14.pdf" title="Caso de estudio de redacción UX: Error de aplicación por causa desconocida"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100 position-absolute top-0 start-0" frameborder="0" id="errorUnknownIframe" src="/samples/ux-writing/spec-error-unknown-cause.pdf" title="Caso de estudio de redacción UX: Error de aplicación por causa desconocida"></iframe>
 </div>
 </div>
 <div class="col-md-9">
@@ -310,10 +310,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="high-stakes prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Notificación de cancelación de vuelo" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-1.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Notificación de cancelación de vuelo" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-flight-cancellation.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-1.pdf" title="Caso de estudio de redacción UX: Notificación de cancelación de vuelo"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-flight-cancellation.pdf" title="Caso de estudio de redacción UX: Notificación de cancelación de vuelo"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -343,10 +343,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Notificación de alerta de incendio" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-6.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Notificación de alerta de incendio" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-fire-alert.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-6.pdf" title="Caso de estudio de redacción UX: Notificación de alerta de incendio"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-fire-alert.pdf" title="Caso de estudio de redacción UX: Notificación de alerta de incendio"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -374,10 +374,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Error por tarjeta de crédito caducada" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-9.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Error por tarjeta de crédito caducada" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-expired-card.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-9.pdf" title="Caso de estudio de redacción UX: Error por tarjeta de crédito caducada"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-expired-card.pdf" title="Caso de estudio de redacción UX: Error por tarjeta de crédito caducada"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -406,10 +406,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Mensaje de error: &quot;Nombre ficticio&quot;" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-12.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Mensaje de error: &quot;Nombre ficticio&quot;" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-fake-name-error.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-12.pdf" title="Caso de estudio de redacción UX: Mensaje de error: &quot;Nombre ficticio&quot;"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-fake-name-error.pdf" title="Caso de estudio de redacción UX: Mensaje de error: &quot;Nombre ficticio&quot;"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -436,10 +436,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Suscripción de lentes de contacto: Título y metadescripción" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-11.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Suscripción de lentes de contacto: Título y metadescripción" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-contact-lens-meta.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-11.pdf" title="Caso de estudio de redacción UX: Suscripción de lentes de contacto: Título y metadescripción"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-contact-lens-meta.pdf" title="Caso de estudio de redacción UX: Suscripción de lentes de contacto: Título y metadescripción"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -467,10 +467,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="high-stakes"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Notificación de retraso para conductores de camión" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-13.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Notificación de retraso para conductores de camión" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-truck-delay.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-13.pdf" title="Caso de estudio de redacción UX: Notificación de retraso para conductores de camión"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-truck-delay.pdf" title="Caso de estudio de redacción UX: Notificación de retraso para conductores de camión"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -499,10 +499,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="onboarding"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Solicitud de ubicación en sitio web de compra de vehículos" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-10.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Solicitud de ubicación en sitio web de compra de vehículos" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-location-permission.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-10.pdf" title="Caso de estudio de redacción UX: Solicitud de ubicación en sitio web de compra de vehículos"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-location-permission.pdf" title="Caso de estudio de redacción UX: Solicitud de ubicación en sitio web de compra de vehículos"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -531,10 +531,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Mensaje de recuperación tras bloqueo de la aplicación" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-5.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Mensaje de recuperación tras bloqueo de la aplicación" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-app-crash-recovery.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-5.pdf" title="Caso de estudio de redacción UX: Mensaje de recuperación tras bloqueo de la aplicación"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-app-crash-recovery.pdf" title="Caso de estudio de redacción UX: Mensaje de recuperación tras bloqueo de la aplicación"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -564,10 +564,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Promoción de suscripción de supermercado" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-4.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Promoción de suscripción de supermercado" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-grocery-subscription.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-4.pdf" title="Caso de estudio de redacción UX: Promoción de suscripción de supermercado"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-grocery-subscription.pdf" title="Caso de estudio de redacción UX: Promoción de suscripción de supermercado"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -597,10 +597,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="error-recovery"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Mensaje de error: Correo electrónico incorrecto" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-3.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Mensaje de error: Correo electrónico incorrecto" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-incorrect-email.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-3.pdf" title="Caso de estudio de redacción UX: Mensaje de error: Correo electrónico incorrecto"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-incorrect-email.pdf" title="Caso de estudio de redacción UX: Mensaje de error: Correo electrónico incorrecto"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -627,10 +627,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Promoción de aplicación para aficionados al deporte" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-2.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Promoción de aplicación para aficionados al deporte" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-sports-fan-promo.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-2.pdf" title="Caso de estudio de redacción UX: Promoción de aplicación para aficionados al deporte"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-sports-fan-promo.pdf" title="Caso de estudio de redacción UX: Promoción de aplicación para aficionados al deporte"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -660,10 +660,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions prototype"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Promoción de conciertos" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-8.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Promoción de conciertos" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-concert-promo.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-8.pdf" title="Caso de estudio de redacción UX: Promoción de conciertos"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-concert-promo.pdf" title="Caso de estudio de redacción UX: Promoción de conciertos"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -693,10 +693,10 @@
 </div>
 </div>
 </div></div></div></div><div class="carousel-item" data-category="subscriptions"><div class="row justify-content-center"><div class="col-12 col-md-11"><div class="col-lg-12">
-<div aria-label="Abrir muestra de redacción UX: Alerta en vivo: Clásico de béisbol (Yankees vs. Red Sox)" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/ux-writing-challenge-7.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra de redacción UX: Alerta en vivo: Clásico de béisbol (Yankees vs. Red Sox)" class="card card-border sample-card ux-card mb-3" data-pdf="/samples/ux-writing/spec-rivalry-score.pdf" role="button" tabindex="0">
 <div class="row g-0">
 <div class="col-md-3">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/ux-writing-challenge-7.pdf" title="Caso de estudio de redacción UX: Alerta en vivo: Clásico de béisbol (Yankees vs. Red Sox)"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-rivalry-score.pdf" title="Caso de estudio de redacción UX: Alerta en vivo: Clásico de béisbol (Yankees vs. Red Sox)"></iframe>
 </div>
 <div class="col-md-9">
 <div class="card-body text-start">
@@ -735,16 +735,82 @@
 </div>
 </div>
 </div>
+<section class="py-5 bg-custom-dark" id="ux-content-patterns">
+<div class="container-fluid px-4">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<h2 class="fw-bold mb-3" style="color: #ffffff;">Patrones de contenido</h2>
+<p class="mb-4" style="color: rgba(255, 255, 255, 0.75);">Normas de diseño que rigen estos casos prácticos del portafolio. Cada patrón documenta las condiciones de activación, el tono requerido y la estructura del texto.</p>
+<div class="row g-4" id="patternAccordion">
+<div class="col-md-4">
+<button aria-controls="pattern-collapse-1" aria-expanded="false" class="btn pattern-accordion-btn d-md-none d-flex justify-content-between align-items-center collapsed mb-0" data-bs-target="#pattern-collapse-1" data-bs-toggle="collapse" type="button">
+<h3 class="h6 text-uppercase fw-bold mb-0" style="letter-spacing: 1px; color: #ffffff;">Estados de error <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">5</span></h3>
+<i class="bi bi-chevron-down pattern-chevron" aria-hidden="true"></i>
+</button>
+<div class="d-none d-md-block">
+<h3 class="h6 text-uppercase fw-bold mb-2" style="letter-spacing: 1px; color: #ffffff;">Estados de error <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">5</span></h3>
+</div>
+<div class="collapse d-md-block pattern-collapse-body" id="pattern-collapse-1">
+<ol class="ps-3 mb-0" style="color: rgba(255, 255, 255, 0.8); font-size: 0.95rem;">
+<li class="mb-2">Expresa el problema en la primera frase, antes de dar la solución.</li>
+<li class="mb-2">Coloca el paso de recuperación en segundo lugar, como una orden imperativa: &ldquo;Vuelve a introducir la dirección de correo electrónico con la que te registraste.&rdquo;</li>
+<li class="mb-2">Nunca culpes al lector. El estudio sobre los nombres falsos muestra el antipatrón y, a continuación, la reescritura.</li>
+<li class="mb-2">Aplica límites de 45 caracteres para titulares y 100 para el cuerpo del texto, limitando las etiquetas de botones a 25.</li>
+<li>Evita los signos de exclamación ante el fracaso. Un texto tranquilo transmite competencia.</li>
+</ol>
+</div>
+</div>
+<div class="col-md-4">
+<button aria-controls="pattern-collapse-2" aria-expanded="false" class="btn pattern-accordion-btn d-md-none d-flex justify-content-between align-items-center collapsed mb-0" data-bs-target="#pattern-collapse-2" data-bs-toggle="collapse" type="button">
+<h3 class="h6 text-uppercase fw-bold mb-0" style="letter-spacing: 1px; color: #ffffff;">Texto de alerta <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">3</span></h3>
+<i class="bi bi-chevron-down pattern-chevron" aria-hidden="true"></i>
+</button>
+<div class="d-none d-md-block">
+<h3 class="h6 text-uppercase fw-bold mb-2" style="letter-spacing: 1px; color: #ffffff;">Texto de alerta <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">3</span></h3>
+</div>
+<div class="collapse d-md-block pattern-collapse-body" id="pattern-collapse-2">
+<ol class="ps-3 mb-0" style="color: rgba(255, 255, 255, 0.8); font-size: 0.95rem;">
+<li class="mb-2">Empieza por la consecuencia y el plazo, y luego pasa a la acción.</li>
+<li class="mb-2">Ofrece una sola acción por alerta. Las opciones contradictorias provocan fatiga decisoria en situaciones de emergencia.</li>
+<li class="mb-2">Aumenta la intensidad según la gravedad, no según la repetición. Las palabras clave en mayúsculas transmiten urgencia de forma directa.</li>
+<li>Indica la siguiente acción del usuario en lugar de informar sobre el estado interno del sistema.</li>
+</ol>
+</div>
+</div>
+<div class="col-md-4">
+<button aria-controls="pattern-collapse-3" aria-expanded="false" class="btn pattern-accordion-btn d-md-none d-flex justify-content-between align-items-center collapsed mb-0" data-bs-target="#pattern-collapse-3" data-bs-toggle="collapse" type="button">
+<h3 class="h6 text-uppercase fw-bold mb-0" style="letter-spacing: 1px; color: #ffffff;">Suscripción y textos de meta <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">5</span></h3>
+<i class="bi bi-chevron-down pattern-chevron" aria-hidden="true"></i>
+</button>
+<div class="d-none d-md-block">
+<h3 class="h6 text-uppercase fw-bold mb-2" style="letter-spacing: 1px; color: #ffffff;">Suscripción y textos de meta <span class="badge ms-1" style="background-color: #e8c47c; color: #1f3850;">5</span></h3>
+</div>
+<div class="collapse d-md-block pattern-collapse-body" id="pattern-collapse-3">
+<ol class="ps-3 mb-0" style="color: rgba(255, 255, 255, 0.8); font-size: 0.95rem;">
+<li class="mb-2">Pon la ventaja en el titular. Pon el precio en el cuerpo del texto.</li>
+<li class="mb-2">Elimina los adjetivos que transmiten urgencia. &ldquo;Finaliza el viernes&rdquo; es mejor que &ldquo;última oportunidad.&rdquo;</li>
+<li class="mb-2">Escribe la meta descripción como una frase independiente, ya que se muestra sin necesidad de la página.</li>
+<li>La etiqueta del botón debe referirse al resultado, no a la mecánica.</li>
+</ol>
+</div>
+</div>
+</div>
+<p class="mt-4 mb-0" style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">Los expedientes describen las restricciones de diseño, la justificación del texto y las cadenas finales de la interfaz. Los pases de salida destacados aplican esta misma disciplina a los medios impresos.</p>
+</div>
+</div>
+</div>
+</section>
+
 <!-- Visual Design & Print Work: Classroom Hall Passes (Open Showcase) -->
-<div class="py-5 bg-custom-dark border-top border-secondary border-opacity-25" id="visual-design-section">
+<div class="py-5 light-section" id="visual-design-section">
 <div class="container-fluid px-4">
 <div class="text-center mb-4">
-<span class="badge px-3 py-2 rounded-pill text-uppercase mb-2" style="background-color: rgba(232, 196, 124, 0.15); color: #e8c47c; border: 1px solid rgba(232, 196, 124, 0.35); letter-spacing: 1.2px; font-size: 0.8rem;">
+<span class="badge px-3 py-2 rounded-pill text-uppercase mb-2" style="background-color: #1f3850; color: #ffffff; border: 1px solid #1f3850; letter-spacing: 1.2px; font-size: 0.8rem;">
 <i class="bi bi-palette-fill me-1" aria-hidden="true"></i> Diseño visual y trabajo editorial
 </span>
-<h2 class="display-6 fw-bold text-white mb-2">Pases de pasillo escolares</h2>
+<h2 class="display-6 fw-bold mb-2" style="color: #1f3850;">Pases de pasillo escolares</h2>
 <div class="row justify-content-center">
-<div class="col-lg-8 text-center text-white-50">
+<div class="col-lg-8 text-center" style="color: #495057;">
 <p class="mb-0 fs-6">Pases personalizados de doble cara diseñados para la gestión de aulas escolares, utilizando viñetas de cómics clásicos y formatos impresos dinámicos. Información redactada por privacidad.</p>
 </div>
 </div>
@@ -752,11 +818,11 @@
 <div class="carousel slide" data-bs-ride="false" data-bs-wrap="true" id="hallPassCarousel">
 <div class="carousel-inner">
 <div class="carousel-item active"><div class="row justify-content-center"><div class="col-11 col-lg-10">
-<div aria-label="Abrir muestra: El pase de baño de Spidey" class="card card-border sample-card hallpass-card hallpass-card-spidey mb-4" data-pdf="/samples/ux-writing/spidey-bathroom-pass.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra: El pase de baño de Spidey" class="card card-border sample-card hallpass-card hallpass-card-spidey mb-4" data-pdf="/samples/ux-writing/spec-hall-pass-spidey.pdf" role="button" tabindex="0">
 <div class="row g-0 align-items-center">
 <div class="col-md-5 p-3 p-lg-4">
 <div class="hallpass-preview-wrapper position-relative">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spidey-bathroom-pass.pdf" style="min-height: 360px;" title="El pase de baño de Spidey"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-hall-pass-spidey.pdf" style="min-height: 360px;" title="El pase de baño de Spidey"></iframe>
 <div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
 <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Haz clic en la tarjeta para ver el PDF completo
 </div>
@@ -792,11 +858,11 @@
 </div>
 </div></div></div>
 <div class="carousel-item"><div class="row justify-content-center"><div class="col-11 col-lg-10">
-<div aria-label="Abrir muestra: El pase de pasillo de Hulk" class="card card-border sample-card hallpass-card hallpass-card-hulk mb-4" data-pdf="/samples/ux-writing/hulk-hall-pass.pdf" role="button" tabindex="0">
+<div aria-label="Abrir muestra: El pase de pasillo de Hulk" class="card card-border sample-card hallpass-card hallpass-card-hulk mb-4" data-pdf="/samples/ux-writing/spec-hall-pass-hulk.pdf" role="button" tabindex="0">
 <div class="row g-0 align-items-center">
 <div class="col-md-5 p-3 p-lg-4">
 <div class="hallpass-preview-wrapper position-relative">
-<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/hulk-hall-pass.pdf" style="min-height: 360px;" title="El pase de pasillo de Hulk"></iframe>
+<iframe allowfullscreen="" class="w-100 h-100" frameborder="0" src="/samples/ux-writing/spec-hall-pass-hulk.pdf" style="min-height: 360px;" title="El pase de pasillo de Hulk"></iframe>
 <div class="position-absolute bottom-0 start-0 end-0 p-2 text-center bg-dark bg-opacity-75 text-white small d-flex align-items-center justify-content-center gap-2">
 <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i> Haz clic en la tarjeta para ver el PDF completo
 </div>
@@ -833,21 +899,22 @@
 </div></div></div>
 </div>
 <div class="carousel-indicators position-relative mt-2 mb-0">
-<button aria-current="true" aria-label="El pase de baño de Spidey" class="active" data-bs-slide-to="0" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
-<button aria-label="El pase de pasillo de Hulk" data-bs-slide-to="1" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #e8c47c;" type="button"></button>
+<button aria-current="true" aria-label="El pase de baño de Spidey" class="active" data-bs-slide-to="0" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #1f3850;" type="button"></button>
+<button aria-label="El pase de pasillo de Hulk" data-bs-slide-to="1" data-bs-target="#hallPassCarousel" style="width: 32px; height: 6px; border-radius: 3px; background-color: #1f3850;" type="button"></button>
 </div>
 <button aria-label="Pase anterior" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button">
-<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">❮</span>
+<span aria-hidden="true" class="fw-bolder" style="color: #1f3850; font-size: 3.5rem;">❮</span>
 <span class="visually-hidden">Anterior</span>
 </button>
 <button aria-label="Pase siguiente" class="carousel-control-next" data-bs-slide="next" data-bs-target="#hallPassCarousel" style="width: 5%;" type="button">
-<span aria-hidden="true" class="fw-bolder" style="color: #ffffff; font-size: 3.5rem;">❯</span>
+<span aria-hidden="true" class="fw-bolder" style="color: #1f3850; font-size: 3.5rem;">❯</span>
 <span class="visually-hidden">Siguiente</span>
 </button>
 </div>
 </div>
 </div>
-<footer>
+<footer class="bg-custom-dark">
+<canvas aria-hidden="true" class="particles-canvas"></canvas>
 <p class="text-white text-center">© 2026 Pedro Vega | Creado con HTML • CSS • JS • GitHub Pages</p>
 </footer>
 </main>
@@ -862,7 +929,7 @@
 <div class="modal-dialog modal-xl">
 <div class="modal-content">
 <div class="modal-header">
-<h5 class="modal-title" id="figmaModalLabel">Prototipo</h5>
+<h2 class="modal-title h5" id="figmaModalLabel">Prototipo</h2>
 <button aria-label="Cerrar" class="btn-close" data-bs-dismiss="modal" type="button"></button>
 </div>
 <div class="modal-body">
@@ -991,5 +1058,6 @@
 
   </script>
 <script src="/js/interactive.js?v=infinite-carousels-v6"></script>
+<script src="/js/constellations.js?v=1"></script>
 </body>
 </html>

@@ -92,12 +92,32 @@ Docs-as-Code Workflow:
 │   ├── css/                   # Stylesheets and custom responsive rules
 │   ├── js/                    # Search, modal viewers, and navigation scripts
 │   ├── samples/               # PDF documentation samples
+│   ├── scripts/               # Local preview server and clean-URL middleware
 │   ├── sitemap.xml            # Search engine URL index
 │   └── images/                # Site assets, logos, and previews
 └── (External Repositories)
     ├── /software              # Docusaurus software documentation portal
     └── /Recordkeeping         # Recordkeeping documentation project
 ```
+
+---
+
+## 🖥️ Local Preview
+
+GitHub Pages serves extensionless URLs such as `/uxwriting` from the matching HTML file. The bundled preview server reproduces that routing on your machine:
+
+```bash
+cd pvega62.github.io
+node scripts/preview.mjs
+```
+
+The server runs at `http://localhost:8080` and reloads the browser after each edit. Set `PORT` to move the port, and set `NO_OPEN=1` to skip the browser launch:
+
+```powershell
+$env:PORT="8081"; node scripts/preview.mjs
+```
+
+`scripts/clean-urls.js` maps `/uxwriting` to `uxwriting.html` and leaves every other request alone.
 
 ---
 

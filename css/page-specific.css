@@ -207,7 +207,7 @@ body { background: var(--dark); font-family: Inter, system-ui, -apple-system, 'S
 /* Visual Design & Print Work Section */
 #visual-design-section {
   position: relative;
-  background-color: #142535;
+  background-color: var(--tan);
 }
 
 /* Draft Toggle Buttons (Challenge 14 Before / After) */
@@ -454,5 +454,85 @@ body { background: var(--dark); font-family: Inter, system-ui, -apple-system, 'S
 .article-card-col.d-none,
 .py-5 .row.g-4.justify-content-center > .article-card-col.d-none {
   display: none !important;
+}
+
+
+/* Hall pass cards sit on the tan band, so they carry the navy card surface
+   with light copy instead of the tan they used when the band was dark. */
+#hallPassCarousel .hallpass-card {
+  background-color: var(--dark) !important;
+  }
+#hallPassCarousel .hallpass-card h1,
+#hallPassCarousel .hallpass-card h2,
+#hallPassCarousel .hallpass-card h3,
+#hallPassCarousel .hallpass-card h4,
+#hallPassCarousel .hallpass-card h5,
+#hallPassCarousel .hallpass-card h6,
+#hallPassCarousel .hallpass-card .card-title {
+  color: #ffffff !important;
+  }
+#hallPassCarousel .hallpass-card .card-text {
+  color: var(--offwhite) !important;
+  }
+
+/* Footer band: give the navy strip room for the constellation canvas.
+   Mobile already carries a 90px body pad below the footer, so keep this modest. */
+footer.bg-custom-dark {
+  padding: 2.5rem 1rem 2rem;
+  }
+footer.bg-custom-dark p {
+  margin-bottom: 0;
+  }
+
+/* ==========================================================================
+   Mobile Accordions for Content Patterns (#ux-content-patterns)
+   ========================================================================== */
+.pattern-accordion-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.pattern-accordion-btn:hover,
+.pattern-accordion-btn:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(232, 196, 124, 0.5);
+  color: #ffffff;
+}
+
+.pattern-accordion-btn .pattern-chevron {
+  transition: transform 0.2s ease;
+  font-size: 0.9rem;
+  color: #e8c47c;
+}
+
+.pattern-accordion-btn:not(.collapsed) .pattern-chevron {
+  transform: rotate(180deg);
+}
+
+.pattern-accordion-btn:not(.collapsed) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: rgba(232, 196, 124, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 767.98px) {
+  .pattern-collapse-body {
+    background: rgba(0, 0, 0, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 1rem 1rem 0.5rem 1.25rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
