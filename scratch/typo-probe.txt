@@ -1,0 +1,636 @@
+Desktop navigation
+Pedro Vega, home
+Language: English
+Mobile navigation
+Technical writing
+UX writing
+Articles
+About me and Contact
+Languages
+Recordkeeping
+LinkedIn
+GitHub profile
+Software/Dev Docs
+Sweepy job search documentation
+Sweepy source code on GitHub
+Open TypeScript SDK Sui Documentation Sample
+TypeScript SDK Sui Documentation Sample
+Open Stripe API Documentation Sample
+Stripe API Documentation Sample
+Onboarding sample
+Banking app onboarding flow sample
+Open InnoGear Aromatherapy Diffuser User Manual
+InnoGear Aromatherapy Diffuser User Manual
+Open Vaccine Refrigerator User Manual
+Vaccine Refrigerator User Manual
+Open Recordkeeping documentation sample
+Recordkeeping site logo
+Open Education in the Dominican Republic article
+Education in the Dominican Republic
+Open Breast Milk Freezer User Manual
+Breast Milk Freezer User Manual
+Open Frost-Free Warming and Cooling Drawer sample
+Frost-Free Warming and Cooling Drawer
+width=device-width, initial-scale=1.0
+Technical writing portfolio of Pedro Vega. Software documentation, API guides, UX writing, and docs-as-code.
+website
+https://pvega62.github.io/
+Pedro Vega | Technical Writer
+https://pvega62.github.io/images/social-card.png
+summary_large_image
+Skip to main content
+Home
+Introduction
+Sweepy
+Cloud Data Pipelines
+TypeScript Tutorial
+Stripe API
+Pet Store API
+Commit Messages and Pull Requests
+Ask Artie AI Assistant Case Study
+Google Chrome Theme
+Writage Workflow
+Hardware Samples
+Blog
+About me
+Contact
+GitHub
+e-mail
+English
+Español
+Français
+Technical Writer. UX Writer. Content Designer.
+I just really like words.
+For years, I have aimed my career at one goal: making complex concepts clear to a general audience. As
+a tutor, a journalist, and a technical writer, I build content people can read once and understand.
+This portfolio collects samples from each area. You'll find articles, user guides, API references, and
+UX writing. I built each sample in Swagger and Postman to show clear developer workflows.
+Sweepy, an open source tool for job searches
+Sweepy scans
+Greenhouse
+Ashby
+Lever
+Workable
+, and
+the Built In NYC board for open roles. One command reads a PDF or Word resume and scores each posting.
+Sweepy checks every link before the report runs. A sweep ends with a ranked PDF and a CSV tracker.
+Optional engines add more job boards.
+I built Sweepy as an open source
+Python
+package. The command-line entry
+point is
+swee.py
+, which runs a sweep. A companion
+server.py
+exposes the same engine to AI
+assistants over the
+Model Context Protocol
+(MCP).
+PyMuPDF
+parses resumes.
+ReportLab
+renders the PDF cards, and YAML profiles make each search portable. Sweepy uses the MIT license.
+I wrote the code and all 13 documentation pages. The
+Sweepy docs
+cover setup, scoring, and the MCP tools. A
+Mermaid
+diagram maps the
+five-stage pipeline, and
+Vale
+enforces my
+style guide
+on every page.
+Selected Works
+Built a docs set for the Sui TypeScript SDK. A guide and a tutorial show
+developers how to read and write blockchain data. API reference pages cover
+SuiClient
+queries.
+Wrote
+REST API
+docs in
+Markdown
+with
+VS Code
+and
+. Tested every endpoint in
+Postman
+. Kept the docs
+in a
+GitHub Wiki
+and documented the auth flow. The sample shows a full developer docs workflow.
+Banking App Onboarding Flow
+This sample walks a new user through a full onboarding flow for a
+financial app. The copy builds trust with a confident, clear, professional tone under tight character
+limits.
+Fixed translation errors in an existing guide. Rewrote each step and
+reordered the layout. Users can now follow the setup.
+Wrote a manual for a vaccine refrigerator. It covers temperature checks
+and alarms. It also explains cold-storage rules from the Centers for Disease Control and Prevention
+(CDC).
+Built a site to catalog my vinyl records. It uses HTML, Bootstrap, and
+JavaScript.
+Wrote an article about schools in the Dominican Republic. It's part of a
+series on UN development goals.
+Wrote the manual for a freezer that stores breast milk in hospitals. It
+covers safety, setup, and temperature control.
+Wrote the manual for a warming and cooling drawer. It covers temperature
+control, Sabbath mode, and setup.
+© 2026 Pedro Vega | Built with HTML • CSS • JS • GitHub Pages
+Pedro Vega home
+Knicks victory ticker
+Larry O'Brien Trophy
+No UFOs
+YouTube video player
+Learn more about Pedro Vega, Technical Writer, UX Writer, and Content Designer based in New York.
+https://pvega62.github.io/aboutme
+About Me | Pedro Vega
+About Me
+The writer you're about to hire!
+I'm a technical writer who specializes in making complex technology understandable for everyone. With a background in IT support, publishing, and journalism, I excel at creating clear, user-focused documentation. I reduce customer frustration and give users more control over the tools they use. Whether it's API guides, tutorials, or prompt engineering, I translate "technobabble" into plain English.
+My first job was as a media services technician at the New York City College of Technology, where I studied at the time. Guiding non-technical users through troubleshooting started my technical writing career.
+I view my role as that of a translator, a skill I've honed since childhood. As the child of an immigrant family, I was often the designated translator for English and legalese. I still use that skill today, bridging the gap between complex technology and the people who use it.
+Skill Set
+Technical & API Documentation
+Core Documentation:
+Docs-as-Code · REST & OpenAPI · MCP Integration · IA · SOPs · Quickstarts · CI/CD
+Developer Tools:
+Git (GitHub, GitLab) · Linux/CLI · Docker · VS Code · Postman · Swagger · Docusaurus · Algolia · Jira · Notion
+UX Writing & Content Design
+Design Practice:
+UX Writing · Microcopy · Prompt Design · Content Systems · UX Research · Wireframes · WCAG Accessibility
+Design Tools:
+Figma · Snagit · MS Word
+Hardware & Systems
+Systems & QA:
+Medical & Consumer Hardware · Hardware Testing · Commercial Displays & AV · Signal Routing · Network Cabling · SOPs · Equipment Logs
+Technical Stack & AI
+Stack & Languages:
+HTML · CSS · JavaScript · TypeScript · Markdown · React · Node.js · Bootstrap
+AI Models & Prompting:
+Gemini · Claude · GPT (Prompt Design for UI Microcopy, Error States & Technical Docs)
+AI Systems & Tooling:
+Model Context Protocol (MCP) for Localization & Tooling · DeepL & Lara (TMX) · Semantic Search · Galileo · Vale
+Additional & Languages
+Publishing & Translation:
+SEO Optimization · Technical Translation · AP Style · Adobe Suite (InDesign, Illustrator, Acrobat) · MadCap Flare
+Languages:
+Spanish (Fluent) · French (Intermediate)
+Relevant Experience
+View Full Resume Here
+Freelance Technical Writer
+Remote | April 2024 - Present
+Owned the full documentation lifecycle for developer-facing projects, authoring API references and SDK guides for cloud data routing architectures that integrate with Datadog log pipelines and Galileo LLM tracing.
+Documented TypeScript SDK methods and logic for the Sui blockchain platform, producing quickstarts and walkthrough guides with working code examples.
+Authored developer cookbooks and tutorials, including a step-by-step guide on setting up Postman mock servers to confirm REST API endpoints.
+Managed OpenAPI specifications to document REST API endpoints to draft end-to-end API documentation architecture.
+Integrated generative AI tools and Model Context Protocol (MCP) servers into a local CLI. Connected Vale, DeepL, and Figma to a Gemini CLI to automate linting, translation, and development workflows.
+Engineered an advanced search architecture for custom HTML and Docusaurus sites, integrating Algolia and AskAI to add generative AI and semantic search across complex documentation.
+AV & IT Specialist (Contract)
+SmartIT | New York, NY | March 2026
+Executed physical AV and IT infrastructure setup for an enterprise office migration in NYC, assembling and mounting commercial displays, TVs, and workstation hardware across conference rooms and open areas.
+Routed, connected, and managed power, video, and network cabling across executive meeting spaces to ensure clean, functional hardware setups.
+Tested and verified display inputs, video feeds, and desktop connections post-installation to confirm every unit ran cleanly for end users.
+UX Writer
+Culangex | Remote | December 2024 - January 2026
+Collaborated with cross-functional teams to co-author the product style guide that kept brand voice consistent and met WCAG accessibility standards.
+Partnered with the agile development team to manage UI text, error messages, and tooltips, keeping product copy consistent from design review to release.
+Translated user-facing content for the Spanish localization team, positioning the product for launch in Spanish-speaking markets.
+Technical Writer
+Felix Storch Inc. | The Bronx, NY | March 2022 - February 2024
+Managed documentation for 5 consumer and medical hardware brands, authoring 150+ manuals and installation guides with Spanish and French sections for Latin America and Canada.
+Interviewed engineers and product owners for every revision, converting firmware, hardware specs, and regulatory constraints into user-facing instructions.
+Standardized document control templates and publishing workflows, reducing manual production times by 40%.
+Triaged documentation requests from support, regulatory, and product teams, enforcing one documentation standard without a writing team.
+THE NEW YORK KNICKS ARE CHAMPIONS OF THE WORLD! 🗽
+ALIEN THREAT: NEUTRALIZED
+Interests (Life from 5 to 9)
+Reading prose and graphic novels.
+Movies
+Music
+The New York Yankees (supporting NY sports hasn't been easy, except for those New York Knicks!) Shout-out to
+de lo mio personal,
+#BigBodegaKAT! I hereby pledge my unyielding fealty to Captain Jalen Brunson, born to play basketball.
+Doodling
+Tinkering. I love exploring new tech and disassembling gadgets to see how they work. I even took a few shocks as a child while dismantling cameras.
+AND
+Song of the Moment
+AYE! THE NEW YORK KNICKS ARE THE BEST IN THE WORLD. NUMBER ONE. THE BEST IN THE WORLD.
+Pedro Vega
+Filter articles by topic
+Open 4 Ways to Use Tech Article
+4 Ways to Use Tech Against the Pandemic
+Open Education in the Dominican Republic Article
+Education in the Dominican Republic Article
+Open Gender Equality in the Dominican Republic Article
+Gender Equality in the Dominican Republic Article
+Open Global Pandemic Exacerbates Hunger in Puerto Rico Article
+Global Pandemic Exacerbates Hunger in Puerto Rico Article
+Open Healthcare in the Dominican Republic Article
+Healthcare in the Dominican Republic Article
+Open Homelessness in Guyana Article
+Homelessness in Guyana Article
+Open Hunger in the Dominican Republic Article
+Hunger in the Dominican Republic Article
+Open Samsung Global Goals Article
+Samsung Global Goals Article
+Open Poverty in the Dominican Republic Article
+Poverty in the Dominican Republic Article
+Published articles and journalism on global poverty, healthcare, education, and technology by Pedro Vega.
+https://pvega62.github.io/articles
+Articles | Pedro Vega
+A collection of published articles on global poverty, public healthcare, international development, and technology. Pieces cover the Dominican Republic, Puerto Rico, Guyana, and global development initiatives.
+Filter by Topic
+All
+Social Impact & Poverty
+Healthcare & Crisis
+Human Rights & Education
+Tech & SDGs
+Published articles
+How healthcare teams could have used technology to respond to coronavirus disease 2019 (COVID-19).
+Education in the Dominican Republic, how poverty shapes it, and the initiatives working to improve it.
+Gender Equality in the Dominican Republic: An Update
+Where gender equality stands in the Dominican Republic, and what has changed.
+Global Pandemic Exacerbates Hunger in Puerto Rico
+How the global pandemic and Hurricane Maria worsened hunger in Puerto Rico.
+Better Care: Healthcare in the Dominican Republic
+Healthcare in the Dominican Republic, and the people it serves.
+The Inherited Burden: Homelessness in Guyana
+Homelessness in Guyana, and the burden it passes down.
+Hunger in the Dominican Republic
+Hunger in the Dominican Republic, and the people it affects.
+The Samsung Global Goals App: Supporting SDGs With a Tap
+Samsung's initiatives tied to the UN Sustainable Development Goals.
+Poverty in the Dominican Republic
+Poverty in the Dominican Republic, and the people living through it.
+EQTemp Vaccine Refrigerator User Manual
+Open EQTemp Vaccine Refrigerator User Manual
+Open Frost-Free Warming and Cooling Drawer User Manual
+Open Handle Installation Instruction Sheet
+Handle Installation Instruction Sheet
+Open Instruction Manual for ADA-Compliant Range Hoods
+Instruction Manual for ADA-Compliant Range Hoods
+Open Remote Switch Installation for ADA Compliant Wall Mounted Range Hoods
+Remote Switch Installation for ADA Compliant Wall Mounted Range Hoods
+Open ADA Conversion (ADRD18H34)
+ADA Conversion (ADRD18H34)
+Open PNR Installation Instructions
+PNR Instructions
+Open Instant Wardrobe Changing Sliding Pole Installation Guide
+Instant Wardrobe Changing Sliding Pole Installation Guide
+Hardware documentation, quick start guides, user manuals, and technical specifications by Pedro Vega.
+https://pvega62.github.io/technical-writing-hardware
+Technical Writing (Hardware) | Pedro Vega
+Hardware Technical Writing
+This page collects hardware documentation, from medical-grade refrigeration units to household appliances and consumer electronics. The samples come primarily from my work as a Technical Writer for Felix Storch, Inc., whose brands include Summit, EQTemp, and MOMCUBE. The collection covers user manuals, installation guides, and ADA compliance instructions.
+Featured sample
+User manual for a vaccine refrigerator. Covers temperature monitoring, alarm systems, and CDC storage requirements.
+Filter the library by industry
+Medical & Cold Chain
+Appliances & Commercial
+ADA Compliance
+Consumer Tech
+3 -> 3) on desktop -->
+Hardware documentation sample library
+Frost-Free Warming and Cooling Drawer User Manual
+User manual for the SPHC30/36 dual-function warming and cooling drawer. Covers temperature control, Sabbath mode, and installation.
+Breast Milk Freezer
+User manual for a medical-grade freezer that stores breast milk. Covers safety protocols, installation, and temperature management.
+Installation guide for an appliance handle made of stainless steel. Lists required tools and mounting procedures.
+User manual for an ADA-compliant range hood. Covers operation, filter replacement, and cleaning.
+Rewritten translation of an existing diffuser guide. Fixes unclear instructions and reorganizes the layout so readers can scan each step.
+Installation guide for a remote switch on ADA-compliant wall-mounted range hoods. Specifies mounting height and wiring requirements.
+Instructions for converting the ADRD18H34 refrigerator to ADA compliance with a remote switch.
+PNR Installation Instructions
+Instructions for installing custom overlay panels on PNR series appliances. Lists panel dimensions and hinge adjustments.
+And for funsies…
+Bonus sample
+Installation guide for the instant wardrobe changing sliding pole from Wayne Enterprises.
+As seen on TV in
+Batman
+Pedro Vega Portfolio
+Open UX Writing sample: Banking App Onboarding Flow
+UX Writing Case Study: Banking App Onboarding Flow
+Open UX Writing sample: App Error with Unknown Cause
+Version preview switcher
+UX Writing Case Study: App Error with Unknown Cause
+Open UX Writing sample: Flight Cancellation Notification
+UX Writing Case Study: Flight Cancellation Notification
+Open UX Writing sample: Fire Alert Notification
+UX Writing Case Study: Fire Alert Notification
+Open UX Writing sample: Expired Credit Card Error
+UX Writing Case Study: Expired Credit Card Error
+Open UX Writing sample: "Fake Name" Error Message
+UX Writing Case Study: "Fake Name" Error Message
+Open UX Writing sample: Contact Lens Subscription - Title & Meta Description
+UX Writing Case Study: Contact Lens Subscription - Title & Meta Description
+Open UX Writing sample: Truck Driver Delay Notification
+UX Writing Case Study: Truck Driver Delay Notification
+Open UX Writing sample: Car Buying Website Location Request
+UX Writing Case Study: Car Buying Website Location Request
+Open UX Writing sample: App Crash Recovery Message
+UX Writing Case Study: App Crash Recovery Message
+Open UX Writing sample: Grocery Subscription Promotion
+UX Writing Case Study: Grocery Subscription Promotion
+Open UX Writing sample: Incorrect Email Error Message
+UX Writing Case Study: Incorrect Email Error Message
+Open UX Writing sample: Sports Fan App Promotion
+UX Writing Case Study: Sports Fan App Promotion
+Open UX Writing sample: Concert Promotion
+UX Writing Case Study: Concert Promotion
+Open UX Writing sample: Rivalry Score Update
+UX Writing Case Study: Rivalry Score Update
+Open Spidey Bathroom Pass sample
+Classroom Hall Pass: The Spidey Bathroom Pass
+Open Hulk Hall Pass sample
+Classroom Hall Pass: The Hulk Hall Pass
+The Spidey Bathroom Pass
+The Hulk Hall Pass
+Previous Pass
+Next Pass
+Close
+Figma prototype viewer
+UX writing, microcopy, content design, and user flow documentation samples by Pedro Vega.
+https://pvega62.github.io/uxwriting
+UX Writing | Pedro Vega
+Screen copy, error states, and notification copy written to real character limits, each published as an interactive Figma prototype.
+Each study isolates a specific user drop-off point and supplies constraint-driven screen copy. These 18 portfolio projects demonstrate systematic UX content design. Content Patterns below outlines the underlying rules.
+Filter by pattern
+Product Flows
+Alert Copy
+Error States
+Onboarding & Trust
+Subscription & Meta Copy
+User Problem & Context:
+New banking app users feel anxious and abandon multi-step financial setup. Guide them through account creation, bill categorization, and automatic monthly payments while building trust in security.
+Constraints
+headline:
+45 characters
+body:
+100 characters
+buttons:
+25 characters
+View Strategy & Rationale
+Hide Strategy & Rationale
+Strategy & Rationale
+The strategy builds trust at each step. Plain, calm copy makes bill automation feel safe. Each screen shows one benefit so users aren't overwhelmed.
+Screen 1: The Core Value Proposition.
+The first screen addresses convenience right away with the headline
+Never fear, Paymate's here!
+and establishes the primary benefit: automated bills and timely reminders.
+Screen 2: Building Security Trust.
+Before asking for user data, the second screen addresses user security concerns directly. The headline
+Fort Knox security. In your pocket.
+uses a familiar metaphor to convey safety, while the body copy lists the safeguards that protect the account.
+Screen 3: Highlighting Smart Features.
+This screen introduces automated bill categorization. The headline
+Smartphone, smart banking, smart user
+reinforces user agency and highlights system intelligence.
+Screens 4-7: The Setup Process.
+After the first screens build trust, the flow moves to account creation and payment setup. Concise microcopy (
+Enough about us, let's focus on you.
+) guides the user through manageable forms, culminating in a clear success confirmation (
+Welcome Aboard!
+Business Impact & Intended Outcome
+Progressive disclosure reduces anxiety one step at a time, which cuts setup friction and lifts completion rates. The flow turns a complex financial signup into a high-trust, low-friction journey.
+Prototype
+Approved v2
+Draft 1 Scrapped
+App Error with Unknown Cause
+A system outage blocks access to price comparison data and returns no error code. Tell the user plainly what happened, prevent churn, and offer recovery options right away.
+30 characters max
+120 characters max
+15 characters max
+This case study shows how a voice gets calibrated and why a first draft can fail. When users lose the app's core function, humor feels dismissive. The design moves from flippant fiction to direct, transparent, empathetic recovery.
+Draft 1 (Scrapped, First-Draft Failure).
+Headline:
+ERROR CODE: 42
+(14 chars) • Body:
+"It looks like the elf we have tracking your prices (Alan) stepped out for a quick call or something. Let's give Al a second. If you're in a rush, try our website."
+(162 chars) • Buttons:
+RETRY
+WEBSITE
+Why it failed:
+flippant humor frustrates users during an outage. The whimsical narrative delays recovery and runs past the 120-character limit. The invented error code also hides the root cause.
+Draft 2 (Approved, Calibrated Copy).
+Prices are unavailable.
+(23 chars) • Body:
+"We can't load prices right now. Please try again soon or visit our website for the latest info and prices."
+(106 chars) • Buttons:
+Why it succeeded:
+complete transparency states the system constraint directly without technical jargon. Clear dual-path recovery (
+versus
+) preserves user agency and protects brand credibility.
+Content Strategy Takeaway.
+Strong content design requires knowing when
+not
+to use humor. Critical error recovery demands total clarity, empathy, and rapid recovery paths over playful branding.
+Clear copy protects the brand during an outage. When users can recover on their own, support tickets drop and engagement holds.
+Flight Cancellation Notification
+Severe weather cancels a traveler's flight without warning. Alert the passenger immediately with directions to the rebooking desk, written so they can act without panic.
+175 characters max
+25 characters max
+A flight disruption needs a direct voice. Fast comprehension beats small talk.
+FLIGHT CANCELLED. GO TO HELP DESK
+delivers maximum scannability, answering what happened and where to go in one glance.
+Body:
+The copy gives the specific flight (
+DOC063
+) and the cause ("inclement weather"). It reinforces direct action: "Please head to the help desk."
+Buttons:
+The
+Got it
+button dismisses the alert, while
+Airport Map
+opens wayfinding so travelers can orient themselves inside large terminals.
+Plain wording calms the traveler and routes the crowd toward the service counters. Fast mobile wayfinding reduces distress and protects long-term brand goodwill during severe disruptions.
+Fire Alert Notification
+An active wildfire near a driver's commute threatens road closures and personal safety. Deliver an urgent notification that reads in one glance and prompts immediate, safe rerouting.
+45 characters max
+Safety alerts that reach drivers must read in one glance.
+Design and Tone:
+High-contrast warning colors and concise all-caps typography communicate urgent safety priority without cluttering the screen.
+FIRE ON ATLANTIC AVE
+communicates danger and geographic proximity in under 25 characters.
+FIRE MAY AFFECT YOUR ROUTE. REROUTE.
+instructs action without diverting attention from driving.
+Button:
+REROUTE TO SAFETY
+makes the action decisive and safety-focused.
+Putting driver safety first keeps users out of danger zones and meets the platform's duty to protect them.
+Expired Credit Card Error
+A customer tries to finish a time-sensitive car rental reservation, but the saved card has expired. Point to the exact problem and send the user to update the details without losing the booking.
+30 characters
+Checkout payment errors need a direct, clear way out. Ambiguity here loses the sale.
+YOUR CARD IS EXPIRED!
+gives the exact breakdown instantly, so users don't mistake it for a credit limit, a network drop, or expired credentials.
+Update card details or add a new one
+gives clear instructions for clearing the payment obstacle right away.
+UI Alignment:
+Visual form cues highlight the expiration date field, which pulls the eye straight to the fix.
+Clear copy about a failed payment saves the sale.
+"Fake Name" Error Message
+Automated fraud detection flags a legitimate user's unique or uncommon name during account creation. Prompt identity verification respectfully without alienating or shaming the user.
+message:
+Automated fraud checks often mark unusual and culturally diverse names as risky. The copy turns that doubt into a polite request for proof.
+Inclusive, Affirming Tone:
+Rather than issuing a negative error code,
+That's an interesting name!
+turns an automated rejection into a courteous human exchange.
+Collaborative Microcopy:
+Please help us verify it
+invites the user to help instead of issuing an accusation.
+Direct Verification Pathway:
+An embedded verification link confirms identity right away without forcing the user out of the flow.
+Empathy in an error message keeps diverse customers on board and protects lifetime value.
+Contact Lens Subscription - Title & Meta Description
+Visually impaired and elderly users experience tech anxiety when considering recurring medical deliveries. Craft search-optimized title and meta copy that builds trust and emphasizes effortless, doorstep replenishment.
+title:
+65 characters max
+meta description:
+160 characters max
+Accessible health care needs plain words and large, clear text for older readers.
+Title:
+VisionQuest: Hassle-Free Contact Lens Delivery Every 30 Days!
+emphasizes reliability and a predictable service cadence.
+Meta Description:
+The description puts a number on setup time ("15 minutes or less") and leads with doorstep delivery, which lowers the effort users expect.
+Clear, accessible metadata brings qualified clicks from careful buyers and grows subscriptions.
+Truck Driver Delay Notification
+A short-haul driver runs late because of highway traffic. Deliver a push notification that reads in one glance and offers fast routing choices without pulling attention off the road.
+Logistics notifications must stay short so drivers keep their attention on the road.
+Non-Accusatory Tone:
+The headline
+Running Late?
+assigns no blame, so a sync lag or a traffic jam fits either way.
+Extreme Brevity:
+Short phrasing reads cleanly through audio screen assistants.
+Actionable Choices:
+Fuel up now or keep going?
+pairs with two distinct buttons (
+REROUTE TO PITSTOP
+KEEP GOING
+). The choice takes one tap.
+Timely notifications keep deliveries on schedule and protect driver welfare.
+Car Buying Website Location Request
+A vehicle marketplace needs the user's location to show local inventory and regional pricing. Ask for it transparently so privacy doubts don't cost the sale.
+button:
+15 characters
+Users grant permission when the interface ties data collection to a clear benefit.
+Benefit-Oriented Headline:
+Your dream car is here.
+leads with the user's goal, not the company's data need.
+Engaging Personality:
+Playful microcopy
+(Yes, even THAT one)
+builds a friendly brand voice.
+Privacy-Conscious Input:
+Asking for a ZIP code instead of a street address respects privacy and still fills regional inventory.
+Compelling CTA:
+VIEW OUR DEALS
+frames data entry as unlocking discounts instead of handing over personal details.
+Clear value framing raises how many users say yes and moves them into browsing.
+App Crash Recovery Message
+An unexpected shutdown interrupts a graphic designer mid-critique. Reassure the user at restart, confirm whether recovery worked, and offer plain paths to restore or start fresh.
+40 characters max
+140 characters max
+20 characters max
+System failures cause acute anxiety about lost work. The restart dialog has to confirm recovery at once and get the user back to work.
+ACME DESIGNS Crashed Unexpectedly
+names the failure without excuses.
+Your design files were recovered
+immediately confirms recovery before offering workspace options.
+Restore
+New
+give two clear actions.
+A clear crash message keeps user trust and cuts app abandonment.
+Grocery Subscription Promotion
+Introduce a flat-fee monthly grocery delivery subscription on an in-app landing screen. Communicate recurring convenience and cost transparency without pressure tactics.
+Subscription upsells work when they frame the service around convenience and honest pricing.
+ENJOY THE COMFORT OF HOME WE'LL SHOP FOR YOU.
+leads with the time the user gets back.
+Concrete details ("month's worth of groceries," "flat fee of $20/mo") establish clear value with no hidden terms.
+LEARN MORE
+offers a low-friction way in, while
+NO THANKS
+gives a respectful exit with no guilt.
+Honest subscription copy keeps customers longer than hard sells do.
+Incorrect Email Error Message
+A returning user types an email that's mistyped or not on file. State the specific sign-in problem and echo the input so the typo shows right away without revealing whether an account exists.
+Sign-in friction is a top drop-off point. An explicit error message moves users straight to the fix.
+Targeted Clarity:
+Retype email address, '[email]'
+tells the user exactly where the mismatch is and echoes their entry so the typo is visible right away.
+Direct Action Verb:
+Leading with the imperative "Retype" names the next step without ambiguity.
+Targeted inline feedback cuts password reset requests and unblocks sign-in fast.
+Sports Fan App Promotion
+Busy parents and sports fans can't follow live broadcasts. Highlight on-demand recaps, team alerts, and short score updates so users stop dreading that they missed something (FOMO).
+Promotional onboarding copy speaks to busy schedules with energy.
+Headline & Body:
+Don't miss hoops, stay in the loop!
+positions the app as an active assistant. The copy directly addresses packed game schedules.
+Direct CTA:
+Score a win against FOMO!
+turns the urge to keep up into a subscription.
+Tying app benefits to busy schedules raises activation and daily opt-ins.
+Concert Promotion
+An in-app streaming service spots local tour dates for an artist the user plays. Turn casual listening into presale interest with targeted, exclusive copy.
+Event promotions use listening history to deliver timely offers.
+Headline & Tone:
+YEAH! YEAH! YEAH!
+The Beatles are back in your city!
+evoke nostalgia and local excitement.
+Aspirational Labeling:
+Referring to casual listeners as "loyal listeners" deepens the connection and motivates participation. Prominent presale code styling (
+FAB4
+) makes redemption one tap.
+The direct
+PRESALE
+CTA sends users straight into ticketing.
+Context-aware ticketing microcopy turns casual music listeners into ticket buyers.
+Rivalry Score Update
+A fan at a formal event needs discreet, instant updates on the rivalry game they follow. Deliver a push alert with the score, the player, and the play outcome in under 50 characters.
+50 characters max
+A discreet alert gives the most information in the shortest glance.
+ALL RISE FOR GRAND SLAM
+uses franchise vocabulary fans recognize, signaling the turning point before the user reads the body text.
+The code gives the scorer and the new standings (
+Aaron Judge blasts a Grand Slam. NYY lead BOS 5-0
+Instant, glanceable alerts keep users connected during real-world events and drive engagement.
+Previous
+Next
+Content Patterns
+Design standards governing these portfolio studies. Each pattern documents trigger conditions, required voice, and copy structure.
+Error states
+State the cause in the first clause, before giving the fix.
+Put the recovery step second, as an imperative: "Re-enter the email you signed up with."
+Never blame the reader. The fake-name study shows the anti-pattern, then the rewrite.
+Enforce character limits of 45 for headlines and 100 for body copy, while capping button labels at 25.
+Drop exclamation marks on failure. Calm copy reads as competence.
+Alert copy
+Lead with the consequence and the timeframe, then the action.
+Provide one action per alert. Competing choices create decision fatigue during emergencies.
+Escalate by severity, not repetition. Capitalized keywords communicate urgency directly.
+State the user's next action instead of reporting internal system status.
+Subscription & meta copy
+Put the benefit in the headline. Put the price in the body.
+Cut urgency adjectives. "Ends Friday" beats "last chance."
+Write the meta description as a standalone sentence, because it renders without the page.
+Keep the button label to the outcome, not the mechanics.
+Case files outline design constraints, copy rationale, and final UI strings. The featured hall passes apply this same discipline to print media.
+Visual Design & Print Work
+Classroom Hall Passes
+Custom double-sided passes for high school classroom management, built with curated vintage comic art and two-tone print layouts. Redacted for privacy.
+Select card to view full PDF
+Custom pass with panels from Spider-Man's comic history, including the scene where Spider-Man explains everyday life to the Beyonder.
+Thought Bubble:
+Features panels from
+Secret Wars II #8
+, where Spider-Man explains everyday life to the Beyonder.
+Design Objective:
+Custom double-sided pass engineered to bring humor and personality to student hall management.
+Custom pass featuring panels from the Incredible Hulk's comic run.
+Curated explosive vintage panels from Big Green's comics capturing the transformation from Bruce Banner to the Hulk.
+An indestructible-themed classroom hall pass built to stand out and entertain hall monitors.
+6AD13C48C02990F8
+Algolia Verification

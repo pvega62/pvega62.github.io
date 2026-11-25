@@ -13,3 +13,6 @@ script_block.html
 # Spanish Sample Experiment (in progress)
 samples/technical-writing/hardware/es
 samples/technical-writing/hardware/momcube-fixes-es.md
+
+# Vale style packages, restored by 'vale sync'
+.vale/

@@ -1,0 +1,291 @@
+===== uxwriting.html [warning] 166 =====
+20:36 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | UX
+79:115 Google.WordList: Use 'Google Cloud Platform' or 'GCP' instead of 'Cloud'. | Cloud
+96:87 Google.FirstPerson: Avoid first-person pronouns such as 'me'. | me
+96:87 Microsoft.FirstPerson: Use first person (such as 'me') sparingly. | me
+104:83 Google.WordListCase: Use 'email' instead of 'e-mail'. | e-mail
+149:113 Google.WordList: Use 'Google Cloud Platform' or 'GCP' instead of 'Cloud'. | Cloud
+175:205 Google.FirstPerson: Avoid first-person pronouns such as 'me'. | me
+175:205 Microsoft.FirstPerson: Use first person (such as 'me') sparingly. | me
+182:81 Google.WordListCase: Use 'email' instead of 'e-mail'. | e-mail
+218:67 Google.Headings: 'UX Writing & Content Design' should use sentence-style capitalization. | UX Writing & Content Design
+221:1 Direct.Ease: This paragraph scores 14.00 on reading ease. Keep it above 50: short words, short sentences. | 
+222:1 Direct.Ease: This paragraph scores 38.00 on reading ease. Keep it above 50: short words, short sentences. | 
+222:127 write-good.TooWordy: 'demonstrate' is too wordy. | demonstrate
+245:1 Direct.Ease: This paragraph scores 34.00 on reading ease. Keep it above 50: short words, short sentences. | 
+250:42 Google.Headings: 'Banking App Onboarding Flow' should use sentence-style capitalization. | Banking App Onboarding Flow
+258:1 Direct.Ease: This paragraph scores 27.00 on reading ease. Keep it above 50: short words, short sentences. | 
+262:1 Direct.Ease: This paragraph scores 27.00 on reading ease. Keep it above 50: short words, short sentences. | 
+265:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+269:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+272:226 write-good.Adverbs: 'timely' can weaken meaning | timely
+277:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+280:1 Direct.Ease: This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences. | 
+298:208 Google.Headings: 'App Error with Unknown Cause' should use sentence-style capitalization. | App Error with Unknown Cause
+304:1 Direct.Ease: This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences. | 
+308:1 Direct.Ease: This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences. | 
+311:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+315:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+320:131 alex.ProfanityUnlikely: Be careful with 'Failure', it's profane in some cases. | Failure
+321:154 Google.We: Try to avoid using first-person plural like 'we'. | we
+321:154 Microsoft.We: Try to avoid using first-person plural like 'we'. | we
+321:233 Google.We: Try to avoid using first-person plural like 'Let's'. | Let's
+321:233 Microsoft.We: Try to avoid using first-person plural like 'Let's'. | Let's
+321:282 Google.We: Try to avoid using first-person plural like 'our'. | our
+321:282 Microsoft.We: Try to avoid using first-person plural like 'our'. | our
+322:59 alex.ProfanityUnlikely: Be careful with 'failed', it's profane in some cases. | failed
+326:141 Google.We: Try to avoid using first-person plural like 'We'. | We
+326:141 Microsoft.We: Try to avoid using first-person plural like 'We'. | We
+326:204 Google.We: Try to avoid using first-person plural like 'our'. | our
+326:204 Microsoft.We: Try to avoid using first-person plural like 'our'. | our
+335:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+338:1 Direct.Ease: This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences. | 
+344:42 Google.Headings: 'Flight Cancellation Notification' should use sentence-style capitalization. | Flight Cancellation Notification
+352:1 Direct.Ease: This paragraph scores 32.00 on reading ease. Keep it above 50: short words, short sentences. | 
+352:147 write-good.Adverbs: 'immediately' can weaken meaning | immediately
+356:1 Direct.Ease: This paragraph scores 40.00 on reading ease. Keep it above 50: short words, short sentences. | 
+359:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+363:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+366:88 write-good.TooWordy: 'maximum' is too wordy. | maximum
+370:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+371:1 Direct.Ease: This paragraph scores 49.00 on reading ease. Keep it above 50: short words, short sentences. | 
+373:1 Direct.Ease: This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences. | 
+379:42 Google.Headings: 'Fire Alert Notification' should use sentence-style capitalization. | Fire Alert Notification
+379:42 alex.ProfanityUnlikely: Be careful with 'Fire', it's profane in some cases. | Fire
+387:1 Direct.Ease: This paragraph scores 37.00 on reading ease. Keep it above 50: short words, short sentences. | 
+390:1 Direct.Ease: This paragraph scores 47.00 on reading ease. Keep it above 50: short words, short sentences. | 
+393:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+397:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+405:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+413:42 Google.Headings: 'Expired Credit Card Error' should use sentence-style capitalization. | Expired Credit Card Error
+424:1 Direct.Ease: This paragraph scores 31.00 on reading ease. Keep it above 50: short words, short sentences. | 
+427:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+431:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+436:67 write-good.TooWordy: 'expiration' is too wordy. | expiration
+438:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+439:23 alex.ProfanityUnlikely: Be careful with 'failed', it's profane in some cases. | failed
+441:1 Direct.Ease: This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences. | 
+447:42 Google.Headings: '“Fake Name” Error Message' should use sentence-style capitalization. | “Fake Name” Error Message
+455:1 Direct.Ease: This paragraph scores -4.00 on reading ease. Keep it above 50: short words, short sentences. | 
+455:77 alex.ProfanityLikely: Don't use 'fraud', it's profane. | fraud
+455:77 alex.ProfanityUnlikely: Be careful with 'fraud', it's profane in some cases. | fraud
+457:1 Direct.Ease: This paragraph scores 49.00 on reading ease. Keep it above 50: short words, short sentences. | 
+460:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+464:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+465:1 Direct.Ease: This paragraph scores 48.00 on reading ease. Keep it above 50: short words, short sentences. | 
+465:14 alex.ProfanityLikely: Don't use 'fraud', it's profane. | fraud
+465:14 alex.ProfanityUnlikely: Be careful with 'fraud', it's profane in some cases. | fraud
+471:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+472:1 Direct.Ease: This paragraph scores 42.00 on reading ease. Keep it above 50: short words, short sentences. | 
+479:42 Google.Headings: 'Contact Lens Subscription - Title & Meta Description' should use sentence-style capitalization. | Contact Lens Subscription - Title & Meta Description
+487:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+490:1 Direct.Ease: This paragraph scores 36.00 on reading ease. Keep it above 50: short words, short sentences. | 
+493:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+497:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+503:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+504:1 Direct.Ease: This paragraph scores 18.00 on reading ease. Keep it above 50: short words, short sentences. | 
+504:48 Microsoft.UIVerbs: Use 'select' instead of the input-specific verb 'clicks'. | clicks
+511:42 Google.Headings: 'Truck Driver Delay Notification' should use sentence-style capitalization. | Truck Driver Delay Notification
+523:1 Direct.Ease: This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences. | 
+526:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+530:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+537:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+538:1 Direct.Ease: This paragraph scores 11.00 on reading ease. Keep it above 50: short words, short sentences. | 
+538:4 write-good.Adverbs: 'Timely' can weaken meaning | Timely
+538:72 alex.ProfanityLikely: Don't use 'welfare', it's profane. | welfare
+545:42 Google.Headings: 'Car Buying Website Location Request' should use sentence-style capitalization. | Car Buying Website Location Request
+553:1 Direct.Ease: This paragraph scores 42.00 on reading ease. Keep it above 50: short words, short sentences. | 
+557:1 Direct.Ease: This paragraph scores 27.00 on reading ease. Keep it above 50: short words, short sentences. | 
+560:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+564:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+565:1 Direct.Ease: This paragraph scores 37.00 on reading ease. Keep it above 50: short words, short sentences. | 
+572:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+573:35 write-good.Adverbs: 'many' can weaken meaning | many
+580:42 Google.Headings: 'App Crash Recovery Message' should use sentence-style capitalization. | App Crash Recovery Message
+580:46 alex.ProfanityUnlikely: Be careful with 'Crash', it's profane in some cases. | Crash
+588:1 Direct.Ease: This paragraph scores 39.00 on reading ease. Keep it above 50: short words, short sentences. | 
+592:1 Direct.Ease: This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences. | 
+595:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+599:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+602:89 alex.ProfanityUnlikely: Be careful with 'failure', it's profane in some cases. | failure
+603:74 write-good.Adverbs: 'immediately' can weaken meaning | immediately
+606:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+607:12 alex.ProfanityUnlikely: Be careful with 'crash', it's profane in some cases. | crash
+609:1 Direct.Ease: This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences. | 
+615:42 Google.Headings: 'Grocery Subscription Promotion' should use sentence-style capitalization. | Grocery Subscription Promotion
+623:1 Direct.Ease: This paragraph scores 21.00 on reading ease. Keep it above 50: short words, short sentences. | 
+627:1 Direct.Ease: This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences. | 
+630:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+634:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+641:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+644:1 Direct.Ease: This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences. | 
+650:42 Google.Headings: 'Incorrect Email Error Message' should use sentence-style capitalization. | Incorrect Email Error Message
+650:52 Google.WordListCase: Use 'email' instead of 'Email'. | Email
+660:1 Direct.Ease: This paragraph scores 49.00 on reading ease. Keep it above 50: short words, short sentences. | 
+663:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+667:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+670:100 write-good.Adverbs: 'exactly' can weaken meaning | exactly
+673:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+681:42 Google.Headings: 'Sports Fan App Promotion' should use sentence-style capitalization. | Sports Fan App Promotion
+693:1 Direct.Ease: This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences. | 
+696:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+700:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+701:1 Direct.Ease: This paragraph scores 19.00 on reading ease. Keep it above 50: short words, short sentences. | 
+706:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+707:1 Direct.Ease: This paragraph scores 47.00 on reading ease. Keep it above 50: short words, short sentences. | 
+709:1 Direct.Ease: This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences. | 
+715:42 Google.Headings: 'Concert Promotion' should use sentence-style capitalization. | Concert Promotion
+723:1 Direct.Ease: This paragraph scores 45.00 on reading ease. Keep it above 50: short words, short sentences. | 
+727:1 Direct.Ease: This paragraph scores 40.00 on reading ease. Keep it above 50: short words, short sentences. | 
+730:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+734:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+735:1 Direct.Ease: This paragraph scores 10.00 on reading ease. Keep it above 50: short words, short sentences. | 
+735:54 write-good.Adverbs: 'timely' can weaken meaning | timely
+741:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+742:1 Direct.Ease: This paragraph scores -4.00 on reading ease. Keep it above 50: short words, short sentences. | 
+744:1 Direct.Ease: This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences. | 
+750:42 Google.Headings: 'Rivalry Score Update' should use sentence-style capitalization. | Rivalry Score Update
+761:1 Direct.Ease: This paragraph scores 47.00 on reading ease. Keep it above 50: short words, short sentences. | 
+764:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+768:1 Google.Headings: 'Strategy & Rationale' should use sentence-style capitalization. | Strategy & Rationale
+774:24 Google.Headings: 'Business Impact & Intended Outcome' should use sentence-style capitalization. | Business Impact & Intended Outcome
+775:1 Direct.Ease: This paragraph scores 31.00 on reading ease. Keep it above 50: short words, short sentences. | 
+784:1 Direct.Ease: This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences. | 
+802:50 Google.Headings: 'Content Patterns' should use sentence-style capitalization. | Content Patterns
+803:1 Direct.Ease: This paragraph scores 24.00 on reading ease. Keep it above 50: short words, short sentences. | 
+819:31 alex.ProfanityUnlikely: Be careful with 'failure', it's profane in some cases. | failure
+871:60 Google.Headings: 'Classroom Hall Passes' should use sentence-style capitalization. | Classroom Hall Passes
+894:37 Google.Headings: 'The Spidey Bathroom Pass' should use sentence-style capitalization. | The Spidey Bathroom Pass
+895:1 Direct.Ease: This paragraph scores 40.00 on reading ease. Keep it above 50: short words, short sentences. | 
+911:38 write-good.TooWordy: 'Objective' is too wordy. | Objective
+912:1 Direct.Ease: This paragraph scores 27.00 on reading ease. Keep it above 50: short words, short sentences. | 
+934:37 Google.Headings: 'The Hulk Hall Pass' should use sentence-style capitalization. | The Hulk Hall Pass
+935:1 Direct.Ease: This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences. | 
+943:1 Direct.Ease: This paragraph scores 41.00 on reading ease. Keep it above 50: short words, short sentences. | 
+951:38 write-good.TooWordy: 'Objective' is too wordy. | Objective
+952:1 Direct.Ease: This paragraph scores 43.00 on reading ease. Keep it above 50: short words, short sentences. | 
+966:1 Direct.Ease: This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences. | 
+
+===== aboutme.html [warning] 121 =====
+12:16 Google.FirstPerson: Avoid first-person pronouns such as 'Me'. | Me
+12:16 Microsoft.FirstPerson: Use first person (such as 'Me') sparingly. | Me
+87:115 Google.WordList: Use 'Google Cloud Platform' or 'GCP' instead of 'Cloud'. | Cloud
+104:87 Google.FirstPerson: Avoid first-person pronouns such as 'me'. | me
+104:87 Microsoft.FirstPerson: Use first person (such as 'me') sparingly. | me
+112:83 Google.WordListCase: Use 'email' instead of 'e-mail'. | e-mail
+157:113 Google.WordList: Use 'Google Cloud Platform' or 'GCP' instead of 'Cloud'. | Cloud
+173:94 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | UX
+173:113 Google.Colons: 'UX' should be in lowercase. | UX
+183:205 Google.FirstPerson: Avoid first-person pronouns such as 'me'. | me
+183:205 Microsoft.FirstPerson: Use first person (such as 'me') sparingly. | me
+190:81 Google.WordListCase: Use 'email' instead of 'e-mail'. | e-mail
+224:42 Google.Headings: 'About Me' should use sentence-style capitalization. | About Me
+224:48 Google.FirstPerson: Avoid first-person pronouns such as 'Me'. | Me
+224:48 Microsoft.FirstPerson: Use first person (such as 'Me') sparingly. | Me
+238:1 Direct.Ease: This paragraph scores 27.00 on reading ease. Keep it above 50: short words, short sentences. | 
+238:14 Google.FirstPerson: Avoid first-person pronouns such as 'I'm'. | I'm
+238:14 Microsoft.FirstPerson: Use first person (such as 'I'm') sparingly. | I'm
+238:172 Google.FirstPerson: Avoid first-person pronouns such as 'I'. | I
+238:172 Microsoft.FirstPerson: Use first person (such as 'I') sparingly. | I
+238:227 Google.FirstPerson: Avoid first-person pronouns such as 'I'. | I
+238:227 Microsoft.FirstPerson: Use first person (such as 'I') sparingly. | I
+238:369 Google.FirstPerson: Avoid first-person pronouns such as 'I'. | I
+238:369 Microsoft.FirstPerson: Use first person (such as 'I') sparingly. | I
+239:1 Direct.Ease: This paragraph scores 45.00 on reading ease. Keep it above 50: short words, short sentences. | 
+239:14 Google.FirstPerson: Avoid first-person pronouns such as 'My'. | My
+239:14 Microsoft.FirstPerson: Use first person (such as 'My') sparingly. | My
+239:112 Google.FirstPerson: Avoid first-person pronouns such as 'I'. | I
+239:112 Microsoft.FirstPerson: Use first person (such as 'I') sparingly. | I
+239:195 Google.FirstPerson: Avoid first-person pronouns such as 'my'. | my
+239:195 Microsoft.FirstPerson: Use first person (such as 'my') sparingly. | my
+240:14 Google.FirstPerson: Avoid first-person pronouns such as 'I'. | I
+240:14 Microsoft.FirstPerson: Use first person (such as 'I') sparingly. | I
+240:21 Google.FirstPerson: Avoid first-person pronouns such as 'my'. | my
+240:21 Microsoft.FirstPerson: Use first person (such as 'my') sparingly. | my
+240:62 Microsoft.FirstPerson: Use first person (such as 'I've') sparingly. | I've
+240:127 Google.FirstPerson: Avoid first-person pronouns such as 'I'. | I
+240:127 Microsoft.FirstPerson: Use first person (such as 'I') sparingly. | I
+240:191 Google.FirstPerson: Avoid first-person pronouns such as 'I'. | I
+240:191 Microsoft.FirstPerson: Use first person (such as 'I') sparingly. | I
+242:45 Google.Headings: 'Skill Set' should use sentence-style capitalization. | Skill Set
+257:57 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | UX
+266:58 Google.Colons: 'Medical' should be in lowercase. | Medical
+272:63 Google.Colons: 'HTML' should be in lowercase. | HTML
+273:67 Google.Colons: 'Gemini' should be in lowercase. | Gemini
+274:66 Google.Colons: 'Model' should be in lowercase. | Model
+282:83 Google.Colons: 'SEO' should be in lowercase. | SEO
+293:23 Google.Headings: 'Technical & API Documentation' should use sentence-style capitalization. | Technical & API Documentation
+293:35 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | API
+303:77 Google.Colons: 'Docs' should be in lowercase. | Docs
+304:61 Google.Colons: 'Git' should be in lowercase. | Git
+304:97 Google.WordList: Use 'command-line tool' instead of 'CLI'. | CLI
+310:23 Google.Headings: 'UX Writing & Content Design' should use sentence-style capitalization. | UX Writing & Content Design
+310:23 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | UX
+315:15 Google.Headings: 'UX Writing & Content Design' should use sentence-style capitalization. | UX Writing & Content Design
+320:74 Google.Colons: 'UX' should be in lowercase. | UX
+321:58 Google.Colons: 'Figma' should be in lowercase. | Figma
+327:23 Google.Headings: 'Hardware & Systems' should use sentence-style capitalization. | Hardware & Systems
+332:24 Google.Headings: 'Hardware & Systems' should use sentence-style capitalization. | Hardware & Systems
+337:62 Google.Colons: 'Medical' should be in lowercase. | Medical
+343:23 Google.Headings: 'Technical Stack & AI' should use sentence-style capitalization. | Technical Stack & AI
+343:41 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | AI
+347:43 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | AI
+348:22 Google.Headings: 'Technical Stack & AI' should use sentence-style capitalization. | Technical Stack & AI
+353:80 Google.Colons: 'HTML' should be in lowercase. | HTML
+354:84 Google.Colons: 'Gemini' should be in lowercase. | Gemini
+355:70 Google.Colons: 'Model' should be in lowercase. | Model
+361:23 Google.Headings: 'Additional & Languages' should use sentence-style capitalization. | Additional & Languages
+361:23 write-good.TooWordy: 'Additional' is too wordy. | Additional
+365:1 Google.Headings: 'Additional & Languages' should use sentence-style capitalization. | Additional & Languages
+365:21 write-good.TooWordy: 'Additional' is too wordy. | Additional
+371:87 Google.Colons: 'SEO' should be in lowercase. | SEO
+372:55 Google.Colons: 'Spanish' should be in lowercase. | Spanish
+389:40 Google.Headings: 'Relevant Experience' should use sentence-style capitalization. | Relevant Experience
+394:30 Google.Headings: 'Freelance Technical Writer' should use sentence-style capitalization. | Freelance Technical Writer
+397:21 Std.Readability.SentenceLength: Long sentence: 30 words. | Owned
+397:101 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | API
+407:30 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | AV
+407:39 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | IT
+407:67 Google.Headings: 'AV & IT Specialist (Contract)' should use sentence-style capitalization. | AV & IT Specialist (Contract)
+453:27 Std.Readability.SentenceLength: Long sentence: 30 words. | Owned
+456:1 Direct.Ease: This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences. | 
+457:112 Google.WordList: Use 'command-line tool' instead of 'CLI'. | CLI
+457:162 Google.WordList: Use 'command-line tool' instead of 'CLI'. | CLI
+467:29 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | AV
+468:91 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | IT
+468:106 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | NY
+475:27 Std.Readability.SentenceLength: Long sentence: 29 words. | Executed
+475:27 alex.ProfanityUnlikely: Be careful with 'Executed', it's profane in some cases. | Executed
+486:29 Google.Headings: 'UX Writer' should use sentence-style capitalization. | UX Writer
+486:29 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | UX
+505:29 Google.Headings: 'Technical Writer' should use sentence-style capitalization. | Technical Writer
+506:117 Microsoft.HeadingAcronyms: Avoid using acronyms in a title or heading. | NY
+513:177 alex.ProfanityUnlikely: Be careful with 'Latin', it's profane in some cases. | Latin
+531:283 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+531:1839 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+531:2228 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+531:2617 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+531:3006 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+531:3395 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+531:3784 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+532:283 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+532:672 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+532:1061 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+532:1450 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+532:1839 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+532:2228 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+532:2617 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+532:3006 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+532:3395 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+532:3784 Google.Colons: 'NEUTRALIZED' should be in lowercase. | NEUTRALIZED
+544:30 alex.ProfanityMaybe: Reconsider using 'Yankees', it may be profane. | Yankees
+544:168 Google.FirstPerson: Avoid first-person pronouns such as 'I'. | I
+544:168 Microsoft.FirstPerson: Use first person (such as 'I') sparingly. | I
+544:184 Google.FirstPerson: Avoid first-person pronouns such as 'my'. | my
+544:184 Microsoft.FirstPerson: Use first person (such as 'my') sparingly. | my
+546:28 Google.FirstPerson: Avoid first-person pronouns such as 'I'. | I
+546:28 Microsoft.FirstPerson: Use first person (such as 'I') sparingly. | I
+546:102 Google.FirstPerson: Avoid first-person pronouns such as 'I'. | I
+546:102 Microsoft.FirstPerson: Use first person (such as 'I') sparingly. | I
+563:35 Google.Headings: 'Song of the Moment' should use sentence-style capitalization. | Song of the Moment
+

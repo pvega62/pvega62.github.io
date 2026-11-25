@@ -1,0 +1,1019 @@
+{
+ "pages": {
+  "index.html": {
+   "title": "Pedro Vega | Technical Writer",
+   "title_len": 29,
+   "description": "Technical writing portfolio of Pedro Vega. Software documentation, API guides, UX writing, and docs-as-code.",
+   "desc_len": 108,
+   "og_image": "https://pvega62.github.io/images/social-card.png",
+   "lang": "en",
+   "h1": [
+    "Technical Writer. UX Writer. Content Designer."
+   ],
+   "heading_count": 12,
+   "heading_jumps": [],
+   "dup_ids": [],
+   "img_total": 26,
+   "img_no_alt_attr": [],
+   "img_empty_alt": [
+    "/images/flags/cn.svg",
+    "/images/flags/do.svg",
+    "/images/flags/fr.svg",
+    "/images/flags/in.svg",
+    "/images/flags/jp.svg",
+    "/images/flags/ma.svg",
+    "/images/flags/us.svg",
+    "/images/icon-tech-writing.svg",
+    "images/icon-articles.svg",
+    "images/icon-languages.svg",
+    "images/icon-recordkeeping.svg",
+    "images/icon-ux-writing.svg",
+    "images/icon-vector1.svg"
+   ],
+   "img_missing_file": [],
+   "links_total": 69,
+   "links_missing": [],
+   "buttons": 0,
+   "svg": 3,
+   "inline_scripts": 11,
+   "inline_styles": 3,
+   "iframes": [
+    {
+     "src": "https://pvega62.github.io/software/docs/category/sweepy",
+     "title": "Sweepy job search documentation"
+    },
+    {
+     "src": "https://pvega62.github.io/software/docs/category/typescript-sdk-sui-blockchain-documentation",
+     "title": "TypeScript SDK Sui Documentation Sample"
+    },
+    {
+     "src": "https://pvega62.github.io/software/docs/category/stripe-api-documentation",
+     "title": "Stripe API Documentation Sample"
+    },
+    {
+     "src": "samples/ux-writing/spec-banking-onboarding.pdf",
+     "title": "Banking app onboarding flow sample"
+    },
+    {
+     "src": "samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf",
+     "title": "InnoGear Aromatherapy Diffuser User Manual"
+    },
+    {
+     "src": "samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf",
+     "title": "Vaccine Refrigerator User Manual"
+    },
+    {
+     "src": "samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf",
+     "title": "Education in the Dominican Republic"
+    },
+    {
+     "src": "samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf",
+     "title": "Breast Milk Freezer User Manual"
+    },
+    {
+     "src": "samples/technical-writing/hardware/warming-and-cooling-drawer.pdf",
+     "title": "Frost-Free Warming and Cooling Drawer"
+    }
+   ],
+   "outline": [
+    {
+     "level": 1,
+     "text": "Technical Writer. UX Writer. Content Designer."
+    },
+    {
+     "level": 2,
+     "text": "Sweepy, an open source tool for job searches"
+    },
+    {
+     "level": 2,
+     "text": "Selected Works"
+    },
+    {
+     "level": 3,
+     "text": "TypeScript SDK Sui Documentation Sample"
+    },
+    {
+     "level": 3,
+     "text": "Stripe API Documentation Sample"
+    },
+    {
+     "level": 3,
+     "text": "Banking App Onboarding Flow"
+    },
+    {
+     "level": 3,
+     "text": "InnoGear Aromatherapy Diffuser User Manual"
+    },
+    {
+     "level": 3,
+     "text": "Vaccine Refrigerator User Manual"
+    },
+    {
+     "level": 3,
+     "text": "Recordkeeping"
+    },
+    {
+     "level": 3,
+     "text": "Education in the Dominican Republic"
+    },
+    {
+     "level": 3,
+     "text": "Breast Milk Freezer User Manual"
+    },
+    {
+     "level": 3,
+     "text": "Frost-Free Warming and Cooling Drawer"
+    }
+   ],
+   "anchors_missing": []
+  },
+  "aboutme.html": {
+   "title": "About Me | Pedro Vega",
+   "title_len": 21,
+   "description": "Learn more about Pedro Vega, Technical Writer, UX Writer, and Content Designer based in New York.",
+   "desc_len": 97,
+   "og_image": "https://pvega62.github.io/images/social-card.png",
+   "lang": "en",
+   "h1": [
+    "About Me"
+   ],
+   "heading_count": 23,
+   "heading_jumps": [],
+   "dup_ids": [],
+   "img_total": 63,
+   "img_no_alt_attr": [],
+   "img_empty_alt": [
+    "/images/flags/cn.svg",
+    "/images/flags/do.svg",
+    "/images/flags/fr.svg",
+    "/images/flags/in.svg",
+    "/images/flags/jp.svg",
+    "/images/flags/ma.svg",
+    "/images/flags/us.svg",
+    "/images/icon-tech-writing.svg",
+    "images/icon-articles.svg",
+    "images/icon-languages.svg",
+    "images/icon-recordkeeping.svg",
+    "images/icon-ux-writing.svg",
+    "images/icon-vector1.svg"
+   ],
+   "img_missing_file": [],
+   "links_total": 65,
+   "links_missing": [
+    "/software/blog",
+    "/software/docs/artie-case-study",
+    "/software/docs/category/automated-job-search-with-sweepy",
+    "/software/docs/category/blüdhaven-pets-api",
+    "/software/docs/category/commit-and-pr-write-ups",
+    "/software/docs/category/log-and-llm-observability",
+    "/software/docs/category/stripe-api",
+    "/software/docs/category/sui-typescript-sdk-end-to-end",
+    "/software/docs/google-chrome-theme-installation",
+    "/software/docs/intro",
+    "/software/docs/word-github-wiki-writage",
+    "Pedro%20Vega%20Resume.pdf"
+   ],
+   "buttons": 9,
+   "svg": 1,
+   "inline_scripts": 7,
+   "inline_styles": 1,
+   "iframes": [
+    {
+     "src": "https://www.youtube.com/embed/KU5V5WZVcVE?si=Q9Y2JcXQapX8WGtx",
+     "title": "YouTube video player"
+    }
+   ],
+   "outline": [
+    {
+     "level": 1,
+     "text": "About Me"
+    },
+    {
+     "level": 2,
+     "text": "Skill Set"
+    },
+    {
+     "level": 3,
+     "text": "Technical & API Documentation"
+    },
+    {
+     "level": 3,
+     "text": "UX Writing & Content Design"
+    },
+    {
+     "level": 3,
+     "text": "Hardware & Systems"
+    },
+    {
+     "level": 3,
+     "text": "Technical Stack & AI"
+    },
+    {
+     "level": 3,
+     "text": "Additional & Languages"
+    },
+    {
+     "level": 3,
+     "text": "Technical & API Documentation"
+    },
+    {
+     "level": 3,
+     "text": "UX Writing & Content Design"
+    },
+    {
+     "level": 3,
+     "text": "Hardware & Systems"
+    },
+    {
+     "level": 3,
+     "text": "Technical Stack & AI"
+    },
+    {
+     "level": 3,
+     "text": "Additional & Languages"
+    },
+    {
+     "level": 2,
+     "text": "Relevant Experience"
+    },
+    {
+     "level": 3,
+     "text": "Freelance Technical Writer"
+    },
+    {
+     "level": 3,
+     "text": "AV & IT Specialist (Contract)"
+    },
+    {
+     "level": 3,
+     "text": "UX Writer"
+    },
+    {
+     "level": 3,
+     "text": "Technical Writer"
+    },
+    {
+     "level": 3,
+     "text": "Freelance Technical Writer Remote | April 2024 - Present"
+    },
+    {
+     "level": 3,
+     "text": "AV & IT Specialist (Contract) SmartIT | New York, NY | March 2026"
+    },
+    {
+     "level": 3,
+     "text": "UX Writer Culangex | Remote | December 2024 - January 2026"
+    },
+    {
+     "level": 3,
+     "text": "Technical Writer Felix Storch Inc. | The Bronx, NY | March 2022 - February 2024"
+    },
+    {
+     "level": 2,
+     "text": "Interests (Life from 5 to 9)"
+    },
+    {
+     "level": 3,
+     "text": "Song of the Moment"
+    }
+   ],
+   "anchors_missing": []
+  },
+  "articles.html": {
+   "title": "Articles | Pedro Vega",
+   "title_len": 21,
+   "description": "Published articles and journalism on global poverty, healthcare, education, and technology by Pedro Vega.",
+   "desc_len": 105,
+   "og_image": "https://pvega62.github.io/images/social-card.png",
+   "lang": "en",
+   "h1": [
+    "Articles"
+   ],
+   "heading_count": 11,
+   "heading_jumps": [],
+   "dup_ids": [],
+   "img_total": 23,
+   "img_no_alt_attr": [],
+   "img_empty_alt": [
+    "/images/flags/cn.svg",
+    "/images/flags/do.svg",
+    "/images/flags/fr.svg",
+    "/images/flags/in.svg",
+    "/images/flags/jp.svg",
+    "/images/flags/ma.svg",
+    "/images/flags/us.svg",
+    "/images/icon-tech-writing.svg",
+    "images/icon-articles.svg",
+    "images/icon-languages.svg",
+    "images/icon-recordkeeping.svg",
+    "images/icon-ux-writing.svg",
+    "images/icon-vector1.svg"
+   ],
+   "img_missing_file": [],
+   "links_total": 64,
+   "links_missing": [
+    "/software/blog",
+    "/software/docs/artie-case-study",
+    "/software/docs/category/automated-job-search-with-sweepy",
+    "/software/docs/category/blüdhaven-pets-api",
+    "/software/docs/category/commit-and-pr-write-ups",
+    "/software/docs/category/log-and-llm-observability",
+    "/software/docs/category/stripe-api",
+    "/software/docs/category/sui-typescript-sdk-end-to-end",
+    "/software/docs/google-chrome-theme-installation",
+    "/software/docs/intro",
+    "/software/docs/word-github-wiki-writage"
+   ],
+   "buttons": 5,
+   "svg": 1,
+   "inline_scripts": 9,
+   "inline_styles": 1,
+   "iframes": [
+    {
+     "src": "samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf",
+     "title": "4 Ways to Use Tech Against the Pandemic"
+    },
+    {
+     "src": "samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf",
+     "title": "Education in the Dominican Republic Article"
+    },
+    {
+     "src": "samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf",
+     "title": "Gender Equality in the Dominican Republic Article"
+    },
+    {
+     "src": "samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf",
+     "title": "Global Pandemic Exacerbates Hunger in Puerto Rico Article"
+    },
+    {
+     "src": "samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf",
+     "title": "Healthcare in the Dominican Republic Article"
+    },
+    {
+     "src": "samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf",
+     "title": "Homelessness in Guyana Article"
+    },
+    {
+     "src": "samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf",
+     "title": "Hunger in the Dominican Republic Article"
+    },
+    {
+     "src": "samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf",
+     "title": "Samsung Global Goals Article"
+    },
+    {
+     "src": "samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf",
+     "title": "Poverty in the Dominican Republic Article"
+    }
+   ],
+   "outline": [
+    {
+     "level": 1,
+     "text": "Articles"
+    },
+    {
+     "level": 2,
+     "text": "Published articles"
+    },
+    {
+     "level": 3,
+     "text": "4 Ways to Use Tech Against the Pandemic"
+    },
+    {
+     "level": 3,
+     "text": "Education in the Dominican Republic"
+    },
+    {
+     "level": 3,
+     "text": "Gender Equality in the Dominican Republic: An Update"
+    },
+    {
+     "level": 3,
+     "text": "Global Pandemic Exacerbates Hunger in Puerto Rico"
+    },
+    {
+     "level": 3,
+     "text": "Better Care: Healthcare in the Dominican Republic"
+    },
+    {
+     "level": 3,
+     "text": "The Inherited Burden: Homelessness in Guyana"
+    },
+    {
+     "level": 3,
+     "text": "Hunger in the Dominican Republic"
+    },
+    {
+     "level": 3,
+     "text": "The Samsung Global Goals App: Supporting SDGs With a Tap"
+    },
+    {
+     "level": 3,
+     "text": "Poverty in the Dominican Republic"
+    }
+   ],
+   "anchors_missing": []
+  },
+  "technical-writing-hardware.html": {
+   "title": "Technical Writing (Hardware) | Pedro Vega",
+   "title_len": 41,
+   "description": "Hardware documentation, quick start guides, user manuals, and technical specifications by Pedro Vega.",
+   "desc_len": 101,
+   "og_image": "https://pvega62.github.io/images/social-card.png",
+   "lang": "en",
+   "h1": [
+    "Hardware Technical Writing"
+   ],
+   "heading_count": 14,
+   "heading_jumps": [],
+   "dup_ids": [],
+   "img_total": 23,
+   "img_no_alt_attr": [],
+   "img_empty_alt": [
+    "/images/flags/cn.svg",
+    "/images/flags/do.svg",
+    "/images/flags/fr.svg",
+    "/images/flags/in.svg",
+    "/images/flags/jp.svg",
+    "/images/flags/ma.svg",
+    "/images/flags/us.svg",
+    "/images/icon-tech-writing.svg",
+    "images/icon-articles.svg",
+    "images/icon-languages.svg",
+    "images/icon-logo.png",
+    "images/icon-recordkeeping.svg",
+    "images/icon-ux-writing.svg",
+    "images/icon-vector1.svg",
+    "images/logo.png"
+   ],
+   "img_missing_file": [],
+   "links_total": 64,
+   "links_missing": [
+    "/software/blog",
+    "/software/docs/artie-case-study",
+    "/software/docs/category/automated-job-search-with-sweepy",
+    "/software/docs/category/blüdhaven-pets-api",
+    "/software/docs/category/commit-and-pr-write-ups",
+    "/software/docs/category/log-and-llm-observability",
+    "/software/docs/category/stripe-api",
+    "/software/docs/category/sui-typescript-sdk-end-to-end",
+    "/software/docs/google-chrome-theme-installation",
+    "/software/docs/intro",
+    "/software/docs/word-github-wiki-writage"
+   ],
+   "buttons": 5,
+   "svg": 1,
+   "inline_scripts": 9,
+   "inline_styles": 1,
+   "iframes": [
+    {
+     "src": "samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf",
+     "title": "EQTemp Vaccine Refrigerator User Manual"
+    },
+    {
+     "src": "samples/technical-writing/hardware/warming-and-cooling-drawer.pdf",
+     "title": "Frost-Free Warming and Cooling Drawer"
+    },
+    {
+     "src": "samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf",
+     "title": "Breast Milk Freezer User Manual"
+    },
+    {
+     "src": "samples/technical-writing/hardware/handle-installation-instructions-FFBF279SSX-H72.pdf",
+     "title": "Handle Installation Instruction Sheet"
+    },
+    {
+     "src": "samples/technical-writing/hardware/SEH1536SSADA-User-Manual.pdf",
+     "title": "Instruction Manual for ADA-Compliant Range Hoods"
+    },
+    {
+     "src": "samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf",
+     "title": "InnoGear Aromatherapy Diffuser User Manual"
+    },
+    {
+     "src": "samples/technical-writing/hardware/remote-switch-installation-guide.pdf",
+     "title": "Remote Switch Installation for ADA Compliant Wall Mounted Range Hoods"
+    },
+    {
+     "src": "samples/technical-writing/hardware/ada-conversion-ADRD18H34.pdf",
+     "title": "ADA Conversion (ADRD18H34)"
+    },
+    {
+     "src": "samples/technical-writing/hardware/pnr-instructions.pdf",
+     "title": "PNR Instructions"
+    },
+    {
+     "src": "samples/technical-writing/hardware/bat-pole-project.pdf",
+     "title": "Instant Wardrobe Changing Sliding Pole Installation Guide"
+    }
+   ],
+   "outline": [
+    {
+     "level": 1,
+     "text": "Hardware Technical Writing"
+    },
+    {
+     "level": 2,
+     "text": "Featured sample"
+    },
+    {
+     "level": 3,
+     "text": "EQTemp Vaccine Refrigerator User Manual"
+    },
+    {
+     "level": 2,
+     "text": "Hardware documentation sample library"
+    },
+    {
+     "level": 3,
+     "text": "Frost-Free Warming and Cooling Drawer User Manual"
+    },
+    {
+     "level": 3,
+     "text": "Breast Milk Freezer"
+    },
+    {
+     "level": 3,
+     "text": "Handle Installation Instruction Sheet"
+    },
+    {
+     "level": 3,
+     "text": "Instruction Manual for ADA-Compliant Range Hoods"
+    },
+    {
+     "level": 3,
+     "text": "InnoGear Aromatherapy Diffuser User Manual"
+    },
+    {
+     "level": 3,
+     "text": "Remote Switch Installation for ADA Compliant Wall Mounted Range Hoods"
+    },
+    {
+     "level": 3,
+     "text": "ADA Conversion (ADRD18H34)"
+    },
+    {
+     "level": 3,
+     "text": "PNR Installation Instructions"
+    },
+    {
+     "level": 2,
+     "text": "Bonus sample"
+    },
+    {
+     "level": 3,
+     "text": "Instant Wardrobe Changing Sliding Pole Installation Guide"
+    }
+   ],
+   "anchors_missing": []
+  },
+  "uxwriting.html": {
+   "title": "UX Writing | Pedro Vega",
+   "title_len": 23,
+   "description": "UX writing, microcopy, content design, and user flow documentation samples by Pedro Vega.",
+   "desc_len": 89,
+   "og_image": "https://pvega62.github.io/images/social-card.png",
+   "lang": "en",
+   "h1": [
+    "UX Writing & Content Design"
+   ],
+   "heading_count": 57,
+   "heading_jumps": [],
+   "dup_ids": [],
+   "img_total": 23,
+   "img_no_alt_attr": [],
+   "img_empty_alt": [
+    "/images/flags/cn.svg",
+    "/images/flags/do.svg",
+    "/images/flags/fr.svg",
+    "/images/flags/in.svg",
+    "/images/flags/jp.svg",
+    "/images/flags/ma.svg",
+    "/images/flags/us.svg",
+    "/images/icon-tech-writing.svg",
+    "images/icon-articles.svg",
+    "images/icon-languages.svg",
+    "images/icon-recordkeeping.svg",
+    "images/icon-ux-writing.svg",
+    "images/icon-vector1.svg"
+   ],
+   "img_missing_file": [],
+   "links_total": 72,
+   "links_missing": [
+    "/software/blog",
+    "/software/docs/artie-case-study",
+    "/software/docs/category/automated-job-search-with-sweepy",
+    "/software/docs/category/blüdhaven-pets-api",
+    "/software/docs/category/commit-and-pr-write-ups",
+    "/software/docs/category/log-and-llm-observability",
+    "/software/docs/category/stripe-api",
+    "/software/docs/category/sui-typescript-sdk-end-to-end",
+    "/software/docs/google-chrome-theme-installation",
+    "/software/docs/intro",
+    "/software/docs/word-github-wiki-writage"
+   ],
+   "buttons": 33,
+   "svg": 1,
+   "inline_scripts": 11,
+   "inline_styles": 1,
+   "iframes": [
+    {
+     "src": "samples/ux-writing/spec-banking-onboarding.pdf",
+     "title": "UX Writing Case Study: Banking App Onboarding Flow"
+    },
+    {
+     "src": "samples/ux-writing/spec-error-unknown-cause.pdf",
+     "title": "UX Writing Case Study: App Error with Unknown Cause"
+    },
+    {
+     "src": "samples/ux-writing/spec-flight-cancellation.pdf",
+     "title": "UX Writing Case Study: Flight Cancellation Notification"
+    },
+    {
+     "src": "samples/ux-writing/spec-fire-alert.pdf",
+     "title": "UX Writing Case Study: Fire Alert Notification"
+    },
+    {
+     "src": "samples/ux-writing/spec-expired-card.pdf",
+     "title": "UX Writing Case Study: Expired Credit Card Error"
+    },
+    {
+     "src": "samples/ux-writing/spec-fake-name-error.pdf",
+     "title": "UX Writing Case Study: “Fake Name” Error Message"
+    },
+    {
+     "src": "samples/ux-writing/spec-contact-lens-meta.pdf",
+     "title": "UX Writing Case Study: Contact Lens Subscription - Title & Meta Description"
+    },
+    {
+     "src": "samples/ux-writing/spec-truck-delay.pdf",
+     "title": "UX Writing Case Study: Truck Driver Delay Notification"
+    },
+    {
+     "src": "samples/ux-writing/spec-location-permission.pdf",
+     "title": "UX Writing Case Study: Car Buying Website Location Request"
+    },
+    {
+     "src": "samples/ux-writing/spec-app-crash-recovery.pdf",
+     "title": "UX Writing Case Study: App Crash Recovery Message"
+    },
+    {
+     "src": "samples/ux-writing/spec-grocery-subscription.pdf",
+     "title": "UX Writing Case Study: Grocery Subscription Promotion"
+    },
+    {
+     "src": "samples/ux-writing/spec-incorrect-email.pdf",
+     "title": "UX Writing Case Study: Incorrect Email Error Message"
+    },
+    {
+     "src": "samples/ux-writing/spec-sports-fan-promo.pdf",
+     "title": "UX Writing Case Study: Sports Fan App Promotion"
+    },
+    {
+     "src": "samples/ux-writing/spec-concert-promo.pdf",
+     "title": "UX Writing Case Study: Concert Promotion"
+    },
+    {
+     "src": "samples/ux-writing/spec-rivalry-score.pdf",
+     "title": "UX Writing Case Study: Rivalry Score Update"
+    },
+    {
+     "src": "samples/ux-writing/spec-hall-pass-spidey.pdf",
+     "title": "Classroom Hall Pass: The Spidey Bathroom Pass"
+    },
+    {
+     "src": "samples/ux-writing/spec-hall-pass-hulk.pdf",
+     "title": "Classroom Hall Pass: The Hulk Hall Pass"
+    },
+    {
+     "src": "",
+     "title": "Figma prototype viewer"
+    }
+   ],
+   "outline": [
+    {
+     "level": 1,
+     "text": "UX Writing & Content Design"
+    },
+    {
+     "level": 2,
+     "text": "Banking App Onboarding Flow"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "App Error with Unknown Cause"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Flight Cancellation Notification"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Fire Alert Notification"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Expired Credit Card Error"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "“Fake Name” Error Message"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Contact Lens Subscription - Title & Meta Description"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Truck Driver Delay Notification"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Car Buying Website Location Request"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "App Crash Recovery Message"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Grocery Subscription Promotion"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Incorrect Email Error Message"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Sports Fan App Promotion"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Concert Promotion"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Rivalry Score Update"
+    },
+    {
+     "level": 3,
+     "text": "Strategy & Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Business Impact & Intended Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Content Patterns"
+    },
+    {
+     "level": 3,
+     "text": "Error states 5"
+    },
+    {
+     "level": 3,
+     "text": "Error states 5"
+    },
+    {
+     "level": 3,
+     "text": "Alert copy 3"
+    },
+    {
+     "level": 3,
+     "text": "Alert copy 3"
+    },
+    {
+     "level": 3,
+     "text": "Subscription & meta copy 5"
+    },
+    {
+     "level": 3,
+     "text": "Subscription & meta copy 5"
+    },
+    {
+     "level": 2,
+     "text": "Classroom Hall Passes"
+    },
+    {
+     "level": 3,
+     "text": "The Spidey Bathroom Pass"
+    },
+    {
+     "level": 3,
+     "text": "The Hulk Hall Pass"
+    },
+    {
+     "level": 2,
+     "text": "Prototype"
+    }
+   ],
+   "anchors_missing": []
+  },
+  "search.html": {
+   "title": "Algolia Verification",
+   "title_len": 20,
+   "description": "",
+   "desc_len": 0,
+   "og_image": "",
+   "lang": "MISSING",
+   "h1": [],
+   "heading_count": 0,
+   "heading_jumps": [],
+   "dup_ids": [],
+   "img_total": 0,
+   "img_no_alt_attr": [],
+   "img_empty_alt": [],
+   "img_missing_file": [],
+   "links_total": 0,
+   "links_missing": [],
+   "buttons": 0,
+   "svg": 0,
+   "inline_scripts": 3,
+   "inline_styles": 1,
+   "iframes": [],
+   "outline": [],
+   "anchors_missing": []
+  }
+ },
+ "global": {
+  "sitemap_urls": 90,
+  "sitemap_en": [
+   "https://pvega62.github.io/",
+   "https://pvega62.github.io/Pedro%20Vega%20Resume.pdf",
+   "https://pvega62.github.io/aboutme",
+   "https://pvega62.github.io/articles",
+   "https://pvega62.github.io/samples/articles-and-essays/4-ways-to-use-tech-article-pedro-vega.pdf",
+   "https://pvega62.github.io/samples/articles-and-essays/education-in-the-dominican-republic-the-borgen-project.pdf",
+   "https://pvega62.github.io/samples/articles-and-essays/gender-equality-in-the-dominican-republic-pedro-vega.pdf",
+   "https://pvega62.github.io/samples/articles-and-essays/global-pandemic-exacerbates-hunger-in-puerto-rico-pedro-vega.pdf",
+   "https://pvega62.github.io/samples/articles-and-essays/healthcare-in-the-dominican-republic-borgen.pdf",
+   "https://pvega62.github.io/samples/articles-and-essays/homelessness-in-guyana-article-pedro-vega.pdf",
+   "https://pvega62.github.io/samples/articles-and-essays/hunger-in-the-dominican-republic-the-borgen-project.pdf",
+   "https://pvega62.github.io/samples/articles-and-essays/poverty-in-the-dominican-republic-the-borgen-project.pdf",
+   "https://pvega62.github.io/samples/articles-and-essays/samsung-global-goals-article-pedro-vega.pdf",
+   "https://pvega62.github.io/samples/articles-and-essays/the-daily-herald-inaugural-edition-7-8.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/SEH1536SSADA-User-Manual.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/acme_manuals/acme-handle-installation-mock.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/acme_manuals/acme-range-hood-mock.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/acme_manuals/ada-conversion-CENA17H34.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/acme_manuals/bat-pole-installation-guide-wayne.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/acme_manuals/breast-milk-freezer-user-manual.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/acme_manuals/frost-free-warming-and-cooling-drawer.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/acme_manuals/pnr-instructions.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/acme_manuals/remote-switch-installation-guide.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/acme_manuals/vaccine-refrigerator-user-manual.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/ada-conversion-ADRD18H34.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/ada-range-hood-manual.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/bat-pole-project.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/breast-milk-freezer-user-manual.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/handle-installation-instructions-FFBF279SSX-H72.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/innogear-aromatherapy-diffuser-manual.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/pnr-Instructions.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/remote-switch-installation-guide.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/vaccine-refrigerator-user-manual.pdf",
+   "https://pvega62.github.io/samples/technical-writing/hardware/warming-and-cooling-drawer.pdf",
+   "https://pvega62.github.io/samples/ux-writing/hulk-hall-pass.pdf",
+   "https://pvega62.github.io/samples/ux-writing/spidey-bathroom-pass.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-1.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-10.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-11.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-12.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-13.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-14.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-15.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-2.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-3.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-4.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-5.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-6.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-7.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-8.pdf",
+   "https://pvega62.github.io/samples/ux-writing/ux-writing-challenge-9.pdf",
+   "https://pvega62.github.io/search",
+   "https://pvega62.github.io/technical-writing-hardware",
+   "https://pvega62.github.io/uxwriting"
+  ],
+  "sitemap_locales": {
+   "es": 6,
+   "fr": 6,
+   "ar": 6,
+   "zh": 6,
+   "ja": 6,
+   "hi": 6
+  },
+  "sitemap_has_root": true
+ }
+}

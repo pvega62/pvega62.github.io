@@ -1,0 +1,2344 @@
+{
+  "aboutme.html": [
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 27.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 238
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        381,
+        394
+      ],
+      "Check": "proselint.CurlyQuotes",
+      "Description": "",
+      "Link": "https://github.com/amperser/proselint",
+      "Message": "Use curly quotes “”, not straight quotes \"\".",
+      "Severity": "error",
+      "Match": "\"technobabble\"",
+      "Line": 238
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 45.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 239
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        21,
+        25
+      ],
+      "Check": "Direct.Length",
+      "Description": "",
+      "Link": "",
+      "Message": "Sentence runs to 30 words. Split it.",
+      "Severity": "suggestion",
+      "Match": "Owned",
+      "Line": 397
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        21,
+        25
+      ],
+      "Check": "Std.Readability.SentenceLength",
+      "Description": "",
+      "Link": "",
+      "Message": "Long sentence: 30 words.",
+      "Severity": "warning",
+      "Match": "Owned",
+      "Line": 397
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        83,
+        119
+      ],
+      "Check": "ai-tells.NounString",
+      "Description": "",
+      "Link": "",
+      "Message": "AI noun string: 'draft end-to-end API documentation'. Rewrite the stack as a phrase that shows how the nouns relate.",
+      "Severity": "error",
+      "Match": "to draft end-to-end API documentation",
+      "Line": 400
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        27,
+        31
+      ],
+      "Check": "Direct.Length",
+      "Description": "",
+      "Link": "",
+      "Message": "Sentence runs to 30 words. Split it.",
+      "Severity": "suggestion",
+      "Match": "Owned",
+      "Line": 453
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        27,
+        31
+      ],
+      "Check": "Std.Readability.SentenceLength",
+      "Description": "",
+      "Link": "",
+      "Message": "Long sentence: 30 words.",
+      "Severity": "warning",
+      "Match": "Owned",
+      "Line": 453
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 456
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        89,
+        125
+      ],
+      "Check": "ai-tells.NounString",
+      "Description": "",
+      "Link": "",
+      "Message": "AI noun string: 'draft end-to-end API documentation'. Rewrite the stack as a phrase that shows how the nouns relate.",
+      "Severity": "error",
+      "Match": "to draft end-to-end API documentation",
+      "Line": 456
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        27,
+        34
+      ],
+      "Check": "Direct.Length",
+      "Description": "",
+      "Link": "",
+      "Message": "Sentence runs to 29 words. Split it.",
+      "Severity": "suggestion",
+      "Match": "Executed",
+      "Line": 475
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        27,
+        34
+      ],
+      "Check": "Std.Readability.SentenceLength",
+      "Description": "",
+      "Link": "",
+      "Message": "Long sentence: 29 words.",
+      "Severity": "warning",
+      "Match": "Executed",
+      "Line": 475
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        67,
+        70
+      ],
+      "Check": "Google.ExcessiveClaims",
+      "Description": "",
+      "Link": "https://developers.google.com/style/excessive-claims",
+      "Message": "Avoid the unverifiable claim 'BEST'.",
+      "Severity": "suggestion",
+      "Match": "BEST",
+      "Line": 564
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        102,
+        105
+      ],
+      "Check": "Google.ExcessiveClaims",
+      "Description": "",
+      "Link": "https://developers.google.com/style/excessive-claims",
+      "Message": "Avoid the unverifiable claim 'BEST'.",
+      "Severity": "suggestion",
+      "Match": "BEST",
+      "Line": 564
+    }
+  ],
+  "articles.html": [
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 6.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 12
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -18.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 220
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 34.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 239
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 34.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 241
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 39.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 253
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 27.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 262
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 47.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 271
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 33.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 280
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 307
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 19.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 316
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 42.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 325
+    }
+  ],
+  "index.html": [
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        50,
+        53
+      ],
+      "Check": "write-good.Adverbs",
+      "Description": "",
+      "Link": "",
+      "Message": "'just' can weaken meaning",
+      "Severity": "warning",
+      "Match": "just",
+      "Line": 337
+    },
+    {
+      "Action": {
+        "Name": "remove",
+        "Params": null
+      },
+      "Suggestions": [
+        ""
+      ],
+      "Span": [
+        55,
+        60
+      ],
+      "Check": "Microsoft.Adverbs",
+      "Description": "",
+      "Link": "https://learn.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences",
+      "Message": "Remove 'really' if it's not important to the meaning of the statement.",
+      "Severity": "warning",
+      "Match": "really",
+      "Line": 337
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        55,
+        60
+      ],
+      "Check": "write-good.Adverbs",
+      "Description": "",
+      "Link": "",
+      "Message": "'really' can weaken meaning",
+      "Severity": "warning",
+      "Match": "really",
+      "Line": 337
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        40,
+        45
+      ],
+      "Check": "Microsoft.Vocab",
+      "Description": "",
+      "Link": "https://learn.microsoft.com/en-us/style-guide",
+      "Message": "Verify your use of 'sample' with the A-Z word list.",
+      "Severity": "suggestion",
+      "Match": "sample",
+      "Line": 366
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        63,
+        68
+      ],
+      "Check": "Microsoft.Vocab",
+      "Description": "",
+      "Link": "https://learn.microsoft.com/en-us/style-guide",
+      "Message": "Verify your use of 'Sample' with the A-Z word list.",
+      "Severity": "suggestion",
+      "Match": "Sample",
+      "Line": 421
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        55,
+        60
+      ],
+      "Check": "Microsoft.Vocab",
+      "Description": "",
+      "Link": "https://learn.microsoft.com/en-us/style-guide",
+      "Message": "Verify your use of 'Sample' with the A-Z word list.",
+      "Severity": "suggestion",
+      "Match": "Sample",
+      "Line": 439
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        85,
+        90
+      ],
+      "Check": "Microsoft.Vocab",
+      "Description": "",
+      "Link": "https://learn.microsoft.com/en-us/style-guide",
+      "Message": "Verify your use of 'sample' with the A-Z word list.",
+      "Severity": "suggestion",
+      "Match": "sample",
+      "Line": 449
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        52,
+        57
+      ],
+      "Check": "Microsoft.Vocab",
+      "Description": "",
+      "Link": "https://learn.microsoft.com/en-us/style-guide",
+      "Message": "Verify your use of 'sample' with the A-Z word list.",
+      "Severity": "suggestion",
+      "Match": "sample",
+      "Line": 465
+    }
+  ],
+  "technical-writing-hardware.html": [
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 16.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 12
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 19.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 220
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 2.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 241
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 33.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 254
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -22.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 260
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 35.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 261
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 37.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 275
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 24.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 286
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 31.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 311
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 32.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 322
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 24.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 344
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 14.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 355
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 40.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 378
+    }
+  ],
+  "uxwriting.html": [
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 14.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 221
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 38.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 222
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 34.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 245
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 27.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 258
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 27.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 262
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 265
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        226,
+        231
+      ],
+      "Check": "write-good.Adverbs",
+      "Description": "",
+      "Link": "",
+      "Message": "'timely' can weaken meaning",
+      "Severity": "warning",
+      "Match": "timely",
+      "Line": 272
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 280
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 304
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 308
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 311
+    },
+    {
+      "Action": {
+        "Name": "replace",
+        "Params": [
+          "we've"
+        ]
+      },
+      "Suggestions": [
+        "we've"
+      ],
+      "Span": [
+        154,
+        160
+      ],
+      "Check": "Std.Grammar.Contractions",
+      "Description": "",
+      "Link": "",
+      "Message": "Use 'we've' instead of 'we have'.",
+      "Severity": "suggestion",
+      "Match": "we have",
+      "Line": 321
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        190,
+        193
+      ],
+      "Check": "Google.Timeless",
+      "Description": "",
+      "Link": "https://developers.google.com/style/timeless-documentation",
+      "Message": "Avoid time-based words like 'soon' in product documentation.",
+      "Severity": "suggestion",
+      "Match": "soon",
+      "Line": 326
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        224,
+        229
+      ],
+      "Check": "Google.Timeless",
+      "Description": "",
+      "Link": "https://developers.google.com/style/timeless-documentation",
+      "Message": "Avoid time-based words like 'latest' in product documentation.",
+      "Severity": "suggestion",
+      "Match": "latest",
+      "Line": 326
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 338
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 32.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 352
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        147,
+        157
+      ],
+      "Check": "write-good.Adverbs",
+      "Description": "",
+      "Link": "",
+      "Message": "'immediately' can weaken meaning",
+      "Severity": "warning",
+      "Match": "immediately",
+      "Line": 352
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 40.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 356
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 359
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 49.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 371
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 373
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 37.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 387
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 47.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 390
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 393
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 31.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 424
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 427
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 441
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -4.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 455
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 49.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 457
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 460
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 48.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 465
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 42.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 472
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 487
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 36.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 490
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 493
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 18.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 504
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        48,
+        53
+      ],
+      "Check": "Microsoft.UIVerbs",
+      "Description": "",
+      "Link": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/describing-interactions-with-ui",
+      "Message": "Use 'select' instead of the input-specific verb 'clicks'.",
+      "Severity": "warning",
+      "Match": "clicks",
+      "Line": 504
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 523
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 526
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 11.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 538
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        4,
+        9
+      ],
+      "Check": "write-good.Adverbs",
+      "Description": "",
+      "Link": "",
+      "Message": "'Timely' can weaken meaning",
+      "Severity": "warning",
+      "Match": "Timely",
+      "Line": 538
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 42.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 553
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 27.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 557
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 560
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 37.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 565
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        35,
+        38
+      ],
+      "Check": "write-good.Adverbs",
+      "Description": "",
+      "Link": "",
+      "Message": "'many' can weaken meaning",
+      "Severity": "warning",
+      "Match": "many",
+      "Line": 573
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 39.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 588
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 592
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 595
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        74,
+        84
+      ],
+      "Check": "write-good.Adverbs",
+      "Description": "",
+      "Link": "",
+      "Message": "'immediately' can weaken meaning",
+      "Severity": "warning",
+      "Match": "immediately",
+      "Line": 603
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 609
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 21.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 623
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 627
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 630
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 644
+    },
+    {
+      "Action": {
+        "Name": "replace",
+        "Params": [
+          "email"
+        ]
+      },
+      "Suggestions": [
+        "email"
+      ],
+      "Span": [
+        52,
+        56
+      ],
+      "Check": "Google.WordListCase",
+      "Description": "",
+      "Link": "https://developers.google.com/style/word-list",
+      "Message": "Use 'email' instead of 'Email'.",
+      "Severity": "warning",
+      "Match": "Email",
+      "Line": 650
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 49.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 660
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 663
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        85,
+        89
+      ],
+      "Check": "Google.Anthropomorphism",
+      "Description": "",
+      "Link": "https://developers.google.com/style/anthropomorphism",
+      "Message": "Don't attribute human qualities to software or hardware ('tells').",
+      "Severity": "suggestion",
+      "Match": "tells",
+      "Line": 670
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        100,
+        106
+      ],
+      "Check": "write-good.Adverbs",
+      "Description": "",
+      "Link": "",
+      "Message": "'exactly' can weaken meaning",
+      "Severity": "warning",
+      "Match": "exactly",
+      "Line": 670
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 693
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 696
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 19.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 701
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 47.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 707
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 709
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 45.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 723
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 40.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 727
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 730
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 10.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 735
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        54,
+        59
+      ],
+      "Check": "write-good.Adverbs",
+      "Description": "",
+      "Link": "",
+      "Message": "'timely' can weaken meaning",
+      "Severity": "warning",
+      "Match": "timely",
+      "Line": 735
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -4.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 742
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 744
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 47.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 761
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 3.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 764
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 31.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 775
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 784
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 24.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 803
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 40.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 895
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 27.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 912
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 44.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 935
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 41.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 943
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores 43.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 952
+    },
+    {
+      "Action": {
+        "Name": "",
+        "Params": null
+      },
+      "Suggestions": [],
+      "Span": [
+        1,
+        1
+      ],
+      "Check": "Direct.Ease",
+      "Description": "",
+      "Link": "",
+      "Message": "This paragraph scores -48.00 on reading ease. Keep it above 50: short words, short sentences.",
+      "Severity": "warning",
+      "Match": "",
+      "Line": 966
+    }
+  ]
+}
