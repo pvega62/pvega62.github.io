@@ -94,6 +94,22 @@ body {
   background-color: #1f3850 !important;
 }
 
+/* Particles canvas: fill the section behind all content, never above it. */
+.particles-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Everything inside a dark section sits above the canvas. */
+.bg-custom-dark > *:not(.particles-canvas) {
+  position: relative;
+  z-index: 1;
+}
+
 /* ==========================================================================
    Desktop Navbar Dropdown Styling (Theme Match & Glassmorphism)
    ========================================================================== */
@@ -253,6 +269,26 @@ body {
 
 .bg-custom-dark {
   background-color: #1f3850 !important;
+  /* Establish a stacking context so the animated particles canvas
+     is confined here and cannot paint over the fixed mobile navbar. */
+  position: relative;
+  isolation: isolate;
+}
+
+/* Particles canvas: fill the section behind all content, never above it. */
+.particles-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Everything inside a dark section sits above the canvas. */
+.bg-custom-dark > *:not(.particles-canvas) {
+  position: relative;
+  z-index: 1;
 }
 
 /* Transitions for smooth color/background changes */
